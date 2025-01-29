@@ -2,6 +2,7 @@ local utils = (require (getVar("folDir").."scripts.backend.utils")):new()
 local hudFold = "borderlineUI/"
 local angerpoints = {}
 local disableBar = (timeBarType == "Disabled")
+local isHudVisible = true
 local comboOff = {230, 96}
 local timeIconLimits = {-1,0}
 local ratingShits = { --rating image names, rating comments, icon progresses or regresses on low health
@@ -183,6 +184,7 @@ function onBeatHit() --AWESOME accurate combo drop calculations.
         makeAnimatedLuaSprite("comboRating", hudFold.."grafix", 0, 0)
         addAnimationByPrefix("comboRating", 'def', ratingShits[curGFRead][1][4-overall], 24, true)
         playAnim("comboRating", "def")
+        setProperty("comboRating.visible", isHudVisible)
         screenCenter('comboRating')
         setProperty('comboRating.x', screenWidth * 0.55)
         setProperty('comboRating.y', getProperty('comboRating.y') - 100)
@@ -296,6 +298,17 @@ function onEvent(name, value1, value2, strumTime)
         onRecalculateRating()
     elseif (event == "alt idle animation") then 
         if (val1 == "gf") then gfIdleSuff = value2 end
+    elseif (event == "toggle borderline hud") then
+        isHudVisible = not isHudVisible
+        for _,spr in pairs({"hpBarPlanet", "hpBarBackin", "hpBarActual", "hpBarFrame", "iconHP"}) do
+            setProperty(spr..'.visible', isHudVisible)
+        end
+        for i = 1, #angerpoints do
+            setProperty('marker'..i..".visible", isHudVisible)
+        end
+        for _,spr in pairs({"timBar", "timerBar", "timeTxt", "timerBarfbg", "scrTxt", "iconTime"}) do
+            setProperty(spr..'.visible', isHudVisible)
+        end
     end
 end
 
@@ -370,10 +383,12 @@ function onRecalculateRating() --so these functions arent constantly called. per
         table.insert(sepScr, (combo % 10))
 
         setProperty("comboX.x", comboOff[1] + (30 - (10 * #comboStr)))
+        setProperty("comboX.visible", isHudVisible)
         for num,i in pairs(sepScr) do
             addAnimatedOneoff("comboNum"..num, "grafix", "num"..i, comboOff[1] + (39 - (10 * #comboStr)) + (37 * num), 0)
             scaleObject("comboNum"..num, 0.4, 0.4)
             setProperty("comboNum"..num..".y", comboOff[2] + ((getProperty("comboX.height") - getProperty("comboNum"..num..".height")) / 2))
+            setProperty("comboNum"..num..".visible", isHudVisible)
         end
     end
 end

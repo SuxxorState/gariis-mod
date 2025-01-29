@@ -156,7 +156,7 @@ function onUpdate(elapsed)
         openCustomSubstate("error", true)
     end
 
-    if (getModSetting('gariiDebug')) then
+    if (not getModSetting('gariiDebug')) then
         if (keyboardJustPressed("F1")) then callMethod("setSongTime", {getPropertyFromClass("backend.Conductor", "songPosition") + 5000}) --this debug function is held together by like thin ass string, the fact that it even works is insane
             callMethod("clearNotesBefore", {getPropertyFromClass("backend.Conductor", "songPosition")}) 
         end
@@ -166,6 +166,9 @@ function onUpdate(elapsed)
         if (keyboardJustPressed("F3")) then endSong() end
         if (keyboardJustPressed("F4")) then exitSong() end --anti softlock
         if (keyboardJustPressed("F5")) then restartSong() end
+        if (keyboardJustPressed("F6")) then callMethod("setSongTime", {136000})
+            callMethod("clearNotesBefore", {getPropertyFromClass("backend.Conductor", "songPosition")}) 
+        end
     else
         if keyJustPressed('debug_1') or keyJustPressed('debug_2') then
             setProperty("inCutscene", true)
@@ -214,6 +217,22 @@ function onEvent(name, value1, value2, strumTime)
         if val2 == '' then setProperty("defaultCamZoom",val1)
         else doTweenZoom('camPermaZoom','camGame',tonumber(val1),tonumber(val2),'sineInOut')
         end 
+    elseif (event == 'change-note-skin') then
+        if (val1 ~= '') then
+            for i = 0,3 do
+                setPropertyFromGroup('opponentStrums', i, 'texture', value1);
+                setPropertyFromGroup('playerStrums', i, 'texture', value1);
+            end
+            for i = 0, getProperty('unspawnNotes.length')-1 do
+                setPropertyFromGroup('unspawnNotes', i, 'texture', value1);
+            end
+        end
+   
+        if (val2 ~= '') then
+            for i = 0, getProperty('unspawnNotes.length')-1 do
+                setPropertyFromGroup('unspawnNotes', i, 'noteSplashTexture', value2);
+            end
+        end
     end
 end
 

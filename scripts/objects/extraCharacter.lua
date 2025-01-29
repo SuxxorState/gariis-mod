@@ -194,6 +194,9 @@ function onEvent(name, value1, value2, strumTime)
             storedChrs[chr].reduced = false
             playAnim('iconTime'..chr, 'stg'..storedChrs[chr].lolthing)
         end
+    elseif (event == "toggle-borderline-hud") then
+        for chr,_ in pairs(storedChrs) do
+            setProperty('iconTime'..chr..'.visible', not getProperty('iconTime'..chr..'.visible'))
+        end
     end
 end
-

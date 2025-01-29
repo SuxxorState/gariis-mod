@@ -377,72 +377,182 @@
 				]
 			],
 			[
+				137142.857142857,
+				[
+					[
+						"Toggle Blackout",
+						"",
+						""
+					],
+					[
+						"Change Character",
+						"dad",
+						"carv-lineart"
+					],
+					[
+						"Change Character",
+						"bf",
+						"truckerboy-lineart"
+					],
+					[
+						"Setup Close Shit",
+						"",
+						""
+					],
+					[
+						"Camera Follow Pos",
+						"1100",
+						"485"
+					],
+					[
+						"Toggle Borderline HUD",
+						"",
+						""
+					],
+					[
+						"Set Cam Zoom",
+						"1",
+						"0.001"
+					]
+				]
+			],
+			[
 				139159.663865546,
 				[
 					[
 						"Advance Anger",
 						"true",
 						"2"
-					]
-				]
-			],
-			[
-				140420.168067227,
-				[
+					],
 					[
-						"Extra Char Alt Idle",
-						"hunte",
+						"Toggle Blackout",
+						"",
 						""
 					]
 				]
 			],
 			[
-				142941.176470588,
+				139663.865546218,
 				[
 					[
 						"Alt Idle Animation",
-						"dad",
-						"-alt"
+						"bf",
+						"-homer"
 					]
 				]
 			],
 			[
-				144957.983193277,
+				142689.075630252,
+				[
+					[
+						"Set Char Colour",
+						"dad",
+						"DBAF85"
+					]
+				]
+			],
+			[
+				144663.865546218,
 				[
 					[
 						"Alt Idle Animation",
-						"dad",
+						"bf",
 						""
 					]
 				]
 			],
 			[
-				148487.394957983,
+				144705.882352941,
 				[
 					[
-						"Extra Char Alt Idle",
-						"hunte",
-						"-alt"
+						"Set Char Colour",
+						"boyfriend",
+						"4E7FAF"
 					]
 				]
 			],
 			[
-				151134.453781512,
+				148235.294117647,
 				[
 					[
-						"Extra Char Alt Idle",
-						"hunte",
+						"Set Char Colour",
+						"dad",
+						"4D664D"
+					]
+				]
+			],
+			[
+				150714.285714286,
+				[
+					[
+						"Alt Idle Animation",
+						"bf",
+						"-homer"
+					]
+				]
+			],
+			[
+				150756.302521008,
+				[
+					[
+						"Set Char Colour",
+						"boyfriend",
+						"C55252"
+					]
+				]
+			],
+			[
+				152773.109243697,
+				[
+					[
+						"Set Char Colour",
+						"dad",
+						"DBAF85"
+					]
+				]
+			],
+			[
+				153781.512605042,
+				[
+					[
+						"Alt Idle Animation",
+						"bf",
 						""
 					]
 				]
 			],
 			[
-				153025.210084033,
+				155168.067226891,
 				[
 					[
-						"Alt Idle Animation",
+						"Setup Close Shit",
+						"die",
+						""
+					],
+					[
+						"Toggle Borderline HUD",
+						"",
+						""
+					],
+					[
+						"Camera Follow Pos",
+						"",
+						""
+					],
+					[
+						"Set Cam Zoom",
+						"0.58",
+						"0.001"
+					],
+					[
+						"Change Character",
 						"dad",
-						"-alt"
+						"carv"
+					],
+					[
+						"Change Character",
+						"boyfriend",
+						"truckergirl-alt"
 					]
 				]
 			],
