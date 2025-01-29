@@ -1,0 +1,54 @@
+__FUZZY DICE__
+
+tweak intro cutscene
+tweak camerawork
+
+anvil death anim
+goon nuke death anim
+tg falling on tb death anim
+carv punching tb death anim
+garii shooting tb & tg death anim(s)
+
+__FULL HOUSE__
+
+carv laugh anim
+carv mic intro anim
+carv grab mic anim
+carv toss mic anim
+support hunte countdown (x4)
+hunte laugh anim
+hunte intro push anim
+hunte switcharoo anim
+carv & hunte taunts (x6)
+
+tg falling out of tbs arms anim
+tg standing up anim
+tg "what" anim
+tg looking at devious hunte idle
+tg looking at devious hunte poses (x4)
+tg looking at devious hunte miss poses (x4)
+alt tg dizzy anim
+alt tg idle
+alt tg poses (x4)
+alt tg miss poses (x4)
+alt tg "hey" anim
+alt tg "oh" anim
+alt tb dizzy anim
+alt tb poses (x4)
+alt tb miss poses (x4)
+alt tg & tb taunts (x6)
+
+full house intro comic
+full house death anim(s)
+
+carv breakdown anim 1
+carv dance idle
+
+hunte breakdown anim 1
+hunte dance idle
+
+tb breakdown anim 1
+tb dance idle
+
+tg breakdown anim 1
+tg dance idle

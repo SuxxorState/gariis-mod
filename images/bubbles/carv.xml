@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="carv.png">
+	<!-- Created with Adobe Animate version 23.0.1.70 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="carv bubbl roundish0000" x="901" y="0" width="685" height="465" pivotX="0" pivotY="0"/>
+	<SubTexture name="carv bubbl roundish0001" x="901" y="0" width="685" height="465"/>
+	<SubTexture name="carv bubbl roundish0002" x="480" y="1424" width="467" height="275" frameX="-107" frameY="-65" frameWidth="685" frameHeight="465"/>
+	<SubTexture name="carv bubbl roundish0003" x="480" y="1424" width="467" height="275" frameX="-107" frameY="-65" frameWidth="685" frameHeight="465"/>
+	<SubTexture name="carv bubbl roundish0004" x="708" y="787" width="612" height="405" frameX="-36" frameY="-28" frameWidth="685" frameHeight="465"/>
+	<SubTexture name="carv bubbl roundish0005" x="708" y="787" width="612" height="405" frameX="-36" frameY="-28" frameWidth="685" frameHeight="465"/>
+	<SubTexture name="carv bubbl roundish0006" x="708" y="787" width="612" height="405" frameX="-36" frameY="-28" frameWidth="685" frameHeight="465"/>
+	<SubTexture name="carv bubbl roundish0007" x="708" y="787" width="612" height="405" frameX="-36" frameY="-28" frameWidth="685" frameHeight="465"/>
+	<SubTexture name="carv bubl polyugon0000" x="0" y="403" width="706" height="438" pivotX="0" pivotY="0"/>
+	<SubTexture name="carv bubl polyugon0001" x="0" y="403" width="706" height="438"/>
+	<SubTexture name="carv bubl polyugon0002" x="0" y="1221" width="478" height="290" frameX="-129" frameY="-67" frameWidth="706" frameHeight="438"/>
+	<SubTexture name="carv bubl polyugon0003" x="0" y="1221" width="478" height="290" frameX="-129" frameY="-67" frameWidth="706" frameHeight="438"/>
+	<SubTexture name="carv bubl polyugon0004" x="0" y="843" width="625" height="376" frameX="-46" frameY="-43" frameWidth="706" frameHeight="438"/>
+	<SubTexture name="carv bubl polyugon0005" x="0" y="843" width="625" height="376" frameX="-46" frameY="-43" frameWidth="706" frameHeight="438"/>
+	<SubTexture name="carv bubl polyugon0006" x="0" y="843" width="625" height="376" frameX="-46" frameY="-43" frameWidth="706" frameHeight="438"/>
+	<SubTexture name="carv bubl polyugon0007" x="0" y="843" width="625" height="376" frameX="-46" frameY="-43" frameWidth="706" frameHeight="438"/>
+	<SubTexture name="cavr bube squirvle0000" x="1547" y="467" width="375" height="584" pivotX="0" pivotY="0"/>
+	<SubTexture name="cavr bube squirvle0001" x="1547" y="467" width="375" height="584"/>
+	<SubTexture name="cavr bube squirvle0002" x="1588" y="0" width="234" height="449" frameX="-79" frameY="-65" frameWidth="375" frameHeight="584"/>
+	<SubTexture name="cavr bube squirvle0003" x="1588" y="0" width="234" height="449" frameX="-79" frameY="-65" frameWidth="375" frameHeight="584"/>
+	<SubTexture name="cavr bube squirvle0004" x="1322" y="1053" width="311" height="523" frameX="-38" frameY="-42" frameWidth="375" frameHeight="584"/>
+	<SubTexture name="cavr bube squirvle0005" x="1322" y="1053" width="311" height="523" frameX="-38" frameY="-42" frameWidth="375" frameHeight="584"/>
+	<SubTexture name="cavr bube squirvle0006" x="1322" y="1053" width="311" height="523" frameX="-38" frameY="-42" frameWidth="375" frameHeight="584"/>
+	<SubTexture name="cavr bube squirvle0007" x="1322" y="1053" width="311" height="523" frameX="-38" frameY="-42" frameWidth="375" frameHeight="584"/>
+	<SubTexture name="couldy burbl0000" x="0" y="0" width="899" height="401" pivotX="0" pivotY="0"/>
+	<SubTexture name="couldy burbl0001" x="0" y="0" width="899" height="401"/>
+	<SubTexture name="couldy burbl0002" x="627" y="1194" width="615" height="228" frameX="-182" frameY="-80" frameWidth="899" frameHeight="401"/>
+	<SubTexture name="couldy burbl0003" x="627" y="1194" width="615" height="228" frameX="-182" frameY="-80" frameWidth="899" frameHeight="401"/>
+	<SubTexture name="couldy burbl0004" x="708" y="467" width="837" height="318" frameX="-30" frameY="-57" frameWidth="899" frameHeight="401"/>
+	<SubTexture name="couldy burbl0005" x="708" y="467" width="837" height="318" frameX="-30" frameY="-57" frameWidth="899" frameHeight="401"/>
+	<SubTexture name="couldy burbl0006" x="708" y="467" width="837" height="318" frameX="-30" frameY="-57" frameWidth="899" frameHeight="401"/>
+	<SubTexture name="couldy burbl0007" x="708" y="467" width="837" height="318" frameX="-30" frameY="-57" frameWidth="899" frameHeight="401"/>
+</TextureAtlas>

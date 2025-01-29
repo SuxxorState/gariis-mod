@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="cardsreg.png">
+	<!-- Created with my ass -->
+	<SubTexture name="acard0000" x="0" y="0" width="106" height="143"/>
+	<SubTexture name="2card0000" x="107" y="0" width="106" height="143"/>
+	<SubTexture name="3card0000" x="214" y="0" width="106" height="143"/>
+	<SubTexture name="4card0000" x="321" y="0" width="106" height="143"/>
+	<SubTexture name="5card0000" x="428" y="0" width="106" height="143"/>
+	<SubTexture name="6card0000" x="0" y="144" width="106" height="143"/>
+	<SubTexture name="7card0000" x="107" y="144" width="106" height="143"/>
+	<SubTexture name="8card0000" x="214" y="144" width="106" height="143"/>
+	<SubTexture name="9card0000" x="321" y="144" width="106" height="143"/>
+	<SubTexture name="10card0000" x="428" y="144" width="106" height="143"/>
+	<SubTexture name="jcard0000" x="0" y="288" width="106" height="143"/>
+	<SubTexture name="qcard0000" x="107" y="288" width="106" height="143"/>
+	<SubTexture name="kcard0000" x="214" y="288" width="106" height="143"/>
+	
+	<SubTexture name="truckboy0000" x="321" y="288" width="106" height="143"/>
+	<SubTexture name="truckgirl0000" x="428" y="288" width="106" height="143"/>
+	<SubTexture name="greaspico0000" x="0" y="432" width="106" height="143"/>
+	<SubTexture name="greasdrnl0000" x="107" y="432" width="106" height="143"/>
+	<SubTexture name="greasnene0000" x="214" y="432" width="106" height="143"/>
+	<SubTexture name="scubysnpi0000" x="321" y="432" width="106" height="143"/>
+	
+	<SubTexture name="cardback0000" x="428" y="432" width="106" height="143"/>
+</TextureAtlas>

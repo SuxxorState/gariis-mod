@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Created with Funkin Packer v0.1.3 https://neeeoo.github.io/funkin-packer/
+-->
+<TextureAtlas imagePath="heat bg texts.png" width="2320" height="176">
+	<SubTexture name="choose ur heat0000" x="792" y="93" width="736" height="75" frameX="-0" frameY="-0" frameWidth="736" frameHeight="75"/>
+	<SubTexture name="highway jammin0000" x="1530" y="93" width="698" height="75" frameX="-0" frameY="-0" frameWidth="698" frameHeight="75"/>
+	<SubTexture name="prepare ur tastebudz0000" x="0" y="93" width="790" height="83" frameX="-0" frameY="-0" frameWidth="790" frameHeight="83"/>
+	<SubTexture name="thank you wire0000" x="0" y="0" width="2320" height="91" frameX="-0" frameY="-0" frameWidth="2320" frameHeight="91"/>
+</TextureAtlas>

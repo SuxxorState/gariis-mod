@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="advancehint.png">
+	<!-- Created with Adobe Animate version 23.0.1.70 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="comic advance hint0000" x="0" y="0" width="350" height="164" pivotX="0" pivotY="0"/>
+	<SubTexture name="comic advance hint0001" x="0" y="0" width="350" height="164"/>
+	<SubTexture name="comic advance hint0002" x="0" y="0" width="350" height="164"/>
+	<SubTexture name="comic advance hint0003" x="0" y="0" width="350" height="164"/>
+	<SubTexture name="comic advance hint0004" x="0" y="0" width="350" height="164"/>
+	<SubTexture name="comic advance hint0005" x="0" y="0" width="350" height="164"/>
+	<SubTexture name="comic advance hint0006" x="0" y="0" width="350" height="164"/>
+	<SubTexture name="comic advance hint0007" x="0" y="0" width="350" height="164"/>
+	<SubTexture name="comic advance hint0008" x="0" y="0" width="350" height="164"/>
+	<SubTexture name="comic advance hint0009" x="0" y="0" width="350" height="164"/>
+	<SubTexture name="comic advance hint0010" x="0" y="0" width="350" height="164"/>
+	<SubTexture name="comic advance hint0011" x="0" y="0" width="350" height="164"/>
+	<SubTexture name="comic advance hint0012" x="0" y="166" width="350" height="164"/>
+	<SubTexture name="comic advance hint0013" x="0" y="166" width="350" height="164"/>
+	<SubTexture name="comic advance hint0014" x="0" y="166" width="350" height="164"/>
+	<SubTexture name="comic advance hint0015" x="0" y="166" width="350" height="164"/>
+	<SubTexture name="comic advance hint0016" x="0" y="166" width="350" height="164"/>
+	<SubTexture name="comic advance hint0017" x="0" y="166" width="350" height="164"/>
+	<SubTexture name="comic advance hint0018" x="0" y="166" width="350" height="164"/>
+	<SubTexture name="comic advance hint0019" x="0" y="166" width="350" height="164"/>
+	<SubTexture name="comic advance hint0020" x="0" y="166" width="350" height="164"/>
+	<SubTexture name="comic advance hint0021" x="0" y="166" width="350" height="164"/>
+	<SubTexture name="comic advance hint0022" x="0" y="166" width="350" height="164"/>
+	<SubTexture name="comic advance hint0023" x="0" y="166" width="350" height="164"/>
+</TextureAtlas>

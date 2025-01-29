@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="potato-foxy.png">
+	<!-- Created with Adobe Animate version 23.0.1.70 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="foxy down0000" x="983" y="1084" width="277" height="397" frameX="0" frameY="-63" frameWidth="277" frameHeight="460"/>
+	<SubTexture name="foxy down0001" x="983" y="1084" width="277" height="397" frameX="0" frameY="-63" frameWidth="277" frameHeight="460"/>
+	<SubTexture name="foxy down0002" x="292" y="1067" width="260" height="458" frameX="-10" frameY="0" frameWidth="277" frameHeight="460"/>
+	<SubTexture name="foxy down0003" x="292" y="1067" width="260" height="458" frameX="-10" frameY="0" frameWidth="277" frameHeight="460"/>
+	<SubTexture name="foxy idel0000" x="731" y="1006" width="250" height="498" frameX="-44" frameY="-84" frameWidth="295" frameHeight="582"/>
+	<SubTexture name="foxy idel0001" x="731" y="1006" width="250" height="498" frameX="-44" frameY="-84" frameWidth="295" frameHeight="582"/>
+	<SubTexture name="foxy idel0002" x="1760" y="945" width="277" height="537" frameX="-18" frameY="-38" frameWidth="295" frameHeight="582"/>
+	<SubTexture name="foxy idel0003" x="1760" y="945" width="277" height="537" frameX="-18" frameY="-38" frameWidth="295" frameHeight="582"/>
+	<SubTexture name="foxy idel0004" x="1477" y="945" width="281" height="538" frameX="-5" frameY="-31" frameWidth="295" frameHeight="582"/>
+	<SubTexture name="foxy idel0005" x="1477" y="945" width="281" height="538" frameX="-5" frameY="-31" frameWidth="295" frameHeight="582"/>
+	<SubTexture name="foxy idel0006" x="1194" y="504" width="281" height="578" frameX="0" frameY="0" frameWidth="295" frameHeight="582"/>
+	<SubTexture name="foxy idel0007" x="1194" y="504" width="281" height="578" frameX="0" frameY="0" frameWidth="295" frameHeight="582"/>
+	<SubTexture name="foxy left0000" x="1613" y="496" width="365" height="447" frameX="0" frameY="-31" frameWidth="396" frameHeight="494"/>
+	<SubTexture name="foxy left0001" x="1613" y="496" width="365" height="447" frameX="0" frameY="-31" frameWidth="396" frameHeight="494"/>
+	<SubTexture name="foxy left0002" x="1613" y="0" width="350" height="494" frameX="-46" frameY="0" frameWidth="396" frameHeight="494"/>
+	<SubTexture name="foxy left0003" x="1613" y="0" width="350" height="494" frameX="-46" frameY="0" frameWidth="396" frameHeight="494"/>
+	<SubTexture name="foxy mock0000" x="862" y="485" width="330" height="519" frameX="0" frameY="-11" frameWidth="330" frameHeight="535"/>
+	<SubTexture name="foxy mock0001" x="862" y="485" width="330" height="519" frameX="0" frameY="-11" frameWidth="330" frameHeight="535"/>
+	<SubTexture name="foxy mock0002" x="0" y="563" width="290" height="532" frameX="-19" frameY="-3" frameWidth="330" frameHeight="535"/>
+	<SubTexture name="foxy mock0003" x="0" y="563" width="290" height="532" frameX="-19" frameY="-3" frameWidth="330" frameHeight="535"/>
+	<SubTexture name="foxy mock0004" x="436" y="536" width="293" height="529" frameX="-18" frameY="0" frameWidth="330" frameHeight="535"/>
+	<SubTexture name="foxy mock0005" x="436" y="536" width="293" height="529" frameX="-18" frameY="0" frameWidth="330" frameHeight="535"/>
+	<SubTexture name="foxy right0000" x="862" y="0" width="385" height="483" frameX="-21" frameY="-15" frameWidth="406" frameHeight="502"/>
+	<SubTexture name="foxy right0001" x="862" y="0" width="385" height="483" frameX="-21" frameY="-15" frameWidth="406" frameHeight="502"/>
+	<SubTexture name="foxy right0002" x="1249" y="0" width="362" height="502" frameX="0" frameY="0" frameWidth="406" frameHeight="502"/>
+	<SubTexture name="foxy right0003" x="1249" y="0" width="362" height="502" frameX="0" frameY="0" frameWidth="406" frameHeight="502"/>
+	<SubTexture name="foxy up0000" x="0" y="0" width="434" height="561" frameX="0" frameY="0" frameWidth="434" frameHeight="563"/>
+	<SubTexture name="foxy up0001" x="0" y="0" width="434" height="561" frameX="0" frameY="0" frameWidth="434" frameHeight="563"/>
+	<SubTexture name="foxy up0002" x="436" y="0" width="424" height="534" frameX="-6" frameY="-29" frameWidth="434" frameHeight="563"/>
+	<SubTexture name="foxy up0003" x="436" y="0" width="424" height="534" frameX="-6" frameY="-29" frameWidth="434" frameHeight="563"/>
+</TextureAtlas>

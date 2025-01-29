@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="minesweeper.png">
+	<!-- Created with my ass -->
+	<SubTexture name="tilereg0000" x="0" y="0" width="16" height="16"/>
+	<SubTexture name="tile0mines0000" x="16" y="0" width="16" height="16"/>
+	<SubTexture name="tileflagged0000" x="32" y="0" width="16" height="16"/>
+	<SubTexture name="tilemine0000" x="48" y="0" width="16" height="16"/>
+	<SubTexture name="tile1mines0000" x="0" y="16" width="16" height="16"/>
+	<SubTexture name="tile2mines0000" x="16" y="16" width="16" height="16"/>
+	<SubTexture name="tile3mines0000" x="32" y="16" width="16" height="16"/>
+	<SubTexture name="tile4mines0000" x="48" y="16" width="16" height="16"/>
+	<SubTexture name="tile5mines0000" x="0" y="32" width="16" height="16"/>
+	<SubTexture name="tile6mines0000" x="16" y="32" width="16" height="16"/>
+	<SubTexture name="tile7mines0000" x="32" y="32" width="16" height="16"/>
+	<SubTexture name="tile8mines0000" x="48" y="32" width="16" height="16"/>
+	<SubTexture name="tile9mines0000" x="0" y="48" width="16" height="16"/>
+	<SubTexture name="tilestart0000" x="16" y="48" width="16" height="16"/>
+	<SubTexture name="tileunsure0000" x="32" y="48" width="16" height="16"/>
+	<SubTexture name="tiletriggeredmine0000" x="48" y="48" width="16" height="16"/>
+	<SubTexture name="tilecorrectflag0000" x="0" y="64" width="16" height="16"/>
+	<SubTexture name="tilewrongflag0000" x="16" y="64" width="16" height="16"/>
+</TextureAtlas>

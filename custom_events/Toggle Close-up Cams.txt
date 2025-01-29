@@ -1,0 +1,3 @@
+Toggles the close-up cams used in Fuzzy Dice.
+Does not work anywhere else, since it's not
+meant for any other song.

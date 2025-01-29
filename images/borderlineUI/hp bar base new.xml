@@ -1,0 +1,161 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="hp bar base new.png">
+	<!-- Created with Adobe Animate version 23.0.1.70 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="bar base no planet0000" x="227" y="0" width="225" height="539" pivotX="-19.7" pivotY="-13.15" frameX="0" frameY="-2" frameWidth="225" frameHeight="541"/>
+	<SubTexture name="bar base no planet0001" x="227" y="0" width="225" height="539" frameX="0" frameY="-2" frameWidth="225" frameHeight="541"/>
+	<SubTexture name="bar base no planet0002" x="227" y="0" width="225" height="539" frameX="0" frameY="-2" frameWidth="225" frameHeight="541"/>
+	<SubTexture name="bar base no planet0003" x="227" y="0" width="225" height="539" frameX="0" frameY="-2" frameWidth="225" frameHeight="541"/>
+	<SubTexture name="bar base no planet0004" x="227" y="0" width="225" height="539" frameX="0" frameY="-2" frameWidth="225" frameHeight="541"/>
+	<SubTexture name="bar base no planet0005" x="227" y="0" width="225" height="539" frameX="0" frameY="-2" frameWidth="225" frameHeight="541"/>
+	<SubTexture name="bar base no planet0006" x="227" y="0" width="225" height="539" frameX="0" frameY="-2" frameWidth="225" frameHeight="541"/>
+	<SubTexture name="bar base no planet0007" x="227" y="0" width="225" height="539" frameX="0" frameY="-2" frameWidth="225" frameHeight="541"/>
+	<SubTexture name="bar base no planet0008" x="0" y="0" width="225" height="540" frameX="0" frameY="-1" frameWidth="225" frameHeight="541"/>
+	<SubTexture name="bar base no planet0009" x="0" y="0" width="225" height="540" frameX="0" frameY="-1" frameWidth="225" frameHeight="541"/>
+	<SubTexture name="bar base no planet0010" x="0" y="0" width="225" height="540" frameX="0" frameY="-1" frameWidth="225" frameHeight="541"/>
+	<SubTexture name="bar base no planet0011" x="0" y="0" width="225" height="540" frameX="0" frameY="-1" frameWidth="225" frameHeight="541"/>
+	<SubTexture name="bar base no planet0012" x="0" y="0" width="225" height="540" frameX="0" frameY="-1" frameWidth="225" frameHeight="541"/>
+	<SubTexture name="bar base no planet0013" x="0" y="0" width="225" height="540" frameX="0" frameY="-1" frameWidth="225" frameHeight="541"/>
+	<SubTexture name="bar base no planet0014" x="0" y="0" width="225" height="540" frameX="0" frameY="-1" frameWidth="225" frameHeight="541"/>
+	<SubTexture name="bar base no planet0015" x="0" y="0" width="225" height="540" frameX="0" frameY="-1" frameWidth="225" frameHeight="541"/>
+	<SubTexture name="bar base no planet0016" x="454" y="0" width="224" height="541" frameX="0" frameY="0" frameWidth="225" frameHeight="541"/>
+	<SubTexture name="bar base no planet0017" x="454" y="0" width="224" height="541" frameX="0" frameY="0" frameWidth="225" frameHeight="541"/>
+	<SubTexture name="bar base no planet0018" x="454" y="0" width="224" height="541" frameX="0" frameY="0" frameWidth="225" frameHeight="541"/>
+	<SubTexture name="bar base no planet0019" x="454" y="0" width="224" height="541" frameX="0" frameY="0" frameWidth="225" frameHeight="541"/>
+	<SubTexture name="bar base no planet0020" x="454" y="0" width="224" height="541" frameX="0" frameY="0" frameWidth="225" frameHeight="541"/>
+	<SubTexture name="bar base no planet0021" x="454" y="0" width="224" height="541" frameX="0" frameY="0" frameWidth="225" frameHeight="541"/>
+	<SubTexture name="bar base no planet0022" x="454" y="0" width="224" height="541" frameX="0" frameY="0" frameWidth="225" frameHeight="541"/>
+	<SubTexture name="bar base no planet0023" x="454" y="0" width="224" height="541" frameX="0" frameY="0" frameWidth="225" frameHeight="541"/>
+	<SubTexture name="bar fill dyeable0000" x="800" y="0" width="55" height="449" pivotX="1.65" pivotY="1.9" frameX="-1" frameY="-1" frameWidth="59" frameHeight="450"/>
+	<SubTexture name="bar fill dyeable0001" x="800" y="0" width="55" height="449" frameX="-1" frameY="-1" frameWidth="59" frameHeight="450"/>
+	<SubTexture name="bar fill dyeable0002" x="800" y="0" width="55" height="449" frameX="-1" frameY="-1" frameWidth="59" frameHeight="450"/>
+	<SubTexture name="bar fill dyeable0003" x="800" y="0" width="55" height="449" frameX="-1" frameY="-1" frameWidth="59" frameHeight="450"/>
+	<SubTexture name="bar fill dyeable0004" x="800" y="0" width="55" height="449" frameX="-1" frameY="-1" frameWidth="59" frameHeight="450"/>
+	<SubTexture name="bar fill dyeable0005" x="800" y="0" width="55" height="449" frameX="-1" frameY="-1" frameWidth="59" frameHeight="450"/>
+	<SubTexture name="bar fill dyeable0006" x="800" y="0" width="55" height="449" frameX="-1" frameY="-1" frameWidth="59" frameHeight="450"/>
+	<SubTexture name="bar fill dyeable0007" x="800" y="0" width="55" height="449" frameX="-1" frameY="-1" frameWidth="59" frameHeight="450"/>
+	<SubTexture name="bar fill dyeable0008" x="680" y="0" width="58" height="450" frameX="0" frameY="0" frameWidth="59" frameHeight="450"/>
+	<SubTexture name="bar fill dyeable0009" x="680" y="0" width="58" height="450" frameX="0" frameY="0" frameWidth="59" frameHeight="450"/>
+	<SubTexture name="bar fill dyeable0010" x="680" y="0" width="58" height="450" frameX="0" frameY="0" frameWidth="59" frameHeight="450"/>
+	<SubTexture name="bar fill dyeable0011" x="680" y="0" width="58" height="450" frameX="0" frameY="0" frameWidth="59" frameHeight="450"/>
+	<SubTexture name="bar fill dyeable0012" x="680" y="0" width="58" height="450" frameX="0" frameY="0" frameWidth="59" frameHeight="450"/>
+	<SubTexture name="bar fill dyeable0013" x="680" y="0" width="58" height="450" frameX="0" frameY="0" frameWidth="59" frameHeight="450"/>
+	<SubTexture name="bar fill dyeable0014" x="680" y="0" width="58" height="450" frameX="0" frameY="0" frameWidth="59" frameHeight="450"/>
+	<SubTexture name="bar fill dyeable0015" x="680" y="0" width="58" height="450" frameX="0" frameY="0" frameWidth="59" frameHeight="450"/>
+	<SubTexture name="bar fill dyeable0016" x="740" y="0" width="58" height="447" frameX="-1" frameY="-3" frameWidth="59" frameHeight="450"/>
+	<SubTexture name="bar fill dyeable0017" x="740" y="0" width="58" height="447" frameX="-1" frameY="-3" frameWidth="59" frameHeight="450"/>
+	<SubTexture name="bar fill dyeable0018" x="740" y="0" width="58" height="447" frameX="-1" frameY="-3" frameWidth="59" frameHeight="450"/>
+	<SubTexture name="bar fill dyeable0019" x="740" y="0" width="58" height="447" frameX="-1" frameY="-3" frameWidth="59" frameHeight="450"/>
+	<SubTexture name="bar fill dyeable0020" x="740" y="0" width="58" height="447" frameX="-1" frameY="-3" frameWidth="59" frameHeight="450"/>
+	<SubTexture name="bar fill dyeable0021" x="740" y="0" width="58" height="447" frameX="-1" frameY="-3" frameWidth="59" frameHeight="450"/>
+	<SubTexture name="bar fill dyeable0022" x="740" y="0" width="58" height="447" frameX="-1" frameY="-3" frameWidth="59" frameHeight="450"/>
+	<SubTexture name="bar fill dyeable0023" x="740" y="0" width="58" height="447" frameX="-1" frameY="-3" frameWidth="59" frameHeight="450"/>
+	<SubTexture name="ex pin doing x0000" x="680" y="538" width="97" height="58" pivotX="12.25" pivotY="14.1" frameX="0" frameY="-1" frameWidth="97" frameHeight="61"/>
+	<SubTexture name="ex pin doing x0001" x="680" y="538" width="97" height="58" frameX="0" frameY="-1" frameWidth="97" frameHeight="61"/>
+	<SubTexture name="ex pin doing x0002" x="0" y="594" width="88" height="42" frameX="-9" frameY="-11" frameWidth="97" frameHeight="61"/>
+	<SubTexture name="ex pin doing x0003" x="0" y="594" width="88" height="42" frameX="-9" frameY="-11" frameWidth="97" frameHeight="61"/>
+	<SubTexture name="ex pin doing x0004" x="0" y="542" width="91" height="50" frameX="-6" frameY="-6" frameWidth="97" frameHeight="61"/>
+	<SubTexture name="ex pin doing x0005" x="0" y="542" width="91" height="50" frameX="-6" frameY="-6" frameWidth="97" frameHeight="61"/>
+	<SubTexture name="ex pin doing x0006" x="918" y="535" width="95" height="61" frameX="-2" frameY="0" frameWidth="97" frameHeight="61"/>
+	<SubTexture name="ex pin doing x0007" x="918" y="535" width="95" height="61" frameX="-2" frameY="0" frameWidth="97" frameHeight="61"/>
+	<SubTexture name="ex pin doing x0008" x="502" y="543" width="90" height="50" frameX="-6" frameY="-6" frameWidth="97" frameHeight="61"/>
+	<SubTexture name="ex pin doing x0009" x="502" y="543" width="90" height="50" frameX="-6" frameY="-6" frameWidth="97" frameHeight="61"/>
+	<SubTexture name="ex pin doing x0010" x="227" y="541" width="90" height="52" frameX="-6" frameY="-4" frameWidth="97" frameHeight="61"/>
+	<SubTexture name="ex pin doing x0011" x="227" y="541" width="90" height="52" frameX="-6" frameY="-4" frameWidth="97" frameHeight="61"/>
+	<SubTexture name="ex pin done x0000" x="319" y="541" width="90" height="51" pivotX="7.75" pivotY="9.95" frameX="0" frameY="0" frameWidth="91" frameHeight="51"/>
+	<SubTexture name="ex pin done x0001" x="319" y="541" width="90" height="51" frameX="0" frameY="0" frameWidth="91" frameHeight="51"/>
+	<SubTexture name="ex pin done x0002" x="319" y="541" width="90" height="51" frameX="0" frameY="0" frameWidth="91" frameHeight="51"/>
+	<SubTexture name="ex pin done x0003" x="319" y="541" width="90" height="51" frameX="0" frameY="0" frameWidth="91" frameHeight="51"/>
+	<SubTexture name="ex pin done x0004" x="319" y="541" width="90" height="51" frameX="0" frameY="0" frameWidth="91" frameHeight="51"/>
+	<SubTexture name="ex pin done x0005" x="319" y="541" width="90" height="51" frameX="0" frameY="0" frameWidth="91" frameHeight="51"/>
+	<SubTexture name="ex pin done x0006" x="319" y="541" width="90" height="51" frameX="0" frameY="0" frameWidth="91" frameHeight="51"/>
+	<SubTexture name="ex pin done x0007" x="319" y="541" width="90" height="51" frameX="0" frameY="0" frameWidth="91" frameHeight="51"/>
+	<SubTexture name="ex pin done x0008" x="411" y="543" width="89" height="51" frameX="-2" frameY="0" frameWidth="91" frameHeight="51"/>
+	<SubTexture name="ex pin done x0009" x="411" y="543" width="89" height="51" frameX="-2" frameY="0" frameWidth="91" frameHeight="51"/>
+	<SubTexture name="ex pin done x0010" x="411" y="543" width="89" height="51" frameX="-2" frameY="0" frameWidth="91" frameHeight="51"/>
+	<SubTexture name="ex pin done x0011" x="411" y="543" width="89" height="51" frameX="-2" frameY="0" frameWidth="91" frameHeight="51"/>
+	<SubTexture name="ex pin done x0012" x="411" y="543" width="89" height="51" frameX="-2" frameY="0" frameWidth="91" frameHeight="51"/>
+	<SubTexture name="ex pin done x0013" x="411" y="543" width="89" height="51" frameX="-2" frameY="0" frameWidth="91" frameHeight="51"/>
+	<SubTexture name="ex pin done x0014" x="411" y="543" width="89" height="51" frameX="-2" frameY="0" frameWidth="91" frameHeight="51"/>
+	<SubTexture name="ex pin done x0015" x="411" y="543" width="89" height="51" frameX="-2" frameY="0" frameWidth="91" frameHeight="51"/>
+	<SubTexture name="ex pin done x0016" x="93" y="542" width="91" height="50" frameX="0" frameY="0" frameWidth="91" frameHeight="51"/>
+	<SubTexture name="ex pin done x0017" x="93" y="542" width="91" height="50" frameX="0" frameY="0" frameWidth="91" frameHeight="51"/>
+	<SubTexture name="ex pin done x0018" x="93" y="542" width="91" height="50" frameX="0" frameY="0" frameWidth="91" frameHeight="51"/>
+	<SubTexture name="ex pin done x0019" x="93" y="542" width="91" height="50" frameX="0" frameY="0" frameWidth="91" frameHeight="51"/>
+	<SubTexture name="ex pin done x0020" x="93" y="542" width="91" height="50" frameX="0" frameY="0" frameWidth="91" frameHeight="51"/>
+	<SubTexture name="ex pin done x0021" x="93" y="542" width="91" height="50" frameX="0" frameY="0" frameWidth="91" frameHeight="51"/>
+	<SubTexture name="ex pin done x0022" x="93" y="542" width="91" height="50" frameX="0" frameY="0" frameWidth="91" frameHeight="51"/>
+	<SubTexture name="ex pin done x0023" x="93" y="542" width="91" height="50" frameX="0" frameY="0" frameWidth="91" frameHeight="51"/>
+	<SubTexture name="hp bar back0000" x="906" y="0" width="46" height="446" pivotX="0" pivotY="0" frameX="0" frameY="0" frameWidth="47" frameHeight="446"/>
+	<SubTexture name="hp bar back0001" x="906" y="0" width="46" height="446" frameX="0" frameY="0" frameWidth="47" frameHeight="446"/>
+	<SubTexture name="hp bar back0002" x="906" y="0" width="46" height="446" frameX="0" frameY="0" frameWidth="47" frameHeight="446"/>
+	<SubTexture name="hp bar back0003" x="906" y="0" width="46" height="446" frameX="0" frameY="0" frameWidth="47" frameHeight="446"/>
+	<SubTexture name="hp bar back0004" x="906" y="0" width="46" height="446" frameX="0" frameY="0" frameWidth="47" frameHeight="446"/>
+	<SubTexture name="hp bar back0005" x="906" y="0" width="46" height="446" frameX="0" frameY="0" frameWidth="47" frameHeight="446"/>
+	<SubTexture name="hp bar back0006" x="906" y="0" width="46" height="446" frameX="0" frameY="0" frameWidth="47" frameHeight="446"/>
+	<SubTexture name="hp bar back0007" x="906" y="0" width="46" height="446" frameX="0" frameY="0" frameWidth="47" frameHeight="446"/>
+	<SubTexture name="hp bar back0008" x="954" y="0" width="46" height="446" frameX="0" frameY="0" frameWidth="47" frameHeight="446"/>
+	<SubTexture name="hp bar back0009" x="954" y="0" width="46" height="446" frameX="0" frameY="0" frameWidth="47" frameHeight="446"/>
+	<SubTexture name="hp bar back0010" x="954" y="0" width="46" height="446" frameX="0" frameY="0" frameWidth="47" frameHeight="446"/>
+	<SubTexture name="hp bar back0011" x="954" y="0" width="46" height="446" frameX="0" frameY="0" frameWidth="47" frameHeight="446"/>
+	<SubTexture name="hp bar back0012" x="954" y="0" width="46" height="446" frameX="0" frameY="0" frameWidth="47" frameHeight="446"/>
+	<SubTexture name="hp bar back0013" x="954" y="0" width="46" height="446" frameX="0" frameY="0" frameWidth="47" frameHeight="446"/>
+	<SubTexture name="hp bar back0014" x="954" y="0" width="46" height="446" frameX="0" frameY="0" frameWidth="47" frameHeight="446"/>
+	<SubTexture name="hp bar back0015" x="954" y="0" width="46" height="446" frameX="0" frameY="0" frameWidth="47" frameHeight="446"/>
+	<SubTexture name="hp bar back0016" x="857" y="0" width="47" height="446"/>
+	<SubTexture name="hp bar back0017" x="857" y="0" width="47" height="446"/>
+	<SubTexture name="hp bar back0018" x="857" y="0" width="47" height="446"/>
+	<SubTexture name="hp bar back0019" x="857" y="0" width="47" height="446"/>
+	<SubTexture name="hp bar back0020" x="857" y="0" width="47" height="446"/>
+	<SubTexture name="hp bar back0021" x="857" y="0" width="47" height="446"/>
+	<SubTexture name="hp bar back0022" x="857" y="0" width="47" height="446"/>
+	<SubTexture name="hp bar back0023" x="857" y="0" width="47" height="446"/>
+	<SubTexture name="pin no ex0000" x="90" y="594" width="83" height="38" pivotX="0" pivotY="0" frameX="0" frameY="0" frameWidth="84" frameHeight="39"/>
+	<SubTexture name="pin no ex0001" x="90" y="594" width="83" height="38" frameX="0" frameY="0" frameWidth="84" frameHeight="39"/>
+	<SubTexture name="pin no ex0002" x="90" y="594" width="83" height="38" frameX="0" frameY="0" frameWidth="84" frameHeight="39"/>
+	<SubTexture name="pin no ex0003" x="90" y="594" width="83" height="38" frameX="0" frameY="0" frameWidth="84" frameHeight="39"/>
+	<SubTexture name="pin no ex0004" x="90" y="594" width="83" height="38" frameX="0" frameY="0" frameWidth="84" frameHeight="39"/>
+	<SubTexture name="pin no ex0005" x="90" y="594" width="83" height="38" frameX="0" frameY="0" frameWidth="84" frameHeight="39"/>
+	<SubTexture name="pin no ex0006" x="90" y="594" width="83" height="38" frameX="0" frameY="0" frameWidth="84" frameHeight="39"/>
+	<SubTexture name="pin no ex0007" x="90" y="594" width="83" height="38" frameX="0" frameY="0" frameWidth="84" frameHeight="39"/>
+	<SubTexture name="pin no ex0008" x="594" y="543" width="84" height="39"/>
+	<SubTexture name="pin no ex0009" x="594" y="543" width="84" height="39"/>
+	<SubTexture name="pin no ex0010" x="594" y="543" width="84" height="39"/>
+	<SubTexture name="pin no ex0011" x="594" y="543" width="84" height="39"/>
+	<SubTexture name="pin no ex0012" x="594" y="543" width="84" height="39"/>
+	<SubTexture name="pin no ex0013" x="594" y="543" width="84" height="39"/>
+	<SubTexture name="pin no ex0014" x="594" y="543" width="84" height="39"/>
+	<SubTexture name="pin no ex0015" x="594" y="543" width="84" height="39"/>
+	<SubTexture name="pin no ex0016" x="594" y="584" width="84" height="39"/>
+	<SubTexture name="pin no ex0017" x="594" y="584" width="84" height="39"/>
+	<SubTexture name="pin no ex0018" x="594" y="584" width="84" height="39"/>
+	<SubTexture name="pin no ex0019" x="594" y="584" width="84" height="39"/>
+	<SubTexture name="pin no ex0020" x="594" y="584" width="84" height="39"/>
+	<SubTexture name="pin no ex0021" x="594" y="584" width="84" height="39"/>
+	<SubTexture name="pin no ex0022" x="594" y="584" width="84" height="39"/>
+	<SubTexture name="pin no ex0023" x="594" y="584" width="84" height="39"/>
+	<SubTexture name="planet bar0000" x="857" y="448" width="87" height="85" pivotX="1.05" pivotY="0" frameX="-1" frameY="0" frameWidth="88" frameHeight="85"/>
+	<SubTexture name="planet bar0001" x="857" y="448" width="87" height="85" frameX="-1" frameY="0" frameWidth="88" frameHeight="85"/>
+	<SubTexture name="planet bar0002" x="857" y="448" width="87" height="85" frameX="-1" frameY="0" frameWidth="88" frameHeight="85"/>
+	<SubTexture name="planet bar0003" x="857" y="448" width="87" height="85" frameX="-1" frameY="0" frameWidth="88" frameHeight="85"/>
+	<SubTexture name="planet bar0004" x="857" y="448" width="87" height="85" frameX="-1" frameY="0" frameWidth="88" frameHeight="85"/>
+	<SubTexture name="planet bar0005" x="857" y="448" width="87" height="85" frameX="-1" frameY="0" frameWidth="88" frameHeight="85"/>
+	<SubTexture name="planet bar0006" x="857" y="448" width="87" height="85" frameX="-1" frameY="0" frameWidth="88" frameHeight="85"/>
+	<SubTexture name="planet bar0007" x="857" y="448" width="87" height="85" frameX="-1" frameY="0" frameWidth="88" frameHeight="85"/>
+	<SubTexture name="planet bar0008" x="740" y="451" width="86" height="85" frameX="-1" frameY="0" frameWidth="88" frameHeight="85"/>
+	<SubTexture name="planet bar0009" x="740" y="451" width="86" height="85" frameX="-1" frameY="0" frameWidth="88" frameHeight="85"/>
+	<SubTexture name="planet bar0010" x="740" y="451" width="86" height="85" frameX="-1" frameY="0" frameWidth="88" frameHeight="85"/>
+	<SubTexture name="planet bar0011" x="740" y="451" width="86" height="85" frameX="-1" frameY="0" frameWidth="88" frameHeight="85"/>
+	<SubTexture name="planet bar0012" x="740" y="451" width="86" height="85" frameX="-1" frameY="0" frameWidth="88" frameHeight="85"/>
+	<SubTexture name="planet bar0013" x="740" y="451" width="86" height="85" frameX="-1" frameY="0" frameWidth="88" frameHeight="85"/>
+	<SubTexture name="planet bar0014" x="740" y="451" width="86" height="85" frameX="-1" frameY="0" frameWidth="88" frameHeight="85"/>
+	<SubTexture name="planet bar0015" x="740" y="451" width="86" height="85" frameX="-1" frameY="0" frameWidth="88" frameHeight="85"/>
+	<SubTexture name="planet bar0016" x="828" y="535" width="88" height="82" frameX="0" frameY="-1" frameWidth="88" frameHeight="85"/>
+	<SubTexture name="planet bar0017" x="828" y="535" width="88" height="82" frameX="0" frameY="-1" frameWidth="88" frameHeight="85"/>
+	<SubTexture name="planet bar0018" x="828" y="535" width="88" height="82" frameX="0" frameY="-1" frameWidth="88" frameHeight="85"/>
+	<SubTexture name="planet bar0019" x="828" y="535" width="88" height="82" frameX="0" frameY="-1" frameWidth="88" frameHeight="85"/>
+	<SubTexture name="planet bar0020" x="828" y="535" width="88" height="82" frameX="0" frameY="-1" frameWidth="88" frameHeight="85"/>
+	<SubTexture name="planet bar0021" x="828" y="535" width="88" height="82" frameX="0" frameY="-1" frameWidth="88" frameHeight="85"/>
+	<SubTexture name="planet bar0022" x="828" y="535" width="88" height="82" frameX="0" frameY="-1" frameWidth="88" frameHeight="85"/>
+	<SubTexture name="planet bar0023" x="828" y="535" width="88" height="82" frameX="0" frameY="-1" frameWidth="88" frameHeight="85"/>
+</TextureAtlas>

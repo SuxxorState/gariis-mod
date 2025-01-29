@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="rom-byte.png">
+	<!-- yeah the font's name is called rom byte -->
+	<SubTexture name="space 0000" x="0" y="24" width="8" height="8"/>
+	<SubTexture name="zero 0000" x="0" y="0" width="8" height="8"/>
+	<SubTexture name="one 0000" x="8" y="0" width="8" height="8"/>
+	<SubTexture name="two 0000" x="16" y="0" width="8" height="8"/>
+	<SubTexture name="three 0000" x="24" y="0" width="8" height="8"/>
+	<SubTexture name="four 0000" x="32" y="0" width="8" height="8"/>
+	<SubTexture name="five 0000" x="40" y="0" width="8" height="8"/>
+	<SubTexture name="six 0000" x="48" y="0" width="8" height="8"/>
+	<SubTexture name="seven 0000" x="56" y="0" width="8" height="8"/>
+	<SubTexture name="eight 0000" x="64" y="0" width="8" height="8"/>
+	<SubTexture name="nine 0000" x="72" y="0" width="8" height="8"/>
+	<SubTexture name="minus 0000" x="80" y="0" width="8" height="8"/>
+	<SubTexture name="/ 0000" x="88" y="0" width="8" height="8"/>
+	<SubTexture name="exclamation 0000" x="96" y="0" width="8" height="8"/>
+	<SubTexture name="' 0000" x="104" y="0" width="8" height="8"/>
+	<SubTexture name="quotations 0000" x="112" y="0" width="8" height="8"/>	
+	
+	<SubTexture name="period 0000" x="88" y="16" width="8" height="8"/>
+	<SubTexture name="colon 0000" x="96" y="16" width="8" height="8"/>
+	<SubTexture name="pointer 0000" x="104" y="16" width="8" height="8"/>
+	<SubTexture name="gariiright 0000" x="112" y="16" width="8" height="8"/>
+
+	<SubTexture name="A 0000" x="0" y="8" width="8" height="8"/>
+	<SubTexture name="B 0000" x="8" y="8" width="8" height="8"/>
+	<SubTexture name="C 0000" x="16" y="8" width="8" height="8"/>
+	<SubTexture name="D 0000" x="24" y="8" width="8" height="8"/>
+	<SubTexture name="E 0000" x="32" y="8" width="8" height="8"/>
+	<SubTexture name="F 0000" x="40" y="8" width="8" height="8"/>
+	<SubTexture name="G 0000" x="48" y="8" width="8" height="8"/>
+	<SubTexture name="H 0000" x="56" y="8" width="8" height="8"/>
+	<SubTexture name="I 0000" x="64" y="8" width="8" height="8"/>
+	<SubTexture name="J 0000" x="72" y="8" width="8" height="8"/>
+	<SubTexture name="K 0000" x="80" y="8" width="8" height="8"/>
+	<SubTexture name="L 0000" x="88" y="8" width="8" height="8"/>
+	<SubTexture name="M 0000" x="96" y="8" width="8" height="8"/>
+	<SubTexture name="N 0000" x="104" y="8" width="8" height="8"/>
+	<SubTexture name="O 0000" x="112" y="8" width="8" height="8"/>
+	<SubTexture name="P 0000" x="0" y="16" width="8" height="8"/>
+	<SubTexture name="Q 0000" x="8" y="16" width="8" height="8"/>
+	<SubTexture name="R 0000" x="16" y="16" width="8" height="8"/>
+	<SubTexture name="S 0000" x="24" y="16" width="8" height="8"/>
+	<SubTexture name="T 0000" x="32" y="16" width="8" height="8"/>
+	<SubTexture name="U 0000" x="40" y="16" width="8" height="8"/>
+	<SubTexture name="V 0000" x="48" y="16" width="8" height="8"/>
+	<SubTexture name="W 0000" x="56" y="16" width="8" height="8"/>
+	<SubTexture name="X 0000" x="64" y="16" width="8" height="8"/>
+	<SubTexture name="Y 0000" x="72" y="16" width="8" height="8"/>
+	<SubTexture name="Z 0000" x="80" y="16" width="8" height="8"/>
+	
+	<SubTexture name="a 0000" x="0" y="8" width="8" height="8"/>
+	<SubTexture name="b 0000" x="8" y="8" width="8" height="8"/>
+	<SubTexture name="c 0000" x="16" y="8" width="8" height="8"/>
+	<SubTexture name="d 0000" x="24" y="8" width="8" height="8"/>
+	<SubTexture name="e 0000" x="32" y="8" width="8" height="8"/>
+	<SubTexture name="f 0000" x="40" y="8" width="8" height="8"/>
+	<SubTexture name="g 0000" x="48" y="8" width="8" height="8"/>
+	<SubTexture name="h 0000" x="56" y="8" width="8" height="8"/>
+	<SubTexture name="i 0000" x="64" y="8" width="8" height="8"/>
+	<SubTexture name="j 0000" x="72" y="8" width="8" height="8"/>
+	<SubTexture name="k 0000" x="80" y="8" width="8" height="8"/>
+	<SubTexture name="l 0000" x="88" y="8" width="8" height="8"/>
+	<SubTexture name="m 0000" x="96" y="8" width="8" height="8"/>
+	<SubTexture name="n 0000" x="104" y="8" width="8" height="8"/>
+	<SubTexture name="o 0000" x="112" y="8" width="8" height="8"/>
+	<SubTexture name="p 0000" x="0" y="16" width="8" height="8"/>
+	<SubTexture name="q 0000" x="8" y="16" width="8" height="8"/>
+	<SubTexture name="r 0000" x="16" y="16" width="8" height="8"/>
+	<SubTexture name="s 0000" x="24" y="16" width="8" height="8"/>
+	<SubTexture name="t 0000" x="32" y="16" width="8" height="8"/>
+	<SubTexture name="u 0000" x="40" y="16" width="8" height="8"/>
+	<SubTexture name="v 0000" x="48" y="16" width="8" height="8"/>
+	<SubTexture name="w 0000" x="56" y="16" width="8" height="8"/>
+	<SubTexture name="x 0000" x="64" y="16" width="8" height="8"/>
+	<SubTexture name="y 0000" x="72" y="16" width="8" height="8"/>
+	<SubTexture name="z 0000" x="80" y="16" width="8" height="8"/>
+</TextureAtlas>

@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="gamesnobacon.png">
+	<!-- Created with PINGAS -->
+	<SubTexture name="blackjack0000" x="0" y="0" width="250" height="250"/>
+	<SubTexture name="picture-poker0000" x="250" y="0" width="250" height="250"/>
+</TextureAtlas>

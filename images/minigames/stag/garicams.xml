@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Created with Funkin Packer v0.1.3 https://neeeoo.github.io/funkin-packer/
+-->
+<TextureAtlas imagePath="garicams.png" width="1455" height="1415">
+	<SubTexture name="gar cam1alt" x="1299" y="701" width="144" height="288" frameX="-1" frameY="-0" frameWidth="145" frameHeight="288"/>
+	<SubTexture name="garcam5alt" x="852" y="363" width="258" height="444" frameX="-0" frameY="-0" frameWidth="258" frameHeight="444"/>
+	<SubTexture name="gari by2" x="1282" y="0" width="150" height="225" frameX="-0" frameY="-1" frameWidth="150" frameHeight="226"/>
+	<SubTexture name="gari bz3" x="0" y="595" width="422" height="501" frameX="-0" frameY="-0" frameWidth="422" frameHeight="501"/>
+	<SubTexture name="gari cam8" x="0" y="0" width="443" height="593" frameX="-0" frameY="-0" frameWidth="443" frameHeight="593"/>
+	<SubTexture name="gari cz1" x="424" y="713" width="426" height="380" rotated="true" frameX="-0" frameY="-0" frameWidth="380" frameHeight="426"/>
+	<SubTexture name="gari-1" x="1144" y="701" width="153" height="375" frameX="-0" frameY="-0" frameWidth="153" frameHeight="375"/>
+	<SubTexture name="gari-2" x="771" y="0" width="355" height="361" frameX="-0" frameY="-0" frameWidth="355" frameHeight="361"/>
+	<SubTexture name="gari-3" x="1097" y="1377" width="346" height="32" rotated="true" frameX="-0" frameY="-0" frameWidth="32" frameHeight="346"/>
+	<SubTexture name="gari-4" x="0" y="1315" width="401" height="100" frameX="-0" frameY="-0" frameWidth="401" frameHeight="100"/>
+	<SubTexture name="gari-5" x="1128" y="0" width="152" height="359" frameX="-0" frameY="-0" frameWidth="152" frameHeight="359"/>
+	<SubTexture name="gari-6" x="0" y="1098" width="386" height="215" rotated="true" frameX="-0" frameY="-0" frameWidth="215" frameHeight="389"/>
+	<SubTexture name="gari-7" x="424" y="1095" width="375" height="237" rotated="true" frameX="-0" frameY="-0" frameWidth="237" frameHeight="375"/>
+	<SubTexture name="gari1" x="1112" y="363" width="195" height="336" frameX="-0" frameY="-0" frameWidth="196" frameHeight="337"/>
+	<SubTexture name="gari2" x="852" y="809" width="290" height="333" frameX="-0" frameY="-1" frameWidth="291" frameHeight="334"/>
+	<SubTexture name="gari3" x="445" y="0" width="324" height="711" rotated="true" frameX="-0" frameY="-0" frameWidth="711" frameHeight="324"/>
+	<SubTexture name="gari4" x="801" y="1144" width="294" height="232" rotated="true" frameX="-0" frameY="-0" frameWidth="232" frameHeight="294"/>
+	<SubTexture name="gari5" x="1322" y="991" width="133" height="254" frameX="-0" frameY="-0" frameWidth="133" frameHeight="254"/>
+	<SubTexture name="gari6" x="1144" y="1078" width="176" height="297" frameX="-0" frameY="-0" frameWidth="177" frameHeight="297"/>
+	<SubTexture name="gari7" x="1309" y="227" width="146" height="196" frameX="-1" frameY="-0" frameWidth="147" frameHeight="196"/>
+</TextureAtlas>

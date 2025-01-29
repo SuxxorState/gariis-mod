@@ -1,0 +1,14 @@
+{
+"storyName": "Roadblock Ruckus",
+"difficulties": "‿",
+"hideFreeplay": false,
+"weekBackground": "orange",
+"freeplayColor": [146,113,253],
+"weekBefore": "tutorial",
+"startUnlocked": true,
+"weekCharacters": ["garii", "bftrans", "gftrans"],
+"songs": [["Fuzzy Dice", "garfree", [177, 82, 82]], ["Full House", "goonsfree", [67,66,83]]],
+"hideStoryMode": false,
+"weekName": "Episode ][",
+"hiddenUntilUnlocked": false
+}

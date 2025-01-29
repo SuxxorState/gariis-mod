@@ -1,0 +1,69 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "idle",
+			"loop": false,
+			"name": "potato atlas"
+		},
+		{
+			"offsets": [
+				-17,
+				0
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "cheer",
+			"loop": false,
+			"name": "atlas sick react"
+		},
+		{
+			"offsets": [
+				-30,
+				0
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "sad",
+			"loop": false,
+			"name": "atlas shit react"
+		},
+		{
+			"offsets": [
+				-48,
+				0
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "meh",
+			"loop": false,
+			"name": "atlas bad react"
+		}
+	],
+	"vocals_file": "",
+	"no_antialiasing": false,
+	"image": "characters/potato-atlas",
+	"position": [
+		0,
+		200
+	],
+	"healthicon": "truckgf",
+	"flip_x": false,
+	"healthbar_colors": [
+		197,
+		82,
+		82
+	],
+	"camera_position": [
+		-130,
+		60
+	],
+	"sing_duration": 4,
+	"scale": 1,
+	"_editor_isPlayer": false
+}

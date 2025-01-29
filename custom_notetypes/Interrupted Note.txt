@@ -1,0 +1,7 @@
+texture = "borderlineUI/NOTE_assets-awesomeinterrupt"
+ignoreNote = true
+lowPriority = true
+hitCausesMiss = true
+noteSplashData.disabled = true
+missHealth = 0.05
+hitHealth = 0

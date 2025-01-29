@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="hudnums.png">
+	<!-- Created with Adobe Animate version 23.0.1.70 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="bar fill0000" x="0" y="46" width="442" height="46" pivotX="0" pivotY="0"/>
+	<SubTexture name="brokenheart10000" x="126" y="94" width="51" height="54" pivotX="4" pivotY="0" frameX="-4" frameY="0" frameWidth="59" frameHeight="54"/>
+	<SubTexture name="brokenheart10001" x="126" y="94" width="51" height="54" frameX="-4" frameY="0" frameWidth="59" frameHeight="54"/>
+	<SubTexture name="brokenheart10002" x="444" y="46" width="59" height="54"/>
+	<SubTexture name="brokenheart10003" x="444" y="46" width="59" height="54"/>
+	<SubTexture name="brokenheart20000" x="232" y="94" width="55" height="50" pivotX="3.9" pivotY="0" frameX="-3" frameY="0" frameWidth="63" frameHeight="50"/>
+	<SubTexture name="brokenheart20001" x="232" y="94" width="55" height="50" frameX="-3" frameY="0" frameWidth="63" frameHeight="50"/>
+	<SubTexture name="brokenheart20002" x="0" y="94" width="63" height="50"/>
+	<SubTexture name="brokenheart20003" x="0" y="94" width="63" height="50"/>
+	<SubTexture name="brokenheart30000" x="404" y="102" width="51" height="48" pivotX="4" pivotY="0" frameX="-4" frameY="0" frameWidth="59" frameHeight="48"/>
+	<SubTexture name="brokenheart30001" x="404" y="102" width="51" height="48" frameX="-4" frameY="0" frameWidth="59" frameHeight="48"/>
+	<SubTexture name="brokenheart30002" x="65" y="94" width="59" height="48"/>
+	<SubTexture name="brokenheart30003" x="65" y="94" width="59" height="48"/>
+	<SubTexture name="brokenheart40000" x="65" y="144" width="47" height="46" pivotX="4" pivotY="0" frameX="-4" frameY="0" frameWidth="56" frameHeight="47"/>
+	<SubTexture name="brokenheart40001" x="65" y="144" width="47" height="46" frameX="-4" frameY="0" frameWidth="56" frameHeight="47"/>
+	<SubTexture name="brokenheart40002" x="346" y="94" width="56" height="47"/>
+	<SubTexture name="brokenheart40003" x="346" y="94" width="56" height="47"/>
+	<SubTexture name="brokenheart50000" x="232" y="146" width="41" height="47" pivotX="4" pivotY="0" frameX="-4" frameY="0" frameWidth="49" frameHeight="47"/>
+	<SubTexture name="brokenheart50001" x="232" y="146" width="41" height="47" frameX="-4" frameY="0" frameWidth="49" frameHeight="47"/>
+	<SubTexture name="brokenheart50002" x="346" y="143" width="49" height="46" frameX="0" frameY="0" frameWidth="49" frameHeight="47"/>
+	<SubTexture name="brokenheart50003" x="346" y="143" width="49" height="46" frameX="0" frameY="0" frameWidth="49" frameHeight="47"/>
+	<SubTexture name="heart10000" x="179" y="94" width="51" height="54" pivotX="0" pivotY="0"/>
+	<SubTexture name="heart20000" x="289" y="94" width="55" height="50" pivotX="0" pivotY="0"/>
+	<SubTexture name="heart30000" x="457" y="102" width="51" height="48" pivotX="0" pivotY="0"/>
+	<SubTexture name="heart40000" x="0" y="146" width="47" height="46" pivotX="0" pivotY="0"/>
+	<SubTexture name="heart50000" x="275" y="146" width="41" height="47" pivotX="0" pivotY="0"/>
+	<SubTexture name="hp bar0000" x="0" y="0" width="469" height="44" pivotX="5" pivotY="5"/>
+</TextureAtlas>

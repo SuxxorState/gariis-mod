@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="gariipoints.png">
+	<!-- Created with my ass -->
+	<SubTexture name="desel0000" x="21" y="0" width="20" height="20"/>
+	<SubTexture name="sel0000" x="0" y="0" width="20" height="20"/>
+</TextureAtlas>

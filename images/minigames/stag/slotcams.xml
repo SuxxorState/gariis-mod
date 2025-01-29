@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Created with Funkin Packer v0.1.3 https://neeeoo.github.io/funkin-packer/
+-->
+<TextureAtlas imagePath="slotcams.png" width="373" height="993">
+	<SubTexture name="slot1" x="170" y="672" width="127" height="187" frameX="-0" frameY="-0" frameWidth="127" frameHeight="187"/>
+	<SubTexture name="slot2" x="0" y="0" width="203" height="393" frameX="-0" frameY="-0" frameWidth="203" frameHeight="393"/>
+	<SubTexture name="slot3" x="205" y="0" width="168" height="359" frameX="-0" frameY="-0" frameWidth="168" frameHeight="359"/>
+	<SubTexture name="slot4" x="0" y="870" width="235" height="123" frameX="-0" frameY="-0" frameWidth="235" frameHeight="123"/>
+	<SubTexture name="slot5" x="274" y="361" width="37" height="269" frameX="-0" frameY="-0" frameWidth="37" frameHeight="269"/>
+	<SubTexture name="slot6" x="0" y="395" width="272" height="275" frameX="-0" frameY="-0" frameWidth="272" frameHeight="275"/>
+	<SubTexture name="slot7" x="0" y="672" width="168" height="196" frameX="-0" frameY="-0" frameWidth="168" frameHeight="196"/>
+</TextureAtlas>

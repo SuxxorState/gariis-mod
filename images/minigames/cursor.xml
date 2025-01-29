@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="cursor.png">
+	<!-- Created with Adobe Animate version 23.0.1.70 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="cursorbad0000" x="0" y="204" width="32" height="32" pivotX="0" pivotY="0"/>
+	<SubTexture name="cursorbad0001" x="0" y="204" width="32" height="32"/>
+	<SubTexture name="cursorbad0002" x="0" y="204" width="32" height="32"/>
+	<SubTexture name="cursorbad0003" x="0" y="204" width="32" height="32"/>
+	<SubTexture name="cursorbad0004" x="0" y="204" width="32" height="32"/>
+	<SubTexture name="cursorbad0005" x="0" y="204" width="32" height="32"/>
+	<SubTexture name="cursorbad0006" x="34" y="0" width="32" height="32"/>
+	<SubTexture name="cursorbad0007" x="34" y="0" width="32" height="32"/>
+	<SubTexture name="cursorbad0008" x="34" y="0" width="32" height="32"/>
+	<SubTexture name="cursorbad0009" x="34" y="0" width="32" height="32"/>
+	<SubTexture name="cursorbad0010" x="34" y="0" width="32" height="32"/>
+	<SubTexture name="cursorbad0011" x="34" y="0" width="32" height="32"/>
+	<SubTexture name="cursorclickhold0000" x="34" y="68" width="32" height="32" pivotX="0" pivotY="0"/>
+	<SubTexture name="cursorclickhold0001" x="34" y="68" width="32" height="32"/>
+	<SubTexture name="cursorclickhold0002" x="34" y="68" width="32" height="32"/>
+	<SubTexture name="cursorclickhold0003" x="34" y="68" width="32" height="32"/>
+	<SubTexture name="cursorclickhold0004" x="34" y="68" width="32" height="32"/>
+	<SubTexture name="cursorclickhold0005" x="34" y="68" width="32" height="32"/>
+	<SubTexture name="cursorclickhold0006" x="34" y="102" width="32" height="32"/>
+	<SubTexture name="cursorclickhold0007" x="34" y="102" width="32" height="32"/>
+	<SubTexture name="cursorclickhold0008" x="34" y="102" width="32" height="32"/>
+	<SubTexture name="cursorclickhold0009" x="34" y="102" width="32" height="32"/>
+	<SubTexture name="cursorclickhold0010" x="34" y="102" width="32" height="32"/>
+	<SubTexture name="cursorclickhold0011" x="34" y="102" width="32" height="32"/>
+	<SubTexture name="cursorclickstart0000" x="34" y="34" width="32" height="32" pivotX="0" pivotY="0"/>
+	<SubTexture name="cursorclickstart0001" x="34" y="34" width="32" height="32"/>
+	<SubTexture name="cursorclickstart0002" x="34" y="34" width="32" height="32"/>
+	<SubTexture name="cursorclickstart0003" x="34" y="68" width="32" height="32"/>
+	<SubTexture name="cursorclickstart0004" x="34" y="68" width="32" height="32"/>
+	<SubTexture name="cursorclickstart0005" x="34" y="68" width="32" height="32"/>
+	<SubTexture name="cursorclickstart0006" x="34" y="68" width="32" height="32"/>
+	<SubTexture name="cursorclickstart0007" x="34" y="68" width="32" height="32"/>
+	<SubTexture name="cursorclickstart0008" x="34" y="68" width="32" height="32"/>
+	<SubTexture name="cursorclickstart0009" x="34" y="102" width="32" height="32"/>
+	<SubTexture name="cursorclickstart0010" x="34" y="102" width="32" height="32"/>
+	<SubTexture name="cursorclickstart0011" x="34" y="102" width="32" height="32"/>
+	<SubTexture name="cursorclickstart0012" x="34" y="102" width="32" height="32"/>
+	<SubTexture name="cursorclickstart0013" x="34" y="102" width="32" height="32"/>
+	<SubTexture name="cursorclickstart0014" x="34" y="102" width="32" height="32"/>
+	<SubTexture name="cursorenter0000" x="0" y="68" width="32" height="32" pivotX="0" pivotY="0"/>
+	<SubTexture name="cursorenter0001" x="0" y="68" width="32" height="32"/>
+	<SubTexture name="cursorenter0002" x="0" y="68" width="32" height="32"/>
+	<SubTexture name="cursorenter0003" x="0" y="68" width="32" height="32"/>
+	<SubTexture name="cursorenter0004" x="0" y="68" width="32" height="32"/>
+	<SubTexture name="cursorenter0005" x="0" y="68" width="32" height="32"/>
+	<SubTexture name="cursorenter0006" x="0" y="102" width="32" height="32"/>
+	<SubTexture name="cursorenter0007" x="0" y="102" width="32" height="32"/>
+	<SubTexture name="cursorenter0008" x="0" y="102" width="32" height="32"/>
+	<SubTexture name="cursorenter0009" x="0" y="102" width="32" height="32"/>
+	<SubTexture name="cursorenter0010" x="0" y="102" width="32" height="32"/>
+	<SubTexture name="cursorenter0011" x="0" y="102" width="32" height="32"/>
+	<SubTexture name="cursorgood0000" x="0" y="136" width="32" height="32" pivotX="0" pivotY="0"/>
+	<SubTexture name="cursorgood0001" x="0" y="136" width="32" height="32"/>
+	<SubTexture name="cursorgood0002" x="0" y="136" width="32" height="32"/>
+	<SubTexture name="cursorgood0003" x="0" y="136" width="32" height="32"/>
+	<SubTexture name="cursorgood0004" x="0" y="136" width="32" height="32"/>
+	<SubTexture name="cursorgood0005" x="0" y="136" width="32" height="32"/>
+	<SubTexture name="cursorgood0006" x="0" y="170" width="32" height="32"/>
+	<SubTexture name="cursorgood0007" x="0" y="170" width="32" height="32"/>
+	<SubTexture name="cursorgood0008" x="0" y="170" width="32" height="32"/>
+	<SubTexture name="cursorgood0009" x="0" y="170" width="32" height="32"/>
+	<SubTexture name="cursorgood0010" x="0" y="170" width="32" height="32"/>
+	<SubTexture name="cursorgood0011" x="0" y="170" width="32" height="32"/>
+	<SubTexture name="cursoridle0000" x="0" y="0" width="32" height="32" pivotX="0" pivotY="0"/>
+	<SubTexture name="cursoridle0001" x="0" y="0" width="32" height="32"/>
+	<SubTexture name="cursoridle0002" x="0" y="0" width="32" height="32"/>
+	<SubTexture name="cursoridle0003" x="0" y="0" width="32" height="32"/>
+	<SubTexture name="cursoridle0004" x="0" y="0" width="32" height="32"/>
+	<SubTexture name="cursoridle0005" x="0" y="0" width="32" height="32"/>
+	<SubTexture name="cursoridle0006" x="0" y="34" width="32" height="32"/>
+	<SubTexture name="cursoridle0007" x="0" y="34" width="32" height="32"/>
+	<SubTexture name="cursoridle0008" x="0" y="34" width="32" height="32"/>
+	<SubTexture name="cursoridle0009" x="0" y="34" width="32" height="32"/>
+	<SubTexture name="cursoridle0010" x="0" y="34" width="32" height="32"/>
+	<SubTexture name="cursoridle0011" x="0" y="34" width="32" height="32"/>
+</TextureAtlas>

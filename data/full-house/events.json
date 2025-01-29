@@ -1,0 +1,471 @@
+{
+	"song": {
+		"events": [
+			[
+				16386.5546218487,
+				[
+					[
+						"Change Character",
+						"bf",
+						"truckerboy-kissed"
+					]
+				]
+			],
+			[
+				18025.2100840336,
+				[
+					[
+						"Extra Char Alt Idle",
+						"hunte",
+						"-nomic-alt"
+					]
+				]
+			],
+			[
+				25966.3865546218,
+				[
+					[
+						"Alt Idle Animation",
+						"dad",
+						"-alt"
+					]
+				]
+			],
+			[
+				26092.4369747899,
+				[
+					[
+						"Extra Char Alt Anims",
+						"hunte",
+						"-nomic"
+					]
+				]
+			],
+			[
+				34033.6134453781,
+				[
+					[
+						"Alt Idle Animation",
+						"dad",
+						""
+					],
+					[
+						"Extra Char Alt Idle",
+						"hunte",
+						"-nomic"
+					],
+					[
+						"Alt Idle Animation",
+						"gf",
+						"-alt"
+					]
+				]
+			],
+			[
+				34285.7142857143,
+				[
+					[
+						"Extra Char Alt Anims",
+						"hunte",
+						""
+					]
+				]
+			],
+			[
+				41848.7394957983,
+				[
+					[
+						"Alt Idle Animation",
+						"bf",
+						"-alt"
+					]
+				]
+			],
+			[
+				50168.0672268908,
+				[
+					[
+						"Alt Idle Animation",
+						"bf",
+						""
+					],
+					[
+						"Extra Char Alt Idle",
+						"hunte",
+						"-nomic-alt"
+					],
+					[
+						"Alt Idle Animation",
+						"gf",
+						""
+					]
+				]
+			],
+			[
+				50420.1680672269,
+				[
+					[
+						"Advance Anger",
+						"true",
+						"2"
+					]
+				]
+			],
+			[
+				52184.8739495799,
+				[
+					[
+						"Extra Char Alt Idle",
+						"hunte",
+						"-nomic"
+					],
+					[
+						"Alt Idle Animation",
+						"gf",
+						"-alt"
+					]
+				]
+			],
+			[
+				54201.6806722689,
+				[
+					[
+						"Alt Idle Animation",
+						"dad",
+						"-nomic-alt"
+					],
+					[
+						"Alt Idle Animation",
+						"gf",
+						""
+					],
+					[
+						"Extra Char Alt Idle",
+						"hunte",
+						""
+					]
+				]
+			],
+			[
+				56218.487394958,
+				[
+					[
+						"Alt Idle Animation",
+						"bf",
+						"-alt"
+					],
+					[
+						"Alt Idle Animation",
+						"dad",
+						"-nomic"
+					]
+				]
+			],
+			[
+				58235.2941176471,
+				[
+					[
+						"Alt Idle Animation",
+						"bf",
+						""
+					],
+					[
+						"Extra Char Alt Idle",
+						"hunte",
+						"-nomic-alt"
+					],
+					[
+						"Alt Idle Animation",
+						"dad",
+						""
+					]
+				]
+			],
+			[
+				58487.3949579832,
+				[
+					[
+						"Advance Anger",
+						"",
+						"1"
+					]
+				]
+			],
+			[
+				62268.9075630252,
+				[
+					[
+						"Alt Idle Animation",
+						"dad",
+						"-nomic-alt"
+					],
+					[
+						"Extra Char Alt Anims",
+						"hunte",
+						""
+					]
+				]
+			],
+			[
+				66302.5210084034,
+				[
+					[
+						"Alt Idle Animation",
+						"dad",
+						"-nomic"
+					],
+					[
+						"Extra Char Alt Idle",
+						"hunte",
+						""
+					],
+					[
+						"Alt Idle Animation",
+						"gf",
+						"-alt"
+					]
+				]
+			],
+			[
+				74369.7478991597,
+				[
+					[
+						"Alt Idle Animation",
+						"dad",
+						"-alt"
+					],
+					[
+						"Alt Idle Animation",
+						"gf",
+						""
+					],
+					[
+						"Extra Char Alt Idle",
+						"hunte",
+						"-nomic-alt"
+					],
+					[
+						"Extra Char Alt Anims",
+						"hunte",
+						"-nomic"
+					]
+				]
+			],
+			[
+				77899.1596638655,
+				[
+					[
+						"Alt Idle Animation",
+						"bf",
+						"-alt"
+					],
+					[
+						"Alt Idle Animation",
+						"dad",
+						""
+					]
+				]
+			],
+			[
+				82373.9495798319,
+				[
+					[
+						"Play Animation",
+						"what",
+						"gf"
+					]
+				]
+			],
+			[
+				82436.974789916,
+				[
+					[
+						"Alt Idle Animation",
+						"bf",
+						""
+					],
+					[
+						"Extra Char Alt Idle",
+						"hunte",
+						"-nomic-alt"
+					]
+				]
+			],
+			[
+				85966.3865546218,
+				[
+					[
+						"Extra Char Alt Idle",
+						"hunte",
+						"-nomic"
+					]
+				]
+			],
+			[
+				88739.4957983193,
+				[
+					[
+						"Advance Anger",
+						"true",
+						"-1"
+					]
+				]
+			],
+			[
+				90504.2016806722,
+				[
+					[
+						"Extra Char Alt Idle",
+						"hunte",
+						"-alt"
+					]
+				]
+			],
+			[
+				90756.3025210084,
+				[
+					[
+						"Change Character",
+						"bf",
+						"truckergirl-alt"
+					],
+					[
+						"Change Character",
+						"gf",
+						"truckerboy-alt"
+					],
+					[
+						"Advance Anger",
+						"",
+						"0"
+					]
+				]
+			],
+			[
+				98571.4285714285,
+				[
+					[
+						"Alt Idle Animation",
+						"dad",
+						"-alt"
+					]
+				]
+			],
+			[
+				106638.655462185,
+				[
+					[
+						"Alt Idle Animation",
+						"dad",
+						""
+					],
+					[
+						"Extra Char Alt Idle",
+						"hunte",
+						""
+					]
+				]
+			],
+			[
+				130840.336134454,
+				[
+					[
+						"Extra Char Alt Idle",
+						"hunte",
+						"-alt"
+					]
+				]
+			],
+			[
+				139159.663865546,
+				[
+					[
+						"Advance Anger",
+						"true",
+						"2"
+					]
+				]
+			],
+			[
+				140420.168067227,
+				[
+					[
+						"Extra Char Alt Idle",
+						"hunte",
+						""
+					]
+				]
+			],
+			[
+				142941.176470588,
+				[
+					[
+						"Alt Idle Animation",
+						"dad",
+						"-alt"
+					]
+				]
+			],
+			[
+				144957.983193277,
+				[
+					[
+						"Alt Idle Animation",
+						"dad",
+						""
+					]
+				]
+			],
+			[
+				148487.394957983,
+				[
+					[
+						"Extra Char Alt Idle",
+						"hunte",
+						"-alt"
+					]
+				]
+			],
+			[
+				151134.453781512,
+				[
+					[
+						"Extra Char Alt Idle",
+						"hunte",
+						""
+					]
+				]
+			],
+			[
+				153025.210084033,
+				[
+					[
+						"Alt Idle Animation",
+						"dad",
+						"-alt"
+					]
+				]
+			],
+			[
+				155294.117647059,
+				[
+					[
+						"Advance Anger",
+						"true",
+						"1"
+					]
+				]
+			],
+			[
+				159075.630252101,
+				[
+					[
+						"Alt Idle Animation",
+						"dad",
+						""
+					]
+				]
+			]
+		]
+	}
+}

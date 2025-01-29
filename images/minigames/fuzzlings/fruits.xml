@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="fruits.png">
+	<!-- dick and ass -->
+	<SubTexture name="carrot0000" x="0" y="0" width="16" height="16"/>
+	<SubTexture name="grapes0000" x="16" y="0" width="16" height="16"/>
+	<SubTexture name="pineapple0000" x="32" y="0" width="16" height="16"/>
+	<SubTexture name="lemon0000" x="48" y="0" width="16" height="16"/>
+	<SubTexture name="cherries0000" x="64" y="0" width="16" height="16"/>
+	<SubTexture name="salad0000" x="80" y="0" width="16" height="16"/>
+	<SubTexture name="spirit-boy0000" x="96" y="0" width="16" height="16"/>
+	<SubTexture name="spirit-girl0000" x="96" y="16" width="16" height="16"/>
+	
+	<SubTexture name="sandwich0000" x="0" y="16" width="16" height="16"/>
+	<SubTexture name="tire0000" x="16" y="16" width="16" height="16"/>
+	<SubTexture name="notebook0000" x="32" y="16" width="16" height="16"/>
+	<SubTexture name="bottle0000" x="48" y="16" width="16" height="16"/>
+	<SubTexture name="can0000" x="64" y="16" width="16" height="16"/>
+	<SubTexture name="mic0000" x="80" y="16" width="16" height="16"/>
+</TextureAtlas>

@@ -1,0 +1,53 @@
+[
+	{
+		"save": "sauceLock",
+		"name": "Remember Sauce",
+		"type": "bool",
+		"description": "Remembers your sauce choice so you don't have to go through the menu. Remember to disable when you want to change it!",
+		"value": false
+	},
+	{
+		"save": "arcadeMenu",
+		"name": "Garii's Arcade Menu",
+		"type": "keybind",
+		"description": "Keybind for entering Garii's Arcade in-game.",
+		"keyboard": "F4",
+		"gamepad": "LEFT_TRIGGER"
+	},
+	{
+		"save": "achievementsMenu",
+		"name": "Achievements Guide",
+		"type": "keybind",
+		"description": "Keybind for accessing the Achievements Guide Menu.",
+		"keyboard": "F1",
+		"gamepad": "GUIDE"
+	},
+	{
+		"save": "faithfulMode",
+		"name": "More Faithfuller",
+		"type": "bool",
+		"description": "Makes most references in the mod even more faithful to the original material, forgoing any changes made to fit with the mod's theming.",
+		"value": false
+	},
+	{
+		"save": "gariiDebug",
+		"name": "Debug Mode",
+		"type": "bool",
+		"description": "Enables debug mode and any features that come with it.",
+		"value": false
+	},
+	{
+		"save": "bubbleOpacity",
+		"name": "[DEBUG] Bubble Opacity",
+		"type": "percent",
+		"description": "Change the opacity of the speech bubbles. Some effects will not be affected. Only Works in Debug Mode.",
+		"value": 1,
+	
+		"min": 0,
+		"max": 1,
+		"step": 0.1,
+
+		"decimals": 1,
+		"scroll": 0.1
+	}
+]

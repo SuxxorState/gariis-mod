@@ -1,0 +1,4 @@
+Allows for extra characters to change their pose animations.
+
+Value 1: Which character in specific to target
+Value 2: New suffix, leave blank to disable

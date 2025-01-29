@@ -1,0 +1,36 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [
+				113,
+				167
+			],
+			"anim": "death-anvil",
+			"fps": 24,
+			"name": "bf trucker death anvil",
+			"indices": []
+		}
+	],
+	"vocals_file": "",
+	"no_antialiasing": false,
+	"image": "characters/truckerboy-deaths",
+	"position": [
+		0,
+		260
+	],
+	"healthicon": "truckboy",
+	"flip_x": true,
+	"healthbar_colors": [
+		78,
+		127,
+		175
+	],
+	"camera_position": [
+		160,
+		-240
+	],
+	"sing_duration": 4,
+	"scale": 1,
+	"_editor_isPlayer": true
+}

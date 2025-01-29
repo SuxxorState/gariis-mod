@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Created with Funkin Packer v0.1.3 https://neeeoo.github.io/funkin-packer/
+-->
+<TextureAtlas imagePath="stag-cams.png" width="526" height="394">
+	<SubTexture name="cam10desel" x="453" y="273" width="48" height="35" frameX="-0" frameY="-0" frameWidth="48" frameHeight="36"/>
+	<SubTexture name="cam10sel" x="462" y="310" width="48" height="35" frameX="-0" frameY="-0" frameWidth="48" frameHeight="36"/>
+	<SubTexture name="cam11desel" x="462" y="347" width="48" height="35" frameX="-0" frameY="-0" frameWidth="48" frameHeight="36"/>
+	<SubTexture name="cam11sel" x="362" y="349" width="48" height="35" frameX="-0" frameY="-0" frameWidth="48" frameHeight="36"/>
+	<SubTexture name="cam1desel" x="62" y="313" width="48" height="36" frameX="-0" frameY="-0" frameWidth="48" frameHeight="36"/>
+	<SubTexture name="cam1sel" x="112" y="313" width="48" height="36" frameX="-0" frameY="-0" frameWidth="48" frameHeight="36"/>
+	<SubTexture name="cam2desel" x="412" y="349" width="48" height="35" frameX="-0" frameY="-1" frameWidth="48" frameHeight="36"/>
+	<SubTexture name="cam2sel" x="62" y="351" width="48" height="35" frameX="-0" frameY="-1" frameWidth="48" frameHeight="36"/>
+	<SubTexture name="cam3desel" x="162" y="313" width="48" height="36" frameX="-0" frameY="-0" frameWidth="48" frameHeight="36"/>
+	<SubTexture name="cam3sel" x="212" y="313" width="48" height="36" frameX="-0" frameY="-0" frameWidth="48" frameHeight="36"/>
+	<SubTexture name="cam4desel" x="262" y="319" width="48" height="36" frameX="-0" frameY="-0" frameWidth="48" frameHeight="36"/>
+	<SubTexture name="cam4sel" x="312" y="319" width="48" height="36" frameX="-0" frameY="-0" frameWidth="48" frameHeight="36"/>
+	<SubTexture name="cam5desel" x="353" y="273" width="48" height="36" frameX="-0" frameY="-0" frameWidth="48" frameHeight="36"/>
+	<SubTexture name="cam5sel" x="362" y="311" width="48" height="36" frameX="-0" frameY="-0" frameWidth="48" frameHeight="36"/>
+	<SubTexture name="cam6desel" x="0" y="359" width="48" height="35" frameX="-0" frameY="-0" frameWidth="48" frameHeight="36"/>
+	<SubTexture name="cam6sel" x="112" y="351" width="48" height="35" frameX="-0" frameY="-0" frameWidth="48" frameHeight="36"/>
+	<SubTexture name="cam7desel" x="403" y="273" width="48" height="36" frameX="-0" frameY="-0" frameWidth="48" frameHeight="36"/>
+	<SubTexture name="cam7sel" x="412" y="311" width="48" height="36" frameX="-0" frameY="-0" frameWidth="48" frameHeight="36"/>
+	<SubTexture name="cam8desel" x="162" y="351" width="48" height="35" frameX="-0" frameY="-0" frameWidth="48" frameHeight="36"/>
+	<SubTexture name="cam8sel" x="212" y="351" width="48" height="35" frameX="-0" frameY="-0" frameWidth="48" frameHeight="36"/>
+	<SubTexture name="cam9desel" x="262" y="357" width="48" height="35" frameX="-0" frameY="-0" frameWidth="48" frameHeight="36"/>
+	<SubTexture name="cam9sel" x="312" y="357" width="48" height="35" frameX="-0" frameY="-0" frameWidth="48" frameHeight="36"/>
+	<SubTexture name="cameramap" x="0" y="0" width="289" height="311" frameX="-0" frameY="-0" frameWidth="289" frameHeight="311"/>
+	<SubTexture name="heatbtn" x="291" y="273" width="60" height="44" frameX="-0" frameY="-0" frameWidth="60" frameHeight="44"/>
+	<SubTexture name="mapvents" x="291" y="0" width="235" height="271" rotated="true" frameX="-0" frameY="-0" frameWidth="271" frameHeight="235"/>
+	<SubTexture name="ventbtn" x="0" y="313" width="60" height="44" frameX="-0" frameY="-0" frameWidth="60" frameHeight="45"/>
+</TextureAtlas>

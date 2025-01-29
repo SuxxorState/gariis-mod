@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="classic-cup.png">
+	<!-- Created with Adobe Animate version 23.0.1.70 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="cup down0000" x="335" y="1412" width="521" height="302" frameX="0" frameY="-58" frameWidth="521" frameHeight="360"/>
+	<SubTexture name="cup down0001" x="335" y="1412" width="521" height="302" frameX="0" frameY="-58" frameWidth="521" frameHeight="360"/>
+	<SubTexture name="cup down0002" x="1392" y="1334" width="463" height="353" frameX="-20" frameY="0" frameWidth="521" frameHeight="360"/>
+	<SubTexture name="cup down0003" x="1392" y="1334" width="463" height="353" frameX="-20" frameY="0" frameWidth="521" frameHeight="360"/>
+	<SubTexture name="cup hey0000" x="1093" y="0" width="522" height="502" frameX="-22" frameY="-20" frameWidth="547" frameHeight="522"/>
+	<SubTexture name="cup hey0001" x="1093" y="0" width="522" height="502" frameX="-22" frameY="-20" frameWidth="547" frameHeight="522"/>
+	<SubTexture name="cup hey0002" x="548" y="0" width="543" height="506" frameX="-4" frameY="-11" frameWidth="547" frameHeight="522"/>
+	<SubTexture name="cup hey0003" x="548" y="0" width="543" height="506" frameX="-4" frameY="-11" frameWidth="547" frameHeight="522"/>
+	<SubTexture name="cup hey0004" x="0" y="0" width="546" height="518" frameX="0" frameY="0" frameWidth="547" frameHeight="522"/>
+	<SubTexture name="cup hey0005" x="0" y="0" width="546" height="518" frameX="0" frameY="0" frameWidth="547" frameHeight="522"/>
+	<SubTexture name="cup idle0000" x="335" y="1716" width="518" height="268" frameX="-3" frameY="-148" frameWidth="521" frameHeight="422"/>
+	<SubTexture name="cup idle0001" x="335" y="1716" width="518" height="268" frameX="-3" frameY="-148" frameWidth="521" frameHeight="422"/>
+	<SubTexture name="cup idle0002" x="1293" y="1689" width="487" height="292" frameX="0" frameY="-125" frameWidth="521" frameHeight="422"/>
+	<SubTexture name="cup idle0003" x="1293" y="1689" width="487" height="292" frameX="0" frameY="-125" frameWidth="521" frameHeight="422"/>
+	<SubTexture name="cup idle0004" x="858" y="1431" width="433" height="363" frameX="-36" frameY="-59" frameWidth="521" frameHeight="422"/>
+	<SubTexture name="cup idle0005" x="858" y="1431" width="433" height="363" frameX="-36" frameY="-59" frameWidth="521" frameHeight="422"/>
+	<SubTexture name="cup idle0006" x="447" y="996" width="401" height="414" frameX="-87" frameY="0" frameWidth="521" frameHeight="422"/>
+	<SubTexture name="cup idle0007" x="447" y="996" width="401" height="414" frameX="-87" frameY="0" frameWidth="521" frameHeight="422"/>
+	<SubTexture name="cup left0000" x="0" y="520" width="475" height="405" frameX="0" frameY="-3" frameWidth="504" frameHeight="413"/>
+	<SubTexture name="cup left0001" x="0" y="520" width="475" height="405" frameX="0" frameY="-3" frameWidth="504" frameHeight="413"/>
+	<SubTexture name="cup left0002" x="1532" y="919" width="439" height="413" frameX="-65" frameY="0" frameWidth="504" frameHeight="413"/>
+	<SubTexture name="cup left0003" x="1532" y="919" width="439" height="413" frameX="-65" frameY="0" frameWidth="504" frameHeight="413"/>
+	<SubTexture name="cup miss0000" x="1617" y="0" width="426" height="471" frameX="-10" frameY="-13" frameWidth="437" frameHeight="488"/>
+	<SubTexture name="cup miss0001" x="1617" y="0" width="426" height="471" frameX="-10" frameY="-13" frameWidth="437" frameHeight="488"/>
+	<SubTexture name="cup miss0002" x="548" y="508" width="432" height="486" frameX="-2" frameY="-2" frameWidth="437" frameHeight="488"/>
+	<SubTexture name="cup miss0003" x="548" y="508" width="432" height="486" frameX="-2" frameY="-2" frameWidth="437" frameHeight="488"/>
+	<SubTexture name="cup miss0004" x="1093" y="504" width="437" height="487" frameX="0" frameY="0" frameWidth="437" frameHeight="488"/>
+	<SubTexture name="cup miss0005" x="1093" y="504" width="437" height="487" frameX="0" frameY="0" frameWidth="437" frameHeight="488"/>
+	<SubTexture name="cup miss0006" x="1093" y="504" width="437" height="487" frameX="0" frameY="0" frameWidth="437" frameHeight="488"/>
+	<SubTexture name="cup miss0007" x="1093" y="504" width="437" height="487" frameX="0" frameY="0" frameWidth="437" frameHeight="488"/>
+	<SubTexture name="cup miss0008" x="1093" y="504" width="437" height="487" frameX="0" frameY="0" frameWidth="437" frameHeight="488"/>
+	<SubTexture name="cup miss0009" x="1093" y="504" width="437" height="487" frameX="0" frameY="0" frameWidth="437" frameHeight="488"/>
+	<SubTexture name="cup miss0010" x="1093" y="504" width="437" height="487" frameX="0" frameY="0" frameWidth="437" frameHeight="488"/>
+	<SubTexture name="cup miss0011" x="1093" y="504" width="437" height="487" frameX="0" frameY="0" frameWidth="437" frameHeight="488"/>
+	<SubTexture name="cup miss0012" x="1093" y="504" width="437" height="487" frameX="0" frameY="0" frameWidth="437" frameHeight="488"/>
+	<SubTexture name="cup miss0013" x="1093" y="504" width="437" height="487" frameX="0" frameY="0" frameWidth="437" frameHeight="488"/>
+	<SubTexture name="cup right0000" x="1532" y="504" width="509" height="413"/>
+	<SubTexture name="cup right0001" x="1532" y="504" width="509" height="413"/>
+	<SubTexture name="cup right0002" x="0" y="927" width="445" height="400" frameX="-1" frameY="0" frameWidth="509" frameHeight="413"/>
+	<SubTexture name="cup right0003" x="0" y="927" width="445" height="400" frameX="-1" frameY="0" frameWidth="509" frameHeight="413"/>
+	<SubTexture name="cup up0000" x="0" y="1329" width="333" height="482" frameX="-32" frameY="0" frameWidth="408" frameHeight="482"/>
+	<SubTexture name="cup up0001" x="0" y="1329" width="333" height="482" frameX="-32" frameY="0" frameWidth="408" frameHeight="482"/>
+	<SubTexture name="cup up0002" x="982" y="993" width="408" height="436" frameX="0" frameY="-46" frameWidth="408" frameHeight="482"/>
+	<SubTexture name="cup up0003" x="982" y="993" width="408" height="436" frameX="0" frameY="-46" frameWidth="408" frameHeight="482"/>
+</TextureAtlas>

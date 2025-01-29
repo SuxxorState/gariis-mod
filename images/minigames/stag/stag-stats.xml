@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="stag-stats.png">
+	<!-- Created with Adobe Animate version 23.0.1.70 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="doorclosed" x="0" y="97" width="69" height="96" pivotX="0" pivotY="0"/>
+	<SubTexture name="doorfaulty" x="0" y="0" width="118" height="95" pivotX="0" pivotY="0"/>
+	<SubTexture name="dooropen" x="120" y="0" width="66" height="102" pivotX="0" pivotY="0"/>
+	<SubTexture name="heatactive" x="145" y="104" width="26" height="17" pivotX="0" pivotY="0"/>
+	<SubTexture name="heatdeselected" x="71" y="174" width="27" height="19" pivotX="0" pivotY="0"/>
+	<SubTexture name="heatdisabled" x="115" y="104" width="28" height="20" pivotX="0" pivotY="0"/>
+	<SubTexture name="heatselected" x="63" y="235" width="27" height="18" pivotX="0" pivotY="0"/>
+	<SubTexture name="vent-carv" x="103" y="211" width="38" height="34" pivotX="0" pivotY="0"/>
+	<SubTexture name="vent-faze" x="0" y="195" width="61" height="56" pivotX="0" pivotY="0"/>
+	<SubTexture name="vent-gari" x="111" y="135" width="38" height="36" pivotX="0" pivotY="0"/>
+	<SubTexture name="vent-hnte" x="63" y="195" width="38" height="38" pivotX="0" pivotY="0"/>
+	<SubTexture name="vent-jack" x="103" y="174" width="40" height="35" pivotX="0" pivotY="0"/>
+	<SubTexture name="vent-lino" x="71" y="135" width="38" height="37" pivotX="0" pivotY="0"/>
+	<SubTexture name="vent-slot" x="71" y="97" width="42" height="36" pivotX="0" pivotY="0"/>
+</TextureAtlas>

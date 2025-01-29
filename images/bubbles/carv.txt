@@ -1,0 +1,7 @@
+carv
+unused line--later on it will be for note types
+
+bubbleLEFT, carv bubbl roundish, 20, 220
+bubbleDOWN, cavr bube squirvle, -390, 180
+bubbleUP, couldy burbl, -80, 200
+bubbleRIGHT, carv bubl polyugon, 130, 225

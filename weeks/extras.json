@@ -1,0 +1,14 @@
+{
+"storyName": "Garii's Xtras", 
+"difficulties": "‿", 
+"hideFreeplay": false, 
+"weekBackground": "stage", 
+"freeplayColor": [146,113,253], 
+"weekBefore": "tutorial", 
+"startUnlocked": true, 
+"weekCharacters": ["dad", "bf", "gf"], 
+"songs": [["Twenty-Sixteen", "sixteenfree", [143, 199, 155]]], 
+"hideStoryMode": true, 
+"weekName": "GarXtras", 
+"hiddenUntilUnlocked": false
+}

@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="fruits.png">
+	<!-- dick and ass -->
+	<SubTexture name="andy-right0000" x="0" y="0" width="16" height="16"/>
+	<SubTexture name="andy-right0001" x="16" y="0" width="16" height="16"/>
+	<SubTexture name="andy-left0000" x="0" y="16" width="16" height="16"/>
+	<SubTexture name="andy-left0001" x="16" y="16" width="16" height="16"/>
+	<SubTexture name="andy-up0000" x="0" y="32" width="16" height="16"/>
+	<SubTexture name="andy-up0001" x="16" y="32" width="16" height="16"/>
+	<SubTexture name="andy-down0000" x="0" y="48" width="16" height="16"/>
+	<SubTexture name="andy-down0001" x="16" y="48" width="16" height="16"/>
+</TextureAtlas>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Created with Funkin Packer v0.1.3 https://neeeoo.github.io/funkin-packer/
+-->
+<TextureAtlas imagePath="heatdescs.png" width="1837" height="206">
+	<SubTexture name="sauc00000" x="318" y="0" width="307" height="206" frameX="-0" frameY="-0" frameWidth="307" frameHeight="206"/>
+	<SubTexture name="sauc10000" x="627" y="0" width="302" height="206" frameX="-0" frameY="-0" frameWidth="302" frameHeight="206"/>
+	<SubTexture name="sauc20000" x="931" y="0" width="302" height="206" frameX="-0" frameY="-0" frameWidth="302" frameHeight="206"/>
+	<SubTexture name="sauc30000" x="0" y="0" width="316" height="206" frameX="-0" frameY="-0" frameWidth="316" frameHeight="206"/>
+	<SubTexture name="sauc40000" x="1235" y="0" width="300" height="206" frameX="-0" frameY="-0" frameWidth="301" frameHeight="206"/>
+	<SubTexture name="sauc50000" x="1537" y="0" width="300" height="206" frameX="-0" frameY="-0" frameWidth="301" frameHeight="206"/>
+</TextureAtlas>

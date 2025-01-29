@@ -1,0 +1,191 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				1,
+				5
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "-anims/kiss/boy kiss down"
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-7,
+				1
+			],
+			"anim": "singRIGHT",
+			"fps": 24,
+			"name": "-anims/kiss/boy kiss roight",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				15,
+				5
+			],
+			"anim": "singLEFT",
+			"fps": 24,
+			"name": "-anims/kiss/boy kiss left",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				2,
+				2
+			],
+			"anim": "singUP",
+			"fps": 24,
+			"name": "-anims/kiss/boy ks up",
+			"indices": []
+		},
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "idle",
+			"indices": [
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7
+			],
+			"name": "-anims/kiss/boy kiss idfle"
+		},
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"loop": true,
+			"fps": 24,
+			"anim": "idle-loop",
+			"indices": [
+				8,
+				9,
+				10,
+				11,
+				12,
+				13,
+				14,
+				15,
+				16,
+				17,
+				18,
+				19,
+				20,
+				21,
+				22,
+				23,
+				24,
+				25,
+				26,
+				27,
+				28,
+				29,
+				30,
+				31
+			],
+			"name": "-anims/kiss/boy kiss idfle"
+		},
+		{
+			"offsets": [
+				2,
+				2
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singUPmiss",
+			"indices": [],
+			"name": "-anims/kiss/boy ksis miss up"
+		},
+		{
+			"offsets": [
+				1,
+				5
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWNmiss",
+			"indices": [],
+			"name": "-anims/kiss/boy kiss miss down"
+		},
+		{
+			"offsets": [
+				-7,
+				1
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHTmiss",
+			"indices": [],
+			"name": "-anims/kiss/boy kiss miss rigte"
+		},
+		{
+			"offsets": [
+				15,
+				5
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFTmiss",
+			"indices": [],
+			"name": "-anims/kiss/boy kiss miss left"
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-13,
+				-2
+			],
+			"anim": "hey",
+			"fps": 24,
+			"name": "-anims/kiss/boy kiss hey!",
+			"indices": []
+		},
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "idle-alt",
+			"indices": [],
+			"name": "-anims/kiss/boy kiss idfle alt"
+		}
+	],
+	"vocals_file": "",
+	"no_antialiasing": false,
+	"image": "characters/truckerboy",
+	"position": [
+		11,
+		260
+	],
+	"healthicon": "truckboy",
+	"flip_x": true,
+	"healthbar_colors": [
+		78,
+		127,
+		175
+	],
+	"camera_position": [
+		-10,
+		230
+	],
+	"sing_duration": 4,
+	"scale": 1,
+	"_editor_isPlayer": true
+}

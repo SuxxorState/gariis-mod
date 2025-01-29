@@ -1,0 +1,19 @@
+truckerboy-girl
+unused line--later on it will be for note types
+
+bubbleLEFT, truckcouple bubl lef, 360, 120
+bubbleDOWN, truckcouple squircle boobs, 280, 230
+bubbleUP, yell bubble up, 652, 456
+bubbleRIGHT, truckkcoupl saraer rite, 330, 90
+
+bubbleLEFT-smug, truckcouple bubl lef, 360, 120
+bubbleDOWN-smug, truckcouple squircle boobs, 280, 230
+bubbleUP-smug, yell bubble up, 652, 456
+bubbleRIGHT-smug, truckkcoupl saraer rite, 330, 90
+
+bubbleLEFT-confused, truckcouple bubl lef, 360, 120
+bubbleDOWN-confused, truckcouple squircle boobs, 280, 230
+bubbleUP-confused, yell bubble up, 652, 456
+bubbleRIGHT-confused, truckkcoupl saraer rite, 330, 90
+
+bubbleCATCHGF, truckcouple kiss buble, -50, -110

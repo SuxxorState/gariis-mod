@@ -1,0 +1,2 @@
+texture = "borderlineUI/NOTE_assets-awesomepose"
+noAnimation = true

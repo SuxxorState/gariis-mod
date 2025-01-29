@@ -1,0 +1,5 @@
+Allows for extra characters to play custom animations.
+Works exactly like Play Animation but for extra characters.
+
+Value 1: Animation to play.
+Value 2: Which character in specific to target

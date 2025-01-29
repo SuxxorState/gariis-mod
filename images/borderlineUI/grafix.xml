@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="grafix.png">
+	<!-- Created with Adobe Animate version 23.0.1.70 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="ashit0000" x="705" y="280" width="238" height="102" pivotX="12.25" pivotY="2.8"/>
+	<SubTexture name="awful0000" x="0" y="264" width="237" height="107" pivotX="14.75" pivotY="4.25"/>
+	<SubTexture name="bad0000" x="239" y="284" width="186" height="119" pivotX="-0.4" pivotY="-0.35"/>
+	<SubTexture name="combo0000" x="370" y="140" width="333" height="142" pivotX="5.35" pivotY="5.95"/>
+	<SubTexture name="good0000" x="0" y="142" width="294" height="120" pivotX="12.7" pivotY="6.25"/>
+	<SubTexture name="num00000" x="535" y="416" width="94" height="91" pivotX="12.35" pivotY="12.65"/>
+	<SubTexture name="num10000" x="298" y="405" width="88" height="113" pivotX="6.65" pivotY="6.35"/>
+	<SubTexture name="num20000" x="637" y="384" width="95" height="127" pivotX="7.45" pivotY="2"/>
+	<SubTexture name="num30000" x="208" y="405" width="88" height="115" pivotX="3.4" pivotY="3.5"/>
+	<SubTexture name="num40000" x="832" y="384" width="91" height="123" pivotX="7.2" pivotY="5.35"/>
+	<SubTexture name="num50000" x="427" y="284" width="106" height="134" pivotX="8.45" pivotY="8.6"/>
+	<SubTexture name="num60000" x="535" y="284" width="100" height="130" pivotX="8.45" pivotY="2.45"/>
+	<SubTexture name="num70000" x="734" y="384" width="96" height="124" pivotX="2.4" pivotY="4.5"/>
+	<SubTexture name="num80000" x="925" y="384" width="84" height="133" pivotX="3.2" pivotY="4.5"/>
+	<SubTexture name="num90000" x="113" y="373" width="93" height="132" pivotX="5.85" pivotY="6.1"/>
+	<SubTexture name="numX0000" x="0" y="373" width="111" height="115" pivotX="7.25" pivotY="3.55"/>
+	<SubTexture name="okay0000" x="705" y="155" width="281" height="123" pivotX="4.35" pivotY="1.95"/>
+	<SubTexture name="shite0000" x="370" y="0" width="350" height="138" pivotX="7.85" pivotY="5.25"/>
+	<SubTexture name="sick0000" x="0" y="0" width="368" height="140" pivotX="8.8" pivotY="1.15"/>
+	<SubTexture name="subpar0000" x="722" y="0" width="273" height="153" pivotX="8.9" pivotY="3.8"/>
+</TextureAtlas>

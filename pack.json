@@ -1,0 +1,9 @@
+{
+	"name": "Garii's Mod",
+	"description": "Fight Garii in this one song mod!",
+	"restart":false,
+	"runsGlobally": false,
+	"color": [197, 75, 75],
+	"discordRPC": "1250939326112469083",
+	"iconFramerate": 10
+}

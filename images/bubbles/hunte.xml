@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="hunte.png">
+	<!-- Created with Adobe Animate version 23.0.1.70 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="ciercle hunte booble0000" x="671" y="504" width="614" height="497" pivotX="0" pivotY="0"/>
+	<SubTexture name="ciercle hunte booble0001" x="671" y="504" width="614" height="497"/>
+	<SubTexture name="ciercle hunte booble0002" x="1026" y="1421" width="473" height="375" frameX="-77" frameY="-74" frameWidth="614" frameHeight="497"/>
+	<SubTexture name="ciercle hunte booble0003" x="1026" y="1421" width="473" height="375" frameX="-77" frameY="-74" frameWidth="614" frameHeight="497"/>
+	<SubTexture name="ciercle hunte booble0004" x="0" y="1442" width="575" height="453" frameX="-31" frameY="-26" frameWidth="614" frameHeight="497"/>
+	<SubTexture name="ciercle hunte booble0005" x="0" y="1442" width="575" height="453" frameX="-31" frameY="-26" frameWidth="614" frameHeight="497"/>
+	<SubTexture name="hnte bubl squareish0000" x="0" y="965" width="623" height="475" pivotX="16.5" pivotY="-21.6"/>
+	<SubTexture name="hnte bubl squareish0001" x="0" y="965" width="623" height="475"/>
+	<SubTexture name="hnte bubl squareish0002" x="1287" y="642" width="491" height="351" frameX="-54" frameY="-66" frameWidth="623" frameHeight="475"/>
+	<SubTexture name="hnte bubl squareish0003" x="1287" y="642" width="491" height="351" frameX="-54" frameY="-66" frameWidth="623" frameHeight="475"/>
+	<SubTexture name="hnte bubl squareish0004" x="1026" y="1003" width="580" height="416" frameX="-17" frameY="-29" frameWidth="623" frameHeight="475"/>
+	<SubTexture name="hnte bubl squareish0005" x="1026" y="1003" width="580" height="416" frameX="-17" frameY="-29" frameWidth="623" frameHeight="475"/>
+	<SubTexture name="hunte bubbl hexa0000" x="0" y="0" width="711" height="502" pivotX="0" pivotY="0"/>
+	<SubTexture name="hunte bubbl hexa0001" x="0" y="0" width="711" height="502"/>
+	<SubTexture name="hunte bubbl hexa0002" x="713" y="0" width="545" height="375" frameX="-88" frameY="-73" frameWidth="711" frameHeight="502"/>
+	<SubTexture name="hunte bubbl hexa0003" x="713" y="0" width="545" height="375" frameX="-88" frameY="-73" frameWidth="711" frameHeight="502"/>
+	<SubTexture name="hunte bubbl hexa0004" x="0" y="504" width="669" height="459" frameX="-8" frameY="-23" frameWidth="711" frameHeight="502"/>
+	<SubTexture name="hunte bubbl hexa0005" x="0" y="504" width="669" height="459" frameX="-8" frameY="-23" frameWidth="711" frameHeight="502"/>
+	<SubTexture name="hunte buble sqarer0000" x="625" y="1003" width="399" height="717" pivotX="-47.1" pivotY="-65.1"/>
+	<SubTexture name="hunte buble sqarer0001" x="625" y="1003" width="399" height="717"/>
+	<SubTexture name="hunte buble sqarer0002" x="1629" y="0" width="227" height="529" frameX="-84" frameY="-96" frameWidth="399" frameHeight="717"/>
+	<SubTexture name="hunte buble sqarer0003" x="1629" y="0" width="227" height="529" frameX="-84" frameY="-96" frameWidth="399" frameHeight="717"/>
+	<SubTexture name="hunte buble sqarer0004" x="1287" y="0" width="340" height="640" frameX="-42" frameY="-29" frameWidth="399" frameHeight="717"/>
+	<SubTexture name="hunte buble sqarer0005" x="1287" y="0" width="340" height="640" frameX="-42" frameY="-29" frameWidth="399" frameHeight="717"/>
+</TextureAtlas>

@@ -1,0 +1,201 @@
+local utils = (require (getVar("folDir").."scripts.backend.utils")):new() --ough we love utils
+local fonts = {["poker-freak"] = {name = "poker-freak", width = 15, height = 21}, ["rom-byte"] = {name = "rom-byte", width = 8, height = 8, disableLowercase = true}}
+local loadedFont = {}
+local Font = {}
+local rawAlphaNumerals = {"a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z", "0", "1", "2", "3", "4", "5", "6", "7", "8", "9", ",", ".", "!", "?", ":", "<", ">", "+", "-", "%"}
+local sheetNames = {["0"] = "zero", ["1"] = "one", ["2"] = "two", ["3"] = "three", ["4"] = "four", ["5"] = "five", ["6"] = "six", ["7"] = "seven", ["8"] = "eight", ["9"] = "nine", ["!"] = "exclamation", ["."] = "comma", ["."] = "period", ["?"] = "question", [":"] = "colon", ["<"] = "less than", [">"] = "greater than", ["+"] = "plus", ["-"] = "minus"} --any characters that need special names
+
+list = {}
+atts = {}
+
+function Font:new(calledFont)
+    local self = setmetatable({}, {__index = self})
+    loadedFont = fonts[calledFont] or "poker-freak"
+    return self
+end
+
+function Font:loadFont(calledFont)
+    loadedFont = fonts[calledFont]
+end
+
+function Font:createNewText(name, dax,day, txt, algnmnt, clr, camra)
+    if (txt == nil) then txt = " " end
+    if (algnmnt == nil) then algnmnt = "LEFT" end
+    if (clr == nil) then clr = "FFFFFF" end --defaults
+    if (camra == nil) then camra = "other" end
+
+    if (#txt > 0) then
+        local splttxt = utils:numToStr(txt)
+        for i,chr in pairs(splttxt) do
+            local chrx = dax + ((i-1) * loadedFont.width)
+            if (algnmnt:lower() == "right") then chrx = (dax + ((i-1) * (loadedFont.width))) - (loadedFont.width * #txt) end
+            makeAnimatedLuaSprite(name..i, "fonts/"..loadedFont.name,chrx, day)
+            addAnimations(name..i)
+            setChar(name..i, chr)
+            setProperty(name..i..".antialiasing", false)
+            setProperty(name..i..".color", getColorFromHex(clr))
+            setObjectCamera(name..i, camra)
+            addLuaSprite(name..i)
+        end
+    end
+    
+    table.insert(list, name)
+    local txtAtts = {x = dax, y = day, text = txt, alignment = algnmnt:lower(), color = clr, length = #txt, maxlength = #txt, scalex = 1, scaley = 1, visible = true, cam = camra, font = loadedFont.name}
+    atts[name] = txtAtts
+end
+
+function addAnimations(name)
+    for i,chr in pairs(rawAlphaNumerals) do
+        if (chr:match("%a")) then --upper and lowercase
+            addAnimationByPrefix(name, chr:upper(), chr:upper().." ")
+            addAnimationByPrefix(name, chr:lower(), chr:lower().." ")
+        else
+            local shtName = chr
+            if (sheetNames[chr] ~= nil) then shtName = sheetNames[chr] end
+            addAnimationByPrefix(name, chr, shtName.." ")
+        end
+    end
+end
+
+function setChar(name, chr)
+    if (chr == " ") then setProperty(name..".visible", false)
+    else setProperty(name..".visible", true)
+        playAnim(name, chr)
+    end
+end
+
+function Font:setTextX(name, newx)
+    for i=1,atts[name].length do
+        if (atts[name].alignment == "right") then setProperty(name..i..".x", (newx + ((i-1) * (fonts[atts[name].font].width * atts[name].scalex))) - (fonts[atts[name].font].width * atts[name].length * atts[name].scalex))
+        else setProperty(name..i..".x", newx + ((i-1) * (fonts[atts[name].font].width * atts[name].scalex)))
+        end
+    end
+    atts[name].x = newx
+end
+
+function Font:setTextY(name, newy)
+    for i=1,atts[name].length do
+        setProperty(name..i..".y", newy)
+    end
+    atts[name].y = newy
+end
+
+function Font:setTextCamera(name, newcam)
+    for i=1,atts[name].length do
+        setObjectCamera(name..i, newcam)
+    end
+    atts[name].cam = newcam
+end
+
+function Font:tweenTextY(name, newy, time)
+    for i=1,atts[name].length do
+        doTweenY(name..i, name..i, newy, time)
+    end
+    atts[name].y = newy
+end
+
+function Font:setTextString(name, txt)
+    txt = txt or " "
+    if (txt == atts[name].text) then return end
+    local leg = atts[name].length
+    local splttxt = utils:numToStr(txt)
+    if (#splttxt > leg) then leg = #splttxt end
+    
+    for i= 1,leg do
+        if (not luaSpriteExists(name..i)) then
+            makeAnimatedLuaSprite(name..i, "fonts/"..atts[name].font,0, atts[name].y)
+            addAnimations(name..i)
+            setProperty(name..i..".antialiasing", false)
+            setProperty(name..i..".visible", atts[name].visible)
+            setProperty(name..i..".color", getColorFromHex(atts[name].color))
+            scaleObject(name..i, atts[name].scalex, atts[name].scaley)
+            updateHitbox(name..i)
+            setObjectCamera(name..i, atts[name].cam)
+            addLuaSprite(name..i, true)
+        end
+
+        if (atts[name].alignment == "right") then setProperty(name..i..".x", (atts[name].x + ((i-1) * (fonts[atts[name].font].width * atts[name].scalex))) - (fonts[atts[name].font].width * #splttxt * atts[name].scalex))
+        else setProperty(name..i..".x", atts[name].x + ((i-1) * (fonts[atts[name].font].width * atts[name].scalex)))
+        end
+        
+        if (i > #splttxt) then removeLuaSprite(name..i, true)
+        else setChar(name..i, splttxt[i]) 
+            setProperty(name..i..".visible", atts[name].visible and splttxt[i] ~= " ")
+        end
+    end
+    atts[name].text = txt
+    atts[name].length = #splttxt
+    if (#splttxt > atts[name].maxlength) then  atts[name].maxlength = #splttxt end
+end
+
+function Font:setTextScale(name, scalx, scaly)
+    for i=1,atts[name].length do
+        scaleObject(name..i, scalx, scaly)
+        updateHitbox(name..i)
+        if (atts[name].alignment == "right") then setProperty(name..i..".x", (atts[name].x + ((i-1) * (fonts[atts[name].font].width * scalx))) - (fonts[atts[name].font].width * atts[name].length * scalx))
+        else setProperty(name..i..".x", atts[name].x + ((i-1) * (fonts[atts[name].font].width * scalx)))
+        end
+        setProperty(name..i..".y", atts[name].y)
+    end
+    atts[name].scalex = scalx
+    atts[name].scaley = scaly
+end
+
+function Font:setTextVisible(name, visible)
+    for i=1,atts[name].length do
+        setProperty(name..i..".visible", visible and utils:numToStr(atts[name].text)[i] ~= " ")
+    end
+    atts[name].visible = visible
+end
+
+function Font:setTextColour(name, clr)
+    for i=1,atts[name].length do
+        setProperty(name..i..".color", getColorFromHex(clr))
+    end
+    atts[name].color = clr
+end
+
+function Font:screenCenter(name, axis)
+    axis = axis or "XY"
+
+    if (axis:match("X") or axis:match("x")) then
+        for i=1,atts[name].length do
+            setProperty(name..i..".x", ((screenWidth - (atts[name].length * (fonts[atts[name].font].width * atts[name].scalex))) / 2) + ((i-1) * (fonts[atts[name].font].width * atts[name].scalex)))
+        end
+        atts[name].x = ((screenWidth - (atts[name].length * (fonts[atts[name].font].width * atts[name].scalex))) / 2)
+    end
+    if (axis:match("Y") or axis:match("y")) then
+        for i=1,atts[name].length do
+            setProperty(name..i..".y", (screenHeight - getProperty(name..i..".frameHeight")) / 2)
+        end
+        atts[name].y = (screenHeight - getProperty(name.."1.frameHeight")) / 2
+    end
+end
+
+function Font:textExists(name) return (utils:indexOf(list, name) ~= nil) end
+function Font:getTextX(name) return atts[name].x end
+function Font:getTextY(name) return atts[name].y end
+function Font:sheetName(name) return sheetNames[name] end
+
+function Font:removeText(name, destroy)
+    if (utils:indexOf(list, name) == nil) then return end
+    
+    destroy = destroy or true
+    for i = 1,atts[name].maxlength do
+        removeLuaSprite(name..i, destroy)
+    end
+    table.remove(list, name)
+    atts[name] = nil
+end
+
+function Font:destroyAll()
+    for _,txt in pairs(list) do
+        for i = 1,atts[txt].maxlength do
+            removeLuaSprite(txt..i, true)
+        end
+    end
+    list = {}
+    atts = {}
+end
+
+return Font

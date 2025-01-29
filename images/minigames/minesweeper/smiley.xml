@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="smiley.png">
+	<!-- Created with my ass -->
+	<SubTexture name="reg-idle0000" x="0" y="0" width="34" height="34"/>
+	<SubTexture name="reg-click0000" x="34" y="0" width="34" height="34"/>
+	<SubTexture name="reg-dead0000" x="68" y="0" width="34" height="34"/>
+	<SubTexture name="reg-win0000" x="0" y="34" width="34" height="34"/>
+	
+	<SubTexture name="exp-idle0000" x="0" y="34" width="34" height="34"/>
+	<SubTexture name="exp-click0000" x="34" y="34" width="34" height="34"/>
+	<SubTexture name="exp-dead0000" x="68" y="0" width="34" height="34"/>
+	<SubTexture name="exp-win0000" x="68" y="34" width="34" height="34"/>
+</TextureAtlas>

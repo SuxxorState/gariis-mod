@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="programmer-dark.png">
+	<!-- Created with my ass -->
+	<SubTexture name="aceDiamonds0000" x="0" y="0" width="106" height="143"/>
+	<SubTexture name="2Diamonds0000" x="107" y="0" width="106" height="143"/>
+	<SubTexture name="3Diamonds0000" x="214" y="0" width="106" height="143"/>
+	<SubTexture name="4Diamonds0000" x="321" y="0" width="106" height="143"/>
+	<SubTexture name="5Diamonds0000" x="428" y="0" width="106" height="143"/>
+	<SubTexture name="6Diamonds0000" x="535" y="0" width="106" height="143"/>
+	<SubTexture name="7Diamonds0000" x="642" y="0" width="106" height="143"/>
+	<SubTexture name="8Diamonds0000" x="749" y="0" width="106" height="143"/>
+	<SubTexture name="9Diamonds0000" x="856" y="0" width="106" height="143"/>
+	<SubTexture name="10Diamonds0000" x="963" y="0" width="106" height="143"/>
+	<SubTexture name="jackDiamonds0000" x="1070" y="0" width="106" height="143"/>
+	<SubTexture name="queenDiamonds0000" x="1177" y="0" width="106" height="143"/>
+	<SubTexture name="kingDiamonds0000" x="1284" y="0" width="106" height="143"/>
+	
+	<SubTexture name="truckBoyDiamonds0000" x="0" y="720" width="106" height="143"/>
+	<SubTexture name="truckGirlDiamonds0000" x="107" y="720" width="106" height="143"/>
+	<SubTexture name="greasPicoDiamonds0000" x="214" y="720" width="106" height="143"/>
+	<SubTexture name="greasDrnlDiamonds0000" x="321" y="720" width="106" height="143"/>
+	<SubTexture name="greasNeneDiamonds0000" x="428" y="720" width="106" height="143"/>
+	<SubTexture name="scubySnpiDiamonds0000" x="535" y="720" width="106" height="143"/>
+	
+	<SubTexture name="aceHearts0000" x="0" y="144" width="106" height="143"/>
+	<SubTexture name="2Hearts0000" x="107" y="144" width="106" height="143"/>
+	<SubTexture name="3Hearts0000" x="214" y="144" width="106" height="143"/>
+	<SubTexture name="4Hearts0000" x="321" y="144" width="106" height="143"/>
+	<SubTexture name="5Hearts0000" x="428" y="144" width="106" height="143"/>
+	<SubTexture name="6Hearts0000" x="535" y="144" width="106" height="143"/>
+	<SubTexture name="7Hearts0000" x="642" y="144" width="106" height="143"/>
+	<SubTexture name="8Hearts0000" x="749" y="144" width="106" height="143"/>
+	<SubTexture name="9Hearts0000" x="856" y="144" width="106" height="143"/>
+	<SubTexture name="10Hearts0000" x="963" y="144" width="106" height="143"/>
+	<SubTexture name="jackHearts0000" x="1070" y="144" width="106" height="143"/>
+	<SubTexture name="queenHearts0000" x="1177" y="144" width="106" height="143"/>
+	<SubTexture name="kingHearts0000" x="1284" y="144" width="106" height="143"/>
+	
+	<SubTexture name="truckBoyHearts0000" x="0" y="864" width="106" height="143"/>
+	<SubTexture name="truckGirlHearts0000" x="107" y="864" width="106" height="143"/>
+	<SubTexture name="greasPicoHearts0000" x="214" y="864" width="106" height="143"/>
+	<SubTexture name="greasDrnlHearts0000" x="321" y="864" width="106" height="143"/>
+	<SubTexture name="greasNeneHearts0000" x="428" y="864" width="106" height="143"/>
+	<SubTexture name="scubySnpiHearts0000" x="535" y="864" width="106" height="143"/>
+	
+	<SubTexture name="aceSpades0000" x="0" y="288" width="106" height="143"/>
+	<SubTexture name="2Spades0000" x="107" y="288" width="106" height="143"/>
+	<SubTexture name="3Spades0000" x="214" y="288" width="106" height="143"/>
+	<SubTexture name="4Spades0000" x="321" y="288" width="106" height="143"/>
+	<SubTexture name="5Spades0000" x="428" y="288" width="106" height="143"/>
+	<SubTexture name="6Spades0000" x="535" y="288" width="106" height="143"/>
+	<SubTexture name="7Spades0000" x="642" y="288" width="106" height="143"/>
+	<SubTexture name="8Spades0000" x="749" y="288" width="106" height="143"/>
+	<SubTexture name="9Spades0000" x="856" y="288" width="106" height="143"/>
+	<SubTexture name="10Spades0000" x="963" y="288" width="106" height="143"/>
+	<SubTexture name="jackSpades0000" x="1070" y="288" width="106" height="143"/>
+	<SubTexture name="queenSpades0000" x="1177" y="288" width="106" height="143"/>
+	<SubTexture name="kingSpades0000" x="1284" y="288" width="106" height="143"/>
+	
+	<SubTexture name="truckBoySpades0000" x="0" y="1008" width="106" height="143"/>
+	<SubTexture name="truckGirlSpades0000" x="107" y="1008" width="106" height="143"/>
+	<SubTexture name="greasPicoSpades0000" x="214" y="1008" width="106" height="143"/>
+	<SubTexture name="greasDrnlSpades0000" x="321" y="1008" width="106" height="143"/>
+	<SubTexture name="greasNeneSpadesg0000" x="428" y="1008" width="106" height="143"/>
+	<SubTexture name="scubySnpiSpades0000" x="535" y="1008" width="106" height="143"/>
+	
+	<SubTexture name="aceClubs0000" x="0" y="432" width="106" height="143"/>
+	<SubTexture name="2Clubs0000" x="107" y="432" width="106" height="143"/>
+	<SubTexture name="3Clubs0000" x="214" y="432" width="106" height="143"/>
+	<SubTexture name="4Clubs0000" x="321" y="432" width="106" height="143"/>
+	<SubTexture name="5Clubs0000" x="428" y="432" width="106" height="143"/>
+	<SubTexture name="6Clubs0000" x="535" y="432" width="106" height="143"/>
+	<SubTexture name="7Clubs0000" x="642" y="432" width="106" height="143"/>
+	<SubTexture name="8Clubs0000" x="749" y="432" width="106" height="143"/>
+	<SubTexture name="9Clubs0000" x="856" y="432" width="106" height="143"/>
+	<SubTexture name="10Clubs0000" x="963" y="432" width="106" height="143"/>
+	<SubTexture name="jackClubs0000" x="1070" y="432" width="106" height="143"/>
+	<SubTexture name="queenClubs0000" x="1177" y="432" width="106" height="143"/>
+	<SubTexture name="kingClubs0000" x="1284" y="432" width="106" height="143"/>
+	
+	<SubTexture name="truckBoyClubs0000" x="0" y="1152" width="106" height="143"/>
+	<SubTexture name="truckGirlClubs0000" x="107" y="1152" width="106" height="143"/>
+	<SubTexture name="greasPicoClubs0000" x="214" y="1152" width="106" height="143"/>
+	<SubTexture name="greasDrnlClubs0000" x="321" y="1152" width="106" height="143"/>
+	<SubTexture name="greasNeneClubs0000" x="428" y="1152" width="106" height="143"/>
+	<SubTexture name="scubySnpiClubs0000" x="535" y="1152" width="106" height="143"/>
+	
+	<SubTexture name="truckBoyReg0000" x="0" y="576" width="106" height="143"/>
+	<SubTexture name="truckGirlReg0000" x="107" y="576" width="106" height="143"/>
+	<SubTexture name="greasPicoReg0000" x="214" y="576" width="106" height="143"/>
+	<SubTexture name="greasDrnlReg0000" x="321" y="576" width="106" height="143"/>
+	<SubTexture name="greasNeneReg0000" x="428" y="576" width="106" height="143"/>
+	<SubTexture name="scubySnpiReg0000" x="535" y="576" width="106" height="143"/>
+	
+	<SubTexture name="cardback0000" x="749" y="576" width="106" height="143"/>
+</TextureAtlas>

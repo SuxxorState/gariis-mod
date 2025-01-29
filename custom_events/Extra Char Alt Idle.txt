@@ -1,0 +1,5 @@
+Allows for extra characters to change their idle animation.
+Works exactly like Alt Idle Anim but for extra characters.
+
+Value 1: Which character in specific to target
+Value 2: New suffix, leave blank to disable

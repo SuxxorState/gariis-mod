@@ -1,0 +1,11 @@
+{
+	"confirm_anim": "gari strory",
+	"idle_anim": "gari strory",
+	"position": [
+		110,
+		0
+	],
+	"scale": 1,
+	"image": "garii",
+	"flipX": false
+}

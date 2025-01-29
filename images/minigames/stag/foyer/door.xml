@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="door.png">
+	<!-- Created with Adobe Animate version 23.0.1.70 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="door" x="0" y="0" width="263" height="402" pivotX="0" pivotY="0"/>
+	<SubTexture name="faze" x="226" y="693" width="257" height="214" pivotX="0" pivotY="0"/>
+	<SubTexture name="gari1" x="427" y="0" width="166" height="271" pivotX="0" pivotY="0"/>
+	<SubTexture name="gari2" x="245" y="404" width="177" height="276" pivotX="0" pivotY="0"/>
+	<SubTexture name="goons" x="0" y="404" width="243" height="287" pivotX="0" pivotY="0"/>
+	<SubTexture name="jack" x="265" y="0" width="160" height="335" pivotX="0" pivotY="0"/>
+	<SubTexture name="lino" x="424" y="337" width="162" height="279" pivotX="0" pivotY="0"/>
+	<SubTexture name="slots" x="0" y="693" width="224" height="272" pivotX="0" pivotY="0"/>
+</TextureAtlas>

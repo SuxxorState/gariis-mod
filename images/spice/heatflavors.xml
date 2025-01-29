@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Created with Funkin Packer v0.1.3 https://neeeoo.github.io/funkin-packer/
+-->
+<TextureAtlas imagePath="heatflavors.png" width="853" height="444">
+	<SubTexture name="desc00000" x="0" y="371" width="645" height="73" frameX="-0" frameY="-0" frameWidth="646" frameHeight="73"/>
+	<SubTexture name="desc10000" x="0" y="76" width="837" height="72" frameX="-0" frameY="-1" frameWidth="837" frameHeight="73"/>
+	<SubTexture name="desc20000" x="0" y="0" width="853" height="74" frameX="-0" frameY="-0" frameWidth="854" frameHeight="74"/>
+	<SubTexture name="desc30000" x="0" y="150" width="830" height="73" frameX="-0" frameY="-0" frameWidth="830" frameHeight="73"/>
+	<SubTexture name="desc40000" x="0" y="225" width="827" height="82" frameX="-0" frameY="-0" frameWidth="827" frameHeight="82"/>
+	<SubTexture name="desc50000" x="0" y="309" width="651" height="60" frameX="-0" frameY="-0" frameWidth="652" frameHeight="60"/>
+</TextureAtlas>

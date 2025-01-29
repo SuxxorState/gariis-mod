@@ -1,0 +1,12 @@
+truckerboy
+unused line--later on it will be for note types
+
+bubbleLEFT, boy bubble tall, 320, 0
+bubbleDOWN, boy bubble round, -360, -100
+bubbleUP, boy bubble yell, 350, 235
+bubbleRIGHT, boy bubble polygonal, 120, 95
+
+bubbleLEFTmiss, boy bubble sad tall, 320, 0
+bubbleDOWNmiss, boy bubble WHAT round, -160, -40
+bubbleUPmiss, boy bubble curse yell, 350, 305
+bubbleRIGHTmiss, boy bubble unhappy gonal, 120, 95
