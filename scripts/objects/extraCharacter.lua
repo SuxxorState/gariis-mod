@@ -111,7 +111,14 @@ end
 function charDance(dncbeat)
     for chr,vals in pairs(storedChrs) do
         if (dncbeat % getProperty(chr..".danceEveryNumBeats") == 0 and (getProperty(chr..".holdTimer") <= 0) and (((not stringStartsWith(getProperty(chr..".animation.curAnim.name"), "sing")) and (not stringStartsWith(getProperty(chr..".atlas.anim.lastPlayedAnim"), "sing"))) or (not stringStartsWith(callMethod(chr..".getAnimationName"), "sing"))) and (not getProperty(chr..".stunned")) and (not getProperty(chr..".specialAnim"))) then
-            callMethod(chr..".dance")
+            if (callMethod(chr..".animOffsets.exists", {"danceLeft"})) then
+                if (getProperty(chr..".danced")) then callMethod(chr..".playAnim", {"danceRight"..getProperty(chr..".idleSuffix")})
+                else callMethod(chr..".playAnim", {"danceLeft"..getProperty(chr..".idleSuffix")})
+                end
+                setProperty(chr..".danced", not getProperty(chr..".danced"))
+            else
+                callMethod(chr..".playAnim", {"idle"..getProperty(chr..".idleSuffix")})
+            end
             setProperty(chr..".holdTimer", {0})
             if (vals.switchTo ~= "" and vals.switchTo ~= nil) then 
                 setProperty(chr..".idleSuffix", vals.switchTo) 
