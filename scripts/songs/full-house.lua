@@ -6,6 +6,12 @@ function onCreate()
 
     callOnLuas("addExtraOpp", {"hunte", "hunte", -310,150})
     setProperty("hunte.visible", false)
+
+    utils:makeBlankBG("blackin", screenWidth * 2, screenHeight * 2, "000000")
+    setObjectOrder("blackin", getObjectOrder('gfGroup'))
+
+    utils:makeBlankBG("blackfront", screenWidth * 2, screenHeight * 2, "000000", "other")
+    setProperty("blackfront.visible", false)
 end
 
 function onCreatePost()

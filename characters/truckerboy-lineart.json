@@ -2,65 +2,47 @@
 	"animations": [
 		{
 			"loop": true,
-			"offsets": [
-				0,
-				0
-			],
+			"offsets": [0, 0],
 			"anim": "idle",
 			"fps": 2,
 			"name": "boy idle",
 			"indices": []
 		},
 		{
-			"loop": false,
-			"offsets": [
-				0,
-				0
-			],
+			"offsets": [51, -24],
+			"indices": [],
+			"fps": 12,
 			"anim": "singLEFT",
-			"fps": 24,
-			"name": "boy left",
-			"indices": []
+			"loop": false,
+			"name": "boy left"
 		},
 		{
-			"loop": false,
-			"offsets": [
-				0,
-				0
-			],
+			"offsets": [-1, -40],
+			"indices": [],
+			"fps": 12,
 			"anim": "singDOWN",
-			"fps": 24,
-			"name": "boy down",
-			"indices": []
+			"loop": false,
+			"name": "boy down"
 		},
 		{
-			"loop": false,
-			"offsets": [
-				0,
-				0
-			],
+			"offsets": [-40, 42],
+			"indices": [],
+			"fps": 12,
 			"anim": "singUP",
-			"fps": 24,
-			"name": "boy up",
-			"indices": []
+			"loop": false,
+			"name": "boy up"
 		},
 		{
-			"loop": false,
-			"offsets": [
-				0,
-				0
-			],
+			"offsets": [-32, 3],
+			"indices": [],
+			"fps": 12,
 			"anim": "singRIGHT",
-			"fps": 24,
-			"name": "boy right",
-			"indices": []
+			"loop": false,
+			"name": "boy right"
 		},
 		{
 			"loop": false,
-			"offsets": [
-				0,
-				0
-			],
+			"offsets": [0, 0],
 			"anim": "singLEFTmiss",
 			"fps": 24,
 			"name": "miss",
@@ -68,10 +50,7 @@
 		},
 		{
 			"loop": false,
-			"offsets": [
-				0,
-				0
-			],
+			"offsets": [0, 0],
 			"anim": "singDOWNmiss",
 			"fps": 24,
 			"name": "miss",
@@ -79,10 +58,7 @@
 		},
 		{
 			"loop": false,
-			"offsets": [
-				0,
-				0
-			],
+			"offsets": [0, 0],
 			"anim": "singUPmiss",
 			"fps": 24,
 			"name": "miss",
@@ -90,10 +66,7 @@
 		},
 		{
 			"loop": false,
-			"offsets": [
-				0,
-				0
-			],
+			"offsets": [0, 0],
 			"anim": "singRIGHTmiss",
 			"fps": 24,
 			"name": "miss",
@@ -101,10 +74,7 @@
 		},
 		{
 			"loop": false,
-			"offsets": [
-				0,
-				0
-			],
+			"offsets": [-203, 28],
 			"anim": "homer",
 			"fps": 24,
 			"name": "homer",
@@ -114,21 +84,11 @@
 	"vocals_file": "",
 	"no_antialiasing": false,
 	"image": "characters/truckerboy-lineart",
-	"position": [
-		240,
-		110
-	],
+	"position": [240, 110],
 	"healthicon": "truckboy",
 	"flip_x": true,
-	"healthbar_colors": [
-		78,
-		127,
-		175
-	],
-	"camera_position": [
-		-10,
-		230
-	],
+	"healthbar_colors": [78, 127, 175],
+	"camera_position": [-10, 230],
 	"sing_duration": 4,
 	"scale": 1,
 	"_editor_isPlayer": true

@@ -1,0 +1,55 @@
+{
+	"animations": [
+		{
+			"loop": true,
+			"offsets": [0, 0],
+			"anim": "idle",
+			"fps": 2,
+			"name": "idle carv",
+			"indices": []
+		},
+		{
+			"offsets": [95, -13],
+			"indices": [],
+			"fps": 12,
+			"anim": "singLEFT",
+			"loop": false,
+			"name": "left crave"
+		},
+		{
+			"offsets": [-1, -40],
+			"indices": [],
+			"fps": 12,
+			"anim": "singDOWN",
+			"loop": false,
+			"name": "down carv"
+		},
+		{
+			"offsets": [6, 37],
+			"indices": [],
+			"fps": 12,
+			"anim": "singUP",
+			"loop": false,
+			"name": "up carv"
+		},
+		{
+			"offsets": [-71, -19],
+			"indices": [],
+			"fps": 12,
+			"anim": "singRIGHT",
+			"loop": false,
+			"name": "right carv"
+		}
+	],
+	"vocals_file": "",
+	"no_antialiasing": false,
+	"image": "characters/carv-lineart",
+	"position": [240, 110],
+	"healthicon": "truckboy",
+	"flip_x": false,
+	"healthbar_colors": [78, 127, 175],
+	"camera_position": [-10, 230],
+	"sing_duration": 4,
+	"scale": 1,
+	"_editor_isPlayer": false
+}
