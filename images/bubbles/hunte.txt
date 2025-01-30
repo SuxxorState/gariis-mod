@@ -1,7 +1,7 @@
 hunte
 unused line--later on it will be for note types
 
-bubbleLEFT, ciercle hunte booble, -240, 390
-bubbleDOWN, hunte bubbl hexa, -180, 390
-bubbleUP, hunte buble sqarer, 300, 230
-bubbleRIGHT, hnte bubl squareish, 100, 460
+bubbleLEFT, ciercle hunte booble, -1, 669
+bubbleDOWN, hunte bubbl hexa, 39, 710
+bubbleUP, hunte buble sqarer, 494, 475
+bubbleRIGHT, hnte bubl squareish, 331, 724

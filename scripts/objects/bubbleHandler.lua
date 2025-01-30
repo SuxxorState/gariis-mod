@@ -144,7 +144,7 @@ end
 
 function onUpdatePost(elp)
     for i,char in pairs(bubbleChars) do
-        if (stringStartsWith(getProperty(char..".animation.curAnim.name"), "idle") or stringStartsWith(getProperty(char..".atlas.anim.lastPlayedAnim"), "idle")) then --actually wait this is way simpler
+        if (stringStartsWith(getProperty(char..".animation.curAnim.name"), "idle") or stringStartsWith(getProperty(char..".atlas.anim.lastPlayedAnim"), "idle") or stringStartsWith(callMethod(char..".getAnimationName"), "idle")) then --actually wait this is way simpler
             setProperty(char.."Bubbles.alpha", 0)
         end
         if getProperty(char.."Bubbles.animation.curAnim.finished") and bubbleCanLoop[char] then --why was i having trouble with this. why.

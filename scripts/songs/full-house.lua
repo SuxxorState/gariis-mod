@@ -5,15 +5,11 @@ function onCreate()
     addLuaScript("scripts/objects/extraCharacter")
     setProperty("skipCountdown", true)
 
-    callOnLuas("addExtraOpp", {"hunte", "hunte", -310,150})
-    setProperty("hunte.visible", false)
-
     makeLuaSprite('blackin','gameOver/black-paper',450,116)
     setGraphicSize("blackin", 1300, 740)
     addLuaSprite('blackin')
     setObjectOrder("blackin", getObjectOrder('gfGroup'))
     setProperty("blackin.visible", false)
-
     
     makeLuaSprite('blackoutSpr','gameOver/black-paper',-10,-10)
     setGraphicSize("blackoutSpr", 1300, 740)
@@ -33,6 +29,9 @@ function onCreatePost()
     if (timeBarType ~= "Disabled") then setProperty("iconTimehunte.x", -150) end
     setProperty("dad.x", getProperty("dad.x") - 100)
     setProperty("spkr2.visible", false)
+
+    callOnLuas("addExtraOpp", {"hunte", "hunte", -310,150})
+    setProperty("hunte.visible", false)
 end
 
 

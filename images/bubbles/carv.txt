@@ -1,7 +1,7 @@
 carv
 unused line--later on it will be for note types
 
-bubbleLEFT, carv bubbl roundish, 20, 220
-bubbleDOWN, cavr bube squirvle, -390, 180
-bubbleUP, couldy burbl, -80, 200
-bubbleRIGHT, carv bubl polyugon, 130, 225
+bubbleLEFT, carv bubbl roundish, 60, 223
+bubbleDOWN, cavr bube squirvle, -296, 161
+bubbleUP, couldy burbl, 25, 198
+bubbleRIGHT, carv bubl polyugon, 279, 228
