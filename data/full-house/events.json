@@ -413,6 +413,11 @@
 						"Set Cam Zoom",
 						"1",
 						"0.001"
+					],
+					[
+						"Change Note Skin",
+						"borderlineUI/NOTE_assets-sketch",
+						"borderlineUI/splashsketch"
 					]
 				]
 			],
@@ -553,6 +558,11 @@
 						"Change Character",
 						"boyfriend",
 						"truckergirl-alt"
+					],
+					[
+						"Change Note Skin",
+						"borderlineUI/NOTE_assets-awesome",
+						"borderlineUI/awesome"
 					]
 				]
 			],

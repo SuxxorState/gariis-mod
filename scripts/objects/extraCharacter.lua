@@ -1,5 +1,6 @@
 local utils = (require (getVar("folDir").."scripts.backend.utils")):new()
 local disableBar = (timeBarType == "Disabled")
+local iconLimits = {-1,0}
 local storedChrs = {}
 local chrAmts = {["opp"] = 0, ["sup"] = 0}
 local lastMHS = true
@@ -10,7 +11,7 @@ function addExtraSup(varName, chName, xPos, yPos) makeNewCommon(varName, chName,
 
 function makeNewCommon(varName, chName, xPos, yPos, pos, tipe) --pretty barebones way of having another character; its WAY better than the old system i was using, though.
     chrAmts[tipe] = chrAmts[tipe] + 1
-    storedChrs[varName] = {chrName = chName, x = xPos, y = yPos, iconLimits = {-1,0}, reduced = false, lolthing = 0, index = chrAmts[tipe], chrType = tipe, idleSuffix = "", switchTo = "", poseSuffix = ""}
+    storedChrs[varName] = {chrName = chName, x = xPos, y = yPos, reduced = false, lolthing = 0, index = chrAmts[tipe], chrType = tipe, idleSuffix = "", switchTo = "", poseSuffix = ""}
 
     createInstance(varName, "objects.Character", {xPos, yPos, chName, false})
     setProperty(varName..".x", getProperty(varName..".x") + getProperty(varName..".positionArray")[1])
@@ -110,7 +111,9 @@ end
 
 function charDance(dncbeat)
     for chr,vals in pairs(storedChrs) do
-        if (dncbeat % getProperty(chr..".danceEveryNumBeats") == 0 and (getProperty(chr..".holdTimer") <= 0) and (((not stringStartsWith(getProperty(chr..".animation.curAnim.name"), "sing")) and (not stringStartsWith(getProperty(chr..".atlas.anim.lastPlayedAnim"), "sing"))) or (not stringStartsWith(callMethod(chr..".getAnimationName"), "sing"))) and (not getProperty(chr..".stunned")) and (not getProperty(chr..".specialAnim"))) then
+        local isSinging = (stringStartsWith(getProperty(chr..".animation.curAnim.name"), "sing") or stringStartsWith(getProperty(chr..".atlas.anim.lastPlayedAnim"), "sing"))
+        if (stringStartsWith(version, "1.0.")) then isSinging = (stringStartsWith(callMethod(chr..".getAnimationName"), "sing")) end
+        if (dncbeat % getProperty(chr..".danceEveryNumBeats") == 0 and (getProperty(chr..".holdTimer") <= 0) and (not isSinging) and (not getProperty(chr..".stunned")) and (not getProperty(chr..".specialAnim"))) then
             if (callMethod(chr..".animOffsets.exists", {"danceLeft"})) then
                 if (getProperty(chr..".danced")) then callMethod(chr..".playAnim", {"danceRight"..getProperty(chr..".idleSuffix")})
                 else callMethod(chr..".playAnim", {"danceLeft"..getProperty(chr..".idleSuffix")})
@@ -137,7 +140,7 @@ function makeNewTimeIcon(chrName, iconName)
     removeLuaSprite('iconTime'..chrName)
 
     makeAnimatedLuaSprite("iconTime"..chrName, "icons/"..iconName.."-anim", ((vars.index-1) % 2) * 45, screenHeight - (205 * vars.index))
-    for i=vars.iconLimits[1],vars.iconLimits[2] do  
+    for i=iconLimits[1],iconLimits[2] do  
         addAnimationByPrefix("iconTime"..chrName, 'stg'..(i+vars.lolthing), iconName.." stage "..i, 24, true) 
     end
 
@@ -165,10 +168,10 @@ function onEventPushed(name, value1, value2, strumTime)
 
 	if (event == "advance-anger") then
         if (tonumber(val2) ~= nil) then
+            if (tonumber(val2) < iconLimits[1]) then iconLimits[1] = tonumber(val2) 
+            elseif (tonumber(val2) > iconLimits[2]) then iconLimits[2] = tonumber(val2) 
+            end
             for chr,_ in pairs(storedChrs) do
-                if (tonumber(val2) < storedChrs[chr].iconLimits[1]) then storedChrs[chr].iconLimits[1] = tonumber(val2) 
-                elseif (tonumber(val2) > storedChrs[chr].iconLimits[2]) then storedChrs[chr].iconLimits[2] = tonumber(val2) 
-                end
                 makeNewTimeIcon(chr, getProperty(chr..".healthIcon"))
             end
         end

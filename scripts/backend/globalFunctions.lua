@@ -230,7 +230,7 @@ function onEvent(name, value1, value2, strumTime)
    
         if (val2 ~= '') then
             for i = 0, getProperty('unspawnNotes.length')-1 do
-                setPropertyFromGroup('unspawnNotes', i, 'noteSplashTexture', value2);
+                setPropertyFromGroup('unspawnNotes', i, 'noteSplashData.texture', value2);
             end
         end
     end
