@@ -120,7 +120,9 @@ function opponentNoteHit(id, dir, ntype)
     elseif (getProperty("health") > (hpDrain + 0.025)) then --adding the hp drain ensures that the health cant accidentally overlook it and kill the player for being too small
         setProperty("health", getProperty("health") - hpDrain)
     end
-
+    if (ntype == "Pose Note") then
+        playAnim("dad", "pose"..getRandomInt(1,1), true)
+    end
 end
 
 function restartCountdown(delay)

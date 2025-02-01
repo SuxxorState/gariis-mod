@@ -105,6 +105,8 @@ function opponentNoteHit(index, dir, noteType, sustain)
             setProperty(chr..".holdTimer", 0)
             setObjectOrder("iconTime"..chr, getObjectOrder("iconTime") + 1)
             setProperty("timBar.color", utils:convColours(getProperty(chr..".healthColorArray")))
+        elseif (utils:lwrKebab(noteType) == "pose-note") then
+            playAnim(chr, "pose"..getRandomInt(1,1), true)
         end
     end
 end
