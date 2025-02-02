@@ -3,6 +3,7 @@ local doingshit = false
 local isFallen = false
 local gameovermusic = "gameover/sad"
 local gameoverchar = "truckerboy"
+local oppGenName = ""
 local gameovertaunts = {
     ["garii"] = {{"F4F3AD"}, --provide text colour as index 1 then the quotes after
         {"You either are trying too hard, or aren't trying hard enough...Funny, both mean you're ass."}, {"Stupid boy, you make me look bad!"}, {"You dont know the beginning of godhood, boy."}, {"Give it up to this guy, everybody! You fucking suck!"}, 
@@ -17,7 +18,7 @@ local gameovertaunts = {
         {"Ugly sunovabitches.", "Euthanization was the only option for them..."}, {"This is time I COULD BE USING for other things.", "Eh, I would probably be on the couch doing nothing."}, {"Hey Hunte, wanna go to the beach?", "No"}, {"Neeeeerds!", "NEEEEERDS!"},
         {"Gaaaaaaaay", "Could go for a mean weiner right about now."}
     },
-    ["foxy-potato"] = {{"8FC79B"},
+    ["foxy"] = {{"8FC79B"},
         {"What? Was I supposed to go easy or somn'?\nAtlas, was I supposed to go easy on him?"}, {"F16 to F24, the cup has been eradicated.\nI repeat, the cup has been eradicated."}, {"Uh, awkward."}, {"16 OC is your limit, cup."}, {"I wonder y u suk"},
         {"Didn't even need to call LL for this."}, {"On days like these, drinks like you...\nEven heck is too good for you."}, {"What? I ain't gonna get shot."}, {"Were the fish bones too much for you?"}, {"Catster blaster BLAST!"}, {"ez"}, {"Eat it, hollowhead!"}
     }
@@ -115,32 +116,33 @@ function onCustomSubstateCreate(tag)
     doTweenY('awesome', "textGameOver", 20, 1, "circOut")
     
     makeFlxAnimateSprite('charGameOver', 0,0, 'gameOver/chars')
-    addAnimationBySymbolIndices("charGameOver", "preDeath" ,"-deaths/"..gameoverchar.." death", "0", 24, true)
     addAnimationBySymbol("charGameOver", "firstDeath" , "-deaths/"..gameoverchar.." death", 24, false)
     addAnimationBySymbol("charGameOver", "deathLoop" , "-deaths/"..gameoverchar.." loopdeath", 24, true)
     screenCenter("charGameOver", "x")
     setProperty('charGameOver.x', getProperty('charGameOver.x') + 30) 
     setProperty('charGameOver.y', (screenHeight - getProperty("charGameOver.height")) - 230)
     setObjectCamera('charGameOver', 'other')
-    playAnim("charGameOver", "preDeath")
     addLuaSprite("charGameOver")
     runTimer('playDeath', 0.5)
 
-    randomquote = getRandomInt(2, #gameovertaunts[dadName])
-    for i = 1, #gameovertaunts[dadName][1] do
-        makeLuaText('tauntTxtGameOver'..i, gameovertaunts[dadName][randomquote][i], 900 / #gameovertaunts[dadName][1], 0, 0)
-        if (stringStartsWith(gameovertaunts[dadName][randomquote][i], "Tempted to make things harder just for you.") and (not utils:getGariiData("cachedInMyStupidToken"))) then
+    oppGenName = stringSplit(dadName, "-")[1] --there's a reason why i word my character files the way i do, makes finding out what character they are a lot easier without shemantics
+    randomquote = getRandomInt(2, #gameovertaunts[oppGenName])
+    if (stringStartsWith(version, "1.0.") and deaths > 5 and oppGenName == "garii") then randomquote = 10 end
+    
+    for i = 1, #gameovertaunts[oppGenName][1] do
+        makeLuaText('tauntTxtGameOver'..i, gameovertaunts[oppGenName][randomquote][i], 900 / #gameovertaunts[oppGenName][1], 0, 0)
+        if (stringStartsWith(gameovertaunts[oppGenName][randomquote][i], "Tempted to make things harder just for you.") and (not utils:getGariiData("cachedInMyStupidToken"))) then
             utils:setGariiData("cachedInMyStupidToken", true)
             utils:setGariiData("curSauce", math.min(utils:getGariiData("curSauce") + 1, 6))
         end
         setTextFont('tauntTxtGameOver'..i, "Lasting Sketch.ttf")
-        setTextColor('tauntTxtGameOver'..i, gameovertaunts[dadName][1][i])
+        setTextColor('tauntTxtGameOver'..i, gameovertaunts[oppGenName][1][i])
         setTextBorder('tauntTxtGameOver'..i, 0, 'FFFFFF')
         screenCenter('tauntTxtGameOver'..i, 'x')
-        if (#gameovertaunts[dadName][1] > 1) then
-            if (i > #gameovertaunts[dadName][1] / 2) then 
-                setProperty('tauntTxtGameOver'..i..'.x', getProperty("tauntTxtGameOver"..i..".x") + ((getProperty('tauntTxtGameOver'..i..'.fieldWidth')-150) * (i-(#gameovertaunts[dadName][1]/2))))
-            elseif (i < #gameovertaunts[dadName][1] / 2 or (#gameovertaunts[dadName][1] % 2 == 0 and i <= #gameovertaunts[dadName][1] / 2)) then 
+        if (#gameovertaunts[oppGenName][1] > 1) then
+            if (i > #gameovertaunts[oppGenName][1] / 2) then 
+                setProperty('tauntTxtGameOver'..i..'.x', getProperty("tauntTxtGameOver"..i..".x") + ((getProperty('tauntTxtGameOver'..i..'.fieldWidth')-150) * (i-(#gameovertaunts[oppGenName][1]/2))))
+            elseif (i < #gameovertaunts[oppGenName][1] / 2 or (#gameovertaunts[oppGenName][1] % 2 == 0 and i <= #gameovertaunts[oppGenName][1] / 2)) then 
                 setProperty('tauntTxtGameOver'..i..'.x', getProperty("tauntTxtGameOver"..i..".x") - ((getProperty('tauntTxtGameOver'..i..'.fieldWidth')-150) * i))
             end
         end
@@ -162,10 +164,16 @@ function onCustomSubstateCreate(tag)
 
     runTimer('textappear', 3)
     runTimer('playDeath', 0.5)
-    debugPrint("meh")
 end
 
-function onCustomSubstateUpdate(tag)
+function onCustomSubstateCreatePost(tag) --praying this fixes the no animations playing glitch
+    if (tag ~= "gameover") then return end
+
+    playAnim("textGameOver", "reg")
+    playAnim("charGameOver", "firstDeath")
+end
+
+function onCustomSubstateUpdate(tag, elp)
     if (tag ~= "gameover") then return end
 
     if (getProperty("charGameOver.anim.finished")) and getProperty("charGameOver.anim.lastPlayedAnim") ~= "deathLoop" then
@@ -192,7 +200,7 @@ function onTimerCompleted(tag, loops, loopsLeft)
         else doTweenY('charDeathTwn', "charGameOver", (screenHeight - getProperty("charGameOver.height")) - 310, 1, "circInOut")
         end
         
-        for i = 1, #gameovertaunts[dadName][1] do
+        for i = 1, #gameovertaunts[oppGenName][1] do
             doTweenAlpha('done'..i, "tauntTxtGameOver"..i, 1, 1)
         end
     elseif (tag == "opengameover") then

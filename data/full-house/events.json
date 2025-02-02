@@ -367,12 +367,27 @@
 				]
 			],
 			[
+				106764.705882353,
+				[
+					[
+						"Alt Idle Animation",
+						"gf",
+						"-alt"
+					]
+				]
+			],
+			[
 				130840.336134454,
 				[
 					[
 						"Extra Char Alt Idle",
 						"hunte",
 						"-alt"
+					],
+					[
+						"Alt Idle Animation",
+						"gf",
+						""
 					]
 				]
 			],

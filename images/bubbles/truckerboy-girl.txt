@@ -16,4 +16,9 @@ bubbleDOWN-confused, truckcouple squircle boobs, 280, 230
 bubbleUP-confused, yell bubble up, 652, 456
 bubbleRIGHT-confused, truckkcoupl saraer rite, 330, 90
 
+bubbleLEFTmiss, truckcouple left buble miss, 360, 170
+bubbleDOWNmiss, truckcouple no more squircle, 280, 230
+bubbleUPmiss, yelling my curses, 652, 456
+bubbleRIGHTmiss, truckkcoupl no sex bubel, 330, 120
+
 bubbleCATCHGF, truckcouple kiss buble, -50, -110
