@@ -29,7 +29,7 @@ function onCustomSubstateCreate(css)
 	soundFadeIn('bgmusic', 3, 0, 0.3)
 	
 	makeAnimatedLuaSprite('bgPause', fldr..'pausebg', 0, 0)
-	addAnimationByPrefix("bgPause", 'reg', "pausebg", 0.5)
+	addAnimationByPrefix("bgPause", 'reg', "pausebg", 1)
 	insertToCustomSubstate('bgPause')
 	setProperty('bgPause.alpha', 0)
 	doTweenAlpha('bgPause', 'bgPause', 0.5, 2.5, 'circOut')
@@ -40,7 +40,7 @@ function onCustomSubstateCreate(css)
 	doTweenX('pausePaper', 'pausePaper', -85, 1, 'circOut')
 
 	makeAnimatedLuaSprite('pauseSelected', fldr..'selected',10 - (300-85),300)
-	addAnimationByPrefix("pauseSelected", 'reg', "selected", 1)
+	addAnimationByPrefix("pauseSelected", 'reg', "selected", 2)
 	insertToCustomSubstate('pauseSelected')
 	doTweenX('pauseSelected', 'pauseSelected', 10, 1, 'circOut')
 

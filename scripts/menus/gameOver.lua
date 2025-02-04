@@ -65,8 +65,12 @@ function onGameOver()
     playSound(fldr.."fallin", 0.5, 'gofall')
 
     setProperty("generatedMusic", false) --disables shit like events... mainly cause of sfx playing
-    callMethod("vocals.stop")
-    callMethod("opponentVocals.stop")
+    setProperty("vocals.volume", 0)
+    setProperty("opponentVocals.volume", 0)
+    if (stringStartsWith(version, "1.0.")) then --im surprised this breaks in 0.7.3 ill be honest
+        callMethod("vocals.stop")
+        callMethod("opponentVocals.stop")
+    end
     soundFadeOut(_, 0.5, 0)
 
     createInstance("bfDead", "objects.Character", {getProperty("boyfriend.x"), getProperty("boyfriend.y"), "truckerboy-deaths", true})
@@ -133,7 +137,7 @@ function onCustomSubstateCreate(css)
 
         setProperty('tauntTxtGameOver'..i..'.alpha', 0)
         setObjectCamera('tauntTxtGameOver'..i, 'other')
-        insertToCustomSubstate('tauntTxtGameOver'..i)
+        addLuaText('tauntTxtGameOver'..i)
     end
     
     makeLuaSprite('fgGameOver',fldr..'not-black-paper',0,0)
