@@ -1,15 +1,16 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<TextureAtlas imagePath="carv-lineart.png">
-	<!-- Created with Adobe Animate version 19.2.1.408 -->
-	<!-- http://www.adobe.com/products/animate.html -->
-	<SubTexture name="down carv0000" x="1127" y="2052" width="538" height="627" frameX="-10" frameY="-26" frameWidth="558" frameHeight="653"/>
-	<SubTexture name="down carv0001" x="559" y="1411" width="558" height="652" frameX="0" frameY="0" frameWidth="558" frameHeight="653"/>
-	<SubTexture name="idle carv0000" x="1208" y="662" width="564" height="683" frameX="0" frameY="0" frameWidth="569" frameHeight="683"/>
-	<SubTexture name="idle carv0001" x="594" y="719" width="562" height="682" frameX="-7" frameY="0" frameWidth="569" frameHeight="683"/>
-	<SubTexture name="left crave0000" x="1208" y="10" width="614" height="642" frameX="0" frameY="-29" frameWidth="614" frameHeight="699"/>
-	<SubTexture name="left crave0001" x="620" y="10" width="578" height="699" frameX="-29" frameY="0" frameWidth="614" frameHeight="699"/>
-	<SubTexture name="right carv0000" x="10" y="10" width="600" height="675" frameX="0" frameY="-12" frameWidth="600" frameHeight="687"/>
-	<SubTexture name="right carv0001" x="10" y="695" width="574" height="687" frameX="0" frameY="0" frameWidth="600" frameHeight="687"/>
-	<SubTexture name="up carv0000" x="10" y="1392" width="539" height="709" frameX="-13" frameY="0" frameWidth="553" frameHeight="712"/>
-	<SubTexture name="up carv0001" x="1166" y="1355" width="553" height="687" frameX="0" frameY="-25" frameWidth="553" frameHeight="712"/>
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Created with Funkin Packer v0.1.3 https://neeeoo.github.io/funkin-packer/
+-->
+<TextureAtlas imagePath="carv-lineart.png" width="1848" height="2276">
+	<SubTexture name="down carv0000" x="1305" y="1338" width="537" height="627" frameX="-11" frameY="-26" frameWidth="558" frameHeight="653"/>
+	<SubTexture name="down carv0001" x="1287" y="684" width="558" height="652" frameX="-0" frameY="-0" frameWidth="558" frameHeight="653"/>
+	<SubTexture name="idle carv0000" x="701" y="689" width="563" height="683" frameX="-1" frameY="-0" frameWidth="569" frameHeight="683"/>
+	<SubTexture name="idle carv0001" x="1287" y="0" width="561" height="682" frameX="-7" frameY="-0" frameWidth="569" frameHeight="683"/>
+	<SubTexture name="left crave0000" x="689" y="1374" width="614" height="642" frameX="-0" frameY="-29" frameWidth="614" frameHeight="699"/>
+	<SubTexture name="left crave0001" x="0" y="541" width="699" height="578" rotated="true" frameX="-29" frameY="-0" frameWidth="614" frameHeight="699"/>
+	<SubTexture name="right carv0000" x="0" y="1676" width="675" height="600" rotated="true" frameX="-0" frameY="-12" frameWidth="600" frameHeight="687"/>
+	<SubTexture name="right carv0001" x="711" y="0" width="574" height="687" frameX="-0" frameY="-0" frameWidth="600" frameHeight="687"/>
+	<SubTexture name="up carv0000" x="0" y="0" width="709" height="539" rotated="true" frameX="-13" frameY="-0" frameWidth="553" frameHeight="712"/>
+	<SubTexture name="up carv0001" x="0" y="1121" width="687" height="553" rotated="true" frameX="-0" frameY="-25" frameWidth="553" frameHeight="712"/>
 </TextureAtlas>

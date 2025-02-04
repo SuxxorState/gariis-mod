@@ -1,267 +1,268 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<TextureAtlas imagePath="truckerboy.png">
-	<!-- Created with Adobe Animate version 23.0.1.70 -->
-	<!-- http://www.adobe.com/products/animate.html -->
-	<SubTexture name="boy bubbl hey0000" x="1097" y="571" width="143" height="237" pivotX="87.15" pivotY="135.9" frameX="-221" frameY="-200" frameWidth="364" frameHeight="437"/>
-	<SubTexture name="boy bubbl hey0001" x="1097" y="571" width="143" height="237" frameX="-221" frameY="-200" frameWidth="364" frameHeight="437"/>
-	<SubTexture name="boy bubbl hey0002" x="1713" y="2206" width="339" height="400" frameX="0" frameY="0" frameWidth="364" frameHeight="437"/>
-	<SubTexture name="boy bubbl hey0003" x="1713" y="2206" width="339" height="400" frameX="0" frameY="0" frameWidth="364" frameHeight="437"/>
-	<SubTexture name="boy bubbl hey0004" x="3747" y="2749" width="294" height="348" frameX="-56" frameY="-78" frameWidth="364" frameHeight="437"/>
-	<SubTexture name="boy bubbl hey0005" x="3747" y="2749" width="294" height="348" frameX="-56" frameY="-78" frameWidth="364" frameHeight="437"/>
-	<SubTexture name="boy bubble WHAT round0000" x="1173" y="1724" width="625" height="310" pivotX="-258" pivotY="138.3"/>
-	<SubTexture name="boy bubble WHAT round0001" x="0" y="1732" width="625" height="310"/>
-	<SubTexture name="boy bubble WHAT round0002" x="3562" y="415" width="396" height="104" frameX="-112" frameY="-84" frameWidth="625" frameHeight="310"/>
-	<SubTexture name="boy bubble WHAT round0003" x="0" y="2334" width="396" height="104" frameX="-112" frameY="-84" frameWidth="625" frameHeight="310"/>
-	<SubTexture name="boy bubble WHAT round0004" x="0" y="2551" width="520" height="230" frameX="-57" frameY="-30" frameWidth="625" frameHeight="310"/>
-	<SubTexture name="boy bubble WHAT round0005" x="522" y="2559" width="520" height="230" frameX="-57" frameY="-30" frameWidth="625" frameHeight="310"/>
-	<SubTexture name="boy bubble WHAT round0006" x="522" y="2559" width="520" height="230" frameX="-57" frameY="-30" frameWidth="625" frameHeight="310"/>
-	<SubTexture name="boy bubble WHAT round0007" x="522" y="2559" width="520" height="230" frameX="-57" frameY="-30" frameWidth="625" frameHeight="310"/>
-	<SubTexture name="boy bubble WHAT round0008" x="2383" y="2679" width="514" height="225" frameX="-56" frameY="-36" frameWidth="625" frameHeight="310"/>
-	<SubTexture name="boy bubble WHAT round0009" x="2383" y="2679" width="514" height="225" frameX="-56" frameY="-36" frameWidth="625" frameHeight="310"/>
-	<SubTexture name="boy bubble WHAT round0010" x="2383" y="2679" width="514" height="225" frameX="-56" frameY="-36" frameWidth="625" frameHeight="310"/>
-	<SubTexture name="boy bubble WHAT round0011" x="2383" y="2679" width="514" height="225" frameX="-56" frameY="-36" frameWidth="625" frameHeight="310"/>
-	<SubTexture name="boy bubble WHAT round0012" x="2383" y="2679" width="514" height="225" frameX="-56" frameY="-36" frameWidth="625" frameHeight="310"/>
-	<SubTexture name="boy bubble WHAT round0013" x="2383" y="2679" width="514" height="225" frameX="-56" frameY="-36" frameWidth="625" frameHeight="310"/>
-	<SubTexture name="boy bubble WHAT round0014" x="2383" y="2679" width="514" height="225" frameX="-56" frameY="-36" frameWidth="625" frameHeight="310"/>
-	<SubTexture name="boy bubble WHAT round0015" x="2383" y="2679" width="514" height="225" frameX="-56" frameY="-36" frameWidth="625" frameHeight="310"/>
-	<SubTexture name="boy bubble WHAT round0016" x="1566" y="2608" width="520" height="225" frameX="-58" frameY="-31" frameWidth="625" frameHeight="310"/>
-	<SubTexture name="boy bubble WHAT round0017" x="1566" y="2608" width="520" height="225" frameX="-58" frameY="-31" frameWidth="625" frameHeight="310"/>
-	<SubTexture name="boy bubble WHAT round0018" x="1566" y="2608" width="520" height="225" frameX="-58" frameY="-31" frameWidth="625" frameHeight="310"/>
-	<SubTexture name="boy bubble WHAT round0019" x="1566" y="2608" width="520" height="225" frameX="-58" frameY="-31" frameWidth="625" frameHeight="310"/>
-	<SubTexture name="boy bubble WHAT round0020" x="1566" y="2608" width="520" height="225" frameX="-58" frameY="-31" frameWidth="625" frameHeight="310"/>
-	<SubTexture name="boy bubble WHAT round0021" x="1566" y="2608" width="520" height="225" frameX="-58" frameY="-31" frameWidth="625" frameHeight="310"/>
-	<SubTexture name="boy bubble WHAT round0022" x="1566" y="2608" width="520" height="225" frameX="-58" frameY="-31" frameWidth="625" frameHeight="310"/>
-	<SubTexture name="boy bubble WHAT round0023" x="1566" y="2608" width="520" height="225" frameX="-58" frameY="-31" frameWidth="625" frameHeight="310"/>
-	<SubTexture name="boy bubble WHAT round0024" x="1044" y="2559" width="520" height="230" frameX="-57" frameY="-30" frameWidth="625" frameHeight="310"/>
-	<SubTexture name="boy bubble WHAT round0025" x="1044" y="2559" width="520" height="230" frameX="-57" frameY="-30" frameWidth="625" frameHeight="310"/>
-	<SubTexture name="boy bubble WHAT round0026" x="1044" y="2559" width="520" height="230" frameX="-57" frameY="-30" frameWidth="625" frameHeight="310"/>
-	<SubTexture name="boy bubble WHAT round0027" x="1044" y="2559" width="520" height="230" frameX="-57" frameY="-30" frameWidth="625" frameHeight="310"/>
-	<SubTexture name="boy bubble WHAT round0028" x="1044" y="2559" width="520" height="230" frameX="-57" frameY="-30" frameWidth="625" frameHeight="310"/>
-	<SubTexture name="boy bubble WHAT round0029" x="1044" y="2559" width="520" height="230" frameX="-57" frameY="-30" frameWidth="625" frameHeight="310"/>
-	<SubTexture name="boy bubble WHAT round0030" x="1044" y="2559" width="520" height="230" frameX="-57" frameY="-30" frameWidth="625" frameHeight="310"/>
-	<SubTexture name="boy bubble WHAT round0031" x="1044" y="2559" width="520" height="230" frameX="-57" frameY="-30" frameWidth="625" frameHeight="310"/>
-	<SubTexture name="boy bubble curse yell0000" x="0" y="0" width="626" height="569" pivotX="307.65" pivotY="574.6" frameX="0" frameY="0" frameWidth="626" frameHeight="582"/>
-	<SubTexture name="boy bubble curse yell0001" x="628" y="0" width="626" height="569" frameX="0" frameY="0" frameWidth="626" frameHeight="582"/>
-	<SubTexture name="boy bubble curse yell0002" x="599" y="1030" width="454" height="359" frameX="-53" frameY="-171" frameWidth="626" frameHeight="582"/>
-	<SubTexture name="boy bubble curse yell0003" x="3562" y="0" width="455" height="413" frameX="-52" frameY="-117" frameWidth="626" frameHeight="582"/>
-	<SubTexture name="boy bubble curse yell0004" x="1879" y="506" width="548" height="504" frameX="-52" frameY="-68" frameWidth="626" frameHeight="582"/>
-	<SubTexture name="boy bubble curse yell0005" x="1879" y="0" width="569" height="504" frameX="-31" frameY="-68" frameWidth="626" frameHeight="582"/>
-	<SubTexture name="boy bubble curse yell0006" x="2450" y="0" width="569" height="504" frameX="-31" frameY="-68" frameWidth="626" frameHeight="582"/>
-	<SubTexture name="boy bubble curse yell0007" x="2429" y="506" width="546" height="504" frameX="-54" frameY="-68" frameWidth="626" frameHeight="582"/>
-	<SubTexture name="boy bubble curse yell0008" x="2977" y="522" width="545" height="500" frameX="-57" frameY="-72" frameWidth="626" frameHeight="582"/>
-	<SubTexture name="boy bubble curse yell0009" x="2977" y="522" width="545" height="500" frameX="-57" frameY="-72" frameWidth="626" frameHeight="582"/>
-	<SubTexture name="boy bubble curse yell0010" x="2977" y="522" width="545" height="500" frameX="-57" frameY="-72" frameWidth="626" frameHeight="582"/>
-	<SubTexture name="boy bubble curse yell0011" x="2977" y="522" width="545" height="500" frameX="-57" frameY="-72" frameWidth="626" frameHeight="582"/>
-	<SubTexture name="boy bubble curse yell0012" x="2977" y="522" width="545" height="500" frameX="-57" frameY="-72" frameWidth="626" frameHeight="582"/>
-	<SubTexture name="boy bubble curse yell0013" x="2977" y="522" width="545" height="500" frameX="-57" frameY="-72" frameWidth="626" frameHeight="582"/>
-	<SubTexture name="boy bubble curse yell0014" x="2977" y="522" width="545" height="500" frameX="-57" frameY="-72" frameWidth="626" frameHeight="582"/>
-	<SubTexture name="boy bubble curse yell0015" x="2977" y="522" width="545" height="500" frameX="-57" frameY="-72" frameWidth="626" frameHeight="582"/>
-	<SubTexture name="boy bubble curse yell0016" x="3021" y="0" width="539" height="520" frameX="-60" frameY="-62" frameWidth="626" frameHeight="582"/>
-	<SubTexture name="boy bubble curse yell0017" x="3021" y="0" width="539" height="520" frameX="-60" frameY="-62" frameWidth="626" frameHeight="582"/>
-	<SubTexture name="boy bubble curse yell0018" x="3021" y="0" width="539" height="520" frameX="-60" frameY="-62" frameWidth="626" frameHeight="582"/>
-	<SubTexture name="boy bubble curse yell0019" x="3021" y="0" width="539" height="520" frameX="-60" frameY="-62" frameWidth="626" frameHeight="582"/>
-	<SubTexture name="boy bubble curse yell0020" x="3021" y="0" width="539" height="520" frameX="-60" frameY="-62" frameWidth="626" frameHeight="582"/>
-	<SubTexture name="boy bubble curse yell0021" x="3021" y="0" width="539" height="520" frameX="-60" frameY="-62" frameWidth="626" frameHeight="582"/>
-	<SubTexture name="boy bubble curse yell0022" x="3021" y="0" width="539" height="520" frameX="-60" frameY="-62" frameWidth="626" frameHeight="582"/>
-	<SubTexture name="boy bubble curse yell0023" x="3021" y="0" width="539" height="520" frameX="-60" frameY="-62" frameWidth="626" frameHeight="582"/>
-	<SubTexture name="boy bubble curse yell0024" x="1256" y="514" width="546" height="504" frameX="-54" frameY="-68" frameWidth="626" frameHeight="582"/>
-	<SubTexture name="boy bubble curse yell0025" x="1256" y="514" width="546" height="504" frameX="-54" frameY="-68" frameWidth="626" frameHeight="582"/>
-	<SubTexture name="boy bubble curse yell0026" x="1256" y="514" width="546" height="504" frameX="-54" frameY="-68" frameWidth="626" frameHeight="582"/>
-	<SubTexture name="boy bubble curse yell0027" x="1256" y="514" width="546" height="504" frameX="-54" frameY="-68" frameWidth="626" frameHeight="582"/>
-	<SubTexture name="boy bubble curse yell0028" x="1256" y="514" width="546" height="504" frameX="-54" frameY="-68" frameWidth="626" frameHeight="582"/>
-	<SubTexture name="boy bubble curse yell0029" x="1256" y="514" width="546" height="504" frameX="-54" frameY="-68" frameWidth="626" frameHeight="582"/>
-	<SubTexture name="boy bubble curse yell0030" x="1256" y="514" width="546" height="504" frameX="-54" frameY="-68" frameWidth="626" frameHeight="582"/>
-	<SubTexture name="boy bubble curse yell0031" x="1256" y="514" width="546" height="504" frameX="-54" frameY="-68" frameWidth="626" frameHeight="582"/>
-	<SubTexture name="boy bubble polygonal0000" x="1804" y="1012" width="648" height="371" pivotX="95.35" pivotY="354.2" frameX="0" frameY="0" frameWidth="648" frameHeight="376"/>
-	<SubTexture name="boy bubble polygonal0001" x="1804" y="1012" width="648" height="371" frameX="0" frameY="0" frameWidth="648" frameHeight="376"/>
-	<SubTexture name="boy bubble polygonal0002" x="3494" y="2035" width="499" height="287" frameX="-84" frameY="-62" frameWidth="648" frameHeight="376"/>
-	<SubTexture name="boy bubble polygonal0003" x="3494" y="2035" width="499" height="287" frameX="-84" frameY="-62" frameWidth="648" frameHeight="376"/>
-	<SubTexture name="boy bubble polygonal0004" x="0" y="1032" width="597" height="340" frameX="-31" frameY="-33" frameWidth="648" frameHeight="376"/>
-	<SubTexture name="boy bubble polygonal0005" x="0" y="1032" width="597" height="340" frameX="-31" frameY="-33" frameWidth="648" frameHeight="376"/>
-	<SubTexture name="boy bubble polygonal0006" x="0" y="1032" width="597" height="340" frameX="-31" frameY="-33" frameWidth="648" frameHeight="376"/>
-	<SubTexture name="boy bubble polygonal0007" x="0" y="1032" width="597" height="340" frameX="-31" frameY="-33" frameWidth="648" frameHeight="376"/>
-	<SubTexture name="boy bubble polygonal0008" x="3081" y="1024" width="597" height="342" frameX="-28" frameY="-29" frameWidth="648" frameHeight="376"/>
-	<SubTexture name="boy bubble polygonal0009" x="3081" y="1024" width="597" height="342" frameX="-28" frameY="-29" frameWidth="648" frameHeight="376"/>
-	<SubTexture name="boy bubble polygonal0010" x="3081" y="1024" width="597" height="342" frameX="-28" frameY="-29" frameWidth="648" frameHeight="376"/>
-	<SubTexture name="boy bubble polygonal0011" x="3081" y="1024" width="597" height="342" frameX="-28" frameY="-29" frameWidth="648" frameHeight="376"/>
-	<SubTexture name="boy bubble polygonal0012" x="3081" y="1024" width="597" height="342" frameX="-28" frameY="-29" frameWidth="648" frameHeight="376"/>
-	<SubTexture name="boy bubble polygonal0013" x="3081" y="1024" width="597" height="342" frameX="-28" frameY="-29" frameWidth="648" frameHeight="376"/>
-	<SubTexture name="boy bubble polygonal0014" x="3081" y="1024" width="597" height="342" frameX="-28" frameY="-29" frameWidth="648" frameHeight="376"/>
-	<SubTexture name="boy bubble polygonal0015" x="3081" y="1024" width="597" height="342" frameX="-28" frameY="-29" frameWidth="648" frameHeight="376"/>
-	<SubTexture name="boy bubble polygonal0016" x="1747" y="1385" width="591" height="337" frameX="-34" frameY="-39" frameWidth="648" frameHeight="376"/>
-	<SubTexture name="boy bubble polygonal0017" x="1747" y="1385" width="591" height="337" frameX="-34" frameY="-39" frameWidth="648" frameHeight="376"/>
-	<SubTexture name="boy bubble polygonal0018" x="1747" y="1385" width="591" height="337" frameX="-34" frameY="-39" frameWidth="648" frameHeight="376"/>
-	<SubTexture name="boy bubble polygonal0019" x="1747" y="1385" width="591" height="337" frameX="-34" frameY="-39" frameWidth="648" frameHeight="376"/>
-	<SubTexture name="boy bubble polygonal0020" x="1747" y="1385" width="591" height="337" frameX="-34" frameY="-39" frameWidth="648" frameHeight="376"/>
-	<SubTexture name="boy bubble polygonal0021" x="1747" y="1385" width="591" height="337" frameX="-34" frameY="-39" frameWidth="648" frameHeight="376"/>
-	<SubTexture name="boy bubble polygonal0022" x="1747" y="1385" width="591" height="337" frameX="-34" frameY="-39" frameWidth="648" frameHeight="376"/>
-	<SubTexture name="boy bubble polygonal0023" x="1747" y="1385" width="591" height="337" frameX="-34" frameY="-39" frameWidth="648" frameHeight="376"/>
-	<SubTexture name="boy bubble polygonal0024" x="0" y="1032" width="597" height="340" frameX="-31" frameY="-33" frameWidth="648" frameHeight="376"/>
-	<SubTexture name="boy bubble polygonal0025" x="0" y="1032" width="597" height="340" frameX="-31" frameY="-33" frameWidth="648" frameHeight="376"/>
-	<SubTexture name="boy bubble polygonal0026" x="0" y="1032" width="597" height="340" frameX="-31" frameY="-33" frameWidth="648" frameHeight="376"/>
-	<SubTexture name="boy bubble polygonal0027" x="0" y="1032" width="597" height="340" frameX="-31" frameY="-33" frameWidth="648" frameHeight="376"/>
-	<SubTexture name="boy bubble polygonal0028" x="0" y="1032" width="597" height="340" frameX="-31" frameY="-33" frameWidth="648" frameHeight="376"/>
-	<SubTexture name="boy bubble polygonal0029" x="0" y="1032" width="597" height="340" frameX="-31" frameY="-33" frameWidth="648" frameHeight="376"/>
-	<SubTexture name="boy bubble polygonal0030" x="0" y="1032" width="597" height="340" frameX="-31" frameY="-33" frameWidth="648" frameHeight="376"/>
-	<SubTexture name="boy bubble polygonal0031" x="0" y="1032" width="597" height="340" frameX="-31" frameY="-33" frameWidth="648" frameHeight="376"/>
-	<SubTexture name="boy bubble round0000" x="1224" y="2036" width="487" height="291" pivotX="-337.95" pivotY="154" frameX="0" frameY="-3" frameWidth="487" frameHeight="294"/>
-	<SubTexture name="boy bubble round0001" x="1224" y="2036" width="487" height="291" frameX="0" frameY="-3" frameWidth="487" frameHeight="294"/>
-	<SubTexture name="boy bubble round0002" x="1224" y="2329" width="378" height="213" frameX="-53" frameY="-34" frameWidth="487" frameHeight="294"/>
-	<SubTexture name="boy bubble round0003" x="1224" y="2329" width="378" height="213" frameX="-53" frameY="-34" frameWidth="487" frameHeight="294"/>
-	<SubTexture name="boy bubble round0004" x="3296" y="2596" width="449" height="265" frameX="-15" frameY="-7" frameWidth="487" frameHeight="294"/>
-	<SubTexture name="boy bubble round0005" x="3296" y="2596" width="449" height="265" frameX="-15" frameY="-7" frameWidth="487" frameHeight="294"/>
-	<SubTexture name="boy bubble round0006" x="3296" y="2596" width="449" height="265" frameX="-15" frameY="-7" frameWidth="487" frameHeight="294"/>
-	<SubTexture name="boy bubble round0007" x="3296" y="2596" width="449" height="265" frameX="-15" frameY="-7" frameWidth="487" frameHeight="294"/>
-	<SubTexture name="boy bubble round0008" x="0" y="2783" width="450" height="254" frameX="-20" frameY="-14" frameWidth="487" frameHeight="294"/>
-	<SubTexture name="boy bubble round0009" x="0" y="2783" width="450" height="254" frameX="-20" frameY="-14" frameWidth="487" frameHeight="294"/>
-	<SubTexture name="boy bubble round0010" x="0" y="2783" width="450" height="254" frameX="-20" frameY="-14" frameWidth="487" frameHeight="294"/>
-	<SubTexture name="boy bubble round0011" x="0" y="2783" width="450" height="254" frameX="-20" frameY="-14" frameWidth="487" frameHeight="294"/>
-	<SubTexture name="boy bubble round0012" x="0" y="2783" width="450" height="254" frameX="-20" frameY="-14" frameWidth="487" frameHeight="294"/>
-	<SubTexture name="boy bubble round0013" x="0" y="2783" width="450" height="254" frameX="-20" frameY="-14" frameWidth="487" frameHeight="294"/>
-	<SubTexture name="boy bubble round0014" x="0" y="2783" width="450" height="254" frameX="-20" frameY="-14" frameWidth="487" frameHeight="294"/>
-	<SubTexture name="boy bubble round0015" x="0" y="2783" width="450" height="254" frameX="-20" frameY="-14" frameWidth="487" frameHeight="294"/>
-	<SubTexture name="boy bubble round0016" x="3327" y="2324" width="456" height="270" frameX="-14" frameY="0" frameWidth="487" frameHeight="294"/>
-	<SubTexture name="boy bubble round0017" x="3327" y="2324" width="456" height="270" frameX="-14" frameY="0" frameWidth="487" frameHeight="294"/>
-	<SubTexture name="boy bubble round0018" x="3327" y="2324" width="456" height="270" frameX="-14" frameY="0" frameWidth="487" frameHeight="294"/>
-	<SubTexture name="boy bubble round0019" x="3327" y="2324" width="456" height="270" frameX="-14" frameY="0" frameWidth="487" frameHeight="294"/>
-	<SubTexture name="boy bubble round0020" x="3327" y="2324" width="456" height="270" frameX="-14" frameY="0" frameWidth="487" frameHeight="294"/>
-	<SubTexture name="boy bubble round0021" x="3327" y="2324" width="456" height="270" frameX="-14" frameY="0" frameWidth="487" frameHeight="294"/>
-	<SubTexture name="boy bubble round0022" x="3327" y="2324" width="456" height="270" frameX="-14" frameY="0" frameWidth="487" frameHeight="294"/>
-	<SubTexture name="boy bubble round0023" x="3327" y="2324" width="456" height="270" frameX="-14" frameY="0" frameWidth="487" frameHeight="294"/>
-	<SubTexture name="boy bubble round0024" x="3296" y="2596" width="449" height="265" frameX="-15" frameY="-7" frameWidth="487" frameHeight="294"/>
-	<SubTexture name="boy bubble round0025" x="3296" y="2596" width="449" height="265" frameX="-15" frameY="-7" frameWidth="487" frameHeight="294"/>
-	<SubTexture name="boy bubble round0026" x="3296" y="2596" width="449" height="265" frameX="-15" frameY="-7" frameWidth="487" frameHeight="294"/>
-	<SubTexture name="boy bubble round0027" x="3296" y="2596" width="449" height="265" frameX="-15" frameY="-7" frameWidth="487" frameHeight="294"/>
-	<SubTexture name="boy bubble round0028" x="3296" y="2596" width="449" height="265" frameX="-15" frameY="-7" frameWidth="487" frameHeight="294"/>
-	<SubTexture name="boy bubble round0029" x="3296" y="2596" width="449" height="265" frameX="-15" frameY="-7" frameWidth="487" frameHeight="294"/>
-	<SubTexture name="boy bubble round0030" x="3296" y="2596" width="449" height="265" frameX="-15" frameY="-7" frameWidth="487" frameHeight="294"/>
-	<SubTexture name="boy bubble round0031" x="3296" y="2596" width="449" height="265" frameX="-15" frameY="-7" frameWidth="487" frameHeight="294"/>
-	<SubTexture name="boy bubble sad tall0000" x="3675" y="1518" width="343" height="515" pivotX="37.2" pivotY="39.85" frameX="0" frameY="-11" frameWidth="343" frameHeight="534"/>
-	<SubTexture name="boy bubble sad tall0001" x="3680" y="990" width="343" height="526" frameX="0" frameY="0" frameWidth="343" frameHeight="534"/>
-	<SubTexture name="boy bubble sad tall0002" x="2138" y="2195" width="243" height="518" frameX="-45" frameY="-5" frameWidth="343" frameHeight="534"/>
-	<SubTexture name="boy bubble sad tall0003" x="2138" y="2195" width="243" height="518" frameX="-45" frameY="-5" frameWidth="343" frameHeight="534"/>
-	<SubTexture name="boy bubble sad tall0004" x="2739" y="2052" width="274" height="516" frameX="-48" frameY="-18" frameWidth="343" frameHeight="534"/>
-	<SubTexture name="boy bubble sad tall0005" x="2457" y="1739" width="280" height="510" frameX="-42" frameY="-24" frameWidth="343" frameHeight="534"/>
-	<SubTexture name="boy bubble sad tall0006" x="2457" y="1739" width="280" height="510" frameX="-42" frameY="-24" frameWidth="343" frameHeight="534"/>
-	<SubTexture name="boy bubble sad tall0007" x="948" y="2036" width="274" height="521" frameX="-48" frameY="-13" frameWidth="343" frameHeight="534"/>
-	<SubTexture name="boy bubble sad tall0008" x="3015" y="2052" width="310" height="453" frameX="-15" frameY="-18" frameWidth="343" frameHeight="534"/>
-	<SubTexture name="boy bubble sad tall0009" x="3015" y="2052" width="310" height="453" frameX="-15" frameY="-18" frameWidth="343" frameHeight="534"/>
-	<SubTexture name="boy bubble sad tall0010" x="3015" y="2052" width="310" height="453" frameX="-15" frameY="-18" frameWidth="343" frameHeight="534"/>
-	<SubTexture name="boy bubble sad tall0011" x="3015" y="2052" width="310" height="453" frameX="-15" frameY="-18" frameWidth="343" frameHeight="534"/>
-	<SubTexture name="boy bubble sad tall0012" x="3015" y="2052" width="310" height="453" frameX="-15" frameY="-18" frameWidth="343" frameHeight="534"/>
-	<SubTexture name="boy bubble sad tall0013" x="3015" y="2052" width="310" height="453" frameX="-15" frameY="-18" frameWidth="343" frameHeight="534"/>
-	<SubTexture name="boy bubble sad tall0014" x="3015" y="2052" width="310" height="453" frameX="-15" frameY="-18" frameWidth="343" frameHeight="534"/>
-	<SubTexture name="boy bubble sad tall0015" x="3015" y="2052" width="310" height="453" frameX="-15" frameY="-18" frameWidth="343" frameHeight="534"/>
-	<SubTexture name="boy bubble sad tall0016" x="2138" y="1739" width="317" height="454" frameX="-4" frameY="-18" frameWidth="343" frameHeight="534"/>
-	<SubTexture name="boy bubble sad tall0017" x="2138" y="1739" width="317" height="454" frameX="-4" frameY="-18" frameWidth="343" frameHeight="534"/>
-	<SubTexture name="boy bubble sad tall0018" x="2138" y="1739" width="317" height="454" frameX="-4" frameY="-18" frameWidth="343" frameHeight="534"/>
-	<SubTexture name="boy bubble sad tall0019" x="2138" y="1739" width="317" height="454" frameX="-4" frameY="-18" frameWidth="343" frameHeight="534"/>
-	<SubTexture name="boy bubble sad tall0020" x="2138" y="1739" width="317" height="454" frameX="-4" frameY="-18" frameWidth="343" frameHeight="534"/>
-	<SubTexture name="boy bubble sad tall0021" x="2138" y="1739" width="317" height="454" frameX="-4" frameY="-18" frameWidth="343" frameHeight="534"/>
-	<SubTexture name="boy bubble sad tall0022" x="2138" y="1739" width="317" height="454" frameX="-4" frameY="-18" frameWidth="343" frameHeight="534"/>
-	<SubTexture name="boy bubble sad tall0023" x="2138" y="1739" width="317" height="454" frameX="-4" frameY="-18" frameWidth="343" frameHeight="534"/>
-	<SubTexture name="boy bubble sad tall0024" x="627" y="1732" width="319" height="456" frameX="-3" frameY="-21" frameWidth="343" frameHeight="534"/>
-	<SubTexture name="boy bubble sad tall0025" x="627" y="1732" width="319" height="456" frameX="-3" frameY="-21" frameWidth="343" frameHeight="534"/>
-	<SubTexture name="boy bubble sad tall0026" x="627" y="1732" width="319" height="456" frameX="-3" frameY="-21" frameWidth="343" frameHeight="534"/>
-	<SubTexture name="boy bubble sad tall0027" x="627" y="1732" width="319" height="456" frameX="-3" frameY="-21" frameWidth="343" frameHeight="534"/>
-	<SubTexture name="boy bubble sad tall0028" x="627" y="1732" width="319" height="456" frameX="-3" frameY="-21" frameWidth="343" frameHeight="534"/>
-	<SubTexture name="boy bubble sad tall0029" x="627" y="1732" width="319" height="456" frameX="-3" frameY="-21" frameWidth="343" frameHeight="534"/>
-	<SubTexture name="boy bubble sad tall0030" x="627" y="1732" width="319" height="456" frameX="-3" frameY="-21" frameWidth="343" frameHeight="534"/>
-	<SubTexture name="boy bubble sad tall0031" x="627" y="1732" width="319" height="456" frameX="-3" frameY="-21" frameWidth="343" frameHeight="534"/>
-	<SubTexture name="boy bubble tall0000" x="1800" y="1724" width="336" height="480" pivotX="26.9" pivotY="30.7"/>
-	<SubTexture name="boy bubble tall0001" x="1800" y="1724" width="336" height="480"/>
-	<SubTexture name="boy bubble tall0002" x="2088" y="2715" width="201" height="363" frameX="-65" frameY="-63" frameWidth="336" frameHeight="480"/>
-	<SubTexture name="boy bubble tall0003" x="2088" y="2715" width="201" height="363" frameX="-65" frameY="-63" frameWidth="336" frameHeight="480"/>
-	<SubTexture name="boy bubble tall0004" x="3785" y="2324" width="284" height="423" frameX="-24" frameY="-30" frameWidth="336" frameHeight="480"/>
-	<SubTexture name="boy bubble tall0005" x="3785" y="2324" width="284" height="423" frameX="-24" frameY="-30" frameWidth="336" frameHeight="480"/>
-	<SubTexture name="boy bubble tall0006" x="3785" y="2324" width="284" height="423" frameX="-24" frameY="-30" frameWidth="336" frameHeight="480"/>
-	<SubTexture name="boy bubble tall0007" x="3785" y="2324" width="284" height="423" frameX="-24" frameY="-30" frameWidth="336" frameHeight="480"/>
-	<SubTexture name="boy bubble tall0008" x="3015" y="2507" width="279" height="427" frameX="-27" frameY="-28" frameWidth="336" frameHeight="480"/>
-	<SubTexture name="boy bubble tall0009" x="3015" y="2507" width="279" height="427" frameX="-27" frameY="-28" frameWidth="336" frameHeight="480"/>
-	<SubTexture name="boy bubble tall0010" x="3015" y="2507" width="279" height="427" frameX="-27" frameY="-28" frameWidth="336" frameHeight="480"/>
-	<SubTexture name="boy bubble tall0011" x="3015" y="2507" width="279" height="427" frameX="-27" frameY="-28" frameWidth="336" frameHeight="480"/>
-	<SubTexture name="boy bubble tall0012" x="3015" y="2507" width="279" height="427" frameX="-27" frameY="-28" frameWidth="336" frameHeight="480"/>
-	<SubTexture name="boy bubble tall0013" x="3015" y="2507" width="279" height="427" frameX="-27" frameY="-28" frameWidth="336" frameHeight="480"/>
-	<SubTexture name="boy bubble tall0014" x="3015" y="2507" width="279" height="427" frameX="-27" frameY="-28" frameWidth="336" frameHeight="480"/>
-	<SubTexture name="boy bubble tall0015" x="3015" y="2507" width="279" height="427" frameX="-27" frameY="-28" frameWidth="336" frameHeight="480"/>
-	<SubTexture name="boy bubble tall0016" x="2383" y="2251" width="284" height="426" frameX="-22" frameY="-29" frameWidth="336" frameHeight="480"/>
-	<SubTexture name="boy bubble tall0017" x="2383" y="2251" width="284" height="426" frameX="-22" frameY="-29" frameWidth="336" frameHeight="480"/>
-	<SubTexture name="boy bubble tall0018" x="2383" y="2251" width="284" height="426" frameX="-22" frameY="-29" frameWidth="336" frameHeight="480"/>
-	<SubTexture name="boy bubble tall0019" x="2383" y="2251" width="284" height="426" frameX="-22" frameY="-29" frameWidth="336" frameHeight="480"/>
-	<SubTexture name="boy bubble tall0020" x="2383" y="2251" width="284" height="426" frameX="-22" frameY="-29" frameWidth="336" frameHeight="480"/>
-	<SubTexture name="boy bubble tall0021" x="2383" y="2251" width="284" height="426" frameX="-22" frameY="-29" frameWidth="336" frameHeight="480"/>
-	<SubTexture name="boy bubble tall0022" x="2383" y="2251" width="284" height="426" frameX="-22" frameY="-29" frameWidth="336" frameHeight="480"/>
-	<SubTexture name="boy bubble tall0023" x="2383" y="2251" width="284" height="426" frameX="-22" frameY="-29" frameWidth="336" frameHeight="480"/>
-	<SubTexture name="boy bubble tall0024" x="3785" y="2324" width="284" height="423" frameX="-24" frameY="-30" frameWidth="336" frameHeight="480"/>
-	<SubTexture name="boy bubble tall0025" x="3785" y="2324" width="284" height="423" frameX="-24" frameY="-30" frameWidth="336" frameHeight="480"/>
-	<SubTexture name="boy bubble tall0026" x="3785" y="2324" width="284" height="423" frameX="-24" frameY="-30" frameWidth="336" frameHeight="480"/>
-	<SubTexture name="boy bubble tall0027" x="3785" y="2324" width="284" height="423" frameX="-24" frameY="-30" frameWidth="336" frameHeight="480"/>
-	<SubTexture name="boy bubble tall0028" x="3785" y="2324" width="284" height="423" frameX="-24" frameY="-30" frameWidth="336" frameHeight="480"/>
-	<SubTexture name="boy bubble tall0029" x="3785" y="2324" width="284" height="423" frameX="-24" frameY="-30" frameWidth="336" frameHeight="480"/>
-	<SubTexture name="boy bubble tall0030" x="3785" y="2324" width="284" height="423" frameX="-24" frameY="-30" frameWidth="336" frameHeight="480"/>
-	<SubTexture name="boy bubble tall0031" x="3785" y="2324" width="284" height="423" frameX="-24" frameY="-30" frameWidth="336" frameHeight="480"/>
-	<SubTexture name="boy bubble unhappy gonal0000" x="1097" y="1020" width="648" height="371" pivotX="87.95" pivotY="354.55" frameX="8" frameY="0" frameWidth="629" frameHeight="376"/>
-	<SubTexture name="boy bubble unhappy gonal0001" x="2454" y="1024" width="625" height="371" frameX="-4" frameY="0" frameWidth="629" frameHeight="376"/>
-	<SubTexture name="boy bubble unhappy gonal0002" x="0" y="2044" width="491" height="288" frameX="-74" frameY="-61" frameWidth="629" frameHeight="376"/>
-	<SubTexture name="boy bubble unhappy gonal0003" x="1173" y="1393" width="503" height="288" frameX="-74" frameY="-61" frameWidth="629" frameHeight="376"/>
-	<SubTexture name="boy bubble unhappy gonal0004" x="2340" y="1397" width="575" height="340" frameX="-33" frameY="-33" frameWidth="629" frameHeight="376"/>
-	<SubTexture name="boy bubble unhappy gonal0005" x="2917" y="1710" width="575" height="340" frameX="-33" frameY="-33" frameWidth="629" frameHeight="376"/>
-	<SubTexture name="boy bubble unhappy gonal0006" x="2917" y="1710" width="575" height="340" frameX="-33" frameY="-33" frameWidth="629" frameHeight="376"/>
-	<SubTexture name="boy bubble unhappy gonal0007" x="2917" y="1710" width="575" height="340" frameX="-33" frameY="-33" frameWidth="629" frameHeight="376"/>
-	<SubTexture name="boy bubble unhappy gonal0008" x="0" y="1374" width="588" height="340" frameX="-30" frameY="-31" frameWidth="629" frameHeight="376"/>
-	<SubTexture name="boy bubble unhappy gonal0009" x="0" y="1374" width="588" height="340" frameX="-30" frameY="-31" frameWidth="629" frameHeight="376"/>
-	<SubTexture name="boy bubble unhappy gonal0010" x="0" y="1374" width="588" height="340" frameX="-30" frameY="-31" frameWidth="629" frameHeight="376"/>
-	<SubTexture name="boy bubble unhappy gonal0011" x="0" y="1374" width="588" height="340" frameX="-30" frameY="-31" frameWidth="629" frameHeight="376"/>
-	<SubTexture name="boy bubble unhappy gonal0012" x="0" y="1374" width="588" height="340" frameX="-30" frameY="-31" frameWidth="629" frameHeight="376"/>
-	<SubTexture name="boy bubble unhappy gonal0013" x="0" y="1374" width="588" height="340" frameX="-30" frameY="-31" frameWidth="629" frameHeight="376"/>
-	<SubTexture name="boy bubble unhappy gonal0014" x="0" y="1374" width="588" height="340" frameX="-30" frameY="-31" frameWidth="629" frameHeight="376"/>
-	<SubTexture name="boy bubble unhappy gonal0015" x="0" y="1374" width="588" height="340" frameX="-30" frameY="-31" frameWidth="629" frameHeight="376"/>
-	<SubTexture name="boy bubble unhappy gonal0016" x="590" y="1393" width="581" height="337" frameX="-25" frameY="-39" frameWidth="629" frameHeight="376"/>
-	<SubTexture name="boy bubble unhappy gonal0017" x="590" y="1393" width="581" height="337" frameX="-25" frameY="-39" frameWidth="629" frameHeight="376"/>
-	<SubTexture name="boy bubble unhappy gonal0018" x="590" y="1393" width="581" height="337" frameX="-25" frameY="-39" frameWidth="629" frameHeight="376"/>
-	<SubTexture name="boy bubble unhappy gonal0019" x="590" y="1393" width="581" height="337" frameX="-25" frameY="-39" frameWidth="629" frameHeight="376"/>
-	<SubTexture name="boy bubble unhappy gonal0020" x="590" y="1393" width="581" height="337" frameX="-25" frameY="-39" frameWidth="629" frameHeight="376"/>
-	<SubTexture name="boy bubble unhappy gonal0021" x="590" y="1393" width="581" height="337" frameX="-25" frameY="-39" frameWidth="629" frameHeight="376"/>
-	<SubTexture name="boy bubble unhappy gonal0022" x="590" y="1393" width="581" height="337" frameX="-25" frameY="-39" frameWidth="629" frameHeight="376"/>
-	<SubTexture name="boy bubble unhappy gonal0023" x="590" y="1393" width="581" height="337" frameX="-25" frameY="-39" frameWidth="629" frameHeight="376"/>
-	<SubTexture name="boy bubble unhappy gonal0024" x="3081" y="1368" width="592" height="340" frameX="-21" frameY="-33" frameWidth="629" frameHeight="376"/>
-	<SubTexture name="boy bubble unhappy gonal0025" x="3081" y="1368" width="592" height="340" frameX="-21" frameY="-33" frameWidth="629" frameHeight="376"/>
-	<SubTexture name="boy bubble unhappy gonal0026" x="3081" y="1368" width="592" height="340" frameX="-21" frameY="-33" frameWidth="629" frameHeight="376"/>
-	<SubTexture name="boy bubble unhappy gonal0027" x="3081" y="1368" width="592" height="340" frameX="-21" frameY="-33" frameWidth="629" frameHeight="376"/>
-	<SubTexture name="boy bubble unhappy gonal0028" x="3081" y="1368" width="592" height="340" frameX="-21" frameY="-33" frameWidth="629" frameHeight="376"/>
-	<SubTexture name="boy bubble unhappy gonal0029" x="3081" y="1368" width="592" height="340" frameX="-21" frameY="-33" frameWidth="629" frameHeight="376"/>
-	<SubTexture name="boy bubble unhappy gonal0030" x="3081" y="1368" width="592" height="340" frameX="-21" frameY="-33" frameWidth="629" frameHeight="376"/>
-	<SubTexture name="boy bubble unhappy gonal0031" x="3081" y="1368" width="592" height="340" frameX="-21" frameY="-33" frameWidth="629" frameHeight="376"/>
-	<SubTexture name="boy bubble yell0000" x="1256" y="0" width="621" height="512" pivotX="302.45" pivotY="527" frameX="0" frameY="0" frameWidth="621" frameHeight="515"/>
-	<SubTexture name="boy bubble yell0001" x="1256" y="0" width="621" height="512" frameX="0" frameY="0" frameWidth="621" frameHeight="515"/>
-	<SubTexture name="boy bubble yell0002" x="493" y="2190" width="380" height="359" frameX="-122" frameY="-124" frameWidth="621" frameHeight="515"/>
-	<SubTexture name="boy bubble yell0003" x="493" y="2190" width="380" height="359" frameX="-122" frameY="-124" frameWidth="621" frameHeight="515"/>
-	<SubTexture name="boy bubble yell0004" x="0" y="571" width="546" height="459" frameX="-49" frameY="-53" frameWidth="621" frameHeight="515"/>
-	<SubTexture name="boy bubble yell0005" x="0" y="571" width="546" height="459" frameX="-49" frameY="-53" frameWidth="621" frameHeight="515"/>
-	<SubTexture name="boy bubble yell0006" x="0" y="571" width="546" height="459" frameX="-49" frameY="-53" frameWidth="621" frameHeight="515"/>
-	<SubTexture name="boy bubble yell0007" x="0" y="571" width="546" height="459" frameX="-49" frameY="-53" frameWidth="621" frameHeight="515"/>
-	<SubTexture name="boy bubble yell0008" x="3524" y="522" width="547" height="466" frameX="-50" frameY="-49" frameWidth="621" frameHeight="515"/>
-	<SubTexture name="boy bubble yell0009" x="3524" y="522" width="547" height="466" frameX="-50" frameY="-49" frameWidth="621" frameHeight="515"/>
-	<SubTexture name="boy bubble yell0010" x="3524" y="522" width="547" height="466" frameX="-50" frameY="-49" frameWidth="621" frameHeight="515"/>
-	<SubTexture name="boy bubble yell0011" x="3524" y="522" width="547" height="466" frameX="-50" frameY="-49" frameWidth="621" frameHeight="515"/>
-	<SubTexture name="boy bubble yell0012" x="3524" y="522" width="547" height="466" frameX="-50" frameY="-49" frameWidth="621" frameHeight="515"/>
-	<SubTexture name="boy bubble yell0013" x="3524" y="522" width="547" height="466" frameX="-50" frameY="-49" frameWidth="621" frameHeight="515"/>
-	<SubTexture name="boy bubble yell0014" x="3524" y="522" width="547" height="466" frameX="-50" frameY="-49" frameWidth="621" frameHeight="515"/>
-	<SubTexture name="boy bubble yell0015" x="3524" y="522" width="547" height="466" frameX="-50" frameY="-49" frameWidth="621" frameHeight="515"/>
-	<SubTexture name="boy bubble yell0016" x="548" y="571" width="547" height="457" frameX="-49" frameY="-54" frameWidth="621" frameHeight="515"/>
-	<SubTexture name="boy bubble yell0017" x="548" y="571" width="547" height="457" frameX="-49" frameY="-54" frameWidth="621" frameHeight="515"/>
-	<SubTexture name="boy bubble yell0018" x="548" y="571" width="547" height="457" frameX="-49" frameY="-54" frameWidth="621" frameHeight="515"/>
-	<SubTexture name="boy bubble yell0019" x="548" y="571" width="547" height="457" frameX="-49" frameY="-54" frameWidth="621" frameHeight="515"/>
-	<SubTexture name="boy bubble yell0020" x="548" y="571" width="547" height="457" frameX="-49" frameY="-54" frameWidth="621" frameHeight="515"/>
-	<SubTexture name="boy bubble yell0021" x="548" y="571" width="547" height="457" frameX="-49" frameY="-54" frameWidth="621" frameHeight="515"/>
-	<SubTexture name="boy bubble yell0022" x="548" y="571" width="547" height="457" frameX="-49" frameY="-54" frameWidth="621" frameHeight="515"/>
-	<SubTexture name="boy bubble yell0023" x="548" y="571" width="547" height="457" frameX="-49" frameY="-54" frameWidth="621" frameHeight="515"/>
-	<SubTexture name="boy bubble yell0024" x="0" y="571" width="546" height="459" frameX="-49" frameY="-53" frameWidth="621" frameHeight="515"/>
-	<SubTexture name="boy bubble yell0025" x="0" y="571" width="546" height="459" frameX="-49" frameY="-53" frameWidth="621" frameHeight="515"/>
-	<SubTexture name="boy bubble yell0026" x="0" y="571" width="546" height="459" frameX="-49" frameY="-53" frameWidth="621" frameHeight="515"/>
-	<SubTexture name="boy bubble yell0027" x="0" y="571" width="546" height="459" frameX="-49" frameY="-53" frameWidth="621" frameHeight="515"/>
-	<SubTexture name="boy bubble yell0028" x="0" y="571" width="546" height="459" frameX="-49" frameY="-53" frameWidth="621" frameHeight="515"/>
-	<SubTexture name="boy bubble yell0029" x="0" y="571" width="546" height="459" frameX="-49" frameY="-53" frameWidth="621" frameHeight="515"/>
-	<SubTexture name="boy bubble yell0030" x="0" y="571" width="546" height="459" frameX="-49" frameY="-53" frameWidth="621" frameHeight="515"/>
-	<SubTexture name="boy bubble yell0031" x="0" y="571" width="546" height="459" frameX="-49" frameY="-53" frameWidth="621" frameHeight="515"/>
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Created with Funkin Packer v0.1.3 https://neeeoo.github.io/funkin-packer/
+-->
+<TextureAtlas imagePath="truckerboy.png" width="4071" height="3012">
+	<SubTexture name="boy bubbl hey0000" x="796" y="0" width="236" height="143" rotated="true" frameX="-221" frameY="-201" frameWidth="364" frameHeight="437"/>
+	<SubTexture name="boy bubbl hey0001" x="796" y="0" width="236" height="143" rotated="true" frameX="-221" frameY="-201" frameWidth="364" frameHeight="437"/>
+	<SubTexture name="boy bubbl hey0002" x="3671" y="504" width="400" height="339" rotated="true" frameX="-0" frameY="-0" frameWidth="364" frameHeight="437"/>
+	<SubTexture name="boy bubbl hey0003" x="3671" y="504" width="400" height="339" rotated="true" frameX="-0" frameY="-0" frameWidth="364" frameHeight="437"/>
+	<SubTexture name="boy bubbl hey0004" x="3321" y="504" width="348" height="294" rotated="true" frameX="-56" frameY="-78" frameWidth="364" frameHeight="437"/>
+	<SubTexture name="boy bubbl hey0005" x="3321" y="504" width="348" height="294" rotated="true" frameX="-56" frameY="-78" frameWidth="364" frameHeight="437"/>
+	<SubTexture name="boy bubble WHAT round0000" x="1945" y="784" width="625" height="310" frameX="-0" frameY="-0" frameWidth="625" frameHeight="310"/>
+	<SubTexture name="boy bubble WHAT round0001" x="2572" y="792" width="625" height="310" frameX="-0" frameY="-0" frameWidth="625" frameHeight="310"/>
+	<SubTexture name="boy bubble WHAT round0002" x="0" y="0" width="396" height="104" frameX="-112" frameY="-84" frameWidth="625" frameHeight="310"/>
+	<SubTexture name="boy bubble WHAT round0003" x="398" y="0" width="396" height="104" frameX="-112" frameY="-84" frameWidth="625" frameHeight="310"/>
+	<SubTexture name="boy bubble WHAT round0004" x="2815" y="0" width="520" height="230" frameX="-57" frameY="-30" frameWidth="625" frameHeight="310"/>
+	<SubTexture name="boy bubble WHAT round0005" x="3337" y="0" width="520" height="230" frameX="-57" frameY="-30" frameWidth="625" frameHeight="310"/>
+	<SubTexture name="boy bubble WHAT round0006" x="3337" y="0" width="520" height="230" frameX="-57" frameY="-30" frameWidth="625" frameHeight="310"/>
+	<SubTexture name="boy bubble WHAT round0007" x="3337" y="0" width="520" height="230" frameX="-57" frameY="-30" frameWidth="625" frameHeight="310"/>
+	<SubTexture name="boy bubble WHAT round0008" x="1777" y="0" width="514" height="225" frameX="-56" frameY="-36" frameWidth="625" frameHeight="310"/>
+	<SubTexture name="boy bubble WHAT round0009" x="1777" y="0" width="514" height="225" frameX="-56" frameY="-36" frameWidth="625" frameHeight="310"/>
+	<SubTexture name="boy bubble WHAT round0010" x="1777" y="0" width="514" height="225" frameX="-56" frameY="-36" frameWidth="625" frameHeight="310"/>
+	<SubTexture name="boy bubble WHAT round0011" x="1777" y="0" width="514" height="225" frameX="-56" frameY="-36" frameWidth="625" frameHeight="310"/>
+	<SubTexture name="boy bubble WHAT round0012" x="1777" y="0" width="514" height="225" frameX="-56" frameY="-36" frameWidth="625" frameHeight="310"/>
+	<SubTexture name="boy bubble WHAT round0013" x="1777" y="0" width="514" height="225" frameX="-56" frameY="-36" frameWidth="625" frameHeight="310"/>
+	<SubTexture name="boy bubble WHAT round0014" x="1777" y="0" width="514" height="225" frameX="-56" frameY="-36" frameWidth="625" frameHeight="310"/>
+	<SubTexture name="boy bubble WHAT round0015" x="1777" y="0" width="514" height="225" frameX="-56" frameY="-36" frameWidth="625" frameHeight="310"/>
+	<SubTexture name="boy bubble WHAT round0016" x="2293" y="0" width="520" height="225" frameX="-58" frameY="-31" frameWidth="625" frameHeight="310"/>
+	<SubTexture name="boy bubble WHAT round0017" x="2293" y="0" width="520" height="225" frameX="-58" frameY="-31" frameWidth="625" frameHeight="310"/>
+	<SubTexture name="boy bubble WHAT round0018" x="2293" y="0" width="520" height="225" frameX="-58" frameY="-31" frameWidth="625" frameHeight="310"/>
+	<SubTexture name="boy bubble WHAT round0019" x="2293" y="0" width="520" height="225" frameX="-58" frameY="-31" frameWidth="625" frameHeight="310"/>
+	<SubTexture name="boy bubble WHAT round0020" x="2293" y="0" width="520" height="225" frameX="-58" frameY="-31" frameWidth="625" frameHeight="310"/>
+	<SubTexture name="boy bubble WHAT round0021" x="2293" y="0" width="520" height="225" frameX="-58" frameY="-31" frameWidth="625" frameHeight="310"/>
+	<SubTexture name="boy bubble WHAT round0022" x="2293" y="0" width="520" height="225" frameX="-58" frameY="-31" frameWidth="625" frameHeight="310"/>
+	<SubTexture name="boy bubble WHAT round0023" x="2293" y="0" width="520" height="225" frameX="-58" frameY="-31" frameWidth="625" frameHeight="310"/>
+	<SubTexture name="boy bubble WHAT round0024" x="0" y="106" width="520" height="230" frameX="-57" frameY="-30" frameWidth="625" frameHeight="310"/>
+	<SubTexture name="boy bubble WHAT round0025" x="0" y="106" width="520" height="230" frameX="-57" frameY="-30" frameWidth="625" frameHeight="310"/>
+	<SubTexture name="boy bubble WHAT round0026" x="0" y="106" width="520" height="230" frameX="-57" frameY="-30" frameWidth="625" frameHeight="310"/>
+	<SubTexture name="boy bubble WHAT round0027" x="0" y="106" width="520" height="230" frameX="-57" frameY="-30" frameWidth="625" frameHeight="310"/>
+	<SubTexture name="boy bubble WHAT round0028" x="0" y="106" width="520" height="230" frameX="-57" frameY="-30" frameWidth="625" frameHeight="310"/>
+	<SubTexture name="boy bubble WHAT round0029" x="0" y="106" width="520" height="230" frameX="-57" frameY="-30" frameWidth="625" frameHeight="310"/>
+	<SubTexture name="boy bubble WHAT round0030" x="0" y="106" width="520" height="230" frameX="-57" frameY="-30" frameWidth="625" frameHeight="310"/>
+	<SubTexture name="boy bubble WHAT round0031" x="0" y="106" width="520" height="230" frameX="-57" frameY="-30" frameWidth="625" frameHeight="310"/>
+	<SubTexture name="boy bubble curse yell0000" x="2259" y="2402" width="626" height="568" frameX="-0" frameY="-0" frameWidth="626" frameHeight="582"/>
+	<SubTexture name="boy bubble curse yell0001" x="2887" y="2444" width="626" height="568" frameX="-0" frameY="-0" frameWidth="626" frameHeight="582"/>
+	<SubTexture name="boy bubble curse yell0002" x="0" y="925" width="453" height="355" frameX="-53" frameY="-175" frameWidth="626" frameHeight="582"/>
+	<SubTexture name="boy bubble curse yell0003" x="3563" y="1524" width="454" height="413" frameX="-52" frameY="-117" frameWidth="626" frameHeight="582"/>
+	<SubTexture name="boy bubble curse yell0004" x="2193" y="1857" width="548" height="503" frameX="-52" frameY="-68" frameWidth="626" frameHeight="582"/>
+	<SubTexture name="boy bubble curse yell0005" x="2743" y="1897" width="569" height="503" frameX="-31" frameY="-68" frameWidth="626" frameHeight="582"/>
+	<SubTexture name="boy bubble curse yell0006" x="3314" y="1939" width="569" height="503" frameX="-31" frameY="-68" frameWidth="626" frameHeight="582"/>
+	<SubTexture name="boy bubble curse yell0007" x="0" y="2179" width="546" height="503" frameX="-54" frameY="-68" frameWidth="626" frameHeight="582"/>
+	<SubTexture name="boy bubble curse yell0008" x="1097" y="1780" width="545" height="500" frameX="-57" frameY="-72" frameWidth="626" frameHeight="582"/>
+	<SubTexture name="boy bubble curse yell0009" x="1097" y="1780" width="545" height="500" frameX="-57" frameY="-72" frameWidth="626" frameHeight="582"/>
+	<SubTexture name="boy bubble curse yell0010" x="1097" y="1780" width="545" height="500" frameX="-57" frameY="-72" frameWidth="626" frameHeight="582"/>
+	<SubTexture name="boy bubble curse yell0011" x="1097" y="1780" width="545" height="500" frameX="-57" frameY="-72" frameWidth="626" frameHeight="582"/>
+	<SubTexture name="boy bubble curse yell0012" x="1097" y="1780" width="545" height="500" frameX="-57" frameY="-72" frameWidth="626" frameHeight="582"/>
+	<SubTexture name="boy bubble curse yell0013" x="1097" y="1780" width="545" height="500" frameX="-57" frameY="-72" frameWidth="626" frameHeight="582"/>
+	<SubTexture name="boy bubble curse yell0014" x="1097" y="1780" width="545" height="500" frameX="-57" frameY="-72" frameWidth="626" frameHeight="582"/>
+	<SubTexture name="boy bubble curse yell0015" x="1097" y="1780" width="545" height="500" frameX="-57" frameY="-72" frameWidth="626" frameHeight="582"/>
+	<SubTexture name="boy bubble curse yell0016" x="1719" y="2362" width="538" height="520" frameX="-60" frameY="-62" frameWidth="626" frameHeight="582"/>
+	<SubTexture name="boy bubble curse yell0017" x="1719" y="2362" width="538" height="520" frameX="-60" frameY="-62" frameWidth="626" frameHeight="582"/>
+	<SubTexture name="boy bubble curse yell0018" x="1719" y="2362" width="538" height="520" frameX="-60" frameY="-62" frameWidth="626" frameHeight="582"/>
+	<SubTexture name="boy bubble curse yell0019" x="1719" y="2362" width="538" height="520" frameX="-60" frameY="-62" frameWidth="626" frameHeight="582"/>
+	<SubTexture name="boy bubble curse yell0020" x="1719" y="2362" width="538" height="520" frameX="-60" frameY="-62" frameWidth="626" frameHeight="582"/>
+	<SubTexture name="boy bubble curse yell0021" x="1719" y="2362" width="538" height="520" frameX="-60" frameY="-62" frameWidth="626" frameHeight="582"/>
+	<SubTexture name="boy bubble curse yell0022" x="1719" y="2362" width="538" height="520" frameX="-60" frameY="-62" frameWidth="626" frameHeight="582"/>
+	<SubTexture name="boy bubble curse yell0023" x="1719" y="2362" width="538" height="520" frameX="-60" frameY="-62" frameWidth="626" frameHeight="582"/>
+	<SubTexture name="boy bubble curse yell0024" x="548" y="2210" width="546" height="503" frameX="-54" frameY="-68" frameWidth="626" frameHeight="582"/>
+	<SubTexture name="boy bubble curse yell0025" x="548" y="2210" width="546" height="503" frameX="-54" frameY="-68" frameWidth="626" frameHeight="582"/>
+	<SubTexture name="boy bubble curse yell0026" x="548" y="2210" width="546" height="503" frameX="-54" frameY="-68" frameWidth="626" frameHeight="582"/>
+	<SubTexture name="boy bubble curse yell0027" x="548" y="2210" width="546" height="503" frameX="-54" frameY="-68" frameWidth="626" frameHeight="582"/>
+	<SubTexture name="boy bubble curse yell0028" x="548" y="2210" width="546" height="503" frameX="-54" frameY="-68" frameWidth="626" frameHeight="582"/>
+	<SubTexture name="boy bubble curse yell0029" x="548" y="2210" width="546" height="503" frameX="-54" frameY="-68" frameWidth="626" frameHeight="582"/>
+	<SubTexture name="boy bubble curse yell0030" x="548" y="2210" width="546" height="503" frameX="-54" frameY="-68" frameWidth="626" frameHeight="582"/>
+	<SubTexture name="boy bubble curse yell0031" x="548" y="2210" width="546" height="503" frameX="-54" frameY="-68" frameWidth="626" frameHeight="582"/>
+	<SubTexture name="boy bubble polygonal0000" x="1644" y="1446" width="648" height="371" frameX="-0" frameY="-0" frameWidth="648" frameHeight="376"/>
+	<SubTexture name="boy bubble polygonal0001" x="1644" y="1446" width="648" height="371" frameX="-0" frameY="-0" frameWidth="648" frameHeight="376"/>
+	<SubTexture name="boy bubble polygonal0002" x="1986" y="227" width="499" height="263" frameX="-84" frameY="-62" frameWidth="648" frameHeight="376"/>
+	<SubTexture name="boy bubble polygonal0003" x="1986" y="227" width="499" height="263" frameX="-84" frameY="-62" frameWidth="648" frameHeight="376"/>
+	<SubTexture name="boy bubble polygonal0004" x="2208" y="1104" width="597" height="340" frameX="-31" frameY="-33" frameWidth="648" frameHeight="376"/>
+	<SubTexture name="boy bubble polygonal0005" x="2208" y="1104" width="597" height="340" frameX="-31" frameY="-33" frameWidth="648" frameHeight="376"/>
+	<SubTexture name="boy bubble polygonal0006" x="2208" y="1104" width="597" height="340" frameX="-31" frameY="-33" frameWidth="648" frameHeight="376"/>
+	<SubTexture name="boy bubble polygonal0007" x="2208" y="1104" width="597" height="340" frameX="-31" frameY="-33" frameWidth="648" frameHeight="376"/>
+	<SubTexture name="boy bubble polygonal0008" x="0" y="1377" width="597" height="342" frameX="-28" frameY="-29" frameWidth="648" frameHeight="376"/>
+	<SubTexture name="boy bubble polygonal0009" x="0" y="1377" width="597" height="342" frameX="-28" frameY="-29" frameWidth="648" frameHeight="376"/>
+	<SubTexture name="boy bubble polygonal0010" x="0" y="1377" width="597" height="342" frameX="-28" frameY="-29" frameWidth="648" frameHeight="376"/>
+	<SubTexture name="boy bubble polygonal0011" x="0" y="1377" width="597" height="342" frameX="-28" frameY="-29" frameWidth="648" frameHeight="376"/>
+	<SubTexture name="boy bubble polygonal0012" x="0" y="1377" width="597" height="342" frameX="-28" frameY="-29" frameWidth="648" frameHeight="376"/>
+	<SubTexture name="boy bubble polygonal0013" x="0" y="1377" width="597" height="342" frameX="-28" frameY="-29" frameWidth="648" frameHeight="376"/>
+	<SubTexture name="boy bubble polygonal0014" x="0" y="1377" width="597" height="342" frameX="-28" frameY="-29" frameWidth="648" frameHeight="376"/>
+	<SubTexture name="boy bubble polygonal0015" x="0" y="1377" width="597" height="342" frameX="-28" frameY="-29" frameWidth="648" frameHeight="376"/>
+	<SubTexture name="boy bubble polygonal0016" x="1615" y="1096" width="591" height="337" frameX="-34" frameY="-39" frameWidth="648" frameHeight="376"/>
+	<SubTexture name="boy bubble polygonal0017" x="1615" y="1096" width="591" height="337" frameX="-34" frameY="-39" frameWidth="648" frameHeight="376"/>
+	<SubTexture name="boy bubble polygonal0018" x="1615" y="1096" width="591" height="337" frameX="-34" frameY="-39" frameWidth="648" frameHeight="376"/>
+	<SubTexture name="boy bubble polygonal0019" x="1615" y="1096" width="591" height="337" frameX="-34" frameY="-39" frameWidth="648" frameHeight="376"/>
+	<SubTexture name="boy bubble polygonal0020" x="1615" y="1096" width="591" height="337" frameX="-34" frameY="-39" frameWidth="648" frameHeight="376"/>
+	<SubTexture name="boy bubble polygonal0021" x="1615" y="1096" width="591" height="337" frameX="-34" frameY="-39" frameWidth="648" frameHeight="376"/>
+	<SubTexture name="boy bubble polygonal0022" x="1615" y="1096" width="591" height="337" frameX="-34" frameY="-39" frameWidth="648" frameHeight="376"/>
+	<SubTexture name="boy bubble polygonal0023" x="1615" y="1096" width="591" height="337" frameX="-34" frameY="-39" frameWidth="648" frameHeight="376"/>
+	<SubTexture name="boy bubble polygonal0024" x="2208" y="1104" width="597" height="340" frameX="-31" frameY="-33" frameWidth="648" frameHeight="376"/>
+	<SubTexture name="boy bubble polygonal0025" x="2208" y="1104" width="597" height="340" frameX="-31" frameY="-33" frameWidth="648" frameHeight="376"/>
+	<SubTexture name="boy bubble polygonal0026" x="2208" y="1104" width="597" height="340" frameX="-31" frameY="-33" frameWidth="648" frameHeight="376"/>
+	<SubTexture name="boy bubble polygonal0027" x="2208" y="1104" width="597" height="340" frameX="-31" frameY="-33" frameWidth="648" frameHeight="376"/>
+	<SubTexture name="boy bubble polygonal0028" x="2208" y="1104" width="597" height="340" frameX="-31" frameY="-33" frameWidth="648" frameHeight="376"/>
+	<SubTexture name="boy bubble polygonal0029" x="2208" y="1104" width="597" height="340" frameX="-31" frameY="-33" frameWidth="648" frameHeight="376"/>
+	<SubTexture name="boy bubble polygonal0030" x="2208" y="1104" width="597" height="340" frameX="-31" frameY="-33" frameWidth="648" frameHeight="376"/>
+	<SubTexture name="boy bubble polygonal0031" x="2208" y="1104" width="597" height="340" frameX="-31" frameY="-33" frameWidth="648" frameHeight="376"/>
+	<SubTexture name="boy bubble round0000" x="2834" y="499" width="485" height="291" frameX="-1" frameY="-3" frameWidth="487" frameHeight="294"/>
+	<SubTexture name="boy bubble round0001" x="2834" y="499" width="485" height="291" frameX="-1" frameY="-3" frameWidth="487" frameHeight="294"/>
+	<SubTexture name="boy bubble round0002" x="1398" y="0" width="377" height="213" frameX="-54" frameY="-34" frameWidth="487" frameHeight="294"/>
+	<SubTexture name="boy bubble round0003" x="1398" y="0" width="377" height="213" frameX="-54" frameY="-34" frameWidth="487" frameHeight="294"/>
+	<SubTexture name="boy bubble round0004" x="2980" y="232" width="449" height="265" frameX="-15" frameY="-7" frameWidth="487" frameHeight="294"/>
+	<SubTexture name="boy bubble round0005" x="2980" y="232" width="449" height="265" frameX="-15" frameY="-7" frameWidth="487" frameHeight="294"/>
+	<SubTexture name="boy bubble round0006" x="2980" y="232" width="449" height="265" frameX="-15" frameY="-7" frameWidth="487" frameHeight="294"/>
+	<SubTexture name="boy bubble round0007" x="2980" y="232" width="449" height="265" frameX="-15" frameY="-7" frameWidth="487" frameHeight="294"/>
+	<SubTexture name="boy bubble round0008" x="522" y="145" width="450" height="254" frameX="-20" frameY="-14" frameWidth="487" frameHeight="294"/>
+	<SubTexture name="boy bubble round0009" x="522" y="145" width="450" height="254" frameX="-20" frameY="-14" frameWidth="487" frameHeight="294"/>
+	<SubTexture name="boy bubble round0010" x="522" y="145" width="450" height="254" frameX="-20" frameY="-14" frameWidth="487" frameHeight="294"/>
+	<SubTexture name="boy bubble round0011" x="522" y="145" width="450" height="254" frameX="-20" frameY="-14" frameWidth="487" frameHeight="294"/>
+	<SubTexture name="boy bubble round0012" x="522" y="145" width="450" height="254" frameX="-20" frameY="-14" frameWidth="487" frameHeight="294"/>
+	<SubTexture name="boy bubble round0013" x="522" y="145" width="450" height="254" frameX="-20" frameY="-14" frameWidth="487" frameHeight="294"/>
+	<SubTexture name="boy bubble round0014" x="522" y="145" width="450" height="254" frameX="-20" frameY="-14" frameWidth="487" frameHeight="294"/>
+	<SubTexture name="boy bubble round0015" x="522" y="145" width="450" height="254" frameX="-20" frameY="-14" frameWidth="487" frameHeight="294"/>
+	<SubTexture name="boy bubble round0016" x="3431" y="232" width="456" height="270" frameX="-14" frameY="-0" frameWidth="487" frameHeight="294"/>
+	<SubTexture name="boy bubble round0017" x="3431" y="232" width="456" height="270" frameX="-14" frameY="-0" frameWidth="487" frameHeight="294"/>
+	<SubTexture name="boy bubble round0018" x="3431" y="232" width="456" height="270" frameX="-14" frameY="-0" frameWidth="487" frameHeight="294"/>
+	<SubTexture name="boy bubble round0019" x="3431" y="232" width="456" height="270" frameX="-14" frameY="-0" frameWidth="487" frameHeight="294"/>
+	<SubTexture name="boy bubble round0020" x="3431" y="232" width="456" height="270" frameX="-14" frameY="-0" frameWidth="487" frameHeight="294"/>
+	<SubTexture name="boy bubble round0021" x="3431" y="232" width="456" height="270" frameX="-14" frameY="-0" frameWidth="487" frameHeight="294"/>
+	<SubTexture name="boy bubble round0022" x="3431" y="232" width="456" height="270" frameX="-14" frameY="-0" frameWidth="487" frameHeight="294"/>
+	<SubTexture name="boy bubble round0023" x="3431" y="232" width="456" height="270" frameX="-14" frameY="-0" frameWidth="487" frameHeight="294"/>
+	<SubTexture name="boy bubble round0024" x="2980" y="232" width="449" height="265" frameX="-15" frameY="-7" frameWidth="487" frameHeight="294"/>
+	<SubTexture name="boy bubble round0025" x="2980" y="232" width="449" height="265" frameX="-15" frameY="-7" frameWidth="487" frameHeight="294"/>
+	<SubTexture name="boy bubble round0026" x="2980" y="232" width="449" height="265" frameX="-15" frameY="-7" frameWidth="487" frameHeight="294"/>
+	<SubTexture name="boy bubble round0027" x="2980" y="232" width="449" height="265" frameX="-15" frameY="-7" frameWidth="487" frameHeight="294"/>
+	<SubTexture name="boy bubble round0028" x="2980" y="232" width="449" height="265" frameX="-15" frameY="-7" frameWidth="487" frameHeight="294"/>
+	<SubTexture name="boy bubble round0029" x="2980" y="232" width="449" height="265" frameX="-15" frameY="-7" frameWidth="487" frameHeight="294"/>
+	<SubTexture name="boy bubble round0030" x="2980" y="232" width="449" height="265" frameX="-15" frameY="-7" frameWidth="487" frameHeight="294"/>
+	<SubTexture name="boy bubble round0031" x="2980" y="232" width="449" height="265" frameX="-15" frameY="-7" frameWidth="487" frameHeight="294"/>
+	<SubTexture name="boy bubble sad tall0000" x="599" y="1404" width="515" height="343" rotated="true" frameX="-0" frameY="-11" frameWidth="343" frameHeight="534"/>
+	<SubTexture name="boy bubble sad tall0001" x="1116" y="1435" width="526" height="343" rotated="true" frameX="-0" frameY="-0" frameWidth="343" frameHeight="534"/>
+	<SubTexture name="boy bubble sad tall0002" x="974" y="215" width="518" height="243" rotated="true" frameX="-45" frameY="-5" frameWidth="343" frameHeight="534"/>
+	<SubTexture name="boy bubble sad tall0003" x="974" y="215" width="518" height="243" rotated="true" frameX="-45" frameY="-5" frameWidth="343" frameHeight="534"/>
+	<SubTexture name="boy bubble sad tall0004" x="0" y="338" width="516" height="274" rotated="true" frameX="-48" frameY="-18" frameWidth="343" frameHeight="534"/>
+	<SubTexture name="boy bubble sad tall0005" x="1470" y="491" width="510" height="280" rotated="true" frameX="-42" frameY="-24" frameWidth="343" frameHeight="534"/>
+	<SubTexture name="boy bubble sad tall0006" x="1470" y="491" width="510" height="280" rotated="true" frameX="-42" frameY="-24" frameWidth="343" frameHeight="534"/>
+	<SubTexture name="boy bubble sad tall0007" x="947" y="460" width="521" height="274" rotated="true" frameX="-48" frameY="-13" frameWidth="343" frameHeight="534"/>
+	<SubTexture name="boy bubble sad tall0008" x="0" y="614" width="453" height="309" rotated="true" frameX="-15" frameY="-18" frameWidth="343" frameHeight="534"/>
+	<SubTexture name="boy bubble sad tall0009" x="0" y="614" width="453" height="309" rotated="true" frameX="-15" frameY="-18" frameWidth="343" frameHeight="534"/>
+	<SubTexture name="boy bubble sad tall0010" x="0" y="614" width="453" height="309" rotated="true" frameX="-15" frameY="-18" frameWidth="343" frameHeight="534"/>
+	<SubTexture name="boy bubble sad tall0011" x="0" y="614" width="453" height="309" rotated="true" frameX="-15" frameY="-18" frameWidth="343" frameHeight="534"/>
+	<SubTexture name="boy bubble sad tall0012" x="0" y="614" width="453" height="309" rotated="true" frameX="-15" frameY="-18" frameWidth="343" frameHeight="534"/>
+	<SubTexture name="boy bubble sad tall0013" x="0" y="614" width="453" height="309" rotated="true" frameX="-15" frameY="-18" frameWidth="343" frameHeight="534"/>
+	<SubTexture name="boy bubble sad tall0014" x="0" y="614" width="453" height="309" rotated="true" frameX="-15" frameY="-18" frameWidth="343" frameHeight="534"/>
+	<SubTexture name="boy bubble sad tall0015" x="0" y="614" width="453" height="309" rotated="true" frameX="-15" frameY="-18" frameWidth="343" frameHeight="534"/>
+	<SubTexture name="boy bubble sad tall0016" x="455" y="682" width="454" height="316" rotated="true" frameX="-4" frameY="-18" frameWidth="343" frameHeight="534"/>
+	<SubTexture name="boy bubble sad tall0017" x="455" y="682" width="454" height="316" rotated="true" frameX="-4" frameY="-18" frameWidth="343" frameHeight="534"/>
+	<SubTexture name="boy bubble sad tall0018" x="455" y="682" width="454" height="316" rotated="true" frameX="-4" frameY="-18" frameWidth="343" frameHeight="534"/>
+	<SubTexture name="boy bubble sad tall0019" x="455" y="682" width="454" height="316" rotated="true" frameX="-4" frameY="-18" frameWidth="343" frameHeight="534"/>
+	<SubTexture name="boy bubble sad tall0020" x="455" y="682" width="454" height="316" rotated="true" frameX="-4" frameY="-18" frameWidth="343" frameHeight="534"/>
+	<SubTexture name="boy bubble sad tall0021" x="455" y="682" width="454" height="316" rotated="true" frameX="-4" frameY="-18" frameWidth="343" frameHeight="534"/>
+	<SubTexture name="boy bubble sad tall0022" x="455" y="682" width="454" height="316" rotated="true" frameX="-4" frameY="-18" frameWidth="343" frameHeight="534"/>
+	<SubTexture name="boy bubble sad tall0023" x="455" y="682" width="454" height="316" rotated="true" frameX="-4" frameY="-18" frameWidth="343" frameHeight="534"/>
+	<SubTexture name="boy bubble sad tall0024" x="911" y="736" width="455" height="319" rotated="true" frameX="-3" frameY="-21" frameWidth="343" frameHeight="534"/>
+	<SubTexture name="boy bubble sad tall0025" x="911" y="736" width="455" height="319" rotated="true" frameX="-3" frameY="-21" frameWidth="343" frameHeight="534"/>
+	<SubTexture name="boy bubble sad tall0026" x="911" y="736" width="455" height="319" rotated="true" frameX="-3" frameY="-21" frameWidth="343" frameHeight="534"/>
+	<SubTexture name="boy bubble sad tall0027" x="911" y="736" width="455" height="319" rotated="true" frameX="-3" frameY="-21" frameWidth="343" frameHeight="534"/>
+	<SubTexture name="boy bubble sad tall0028" x="911" y="736" width="455" height="319" rotated="true" frameX="-3" frameY="-21" frameWidth="343" frameHeight="534"/>
+	<SubTexture name="boy bubble sad tall0029" x="911" y="736" width="455" height="319" rotated="true" frameX="-3" frameY="-21" frameWidth="343" frameHeight="534"/>
+	<SubTexture name="boy bubble sad tall0030" x="911" y="736" width="455" height="319" rotated="true" frameX="-3" frameY="-21" frameWidth="343" frameHeight="534"/>
+	<SubTexture name="boy bubble sad tall0031" x="911" y="736" width="455" height="319" rotated="true" frameX="-3" frameY="-21" frameWidth="343" frameHeight="534"/>
+	<SubTexture name="boy bubble tall0000" x="3559" y="845" width="480" height="335" rotated="true" frameX="-0" frameY="-0" frameWidth="336" frameHeight="480"/>
+	<SubTexture name="boy bubble tall0001" x="3559" y="845" width="480" height="335" rotated="true" frameX="-0" frameY="-0" frameWidth="336" frameHeight="480"/>
+	<SubTexture name="boy bubble tall0002" x="1034" y="0" width="362" height="201" rotated="true" frameX="-65" frameY="-64" frameWidth="336" frameHeight="480"/>
+	<SubTexture name="boy bubble tall0003" x="1034" y="0" width="362" height="201" rotated="true" frameX="-65" frameY="-64" frameWidth="336" frameHeight="480"/>
+	<SubTexture name="boy bubble tall0004" x="1982" y="492" width="422" height="284" rotated="true" frameX="-24" frameY="-31" frameWidth="336" frameHeight="480"/>
+	<SubTexture name="boy bubble tall0005" x="1982" y="492" width="422" height="284" rotated="true" frameX="-24" frameY="-31" frameWidth="336" frameHeight="480"/>
+	<SubTexture name="boy bubble tall0006" x="1982" y="492" width="422" height="284" rotated="true" frameX="-24" frameY="-31" frameWidth="336" frameHeight="480"/>
+	<SubTexture name="boy bubble tall0007" x="1982" y="492" width="422" height="284" rotated="true" frameX="-24" frameY="-31" frameWidth="336" frameHeight="480"/>
+	<SubTexture name="boy bubble tall0008" x="518" y="401" width="427" height="279" rotated="true" frameX="-27" frameY="-28" frameWidth="336" frameHeight="480"/>
+	<SubTexture name="boy bubble tall0009" x="518" y="401" width="427" height="279" rotated="true" frameX="-27" frameY="-28" frameWidth="336" frameHeight="480"/>
+	<SubTexture name="boy bubble tall0010" x="518" y="401" width="427" height="279" rotated="true" frameX="-27" frameY="-28" frameWidth="336" frameHeight="480"/>
+	<SubTexture name="boy bubble tall0011" x="518" y="401" width="427" height="279" rotated="true" frameX="-27" frameY="-28" frameWidth="336" frameHeight="480"/>
+	<SubTexture name="boy bubble tall0012" x="518" y="401" width="427" height="279" rotated="true" frameX="-27" frameY="-28" frameWidth="336" frameHeight="480"/>
+	<SubTexture name="boy bubble tall0013" x="518" y="401" width="427" height="279" rotated="true" frameX="-27" frameY="-28" frameWidth="336" frameHeight="480"/>
+	<SubTexture name="boy bubble tall0014" x="518" y="401" width="427" height="279" rotated="true" frameX="-27" frameY="-28" frameWidth="336" frameHeight="480"/>
+	<SubTexture name="boy bubble tall0015" x="518" y="401" width="427" height="279" rotated="true" frameX="-27" frameY="-28" frameWidth="336" frameHeight="480"/>
+	<SubTexture name="boy bubble tall0016" x="2406" y="498" width="426" height="284" rotated="true" frameX="-22" frameY="-29" frameWidth="336" frameHeight="480"/>
+	<SubTexture name="boy bubble tall0017" x="2406" y="498" width="426" height="284" rotated="true" frameX="-22" frameY="-29" frameWidth="336" frameHeight="480"/>
+	<SubTexture name="boy bubble tall0018" x="2406" y="498" width="426" height="284" rotated="true" frameX="-22" frameY="-29" frameWidth="336" frameHeight="480"/>
+	<SubTexture name="boy bubble tall0019" x="2406" y="498" width="426" height="284" rotated="true" frameX="-22" frameY="-29" frameWidth="336" frameHeight="480"/>
+	<SubTexture name="boy bubble tall0020" x="2406" y="498" width="426" height="284" rotated="true" frameX="-22" frameY="-29" frameWidth="336" frameHeight="480"/>
+	<SubTexture name="boy bubble tall0021" x="2406" y="498" width="426" height="284" rotated="true" frameX="-22" frameY="-29" frameWidth="336" frameHeight="480"/>
+	<SubTexture name="boy bubble tall0022" x="2406" y="498" width="426" height="284" rotated="true" frameX="-22" frameY="-29" frameWidth="336" frameHeight="480"/>
+	<SubTexture name="boy bubble tall0023" x="2406" y="498" width="426" height="284" rotated="true" frameX="-22" frameY="-29" frameWidth="336" frameHeight="480"/>
+	<SubTexture name="boy bubble tall0024" x="1982" y="492" width="422" height="284" rotated="true" frameX="-24" frameY="-31" frameWidth="336" frameHeight="480"/>
+	<SubTexture name="boy bubble tall0025" x="1982" y="492" width="422" height="284" rotated="true" frameX="-24" frameY="-31" frameWidth="336" frameHeight="480"/>
+	<SubTexture name="boy bubble tall0026" x="1982" y="492" width="422" height="284" rotated="true" frameX="-24" frameY="-31" frameWidth="336" frameHeight="480"/>
+	<SubTexture name="boy bubble tall0027" x="1982" y="492" width="422" height="284" rotated="true" frameX="-24" frameY="-31" frameWidth="336" frameHeight="480"/>
+	<SubTexture name="boy bubble tall0028" x="1982" y="492" width="422" height="284" rotated="true" frameX="-24" frameY="-31" frameWidth="336" frameHeight="480"/>
+	<SubTexture name="boy bubble tall0029" x="1982" y="492" width="422" height="284" rotated="true" frameX="-24" frameY="-31" frameWidth="336" frameHeight="480"/>
+	<SubTexture name="boy bubble tall0030" x="1982" y="492" width="422" height="284" rotated="true" frameX="-24" frameY="-31" frameWidth="336" frameHeight="480"/>
+	<SubTexture name="boy bubble tall0031" x="1982" y="492" width="422" height="284" rotated="true" frameX="-24" frameY="-31" frameWidth="336" frameHeight="480"/>
+	<SubTexture name="boy bubble unhappy gonal0000" x="2294" y="1484" width="640" height="371" frameX="-0" frameY="-0" frameWidth="640" frameHeight="376"/>
+	<SubTexture name="boy bubble unhappy gonal0001" x="2936" y="1524" width="625" height="371" frameX="-4" frameY="-0" frameWidth="640" frameHeight="376"/>
+	<SubTexture name="boy bubble unhappy gonal0002" x="2487" y="232" width="491" height="264" frameX="-74" frameY="-61" frameWidth="640" frameHeight="376"/>
+	<SubTexture name="boy bubble unhappy gonal0003" x="1494" y="227" width="490" height="262" frameX="-81" frameY="-61" frameWidth="640" frameHeight="376"/>
+	<SubTexture name="boy bubble unhappy gonal0004" x="1368" y="773" width="575" height="304" frameX="-33" frameY="-33" frameWidth="640" frameHeight="376"/>
+	<SubTexture name="boy bubble unhappy gonal0005" x="455" y="1057" width="575" height="318" frameX="-33" frameY="-33" frameWidth="640" frameHeight="376"/>
+	<SubTexture name="boy bubble unhappy gonal0006" x="455" y="1057" width="575" height="318" frameX="-33" frameY="-33" frameWidth="640" frameHeight="376"/>
+	<SubTexture name="boy bubble unhappy gonal0007" x="455" y="1057" width="575" height="318" frameX="-33" frameY="-33" frameWidth="640" frameHeight="376"/>
+	<SubTexture name="boy bubble unhappy gonal0008" x="2807" y="1142" width="579" height="340" frameX="-30" frameY="-31" frameWidth="640" frameHeight="376"/>
+	<SubTexture name="boy bubble unhappy gonal0009" x="2807" y="1142" width="579" height="340" frameX="-30" frameY="-31" frameWidth="640" frameHeight="376"/>
+	<SubTexture name="boy bubble unhappy gonal0010" x="2807" y="1142" width="579" height="340" frameX="-30" frameY="-31" frameWidth="640" frameHeight="376"/>
+	<SubTexture name="boy bubble unhappy gonal0011" x="2807" y="1142" width="579" height="340" frameX="-30" frameY="-31" frameWidth="640" frameHeight="376"/>
+	<SubTexture name="boy bubble unhappy gonal0012" x="2807" y="1142" width="579" height="340" frameX="-30" frameY="-31" frameWidth="640" frameHeight="376"/>
+	<SubTexture name="boy bubble unhappy gonal0013" x="2807" y="1142" width="579" height="340" frameX="-30" frameY="-31" frameWidth="640" frameHeight="376"/>
+	<SubTexture name="boy bubble unhappy gonal0014" x="2807" y="1142" width="579" height="340" frameX="-30" frameY="-31" frameWidth="640" frameHeight="376"/>
+	<SubTexture name="boy bubble unhappy gonal0015" x="2807" y="1142" width="579" height="340" frameX="-30" frameY="-31" frameWidth="640" frameHeight="376"/>
+	<SubTexture name="boy bubble unhappy gonal0016" x="1032" y="1079" width="581" height="323" frameX="-25" frameY="-39" frameWidth="640" frameHeight="376"/>
+	<SubTexture name="boy bubble unhappy gonal0017" x="1032" y="1079" width="581" height="323" frameX="-25" frameY="-39" frameWidth="640" frameHeight="376"/>
+	<SubTexture name="boy bubble unhappy gonal0018" x="1032" y="1079" width="581" height="323" frameX="-25" frameY="-39" frameWidth="640" frameHeight="376"/>
+	<SubTexture name="boy bubble unhappy gonal0019" x="1032" y="1079" width="581" height="323" frameX="-25" frameY="-39" frameWidth="640" frameHeight="376"/>
+	<SubTexture name="boy bubble unhappy gonal0020" x="1032" y="1079" width="581" height="323" frameX="-25" frameY="-39" frameWidth="640" frameHeight="376"/>
+	<SubTexture name="boy bubble unhappy gonal0021" x="1032" y="1079" width="581" height="323" frameX="-25" frameY="-39" frameWidth="640" frameHeight="376"/>
+	<SubTexture name="boy bubble unhappy gonal0022" x="1032" y="1079" width="581" height="323" frameX="-25" frameY="-39" frameWidth="640" frameHeight="376"/>
+	<SubTexture name="boy bubble unhappy gonal0023" x="1032" y="1079" width="581" height="323" frameX="-25" frameY="-39" frameWidth="640" frameHeight="376"/>
+	<SubTexture name="boy bubble unhappy gonal0024" x="3388" y="1182" width="576" height="340" frameX="-32" frameY="-33" frameWidth="640" frameHeight="376"/>
+	<SubTexture name="boy bubble unhappy gonal0025" x="3388" y="1182" width="576" height="340" frameX="-32" frameY="-33" frameWidth="640" frameHeight="376"/>
+	<SubTexture name="boy bubble unhappy gonal0026" x="3388" y="1182" width="576" height="340" frameX="-32" frameY="-33" frameWidth="640" frameHeight="376"/>
+	<SubTexture name="boy bubble unhappy gonal0027" x="3388" y="1182" width="576" height="340" frameX="-32" frameY="-33" frameWidth="640" frameHeight="376"/>
+	<SubTexture name="boy bubble unhappy gonal0028" x="3388" y="1182" width="576" height="340" frameX="-32" frameY="-33" frameWidth="640" frameHeight="376"/>
+	<SubTexture name="boy bubble unhappy gonal0029" x="3388" y="1182" width="576" height="340" frameX="-32" frameY="-33" frameWidth="640" frameHeight="376"/>
+	<SubTexture name="boy bubble unhappy gonal0030" x="3388" y="1182" width="576" height="340" frameX="-32" frameY="-33" frameWidth="640" frameHeight="376"/>
+	<SubTexture name="boy bubble unhappy gonal0031" x="3388" y="1182" width="576" height="340" frameX="-32" frameY="-33" frameWidth="640" frameHeight="376"/>
+	<SubTexture name="boy bubble yell0000" x="1096" y="2287" width="621" height="512" frameX="-0" frameY="-0" frameWidth="621" frameHeight="515"/>
+	<SubTexture name="boy bubble yell0001" x="1096" y="2287" width="621" height="512" frameX="-0" frameY="-0" frameWidth="621" frameHeight="515"/>
+	<SubTexture name="boy bubble yell0002" x="3199" y="800" width="358" height="340" frameX="-143" frameY="-143" frameWidth="621" frameHeight="515"/>
+	<SubTexture name="boy bubble yell0003" x="3199" y="800" width="358" height="340" frameX="-143" frameY="-143" frameWidth="621" frameHeight="515"/>
+	<SubTexture name="boy bubble yell0004" x="549" y="1749" width="546" height="459" frameX="-49" frameY="-53" frameWidth="621" frameHeight="515"/>
+	<SubTexture name="boy bubble yell0005" x="549" y="1749" width="546" height="459" frameX="-49" frameY="-53" frameWidth="621" frameHeight="515"/>
+	<SubTexture name="boy bubble yell0006" x="549" y="1749" width="546" height="459" frameX="-49" frameY="-53" frameWidth="621" frameHeight="515"/>
+	<SubTexture name="boy bubble yell0007" x="549" y="1749" width="546" height="459" frameX="-49" frameY="-53" frameWidth="621" frameHeight="515"/>
+	<SubTexture name="boy bubble yell0008" x="1644" y="1819" width="547" height="466" frameX="-50" frameY="-49" frameWidth="621" frameHeight="515"/>
+	<SubTexture name="boy bubble yell0009" x="1644" y="1819" width="547" height="466" frameX="-50" frameY="-49" frameWidth="621" frameHeight="515"/>
+	<SubTexture name="boy bubble yell0010" x="1644" y="1819" width="547" height="466" frameX="-50" frameY="-49" frameWidth="621" frameHeight="515"/>
+	<SubTexture name="boy bubble yell0011" x="1644" y="1819" width="547" height="466" frameX="-50" frameY="-49" frameWidth="621" frameHeight="515"/>
+	<SubTexture name="boy bubble yell0012" x="1644" y="1819" width="547" height="466" frameX="-50" frameY="-49" frameWidth="621" frameHeight="515"/>
+	<SubTexture name="boy bubble yell0013" x="1644" y="1819" width="547" height="466" frameX="-50" frameY="-49" frameWidth="621" frameHeight="515"/>
+	<SubTexture name="boy bubble yell0014" x="1644" y="1819" width="547" height="466" frameX="-50" frameY="-49" frameWidth="621" frameHeight="515"/>
+	<SubTexture name="boy bubble yell0015" x="1644" y="1819" width="547" height="466" frameX="-50" frameY="-49" frameWidth="621" frameHeight="515"/>
+	<SubTexture name="boy bubble yell0016" x="0" y="1721" width="547" height="456" frameX="-49" frameY="-54" frameWidth="621" frameHeight="515"/>
+	<SubTexture name="boy bubble yell0017" x="0" y="1721" width="547" height="456" frameX="-49" frameY="-54" frameWidth="621" frameHeight="515"/>
+	<SubTexture name="boy bubble yell0018" x="0" y="1721" width="547" height="456" frameX="-49" frameY="-54" frameWidth="621" frameHeight="515"/>
+	<SubTexture name="boy bubble yell0019" x="0" y="1721" width="547" height="456" frameX="-49" frameY="-54" frameWidth="621" frameHeight="515"/>
+	<SubTexture name="boy bubble yell0020" x="0" y="1721" width="547" height="456" frameX="-49" frameY="-54" frameWidth="621" frameHeight="515"/>
+	<SubTexture name="boy bubble yell0021" x="0" y="1721" width="547" height="456" frameX="-49" frameY="-54" frameWidth="621" frameHeight="515"/>
+	<SubTexture name="boy bubble yell0022" x="0" y="1721" width="547" height="456" frameX="-49" frameY="-54" frameWidth="621" frameHeight="515"/>
+	<SubTexture name="boy bubble yell0023" x="0" y="1721" width="547" height="456" frameX="-49" frameY="-54" frameWidth="621" frameHeight="515"/>
+	<SubTexture name="boy bubble yell0024" x="549" y="1749" width="546" height="459" frameX="-49" frameY="-53" frameWidth="621" frameHeight="515"/>
+	<SubTexture name="boy bubble yell0025" x="549" y="1749" width="546" height="459" frameX="-49" frameY="-53" frameWidth="621" frameHeight="515"/>
+	<SubTexture name="boy bubble yell0026" x="549" y="1749" width="546" height="459" frameX="-49" frameY="-53" frameWidth="621" frameHeight="515"/>
+	<SubTexture name="boy bubble yell0027" x="549" y="1749" width="546" height="459" frameX="-49" frameY="-53" frameWidth="621" frameHeight="515"/>
+	<SubTexture name="boy bubble yell0028" x="549" y="1749" width="546" height="459" frameX="-49" frameY="-53" frameWidth="621" frameHeight="515"/>
+	<SubTexture name="boy bubble yell0029" x="549" y="1749" width="546" height="459" frameX="-49" frameY="-53" frameWidth="621" frameHeight="515"/>
+	<SubTexture name="boy bubble yell0030" x="549" y="1749" width="546" height="459" frameX="-49" frameY="-53" frameWidth="621" frameHeight="515"/>
+	<SubTexture name="boy bubble yell0031" x="549" y="1749" width="546" height="459" frameX="-49" frameY="-53" frameWidth="621" frameHeight="515"/>
 </TextureAtlas>

@@ -1,17 +1,18 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<TextureAtlas imagePath="truckerboy-lineart.png">
-	<!-- Created with Adobe Animate version 19.2.1.408 -->
-	<!-- http://www.adobe.com/products/animate.html -->
-	<SubTexture name="boy down0000" x="1072" y="1306" width="572" height="592" frameX="-5" frameY="-24" frameWidth="577" frameHeight="616"/>
-	<SubTexture name="boy down0001" x="1072" y="1908" width="556" height="609" frameX="0" frameY="0" frameWidth="577" frameHeight="616"/>
-	<SubTexture name="boy idle0000" x="1300" y="664" width="573" height="632" frameX="-2" frameY="-3" frameWidth="585" frameHeight="644"/>
-	<SubTexture name="boy idle0001" x="1300" y="10" width="585" height="644"/>
-	<SubTexture name="boy left0000" x="10" y="681" width="547" height="642" frameX="0" frameY="0" frameWidth="548" frameHeight="642"/>
-	<SubTexture name="boy left0001" x="10" y="1333" width="539" height="627" frameX="-9" frameY="-3" frameWidth="548" frameHeight="642"/>
-	<SubTexture name="boy right0000" x="700" y="10" width="590" height="645"/>
-	<SubTexture name="boy right0001" x="700" y="665" width="564" height="630" frameX="-24" frameY="-13" frameWidth="590" frameHeight="645"/>
-	<SubTexture name="boy up0000" x="10" y="1970" width="482" height="683" frameX="-12" frameY="0" frameWidth="495" frameHeight="691"/>
-	<SubTexture name="boy up0001" x="567" y="1305" width="495" height="685" frameX="0" frameY="-6" frameWidth="495" frameHeight="691"/>
-	<SubTexture name="homer0000" x="502" y="2000" width="467" height="668"/>
-	<SubTexture name="miss0000" x="10" y="10" width="680" height="661"/>
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Created with Funkin Packer v0.1.3 https://neeeoo.github.io/funkin-packer/
+-->
+<TextureAtlas imagePath="truckerboy-lineart.png" width="2351" height="1982">
+	<SubTexture name="boy down0000" x="1276" y="1245" width="591" height="571" rotated="true" frameX="-6" frameY="-25" frameWidth="577" frameHeight="616"/>
+	<SubTexture name="boy down0001" x="1257" y="687" width="608" height="556" rotated="true" frameX="-0" frameY="-0" frameWidth="577" frameHeight="616"/>
+	<SubTexture name="boy idle0000" x="682" y="645" width="573" height="632" frameX="-2" frameY="-3" frameWidth="585" frameHeight="644"/>
+	<SubTexture name="boy idle0001" x="682" y="0" width="585" height="643" frameX="-0" frameY="-0" frameWidth="585" frameHeight="644"/>
+	<SubTexture name="boy left0000" x="632" y="1279" width="642" height="547" rotated="true" frameX="-0" frameY="-0" frameWidth="548" frameHeight="642"/>
+	<SubTexture name="boy left0001" x="1766" y="0" width="539" height="627" frameX="-9" frameY="-3" frameWidth="548" frameHeight="642"/>
+	<SubTexture name="boy right0000" x="0" y="663" width="645" height="590" rotated="true" frameX="-0" frameY="-0" frameWidth="590" frameHeight="645"/>
+	<SubTexture name="boy right0001" x="0" y="1255" width="630" height="564" rotated="true" frameX="-24" frameY="-13" frameWidth="590" frameHeight="645"/>
+	<SubTexture name="boy up0000" x="1869" y="629" width="482" height="683" frameX="-12" frameY="-0" frameWidth="495" frameHeight="691"/>
+	<SubTexture name="boy up0001" x="1269" y="0" width="495" height="685" frameX="-0" frameY="-6" frameWidth="495" frameHeight="691"/>
+	<SubTexture name="homer0000" x="1869" y="1314" width="467" height="668" frameX="-0" frameY="-0" frameWidth="467" frameHeight="668"/>
+	<SubTexture name="miss0000" x="0" y="0" width="680" height="661" frameX="-0" frameY="-0" frameWidth="680" frameHeight="661"/>
 </TextureAtlas>

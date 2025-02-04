@@ -1,33 +1,34 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<TextureAtlas imagePath="bgSpeakers.png">
-	<!-- Created with Adobe Animate version 23.0.1.70 -->
-	<!-- http://www.adobe.com/products/animate.html -->
-	<SubTexture name="Hunte Spekor0000" x="0" y="0" width="181" height="259" pivotX="-4.8" pivotY="0.15" frameX="0" frameY="0" frameWidth="187" frameHeight="259"/>
-	<SubTexture name="Hunte Spekor0001" x="0" y="0" width="181" height="259" frameX="0" frameY="0" frameWidth="187" frameHeight="259"/>
-	<SubTexture name="Hunte Spekor0002" x="183" y="0" width="181" height="246" frameX="-6" frameY="-4" frameWidth="187" frameHeight="259"/>
-	<SubTexture name="Hunte Spekor0003" x="183" y="248" width="181" height="246" frameX="-6" frameY="-4" frameWidth="187" frameHeight="259"/>
-	<SubTexture name="Hunte Spekor0004" x="183" y="248" width="181" height="246" frameX="-6" frameY="-4" frameWidth="187" frameHeight="259"/>
-	<SubTexture name="Hunte Spekor0005" x="183" y="248" width="181" height="246" frameX="-6" frameY="-4" frameWidth="187" frameHeight="259"/>
-	<SubTexture name="Hunte Spekor0006" x="183" y="248" width="181" height="246" frameX="-6" frameY="-4" frameWidth="187" frameHeight="259"/>
-	<SubTexture name="Hunte Spekor0007" x="183" y="248" width="181" height="246" frameX="-6" frameY="-4" frameWidth="187" frameHeight="259"/>
-	<SubTexture name="Hunte Spekor0008" x="183" y="248" width="181" height="246" frameX="-6" frameY="-4" frameWidth="187" frameHeight="259"/>
-	<SubTexture name="Hunte Spekor0009" x="183" y="248" width="181" height="246" frameX="-6" frameY="-4" frameWidth="187" frameHeight="259"/>
-	<SubTexture name="Hunte Spekor0010" x="183" y="248" width="181" height="246" frameX="-6" frameY="-4" frameWidth="187" frameHeight="259"/>
-	<SubTexture name="Hunte Spekor0011" x="183" y="248" width="181" height="246" frameX="-6" frameY="-4" frameWidth="187" frameHeight="259"/>
-	<SubTexture name="Hunte Spekor0012" x="183" y="248" width="181" height="246" frameX="-6" frameY="-4" frameWidth="187" frameHeight="259"/>
-	<SubTexture name="Hunte Spekor0013" x="183" y="248" width="181" height="246" frameX="-6" frameY="-4" frameWidth="187" frameHeight="259"/>
-	<SubTexture name="speaker carv0000" x="0" y="261" width="163" height="209" pivotX="50.1" pivotY="2.5"/>
-	<SubTexture name="speaker carv0001" x="0" y="261" width="163" height="209"/>
-	<SubTexture name="speaker carv0002" x="0" y="472" width="157" height="205" frameX="-2" frameY="-2" frameWidth="163" frameHeight="209"/>
-	<SubTexture name="speaker carv0003" x="159" y="496" width="157" height="205" frameX="-2" frameY="-2" frameWidth="163" frameHeight="209"/>
-	<SubTexture name="speaker carv0004" x="159" y="496" width="157" height="205" frameX="-2" frameY="-2" frameWidth="163" frameHeight="209"/>
-	<SubTexture name="speaker carv0005" x="159" y="496" width="157" height="205" frameX="-2" frameY="-2" frameWidth="163" frameHeight="209"/>
-	<SubTexture name="speaker carv0006" x="159" y="496" width="157" height="205" frameX="-2" frameY="-2" frameWidth="163" frameHeight="209"/>
-	<SubTexture name="speaker carv0007" x="159" y="496" width="157" height="205" frameX="-2" frameY="-2" frameWidth="163" frameHeight="209"/>
-	<SubTexture name="speaker carv0008" x="159" y="496" width="157" height="205" frameX="-2" frameY="-2" frameWidth="163" frameHeight="209"/>
-	<SubTexture name="speaker carv0009" x="159" y="496" width="157" height="205" frameX="-2" frameY="-2" frameWidth="163" frameHeight="209"/>
-	<SubTexture name="speaker carv0010" x="159" y="496" width="157" height="205" frameX="-2" frameY="-2" frameWidth="163" frameHeight="209"/>
-	<SubTexture name="speaker carv0011" x="159" y="496" width="157" height="205" frameX="-2" frameY="-2" frameWidth="163" frameHeight="209"/>
-	<SubTexture name="speaker carv0012" x="159" y="496" width="157" height="205" frameX="-2" frameY="-2" frameWidth="163" frameHeight="209"/>
-	<SubTexture name="speaker carv0013" x="159" y="496" width="157" height="205" frameX="-2" frameY="-2" frameWidth="163" frameHeight="209"/>
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Created with Funkin Packer v0.1.3 https://neeeoo.github.io/funkin-packer/
+-->
+<TextureAtlas imagePath="bgSpeakers.png" width="1380" height="181">
+	<SubTexture name="Hunte Spekor0000" x="0" y="0" width="259" height="181" rotated="true" frameX="-0" frameY="-0" frameWidth="187" frameHeight="259"/>
+	<SubTexture name="Hunte Spekor0001" x="0" y="0" width="259" height="181" rotated="true" frameX="-0" frameY="-0" frameWidth="187" frameHeight="259"/>
+	<SubTexture name="Hunte Spekor0002" x="261" y="0" width="246" height="181" rotated="true" frameX="-6" frameY="-4" frameWidth="187" frameHeight="259"/>
+	<SubTexture name="Hunte Spekor0003" x="509" y="0" width="246" height="181" rotated="true" frameX="-6" frameY="-4" frameWidth="187" frameHeight="259"/>
+	<SubTexture name="Hunte Spekor0004" x="509" y="0" width="246" height="181" rotated="true" frameX="-6" frameY="-4" frameWidth="187" frameHeight="259"/>
+	<SubTexture name="Hunte Spekor0005" x="509" y="0" width="246" height="181" rotated="true" frameX="-6" frameY="-4" frameWidth="187" frameHeight="259"/>
+	<SubTexture name="Hunte Spekor0006" x="509" y="0" width="246" height="181" rotated="true" frameX="-6" frameY="-4" frameWidth="187" frameHeight="259"/>
+	<SubTexture name="Hunte Spekor0007" x="509" y="0" width="246" height="181" rotated="true" frameX="-6" frameY="-4" frameWidth="187" frameHeight="259"/>
+	<SubTexture name="Hunte Spekor0008" x="509" y="0" width="246" height="181" rotated="true" frameX="-6" frameY="-4" frameWidth="187" frameHeight="259"/>
+	<SubTexture name="Hunte Spekor0009" x="509" y="0" width="246" height="181" rotated="true" frameX="-6" frameY="-4" frameWidth="187" frameHeight="259"/>
+	<SubTexture name="Hunte Spekor0010" x="509" y="0" width="246" height="181" rotated="true" frameX="-6" frameY="-4" frameWidth="187" frameHeight="259"/>
+	<SubTexture name="Hunte Spekor0011" x="509" y="0" width="246" height="181" rotated="true" frameX="-6" frameY="-4" frameWidth="187" frameHeight="259"/>
+	<SubTexture name="Hunte Spekor0012" x="509" y="0" width="246" height="181" rotated="true" frameX="-6" frameY="-4" frameWidth="187" frameHeight="259"/>
+	<SubTexture name="Hunte Spekor0013" x="509" y="0" width="246" height="181" rotated="true" frameX="-6" frameY="-4" frameWidth="187" frameHeight="259"/>
+	<SubTexture name="speaker carv0000" x="757" y="0" width="209" height="163" rotated="true" frameX="-0" frameY="-0" frameWidth="163" frameHeight="209"/>
+	<SubTexture name="speaker carv0001" x="757" y="0" width="209" height="163" rotated="true" frameX="-0" frameY="-0" frameWidth="163" frameHeight="209"/>
+	<SubTexture name="speaker carv0002" x="968" y="0" width="205" height="157" rotated="true" frameX="-2" frameY="-2" frameWidth="163" frameHeight="209"/>
+	<SubTexture name="speaker carv0003" x="1175" y="0" width="205" height="157" rotated="true" frameX="-2" frameY="-2" frameWidth="163" frameHeight="209"/>
+	<SubTexture name="speaker carv0004" x="1175" y="0" width="205" height="157" rotated="true" frameX="-2" frameY="-2" frameWidth="163" frameHeight="209"/>
+	<SubTexture name="speaker carv0005" x="1175" y="0" width="205" height="157" rotated="true" frameX="-2" frameY="-2" frameWidth="163" frameHeight="209"/>
+	<SubTexture name="speaker carv0006" x="1175" y="0" width="205" height="157" rotated="true" frameX="-2" frameY="-2" frameWidth="163" frameHeight="209"/>
+	<SubTexture name="speaker carv0007" x="1175" y="0" width="205" height="157" rotated="true" frameX="-2" frameY="-2" frameWidth="163" frameHeight="209"/>
+	<SubTexture name="speaker carv0008" x="1175" y="0" width="205" height="157" rotated="true" frameX="-2" frameY="-2" frameWidth="163" frameHeight="209"/>
+	<SubTexture name="speaker carv0009" x="1175" y="0" width="205" height="157" rotated="true" frameX="-2" frameY="-2" frameWidth="163" frameHeight="209"/>
+	<SubTexture name="speaker carv0010" x="1175" y="0" width="205" height="157" rotated="true" frameX="-2" frameY="-2" frameWidth="163" frameHeight="209"/>
+	<SubTexture name="speaker carv0011" x="1175" y="0" width="205" height="157" rotated="true" frameX="-2" frameY="-2" frameWidth="163" frameHeight="209"/>
+	<SubTexture name="speaker carv0012" x="1175" y="0" width="205" height="157" rotated="true" frameX="-2" frameY="-2" frameWidth="163" frameHeight="209"/>
+	<SubTexture name="speaker carv0013" x="1175" y="0" width="205" height="157" rotated="true" frameX="-2" frameY="-2" frameWidth="163" frameHeight="209"/>
 </TextureAtlas>

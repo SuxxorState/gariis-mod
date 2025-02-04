@@ -1,15 +1,16 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<TextureAtlas imagePath="hp bar.png">
-	<!-- Created with Adobe Animate version 23.0.1.70 -->
-	<!-- http://www.adobe.com/products/animate.html -->
-	<SubTexture name="hp bar 0 misses0000" x="788" y="0" width="195" height="636" frameX="-2" frameY="-1" frameWidth="197" frameHeight="637"/>
-	<SubTexture name="hp bar 0 misses0001" x="788" y="0" width="195" height="636" frameX="-2" frameY="-1" frameWidth="197" frameHeight="637"/>
-	<SubTexture name="hp bar 0 misses0002" x="788" y="0" width="195" height="636" frameX="-2" frameY="-1" frameWidth="197" frameHeight="637"/>
-	<SubTexture name="hp bar 0 misses0003" x="788" y="0" width="195" height="636" frameX="-2" frameY="-1" frameWidth="197" frameHeight="637"/>
-	<SubTexture name="hp bar 0 misses0004" x="788" y="0" width="195" height="636" frameX="-2" frameY="-1" frameWidth="197" frameHeight="637"/>
-	<SubTexture name="hp bar 0 misses0005" x="788" y="0" width="195" height="636" frameX="-2" frameY="-1" frameWidth="197" frameHeight="637"/>
-	<SubTexture name="hp bar 0 misses0006" x="788" y="0" width="195" height="636" frameX="-2" frameY="-1" frameWidth="197" frameHeight="637"/>
-	<SubTexture name="hp bar 0 misses0007" x="788" y="0" width="195" height="636" frameX="-2" frameY="-1" frameWidth="197" frameHeight="637"/>
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Created with Funkin Packer v0.1.3 https://neeeoo.github.io/funkin-packer/
+-->
+<TextureAtlas imagePath="hp bar.png" width="1965" height="1912">
+	<SubTexture name="hp bar 0 misses0000" x="0" y="0" width="195" height="636" frameX="-2" frameY="-1" frameWidth="197" frameHeight="637"/>
+	<SubTexture name="hp bar 0 misses0001" x="0" y="0" width="195" height="636" frameX="-2" frameY="-1" frameWidth="197" frameHeight="637"/>
+	<SubTexture name="hp bar 0 misses0002" x="0" y="0" width="195" height="636" frameX="-2" frameY="-1" frameWidth="197" frameHeight="637"/>
+	<SubTexture name="hp bar 0 misses0003" x="0" y="0" width="195" height="636" frameX="-2" frameY="-1" frameWidth="197" frameHeight="637"/>
+	<SubTexture name="hp bar 0 misses0004" x="0" y="0" width="195" height="636" frameX="-2" frameY="-1" frameWidth="197" frameHeight="637"/>
+	<SubTexture name="hp bar 0 misses0005" x="0" y="0" width="195" height="636" frameX="-2" frameY="-1" frameWidth="197" frameHeight="637"/>
+	<SubTexture name="hp bar 0 misses0006" x="0" y="0" width="195" height="636" frameX="-2" frameY="-1" frameWidth="197" frameHeight="637"/>
+	<SubTexture name="hp bar 0 misses0007" x="0" y="0" width="195" height="636" frameX="-2" frameY="-1" frameWidth="197" frameHeight="637"/>
 	<SubTexture name="hp bar 0 misses0008" x="1182" y="1276" width="194" height="634" frameX="-3" frameY="-2" frameWidth="197" frameHeight="637"/>
 	<SubTexture name="hp bar 0 misses0009" x="1182" y="1276" width="194" height="634" frameX="-3" frameY="-2" frameWidth="197" frameHeight="637"/>
 	<SubTexture name="hp bar 0 misses0010" x="1182" y="1276" width="194" height="634" frameX="-3" frameY="-2" frameWidth="197" frameHeight="637"/>
@@ -18,34 +19,34 @@
 	<SubTexture name="hp bar 0 misses0013" x="1182" y="1276" width="194" height="634" frameX="-3" frameY="-2" frameWidth="197" frameHeight="637"/>
 	<SubTexture name="hp bar 0 misses0014" x="1182" y="1276" width="194" height="634" frameX="-3" frameY="-2" frameWidth="197" frameHeight="637"/>
 	<SubTexture name="hp bar 0 misses0015" x="1182" y="1276" width="194" height="634" frameX="-3" frameY="-2" frameWidth="197" frameHeight="637"/>
-	<SubTexture name="hp bar 0 misses0016" x="0" y="0" width="195" height="637" frameX="0" frameY="0" frameWidth="197" frameHeight="637"/>
-	<SubTexture name="hp bar 0 misses0017" x="0" y="0" width="195" height="637" frameX="0" frameY="0" frameWidth="197" frameHeight="637"/>
-	<SubTexture name="hp bar 0 misses0018" x="0" y="0" width="195" height="637" frameX="0" frameY="0" frameWidth="197" frameHeight="637"/>
-	<SubTexture name="hp bar 0 misses0019" x="0" y="0" width="195" height="637" frameX="0" frameY="0" frameWidth="197" frameHeight="637"/>
-	<SubTexture name="hp bar 0 misses0020" x="0" y="0" width="195" height="637" frameX="0" frameY="0" frameWidth="197" frameHeight="637"/>
-	<SubTexture name="hp bar 0 misses0021" x="0" y="0" width="195" height="637" frameX="0" frameY="0" frameWidth="197" frameHeight="637"/>
-	<SubTexture name="hp bar 0 misses0022" x="0" y="0" width="195" height="637" frameX="0" frameY="0" frameWidth="197" frameHeight="637"/>
-	<SubTexture name="hp bar 0 misses0023" x="0" y="0" width="195" height="637" frameX="0" frameY="0" frameWidth="197" frameHeight="637"/>
-	<SubTexture name="hp bar 0 to 1 miss0000" x="788" y="638" width="195" height="636"/>
-	<SubTexture name="hp bar 0 to 1 miss0001" x="788" y="638" width="195" height="636"/>
-	<SubTexture name="hp bar 0 to 1 miss0002" x="0" y="639" width="195" height="636"/>
-	<SubTexture name="hp bar 0 to 1 miss0003" x="0" y="639" width="195" height="636"/>
-	<SubTexture name="hp bar 0 to 1 miss0004" x="197" y="639" width="195" height="636"/>
-	<SubTexture name="hp bar 0 to 1 miss0005" x="197" y="639" width="195" height="636"/>
-	<SubTexture name="hp bar 0 to 1 miss0006" x="394" y="639" width="195" height="636"/>
-	<SubTexture name="hp bar 0 to 1 miss0007" x="394" y="639" width="195" height="636"/>
+	<SubTexture name="hp bar 0 misses0016" x="394" y="1276" width="195" height="634" frameX="-0" frameY="-3" frameWidth="197" frameHeight="637"/>
+	<SubTexture name="hp bar 0 misses0017" x="394" y="1276" width="195" height="634" frameX="-0" frameY="-3" frameWidth="197" frameHeight="637"/>
+	<SubTexture name="hp bar 0 misses0018" x="394" y="1276" width="195" height="634" frameX="-0" frameY="-3" frameWidth="197" frameHeight="637"/>
+	<SubTexture name="hp bar 0 misses0019" x="394" y="1276" width="195" height="634" frameX="-0" frameY="-3" frameWidth="197" frameHeight="637"/>
+	<SubTexture name="hp bar 0 misses0020" x="394" y="1276" width="195" height="634" frameX="-0" frameY="-3" frameWidth="197" frameHeight="637"/>
+	<SubTexture name="hp bar 0 misses0021" x="394" y="1276" width="195" height="634" frameX="-0" frameY="-3" frameWidth="197" frameHeight="637"/>
+	<SubTexture name="hp bar 0 misses0022" x="394" y="1276" width="195" height="634" frameX="-0" frameY="-3" frameWidth="197" frameHeight="637"/>
+	<SubTexture name="hp bar 0 misses0023" x="394" y="1276" width="195" height="634" frameX="-0" frameY="-3" frameWidth="197" frameHeight="637"/>
+	<SubTexture name="hp bar 0 to 1 miss0000" x="197" y="0" width="195" height="636" frameX="-0" frameY="-0" frameWidth="195" frameHeight="636"/>
+	<SubTexture name="hp bar 0 to 1 miss0001" x="197" y="0" width="195" height="636" frameX="-0" frameY="-0" frameWidth="195" frameHeight="636"/>
+	<SubTexture name="hp bar 0 to 1 miss0002" x="394" y="0" width="195" height="636" frameX="-0" frameY="-0" frameWidth="195" frameHeight="636"/>
+	<SubTexture name="hp bar 0 to 1 miss0003" x="394" y="0" width="195" height="636" frameX="-0" frameY="-0" frameWidth="195" frameHeight="636"/>
+	<SubTexture name="hp bar 0 to 1 miss0004" x="591" y="0" width="195" height="636" frameX="-0" frameY="-0" frameWidth="195" frameHeight="636"/>
+	<SubTexture name="hp bar 0 to 1 miss0005" x="591" y="0" width="195" height="636" frameX="-0" frameY="-0" frameWidth="195" frameHeight="636"/>
+	<SubTexture name="hp bar 0 to 1 miss0006" x="0" y="638" width="195" height="636" frameX="-0" frameY="-0" frameWidth="195" frameHeight="636"/>
+	<SubTexture name="hp bar 0 to 1 miss0007" x="0" y="638" width="195" height="636" frameX="-0" frameY="-0" frameWidth="195" frameHeight="636"/>
 	<SubTexture name="hp bar 0 to 1 miss0008" x="1378" y="1276" width="194" height="634" frameX="-1" frameY="-1" frameWidth="195" frameHeight="636"/>
 	<SubTexture name="hp bar 0 to 1 miss0009" x="1378" y="1276" width="194" height="634" frameX="-1" frameY="-1" frameWidth="195" frameHeight="636"/>
 	<SubTexture name="hp bar 0 to 1 miss0010" x="1379" y="0" width="194" height="634" frameX="-1" frameY="-1" frameWidth="195" frameHeight="636"/>
 	<SubTexture name="hp bar 0 to 1 miss0011" x="1379" y="0" width="194" height="634" frameX="-1" frameY="-1" frameWidth="195" frameHeight="636"/>
-	<SubTexture name="hp bar 1 miss0000" x="591" y="639" width="195" height="636" frameX="-2" frameY="-1" frameWidth="197" frameHeight="637"/>
-	<SubTexture name="hp bar 1 miss0001" x="591" y="639" width="195" height="636" frameX="-2" frameY="-1" frameWidth="197" frameHeight="637"/>
-	<SubTexture name="hp bar 1 miss0002" x="591" y="639" width="195" height="636" frameX="-2" frameY="-1" frameWidth="197" frameHeight="637"/>
-	<SubTexture name="hp bar 1 miss0003" x="591" y="639" width="195" height="636" frameX="-2" frameY="-1" frameWidth="197" frameHeight="637"/>
-	<SubTexture name="hp bar 1 miss0004" x="591" y="639" width="195" height="636" frameX="-2" frameY="-1" frameWidth="197" frameHeight="637"/>
-	<SubTexture name="hp bar 1 miss0005" x="591" y="639" width="195" height="636" frameX="-2" frameY="-1" frameWidth="197" frameHeight="637"/>
-	<SubTexture name="hp bar 1 miss0006" x="591" y="639" width="195" height="636" frameX="-2" frameY="-1" frameWidth="197" frameHeight="637"/>
-	<SubTexture name="hp bar 1 miss0007" x="591" y="639" width="195" height="636" frameX="-2" frameY="-1" frameWidth="197" frameHeight="637"/>
+	<SubTexture name="hp bar 1 miss0000" x="197" y="638" width="195" height="636" frameX="-2" frameY="-1" frameWidth="197" frameHeight="637"/>
+	<SubTexture name="hp bar 1 miss0001" x="197" y="638" width="195" height="636" frameX="-2" frameY="-1" frameWidth="197" frameHeight="637"/>
+	<SubTexture name="hp bar 1 miss0002" x="197" y="638" width="195" height="636" frameX="-2" frameY="-1" frameWidth="197" frameHeight="637"/>
+	<SubTexture name="hp bar 1 miss0003" x="197" y="638" width="195" height="636" frameX="-2" frameY="-1" frameWidth="197" frameHeight="637"/>
+	<SubTexture name="hp bar 1 miss0004" x="197" y="638" width="195" height="636" frameX="-2" frameY="-1" frameWidth="197" frameHeight="637"/>
+	<SubTexture name="hp bar 1 miss0005" x="197" y="638" width="195" height="636" frameX="-2" frameY="-1" frameWidth="197" frameHeight="637"/>
+	<SubTexture name="hp bar 1 miss0006" x="197" y="638" width="195" height="636" frameX="-2" frameY="-1" frameWidth="197" frameHeight="637"/>
+	<SubTexture name="hp bar 1 miss0007" x="197" y="638" width="195" height="636" frameX="-2" frameY="-1" frameWidth="197" frameHeight="637"/>
 	<SubTexture name="hp bar 1 miss0008" x="1379" y="636" width="194" height="634" frameX="-3" frameY="-2" frameWidth="197" frameHeight="637"/>
 	<SubTexture name="hp bar 1 miss0009" x="1379" y="636" width="194" height="634" frameX="-3" frameY="-2" frameWidth="197" frameHeight="637"/>
 	<SubTexture name="hp bar 1 miss0010" x="1379" y="636" width="194" height="634" frameX="-3" frameY="-2" frameWidth="197" frameHeight="637"/>
@@ -54,34 +55,34 @@
 	<SubTexture name="hp bar 1 miss0013" x="1379" y="636" width="194" height="634" frameX="-3" frameY="-2" frameWidth="197" frameHeight="637"/>
 	<SubTexture name="hp bar 1 miss0014" x="1379" y="636" width="194" height="634" frameX="-3" frameY="-2" frameWidth="197" frameHeight="637"/>
 	<SubTexture name="hp bar 1 miss0015" x="1379" y="636" width="194" height="634" frameX="-3" frameY="-2" frameWidth="197" frameHeight="637"/>
-	<SubTexture name="hp bar 1 miss0016" x="197" y="0" width="195" height="637" frameX="0" frameY="0" frameWidth="197" frameHeight="637"/>
-	<SubTexture name="hp bar 1 miss0017" x="197" y="0" width="195" height="637" frameX="0" frameY="0" frameWidth="197" frameHeight="637"/>
-	<SubTexture name="hp bar 1 miss0018" x="197" y="0" width="195" height="637" frameX="0" frameY="0" frameWidth="197" frameHeight="637"/>
-	<SubTexture name="hp bar 1 miss0019" x="197" y="0" width="195" height="637" frameX="0" frameY="0" frameWidth="197" frameHeight="637"/>
-	<SubTexture name="hp bar 1 miss0020" x="197" y="0" width="195" height="637" frameX="0" frameY="0" frameWidth="197" frameHeight="637"/>
-	<SubTexture name="hp bar 1 miss0021" x="197" y="0" width="195" height="637" frameX="0" frameY="0" frameWidth="197" frameHeight="637"/>
-	<SubTexture name="hp bar 1 miss0022" x="197" y="0" width="195" height="637" frameX="0" frameY="0" frameWidth="197" frameHeight="637"/>
-	<SubTexture name="hp bar 1 miss0023" x="197" y="0" width="195" height="637" frameX="0" frameY="0" frameWidth="197" frameHeight="637"/>
-	<SubTexture name="hp bar 1 to 2 misses0000" x="788" y="1276" width="195" height="636"/>
-	<SubTexture name="hp bar 1 to 2 misses0001" x="788" y="1276" width="195" height="636"/>
-	<SubTexture name="hp bar 1 to 2 misses0002" x="0" y="1277" width="195" height="636"/>
-	<SubTexture name="hp bar 1 to 2 misses0003" x="0" y="1277" width="195" height="636"/>
-	<SubTexture name="hp bar 1 to 2 misses0004" x="197" y="1277" width="195" height="636"/>
-	<SubTexture name="hp bar 1 to 2 misses0005" x="197" y="1277" width="195" height="636"/>
-	<SubTexture name="hp bar 1 to 2 misses0006" x="394" y="1277" width="195" height="636"/>
-	<SubTexture name="hp bar 1 to 2 misses0007" x="394" y="1277" width="195" height="636"/>
+	<SubTexture name="hp bar 1 miss0016" x="591" y="1276" width="195" height="634" frameX="-0" frameY="-3" frameWidth="197" frameHeight="637"/>
+	<SubTexture name="hp bar 1 miss0017" x="591" y="1276" width="195" height="634" frameX="-0" frameY="-3" frameWidth="197" frameHeight="637"/>
+	<SubTexture name="hp bar 1 miss0018" x="591" y="1276" width="195" height="634" frameX="-0" frameY="-3" frameWidth="197" frameHeight="637"/>
+	<SubTexture name="hp bar 1 miss0019" x="591" y="1276" width="195" height="634" frameX="-0" frameY="-3" frameWidth="197" frameHeight="637"/>
+	<SubTexture name="hp bar 1 miss0020" x="591" y="1276" width="195" height="634" frameX="-0" frameY="-3" frameWidth="197" frameHeight="637"/>
+	<SubTexture name="hp bar 1 miss0021" x="591" y="1276" width="195" height="634" frameX="-0" frameY="-3" frameWidth="197" frameHeight="637"/>
+	<SubTexture name="hp bar 1 miss0022" x="591" y="1276" width="195" height="634" frameX="-0" frameY="-3" frameWidth="197" frameHeight="637"/>
+	<SubTexture name="hp bar 1 miss0023" x="591" y="1276" width="195" height="634" frameX="-0" frameY="-3" frameWidth="197" frameHeight="637"/>
+	<SubTexture name="hp bar 1 to 2 misses0000" x="394" y="638" width="195" height="636" frameX="-0" frameY="-0" frameWidth="195" frameHeight="636"/>
+	<SubTexture name="hp bar 1 to 2 misses0001" x="394" y="638" width="195" height="636" frameX="-0" frameY="-0" frameWidth="195" frameHeight="636"/>
+	<SubTexture name="hp bar 1 to 2 misses0002" x="591" y="638" width="195" height="636" frameX="-0" frameY="-0" frameWidth="195" frameHeight="636"/>
+	<SubTexture name="hp bar 1 to 2 misses0003" x="591" y="638" width="195" height="636" frameX="-0" frameY="-0" frameWidth="195" frameHeight="636"/>
+	<SubTexture name="hp bar 1 to 2 misses0004" x="788" y="0" width="195" height="636" frameX="-0" frameY="-0" frameWidth="195" frameHeight="636"/>
+	<SubTexture name="hp bar 1 to 2 misses0005" x="788" y="0" width="195" height="636" frameX="-0" frameY="-0" frameWidth="195" frameHeight="636"/>
+	<SubTexture name="hp bar 1 to 2 misses0006" x="788" y="638" width="195" height="636" frameX="-0" frameY="-0" frameWidth="195" frameHeight="636"/>
+	<SubTexture name="hp bar 1 to 2 misses0007" x="788" y="638" width="195" height="636" frameX="-0" frameY="-0" frameWidth="195" frameHeight="636"/>
 	<SubTexture name="hp bar 1 to 2 misses0008" x="1574" y="1272" width="194" height="634" frameX="-1" frameY="-1" frameWidth="195" frameHeight="636"/>
 	<SubTexture name="hp bar 1 to 2 misses0009" x="1574" y="1272" width="194" height="634" frameX="-1" frameY="-1" frameWidth="195" frameHeight="636"/>
 	<SubTexture name="hp bar 1 to 2 misses0010" x="1575" y="0" width="194" height="634" frameX="-1" frameY="-1" frameWidth="195" frameHeight="636"/>
 	<SubTexture name="hp bar 1 to 2 misses0011" x="1575" y="0" width="194" height="634" frameX="-1" frameY="-1" frameWidth="195" frameHeight="636"/>
-	<SubTexture name="hp bar 2 misses0000" x="591" y="1277" width="195" height="636" frameX="-2" frameY="-1" frameWidth="197" frameHeight="637"/>
-	<SubTexture name="hp bar 2 misses0001" x="591" y="1277" width="195" height="636" frameX="-2" frameY="-1" frameWidth="197" frameHeight="637"/>
-	<SubTexture name="hp bar 2 misses0002" x="591" y="1277" width="195" height="636" frameX="-2" frameY="-1" frameWidth="197" frameHeight="637"/>
-	<SubTexture name="hp bar 2 misses0003" x="591" y="1277" width="195" height="636" frameX="-2" frameY="-1" frameWidth="197" frameHeight="637"/>
-	<SubTexture name="hp bar 2 misses0004" x="591" y="1277" width="195" height="636" frameX="-2" frameY="-1" frameWidth="197" frameHeight="637"/>
-	<SubTexture name="hp bar 2 misses0005" x="591" y="1277" width="195" height="636" frameX="-2" frameY="-1" frameWidth="197" frameHeight="637"/>
-	<SubTexture name="hp bar 2 misses0006" x="591" y="1277" width="195" height="636" frameX="-2" frameY="-1" frameWidth="197" frameHeight="637"/>
-	<SubTexture name="hp bar 2 misses0007" x="591" y="1277" width="195" height="636" frameX="-2" frameY="-1" frameWidth="197" frameHeight="637"/>
+	<SubTexture name="hp bar 2 misses0000" x="985" y="0" width="195" height="636" frameX="-2" frameY="-1" frameWidth="197" frameHeight="637"/>
+	<SubTexture name="hp bar 2 misses0001" x="985" y="0" width="195" height="636" frameX="-2" frameY="-1" frameWidth="197" frameHeight="637"/>
+	<SubTexture name="hp bar 2 misses0002" x="985" y="0" width="195" height="636" frameX="-2" frameY="-1" frameWidth="197" frameHeight="637"/>
+	<SubTexture name="hp bar 2 misses0003" x="985" y="0" width="195" height="636" frameX="-2" frameY="-1" frameWidth="197" frameHeight="637"/>
+	<SubTexture name="hp bar 2 misses0004" x="985" y="0" width="195" height="636" frameX="-2" frameY="-1" frameWidth="197" frameHeight="637"/>
+	<SubTexture name="hp bar 2 misses0005" x="985" y="0" width="195" height="636" frameX="-2" frameY="-1" frameWidth="197" frameHeight="637"/>
+	<SubTexture name="hp bar 2 misses0006" x="985" y="0" width="195" height="636" frameX="-2" frameY="-1" frameWidth="197" frameHeight="637"/>
+	<SubTexture name="hp bar 2 misses0007" x="985" y="0" width="195" height="636" frameX="-2" frameY="-1" frameWidth="197" frameHeight="637"/>
 	<SubTexture name="hp bar 2 misses0008" x="1575" y="636" width="194" height="634" frameX="-3" frameY="-2" frameWidth="197" frameHeight="637"/>
 	<SubTexture name="hp bar 2 misses0009" x="1575" y="636" width="194" height="634" frameX="-3" frameY="-2" frameWidth="197" frameHeight="637"/>
 	<SubTexture name="hp bar 2 misses0010" x="1575" y="636" width="194" height="634" frameX="-3" frameY="-2" frameWidth="197" frameHeight="637"/>
@@ -90,34 +91,34 @@
 	<SubTexture name="hp bar 2 misses0013" x="1575" y="636" width="194" height="634" frameX="-3" frameY="-2" frameWidth="197" frameHeight="637"/>
 	<SubTexture name="hp bar 2 misses0014" x="1575" y="636" width="194" height="634" frameX="-3" frameY="-2" frameWidth="197" frameHeight="637"/>
 	<SubTexture name="hp bar 2 misses0015" x="1575" y="636" width="194" height="634" frameX="-3" frameY="-2" frameWidth="197" frameHeight="637"/>
-	<SubTexture name="hp bar 2 misses0016" x="394" y="0" width="195" height="637" frameX="0" frameY="0" frameWidth="197" frameHeight="637"/>
-	<SubTexture name="hp bar 2 misses0017" x="394" y="0" width="195" height="637" frameX="0" frameY="0" frameWidth="197" frameHeight="637"/>
-	<SubTexture name="hp bar 2 misses0018" x="394" y="0" width="195" height="637" frameX="0" frameY="0" frameWidth="197" frameHeight="637"/>
-	<SubTexture name="hp bar 2 misses0019" x="394" y="0" width="195" height="637" frameX="0" frameY="0" frameWidth="197" frameHeight="637"/>
-	<SubTexture name="hp bar 2 misses0020" x="394" y="0" width="195" height="637" frameX="0" frameY="0" frameWidth="197" frameHeight="637"/>
-	<SubTexture name="hp bar 2 misses0021" x="394" y="0" width="195" height="637" frameX="0" frameY="0" frameWidth="197" frameHeight="637"/>
-	<SubTexture name="hp bar 2 misses0022" x="394" y="0" width="195" height="637" frameX="0" frameY="0" frameWidth="197" frameHeight="637"/>
-	<SubTexture name="hp bar 2 misses0023" x="394" y="0" width="195" height="637" frameX="0" frameY="0" frameWidth="197" frameHeight="637"/>
-	<SubTexture name="hp bar 2 to 3 misses0000" x="985" y="0" width="195" height="636"/>
-	<SubTexture name="hp bar 2 to 3 misses0001" x="985" y="0" width="195" height="636"/>
-	<SubTexture name="hp bar 2 to 3 misses0002" x="985" y="638" width="195" height="636"/>
-	<SubTexture name="hp bar 2 to 3 misses0003" x="985" y="638" width="195" height="636"/>
-	<SubTexture name="hp bar 2 to 3 misses0004" x="985" y="1276" width="195" height="636"/>
-	<SubTexture name="hp bar 2 to 3 misses0005" x="985" y="1276" width="195" height="636"/>
-	<SubTexture name="hp bar 2 to 3 misses0006" x="1182" y="0" width="195" height="636"/>
-	<SubTexture name="hp bar 2 to 3 misses0007" x="1182" y="0" width="195" height="636"/>
+	<SubTexture name="hp bar 2 misses0016" x="788" y="1276" width="195" height="634" frameX="-0" frameY="-3" frameWidth="197" frameHeight="637"/>
+	<SubTexture name="hp bar 2 misses0017" x="788" y="1276" width="195" height="634" frameX="-0" frameY="-3" frameWidth="197" frameHeight="637"/>
+	<SubTexture name="hp bar 2 misses0018" x="788" y="1276" width="195" height="634" frameX="-0" frameY="-3" frameWidth="197" frameHeight="637"/>
+	<SubTexture name="hp bar 2 misses0019" x="788" y="1276" width="195" height="634" frameX="-0" frameY="-3" frameWidth="197" frameHeight="637"/>
+	<SubTexture name="hp bar 2 misses0020" x="788" y="1276" width="195" height="634" frameX="-0" frameY="-3" frameWidth="197" frameHeight="637"/>
+	<SubTexture name="hp bar 2 misses0021" x="788" y="1276" width="195" height="634" frameX="-0" frameY="-3" frameWidth="197" frameHeight="637"/>
+	<SubTexture name="hp bar 2 misses0022" x="788" y="1276" width="195" height="634" frameX="-0" frameY="-3" frameWidth="197" frameHeight="637"/>
+	<SubTexture name="hp bar 2 misses0023" x="788" y="1276" width="195" height="634" frameX="-0" frameY="-3" frameWidth="197" frameHeight="637"/>
+	<SubTexture name="hp bar 2 to 3 misses0000" x="985" y="638" width="195" height="636" frameX="-0" frameY="-0" frameWidth="195" frameHeight="636"/>
+	<SubTexture name="hp bar 2 to 3 misses0001" x="985" y="638" width="195" height="636" frameX="-0" frameY="-0" frameWidth="195" frameHeight="636"/>
+	<SubTexture name="hp bar 2 to 3 misses0002" x="1182" y="0" width="195" height="636" frameX="-0" frameY="-0" frameWidth="195" frameHeight="636"/>
+	<SubTexture name="hp bar 2 to 3 misses0003" x="1182" y="0" width="195" height="636" frameX="-0" frameY="-0" frameWidth="195" frameHeight="636"/>
+	<SubTexture name="hp bar 2 to 3 misses0004" x="1182" y="638" width="195" height="636" frameX="-0" frameY="-0" frameWidth="195" frameHeight="636"/>
+	<SubTexture name="hp bar 2 to 3 misses0005" x="1182" y="638" width="195" height="636" frameX="-0" frameY="-0" frameWidth="195" frameHeight="636"/>
+	<SubTexture name="hp bar 2 to 3 misses0006" x="0" y="1276" width="195" height="636" frameX="-0" frameY="-0" frameWidth="195" frameHeight="636"/>
+	<SubTexture name="hp bar 2 to 3 misses0007" x="0" y="1276" width="195" height="636" frameX="-0" frameY="-0" frameWidth="195" frameHeight="636"/>
 	<SubTexture name="hp bar 2 to 3 misses0008" x="1770" y="1272" width="194" height="634" frameX="-1" frameY="-1" frameWidth="195" frameHeight="636"/>
 	<SubTexture name="hp bar 2 to 3 misses0009" x="1770" y="1272" width="194" height="634" frameX="-1" frameY="-1" frameWidth="195" frameHeight="636"/>
 	<SubTexture name="hp bar 2 to 3 misses0010" x="1771" y="0" width="194" height="634" frameX="-1" frameY="-1" frameWidth="195" frameHeight="636"/>
 	<SubTexture name="hp bar 2 to 3 misses0011" x="1771" y="0" width="194" height="634" frameX="-1" frameY="-1" frameWidth="195" frameHeight="636"/>
-	<SubTexture name="hp bar 3 misses0000" x="1182" y="638" width="195" height="636" frameX="-2" frameY="-1" frameWidth="197" frameHeight="637"/>
-	<SubTexture name="hp bar 3 misses0001" x="1182" y="638" width="195" height="636" frameX="-2" frameY="-1" frameWidth="197" frameHeight="637"/>
-	<SubTexture name="hp bar 3 misses0002" x="1182" y="638" width="195" height="636" frameX="-2" frameY="-1" frameWidth="197" frameHeight="637"/>
-	<SubTexture name="hp bar 3 misses0003" x="1182" y="638" width="195" height="636" frameX="-2" frameY="-1" frameWidth="197" frameHeight="637"/>
-	<SubTexture name="hp bar 3 misses0004" x="1182" y="638" width="195" height="636" frameX="-2" frameY="-1" frameWidth="197" frameHeight="637"/>
-	<SubTexture name="hp bar 3 misses0005" x="1182" y="638" width="195" height="636" frameX="-2" frameY="-1" frameWidth="197" frameHeight="637"/>
-	<SubTexture name="hp bar 3 misses0006" x="1182" y="638" width="195" height="636" frameX="-2" frameY="-1" frameWidth="197" frameHeight="637"/>
-	<SubTexture name="hp bar 3 misses0007" x="1182" y="638" width="195" height="636" frameX="-2" frameY="-1" frameWidth="197" frameHeight="637"/>
+	<SubTexture name="hp bar 3 misses0000" x="197" y="1276" width="195" height="636" frameX="-2" frameY="-1" frameWidth="197" frameHeight="637"/>
+	<SubTexture name="hp bar 3 misses0001" x="197" y="1276" width="195" height="636" frameX="-2" frameY="-1" frameWidth="197" frameHeight="637"/>
+	<SubTexture name="hp bar 3 misses0002" x="197" y="1276" width="195" height="636" frameX="-2" frameY="-1" frameWidth="197" frameHeight="637"/>
+	<SubTexture name="hp bar 3 misses0003" x="197" y="1276" width="195" height="636" frameX="-2" frameY="-1" frameWidth="197" frameHeight="637"/>
+	<SubTexture name="hp bar 3 misses0004" x="197" y="1276" width="195" height="636" frameX="-2" frameY="-1" frameWidth="197" frameHeight="637"/>
+	<SubTexture name="hp bar 3 misses0005" x="197" y="1276" width="195" height="636" frameX="-2" frameY="-1" frameWidth="197" frameHeight="637"/>
+	<SubTexture name="hp bar 3 misses0006" x="197" y="1276" width="195" height="636" frameX="-2" frameY="-1" frameWidth="197" frameHeight="637"/>
+	<SubTexture name="hp bar 3 misses0007" x="197" y="1276" width="195" height="636" frameX="-2" frameY="-1" frameWidth="197" frameHeight="637"/>
 	<SubTexture name="hp bar 3 misses0008" x="1771" y="636" width="194" height="634" frameX="-3" frameY="-2" frameWidth="197" frameHeight="637"/>
 	<SubTexture name="hp bar 3 misses0009" x="1771" y="636" width="194" height="634" frameX="-3" frameY="-2" frameWidth="197" frameHeight="637"/>
 	<SubTexture name="hp bar 3 misses0010" x="1771" y="636" width="194" height="634" frameX="-3" frameY="-2" frameWidth="197" frameHeight="637"/>
@@ -126,12 +127,12 @@
 	<SubTexture name="hp bar 3 misses0013" x="1771" y="636" width="194" height="634" frameX="-3" frameY="-2" frameWidth="197" frameHeight="637"/>
 	<SubTexture name="hp bar 3 misses0014" x="1771" y="636" width="194" height="634" frameX="-3" frameY="-2" frameWidth="197" frameHeight="637"/>
 	<SubTexture name="hp bar 3 misses0015" x="1771" y="636" width="194" height="634" frameX="-3" frameY="-2" frameWidth="197" frameHeight="637"/>
-	<SubTexture name="hp bar 3 misses0016" x="591" y="0" width="195" height="637" frameX="0" frameY="0" frameWidth="197" frameHeight="637"/>
-	<SubTexture name="hp bar 3 misses0017" x="591" y="0" width="195" height="637" frameX="0" frameY="0" frameWidth="197" frameHeight="637"/>
-	<SubTexture name="hp bar 3 misses0018" x="591" y="0" width="195" height="637" frameX="0" frameY="0" frameWidth="197" frameHeight="637"/>
-	<SubTexture name="hp bar 3 misses0019" x="591" y="0" width="195" height="637" frameX="0" frameY="0" frameWidth="197" frameHeight="637"/>
-	<SubTexture name="hp bar 3 misses0020" x="591" y="0" width="195" height="637" frameX="0" frameY="0" frameWidth="197" frameHeight="637"/>
-	<SubTexture name="hp bar 3 misses0021" x="591" y="0" width="195" height="637" frameX="0" frameY="0" frameWidth="197" frameHeight="637"/>
-	<SubTexture name="hp bar 3 misses0022" x="591" y="0" width="195" height="637" frameX="0" frameY="0" frameWidth="197" frameHeight="637"/>
-	<SubTexture name="hp bar 3 misses0023" x="591" y="0" width="195" height="637" frameX="0" frameY="0" frameWidth="197" frameHeight="637"/>
+	<SubTexture name="hp bar 3 misses0016" x="985" y="1276" width="195" height="634" frameX="-0" frameY="-3" frameWidth="197" frameHeight="637"/>
+	<SubTexture name="hp bar 3 misses0017" x="985" y="1276" width="195" height="634" frameX="-0" frameY="-3" frameWidth="197" frameHeight="637"/>
+	<SubTexture name="hp bar 3 misses0018" x="985" y="1276" width="195" height="634" frameX="-0" frameY="-3" frameWidth="197" frameHeight="637"/>
+	<SubTexture name="hp bar 3 misses0019" x="985" y="1276" width="195" height="634" frameX="-0" frameY="-3" frameWidth="197" frameHeight="637"/>
+	<SubTexture name="hp bar 3 misses0020" x="985" y="1276" width="195" height="634" frameX="-0" frameY="-3" frameWidth="197" frameHeight="637"/>
+	<SubTexture name="hp bar 3 misses0021" x="985" y="1276" width="195" height="634" frameX="-0" frameY="-3" frameWidth="197" frameHeight="637"/>
+	<SubTexture name="hp bar 3 misses0022" x="985" y="1276" width="195" height="634" frameX="-0" frameY="-3" frameWidth="197" frameHeight="637"/>
+	<SubTexture name="hp bar 3 misses0023" x="985" y="1276" width="195" height="634" frameX="-0" frameY="-3" frameWidth="197" frameHeight="637"/>
 </TextureAtlas>

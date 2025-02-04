@@ -1,5 +1,5 @@
 garii
-unused line--later on it will be for note types
+, Bubble Only, Fake Alt Anim, Side Alt Anim, Snide Alt Anim, Angry Alt Anim, Done Alt Anim
 
 bubbleLEFT-fake, gari buble round, -130, 80
 bubbleDOWN-fake, gar buble fart, 110, 140

@@ -1,29 +1,30 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<TextureAtlas imagePath="bordertest.png">
-	<!-- Created with Adobe Animate version 23.0.1.70 -->
-	<!-- http://www.adobe.com/products/animate.html -->
-	<SubTexture name="bordertest0000" x="0" y="0" width="1352" height="794" pivotX="34" pivotY="42"/>
-	<SubTexture name="bordertest0001" x="0" y="0" width="1352" height="794"/>
-	<SubTexture name="bordertest0002" x="0" y="0" width="1352" height="794"/>
-	<SubTexture name="bordertest0003" x="0" y="0" width="1352" height="794"/>
-	<SubTexture name="bordertest0004" x="0" y="0" width="1352" height="794"/>
-	<SubTexture name="bordertest0005" x="0" y="0" width="1352" height="794"/>
-	<SubTexture name="bordertest0006" x="0" y="0" width="1352" height="794"/>
-	<SubTexture name="bordertest0007" x="0" y="0" width="1352" height="794"/>
-	<SubTexture name="bordertest0008" x="1354" y="0" width="1352" height="794"/>
-	<SubTexture name="bordertest0009" x="1354" y="0" width="1352" height="794"/>
-	<SubTexture name="bordertest0010" x="1354" y="0" width="1352" height="794"/>
-	<SubTexture name="bordertest0011" x="1354" y="0" width="1352" height="794"/>
-	<SubTexture name="bordertest0012" x="1354" y="0" width="1352" height="794"/>
-	<SubTexture name="bordertest0013" x="1354" y="0" width="1352" height="794"/>
-	<SubTexture name="bordertest0014" x="1354" y="0" width="1352" height="794"/>
-	<SubTexture name="bordertest0015" x="1354" y="0" width="1352" height="794"/>
-	<SubTexture name="bordertest0016" x="2708" y="0" width="1352" height="794"/>
-	<SubTexture name="bordertest0017" x="2708" y="0" width="1352" height="794"/>
-	<SubTexture name="bordertest0018" x="2708" y="0" width="1352" height="794"/>
-	<SubTexture name="bordertest0019" x="2708" y="0" width="1352" height="794"/>
-	<SubTexture name="bordertest0020" x="2708" y="0" width="1352" height="794"/>
-	<SubTexture name="bordertest0021" x="2708" y="0" width="1352" height="794"/>
-	<SubTexture name="bordertest0022" x="2708" y="0" width="1352" height="794"/>
-	<SubTexture name="bordertest0023" x="2708" y="0" width="1352" height="794"/>
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Created with Funkin Packer v0.1.3 https://neeeoo.github.io/funkin-packer/
+-->
+<TextureAtlas imagePath="bordertest.png" width="4060" height="793">
+	<SubTexture name="bordertest0000" x="0" y="0" width="1352" height="793" frameX="-0" frameY="-0" frameWidth="1352" frameHeight="794"/>
+	<SubTexture name="bordertest0001" x="0" y="0" width="1352" height="793" frameX="-0" frameY="-0" frameWidth="1352" frameHeight="794"/>
+	<SubTexture name="bordertest0002" x="0" y="0" width="1352" height="793" frameX="-0" frameY="-0" frameWidth="1352" frameHeight="794"/>
+	<SubTexture name="bordertest0003" x="0" y="0" width="1352" height="793" frameX="-0" frameY="-0" frameWidth="1352" frameHeight="794"/>
+	<SubTexture name="bordertest0004" x="0" y="0" width="1352" height="793" frameX="-0" frameY="-0" frameWidth="1352" frameHeight="794"/>
+	<SubTexture name="bordertest0005" x="0" y="0" width="1352" height="793" frameX="-0" frameY="-0" frameWidth="1352" frameHeight="794"/>
+	<SubTexture name="bordertest0006" x="0" y="0" width="1352" height="793" frameX="-0" frameY="-0" frameWidth="1352" frameHeight="794"/>
+	<SubTexture name="bordertest0007" x="0" y="0" width="1352" height="793" frameX="-0" frameY="-0" frameWidth="1352" frameHeight="794"/>
+	<SubTexture name="bordertest0008" x="1354" y="0" width="1352" height="793" frameX="-0" frameY="-0" frameWidth="1352" frameHeight="794"/>
+	<SubTexture name="bordertest0009" x="1354" y="0" width="1352" height="793" frameX="-0" frameY="-0" frameWidth="1352" frameHeight="794"/>
+	<SubTexture name="bordertest0010" x="1354" y="0" width="1352" height="793" frameX="-0" frameY="-0" frameWidth="1352" frameHeight="794"/>
+	<SubTexture name="bordertest0011" x="1354" y="0" width="1352" height="793" frameX="-0" frameY="-0" frameWidth="1352" frameHeight="794"/>
+	<SubTexture name="bordertest0012" x="1354" y="0" width="1352" height="793" frameX="-0" frameY="-0" frameWidth="1352" frameHeight="794"/>
+	<SubTexture name="bordertest0013" x="1354" y="0" width="1352" height="793" frameX="-0" frameY="-0" frameWidth="1352" frameHeight="794"/>
+	<SubTexture name="bordertest0014" x="1354" y="0" width="1352" height="793" frameX="-0" frameY="-0" frameWidth="1352" frameHeight="794"/>
+	<SubTexture name="bordertest0015" x="1354" y="0" width="1352" height="793" frameX="-0" frameY="-0" frameWidth="1352" frameHeight="794"/>
+	<SubTexture name="bordertest0016" x="2708" y="0" width="1352" height="793" frameX="-0" frameY="-0" frameWidth="1352" frameHeight="794"/>
+	<SubTexture name="bordertest0017" x="2708" y="0" width="1352" height="793" frameX="-0" frameY="-0" frameWidth="1352" frameHeight="794"/>
+	<SubTexture name="bordertest0018" x="2708" y="0" width="1352" height="793" frameX="-0" frameY="-0" frameWidth="1352" frameHeight="794"/>
+	<SubTexture name="bordertest0019" x="2708" y="0" width="1352" height="793" frameX="-0" frameY="-0" frameWidth="1352" frameHeight="794"/>
+	<SubTexture name="bordertest0020" x="2708" y="0" width="1352" height="793" frameX="-0" frameY="-0" frameWidth="1352" frameHeight="794"/>
+	<SubTexture name="bordertest0021" x="2708" y="0" width="1352" height="793" frameX="-0" frameY="-0" frameWidth="1352" frameHeight="794"/>
+	<SubTexture name="bordertest0022" x="2708" y="0" width="1352" height="793" frameX="-0" frameY="-0" frameWidth="1352" frameHeight="794"/>
+	<SubTexture name="bordertest0023" x="2708" y="0" width="1352" height="793" frameX="-0" frameY="-0" frameWidth="1352" frameHeight="794"/>
 </TextureAtlas>

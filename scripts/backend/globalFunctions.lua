@@ -15,6 +15,7 @@ function initLuas()
         utils:setGariiData("watchedCutscene", false)
         utils:setGariiData("cachedInMyStupidToken", false)
         utils:setGariiData("storyStats", nil)
+        utils:setGariiData("deathCounter", 0)
         utils:setWindowTitle("Friday Night Funkin': GARII'S MOD")
     end
     folderDir = getVar("folDir")
@@ -158,7 +159,7 @@ function onUpdate(elapsed)
         openCustomSubstate("error", true)
     end
 
-    if (not getModSetting('gariiDebug')) then
+    if (getModSetting('gariiDebug')) then
         if (keyboardJustPressed("F1")) then callMethod("setSongTime", {getPropertyFromClass("backend.Conductor", "songPosition") + 5000}) --this debug function is held together by like thin ass string, the fact that it even works is insane
             callMethod("clearNotesBefore", {getPropertyFromClass("backend.Conductor", "songPosition")}) 
         end

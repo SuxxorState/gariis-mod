@@ -1,5 +1,5 @@
 carv
-unused line--later on it will be for note types
+, Bubble Only
 
 bubbleLEFT, carv bubbl roundish, 60, 223
 bubbleDOWN, cavr bube squirvle, -296, 161

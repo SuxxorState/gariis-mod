@@ -1,5 +1,5 @@
 truckerboy
-unused line--later on it will be for note types
+, Bubble Only, Confused Alt Anim
 
 bubbleLEFT, boy bubble tall, 320, 0
 bubbleDOWN, boy bubble round, -360, -100

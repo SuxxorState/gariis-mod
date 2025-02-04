@@ -1,101 +1,102 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<TextureAtlas imagePath="garii.png">
-	<!-- Created with Adobe Animate version 23.0.1.70 -->
-	<!-- http://www.adobe.com/products/animate.html -->
-	<SubTexture name="gar buble fart0000" x="2521" y="2322" width="362" height="192" pivotX="59.05" pivotY="88.7" frameX="-124" frameY="-107" frameWidth="609" frameHeight="447"/>
-	<SubTexture name="gar buble fart0001" x="1231" y="2416" width="607" height="410" frameX="0" frameY="-10" frameWidth="609" frameHeight="447"/>
-	<SubTexture name="gar buble fart0002" x="1231" y="2416" width="607" height="410" frameX="0" frameY="-10" frameWidth="609" frameHeight="447"/>
-	<SubTexture name="gar buble fart0003" x="656" y="2210" width="573" height="441" frameX="-25" frameY="-3" frameWidth="609" frameHeight="447"/>
-	<SubTexture name="gar buble fart0004" x="656" y="2210" width="573" height="441" frameX="-25" frameY="-3" frameWidth="609" frameHeight="447"/>
-	<SubTexture name="gar buble fart0005" x="2889" y="2144" width="583" height="447" frameX="-26" frameY="0" frameWidth="609" frameHeight="447"/>
-	<SubTexture name="gar buble fart0006" x="2889" y="2144" width="583" height="447" frameX="-26" frameY="0" frameWidth="609" frameHeight="447"/>
-	<SubTexture name="gar buble fart0007" x="2889" y="2144" width="583" height="447" frameX="-26" frameY="0" frameWidth="609" frameHeight="447"/>
-	<SubTexture name="gar doodoo bib;e0000" x="1966" y="1815" width="258" height="461" pivotX="74.65" pivotY="49.75" frameX="-127" frameY="-90" frameWidth="516" frameHeight="597"/>
-	<SubTexture name="gar doodoo bib;e0001" x="2371" y="1723" width="516" height="597"/>
-	<SubTexture name="gar doodoo bib;e0002" x="2371" y="1723" width="516" height="597"/>
-	<SubTexture name="gar doodoo bib;e0003" x="3474" y="2144" width="438" height="577" frameX="-58" frameY="0" frameWidth="516" frameHeight="597"/>
-	<SubTexture name="gar doodoo bib;e0004" x="3474" y="2144" width="438" height="577" frameX="-58" frameY="0" frameWidth="516" frameHeight="597"/>
-	<SubTexture name="gar doodoo bib;e0005" x="0" y="2558" width="436" height="568" frameX="-54" frameY="-3" frameWidth="516" frameHeight="597"/>
-	<SubTexture name="gar doodoo bib;e0006" x="0" y="2558" width="436" height="568" frameX="-54" frameY="-3" frameWidth="516" frameHeight="597"/>
-	<SubTexture name="gar doodoo bib;e0007" x="0" y="2558" width="436" height="568" frameX="-54" frameY="-3" frameWidth="516" frameHeight="597"/>
-	<SubTexture name="gar down bubl ang0000" x="2574" y="553" width="814" height="596" pivotX="128.9" pivotY="137.4"/>
-	<SubTexture name="gar down bubl ang0001" x="2574" y="553" width="814" height="596"/>
-	<SubTexture name="gar down bubl ang0002" x="3467" y="0" width="616" height="511" frameX="-100" frameY="-6" frameWidth="814" frameHeight="596"/>
-	<SubTexture name="gar down bubl ang0003" x="3467" y="0" width="616" height="511" frameX="-100" frameY="-6" frameWidth="814" frameHeight="596"/>
-	<SubTexture name="gar down bubl ang0004" x="3310" y="1202" width="780" height="513" frameX="-14" frameY="-45" frameWidth="814" frameHeight="596"/>
-	<SubTexture name="gar down bubl ang0005" x="3310" y="1202" width="780" height="513" frameX="-14" frameY="-45" frameWidth="814" frameHeight="596"/>
-	<SubTexture name="gar down bubl ang0006" x="3310" y="1202" width="780" height="513" frameX="-14" frameY="-45" frameWidth="814" frameHeight="596"/>
-	<SubTexture name="gar down bubl ang0007" x="3310" y="1202" width="780" height="513" frameX="-14" frameY="-45" frameWidth="814" frameHeight="596"/>
-	<SubTexture name="gar down bubl ang0008" x="3310" y="1202" width="780" height="513" frameX="-14" frameY="-45" frameWidth="814" frameHeight="596"/>
-	<SubTexture name="gar down bubl ang0009" x="3310" y="1202" width="780" height="513" frameX="-14" frameY="-45" frameWidth="814" frameHeight="596"/>
-	<SubTexture name="gar rght buble an0000" x="0" y="1714" width="754" height="447" pivotX="38.4" pivotY="75.1" frameX="-3" frameY="0" frameWidth="757" frameHeight="447"/>
-	<SubTexture name="gar rght buble an0001" x="0" y="1714" width="754" height="447" frameX="-3" frameY="0" frameWidth="757" frameHeight="447"/>
-	<SubTexture name="gar rght buble an0002" x="2521" y="2593" width="606" height="397" frameX="-54" frameY="-4" frameWidth="757" frameHeight="447"/>
-	<SubTexture name="gar rght buble an0003" x="2521" y="2593" width="606" height="397" frameX="-54" frameY="-4" frameWidth="757" frameHeight="447"/>
-	<SubTexture name="gar rght buble an0004" x="3310" y="1717" width="738" height="425" frameX="0" frameY="-3" frameWidth="757" frameHeight="447"/>
-	<SubTexture name="gar rght buble an0005" x="3310" y="1717" width="738" height="425" frameX="0" frameY="-3" frameWidth="757" frameHeight="447"/>
-	<SubTexture name="gar rght buble an0006" x="3310" y="1717" width="738" height="425" frameX="0" frameY="-3" frameWidth="757" frameHeight="447"/>
-	<SubTexture name="gar rght buble an0007" x="3310" y="1717" width="738" height="425" frameX="0" frameY="-3" frameWidth="757" frameHeight="447"/>
-	<SubTexture name="gar rght buble an0008" x="3310" y="1717" width="738" height="425" frameX="0" frameY="-3" frameWidth="757" frameHeight="447"/>
-	<SubTexture name="gar rght buble an0009" x="3310" y="1717" width="738" height="425" frameX="0" frameY="-3" frameWidth="757" frameHeight="447"/>
-	<SubTexture name="gari buble round0000" x="438" y="3031" width="432" height="240" pivotX="50.05" pivotY="79.3" frameX="-39" frameY="-92" frameWidth="573" frameHeight="376"/>
-	<SubTexture name="gari buble round0001" x="438" y="2653" width="558" height="376" frameX="-5" frameY="0" frameWidth="573" frameHeight="376"/>
-	<SubTexture name="gari buble round0002" x="438" y="2653" width="558" height="376" frameX="-5" frameY="0" frameWidth="573" frameHeight="376"/>
-	<SubTexture name="gari buble round0003" x="3514" y="2723" width="571" height="332" frameX="0" frameY="-40" frameWidth="573" frameHeight="376"/>
-	<SubTexture name="gari buble round0004" x="3514" y="2723" width="571" height="332" frameX="0" frameY="-40" frameWidth="573" frameHeight="376"/>
-	<SubTexture name="gari buble round0005" x="1840" y="2777" width="564" height="330" frameX="-9" frameY="-40" frameWidth="573" frameHeight="376"/>
-	<SubTexture name="gari buble round0006" x="1840" y="2777" width="564" height="330" frameX="-9" frameY="-40" frameWidth="573" frameHeight="376"/>
-	<SubTexture name="gari buble round0007" x="1840" y="2777" width="564" height="330" frameX="-9" frameY="-40" frameWidth="573" frameHeight="376"/>
-	<SubTexture name="gari buble semisquare0000" x="3390" y="553" width="685" height="647" pivotX="63.65" pivotY="138.35"/>
-	<SubTexture name="gari buble semisquare0001" x="3390" y="553" width="685" height="647"/>
-	<SubTexture name="gari buble semisquare0002" x="1434" y="2828" width="397" height="288" frameX="-136" frameY="-180" frameWidth="685" frameHeight="647"/>
-	<SubTexture name="gari buble semisquare0003" x="1434" y="2828" width="397" height="288" frameX="-136" frameY="-180" frameWidth="685" frameHeight="647"/>
-	<SubTexture name="gari buble semisquare0004" x="1966" y="2322" width="553" height="453" frameX="-63" frameY="-110" frameWidth="685" frameHeight="647"/>
-	<SubTexture name="gari buble semisquare0005" x="1966" y="2322" width="553" height="453" frameX="-63" frameY="-110" frameWidth="685" frameHeight="647"/>
-	<SubTexture name="gari buble yell left0000" x="2550" y="1151" width="758" height="570" pivotX="61.6" pivotY="98.95"/>
-	<SubTexture name="gari buble yell left0001" x="2550" y="1151" width="758" height="570"/>
-	<SubTexture name="gari buble yell left0002" x="3514" y="3057" width="409" height="231" frameX="-231" frameY="-142" frameWidth="758" frameHeight="570"/>
-	<SubTexture name="gari buble yell left0003" x="3514" y="3057" width="409" height="231" frameX="-231" frameY="-142" frameWidth="758" frameHeight="570"/>
-	<SubTexture name="gari buble yell left0004" x="0" y="2163" width="654" height="393" frameX="-61" frameY="-98" frameWidth="758" frameHeight="570"/>
-	<SubTexture name="gari buble yell left0005" x="0" y="2163" width="654" height="393" frameX="-61" frameY="-98" frameWidth="758" frameHeight="570"/>
-	<SubTexture name="gari evil rectangle bubble0000" x="1496" y="1815" width="468" height="599" pivotX="53.5" pivotY="66.4"/>
-	<SubTexture name="gari evil rectangle bubble0001" x="1496" y="1815" width="468" height="599"/>
-	<SubTexture name="gari evil rectangle bubble0002" x="2889" y="1723" width="332" height="414" frameX="-82" frameY="-87" frameWidth="468" frameHeight="599"/>
-	<SubTexture name="gari evil rectangle bubble0003" x="2889" y="1723" width="332" height="414" frameX="-82" frameY="-87" frameWidth="468" frameHeight="599"/>
-	<SubTexture name="gari evil rectangle bubble0004" x="3129" y="2723" width="383" height="524" frameX="-53" frameY="-45" frameWidth="468" frameHeight="599"/>
-	<SubTexture name="gari evil rectangle bubble0005" x="3129" y="2723" width="383" height="524" frameX="-53" frameY="-45" frameWidth="468" frameHeight="599"/>
-	<SubTexture name="gari long buble rounder0000" x="2574" y="0" width="891" height="551" pivotX="91.15" pivotY="120"/>
-	<SubTexture name="gari long buble rounder0001" x="2574" y="0" width="891" height="551"/>
-	<SubTexture name="gari long buble rounder0002" x="2406" y="2992" width="609" height="224" frameX="-154" frameY="-133" frameWidth="891" frameHeight="551"/>
-	<SubTexture name="gari long buble rounder0003" x="2406" y="2992" width="609" height="224" frameX="-154" frameY="-133" frameWidth="891" frameHeight="551"/>
-	<SubTexture name="gari long buble rounder0004" x="756" y="1811" width="738" height="397" frameX="-91" frameY="-78" frameWidth="891" frameHeight="551"/>
-	<SubTexture name="gari long buble rounder0005" x="756" y="1811" width="738" height="397" frameX="-91" frameY="-78" frameWidth="891" frameHeight="551"/>
-	<SubTexture name="gari speech left yell mad0000" x="1722" y="687" width="826" height="584" pivotX="152.2" pivotY="54.95" frameX="-25" frameY="-12" frameWidth="851" frameHeight="596"/>
-	<SubTexture name="gari speech left yell mad0001" x="1722" y="687" width="826" height="584" frameX="-25" frameY="-12" frameWidth="851" frameHeight="596"/>
-	<SubTexture name="gari speech left yell mad0002" x="0" y="701" width="824" height="534" frameX="0" frameY="0" frameWidth="851" frameHeight="596"/>
-	<SubTexture name="gari speech left yell mad0003" x="0" y="701" width="824" height="534" frameX="0" frameY="0" frameWidth="851" frameHeight="596"/>
-	<SubTexture name="gari speech left yell mad0004" x="1670" y="1273" width="699" height="540" frameX="-119" frameY="-24" frameWidth="851" frameHeight="596"/>
-	<SubTexture name="gari speech left yell mad0005" x="1670" y="1273" width="699" height="540" frameX="-119" frameY="-24" frameWidth="851" frameHeight="596"/>
-	<SubTexture name="gari speech left yell mad0006" x="1670" y="1273" width="699" height="540" frameX="-119" frameY="-24" frameWidth="851" frameHeight="596"/>
-	<SubTexture name="gari speech left yell mad0007" x="1670" y="1273" width="699" height="540" frameX="-119" frameY="-24" frameWidth="851" frameHeight="596"/>
-	<SubTexture name="gari speech left yell mad0008" x="1670" y="1273" width="699" height="540" frameX="-119" frameY="-24" frameWidth="851" frameHeight="596"/>
-	<SubTexture name="gari speech left yell mad0009" x="1670" y="1273" width="699" height="540" frameX="-119" frameY="-24" frameWidth="851" frameHeight="596"/>
-	<SubTexture name="garii bubel yall0000" x="998" y="2828" width="434" height="323" pivotX="13.4" pivotY="145.5" frameX="-169" frameY="-275" frameWidth="876" frameHeight="704"/>
-	<SubTexture name="garii bubel yall0001" x="0" y="0" width="871" height="699" frameX="0" frameY="-5" frameWidth="876" frameHeight="704"/>
-	<SubTexture name="garii bubel yall0002" x="0" y="0" width="871" height="699" frameX="0" frameY="-5" frameWidth="876" frameHeight="704"/>
-	<SubTexture name="garii bubel yall0003" x="1722" y="0" width="850" height="685" frameX="-24" frameY="-5" frameWidth="876" frameHeight="704"/>
-	<SubTexture name="garii bubel yall0004" x="1722" y="0" width="850" height="685" frameX="-24" frameY="-5" frameWidth="876" frameHeight="704"/>
-	<SubTexture name="garii bubel yall0005" x="873" y="0" width="847" height="692" frameX="-29" frameY="0" frameWidth="876" frameHeight="704"/>
-	<SubTexture name="garii bubel yall0006" x="873" y="0" width="847" height="692" frameX="-29" frameY="0" frameWidth="876" frameHeight="704"/>
-	<SubTexture name="garii bubel yall0007" x="873" y="0" width="847" height="692" frameX="-29" frameY="0" frameWidth="876" frameHeight="704"/>
-	<SubTexture name="spech up ang gar0000" x="873" y="694" width="795" height="578" pivotX="129.25" pivotY="158.05" frameX="-18" frameY="0" frameWidth="825" frameHeight="578"/>
-	<SubTexture name="spech up ang gar0001" x="873" y="694" width="795" height="578" frameX="-18" frameY="0" frameWidth="825" frameHeight="578"/>
-	<SubTexture name="spech up ang gar0002" x="0" y="1237" width="825" height="475" frameX="0" frameY="-15" frameWidth="825" frameHeight="578"/>
-	<SubTexture name="spech up ang gar0003" x="0" y="1237" width="825" height="475" frameX="0" frameY="-15" frameWidth="825" frameHeight="578"/>
-	<SubTexture name="spech up ang gar0004" x="827" y="1274" width="701" height="535" frameX="-69" frameY="-8" frameWidth="825" frameHeight="578"/>
-	<SubTexture name="spech up ang gar0005" x="827" y="1274" width="701" height="535" frameX="-69" frameY="-8" frameWidth="825" frameHeight="578"/>
-	<SubTexture name="spech up ang gar0006" x="827" y="1274" width="701" height="535" frameX="-69" frameY="-8" frameWidth="825" frameHeight="578"/>
-	<SubTexture name="spech up ang gar0007" x="827" y="1274" width="701" height="535" frameX="-69" frameY="-8" frameWidth="825" frameHeight="578"/>
-	<SubTexture name="spech up ang gar0008" x="827" y="1274" width="701" height="535" frameX="-69" frameY="-8" frameWidth="825" frameHeight="578"/>
-	<SubTexture name="spech up ang gar0009" x="827" y="1274" width="701" height="535" frameX="-69" frameY="-8" frameWidth="825" frameHeight="578"/>
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Created with Funkin Packer v0.1.3 https://neeeoo.github.io/funkin-packer/
+-->
+<TextureAtlas imagePath="garii.png" width="3852" height="3483">
+	<SubTexture name="gar buble fart0000" x="3660" y="1136" width="192" height="362" rotated="true" frameX="-124" frameY="-107" frameWidth="609" frameHeight="447"/>
+	<SubTexture name="gar buble fart0001" x="2942" y="740" width="410" height="607" rotated="true" frameX="-0" frameY="-10" frameWidth="609" frameHeight="447"/>
+	<SubTexture name="gar buble fart0002" x="2942" y="740" width="410" height="607" rotated="true" frameX="-0" frameY="-10" frameWidth="609" frameHeight="447"/>
+	<SubTexture name="gar buble fart0003" x="2663" y="2822" width="441" height="573" rotated="true" frameX="-25" frameY="-3" frameWidth="609" frameHeight="447"/>
+	<SubTexture name="gar buble fart0004" x="2663" y="2822" width="441" height="573" rotated="true" frameX="-25" frameY="-3" frameWidth="609" frameHeight="447"/>
+	<SubTexture name="gar buble fart0005" x="0" y="2800" width="447" height="583" rotated="true" frameX="-26" frameY="-0" frameWidth="609" frameHeight="447"/>
+	<SubTexture name="gar buble fart0006" x="0" y="2800" width="447" height="583" rotated="true" frameX="-26" frameY="-0" frameWidth="609" frameHeight="447"/>
+	<SubTexture name="gar buble fart0007" x="0" y="2800" width="447" height="583" rotated="true" frameX="-26" frameY="-0" frameWidth="609" frameHeight="447"/>
+	<SubTexture name="gar doodoo bib;e0000" x="3436" y="1747" width="258" height="460" frameX="-127" frameY="-90" frameWidth="516" frameHeight="597"/>
+	<SubTexture name="gar doodoo bib;e0001" x="2517" y="1567" width="516" height="597" frameX="-0" frameY="-0" frameWidth="516" frameHeight="597"/>
+	<SubTexture name="gar doodoo bib;e0002" x="2517" y="1567" width="516" height="597" frameX="-0" frameY="-0" frameWidth="516" frameHeight="597"/>
+	<SubTexture name="gar doodoo bib;e0003" x="449" y="3018" width="577" height="438" rotated="true" frameX="-58" frameY="-0" frameWidth="516" frameHeight="597"/>
+	<SubTexture name="gar doodoo bib;e0004" x="449" y="3018" width="577" height="438" rotated="true" frameX="-58" frameY="-0" frameWidth="516" frameHeight="597"/>
+	<SubTexture name="gar doodoo bib;e0005" x="3022" y="0" width="436" height="568" frameX="-54" frameY="-3" frameWidth="516" frameHeight="597"/>
+	<SubTexture name="gar doodoo bib;e0006" x="3022" y="0" width="436" height="568" frameX="-54" frameY="-3" frameWidth="516" frameHeight="597"/>
+	<SubTexture name="gar doodoo bib;e0007" x="3022" y="0" width="436" height="568" frameX="-54" frameY="-3" frameWidth="516" frameHeight="597"/>
+	<SubTexture name="gar down bubl ang0000" x="1402" y="852" width="596" height="814" rotated="true" frameX="-0" frameY="-0" frameWidth="814" frameHeight="596"/>
+	<SubTexture name="gar down bubl ang0001" x="1402" y="852" width="596" height="814" rotated="true" frameX="-0" frameY="-0" frameWidth="814" frameHeight="596"/>
+	<SubTexture name="gar down bubl ang0002" x="449" y="2505" width="616" height="511" frameX="-100" frameY="-6" frameWidth="814" frameHeight="596"/>
+	<SubTexture name="gar down bubl ang0003" x="449" y="2505" width="616" height="511" frameX="-100" frameY="-6" frameWidth="814" frameHeight="596"/>
+	<SubTexture name="gar down bubl ang0004" x="2000" y="828" width="513" height="780" rotated="true" frameX="-14" frameY="-45" frameWidth="814" frameHeight="596"/>
+	<SubTexture name="gar down bubl ang0005" x="2000" y="828" width="513" height="780" rotated="true" frameX="-14" frameY="-45" frameWidth="814" frameHeight="596"/>
+	<SubTexture name="gar down bubl ang0006" x="2000" y="828" width="513" height="780" rotated="true" frameX="-14" frameY="-45" frameWidth="814" frameHeight="596"/>
+	<SubTexture name="gar down bubl ang0007" x="2000" y="828" width="513" height="780" rotated="true" frameX="-14" frameY="-45" frameWidth="814" frameHeight="596"/>
+	<SubTexture name="gar down bubl ang0008" x="2000" y="828" width="513" height="780" rotated="true" frameX="-14" frameY="-45" frameWidth="814" frameHeight="596"/>
+	<SubTexture name="gar down bubl ang0009" x="2000" y="828" width="513" height="780" rotated="true" frameX="-14" frameY="-45" frameWidth="814" frameHeight="596"/>
+	<SubTexture name="gar rght buble an0000" x="0" y="2044" width="447" height="754" rotated="true" frameX="-3" frameY="-0" frameWidth="757" frameHeight="447"/>
+	<SubTexture name="gar rght buble an0001" x="0" y="2044" width="447" height="754" rotated="true" frameX="-3" frameY="-0" frameWidth="757" frameHeight="447"/>
+	<SubTexture name="gar rght buble an0002" x="3035" y="1349" width="397" height="606" rotated="true" frameX="-54" frameY="-4" frameWidth="757" frameHeight="447"/>
+	<SubTexture name="gar rght buble an0003" x="3035" y="1349" width="397" height="606" rotated="true" frameX="-54" frameY="-4" frameWidth="757" frameHeight="447"/>
+	<SubTexture name="gar rght buble an0004" x="2515" y="827" width="425" height="738" rotated="true" frameX="-0" frameY="-3" frameWidth="757" frameHeight="447"/>
+	<SubTexture name="gar rght buble an0005" x="2515" y="827" width="425" height="738" rotated="true" frameX="-0" frameY="-3" frameWidth="757" frameHeight="447"/>
+	<SubTexture name="gar rght buble an0006" x="2515" y="827" width="425" height="738" rotated="true" frameX="-0" frameY="-3" frameWidth="757" frameHeight="447"/>
+	<SubTexture name="gar rght buble an0007" x="2515" y="827" width="425" height="738" rotated="true" frameX="-0" frameY="-3" frameWidth="757" frameHeight="447"/>
+	<SubTexture name="gar rght buble an0008" x="2515" y="827" width="425" height="738" rotated="true" frameX="-0" frameY="-3" frameWidth="757" frameHeight="447"/>
+	<SubTexture name="gar rght buble an0009" x="2515" y="827" width="425" height="738" rotated="true" frameX="-0" frameY="-3" frameWidth="757" frameHeight="447"/>
+	<SubTexture name="gari buble round0000" x="3491" y="2498" width="240" height="431" rotated="true" frameX="-39" frameY="-92" frameWidth="573" frameHeight="376"/>
+	<SubTexture name="gari buble round0001" x="3058" y="1957" width="376" height="558" rotated="true" frameX="-5" frameY="-0" frameWidth="573" frameHeight="376"/>
+	<SubTexture name="gari buble round0002" x="3058" y="1957" width="376" height="558" rotated="true" frameX="-5" frameY="-0" frameWidth="573" frameHeight="376"/>
+	<SubTexture name="gari buble round0003" x="3106" y="3043" width="570" height="332" frameX="-0" frameY="-40" frameWidth="573" frameHeight="376"/>
+	<SubTexture name="gari buble round0004" x="3106" y="3043" width="570" height="332" frameX="-0" frameY="-40" frameWidth="573" frameHeight="376"/>
+	<SubTexture name="gari buble round0005" x="3354" y="570" width="330" height="564" rotated="true" frameX="-9" frameY="-40" frameWidth="573" frameHeight="376"/>
+	<SubTexture name="gari buble round0006" x="3354" y="570" width="330" height="564" rotated="true" frameX="-9" frameY="-40" frameWidth="573" frameHeight="376"/>
+	<SubTexture name="gari buble round0007" x="3354" y="570" width="330" height="564" rotated="true" frameX="-9" frameY="-40" frameWidth="573" frameHeight="376"/>
+	<SubTexture name="gari buble semisquare0000" x="0" y="1395" width="685" height="647" frameX="-0" frameY="-0" frameWidth="685" frameHeight="647"/>
+	<SubTexture name="gari buble semisquare0001" x="0" y="1395" width="685" height="647" frameX="-0" frameY="-0" frameWidth="685" frameHeight="647"/>
+	<SubTexture name="gari buble semisquare0002" x="3436" y="2209" width="396" height="287" frameX="-136" frameY="-180" frameWidth="685" frameHeight="647"/>
+	<SubTexture name="gari buble semisquare0003" x="3436" y="2209" width="396" height="287" frameX="-136" frameY="-180" frameWidth="685" frameHeight="647"/>
+	<SubTexture name="gari buble semisquare0004" x="1667" y="3030" width="553" height="453" frameX="-63" frameY="-110" frameWidth="685" frameHeight="647"/>
+	<SubTexture name="gari buble semisquare0005" x="1667" y="3030" width="553" height="453" frameX="-63" frameY="-110" frameWidth="685" frameHeight="647"/>
+	<SubTexture name="gari buble yell left0000" x="687" y="1745" width="570" height="758" rotated="true" frameX="-0" frameY="-0" frameWidth="758" frameHeight="570"/>
+	<SubTexture name="gari buble yell left0001" x="687" y="1745" width="570" height="758" rotated="true" frameX="-0" frameY="-0" frameWidth="758" frameHeight="570"/>
+	<SubTexture name="gari buble yell left0002" x="449" y="2044" width="231" height="409" rotated="true" frameX="-231" frameY="-142" frameWidth="758" frameHeight="570"/>
+	<SubTexture name="gari buble yell left0003" x="449" y="2044" width="231" height="409" rotated="true" frameX="-231" frameY="-142" frameWidth="758" frameHeight="570"/>
+	<SubTexture name="gari buble yell left0004" x="2663" y="2166" width="393" height="654" rotated="true" frameX="-61" frameY="-98" frameWidth="758" frameHeight="570"/>
+	<SubTexture name="gari buble yell left0005" x="2663" y="2166" width="393" height="654" rotated="true" frameX="-61" frameY="-98" frameWidth="758" frameHeight="570"/>
+	<SubTexture name="gari evil rectangle bubble0000" x="1067" y="3007" width="598" height="468" rotated="true" frameX="-0" frameY="-0" frameWidth="468" frameHeight="599"/>
+	<SubTexture name="gari evil rectangle bubble0001" x="1067" y="3007" width="598" height="468" rotated="true" frameX="-0" frameY="-0" frameWidth="468" frameHeight="599"/>
+	<SubTexture name="gari evil rectangle bubble0002" x="3460" y="0" width="332" height="414" frameX="-82" frameY="-87" frameWidth="468" frameHeight="599"/>
+	<SubTexture name="gari evil rectangle bubble0003" x="3460" y="0" width="332" height="414" frameX="-82" frameY="-87" frameWidth="468" frameHeight="599"/>
+	<SubTexture name="gari evil rectangle bubble0004" x="3106" y="2517" width="383" height="524" frameX="-53" frameY="-45" frameWidth="468" frameHeight="599"/>
+	<SubTexture name="gari evil rectangle bubble0005" x="3106" y="2517" width="383" height="524" frameX="-53" frameY="-45" frameWidth="468" frameHeight="599"/>
+	<SubTexture name="gari long buble rounder0000" x="849" y="852" width="551" height="891" rotated="true" frameX="-0" frameY="-0" frameWidth="891" frameHeight="551"/>
+	<SubTexture name="gari long buble rounder0001" x="849" y="852" width="551" height="891" rotated="true" frameX="-0" frameY="-0" frameWidth="891" frameHeight="551"/>
+	<SubTexture name="gari long buble rounder0002" x="3434" y="1136" width="224" height="609" rotated="true" frameX="-154" frameY="-133" frameWidth="891" frameHeight="551"/>
+	<SubTexture name="gari long buble rounder0003" x="3434" y="1136" width="224" height="609" rotated="true" frameX="-154" frameY="-133" frameWidth="891" frameHeight="551"/>
+	<SubTexture name="gari long buble rounder0004" x="2623" y="0" width="397" height="738" rotated="true" frameX="-91" frameY="-78" frameWidth="891" frameHeight="551"/>
+	<SubTexture name="gari long buble rounder0005" x="2623" y="0" width="397" height="738" rotated="true" frameX="-91" frameY="-78" frameWidth="891" frameHeight="551"/>
+	<SubTexture name="gari speech left yell mad0000" x="1560" y="0" width="584" height="826" rotated="true" frameX="-25" frameY="-12" frameWidth="851" frameHeight="596"/>
+	<SubTexture name="gari speech left yell mad0001" x="1560" y="0" width="584" height="826" rotated="true" frameX="-25" frameY="-12" frameWidth="851" frameHeight="596"/>
+	<SubTexture name="gari speech left yell mad0002" x="1981" y="1668" width="534" height="824" rotated="true" frameX="-0" frameY="-0" frameWidth="851" frameHeight="596"/>
+	<SubTexture name="gari speech left yell mad0003" x="1981" y="1668" width="534" height="824" rotated="true" frameX="-0" frameY="-0" frameWidth="851" frameHeight="596"/>
+	<SubTexture name="gari speech left yell mad0004" x="1259" y="2465" width="699" height="540" frameX="-119" frameY="-24" frameWidth="851" frameHeight="596"/>
+	<SubTexture name="gari speech left yell mad0005" x="1259" y="2465" width="699" height="540" frameX="-119" frameY="-24" frameWidth="851" frameHeight="596"/>
+	<SubTexture name="gari speech left yell mad0006" x="1259" y="2465" width="699" height="540" frameX="-119" frameY="-24" frameWidth="851" frameHeight="596"/>
+	<SubTexture name="gari speech left yell mad0007" x="1259" y="2465" width="699" height="540" frameX="-119" frameY="-24" frameWidth="851" frameHeight="596"/>
+	<SubTexture name="gari speech left yell mad0008" x="1259" y="2465" width="699" height="540" frameX="-119" frameY="-24" frameWidth="851" frameHeight="596"/>
+	<SubTexture name="gari speech left yell mad0009" x="1259" y="2465" width="699" height="540" frameX="-119" frameY="-24" frameWidth="851" frameHeight="596"/>
+	<SubTexture name="garii bubel yall0000" x="2222" y="3030" width="434" height="322" frameX="-169" frameY="-276" frameWidth="876" frameHeight="704"/>
+	<SubTexture name="garii bubel yall0001" x="0" y="0" width="871" height="699" frameX="-0" frameY="-5" frameWidth="876" frameHeight="704"/>
+	<SubTexture name="garii bubel yall0002" x="0" y="0" width="871" height="699" frameX="-0" frameY="-5" frameWidth="876" frameHeight="704"/>
+	<SubTexture name="garii bubel yall0003" x="873" y="0" width="685" height="850" rotated="true" frameX="-24" frameY="-5" frameWidth="876" frameHeight="704"/>
+	<SubTexture name="garii bubel yall0004" x="873" y="0" width="685" height="850" rotated="true" frameX="-24" frameY="-5" frameWidth="876" frameHeight="704"/>
+	<SubTexture name="garii bubel yall0005" x="0" y="701" width="847" height="692" frameX="-29" frameY="-0" frameWidth="876" frameHeight="704"/>
+	<SubTexture name="garii bubel yall0006" x="0" y="701" width="847" height="692" frameX="-29" frameY="-0" frameWidth="876" frameHeight="704"/>
+	<SubTexture name="garii bubel yall0007" x="0" y="701" width="847" height="692" frameX="-29" frameY="-0" frameWidth="876" frameHeight="704"/>
+	<SubTexture name="spech up ang gar0000" x="1402" y="1668" width="577" height="795" rotated="true" frameX="-18" frameY="-0" frameWidth="825" frameHeight="578"/>
+	<SubTexture name="spech up ang gar0001" x="1402" y="1668" width="577" height="795" rotated="true" frameX="-18" frameY="-0" frameWidth="825" frameHeight="578"/>
+	<SubTexture name="spech up ang gar0002" x="2146" y="0" width="475" height="825" rotated="true" frameX="-0" frameY="-15" frameWidth="825" frameHeight="578"/>
+	<SubTexture name="spech up ang gar0003" x="2146" y="0" width="475" height="825" rotated="true" frameX="-0" frameY="-15" frameWidth="825" frameHeight="578"/>
+	<SubTexture name="spech up ang gar0004" x="1960" y="2494" width="701" height="534" frameX="-69" frameY="-8" frameWidth="825" frameHeight="578"/>
+	<SubTexture name="spech up ang gar0005" x="1960" y="2494" width="701" height="534" frameX="-69" frameY="-8" frameWidth="825" frameHeight="578"/>
+	<SubTexture name="spech up ang gar0006" x="1960" y="2494" width="701" height="534" frameX="-69" frameY="-8" frameWidth="825" frameHeight="578"/>
+	<SubTexture name="spech up ang gar0007" x="1960" y="2494" width="701" height="534" frameX="-69" frameY="-8" frameWidth="825" frameHeight="578"/>
+	<SubTexture name="spech up ang gar0008" x="1960" y="2494" width="701" height="534" frameX="-69" frameY="-8" frameWidth="825" frameHeight="578"/>
+	<SubTexture name="spech up ang gar0009" x="1960" y="2494" width="701" height="534" frameX="-69" frameY="-8" frameWidth="825" frameHeight="578"/>
 </TextureAtlas>

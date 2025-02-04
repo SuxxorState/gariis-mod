@@ -1,5 +1,5 @@
 hunte
-unused line--later on it will be for note types
+Hunte Note
 
 bubbleLEFT, ciercle hunte booble, -1, 669
 bubbleDOWN, hunte bubbl hexa, 39, 710

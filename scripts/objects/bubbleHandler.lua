@@ -17,7 +17,6 @@ function onRequestBubble(chr) --checks to see if a txt file exists for a given c
 
     if (checkFileExists("images/bubbles/"..chr..".txt")) then
         local spltchrtxt = stringSplit(getTextFromFile("images/bubbles/"..chr..".txt").." ", "\n")
-        local bublntes = {}
         local chranimz = {}
         local noteBubls = {"", "bubble-only"}
         local chrref = ""
@@ -29,19 +28,20 @@ function onRequestBubble(chr) --checks to see if a txt file exists for a given c
             bublpos = {defaultBoyfriendX, defaultBoyfriendY}
         elseif (getProperty("gf.curCharacter") == chr) then chrgrab = "gf"
             bublpos = {defaultGirlfriendX, defaultGirlfriendY}
+            noteBubls = {"gf-sing"}
         else
             bublpos = {getProperty(chrgrab..".x"), getProperty(chrgrab..".y")}
             noteBubls = {chrgrab.."-note"}
         end
-        if (chr == "garii") then noteBubls = {"", "bubble-only", "fake-alt-anim", "side-alt-anim", "snide-alt-anim", "angry-alt-anim", "done-alt-anim"}
-        elseif (chr == "truckerboy-girl") then noteBubls = {"", "bubble-only", "smug-alt-anim", "confused-alt-anim"}
-        elseif (chr == "truckerboy") then noteBubls = {"", "bubble-only", "confused-alt-anim"} end
 
         for i,ln in pairs(spltchrtxt) do
             local fln = string.sub(ln, 1, #ln-1) --removes the line break
             
             if (i == 1) then chrref = fln
-            elseif (i == 2 and stringSplit(fln, ", ") ~= nil) then bublntes = stringSplit(fln, ", ")
+            elseif (i == 2 and stringSplit(fln, ", ") ~= nil) then noteBubls = stringSplit(fln, ", ")
+                for i,name in pairs(noteBubls) do
+                    noteBubls[i] = utils:lwrKebab(name)
+                end
             elseif (stringSplit(fln, ", ") ~= nil and #stringSplit(fln, ", ") > 1 and #fln > 1 and (not stringStartsWith(fln, "--"))) then
                 local lnsplit = stringSplit(fln, ", ")
 
@@ -144,8 +144,8 @@ end
 
 function onUpdatePost(elp)
     for i,char in pairs(bubbleChars) do
-        local shitass = (stringStartsWith(getProperty(char..".animation.curAnim.name"), "idle") or stringStartsWith(getProperty(char..".atlas.anim.lastPlayedAnim"), "idle"))
-        if (stringStartsWith(version, "1.0.")) then shitass = (stringStartsWith(callMethod(char..".getAnimationName"), "idle")) end
+        local shitass = (stringStartsWith(getProperty(char..".animation.curAnim.name"), "idle") or stringStartsWith(getProperty(char..".atlas.anim.lastPlayedAnim"), "idle") or stringStartsWith(getProperty(char..".animation.curAnim.name"), "dance") or stringStartsWith(getProperty(char..".atlas.anim.lastPlayedAnim"), "dance"))
+        if (stringStartsWith(version, "1.0.")) then shitass = (stringStartsWith(callMethod(char..".getAnimationName"), "idle") or stringStartsWith(callMethod(char..".getAnimationName"), "dance")) end
         if (shitass) then --actually wait this is way simpler
             setProperty(char.."Bubbles.alpha", 0)
         end
