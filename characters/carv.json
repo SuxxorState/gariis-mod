@@ -1,92 +1,100 @@
 {
 	"animations": [
 		{
-			"offsets": [0, 0],
 			"loop": false,
-			"fps": 24,
+			"offsets": [0, 0],
 			"anim": "idle",
-			"indices": [],
-			"name": "carv opp/-carv anims/carv drag opp idle"
+			"fps": 24,
+			"name": "carv opp/-carv anims/carv drag opp idle",
+			"indices": []
 		},
 		{
-			"offsets": [0, 0],
 			"loop": false,
-			"fps": 24,
+			"offsets": [0, 0],
 			"anim": "idle-alt",
-			"indices": [],
-			"name": "carv opp/-carv anims/carv idle alt"
+			"fps": 24,
+			"name": "carv opp/-carv anims/carv idle alt",
+			"indices": []
 		},
 		{
-			"offsets": [0, 0],
 			"loop": false,
-			"fps": 24,
+			"offsets": [0, 0],
 			"anim": "idle-nomic",
-			"indices": [],
-			"name": "carv opp/-carv anims/carv drag idle no mic"
+			"fps": 24,
+			"name": "carv opp/-carv anims/carv drag idle no mic",
+			"indices": []
 		},
 		{
-			"offsets": [0, 0],
 			"loop": false,
-			"fps": 24,
+			"offsets": [0, 0],
 			"anim": "idle-nomic-alt",
-			"indices": [],
-			"name": "carv opp/-carv anims/carv alt idle bc i can"
+			"fps": 24,
+			"name": "carv opp/-carv anims/carv alt idle bc i can",
+			"indices": []
 		},
 		{
-			"loop": false,
 			"offsets": [212, 395],
+			"loop": false,
+			"fps": 24,
 			"anim": "singLEFT",
-			"fps": 24,
-			"name": "carv opp/-carv anims/carv lean posture",
-			"indices": []
+			"indices": [],
+			"name": "carv opp/-carv anims/carv lean posture"
 		},
 		{
-			"loop": true,
 			"offsets": [212, 395],
+			"loop": true,
+			"fps": 24,
 			"anim": "singLEFT-loop",
-			"fps": 24,
-			"name": "carv opp/-carv anims/carv lean posture",
-			"indices": [2, 3, 4, 5, 6, 7]
+			"indices": [2, 3, 4, 5, 6, 7],
+			"name": "carv opp/-carv anims/carv lean posture"
 		},
 		{
-			"loop": false,
 			"offsets": [-3, 0],
+			"loop": false,
+			"fps": 24,
 			"anim": "singDOWN",
-			"fps": 24,
-			"name": "carv opp/-carv anims/carv downe note",
-			"indices": []
+			"indices": [],
+			"name": "carv opp/-carv anims/carv downe note"
 		},
 		{
-			"loop": false,
 			"offsets": [-2, -1],
-			"anim": "singUP",
+			"loop": false,
 			"fps": 24,
-			"name": "carv opp/-carv anims/carv vertical strike",
-			"indices": []
+			"anim": "singUP",
+			"indices": [],
+			"name": "carv opp/-carv anims/carv vertical strike"
 		},
 		{
-			"loop": false,
 			"offsets": [2, 0],
-			"anim": "singRIGHT",
+			"loop": false,
 			"fps": 24,
-			"name": "carv opp/-carv anims/carv RITE pose",
-			"indices": []
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "carv opp/-carv anims/carv RITE pose"
+		},
+		{
+			"offsets": [0, 0],
+			"loop": false,
+			"fps": 2,
+			"anim": "pose1",
+			"indices": [],
+			"name": "carv opp/-carv anims/carv pose sponge"
 		},
 		{
 			"loop": false,
 			"offsets": [0, 0],
-			"anim": "pose1",
+			"anim": "pose2",
 			"fps": 2,
-			"name": "carv opp/-carv anims/carv pose sponge",
+			"name": "carv opp/-carv anims/carv pose mario",
 			"indices": []
 		},
 		{
 			"offsets": [0, 0],
 			"indices": [],
 			"fps": 2,
-			"anim": "pose2",
+			"anim": "pose3",
 			"loop": false,
-			"name": "carv opp/-carv anims/carv pose mario"
+			"name": "carv opp/-carv anims/carv pose comic"
 		}
 	],
 	"vocals_file": "",

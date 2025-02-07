@@ -102,7 +102,7 @@ function fixTheDamnStrums()
     runHaxeCode([[
         for (note in game.unspawnNotes) {
             note.multAlpha = 1;
-            if (note.noteType == "Pose Note") {
+            if (note.noteType == "Pose Note" || note.noteType == "Pose Note Filler") {
                 note.offset.x += 45;
                 note.offset.y += 45;
             }
@@ -110,6 +110,7 @@ function fixTheDamnStrums()
     ]])
 end
 
+local usedPoses = {}
 function opponentNoteHit(id, dir, ntype)
     if (ntype == "Missed Note") then
         setProperty("health", getProperty("health") + (0.0475 / hpMultiplier) / healthLossMult)
@@ -118,12 +119,15 @@ function opponentNoteHit(id, dir, ntype)
         setProperty("health", getProperty("health") - hpDrain)
     end
     if (ntype == "Pose Note") then
-        local rngNum = getRandomInt(1,2)
+        local maxPoses = 3
+        local rngNum = getRandomInt(1,maxPoses, table.concat(usedPoses, ","))
 
         playAnim("dad", "pose"..rngNum, true)
         for _,chr in pairs(getVar("extraOppList")) do
             playAnim(chr, "pose"..rngNum, true)
         end
+        if (#usedPoses >= maxPoses-1) then usedPoses = {} end
+        table.insert(usedPoses, rngNum)
     end
 end
 
