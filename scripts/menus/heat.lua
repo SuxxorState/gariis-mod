@@ -204,7 +204,7 @@ function onUpdatePost(elapsed)
 				curKey = curKey + 1
 				if curKey > #keyCombo then
 					curKey = 1
-					playMusic('highwayjammin', 1, true)
+					playMusic('highway-jammin', 1, true)
 					highwayjammin = true
 					changeSelected(0)
 					for i=0,2 do playAnim('spstex'..i, "hj") end

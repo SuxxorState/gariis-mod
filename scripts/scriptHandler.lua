@@ -2,7 +2,7 @@ local errored = false
 local bkend, menus, chars, songs, stges, objts = 'scripts/backend/', 'scripts/menus/', 'scripts/chars/', 'scripts/songs/', 'scripts/stages/', 'scripts/objects/' --heehee hoohoo crack
 local lastChr = {["boyfriend"] = "", ["gf"] = "", ["dad"] = ""}
 
-if (getModSetting('gariiDebug')) then luaDebugMode = true end
+luaDebugMode = (getModSetting('gariiDebug') ~= nil and getModSetting('gariiDebug'))
 errored = not (stringStartsWith(version, "1.0.") or stringStartsWith(version, "0.7")) --set as 1.0.x because 1.0 kinda fucking sucks
 if (not errored) then
     initSaveData("gariis-mod_v0.96", "SuxxorState")

@@ -1,84 +1,92 @@
 {
 	"animations": [
 		{
-			"loop": false,
 			"offsets": [0, 0],
+			"loop": false,
+			"fps": 24,
 			"anim": "idle",
-			"fps": 24,
-			"name": "carv opp/-carv anims/carv drag opp idle",
-			"indices": []
+			"indices": [],
+			"name": "carv opp/-carv anims/carv drag opp idle"
 		},
 		{
-			"loop": false,
 			"offsets": [0, 0],
+			"loop": false,
+			"fps": 24,
 			"anim": "idle-alt",
-			"fps": 24,
-			"name": "carv opp/-carv anims/carv idle alt",
-			"indices": []
+			"indices": [],
+			"name": "carv opp/-carv anims/carv idle alt"
 		},
 		{
-			"loop": false,
 			"offsets": [0, 0],
+			"loop": false,
+			"fps": 24,
 			"anim": "idle-nomic",
+			"indices": [],
+			"name": "carv opp/-carv anims/carv drag idle no mic"
+		},
+		{
+			"offsets": [0, 0],
+			"loop": false,
 			"fps": 24,
-			"name": "carv opp/-carv anims/carv drag idle no mic",
+			"anim": "idle-nomic-alt",
+			"indices": [],
+			"name": "carv opp/-carv anims/carv alt idle bc i can"
+		},
+		{
+			"loop": false,
+			"offsets": [212, 395],
+			"anim": "singLEFT",
+			"fps": 24,
+			"name": "carv opp/-carv anims/carv lean posture",
+			"indices": []
+		},
+		{
+			"loop": true,
+			"offsets": [212, 395],
+			"anim": "singLEFT-loop",
+			"fps": 24,
+			"name": "carv opp/-carv anims/carv lean posture",
+			"indices": [2, 3, 4, 5, 6, 7]
+		},
+		{
+			"loop": false,
+			"offsets": [-3, 0],
+			"anim": "singDOWN",
+			"fps": 24,
+			"name": "carv opp/-carv anims/carv downe note",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [-2, -1],
+			"anim": "singUP",
+			"fps": 24,
+			"name": "carv opp/-carv anims/carv vertical strike",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [2, 0],
+			"anim": "singRIGHT",
+			"fps": 24,
+			"name": "carv opp/-carv anims/carv RITE pose",
 			"indices": []
 		},
 		{
 			"loop": false,
 			"offsets": [0, 0],
-			"anim": "idle-nomic-alt",
-			"fps": 24,
-			"name": "carv opp/-carv anims/carv alt idle bc i can",
+			"anim": "pose1",
+			"fps": 2,
+			"name": "carv opp/-carv anims/carv pose sponge",
 			"indices": []
-		},
-		{
-			"offsets": [212, 395],
-			"indices": [],
-			"fps": 24,
-			"anim": "singLEFT",
-			"loop": false,
-			"name": "carv opp/-carv anims/carv lean posture"
-		},
-		{
-			"offsets": [212, 395],
-			"indices": [2, 3, 4, 5, 6, 7],
-			"fps": 24,
-			"anim": "singLEFT-loop",
-			"loop": true,
-			"name": "carv opp/-carv anims/carv lean posture"
-		},
-		{
-			"offsets": [-3, 0],
-			"indices": [],
-			"fps": 24,
-			"anim": "singDOWN",
-			"loop": false,
-			"name": "carv opp/-carv anims/carv downe note"
-		},
-		{
-			"offsets": [-2, -1],
-			"indices": [],
-			"fps": 24,
-			"anim": "singUP",
-			"loop": false,
-			"name": "carv opp/-carv anims/carv vertical strike"
-		},
-		{
-			"offsets": [2, 0],
-			"indices": [],
-			"fps": 24,
-			"anim": "singRIGHT",
-			"loop": false,
-			"name": "carv opp/-carv anims/carv RITE pose"
 		},
 		{
 			"offsets": [0, 0],
 			"indices": [],
 			"fps": 2,
-			"anim": "pose1",
+			"anim": "pose2",
 			"loop": false,
-			"name": "carv opp/-carv anims/carv pose sponge"
+			"name": "carv opp/-carv anims/carv pose mario"
 		}
 	],
 	"vocals_file": "",

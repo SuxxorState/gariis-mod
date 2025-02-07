@@ -2,119 +2,21 @@
 	"animations": [
 		{
 			"loop": false,
-			"offsets": [
-				3,
-				0
-			],
-			"anim": "singLEFT",
+			"offsets": [0, 0],
+			"anim": "idle",
 			"fps": 24,
-			"name": "gf left",
+			"name": "girl alt idle",
 			"indices": []
-		},
-		{
-			"loop": false,
-			"offsets": [
-				-16,
-				-41
-			],
-			"anim": "singDOWN",
-			"fps": 24,
-			"name": "gf down",
-			"indices": []
-		},
-		{
-			"loop": false,
-			"offsets": [
-				-29,
-				11
-			],
-			"anim": "singUP",
-			"fps": 24,
-			"name": "gf up",
-			"indices": []
-		},
-		{
-			"loop": false,
-			"offsets": [
-				-29,
-				1
-			],
-			"anim": "singRIGHT",
-			"fps": 24,
-			"name": "gf right",
-			"indices": []
-		},
-		{
-			"offsets": [
-				0,
-				0
-			],
-			"loop": false,
-			"fps": 24,
-			"anim": "danceLeft",
-			"indices": [
-				0,
-				1,
-				2,
-				3,
-				4,
-				5,
-				6,
-				7,
-				8,
-				9,
-				10,
-				11,
-				12,
-				13
-			],
-			"name": "gf idel assist"
-		},
-		{
-			"offsets": [
-				0,
-				0
-			],
-			"loop": false,
-			"fps": 24,
-			"anim": "danceRight",
-			"indices": [
-				14,
-				15,
-				16,
-				17,
-				18,
-				19,
-				20,
-				21,
-				22,
-				23,
-				24,
-				25,
-				26,
-				27
-			],
-			"name": "gf idel assist"
 		}
 	],
 	"vocals_file": "",
 	"no_antialiasing": false,
-	"image": "characters/truckergirl",
-	"position": [
-		0,
-		120
-	],
+	"image": "characters/truckergirl-alt",
+	"position": [0, 120],
 	"healthicon": "truckgirl",
 	"flip_x": true,
-	"healthbar_colors": [
-		197,
-		82,
-		82
-	],
-	"camera_position": [
-		-50,
-		50
-	],
+	"healthbar_colors": [197, 82, 82],
+	"camera_position": [-50, 50],
 	"sing_duration": 4,
 	"scale": 1,
 	"_editor_isPlayer": true

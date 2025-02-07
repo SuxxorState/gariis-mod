@@ -19,7 +19,7 @@ function initLuas()
         utils:setWindowTitle("Friday Night Funkin': GARII'S MOD")
     end
     folderDir = getVar("folDir")
-    checkFreeplayIconCompatability()
+    --checkFreeplayIconCompatability()
     doubleCheckWeeks()
 end
 
@@ -102,11 +102,7 @@ function fixTheDamnStrums()
     runHaxeCode([[
         for (note in game.unspawnNotes) {
             note.multAlpha = 1;
-            if (note.noteType == "Missed Opportunity") {
-                var colArray:Array<String> = ['purple', 'blue', 'green', 'red'];
-                note.animation.addByPrefix(colArray[note.noteData] + "skribl", colArray[note.noteData] + " skribl", 24, false);
-                note.animation.addByPrefix(colArray[note.noteData] + "alt", colArray[note.noteData] + " alt", 24, true);
-            } else if (note.noteType == "Pose Note") {
+            if (note.noteType == "Pose Note") {
                 note.offset.x += 45;
                 note.offset.y += 45;
             }
@@ -122,7 +118,12 @@ function opponentNoteHit(id, dir, ntype)
         setProperty("health", getProperty("health") - hpDrain)
     end
     if (ntype == "Pose Note") then
-        playAnim("dad", "pose"..getRandomInt(1,1), true)
+        local rngNum = getRandomInt(1,2)
+
+        playAnim("dad", "pose"..rngNum, true)
+        for _,chr in pairs(getVar("extraOppList")) do
+            playAnim(chr, "pose"..rngNum, true)
+        end
     end
 end
 

@@ -1,108 +1,116 @@
 {
 	"animations": [
 		{
-			"offsets": [0, 0],
 			"loop": false,
-			"fps": 24,
+			"offsets": [0, 0],
 			"anim": "idle",
-			"indices": [],
-			"name": "hunte opp/-hunte anims/hunte mic idle"
+			"fps": 24,
+			"name": "hunte opp/-hunte anims/hunte mic idle",
+			"indices": []
 		},
 		{
-			"offsets": [0, 0],
 			"loop": false,
-			"fps": 24,
+			"offsets": [0, 0],
 			"anim": "idle-alt",
-			"indices": [],
-			"name": "hunte opp/-hunte anims/hunte alt mic idle"
+			"fps": 24,
+			"name": "hunte opp/-hunte anims/hunte alt mic idle",
+			"indices": []
 		},
 		{
-			"offsets": [0, 0],
 			"loop": false,
-			"fps": 24,
+			"offsets": [0, 0],
 			"anim": "idle-nomic",
-			"indices": [],
-			"name": "hunte opp/-hunte anims/hunte opp idle"
+			"fps": 24,
+			"name": "hunte opp/-hunte anims/hunte opp idle",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [0, 0],
-			"loop": false,
-			"fps": 24,
 			"anim": "idle-nomic-alt",
-			"indices": [],
-			"name": "hunte opp/-hunte anims/hunte idle alt"
+			"fps": 24,
+			"name": "hunte opp/-hunte anims/hunte idle alt",
+			"indices": []
 		},
 		{
-			"offsets": [-3, 1],
 			"loop": false,
-			"fps": 24,
+			"offsets": [-3, 1],
 			"anim": "singLEFT",
-			"indices": [],
-			"name": "hunte opp/-hunte anims/hunte left hit"
+			"fps": 24,
+			"name": "hunte opp/-hunte anims/hunte left hit",
+			"indices": []
 		},
 		{
-			"offsets": [0, 1],
 			"loop": false,
-			"fps": 24,
+			"offsets": [0, 1],
 			"anim": "singDOWN",
-			"indices": [],
-			"name": "hunte opp/-hunte anims/hunte downs"
+			"fps": 24,
+			"name": "hunte opp/-hunte anims/hunte downs",
+			"indices": []
 		},
 		{
-			"offsets": [-3, 8],
 			"loop": false,
-			"fps": 24,
+			"offsets": [-3, 8],
 			"anim": "singUP",
-			"indices": [],
-			"name": "hunte opp/-hunte anims/hunte up the pose"
+			"fps": 24,
+			"name": "hunte opp/-hunte anims/hunte up the pose",
+			"indices": []
 		},
 		{
-			"offsets": [-11, 4],
 			"loop": false,
-			"fps": 24,
+			"offsets": [-11, 4],
 			"anim": "singRIGHT",
-			"indices": [],
-			"name": "hunte opp/-hunte anims/hunte writin"
+			"fps": 24,
+			"name": "hunte opp/-hunte anims/hunte writin",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [-3, 1],
-			"loop": false,
-			"fps": 24,
 			"anim": "singLEFT-nomic",
-			"indices": [],
-			"name": "hunte opp/-hunte anims/hunte no mic left hit"
+			"fps": 24,
+			"name": "hunte opp/-hunte anims/hunte no mic left hit",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [0, 1],
-			"loop": false,
-			"fps": 24,
 			"anim": "singDOWN-nomic",
-			"indices": [],
-			"name": "hunte opp/-hunte anims/hunte no mic down"
+			"fps": 24,
+			"name": "hunte opp/-hunte anims/hunte no mic down",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [-3, 8],
-			"loop": false,
-			"fps": 24,
 			"anim": "singUP-nomic",
-			"indices": [],
-			"name": "hunte opp/-hunte anims/hunte up is proud"
+			"fps": 24,
+			"name": "hunte opp/-hunte anims/hunte up is proud",
+			"indices": []
 		},
 		{
-			"offsets": [-11, 4],
 			"loop": false,
-			"fps": 24,
+			"offsets": [-11, 4],
 			"anim": "singRIGHT-nomic",
-			"indices": [],
-			"name": "hunte opp/-hunte anims/hunte no mic rite"
+			"fps": 24,
+			"name": "hunte opp/-hunte anims/hunte no mic rite",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [0, 0],
+			"anim": "pose1",
+			"fps": 2,
+			"name": "hunte opp/-hunte anims/hunte pose sponge",
+			"indices": []
 		},
 		{
 			"offsets": [0, 0],
 			"indices": [],
 			"fps": 2,
-			"anim": "pose1",
+			"anim": "pose2",
 			"loop": false,
-			"name": "hunte opp/-hunte anims/hunte pose sponge"
+			"name": "hunte opp/-hunte anims/hunte pose mario"
 		}
 	],
 	"vocals_file": "",
