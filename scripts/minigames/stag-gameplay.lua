@@ -851,8 +851,8 @@ function onTimerCompleted(tag, left, elp)
         font:setTextString("amTxt", calcAMPM(curTime+(21600*(curQtr-1)), true, false))
         font:setTextString("statusTimeTxt", calcAMPM(curTime+(21600*(curQtr-1)), false, true))
     elseif (tag == "ambnoises") then
-        runTimer("ambnoises", getRandomInt(5, 5))
-        if (getRandomInt(1,1) ~= 1) then return end
+        runTimer("ambnoises", getRandomInt(5, 15))
+        if (getRandomInt(0,15) ~= 0) then return end
 
         local amb = {"clicks", "drip", "drippy", "pop", "shh", "stupid", "wind", "stupidphoneihate"}
         playSound(aFld..amb[getRandomInt(1,#amb)], getRandomFloat(0.05, 0.2))

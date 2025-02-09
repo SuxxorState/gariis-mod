@@ -1,0 +1,267 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "idle",
+			"indices": [],
+			"name": "truckcoupl idle"
+		},
+		{
+			"loop": false,
+			"offsets": [
+				39,
+				850
+			],
+			"anim": "catchGF",
+			"fps": 24,
+			"name": "truckboy catch girl",
+			"indices": []
+		},
+		{
+			"offsets": [
+				-6,
+				-3
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "truckcoupl left"
+		},
+		{
+			"offsets": [
+				-33,
+				-20
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "truckcoupl down"
+		},
+		{
+			"offsets": [
+				-13,
+				195
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singUP",
+			"indices": [],
+			"name": "truckcoupl up"
+		},
+		{
+			"offsets": [
+				-86,
+				0
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "truckcoupl right"
+		},
+		{
+			"offsets": [
+				4,
+				0
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFTmiss",
+			"indices": [],
+			"name": "truckcoupl misleft"
+		},
+		{
+			"offsets": [
+				-27,
+				-16
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWNmiss",
+			"indices": [],
+			"name": "truckcoupl missdown"
+		},
+		{
+			"offsets": [
+				-8,
+				194
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singUPmiss",
+			"indices": [],
+			"name": "truckcoupl missup"
+		},
+		{
+			"offsets": [
+				-77,
+				0
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHTmiss",
+			"indices": [],
+			"name": "truckcoupl missright"
+		},
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "idle-smug",
+			"indices": [],
+			"name": "truckcoupl smug idle"
+		},
+		{
+			"offsets": [
+				-6,
+				-3
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFT-smug",
+			"indices": [],
+			"name": "truckcoupl smuggin left"
+		},
+		{
+			"offsets": [
+				-33,
+				-20
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWN-smug",
+			"indices": [],
+			"name": "truckcoupl smug down"
+		},
+		{
+			"offsets": [
+				-13,
+				195
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singUP-smug",
+			"indices": [],
+			"name": "truckcoup smg uped"
+		},
+		{
+			"offsets": [
+				-86,
+				0
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHT-smug",
+			"indices": [],
+			"name": "truckcou p smugg right"
+		},
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "idle-confused",
+			"indices": [],
+			"name": "truckcoupl confus idl"
+		},
+		{
+			"offsets": [
+				-6,
+				-3
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFT-confused",
+			"indices": [],
+			"name": "truckcoupl cnof left"
+		},
+		{
+			"offsets": [
+				-33,
+				-20
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWN-confused",
+			"indices": [],
+			"name": "truckcoupl vonfused down"
+		},
+		{
+			"offsets": [
+				-13,
+				195
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singUP-confused",
+			"indices": [],
+			"name": "truckcoupl confusd ip"
+		},
+		{
+			"offsets": [
+				-86,
+				0
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHT-confused",
+			"indices": [],
+			"name": "truckcoupl fonf rite"
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-54,
+				2
+			],
+			"anim": "hey",
+			"fps": 24,
+			"name": "truckcoupl hey pose",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				4,
+				9
+			],
+			"anim": "wink",
+			"fps": 24,
+			"name": "truckcoupl wink",
+			"indices": []
+		}
+	],
+	"vocals_file": "PlrEasy",
+	"no_antialiasing": false,
+	"image": "characters/truckerboy-girl",
+	"position": [
+		-108,
+		265
+	],
+	"healthicon": "truckboy",
+	"flip_x": true,
+	"healthbar_colors": [
+		78,
+		127,
+		175
+	],
+	"camera_position": [
+		30,
+		-432.5
+	],
+	"sing_duration": 4,
+	"scale": 1,
+	"_editor_isPlayer": true
+}

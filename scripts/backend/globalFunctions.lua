@@ -111,6 +111,7 @@ function fixTheDamnStrums()
 end
 
 local usedPoses = {}
+local maxPoses = 4
 function opponentNoteHit(id, dir, ntype)
     if (ntype == "Missed Note") then
         setProperty("health", getProperty("health") + (0.0475 / hpMultiplier) / healthLossMult)
@@ -119,11 +120,12 @@ function opponentNoteHit(id, dir, ntype)
         setProperty("health", getProperty("health") - hpDrain)
     end
     if (ntype == "Pose Note") then
-        local maxPoses = 3
         local rngNum = getRandomInt(1,maxPoses, table.concat(usedPoses, ","))
 
+        triggerEvent("Play Animation", "pose"..rngNum, "dad") --this triggers any effects that the scripts have on play anims, like the speech bubbles hiding themselves
         playAnim("dad", "pose"..rngNum, true)
         for _,chr in pairs(getVar("extraOppList")) do
+            triggerEvent("Extra Char Play Anim", "pose"..rngNum, chr)
             playAnim(chr, "pose"..rngNum, true)
         end
         if (#usedPoses >= maxPoses-1) then usedPoses = {} end
@@ -165,16 +167,22 @@ function onUpdate(elapsed)
     end
 
     if (getModSetting('gariiDebug')) then
-        if (keyboardJustPressed("F1")) then callMethod("setSongTime", {getPropertyFromClass("backend.Conductor", "songPosition") + 5000}) --this debug function is held together by like thin ass string, the fact that it even works is insane
+        if (keyboardJustPressed("F5")) then 
+            setPropertyFromClass("states.PlayState", "nextReloadAll", true)
+            restartSong()
+        end
+        if (keyboardJustPressed("F6")) then callMethod("setSongTime", {getPropertyFromClass("backend.Conductor", "songPosition") + 5000}) --this debug function is held together by like thin ass string, the fact that it even works is insane
             callMethod("clearNotesBefore", {getPropertyFromClass("backend.Conductor", "songPosition")}) 
         end
-        if (keyboardJustPressed("F2")) then callMethod("setSongTime", {getPropertyFromClass("backend.Conductor", "songPosition") + 10000})
+        if (keyboardJustPressed("F7")) then callMethod("setSongTime", {getPropertyFromClass("backend.Conductor", "songPosition") + 10000})
             callMethod("clearNotesBefore", {getPropertyFromClass("backend.Conductor", "songPosition")}) 
         end
-        if (keyboardJustPressed("F3")) then endSong() end
-        if (keyboardJustPressed("F4")) then exitSong() end --anti softlock
-        if (keyboardJustPressed("F5")) then restartSong() end
-        if (keyboardJustPressed("F6")) then callMethod("setSongTime", {136000})
+        if (keyboardJustPressed("F8")) then endSong() end
+        if (keyboardJustPressed("F9")) then exitSong() end --anti softlock
+        if (keyboardJustPressed("F10")) then callMethod("setSongTime", {136000}) --fullhouse blackout
+            callMethod("clearNotesBefore", {getPropertyFromClass("backend.Conductor", "songPosition")}) 
+        end
+        if (keyboardJustPressed("F11")) then callMethod("setSongTime", {58000}) --fullhouse taunt test
             callMethod("clearNotesBefore", {getPropertyFromClass("backend.Conductor", "songPosition")}) 
         end
     else

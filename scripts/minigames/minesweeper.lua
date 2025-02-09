@@ -130,6 +130,8 @@ function onUpdate()
      end
 
     if ((mouseReleased() or mouseReleased("right")) and utils:mouseWithinBounds({getProperty("smileyicon.x"),getProperty("smileyicon.y"), getProperty("smileyicon.x")+getProperty("smileyicon.width"),getProperty("smileyicon.y")+getProperty("smileyicon.height")}, "hud")) then
+        cancelTimer("delayboom")
+        stopSound("winmusic")
         setupGame()
     end
 
@@ -249,7 +251,7 @@ function winStuff()
     canPlay = false
     cancelTimer("timerup")
     playAnim("smileyicon", diff.."-win")
-    playSound("results/resultsEXCELLENT")
+    playSound("results/resultsEXCELLENT", 1, "winmusic")
 end
 
 function checkForOptimalStartPos()
@@ -317,6 +319,7 @@ end
 function onDestroy()
     canPlay = false
     setProperty("camHUD.zoom", 1)
+    stopSound("winmusic")
     for _,tmr in pairs({"delayboom", "timerup", "destroy"}) do cancelTimer(tmr) end
     for _,spr in pairs({"blankBG", "minebgbgbg", "minebgbg", "minebg", "timeicon", "mineicon", "smileyicon", "grass"}) do removeLuaSprite(spr) end
     for i = 1,height do

@@ -1,0 +1,471 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [0, 0],
+			"anim": "hey-fake",
+			"fps": 24,
+			"name": "-anims/fake/garii fake taunt",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [0, 0],
+			"anim": "hey-fake-alt",
+			"fps": 24,
+			"name": "-anims/fake/garii player garii taunt",
+			"indices": []
+		},
+		{
+			"offsets": [0, 0],
+			"loop": false,
+			"fps": 24,
+			"anim": "idle-fake",
+			"indices": [],
+			"name": "-anims/fake/garii idle faking"
+		},
+		{
+			"offsets": [-5, -6],
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFT-fake",
+			"indices": [],
+			"name": "-anims/fake/gari fake left"
+		},
+		{
+			"offsets": [19, -44],
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWN-fake",
+			"indices": [],
+			"name": "-anims/fake/gari fake downe"
+		},
+		{
+			"offsets": [0, -5],
+			"loop": false,
+			"fps": 24,
+			"anim": "singUP-fake",
+			"indices": [],
+			"name": "-anims/fake/gari faked up"
+		},
+		{
+			"offsets": [-31, -7],
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHT-fake",
+			"indices": [],
+			"name": "-anims/fake/gari fake rite"
+		},
+		{
+			"offsets": [-2, 0],
+			"loop": false,
+			"fps": 24,
+			"anim": "equipGUN",
+			"indices": [],
+			"name": "-anims/reg/garii whip it out"
+		},
+		{
+			"offsets": [0, 0],
+			"loop": false,
+			"fps": 24,
+			"anim": "idle",
+			"indices": [],
+			"name": "-anims/reg/garii idle maybe"
+		},
+		{
+			"offsets": [11, -15],
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "-anims/reg/gari left"
+		},
+		{
+			"offsets": [-14, -9],
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "-anims/reg/garii down pose"
+		},
+		{
+			"loop": true,
+			"offsets": [-14, -9],
+			"anim": "singDOWN-loop",
+			"fps": 24,
+			"name": "-anims/reg/garii down pose",
+			"indices": [2, 3, 4, 5, 6, 7]
+		},
+		{
+			"loop": false,
+			"offsets": [-6, 19],
+			"anim": "singUP",
+			"fps": 24,
+			"name": "-anims/reg/gari up",
+			"indices": []
+		},
+		{
+			"loop": true,
+			"offsets": [-6, 19],
+			"anim": "singUP-loop",
+			"fps": 24,
+			"name": "-anims/reg/gari up",
+			"indices": [2, 3, 4, 5, 6, 7]
+		},
+		{
+			"offsets": [-13, 1],
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "-anims/reg/gari righte"
+		},
+		{
+			"offsets": [11, -15],
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFTmiss",
+			"indices": [],
+			"name": "-anims/reg/gari miss left"
+		},
+		{
+			"offsets": [-14, -9],
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWNmiss",
+			"indices": [],
+			"name": "-anims/reg/garii downed and sad"
+		},
+		{
+			"loop": false,
+			"offsets": [-6, 19],
+			"anim": "singUPmiss",
+			"fps": 24,
+			"name": "-anims/reg/gari fucked up",
+			"indices": []
+		},
+		{
+			"offsets": [-13, 1],
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHTmiss",
+			"indices": [],
+			"name": "-anims/reg/gari missed rite"
+		},
+		{
+			"offsets": [0, 0],
+			"loop": false,
+			"fps": 24,
+			"anim": "hey",
+			"indices": [],
+			"name": "-anims/reg/garii taunt"
+		},
+		{
+			"loop": false,
+			"offsets": [0, 0],
+			"anim": "idle-side",
+			"fps": 24,
+			"name": "-anims/side/garii side looking idle",
+			"indices": []
+		},
+		{
+			"offsets": [11, -15],
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFT-side",
+			"indices": [],
+			"name": "-anims/reg/gari left"
+		},
+		{
+			"offsets": [-14, -9],
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWN-side",
+			"indices": [],
+			"name": "-anims/side/garii side down pose"
+		},
+		{
+			"loop": true,
+			"offsets": [-14, -9],
+			"anim": "singDOWN-side-loop",
+			"fps": 24,
+			"name": "-anims/side/garii side down pose",
+			"indices": [2, 3, 4, 5, 6, 7]
+		},
+		{
+			"offsets": [-6, 19],
+			"loop": false,
+			"fps": 24,
+			"anim": "singUP-side",
+			"indices": [],
+			"name": "-anims/side/gari side up"
+		},
+		{
+			"loop": true,
+			"offsets": [-6, 19],
+			"anim": "singUP-side-loop",
+			"fps": 24,
+			"name": "-anims/side/gari side up",
+			"indices": [2, 3, 4, 5, 6, 7]
+		},
+		{
+			"offsets": [-13, 1],
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHT-side",
+			"indices": [],
+			"name": "-anims/side/gari side rite"
+		},
+		{
+			"offsets": [0, 0],
+			"loop": false,
+			"fps": 24,
+			"anim": "idle-shaking",
+			"indices": [],
+			"name": "-anims/snide/garii literally vibrating"
+		},
+		{
+			"offsets": [0, 0],
+			"loop": false,
+			"fps": 24,
+			"anim": "wtfBOOM",
+			"indices": [],
+			"name": "-anims/snide/garii watdafakboom"
+		},
+		{
+			"offsets": [0, 0],
+			"loop": false,
+			"fps": 24,
+			"anim": "idle-snide",
+			"indices": [],
+			"name": "-anims/snide/garii trying to idle"
+		},
+		{
+			"offsets": [0, 0],
+			"loop": true,
+			"fps": 24,
+			"anim": "idle-snide-loop",
+			"indices": [8, 9, 10, 11, 12, 13],
+			"name": "-anims/snide/garii trying to idle"
+		},
+		{
+			"offsets": [0, 0],
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFT-snide",
+			"indices": [],
+			"name": "-anims/snide/garii left pretty bad"
+		},
+		{
+			"offsets": [0, 0],
+			"loop": true,
+			"fps": 24,
+			"anim": "singLEFT-snide-loop",
+			"indices": [4, 5, 6, 7],
+			"name": "-anims/snide/garii left pretty bad"
+		},
+		{
+			"offsets": [0, 0],
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWN-snide",
+			"indices": [],
+			"name": "-anims/snide/garii down down down"
+		},
+		{
+			"offsets": [0, 0],
+			"loop": true,
+			"fps": 24,
+			"anim": "singDOWN-snide-loop",
+			"indices": [4, 5, 6, 7],
+			"name": "-anims/snide/garii down down down"
+		},
+		{
+			"offsets": [0, 0],
+			"loop": false,
+			"fps": 24,
+			"anim": "singUP-snide",
+			"indices": [],
+			"name": "-anims/snide/garii up himself"
+		},
+		{
+			"offsets": [0, 0],
+			"loop": true,
+			"fps": 24,
+			"anim": "singUP-snide-loop",
+			"indices": [4, 5, 6, 7],
+			"name": "-anims/snide/garii up himself"
+		},
+		{
+			"offsets": [0, 0],
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHT-snide",
+			"indices": [],
+			"name": "-anims/snide/garii hes rite ya know"
+		},
+		{
+			"offsets": [0, 0],
+			"loop": true,
+			"fps": 24,
+			"anim": "singRIGHT-snide-loop",
+			"indices": [4, 5, 6, 7],
+			"name": "-anims/snide/garii hes rite ya know"
+		},
+		{
+			"offsets": [-35, -23],
+			"loop": false,
+			"fps": 24,
+			"anim": "raiseGUN",
+			"indices": [],
+			"name": "-anims/ticked/garii gettin pretty mad"
+		},
+		{
+			"offsets": [-35, -23],
+			"loop": true,
+			"fps": 24,
+			"anim": "raiseGUN-loop",
+			"indices": [12, 13],
+			"name": "-anims/ticked/garii gettin pretty mad"
+		},
+		{
+			"offsets": [-35, -23],
+			"loop": false,
+			"fps": 24,
+			"anim": "idle-pissed",
+			"indices": [],
+			"name": "-anims/ticked/garii idle pissed the fuck off"
+		},
+		{
+			"loop": true,
+			"offsets": [-35, -23],
+			"anim": "idle-pissed-loop",
+			"fps": 24,
+			"name": "-anims/ticked/garii idle pissed the fuck off",
+			"indices": [8, 9, 10, 11, 12, 13]
+		},
+		{
+			"offsets": [-22, -28],
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFT-pissed",
+			"indices": [],
+			"name": "-anims/ticked/garii left pepe pose"
+		},
+		{
+			"offsets": [-22, -28],
+			"loop": true,
+			"fps": 24,
+			"anim": "singLEFT-pissed-loop",
+			"indices": [4, 5, 6, 7, 8, 9],
+			"name": "-anims/ticked/garii left pepe pose"
+		},
+		{
+			"offsets": [-47, -24],
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWN-pissed",
+			"indices": [],
+			"name": "-anims/ticked/garii donn piss"
+		},
+		{
+			"offsets": [-47, -24],
+			"loop": true,
+			"fps": 24,
+			"anim": "singDOWN-pissed-loop",
+			"indices": [4, 5, 6, 7, 8, 9],
+			"name": "-anims/ticked/garii donn piss"
+		},
+		{
+			"offsets": [-33, 9],
+			"loop": false,
+			"fps": 24,
+			"anim": "singUP-pissed",
+			"indices": [],
+			"name": "-anims/ticked/garii ups pee"
+		},
+		{
+			"offsets": [-33, 9],
+			"loop": true,
+			"fps": 24,
+			"anim": "singUP-pissed-loop",
+			"indices": [4, 5, 6, 7, 8, 9],
+			"name": "-anims/ticked/garii ups pee"
+		},
+		{
+			"offsets": [-48, -23],
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHT-pissed",
+			"indices": [],
+			"name": "-anims/ticked/garii rihte urine"
+		},
+		{
+			"offsets": [-48, -23],
+			"loop": true,
+			"fps": 24,
+			"anim": "singRIGHT-pissed-loop",
+			"indices": [4, 5, 6, 7, 8, 9],
+			"name": "-anims/ticked/garii rihte urine"
+		},
+		{
+			"offsets": [-35, -23],
+			"loop": true,
+			"fps": 24,
+			"anim": "provoked",
+			"indices": [],
+			"name": "-anims/ticked/garii provoked"
+		},
+		{
+			"offsets": [0, 0],
+			"loop": false,
+			"fps": 24,
+			"anim": "idle-done",
+			"indices": [],
+			"name": "-anims/uninterested/garii done with idle"
+		},
+		{
+			"offsets": [0, 0],
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFT-done",
+			"indices": [],
+			"name": "-anims/uninterested/garii left but done"
+		},
+		{
+			"offsets": [0, 0],
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWN-done",
+			"indices": [],
+			"name": "-anims/uninterested/garii down doned"
+		},
+		{
+			"offsets": [0, 0],
+			"loop": false,
+			"fps": 24,
+			"anim": "singUP-done",
+			"indices": [],
+			"name": "-anims/uninterested/garii up and out pose"
+		},
+		{
+			"offsets": [0, 0],
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHT-done",
+			"indices": [],
+			"name": "-anims/uninterested/garii right and done"
+		}
+	],
+	"vocals_file": "OppEasy",
+	"no_antialiasing": false,
+	"image": "characters/garii",
+	"position": [-44, 243],
+	"healthicon": "gar",
+	"flip_x": false,
+	"healthbar_colors": [51, 51, 51],
+	"camera_position": [-180, 60],
+	"sing_duration": 4,
+	"scale": 1,
+	"_editor_isPlayer": false
+}

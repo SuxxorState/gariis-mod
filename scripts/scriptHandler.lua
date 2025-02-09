@@ -17,6 +17,7 @@ if (not errored) then
     utils = (require (getVar("folDir").."scripts.backend.utils")):new()
     
     addLuaScript(bkend..'globalFunctions')
+    addLuaScript(bkend.."achievementStalker")
     if (not stringStartsWith(version, "1.0")) then addLuaScript(objts..'customSoundTray') end
     addLuaScript(objts..'stickerTrans')
     addLuaScript(objts..'cursor')

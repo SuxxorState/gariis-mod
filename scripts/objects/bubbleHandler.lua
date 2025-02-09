@@ -132,6 +132,7 @@ end
 function bubbleAnimate(char, anim)
     if not (utils:tableContains(bubbleCharAnims[char], "bubble"..anim)) then
         setProperty(char.."Bubbles.alpha", 0)
+        utils:trc("bubbleHandler: No bubble animation found for "..anim.." ("..char..")", 2)
         return 
     end
 
