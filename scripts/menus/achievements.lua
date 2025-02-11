@@ -1,56 +1,52 @@
-local utils = (require (getVar("folDir").."scripts.backend.utils")):new() 
+local utils = (require (getVar("folDir").."scripts.backend.utils")):new()
+
+local categories = {
+    {"Garii's Mod", {"fuzzy-dice-fc","full-house-fc","episode-ii-fc","story-deaths","no-pose"}},
+    {"SKOBELOFF CASINO", {"100k-chips","true-bjs","tb-foak","no-fish"}},
+    {"Some Time At Garii's", {"stag-quarters","no-power-save","no-doors-save","the-yapper","stag-deaths"}},
+    {"Bushtrimmer", {"bt-simple","bt-5simple","bt-speedy","bt-expert","bt-5expert","bt-exp-speed"}},
+    {"Fuzzlings!", {"fl-everyfruit","fl-everytrash","fl-16levels","fl-64levels","fl-deaths"}}
+}
 local achievements = {
-    ["garii's-mod"] = {
-        {save = "fuzzy-dice-fc", title = "Capicola Gang", description = "100% Clear Fuzzy Dice", iconFile = "fuzzydice", secret = false, gariiPoints = 10},
-        {save = "full-house-fc", title = "The Power Of Two", description = "100% Clear Full House", iconFile = "", secret = false, gariiPoints = 10},
-        {save = "episode-ii-fc", title = "Show Off", description = "100% Clear Episode ][ without dying once", iconFile = "", secret = false, gariiPoints = 25},
+    ["fuzzy-dice-fc"] = {title = "Capicola Gang", description = "100% Clear Fuzzy Dice", iconFile = "fuzzydice", secret = false, gariiPoints = 10},
+    ["full-house-fc"] = {title = "The Power Of Two", description = "100% Clear Full House", iconFile = "fullhouse", secret = false, gariiPoints = 10},
+    ["episode-ii-fc"] = {title = "Show Off", description = "100% Clear Episode ][ without dying once", iconFile = "episodeii", secret = false, gariiPoints = 25},
 
-        --{save = "fuzzy-dice-rm-fc", title = "All Bark No Bite", description = "100% Clear Fuzzy Dice rematch", iconFile = "", secret = false, gariiPoints = 20},
-        --{save = "full-house-rm-fc", title = "Decked Out", description = "100% Clear Full House rematch", iconFile = "", secret = false, gariiPoints = 20},
-        --{save = "episode-ii-rm-fc", title = "You Made Your Point", description = "100% Clear Episode ][ rematch without dying once", iconFile = "", secret = false, gariiPoints = 50},
+    --["fuzzy-dice-rm-fc"] = {title = "All Bark No Bite", description = "100% Clear Fuzzy Dice rematch", iconFile = "", secret = false, gariiPoints = 20},
+    --["full-house-rm-fc"] = {title = "Decked Out", description = "100% Clear Full House rematch", iconFile = "", secret = false, gariiPoints = 20},
+    --["episode-ii-rm-fc"] = {title = "You Made Your Point", description = "100% Clear Episode ][ rematch without dying once", iconFile = "", secret = false, gariiPoints = 50},
 
-        {save = "story-deaths", title = "The Part Where He Kills You", description = "Experience every possible death Episode ][ has to offer", iconFile = "portal2", secret = false, gariiPoints = 25},
-        {save = "no-pose", title = "Not Feelin' It", description = "Beat Full House without ever hitting a pose note", iconFile = "", secret = false, gariiPoints = 10},
-    },
+    ["story-deaths"] = {title = "The Part Where He Kills You", description = "Experience every possible death Episode ][ has to offer", iconFile = "portal2", secret = false, gariiPoints = 25},
+    ["no-pose"] = {title = "Not Feelin' It", description = "Beat Full House without ever hitting a pose note", iconFile = "poseless", secret = false, gariiPoints = 10},
 
-    ["skobeloff-casino"] = {
-        {save = "100k-chips", title = "The Big Cheese", description = "Get one hundred thousand or more poker chips in the casino", iconFile = "", secret = false, gariiPoints = 50},
-        {save = "true-bjs", title = "The House Is Cheating!", description = "End in a draw with both you and the house having a true blackjack", iconFile = "", secret = false, gariiPoints = 25},
-        {save = "tb-foak", title = "Planet X", description = "Get the highest Five of a Kind you can get in Picture poker", iconFile = "", secret = false, gariiPoints = 25},
-        {save = "no-fish", title = "Go...Fish?", description = "It doesn't exist. You're hallucinating.", iconFile = "", secret = false, gariiPoints = 10},
-    },
+    ["100k-chips"] = {title = "The Big Cheese", description = "Get one hundred thousand or more poker chips in the casino", iconFile = "", secret = false, gariiPoints = 50},
+    ["true-bjs"] = {title = "The House Is Cheating!", description = "End in a draw with both you and the house having a true blackjack", iconFile = "cheating", secret = false, gariiPoints = 25},
+    ["tb-foak"] = {title = "Planet X", description = "Get the highest Five of a Kind you can get in Picture Poker", iconFile = "", secret = false, gariiPoints = 25},
+    ["no-fish"] = {title = "Go...Fish?", description = "It doesn't exist. You're hallucinating.", iconFile = "", secret = false, gariiPoints = 10},
 
-    ["some-time-at-garii's"] = {
-        {save = "stag-quarters", title = "Dollar Fitty", description = "Survive all six quarters at Garii's Manor", iconFile = "", secret = false, gariiPoints = 50},
-        {save = "no-power-save", title = "Saved By The Bell", description = "Hit the end of a quarter whilst in a blackout", iconFile = "", secret = false, gariiPoints = 25},
-        {save = "no-doors-save", title = "Lino's Bad Day", description = "Hit the end of a quarter with all three of your doors disabled", iconFile = "", secret = false, gariiPoints = 20},
-        {save = "the-yapper", title = "Keep Talking and I'll Explode", description = "Skip every Garii broadcast", iconFile = "", secret = false, gariiPoints = 10},
-        {save = "stag-deaths", title = "Rocket Science", description = "Die to every lethal character at Garii's Manor", iconFile = "", secret = false, gariiPoints = 20},
-        --{save = "stag-7-20", title = "7/20 Blazin", description = "Survive Night-mare at Garii's Manor", iconFile = "", secret = false, gariiPoints = 75},
-    },
+    ["stag-quarters"] = {title = "Dollar Fitty", description = "Survive all six quarters at Garii's Manor", iconFile = "", secret = false, gariiPoints = 50},
+    ["no-power-save"] = {title = "Saved By The Bell", description = "Hit the end of a quarter whilst in a blackout", iconFile = "", secret = false, gariiPoints = 25},
+    ["no-doors-save"] = {title = "Lino's Bad Day", description = "Hit the end of a quarter with all three of your doors disabled", iconFile = "", secret = false, gariiPoints = 20},
+    ["the-yapper"] = {title = "Keep Talking and I'll Explode", description = "Skip every Garii broadcast", iconFile = "", secret = false, gariiPoints = 10},
+    ["stag-deaths"] = {title = "Rocket Science", description = "Die to every lethal character at Garii's Manor", iconFile = "", secret = false, gariiPoints = 20},
+    --["stag-7-20"] = {title = "7/20 Blazin", description = "Survive Night-mare at Garii's Manor", iconFile = "", secret = false, gariiPoints = 75},
 
-    ["bushtrimmer"] = {
-        {save = "bt-simple", title = "Who Put These Here?", description = "Beat a round of Bushtrimmer", iconFile = "mine", secret = false, gariiPoints = 10},
-        {save = "bt-5simple", title = "Handle With Care", description = "Beat 5 rounds of Bushtrimmer", iconFile = "flag", secret = false, gariiPoints = 25},
-        {save = "bt-speedy", title = "Little Smiley Face", description = "Beat a round of Bushtrimmer in under a minute", iconFile = "smiley", secret = false, gariiPoints = 20},
-        {save = "bt-expert", title = "Minefield in a Bush", description = "Beat a round of Bushtrimmer on Expert", iconFile = "mine-bush", secret = false, gariiPoints = 25},
-        {save = "bt-5expert", title = "Clusterluck", description = "Beat 5 rounds of Bushtrimmer in a row on Expert", iconFile = "boom", secret = false, gariiPoints = 50},
-        {save = "bt-exp-speed", title = "Horticulturist", description = "Beat a round of Bushtrimmer on Expert in under two minutes", iconFile = "shears", secret = false, gariiPoints = 75},
-    },
-    
-    ["fuzzlings!"] = {
-        {save = "fl-everyfruit", title = "Pic-a-nic Basket", description = "Gather Every Food and Drink in Fuzzlings!", iconFile = "", secret = false, gariiPoints = 10},
-        {save = "fl-everytrash", title = "Junkyard", description = "Collect Every Type of Trash in Fuzzlings!", iconFile = "", secret = false, gariiPoints = 25},
-        {save = "fl-16levels", title = "Salad Dressing", description = "Beat 16 Levels in Fuzzlings!", iconFile = "", secret = false, gariiPoints = 20},
-        {save = "fl-64levels", title = "Sandwich Tower", description = "Beat 64 Levels in Fuzzlings!", iconFile = "", secret = false, gariiPoints = 50},
-        --{save = "fl-256levels", title = "Byte Overflow", description = "Beat the 256/0th Level in Fuzzlings!", iconFile = "", secret = false, gariiPoints = 100},
-        --{save = "fl-512levels", title = "Exquisitely Stuffed", description = "Beat the 256/0th Level With Both Boy and Girl", iconFile = "", secret = false, gariiPoints = 250},
-        {save = "fl-deaths", title = "Knuckle Sandwich", description = "Die to every fuzzling as both Boy and Girl", iconFile = "", secret = false, gariiPoints = 25},
-    }
+    ["bt-simple"] = {title = "Who Put These Here?", description = "Clear your first round.", iconFile = "mine", secret = false, gariiPoints = 10},
+    ["bt-5simple"] = {title = "Handle With Care", description = "Clear 5 rounds.", iconFile = "flag", secret = false, gariiPoints = 25},
+    ["bt-speedy"] = {title = "Little Smiley Face", description = "Clear a round in under a minute.", iconFile = "smiley", secret = false, gariiPoints = 20},
+    ["bt-expert"] = {title = "Minefield in a Bush", description = "Clear your first round on Expert.", iconFile = "mine-bush", secret = false, gariiPoints = 25},
+    ["bt-5expert"] = {title = "Clusterluck", description = "Clear 5 rounds in a row on Expert.", iconFile = "boom", secret = false, gariiPoints = 50},
+    ["bt-exp-speed"] = {title = "Horticulturist", description = "Clear a round on Expert in under two minutes.", iconFile = "shears", secret = false, gariiPoints = 75},
+
+    ["fl-everyfruit"] = {title = "Pic-a-nic Basket", description = "Gather Every Food and Drink", iconFile = "", secret = false, gariiPoints = 10},
+    ["fl-everytrash"] = {title = "Junkyard", description = "Collect Every Type of Trash", iconFile = "", secret = false, gariiPoints = 25},
+    ["fl-16levels"] = {title = "Salad Dressing", description = "Beat 16 Levels", iconFile = "", secret = false, gariiPoints = 20},
+    ["fl-64levels"] = {title = "Sandwich Tower", description = "Beat 64 Levels", iconFile = "", secret = false, gariiPoints = 50},
+    --["fl-256levels"] = {title = "Byte Overflow", description = "Beat the 256/0th Level in Fuzzlings!", iconFile = "", secret = false, gariiPoints = 100},
+    --["fl-512levels"] = {title = "Exquisitely Stuffed", description = "Beat the 256/0th Level With Both Boy and Girl", iconFile = "", secret = false, gariiPoints = 250},
+    ["fl-deaths"] = {title = "Knuckle Sandwich", description = "Die to every fuzzling as both Boy and Girl", iconFile = "", secret = false, gariiPoints = 25},
 }
 
-local falseSave = {["garii's-mod"] = {{true, 1737474278}, nil, nil, {true, 1737474278}, {true, 1937474278}}, ["bushtrimmer"] = {{true, 1737474278}, {true, 1737474278}, {true, 1937474278}, {true, 1937474278}, {true, 1737474278}, {true, 1937474278}}}
-local gameNames = {"Garii's Mod", "Some Time At Garii's", "SKOBELOFF CASINO", "Bushtrimmer", "Fuzzlings!"}
 local megaloEasterEgg, megaloCounter, megaloNotes = false, 1, {1,1,2,1.583, 1.5, 1.4167, 1.25, 1, 1.25, 1.4167}
 local backVariables, scrollVariables, gameVariables = {}, {}, {}
 local offset = {x = 208, y = 90}
@@ -69,7 +65,6 @@ end
 function onCustomSubstateCreate(tag)
     if (tag ~= "achievementsMenu") then return end
     playSound(fold.."openmenu")
-    utils:setGariiData("achievements", falseSave)
 
     makeLuaSprite("menuBlackout")
     makeGraphic("menuBlackout", screenWidth,screenHeight, "000000")
@@ -151,17 +146,17 @@ function onCustomSubstateCreate(tag)
     scaleObject("menuSelectBack", 864, 1)
     quickAddScrollSprite("menuSelectBack")
 
-    for i=1,#gameNames do
+    for i=1,#categories do
         makeLuaSprite("gameIcon"..i, fold.."/icons/game", offset.x+9, offset.y+(68.5*(i-1)) + 5)
         quickAddScrollSprite("gameIcon"..i)
 
-        makeLuaText('gameTitleTxt'..i, gameNames[i])
+        makeLuaText('gameTitleTxt'..i, categories[i][1])
         utils:quickFormatTxt('gameTitleTxt'..i, "segoe.ttf", 25, "000000")
         setProperty('gameTitleTxt'..i..".x", offset.x + 75)
         setProperty('gameTitleTxt'..i..".y", offset.y + math.floor((68.5*(i-1))) + 1)
         quickAddScrollSprite('gameTitleTxt'..i, true)
         
-        makeLuaText('gameUnlockTxt'..i, tallyGameAmt(utils:lwrKebab(gameNames[i])).." of "..(utils:tableLen(achievements[utils:lwrKebab(gameNames[i])])).." Achievements")
+        makeLuaText('gameUnlockTxt'..i, tallyGameAmt(i).." of "..(utils:tableLen(categories[i][2])).." Achievements")
         utils:quickFormatTxt('gameUnlockTxt'..i, "segoe.ttf", 24, "000000")
         setProperty('gameUnlockTxt'..i..".x", offset.x + 75)
         setProperty('gameUnlockTxt'..i..".y", offset.y + math.floor((68.5*(i-1))) + 31)
@@ -172,7 +167,7 @@ function onCustomSubstateCreate(tag)
         addAnimationByPrefix("gariiPointIcon"..i, "desel", "desel")
         quickAddScrollSprite("gariiPointIcon"..i)
 
-        makeLuaText('gariiPointTxt'..i, ""..tallyGameScore(utils:lwrKebab(gameNames[i])))
+        makeLuaText('gariiPointTxt'..i, ""..tallyGameScore(i))
         utils:quickFormatTxt('gariiPointTxt'..i, "segoe.ttf", 24, "000000")
         setProperty('gariiPointTxt'..i..".x", offset.x + (806 - getProperty("gariiPointTxt"..i..".width")))
         setProperty('gariiPointTxt'..i..".y", (offset.y + math.floor((68.5*(i-1))) + 17) - (i%2))
@@ -232,21 +227,21 @@ function onCustomSubstateUpdate(tag)
         if (keyJustPressed("accept")) then 
             playSound(fold.."click")
             scrollMenu = false
-            openGameAchievements(gameNames[curSel])
+            openGameAchievements(categories[curSel])
         end
 
         if (keyJustPressed("ui_up")) then changeSel(-1)
-        elseif (keyJustPressed("ui_down")) then changeSel(1)    
+        elseif (keyJustPressed("ui_down")) then changeSel(1)
         end
     elseif (gameMenu) then
-        if (keyJustPressed("back")) then 
+        if (keyJustPressed("back")) then
             playSound(fold.."declick")
             gameMenu = false
             closeGameAchievements()
         end
 
-        if (keyJustPressed("ui_up") and utils:tableLen(achievements[utils:lwrKebab(gameNames[curSel])]) > 8) then changeAch(-8)
-        elseif (keyJustPressed("ui_down") and utils:tableLen(achievements[utils:lwrKebab(gameNames[curSel])]) > 8) then changeAch(8)   
+        if (keyJustPressed("ui_up") and utils:tableLen(categories[curSel][2]) > 8) then changeAch(-8)
+        elseif (keyJustPressed("ui_down") and utils:tableLen(categories[curSel][2]) > 8) then changeAch(8)
         elseif (keyJustPressed("ui_left")) then changeAch(-1)    
         elseif (keyJustPressed("ui_right")) then changeAch(1)     
         end
@@ -255,7 +250,7 @@ end
 
 function openGameAchievements(game)
     curAch = 1
-    for i,spr in pairs(scrollVariables) do
+    for _,spr in pairs(scrollVariables) do
         doTweenAlpha(spr.."tween", spr, 0, 0.1)
     end
 
@@ -264,7 +259,7 @@ function openGameAchievements(game)
     setProperty("gameTopBox.alpha", 0)
     quickAddGameSprite("gameTopBox")
     
-    makeLuaText('gameNameTxt', game)
+    makeLuaText('gameNameTxt', game[1])
     utils:quickFormatTxt('gameNameTxt', "segoe.ttf", 24, "FFFFFF")
     setProperty('gameNameTxt.x', offset.x + 16)
     setProperty('gameNameTxt.y', offset.y + 13)
@@ -274,25 +269,25 @@ function openGameAchievements(game)
     addAnimationByPrefix("gariiPoints", "sel", "sel")
     quickAddGameSprite("gariiPoints")
 
-    makeLuaText('gameScoreTxt', achievements[utils:lwrKebab(game)][curAch].gariiPoints)
+    makeLuaText('gameScoreTxt', achievements[categories[curSel][2][curAch]].gariiPoints)
     utils:quickFormatTxt('gameScoreTxt', "segoe.ttf", 24, "FFFFFF")
     setProperty('gameScoreTxt.x', offset.x + 416)
     setProperty('gameScoreTxt.y', offset.y + 13)
     quickAddGameSprite('gameScoreTxt', true)
     
-    makeLuaText('achDateTxt', os.date("%m".."/".."%d".."/".."%Y", getAchievementSave(utils:lwrKebab(game), 1)[2]):upper())
+    makeLuaText('achDateTxt', "99/99/9999")
     utils:quickFormatTxt('achDateTxt', "segoe.ttf", 24, "BFC8CD")
     setProperty('achDateTxt.x', offset.x + 416)
     setProperty('achDateTxt.y', offset.y + 47)
     quickAddGameSprite('achDateTxt', true)
 
-    makeLuaText('achNameTxt', achievements[utils:lwrKebab(game)][curAch].title)
+    makeLuaText('achNameTxt', achievements[categories[curSel][2][curAch]].title)
     utils:quickFormatTxt('achNameTxt', "segoe.ttf", 24, "BFC8CD")
     setProperty('achNameTxt.x', offset.x + 16)
     setProperty('achNameTxt.y', offset.y + 47)
     quickAddGameSprite('achNameTxt', true)
     
-    makeLuaText('descNameTxt', achievements[utils:lwrKebab(game)][curAch].description,0,0,832)
+    makeLuaText('descNameTxt', achievements[categories[curSel][2][curAch]].description,0,0,832)
     utils:quickFormatTxt('descNameTxt', "segoe.ttf", 24, "BFC8CD")
     setProperty('descNameTxt.x', offset.x + 16)
     setProperty('descNameTxt.y', offset.y + 82)
@@ -303,18 +298,18 @@ function openGameAchievements(game)
     setProperty("gameSelectBox.alpha", 0)
     quickAddGameSprite("gameSelectBox")
 
-    for i,stats in pairs(achievements[utils:lwrKebab(game)]) do
-        local saveShit = getAchievementSave(utils:lwrKebab(game), i)
-        local iconThing = "lockedach"
-        if (saveShit[1] == true) then iconThing = "award" end
-        if (checkFileExists("images/"..fold.."icons/"..stats.iconFile..'.png')) then iconThing = stats.iconFile end
+    for i,ach in pairs(categories[curSel][2]) do
+        local saveShit = getAchievementSave(ach)
+        local iconThing = "award"
+        if (checkFileExists("images/"..fold.."icons/"..achievements[ach].iconFile..'.png')) then iconThing = achievements[ach].iconFile end
+        if (saveShit[1] ~= true or saveShit[1] == nil) then iconThing = "lockedach" end
         makeLuaSprite("gameAchievement"..i, fold.."icons/"..iconThing, offset.x + 56 + (((i-1)%8) * 99), offset.y + 193.5 + (math.floor((i-1)/8) * 100))
         setGraphicSize("gameAchievement"..i, 64, 64)
         setProperty("gameAchievement"..i..".alpha", 0)
         quickAddGameSprite("gameAchievement"..i)
     end
 
-    makeLuaText('gameUnlockTxt', tallyGameAmt(utils:lwrKebab(game)).." of "..(utils:tableLen(achievements[utils:lwrKebab(game)])).." unlocked")
+    makeLuaText('gameUnlockTxt', tallyGameAmt(curSel).." of "..(utils:tableLen(categories[curSel][2])).." unlocked")
     utils:quickFormatTxt("gameUnlockTxt", "segoe.ttf", 21, "000000")
     setProperty("gameUnlockTxt.x", offset.x + 36)
     setProperty("gameUnlockTxt.y", (offset.y + 522) - 46)
@@ -339,13 +334,13 @@ end
 function changeSel(inc)
     local lastSel = curSel
     curSel = curSel + inc
-    if (curSel < 1) then curSel = #gameNames
-    elseif (curSel > #gameNames) then curSel = 1
+    if (curSel < 1) then curSel = #categories
+    elseif (curSel > #categories) then curSel = 1
     end
     if (curSel ~= lastSel) then playMoveSound() end
 
     setProperty("menuSelectBack.y", math.min(math.max(offset.y + (68.5 * (curSel-1)), offset.y), offset.y + (68.5 * 6)))
-    for i=1,#gameNames do
+    for i=1,#categories do
         if (curSel == i) then playAnim("gariiPointIcon"..i, "sel")
             setTextColor('gariiPointTxt'..i, "FFFFFF")
             setTextColor('gameTitleTxt'..i, "FFFFFF")
@@ -361,22 +356,33 @@ end
 function changeAch(inc)
     local lastAch = curAch
     curAch = curAch + inc
-    if (curAch < 1) then curAch = utils:tableLen(achievements[utils:lwrKebab(gameNames[curSel])])
-    elseif (curAch > utils:tableLen(achievements[utils:lwrKebab(gameNames[curSel])])) then curAch = 1
+    if (curAch < 1) then curAch = utils:tableLen(categories[curSel][2])
+    elseif (curAch > utils:tableLen(categories[curSel][2])) then curAch = 1
     end
     if (curAch ~= lastAch) then playMoveSound() end
 
     setProperty("gameSelectBox.x", offset.x + 38 + (((curAch-1)%8) * 99))
     setProperty("gameSelectBox.y", offset.y + 175.5 + (math.floor((curAch-1)/8) * 99))
-    setTextString("achNameTxt", achievements[utils:lwrKebab(gameNames[curSel])][curAch].title)
-    setTextString("descNameTxt", achievements[utils:lwrKebab(gameNames[curSel])][curAch].description)
-    local dateUnlock = os.date("%m".."/".."%d".."/".."%Y", getAchievementSave(utils:lwrKebab(gameNames[curSel]), curAch)[2]):upper()
-    if (getAchievementSave(utils:lwrKebab(gameNames[curSel]), curAch)[2] == nil) then dateUnlock = "" end
+
+    local dateUnlock = os.date("%m".."/".."%d".."/".."%Y", getAchievementSave(categories[curSel][2][curAch])[2]):upper()
+    if (getAchievementSave(categories[curSel][2][curAch])[2] == nil) then dateUnlock = "" end
     if (stringStartsWith(dateUnlock, "0")) then dateUnlock = string.sub(dateUnlock, 2, #dateUnlock) end
     setTextString("achDateTxt", dateUnlock)
     setProperty("achDateTxt.x", offset.x + 864 - (getProperty("achDateTxt.width") + 22))
-    setTextString("gameScoreTxt", achievements[utils:lwrKebab(gameNames[curSel])][curAch].gariiPoints)
-    setProperty("gameScoreTxt.x", offset.x + 864 - (getProperty("gameScoreTxt.width") + 50))
+
+    local secret = ((getAchievementSave(categories[curSel][2][curAch])[1] == false or getAchievementSave(categories[curSel][2][curAch])[1] == nil) and (achievements[categories[curSel][2][curAch]].secret))
+    if (secret) then
+        setTextString("achNameTxt", "Secret")
+        setTextString("descNameTxt", "This is a secret achievement. Unlock it to find out more about it.")
+        setTextString("gameScoreTxt", "--")
+        setProperty("gameScoreTxt.x", offset.x + 864 - (getProperty("gameScoreTxt.width") + 20))
+    else
+        setTextString("achNameTxt", achievements[categories[curSel][2][curAch]].title)
+        setTextString("descNameTxt", achievements[categories[curSel][2][curAch]].description)
+        setTextString("gameScoreTxt", achievements[categories[curSel][2][curAch]].gariiPoints)
+        setProperty("gameScoreTxt.x", offset.x + 864 - (getProperty("gameScoreTxt.width") + 50))
+    end
+    setProperty("gariiPoints.visible", not secret)
 end
 
 function playMoveSound()
@@ -390,20 +396,20 @@ function playMoveSound()
     end
 end
 
-function getAchievementSave(cat, ind)
+function getAchievementSave(ach)
     if (utils:getGariiData("achievements") == nil) then utils:setGariiData("achievements", {}) end
     local save = utils:getGariiData("achievements")
-    if (save[cat] == nil or save[cat][ind] == nil) then 
-        return {false, nil} 
+    if (save[ach] == nil) then
+        return {false, nil}
     end
-    return save[cat][ind]
+    return save[ach]
 end
 
 function tallyGameScore(game)
     local score = 0
-    for i,ach in pairs(achievements[game]) do
-        if (getAchievementSave(game,i)[1] == true) then
-            score = score + ach.gariiPoints
+    for _,ach in pairs(categories[game][2]) do
+        if (getAchievementSave(ach)[1] == true) then
+            score = score + achievements[ach].gariiPoints
         end
     end
     return score
@@ -411,15 +417,15 @@ end
 
 function tallyGameAmt(game)
     local score = 0
-    for i,ach in pairs(achievements[game]) do
-        if (getAchievementSave(game,i)[1] == true) then
+    for _,ach in pairs(categories[game][2]) do
+        if (getAchievementSave(ach)[1] == true) then
             score = score + 1
         end
     end
     return score
 end
 
-function onTimerCompleted(tmr, loops, loopsLeft)
+function onTimerCompleted(tmr)
 	if (tmr == 'zoomBoxTimer') then
         zoomBoxCounter = math.min(zoomBoxCounter + (3840/framerate), 864)
         scaleObject("menuZoomBox", zoomBoxCounter, zoomBoxCounter * 522/864)

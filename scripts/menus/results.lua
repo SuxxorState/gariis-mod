@@ -5,12 +5,17 @@ local musicDelays = {["perfect"] = 95/24, ["excellent"] = 0, ["great"] = 5/24, [
 local sauces = {"Whire's Gentle Zest", "Hoppin Honey Mustard", "Outburst", "Garden Grown Habanero", "Shit The Bed", "Solar Flare", "Suxxor's Secret Sauce"}
 local resultsMusic = "results/results"
 local resultsMusicDef = "results/resultsNORMAL"
+local finalRanking = "Shit"
 local bgFrame = 0
 local inResults = false
 local keyPresses = 0
 local scoreMulti = 1
 local canUpdate = true
 local rnkstats = {0,0,0,0,0,0}
+local ratingAccumulation = {0,0,0,0}
+local combinedMiss = (misses - keyPresses)
+local campScr = score
+local ratingPercent = 0
 local percentLerp = 0
 local percentTarget = 0
 
@@ -31,6 +36,7 @@ function onEndSong()
 			return Function_Stop;
 		end
 		updateCampaignStats()
+		calculateEverything()
 	elseif (canUpdate) then utils:exitToMenu()
 		return Function_Stop;
 	end
@@ -39,28 +45,47 @@ end
 function updateCampaignStats()
 	if not isStoryMode then return end
 
-	local rnks = {"sck", "gud", "bd", "sht"}
-	for _,rnk in pairs(rnks) do makeLuaText(rnk..'Txt', "", 0, 20, 0) end
-	runHaxeCode([[
-		var ranks:Array<String> = ["sck", "gud", "bd", "sht"];
-		for (i in 0...4) {
-			game.modchartTexts.get(ranks[i] + "Txt").text += ratingsData[i].hits;
-		}
-	]])
 	if (utils:getGariiData("storyStats") ~= nil) then rnkstats = utils:getGariiData("storyStats") end
-	for i,rnk in pairs(rnks) do rnkstats[i] = rnkstats[i] + tonumber(getTextString(rnk.."Txt")) end
 	rnkstats[5] = rnkstats[5] + (misses - keyPresses)
 	rnkstats[6] = rnkstats[6] + score
 	utils:setGariiData("storyStats", rnkstats)
+end
+
+function goodNoteHit(id)
+	if (getPropertyFromGroup('notes', id, 'rating') == "unknown") then return end
+
+    local ranks = {"sick", "good", "bad", "shit"}
+	if (isStoryMode) then rnkstats[utils:indexOf(ranks, getPropertyFromGroup('notes', id, 'rating'))] = rnkstats[utils:indexOf(ranks, getPropertyFromGroup('notes', id, 'rating'))] + 1 end
+    ratingAccumulation[utils:indexOf(ranks, getPropertyFromGroup('notes', id, 'rating'))] = ratingAccumulation[utils:indexOf(ranks, getPropertyFromGroup('notes', id, 'rating'))] + 1
 end
 
 function noteMissPress()
 	keyPresses = keyPresses + 1
 end
 
+function calculateEverything()
+	if (isStoryMode) then
+		for i= 1,4 do ratingAccumulation[i] = rnkstats[i] end
+		combinedMiss = rnkstats[5]
+		campScr = rnkstats[6]
+	end
+
+	local goods = ratingAccumulation[1] + ratingAccumulation[2]
+	local okays = goods + ratingAccumulation[3] + ratingAccumulation[4]
+	local totals = okays + combinedMiss
+
+	ratingPercent = math.floor((goods/totals)*100)/100
+	if (ratingPercent == 1) then finalRanking = "Perfect"
+	elseif (ratingPercent >= 0.9) then finalRanking = "Excellent"
+	elseif (ratingPercent >= 0.8) then finalRanking = "Great"
+	elseif (ratingPercent >= 0.6) then finalRanking = "Good"
+	end
+end
+
 function onCustomSubstateCreate(tag)
     if tag == "resultsmenu" then
 		updateCampaignStats()
+		calculateEverything()
 		for i=0,2 do
 			makeLuaSprite('bgResults'..i, 'pause/pausebg'..i, 0, 0)
 			setObjectCamera('bgResults'..i, 'other')
@@ -71,45 +96,34 @@ function onCustomSubstateCreate(tag)
 		end
 		runTimer('switchbgFrame', 1)
 
-		makeLuaText('finalRanking', "", 0, -200, 0)
-		
-		makeLuaText('sickTxt', "Sicks: ", 0, 20, 0)
+		makeLuaText('sickTxt', "Sicks: "..ratingAccumulation[1], 0, 20, 0)
 		setTextFont('sickTxt', "Lasting Sketch.ttf")
 		setTextBorder('sickTxt', 2, '000000')
 		addLuaText('sickTxt')
 		setTextSize('sickTxt', 64)
 		setObjectCamera('sickTxt', 'other')
-		
-		makeLuaText('goodTxt', "Goods: ", 0, 20, 75)
+
+		makeLuaText('goodTxt', "Goods: "..ratingAccumulation[2], 0, 20, 75)
 		setTextFont('goodTxt', "Lasting Sketch.ttf")
 		setTextBorder('goodTxt', 2, '000000')
 		addLuaText('goodTxt')
 		setTextSize('goodTxt', 64)
 		setObjectCamera('goodTxt', 'other')
-		
-		makeLuaText('badTxt', "Bads: ", 0, 20, 150)
+
+		makeLuaText('badTxt', "Bads: "..ratingAccumulation[3], 0, 20, 150)
 		setTextFont('badTxt', "Lasting Sketch.ttf")
 		setTextBorder('badTxt', 2, '000000')
 		addLuaText('badTxt')
 		setTextSize('badTxt', 64)
 		setObjectCamera('badTxt', 'other')
-		
-		makeLuaText('shitTxt', "Shits: ", 0, 20, 225)
+
+		makeLuaText('shitTxt', "Shits: "..ratingAccumulation[4], 0, 20, 225)
 		setTextFont('shitTxt', "Lasting Sketch.ttf")
 		setTextBorder('shitTxt', 2, '000000')
 		addLuaText('shitTxt')
 		setTextSize('shitTxt', 64)
 		setObjectCamera('shitTxt', 'other')
-		
-		local combinedMiss = (misses - keyPresses)
-		local campScr = score
-		if (isStoryMode) then 
-			local rnks = {"sicks", "goods", "bads", "shits"}
-			for i,rnk in pairs(rnks) do makeLuaText(rnk, ""..rnkstats[i], 0, 20, 0) end
-			combinedMiss = rnkstats[5]
-			campScr = rnkstats[6]
-			makeLuaText("campScr", ""..campScr, 0, 20, 0)
-		end
+
 		makeLuaText('missTxt', "Misses: "..combinedMiss, 0, 20, 300)
 		setTextFont('missTxt', "Lasting Sketch.ttf")
 		setTextBorder('missTxt', 2, '000000')
@@ -117,15 +131,13 @@ function onCustomSubstateCreate(tag)
 		setTextSize('missTxt', 64)
 		setObjectCamera('missTxt', 'other')
 
-		makeLuaText('totalMisses', ""..combinedMiss, 0,0,0)
-					
 		makeLuaText('scoreTxt', "Score: "..campScr, 0, 20, screenHeight - 210)
 		setTextFont('scoreTxt', "Lasting Sketch.ttf")
 		setTextBorder('scoreTxt', 2, '000000')
 		addLuaText('scoreTxt')
 		setTextSize('scoreTxt', 64)
 		setObjectCamera('scoreTxt', 'other')
-						
+
 		makeLuaText('multTxt', "Diff Multiplier: "..scoreMulti.."x", 0, 20, screenHeight - 160)
 		setTextFont('multTxt', "Lasting Sketch.ttf")
 		setTextBorder('multTxt', 2, '000000')
@@ -139,7 +151,7 @@ function onCustomSubstateCreate(tag)
 		addLuaText('finalScoreTxt')
 		setTextSize('finalScoreTxt', 96)
 		setObjectCamera('finalScoreTxt', 'other')
-		if not (isStoryMode) then setProperty("songScore", math.floor(campScr * scoreMulti)) end				
+		if not (isStoryMode) then setProperty("songScore", math.floor(campScr * scoreMulti)) end
 
 		local curArtist = songArtists[utils.songNameFmt] or "unknown"
 		makeLuaText('songStatTxt', utils.songName.." By "..curArtist, 0, 0, 0)
@@ -149,56 +161,32 @@ function onCustomSubstateCreate(tag)
 		setTextSize('songStatTxt', 48)
 		setObjectCamera('songStatTxt', 'other')
 
-		makeLuaText('clearPercTxt', "", 0, 0, 0)
-		
 		runHaxeCode([[
 			import backend.WeekData;
-			var ranks:Array<String> = ["sick", "good", "bad", "shit"];
-			for (i in 0...4) {
-				if (game.modchartTexts.exists(ranks[i] + "s")) {
-					game.modchartTexts.get(ranks[i] + "Txt").text += game.modchartTexts.get(ranks[i] + "s").text;
-				} else {
-					game.modchartTexts.get(ranks[i] + "Txt").text += ratingsData[i].hits;
-				}
-			}
-			var leltext:FlxText = game.modchartTexts.get("finalRanking");
-			var missedes:Int = Std.parseInt(game.modchartTexts.get("totalMisses").text);
-			var goods:Int = ratingsData[0].hits + ratingsData[1].hits;
-			var okays:Int = goods + ratingsData[2].hits + ratingsData[3].hits;
 			if (PlayState.isStoryMode) {
-				goods = Std.parseInt(game.modchartTexts.get("sicks").text) + Std.parseInt(game.modchartTexts.get("goods").text);
-				okays = goods + Std.parseInt(game.modchartTexts.get("bads").text) + Std.parseInt(game.modchartTexts.get("shits").text);
 				PlayState.storyDifficulty = 0;
 				PlayState.campaignScore = Std.parseInt(game.modchartTexts.get("campScr").text) - game.songScore; //okay to explain this, the second endSong is called again and it isnt roadblocked, it'll add the song score to it, giving a score HIGHER than what should be given. so this fixes that.
 			}
-			var totals:Int = okays + missedes;
-
-			if (goods/totals == 1) leltext.text = "Perfect";
-			else if (goods/totals >= 0.9) leltext.text = "Excellent";
-			else if (goods/totals >= 0.8) leltext.text = "Great";
-			else if (goods/totals >= 0.6) leltext.text = "Good";
-			else leltext.text = "Shit";
 
 			if (PlayState.isStoryMode) {
 				game.modchartTexts.get("songStatTxt").text = WeekData.getCurrentWeek().storyName;
 			}
-
-			game.modchartTexts.get("songStatTxt").text = Math.floor((goods/totals)*100) + "%    " + game.modchartTexts.get("songStatTxt").text;
-			game.ratingPercent = Math.floor((goods/totals)*100)/100;
-			game.modchartTexts.get("clearPercTxt").text = Math.floor((goods/totals)*100);
 		]])
-		if (utils:getGariiData("curSauce") ~= nil) then 
-			setTextString("songStatTxt", sauces[utils:getGariiData("curSauce")].." "..getTextString("songStatTxt"))
+
+		rating = ratingPercent
+		if (utils:getGariiData("curSauce") ~= nil) then setTextString("songStatTxt", sauces[utils:getGariiData("curSauce")].." "..(ratingPercent * 100).."%    "..getTextString("songStatTxt"))
+		else setTextString("songStatTxt", (ratingPercent * 100).."%    "..getTextString("songStatTxt"))
 		end
 		setProperty("songStatTxt.x", screenWidth - (getProperty("songStatTxt.width") + 20))
-				
-		makeLuaSprite('bfFinal', 'results/bf'..getTextString("finalRanking"), 0, 0)
+
+		makeLuaSprite('bfFinal', 'results/bf'..finalRanking, 0, 0)
 		setObjectCamera('bfFinal', 'other')
 		addLuaSprite('bfFinal')
 
-		percentTarget = tonumber(getTextString("clearPercTxt"))
+		percentTarget = ratingPercent * 100
 		percentLerp = percentTarget - 36
 		if percentLerp < 0 then percentLerp = 0 end
+		makeLuaText("clearPercTxt")
 		setTextString("clearPercTxt", "")
 		setTextFont('clearPercTxt', "Lasting Sketch.ttf")
 		setTextBorder('clearPercTxt', 2, '000000')
@@ -208,9 +196,7 @@ function onCustomSubstateCreate(tag)
 		setObjectCamera('clearPercTxt', 'other')
 
 		runTimer("startFuckin", 37 / 24)
-		runTimer("startMusic", musicDelays[getTextString("finalRanking"):lower()] or 0)
-
-		changeSelected(0)
+		runTimer("startMusic", musicDelays[finalRanking:lower()] or 0)
     end
 end
 
@@ -241,14 +227,11 @@ function onCustomSubstateUpdate(tag)
 		]])--song needs to SHUT UP. AND NOT KICK THE PLAYER OUT.
 		if keyJustPressed('back') or keyJustPressed('accept') then
 			canUpdate = false
-			runHaxeCode([[
-				if (game.modchartSounds.exists("resultsMusic")) {
-					FlxTween.tween(game.modchartSounds.get("resultsMusic"), {volume: 0}, 0.8);
-					FlxTween.tween(game.modchartSounds.get("resultsMusic"), {pitch: 3}, 0.1, {onComplete: _ -> { 
-						FlxTween.tween(game.modchartSounds.get("resultsMusic"), {pitch: 0.5}, 0.4); 
-					}});
-			}
-			]])
+			if (luaSoundExists("resultsMusic")) then
+				startTween("resultsMusic", "resultsMusic", {volume = 0}, 0.8)
+				startTween("resultsMusicPitch", "resultsMusic", {pitch = 3}, 0.1)
+				startTween("resultsMusicPitch2", "resultsMusic", {pitch = 0.5}, 0.4, {startDelay = 0.1})
+			end
 			runTimer("endWait", 0.9)
 		end
     end
@@ -269,7 +252,7 @@ function onTimerCompleted(tag, loops, loopsLeft)
 	elseif (tag == "endFuckin") then
 		doTweenAlpha("percAlp", "clearPercTxt", 0, 0.5, "quartOut")
 	elseif (tag == "startMusic") then
-		resultsMusic = resultsMusic..getTextString("finalRanking"):upper()
+		resultsMusic = resultsMusic..finalRanking:upper()
 		if (checkFileExists(getVar("folDir").."sounds/"..resultsMusic.."-intro.ogg", true)) then
 			playSound(resultsMusic.."-intro", 1, 'resultsMusic')
 		elseif (checkFileExists(getVar("folDir").."sounds/"..resultsMusic..".ogg", true)) then playSound(resultsMusic, 1, 'resultsMusic')

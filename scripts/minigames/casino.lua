@@ -100,6 +100,9 @@ function updateChipCount(amt, delay)
     if (delay ~= nil and delay > 0) then canRecalculate = false
         runTimer("chipAddTimer", delay)
     end
+    if (utils:getGariiData("pkrChips") >= 100000) then
+        callOnLuas("unlockAchievement", {"100k-chips"})
+    end
 end
 
 function updateChipVis()

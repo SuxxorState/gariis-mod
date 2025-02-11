@@ -86,7 +86,7 @@ function fixTheDamnStrums()
             else setPropertyFromGroup('strumLineNotes', i, 'x', (screenWidth - 520) + (((i-4) * 95) + 50) - 15)
                 setPropertyFromGroup('strumLineNotes', i, 'y', 85)
             end
-        else 
+        else
             setPropertyFromGroup('strumLineNotes', i, 'x', -254 + (((i-4) * 112) + 50) - 15 + (screenWidth / 2))
             if downscroll then setPropertyFromGroup('strumLineNotes', i, 'y', screenHeight)
                 noteTweenY("noteIntro"..i, i, screenHeight - 120, 1 + (0.1 * (i%4)), "backOut")
