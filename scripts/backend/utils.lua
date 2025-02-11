@@ -11,7 +11,7 @@ function Utils:new() --ive seen videos where they're like "dont make a general c
 
     if stringEndsWith(songName, "-sss") then self.songName = stringSplit(songName, "-s")[1]
     else self.songName = songName end
-    
+
     if stringEndsWith(songName, "-sss") then self.songNameFmt = (stringSplit(songName, "-s")[1]):lower():gsub(" ", "-")
     else self.songNameFmt = (songName):lower():gsub(" ", "-") end
 

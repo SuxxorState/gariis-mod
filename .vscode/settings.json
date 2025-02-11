@@ -1,0 +1,13 @@
+{
+    "Lua.diagnostics.globals": [
+        "keyboardJustPressed",
+        "setPropertyFromClass",
+        "getModSetting",
+        "callMethod",
+        "restartSong"
+    ],
+    "Lua.diagnostics.disable": [
+        "undefined-global",
+        "lowercase-global"
+    ]
+}

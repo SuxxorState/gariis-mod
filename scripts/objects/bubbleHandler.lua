@@ -36,7 +36,7 @@ function onRequestBubble(chr) --checks to see if a txt file exists for a given c
 
         for i,ln in pairs(spltchrtxt) do
             local fln = string.sub(ln, 1, #ln-1) --removes the line break
-            
+
             if (i == 1) then chrref = fln
             elseif (i == 2 and stringSplit(fln, ", ") ~= nil) then noteBubls = stringSplit(fln, ", ")
                 for i,name in pairs(noteBubls) do
@@ -126,14 +126,14 @@ function onEvent(name, value1, value2, strumTime)
 end
 
 function bubbleAnimatePose(char, dir, suff)
-    bubbleAnimate(char, (animDirs[dir+1]:upper())..suff, true)
+    bubbleAnimate(char, (animDirs[dir+1]:upper())..suff)
 end
 
 function bubbleAnimate(char, anim)
     if not (utils:tableContains(bubbleCharAnims[char], "bubble"..anim)) then
         setProperty(char.."Bubbles.alpha", 0)
         utils:trc("bubbleHandler: No bubble animation found for "..anim.." ("..char..")", 2)
-        return 
+        return
     end
 
     if (getModSetting('gariiDebug')) then setProperty(char.."Bubbles.alpha", getModSetting('bubbleOpacity'))

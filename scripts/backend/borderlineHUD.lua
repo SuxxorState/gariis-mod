@@ -12,7 +12,6 @@ local ratingShits = { --rating image names, rating comments, icon progresses or 
     ["def"] = {{"sick", "good", "bad", "ashit"}, {"Perfect!!", "Sick!!", "Great!", "Good!", "Meh", "Bruh", "Bad", "Shit", "You Suck!"}, {0,1}}
 }
 local curGFRead = "def"
-local gflastpro = false
 local misscap = -1
 
 function onCreatePost()
@@ -61,7 +60,6 @@ function onCreatePost()
 	addLuaText('scrTxt')
 
     if (ratingShits[getProperty("gf.healthIcon")] ~= nil) then curGFRead = getProperty("gf.healthIcon") end
-    if (ratingShits[curGFRead] ~= nil) then gflastpro = ratingShits[curGFRead][3] end
     replaceTimerIcon(ratingShits[curGFRead] == nil)
     replaceHealthIcon()
 

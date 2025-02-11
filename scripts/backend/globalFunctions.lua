@@ -1,7 +1,5 @@
 local utils = (require (getVar("folDir").."scripts.backend.utils")):new()
-local folderDir = ""
 local alreadystarted = false
-local curHeat = 1
 local gameovered = false
 local arcadeKey = getModSetting('arcadeMenu')
 local achievementKey = getModSetting('achievementsMenu')
@@ -18,7 +16,6 @@ function initLuas()
         utils:setGariiData("deathCounter", 0)
         utils:setWindowTitle("Friday Night Funkin': GARII'S MOD")
     end
-    folderDir = getVar("folDir")
     --checkFreeplayIconCompatability()
     doubleCheckWeeks()
 end
@@ -63,7 +60,6 @@ function setupSpice(speed, hpamt, missamt, pushback, scrmult)
     end
     if (pushback ~= nil) then hpDrain = pushback / hpamt end
     unlockSecrets = true
-    curHeat = tonumber(utils:getGariiData("curSauce"))
     utils:setDiscord("Story Mode: "..utils.weekName, utils.songName.." ["..utils:getHeat(true).."]", getProperty("dad.healthIcon"))
 end
 
@@ -217,6 +213,7 @@ function onBeatHit()
 	triggerEvent("Add Camera Zoom",0.015*bamIntensity,0.03*bamIntensity)
 end
 
+local curTexture = ""
 function onEvent(name, value1, value2, strumTime)
     local event = utils:lwrKebab(name)
     local val1 = utils:lwrKebab(value1)
@@ -236,11 +233,14 @@ function onEvent(name, value1, value2, strumTime)
     elseif (event == 'change-note-skin') then
         if (val1 ~= '') then
             for i = 0,3 do
-                setPropertyFromGroup('opponentStrums', i, 'texture', value1);
-                setPropertyFromGroup('playerStrums', i, 'texture', value1);
+                setPropertyFromGroup('opponentStrums', i, 'texture', value1)
+                setPropertyFromGroup('playerStrums', i, 'texture', value1)
             end
             for i = 0, getProperty('unspawnNotes.length')-1 do
-                setPropertyFromGroup('unspawnNotes', i, 'texture', value1);
+                local customNotes = {"pose-note", "pose-note-filler", "interrupted-note"} --list of notes that have custom textures that probably shouldnt be overridden
+                if (not utils:tableContains(customNotes, utils:lwrKebab(getPropertyFromGroup('unspawnNotes', i, 'noteType')))) then
+                    setPropertyFromGroup('unspawnNotes', i, 'texture', value1)
+                end
             end
         end
    

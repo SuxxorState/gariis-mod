@@ -1,0 +1,32 @@
+garii
+, Bubble Only, Fake Alt Anim, Side Alt Anim, Snide Alt Anim, Angry Alt Anim, Done Alt Anim
+
+bubbleLEFT-fake, gari buble round, -130, 80
+bubbleDOWN-fake, gar buble fart, 110, 140
+bubbleUP-fake, garii bubel yall, 425, 420
+bubbleRIGHT-fake, gar doodoo bib;e, 310, 170
+
+bubbleLEFT, gari buble yell left, 160, 210
+bubbleDOWN, gari long buble rounder, 120, 175
+bubbleUP, gari buble semisquare, 475, 300
+bubbleRIGHT, gari evil rectangle bubble, 200, 130
+
+bubbleLEFT-side, gari buble yell left, 160, 210
+bubbleDOWN-side, gari long buble rounder, 120, 175
+bubbleUP-side, gari buble semisquare, 475, 300
+bubbleRIGHT-side, gari evil rectangle bubble, 200, 130
+
+bubbleLEFT-snide, gari buble yell left, 160, 210
+bubbleDOWN-snide, gari long buble rounder, 120, 175
+bubbleUP-snide, gari buble semisquare, 475, 300
+bubbleRIGHT-snide, gari evil rectangle bubble, 200, 130
+
+bubbleLEFT-pissed, gari speech left yell mad, 380, 260
+bubbleDOWN-pissed, gar down bubl ang, 200, 225
+bubbleUP-pissed, spech up ang gar, 125, 350
+bubbleRIGHT-pissed, gar rght buble an, 120, 173
+
+bubbleLEFT-done, gari buble round, -130, 80
+bubbleDOWN-done, gar buble fart, 110, 140
+bubbleUP-done, garii bubel yall, 425, 420
+bubbleRIGHT-done, gar doodoo bib;e, 310, 170

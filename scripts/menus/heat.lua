@@ -10,7 +10,7 @@ local sauceTrueFX = {--speed, hpamt, missamt, pushback
 	{2.5, 1.25, nil, 0.013, 0.75},
 	{2.75, 1, nil, 0.018, 1},
 	{3, 0.75, nil, 0.023, 1.25},
-	{3.25, nil, 5, nil, 1.5},	
+	{3.25, nil, 5, nil, 1.5},
 	{3.5, nil, 3, nil, 1.75},
 	{4, nil, 0, nil, 2},
 }
@@ -19,6 +19,9 @@ local spsFld = "spice/"
 local ndlAngs = {-77, -48, -14, 24, 58, 84, 105}
 local inMenu = false
 local sssCounter = 0
+local hasSimple = false
+local hasHarder = false
+local playedCrossout = false
 
 function onStartCountdown(tick)
 	if (utils:getGariiData("curSauce") ~= nil) then 
@@ -29,6 +32,8 @@ function onStartCountdown(tick)
 			table.insert(sauces, "Shit The Bed")
 			table.insert(sauces, "Solar Flare")
 		end
+		hasSimple = checkFileExists('data/'..utils.songNameFmt..'/'..utils.songNameFmt..'-simple.json')
+		hasHarder = checkFileExists('data/'..utils.songNameFmt..'/'..utils.songNameFmt..'-harder.json')
 		inMenu = true
 		setProperty('inCutscene', true)
 		setProperty('camHUD.alpha', 0)
@@ -92,8 +97,14 @@ function onStartCountdown(tick)
 		addLuaSprite('sausdescs', true)
 		setObjectCamera('sausdescs', 'other')
 
-		if (utils:getGariiData("harderSauces") ~= nil) then makeLuaSprite('spsmeterbg',spsFld..'spicemeterbg',30,screenHeight - 240)
-		else makeLuaSprite('spsmeterbg',spsFld..'spicemeterbglocked',30,screenHeight - 240)
+		makeAnimatedLuaSprite('nosimplechart',spsFld..'no simple chart',15,360)
+		addAnimationByPrefix("nosimplechart", 'reg', "no simple chart", 24, false)
+		addLuaSprite('nosimplechart', true)
+		setObjectCamera('nosimplechart', 'other')
+
+		if (#sauces >= 5) then makeLuaSprite('spsmeterbg',spsFld..'spicemeterbg',30,screenHeight - 240)
+		elseif (#sauces >= 3) then makeLuaSprite('spsmeterbg',spsFld..'spicemeterbglocked',30,screenHeight - 240)
+		else makeLuaSprite('spsmeterbg',spsFld..'spicemeterbgnormallocked',30,screenHeight - 240)
 		end
 		addLuaSprite('spsmeterbg', true)
 		setObjectCamera('spsmeterbg', 'other')
@@ -170,10 +181,17 @@ function onUpdatePost(elapsed)
 					}
 					PlayState.SONG = Song.loadFromJson(Highscore.formatSong(ogName+"-sss", 0), ogName+"-sss");
 				]])
-			elseif(curSauce >= 5) then
+			elseif(curSauce >= 5 and hasHarder) then
 				runHaxeCode([[
 					import backend.Difficulty;
 					Difficulty.list.push("Harder");
+					PlayState.storyDifficulty = 1;
+				]])
+				loadSong(nil, 1)
+			elseif (curSauce <= 2 and hasSimple) then
+				runHaxeCode([[
+					import backend.Difficulty;
+					Difficulty.list.push("Simple");
 					PlayState.storyDifficulty = 1;
 				]])
 				loadSong(nil, 1)
@@ -217,7 +235,7 @@ end
 
 function changeSelected(lol)
 	curSauce = curSauce + lol
-	if (curSauce > #sauces) then 
+	if (curSauce > #sauces) then
 		curSauce = #sauces
 		if (#sauces < 5) then
 			playSound("lockedMenu")
@@ -233,6 +251,9 @@ function changeSelected(lol)
 				curSauce = #sauces
 			end
 		end]]--
+	elseif (curSauce <= 2 and (not hasSimple) and (not playedCrossout)) then
+		playedCrossout = true
+		playAnim("nosimplechart", 'reg')
 	elseif (curSauce < 1) then curSauce = 1
 		return
 	end
@@ -246,6 +267,7 @@ function changeSelected(lol)
 	playAnim("spsflavs", "sauce"..curSauce)
 	setProperty("spsflavs.x", 210 + ((screenWidth - getProperty("spsflavs.frameWidth"))/2))
 	setProperty("spsflavs.y", screenHeight - math.min((85 + getProperty("spsflavs.frameHeight"))/2, 85))
+	setProperty("nosimplechart.visible", curSauce <= 2 and (not hasSimple))
 
 	setTextString('nameTxt', sauces[curSauce])
 end
