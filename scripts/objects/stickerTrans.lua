@@ -44,6 +44,7 @@ function placeStickers(openScript, callFunc)
         addLuaSprite('sticker'..inc, true)
         setObjectCamera("sticker"..inc, 'other')
         setProperty("sticker"..inc..".visible", false)
+        setProperty("sticker"..inc..".active", false)
 
         xPos = xPos + (getProperty("sticker"..inc..".width")/2)
         if (xPos >= screenWidth and yPos <= screenHeight) then

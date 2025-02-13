@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="minesweeper.png">
+	<!-- Created with my ass -->
+	<SubTexture name="tilereg0000" x="0" y="0" width="16" height="16"/>
+	<SubTexture name="tileopen0000" x="16" y="0" width="16" height="16"/>
+	<SubTexture name="tiledead0000" x="32" y="0" width="16" height="16"/>
+	<SubTexture name="mine0000" x="48" y="0" width="16" height="16"/>
+	
+	<SubTexture name="flag0000" x="0" y="16" width="16" height="16"/>
+	<SubTexture name="mark0000" x="16" y="16" width="16" height="16"/>
+	<SubTexture name="flower0000" x="32" y="16" width="16" height="16"/>
+	<SubTexture name="openflower0000" x="48" y="16" width="16" height="16"/>
+</TextureAtlas>

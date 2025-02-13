@@ -147,7 +147,7 @@ end
 function giveChoices()
     if (playerStatus ~= "" or dealerStatus == "blackjack") then 
         if (dealerStatus ~= "" or playerStatus == "bust" or playerStatus == "blackjack") then tallyScores()
-        else runDealerAI() 
+        else runDealerAI()
         end
     else
         canChoose = true
@@ -198,7 +198,7 @@ function selectOption()
         giveChoices()
     elseif (optn == "stand") then playerStatus = "stand"
         runDealerAI()
-    elseif (optn == "double-down") then 
+    elseif (optn == "double-down") then
         playerStatus = "dd"
         addToHand()
         callOnLuas("updateChipCount", {-wager})
@@ -223,7 +223,7 @@ function tallyScores()
     curChoice = 1
     endChoose = true
 
-    for i,opt in pairs(options) do pfFont:setTextString(opt..'Txt', " ") end
+    for _,opt in pairs(options) do pfFont:setTextString(opt..'Txt', " ") end
     pfFont:setTextString("dlrCnt", ""..delrHand)
     playAnim("dlrcard1", "front")
 
@@ -244,6 +244,9 @@ function tallyScores()
     elseif (curHand < delrHand) then verdict = "Too Bad..."
         pfFont:setTextColour("vdctTxt", "c55252")
     else verdict = "Push"
+        if (curHand == 21 and delrHand == 21 and #curCards == 2 and #dlrCards == 2) then --would check for specific cards like ace and face/10 but like this does the job fine as is
+            callOnLuas("unlockAchievement", {"true-bjs"})
+        end
         pfFont:setTextColour("vdctTxt", "f4f3ad")
         callOnLuas("updateChipCount", {wager})
     end
@@ -264,7 +267,7 @@ function addToHand(dealer)
 
     local selAmt = 0
     for i,crd in pairs(selHand) do
-        if (not stringStartsWith(crd, "ace")) then 
+        if (not stringStartsWith(crd, "ace")) then
             if (stringStartsWith(crd, "jack") or stringStartsWith(crd, "queen") or stringStartsWith(crd, "king")) then selAmt = selAmt + 10
             else 
                 selAmt = selAmt + utils:extractNum(crd)
@@ -272,7 +275,7 @@ function addToHand(dealer)
         end
     end
     for i,crd in pairs(selHand) do --saves ace calculations for last
-        if (stringStartsWith(crd, "ace")) then 
+        if (stringStartsWith(crd, "ace")) then
             if (selAmt + 11 > 21) then selAmt = selAmt + 1
             else selAmt = selAmt + 11
             end
@@ -280,8 +283,8 @@ function addToHand(dealer)
     end
 
     local selStatus = ""
-    if (selAmt > 21) then selStatus = "bust" 
-    elseif (selAmt == 21) then selStatus = "blackjack" 
+    if (selAmt > 21) then selStatus = "bust"
+    elseif (selAmt == 21) then selStatus = "blackjack"
     end
 
     if (dealer) then

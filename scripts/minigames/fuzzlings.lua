@@ -239,6 +239,44 @@ function handlePellets()
         end end
         setProperty("picnicFruit.visible", false)
         score = score + fruitPoints[curFruit]
+
+        if (curLevel <= 16) then
+            local fruitList = utils:getGariiData("FUZZfruits") or {}
+            if (not utils:tableContains(fruitList, curFruit)) then
+                table.insert(fruitList, curFruit)
+                utils:setGariiData("FUZZfruits", fruitList)
+                local achievementDone = true
+                for _,fru in pairs(levelFruits) do
+                    if (curLevel >= 15) then
+                        if (not (utils:tableContains(fruitList, fru.."-boy") or utils:tableContains(fruitList, fru.."-girl"))) then --you have to get BOTH... mwahahaha
+                            achievementDone = false
+                        end
+                    else
+                        if (not utils:tableContains(fruitList, thing)) then
+                            achievementDone = false
+                        end
+                    end
+                end
+                if (achievementDone) then
+                    callOnLuas("unlockAchievement", {"fl-everyfruit"})
+                end
+            end
+        else
+            local trashList = utils:getGariiData("FUZZtrash") or {}
+            if (not utils:tableContains(trashList, curFruit)) then
+                table.insert(trashList, curFruit)
+                utils:setGariiData("FUZZtrash", trashList)
+                local achievementDone = true
+                for _,tra in pairs({"tire", "notebook", "bottle", "can", "mic"}) do
+                    if (not utils:tableContains(trashList, tra)) then
+                        achievementDone = false
+                    end
+                end
+                if (achievementDone) then
+                    callOnLuas("unlockAchievement", {"fl-everytrash"})
+                end
+            end
+        end
         
         for i=1,#utils:numToStr(fruitPoints[curFruit]) do
             setProperty("fruitPoint"..i..".visible", true)
@@ -464,6 +502,9 @@ function onTimerCompleted(tmr, _, loopsLeft)
         end
     elseif (tmr == "completedLevelIII") then
         curLevel = curLevel+1
+        if (curLevel >= 64) then callOnLuas("unlockAchievement", {"fl-64levels"})
+        elseif (curLevel >= 16) then callOnLuas("unlockAchievement", {"fl-16levels"})
+        end
         reloadMap()
     elseif (tmr == "blinkLoop") then 
         blinkVis = not blinkVis

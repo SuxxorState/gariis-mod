@@ -1,29 +1,29 @@
 local utils = (require (getVar("folDir").."scripts.backend.utils")):new()
 local achievements = {
-    ["fuzzy-dice-fc"] = {title = "Capicola Gang", description = "100% Clear Fuzzy Dice"}, --done
-    ["full-house-fc"] = {title = "The Power Of Two", description = "100% Clear Full House"}, --done
+    ["fuzzy-dice-fc"] = {title = "Capicola Gang", description = "100% Clear Fuzzy Dice"},                                                   --done
+    ["full-house-fc"] = {title = "The Power Of Two", description = "100% Clear Full House"},                                                --done
     ["episode-ii-fc"] = {title = "Show Off", description = "100% Clear Episode ][ without dying once"},
     ["story-deaths"] = {title = "The Part Where He Kills You", description = "Experience every possible death Episode ][ has to offer"},
-    ["no-pose"] = {title = "Not Feelin' It", description = "Beat Full House without ever hitting a pose note"}, --done
-    ["100k-chips"] = {title = "The Big Cheese", description = "Get one hundred thousand or more poker chips in the casino"}, --done
-    ["true-bjs"] = {title = "The House Is Cheating!", description = "End in a draw with both you and the house having a true blackjack"},
-    ["tb-foak"] = {title = "Planet X", description = "Get the highest Five of a Kind you can get in Picture Poker"},
+    ["no-pose"] = {title = "Not Feelin' It", description = "Beat Full House without ever hitting a pose note"},                             --done
+    ["100k-chips"] = {title = "The Big Cheese", description = "Get one hundred thousand or more poker chips in the casino"},                --done
+    ["true-bjs"] = {title = "The House Is Cheating!", description = "End in a draw with both you and the house having a true blackjack"},   --done
+    ["tb-foak"] = {title = "Planet X", description = "Get the highest Five of a Kind you can get in Picture Poker"},                        --done
     ["no-fish"] = {title = "Go...Fish?", description = "It doesn't exist. You're hallucinating."},
-    ["stag-quarters"] = {title = "Dollar Fitty", description = "Survive all six quarters at Garii's Manor"},
-    ["no-power-save"] = {title = "Saved By The Bell", description = "Hit the end of a quarter whilst in a blackout"},
-    ["no-doors-save"] = {title = "Lino's Bad Day", description = "Hit the end of a quarter with all three of your doors disabled"},
-    ["the-yapper"] = {title = "Keep Talking and I'll Explode", description = "Skip every Garii broadcast"},
-    ["stag-deaths"] = {title = "Rocket Science", description = "Die to every lethal character at Garii's Manor"},
+    ["stag-quarters"] = {title = "Dollar Fitty", description = "Survive all six quarters at Garii's Manor"},                                --done
+    ["no-power-save"] = {title = "Saved By The Bell", description = "Hit the end of a quarter whilst in a blackout"},                       --done
+    ["no-doors-save"] = {title = "Lino's Bad Day", description = "Hit the end of a quarter with all three of your doors disabled"},         --done
+    ["the-yapper"] = {title = "Keep Talking and I'll Explode", description = "Skip every Garii broadcast"},                                 --done
+    ["stag-deaths"] = {title = "Rocket Science", description = "Die to every lethal character at Garii's Manor"},                           --done
     ["bt-simple"] = {title = "Who Put These Here?", description = "Clear your first round."},
     ["bt-5simple"] = {title = "Handle With Care", description = "Clear 5 rounds."},
     ["bt-speedy"] = {title = "Little Smiley Face", description = "Clear a round in under a minute."},
     ["bt-expert"] = {title = "Minefield in a Bush", description = "Clear your first round on Expert."},
     ["bt-5expert"] = {title = "Clusterluck", description = "Clear 5 rounds in a row on Expert."},
     ["bt-exp-speed"] = {title = "Horticulturist", description = "Clear a round on Expert in under two minutes."},
-    ["fl-everyfruit"] = {title = "Pic-a-nic Basket", description = "Gather every Food and Drink"},
-    ["fl-everytrash"] = {title = "Junkyard", description = "Collect Every Type of Trash"},
-    ["fl-16levels"] = {title = "Salad Dressing", description = "Beat 16 Levels"},
-    ["fl-64levels"] = {title = "Sandwich Tower", description = "Beat 64 Levels"},
+    ["fl-everyfruit"] = {title = "Pic-a-nic Basket", description = "Gather every Food and Drink"},                                          --done
+    ["fl-everytrash"] = {title = "Junkyard", description = "Collect Every Type of Trash"},                                                  --done
+    ["fl-16levels"] = {title = "Salad Dressing", description = "Beat 16 Levels"},                                                           --done
+    ["fl-64levels"] = {title = "Sandwich Tower", description = "Beat 64 Levels"},                                                           --done
     ["fl-deaths"] = {title = "Knuckle Sandwich", description = "Die to every fuzzling as both Boy and Girl"},
 }
 local ratingAccumulation = {0,0,0,0}

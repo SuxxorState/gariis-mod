@@ -353,6 +353,9 @@ function tallyScores()
             end
         end
     end
+    if (#plrEval <= 2 and plrEval[1] == 5 and plrEval[2] == 6) then
+        callOnLuas("unlockAchievement", {"tb-foak"})
+    end
 
     runTimer("whowon", 0.75)
     

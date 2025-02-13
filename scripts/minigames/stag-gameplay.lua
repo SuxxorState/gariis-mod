@@ -242,6 +242,20 @@ function onUpdatePost(elp)
     if (luaSpriteExists("mutebtn") and mouseClicked() and utils:mouseWithinBounds({10,10, 155,82}, "other")) then
         removeLuaSprite("mutebtn", true)
         stopSound("phonecall")
+        local muteList = utils:getGariiData("STaGmutes")
+        if (not utils:tableContains(muteList, curQtr)) then
+            table.insert(muteList, curQtr)
+            utils:setGariiData("STaGmutes", muteList)
+            local achievementDone = true
+            for i = 1,6 do
+                if (not utils:tableContains(muteList, i)) then
+                    achievementDone = false
+                end
+            end
+            if (achievementDone) then
+                callOnLuas("unlockAchievement", {"the-yapper"})
+            end
+        end
     end
 
     if (chrStats["jack"].inOffice and not camUP and not statUP) then
@@ -495,6 +509,20 @@ function jumpscare(char)
     if not canUpdate then return end
     disableGame()
     if camUP then toggleCam() end
+    local jumpscareList = utils:getGariiData("STaGjumpscrs") or {}
+    if (not utils:tableContains(jumpscareList, char)) then
+        table.insert(jumpscareList, char)
+        utils:setGariiData("STaGjumpscrs", jumpscareList)
+        local achievementDone = true
+        for _,chr in pairs(chrList) do
+            if (not utils:tableContains(jumpscareList, chr)) then
+                achievementDone = false
+            end
+        end
+        if (achievementDone) then
+            callOnLuas("unlockAchievement", {"stag-deaths"})
+        end
+    end
 
     makeLuaSprite('jmpscr',fld..char..'jumpscare',0,0)
     screenCenter("jmpscr", "x")
@@ -532,8 +560,11 @@ function nightOver()
     addLuaText('samTxt')
 
     if (curQtr < 7 and (utils:getGariiData("STaGprog") < curQtr+1)) then
+        if (curQtr >= 6) then callOnLuas("unlockAchievement", {"stag-quarters"}) end
         utils:setGariiData("STaGprog", curQtr + 1)
     end
+    if (not hasPower) then callOnLuas("unlockAchievement", {"no-power-save"}) end
+    if (doorStats[1].disabled and doorStats[2].disabled and doorStats[3].disabled) then callOnLuas("unlockAchievement", {"no-doors-save"}) end
 
     runTimer("cheer", 4)
     runTimer("changesamtxt", 2)

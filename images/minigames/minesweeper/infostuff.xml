@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="minesweeper.png">
+	<!-- Created with my ass -->
+	<SubTexture name="1num0000" x="0" y="0" width="16" height="16"/>
+	<SubTexture name="2num0000" x="16" y="0" width="16" height="16"/>
+	<SubTexture name="3num0000" x="32" y="0" width="16" height="16"/>
+	<SubTexture name="4num0000" x="48" y="0" width="16" height="16"/>
+	<SubTexture name="5num0000" x="64" y="0" width="16" height="16"/>
+	<SubTexture name="6num0000" x="80" y="0" width="16" height="16"/>
+	
+	<SubTexture name="7num0000" x="0" y= "16" width="16" height="16"/>
+	<SubTexture name="8num0000" x="16" y= "16" width="16" height="16"/>
+	<SubTexture name="9num0000" x="32" y= "16" width="16" height="16"/>
+	<SubTexture name="1fakenum0000" x="48" y= "16" width="16" height="16"/>
+	<SubTexture name="2fakenum0000" x="64" y= "16" width="16" height="16"/>
+	<SubTexture name="3fakenum0000" x="80" y= "16" width="16" height="16"/>
+	
+	<SubTexture name="4fakenum0000" x="0" y= "32" width="16" height="16"/>
+	<SubTexture name="5fakenum0000" x="16" y= "32" width="16" height="16"/>
+	<SubTexture name="6fakenum0000" x="32" y= "32" width="16" height="16"/>
+	<SubTexture name="7fakenum0000" x="48" y= "32" width="16" height="16"/>
+	<SubTexture name="8fakenum0000" x="64" y= "32" width="16" height="16"/>
+	<SubTexture name="9fakenum0000" x="80" y= "32" width="16" height="16"/>
+	
+	<SubTexture name="10fakenum0000" x="0" y= "48" width="16" height="16"/>
+	<SubTexture name="11fakenum0000" x="16" y= "48" width="16" height="16"/>
+	<SubTexture name="12fakenum0000" x="32" y= "48" width="16" height="16"/>
+	<SubTexture name="13fakenum0000" x="48" y= "48" width="16" height="16"/>
+	<SubTexture name="x0000" x="64" y= "48" width="16" height="16"/>
+</TextureAtlas>
