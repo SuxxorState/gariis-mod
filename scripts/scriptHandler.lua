@@ -15,6 +15,7 @@ if (not errored) then
             setVar("folDir", string.sub(b, 1, #b - #"scripts/scriptHandler.lua"))
     end end
     utils = (require (getVar("folDir").."scripts.backend.utils")):new()
+    if (utils:getGariiData("dirFldr") == nil or utils:getGariiData("dirFldr") ~= nil) then utils:setGariiData("dirFldr", getVar("folDir")) end
     
     addLuaScript(bkend..'globalFunctions')
     addLuaScript(bkend.."achievementStalker")

@@ -2,6 +2,20 @@ local utils = (require (getVar("folDir").."scripts.backend.utils")):new()
 local pfFont = (require (getVar("folDir").."scripts.objects.fontHandler")):new("poker-freak")
 
 local fold = "minigames/minesweeper/"
+local sfld, mfld = fold.."skins/", fold.."menu/"
+local skinList = {"tiles"}
+local tileSkin = "tiles"
+local skinStats = {
+    ["tiles"] = {title = "Hydrangea", colours = {[0] = "ffffff"; "a284b9","9ad6ff","8fc79b","f4f3ad","dbaf85","ea9fd0","c55252","7e464f","ffffff","c0c0c0","635245","000000","4e7faf"}},
+    ["tiles-xp"] = {title = "Experience", colours = {[0] = "ffffff"; "4e7faf","4d664d","c55252","434253","7e464f","4e7faf","000000","333333"}},
+    ["tiles-seven"] = {title = "Silver Seven", colours = {[0] = "ffffff"; "4e7faf","4d664d","c55252","434253","7e464f","4e7faf","c55252","c55252"}},
+    ["tiles-lino"] = {title = "Fall Dolphin", colours = {[0] = "ffffff"; "a284b9","9ad6ff","8fc79b","f4f3ad","dbaf85","ea9fd0","c55252","4e7faf"}},
+    ["tiles-faithful"] = {title = "Programmer Art", colours = {[0] = "ffffff"; "a284b9","9ad6ff","8fc79b","f4f3ad","dbaf85","ea9fd0","c55252","7e464f"}},
+    ["tiles-xp-faithful"] = {title = "Windows XP", colours = {[0] = "ffffff"; "4e7faf","4d664d","c55252","434253","7e464f","4e7faf","000000","333333"}},
+    ["tiles-seven-faithful"] = {title = "Windows 7", colours = {[0] = "ffffff"; "4e7faf","4d664d","c55252","434253","7e464f","4e7faf","c55252","c55252"}},
+    ["tiles-lino-faithful"] = {title = "Dolphin Lino", colours = {[0] = "ffffff"; "a284b9","9ad6ff","8fc79b","f4f3ad","dbaf85","ea9fd0","c55252","4e7faf"}},
+    ["unknown"] = {title = "Unknown Skin", colours = {[0] = "ffffff"; "a284b9","9ad6ff","8fc79b","f4f3ad","dbaf85","ea9fd0","c55252","7e464f"}}
+}
 local diffs = {"Beginner","Novice","Intermediate","Advanced","Expert","Custom"}
 local diffStats = {
     ["beginner"] = {width = 9, height = 9, mines = 10, flowers = 0},
@@ -10,8 +24,8 @@ local diffStats = {
     ["advanced"] = {width = 18, height = 18, mines = 60, flowers = 2},
     ["expert"] = {width = 30, height = 16, mines = 99, flowers = 4}
 }
-local curDiff = 1
-local canPlay, canChoose = false, true
+local curDiff, curSkin = 1, 1
+local canPlay, canChoose, canSkin = false, true, false
 local time = -1
 local x = 0
 local y = 0
@@ -28,13 +42,32 @@ function startMinigame()
     setProperty("camHUD.zoom", 2)
     callOnScripts("initCursor")
 
+    for _,file in pairs(utils:dirFileList('images/'..sfld)) do
+        if (stringEndsWith(file, ".png")) then
+            local clippedFile = string.sub(file, 1, #file - 4)
+            if (not (stringEndsWith(utils:lwrKebab(clippedFile), "-faithful") or utils:tableContains(skinList, clippedFile))) then
+                table.insert(skinList, clippedFile)
+                if (skinStats[clippedFile] == nil) then skinStats[clippedFile] = skinStats["unknown"] end
+            end
+        end
+    end
+    debugPrint(skinList)
+
     makeLuaSprite('grass',fold..'grass',320,180)
     quickAddSprite("grass")
 
     for i,dif in pairs(diffs) do
-        makeLuaSprite(dif:lower(),fold..dif:lower(),359 + (200 * ((i-1)%3)),186 + (180 * math.floor((i-1) /3)))
+        makeLuaSprite(dif:lower(),mfld..dif:lower(),359 + (200 * ((i-1)%3)),186 + (180 * math.floor((i-1) /3)))
         quickAddSprite(dif:lower())
     end
+
+    makeLuaSprite("style",mfld.."style",359 + (400) + 4,186 + (180) + 68)
+    quickAddSprite("style")
+    table.insert(diffs, "Style")
+    makeLuaSprite("stats",mfld.."stats",359 + (400) + 86,186 + (180) + 68)
+    quickAddSprite("stats")
+    table.insert(diffs, "Stats")
+    skinSel(0)
 end
 
 function firstTimeSetup()
@@ -45,7 +78,7 @@ function firstTimeSetup()
     mines = math.min(diffStats[utils:lwrKebab(diffs[curDiff])].mines, math.floor((width * height) * 0.85))
     flowers = math.min(diffStats[utils:lwrKebab(diffs[curDiff])].flowers, 5)
     if (mines >= 99) then diff = "exp" end
-    
+
     makeLuaSprite('minebgbgbg','',x - 12,y - 12)
     makeGraphic("minebgbgbg", (width * 16) + 24, (height * 16) + 24, "000000")
     quickAddSprite("minebgbgbg")
@@ -83,11 +116,7 @@ end
 
 function setupGame()
     time = 0
-    data.mines = {}
-    data.flowers = {}
-    data.opentiles = {}
-    data.flaggedtiles = {}
-    data.markedtiles = {}
+    data = {mines = {}, flowers = {}, opentiles = {}, flaggedtiles = {}, markedtiles = {}}
 
     while #data.mines < mines do
         local newmine = {getRandomInt(1, width), getRandomInt(1, height)}
@@ -108,37 +137,32 @@ function setupGame()
     for i = 1,height do
         for j=1,width do
             removeLuaSprite("tile"..i.."-"..j)
-            makeAnimatedLuaSprite("tile"..i.."-"..j, fold.."tiles", x + ((j-1) * 16), y + ((i-1) * 16))
-            addAnimationByPrefix("tile"..i.."-"..j, "reg", "tilereg", 24, true)
-            addAnimationByPrefix("tile"..i.."-"..j, "open", "tileopen", 24, true)
-            addAnimationByPrefix("tile"..i.."-"..j, "dead", "tiledead", 24, true)
+            makeLuaSprite("tile"..i.."-"..j, nil, x + ((j-1) * 16), y + ((i-1) * 16))
+            addGridAnims("tile"..i.."-"..j, sfld..tileSkin, 16, 16, {["reg"] = {0}, ["open"] = {1}, ["dead"] = {2}})
             quickAddSprite("tile"..i.."-"..j)
 
             if (compareIndexTables(data.mines, {j,i})) then
                 local curMine = bigIndexOf(data.mines, {j,i}) --prevents desync because a simple counter can sometimes... be wrong
                 removeLuaSprite("mine"..curMine)
-                makeAnimatedLuaSprite("mine"..curMine, fold.."tiles", x + ((j-1) * 16), y + ((i-1) * 16))
-                addAnimationByPrefix("mine"..curMine, "reg", "mine", 24, true)
+                makeLuaSprite("mine"..curMine, nil, x + ((j-1) * 16), y + ((i-1) * 16))
+                addGridAnims("mine"..curMine, sfld..tileSkin, 16, 16, {["reg"] = {3}})
                 quickAddSprite("mine"..curMine, false)
             elseif (compareIndexTables(data.flowers, {j,i})) then
                 local curFlwr = bigIndexOf(data.flowers, {j,i})
                 removeLuaSprite("flower"..curFlwr)
-                makeAnimatedLuaSprite("flower"..curFlwr, fold.."tiles", x + ((j-1) * 16), y + ((i-1) * 16))
-                addAnimationByPrefix("flower"..curFlwr, "reg", "flower", 24, true)
-                addAnimationByPrefix("flower"..curFlwr, "open", "openflower", 24, true)
+                makeLuaSprite("flower"..curFlwr, nil, x + ((j-1) * 16), y + ((i-1) * 16))
+                addGridAnims("flower"..curFlwr, sfld..tileSkin, 16, 16, {["reg"] = {6}, ["open"] = {7}})
                 quickAddSprite("flower"..curFlwr, false)
             end
             removeLuaSprite("flag"..i.."-"..j)
-            makeAnimatedLuaSprite("flag"..i.."-"..j, fold.."tiles", x + ((j-1) * 16), y + ((i-1) * 16))
-            addAnimationByPrefix("flag"..i.."-"..j, "flag", "flag", 24, true)
-            addAnimationByPrefix("flag"..i.."-"..j, "mark", "mark", 24, true)
+            makeLuaSprite("flag"..i.."-"..j, nil, x + ((j-1) * 16), y + ((i-1) * 16))
+            addGridAnims("flag"..i.."-"..j, sfld..tileSkin, 16, 16, {["flag"] = {4}, ["mark"] = {5}})
             quickAddSprite("flag"..i.."-"..j, false)
 
             removeLuaSprite("data"..i.."-"..j)
             makeAnimatedLuaSprite("data"..i.."-"..j, fold.."infostuff", x + ((j-1) * 16), y + ((i-1) * 16))
             local adjcount = countAdjacentMines(j, i)
-            local colours = {[0] = "ffffff"; "a284b9","9ad6ff","8fc79b","f4f3ad","dbaf85","ea9fd0","c55252","7e464f","ffffff","c0c0c0","635245","000000","4e7faf"}
-            setProperty("data"..i.."-"..j..".color", getColorFromHex(colours[adjcount.mines]))
+            setProperty("data"..i.."-"..j..".color", getColorFromHex(skinStats[tileSkin].colours[adjcount.mines]))
             if (adjcount.mines >= 1 and adjcount.flowers <= 0) then addAnimationByPrefix("data"..i.."-"..j, "num", adjcount.mines.."num", 24, true)
             elseif (adjcount.flowers >= 1) then addAnimationByPrefix("data"..i.."-"..j, "num", (adjcount.mines + adjcount.flowers).."fakenum", 24, true)
             else setProperty("data"..i.."-"..j..".color", getColorFromHex("434253"))
@@ -160,6 +184,14 @@ function setupGame()
     canPlay = true
 end
 
+function addGridAnims(spr, texture, wid, hei, anims) --added for convenience
+    loadGraphic(spr, texture, wid, hei)
+    for k,v in pairs(anims) do
+        addAnimation(spr, k, v)
+        if (k == "reg") then playAnim(spr, k) end --default anim basically
+    end
+end
+
 function quickAddSprite(spr, visible)
     setProperty(spr..".visible", visible == nil or visible == true)
     setProperty(spr..".antialiasing", false)
@@ -168,13 +200,17 @@ function quickAddSprite(spr, visible)
     addLuaSprite(spr)
 end
 
-function onUpdate()
-    if (keyJustPressed("back")) then
-        callOnLuas("placeStickers")
-        runTimer("destroy", 1)
-        canPlay = false
-     end
+function skinSel(move)
+    curSkin = curSkin + move
+    if (curSkin > #skinList) then curSkin = 1
+    elseif (curSkin < 1) then curSkin = #skinList
+    end
 
+    tileSkin = skinList[curSkin]
+    pfFont:setTextString("skinTxt", tileSkin)
+end
+
+function onUpdate()
     if (luaSpriteExists("smileyicon")) then
         if ((mouseReleased() or mouseReleased("right")) and utils:mouseWithinBounds({getProperty("smileyicon.x"),getProperty("smileyicon.y"), getProperty("smileyicon.x")+getProperty("smileyicon.width"),getProperty("smileyicon.y")+getProperty("smileyicon.height")}, "hud")) then
             cancelTimer("delayboom")
@@ -205,27 +241,49 @@ function onUpdate()
         end
     end
 
-    if (not canChoose) then return end
-    local curChoice = 0
-    for i,spr in pairs(diffs) do
-        local dif = utils:lwrKebab(spr)
-        if (utils:mouseWithinBounds({getProperty(dif..".x"), getProperty(dif..".y"), getProperty(dif..".x")+getProperty(dif..".width"), getProperty(dif..".y")+getProperty(dif..".height")}, "hud")) then
-            curChoice = i
+    if (canSkin) then
+        if (keyJustPressed("ui_up")) then skinSel(-1)
+        elseif (keyJustPressed("ui_down")) then skinSel(1)
+        elseif (keyJustPressed("back")) then canSkin = false
+        pfFont:removeText("skinTxt")
         end
-    end
-    if (curChoice ~= 0) then callOnLuas("cursorPlayAnim", {"enter"})
-        if ((mouseReleased() or mouseReleased("right"))) then
-            debugPrint("dick")
-            canChoose = false
-            curDiff = curChoice
-            for _,jif in pairs(diffs) do
-                removeLuaSprite(utils:lwrKebab(jif))
+    elseif (canChoose) then
+        local curChoice = 0
+        for i,spr in pairs(diffs) do
+            local dif = utils:lwrKebab(spr)
+            if (utils:mouseWithinBounds({getProperty(dif..".x"), getProperty(dif..".y"), getProperty(dif..".x")+getProperty(dif..".width"), getProperty(dif..".y")+getProperty(dif..".height")}, "hud")) then
+                curChoice = i
             end
-            firstTimeSetup()
-            canPlay = true
-            callOnLuas("cursorPlayAnim")
         end
-    else callOnLuas("cursorPlayAnim")
+        if (curChoice ~= 0) then callOnLuas("cursorPlayAnim", {"enter"})
+            if ((mouseReleased() or mouseReleased("right"))) then
+                if (curChoice == 6) then
+                    
+                elseif (curChoice == 7) then
+                    canSkin = true
+                    pfFont:createNewText("skinTxt", 400, 190, tileSkin)
+                    pfFont:setTextCamera("skinTxt", "hud")
+                elseif (curChoice == 8) then
+                else
+                    canChoose = false
+                    curDiff = curChoice
+                    for _,jif in pairs(diffs) do
+                        removeLuaSprite(utils:lwrKebab(jif))
+                    end
+                    removeLuaSprite("style")
+                    removeLuaSprite("stats")
+                    firstTimeSetup()
+                    canPlay = true
+                end
+                callOnLuas("cursorPlayAnim")
+            end
+        else callOnLuas("cursorPlayAnim")
+        end
+        if (keyJustPressed("back")) then
+            callOnLuas("placeStickers")
+            runTimer("destroy", 1)
+            canPlay = false
+        end
     end
 end
 
@@ -264,12 +322,12 @@ function interactWithTile(tilex, tiley, flag, massopen)
                 end
             else
                 table.insert(data.opentiles, {tilex, tiley})
+                local adjtiles = countAdjacentMines(tilex, tiley)
                 if compareIndexTables(data.flowers, {tilex, tiley}) then
                     playAnim("flower"..(bigIndexOf(data.flowers, {tilex, tiley})), "open")
                     setProperty("flower"..(bigIndexOf(data.flowers, {tilex, tiley}))..".visible", true)
-                else setProperty("data"..tiley.."-"..tilex..".visible", true)
+                else setProperty("data"..tiley.."-"..tilex..".visible", (adjtiles.mines + adjtiles.flowers) >= 1)
                 end
-                local adjtiles = countAdjacentMines(tilex, tiley)
                 playAnim("tile"..tiley.."-"..tilex, "open")
                 if ((adjtiles.mines + adjtiles.flowers) < 1 and (not compareIndexTables(data.flowers, {tilex, tiley}))) then
                     if (not luaSoundExists("bigclick")) and (not massopen) then playSound("minigames/click", 1, "bigclick") end
@@ -429,6 +487,8 @@ function onDestroy()
             removeLuaSprite("data"..i.."-"..j)
         end
     end
+    removeLuaSprite("style")
+    removeLuaSprite("stats")
     for i = 1,mines do removeLuaSprite("mine"..i) end
     for i = 1,flowers do removeLuaSprite("flower"..i) end
     for _,jif in pairs(diffs) do

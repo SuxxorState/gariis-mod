@@ -37,6 +37,11 @@ function Utils:dirFileList(dir)
     local fucked = ""
     for a, b in pairs(getRunningScripts()) do  if (string.find(b, "scriptHandler.lua") ~= nil) then
         fucked = string.sub(b, 1, #b - #"scripts/scriptHandler.lua")
+        if (Utils:getGariiData("dirFldr") == nil or Utils:getGariiData("dirFldr") ~= fucked) then Utils:setGariiData("dirFldr", fucked) end
+    elseif (getVar("folDir") ~= nil) then
+        fucked = getVar("folDir")
+    elseif (Utils:getGariiData("dirFldr") ~= nil) then --redundancy bc idc
+        fucked = Utils:getGariiData("dirFldr")
     end end
     return directoryFileList(fucked..dir)
 end

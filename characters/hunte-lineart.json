@@ -1,0 +1,55 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [-6, 143],
+			"anim": "singUP",
+			"fps": 12,
+			"name": "up carv",
+			"indices": []
+		},
+		{
+			"offsets": [5, 49],
+			"indices": [],
+			"fps": 2,
+			"anim": "idle",
+			"loop": true,
+			"name": "idle hun"
+		},
+		{
+			"offsets": [-15, 11],
+			"indices": [],
+			"fps": 12,
+			"anim": "singRIGHT",
+			"loop": false,
+			"name": "right hun"
+		},
+		{
+			"offsets": [-1, -40],
+			"indices": [],
+			"fps": 12,
+			"anim": "singDOWN",
+			"loop": false,
+			"name": "down hun"
+		},
+		{
+			"offsets": [80, 7],
+			"indices": [],
+			"fps": 12,
+			"anim": "singLEFT",
+			"loop": false,
+			"name": "left hun"
+		}
+	],
+	"vocals_file": "",
+	"no_antialiasing": false,
+	"image": "characters/hunte-lineart",
+	"position": [240, 110],
+	"healthicon": "truckboy",
+	"flip_x": false,
+	"healthbar_colors": [78, 127, 175],
+	"camera_position": [-10, 230],
+	"sing_duration": 4,
+	"scale": 1,
+	"_editor_isPlayer": false
+}

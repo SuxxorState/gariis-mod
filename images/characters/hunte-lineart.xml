@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="hunt.png">
+	<!-- Created with Adobe Animate version 19.2.1.408 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="down hun0000" x="1451" y="1613" width="538" height="627" frameX="-10" frameY="-26" frameWidth="558" frameHeight="653"/>
+	<SubTexture name="down hun0001" x="10" y="886" width="558" height="652" frameX="0" frameY="0" frameWidth="558" frameHeight="653"/>
+	<SubTexture name="idle hun0000" x="10" y="2384" width="590" height="780" frameX="-4" frameY="0" frameWidth="595" frameHeight="792"/>
+	<SubTexture name="idle hun0001" x="610" y="2386" width="595" height="751" frameX="0" frameY="-41" frameWidth="595" frameHeight="792"/>
+	<SubTexture name="left hun0000" x="832" y="1613" width="609" height="763" frameX="0" frameY="0" frameWidth="614" frameHeight="763"/>
+	<SubTexture name="left hun0001" x="1215" y="2386" width="589" height="743" frameX="-25" frameY="-10" frameWidth="614" frameHeight="763"/>
+	<SubTexture name="right hun0000" x="798" y="854" width="830" height="749" frameX="-12" frameY="-15" frameWidth="842" frameHeight="764"/>
+	<SubTexture name="right hun0001" x="10" y="1613" width="812" height="761" frameX="0" frameY="0" frameWidth="842" frameHeight="764"/>
+	<SubTexture name="up carv0000" x="10" y="10" width="778" height="866" frameX="-12" frameY="0" frameWidth="791" frameHeight="868"/>
+	<SubTexture name="up carv0001" x="798" y="10" width="791" height="834" frameX="0" frameY="-34" frameWidth="791" frameHeight="868"/>
+</TextureAtlas>

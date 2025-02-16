@@ -17,7 +17,7 @@ function onCountdownTick(counter)
             characterPlayAnim(garchar, "equipGUN", true)
             setProperty(garchar..'.idleSuffix', '')
         else
-            if (stringStartsWith(getProperty("boyfriend.curCharacter"), "gari-playable")) then  characterPlayAnim(garchar, "hey-alt", true)
+            if (stringStartsWith(getProperty("boyfriend.curCharacter"), "gari-playable")) then  characterPlayAnim(garchar, "hey-fake-alt", true)
             else characterPlayAnim(garchar, "hey-fake", true)
             end
         end
