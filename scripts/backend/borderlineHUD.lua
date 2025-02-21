@@ -324,6 +324,7 @@ function replaceTimerIcon(nilgf)
         addAnimationByPrefix("iconTime", 'stg1', getProperty("gf.healthIcon").." stage "..ratingShits[curGFRead][3][2], 24, true)
     end
     setObjectCamera('iconTime', 'hud')
+    setProperty("iconTime.visible", isHudVisible)
     playAnim('iconTime', 'stg'..lolthing)
     if downscroll then setProperty('iconTime.y', 5) end
     addLuaSprite("iconTime", true)
@@ -337,6 +338,7 @@ function replaceHealthIcon()
     for i,anim in pairs(hpAnims) do addAnimationByPrefix("iconHP", anim, getProperty("boyfriend.healthIcon").." stage "..(i-2), 24, true) end
     setObjectCamera('iconHP', 'hud')
     setProperty('iconHP.flipX', true)
+    setProperty("iconHP.visible", isHudVisible)
     playAnim('iconHP', 'fc')
     addLuaSprite("iconHP", true)
     setProperty("hpBarActual.color", utils:convColours(getProperty("boyfriend.healthColorArray")))

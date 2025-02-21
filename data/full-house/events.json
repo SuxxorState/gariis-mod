@@ -377,6 +377,16 @@
 				]
 			],
 			[
+				114705.882352941,
+				[
+					[
+						"Alt Idle Animation",
+						"bf",
+						"-alt"
+					]
+				]
+			],
+			[
 				130840.336134454,
 				[
 					[
@@ -387,6 +397,11 @@
 					[
 						"Alt Idle Animation",
 						"gf",
+						""
+					],
+					[
+						"Alt Idle Animation",
+						"bf",
 						""
 					]
 				]
@@ -465,6 +480,11 @@
 				142689.075630252,
 				[
 					[
+						"Change Character",
+						"dad",
+						"hunte-lineart"
+					],
+					[
 						"Set Char Colour",
 						"dad",
 						"DBAF85"
@@ -495,6 +515,11 @@
 				148235.294117647,
 				[
 					[
+						"Change Character",
+						"dad",
+						"carv-lineart"
+					],
+					[
 						"Set Char Colour",
 						"dad",
 						"4D664D"
@@ -524,6 +549,11 @@
 			[
 				152773.109243697,
 				[
+					[
+						"Change Character",
+						"dad",
+						"hunte-lineart"
+					],
 					[
 						"Set Char Colour",
 						"dad",

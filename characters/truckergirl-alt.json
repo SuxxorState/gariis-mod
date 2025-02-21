@@ -1,22 +1,79 @@
 {
 	"animations": [
 		{
+			"offsets": [
+				0,
+				0
+			],
 			"loop": false,
-			"offsets": [0, 0],
-			"anim": "idle",
 			"fps": 24,
-			"name": "girl alt idle",
+			"anim": "idle",
+			"indices": [],
+			"name": "girl alt idle"
+		},
+		{
+			"offsets": [
+				11,
+				0
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "idle-alt",
+			"indices": [],
+			"name": "girl alt slt idle"
+		},
+		{
+			"loop": false,
+			"offsets": [
+				87,
+				-16
+			],
+			"anim": "singLEFT",
+			"fps": 24,
+			"name": "girl alt left",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				41,
+				-59
+			],
+			"anim": "singDOWN",
+			"fps": 24,
+			"name": "girl alt down",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				16,
+				24
+			],
+			"anim": "singUP",
+			"fps": 24,
+			"name": "girl alt up pose",
 			"indices": []
 		}
 	],
 	"vocals_file": "",
 	"no_antialiasing": false,
 	"image": "characters/truckergirl-alt",
-	"position": [0, 120],
+	"position": [
+		0,
+		120
+	],
 	"healthicon": "truckgirl",
 	"flip_x": true,
-	"healthbar_colors": [197, 82, 82],
-	"camera_position": [-50, 50],
+	"healthbar_colors": [
+		197,
+		82,
+		82
+	],
+	"camera_position": [
+		-50,
+		50
+	],
 	"sing_duration": 4,
 	"scale": 1,
 	"_editor_isPlayer": true

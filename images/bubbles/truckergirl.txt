@@ -2,6 +2,11 @@ truckergirl
 GF Sing
 
 bubbleLEFT, girl buble manga left, -1220, 200
-bubbleDOWN, girl down buble anime, -610, 170
+bubbleDOWN, girl down buble anime, -580, 170
 bubbleUP, girl manga bubel up, -1270, 270
 bubbleRIGHT, ghirl mange right bubebel, -640, 105
+
+bubbleLEFTmiss, girl buble manga black left, -1220, 200
+bubbleDOWNmiss, girl down buble stupdi anime, -580, 170
+bubbleUPmiss, girl manga bubel bad up, -1270, 270
+bubbleRIGHTmiss, ghirl mange bad rote, -600, 105

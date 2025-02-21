@@ -1,54 +1,79 @@
 {
 	"animations": [
 		{
+			"offsets": [
+				0,
+				0
+			],
 			"loop": true,
-			"offsets": [0, 0],
-			"anim": "idle",
 			"fps": 2,
-			"name": "idle carv",
+			"anim": "idel",
+			"indices": [],
+			"name": "idle carv"
+		},
+		{
+			"loop": false,
+			"offsets": [
+				95,
+				-13
+			],
+			"anim": "singLEFT",
+			"fps": 12,
+			"name": "left crave",
 			"indices": []
 		},
 		{
-			"offsets": [95, -13],
-			"indices": [],
-			"fps": 12,
-			"anim": "singLEFT",
 			"loop": false,
-			"name": "left crave"
-		},
-		{
-			"offsets": [-1, -40],
-			"indices": [],
-			"fps": 12,
+			"offsets": [
+				-1,
+				-40
+			],
 			"anim": "singDOWN",
-			"loop": false,
-			"name": "down carv"
+			"fps": 12,
+			"name": "down carv",
+			"indices": []
 		},
 		{
-			"offsets": [6, 37],
-			"indices": [],
-			"fps": 12,
+			"loop": false,
+			"offsets": [
+				6,
+				37
+			],
 			"anim": "singUP",
-			"loop": false,
-			"name": "up carv"
+			"fps": 12,
+			"name": "up carv",
+			"indices": []
 		},
 		{
-			"offsets": [-71, -19],
-			"indices": [],
-			"fps": 12,
-			"anim": "singRIGHT",
 			"loop": false,
-			"name": "right carv"
+			"offsets": [
+				-71,
+				-19
+			],
+			"anim": "singRIGHT",
+			"fps": 12,
+			"name": "right carv",
+			"indices": []
 		}
 	],
 	"vocals_file": "",
 	"no_antialiasing": false,
 	"image": "characters/carv-lineart",
-	"position": [240, 110],
-	"healthicon": "truckboy",
+	"position": [
+		240,
+		110
+	],
+	"healthicon": "carv",
 	"flip_x": false,
-	"healthbar_colors": [78, 127, 175],
-	"camera_position": [-10, 230],
+	"healthbar_colors": [
+		77,
+		102,
+		77
+	],
+	"camera_position": [
+		-10,
+		230
+	],
 	"sing_duration": 4,
 	"scale": 1,
 	"_editor_isPlayer": false

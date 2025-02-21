@@ -2,36 +2,68 @@
 <TextureAtlas imagePath="truckergirl.png">
 	<!-- Created with Adobe Animate version 23.0.1.70 -->
 	<!-- http://www.adobe.com/products/animate.html -->
-	<SubTexture name="ghirl mange right bubebel0000" x="879" y="0" width="386" height="678" pivotX="0" pivotY="0"/>
-	<SubTexture name="ghirl mange right bubebel0001" x="879" y="0" width="386" height="678"/>
-	<SubTexture name="ghirl mange right bubebel0002" x="879" y="0" width="386" height="678"/>
-	<SubTexture name="ghirl mange right bubebel0003" x="879" y="0" width="386" height="678"/>
-	<SubTexture name="ghirl mange right bubebel0004" x="879" y="0" width="386" height="678"/>
-	<SubTexture name="ghirl mange right bubebel0005" x="879" y="0" width="386" height="678"/>
-	<SubTexture name="ghirl mange right bubebel0006" x="879" y="0" width="386" height="678"/>
-	<SubTexture name="ghirl mange right bubebel0007" x="879" y="0" width="386" height="678"/>
-	<SubTexture name="girl buble manga left0000" x="1267" y="0" width="389" height="583" pivotX="0" pivotY="0"/>
-	<SubTexture name="girl buble manga left0001" x="1267" y="0" width="389" height="583"/>
-	<SubTexture name="girl buble manga left0002" x="1267" y="0" width="389" height="583"/>
-	<SubTexture name="girl buble manga left0003" x="1267" y="0" width="389" height="583"/>
-	<SubTexture name="girl buble manga left0004" x="1267" y="0" width="389" height="583"/>
-	<SubTexture name="girl buble manga left0005" x="1267" y="0" width="389" height="583"/>
-	<SubTexture name="girl buble manga left0006" x="1267" y="0" width="389" height="583"/>
-	<SubTexture name="girl buble manga left0007" x="1267" y="0" width="389" height="583"/>
-	<SubTexture name="girl down buble anime0000" x="477" y="0" width="400" height="682" pivotX="0" pivotY="0"/>
-	<SubTexture name="girl down buble anime0001" x="477" y="0" width="400" height="682"/>
-	<SubTexture name="girl down buble anime0002" x="477" y="0" width="400" height="682"/>
-	<SubTexture name="girl down buble anime0003" x="477" y="0" width="400" height="682"/>
-	<SubTexture name="girl down buble anime0004" x="477" y="0" width="400" height="682"/>
-	<SubTexture name="girl down buble anime0005" x="477" y="0" width="400" height="682"/>
-	<SubTexture name="girl down buble anime0006" x="477" y="0" width="400" height="682"/>
-	<SubTexture name="girl down buble anime0007" x="477" y="0" width="400" height="682"/>
-	<SubTexture name="girl manga bubel up0000" x="0" y="0" width="475" height="673" pivotX="0" pivotY="0"/>
-	<SubTexture name="girl manga bubel up0001" x="0" y="0" width="475" height="673"/>
-	<SubTexture name="girl manga bubel up0002" x="0" y="0" width="475" height="673"/>
-	<SubTexture name="girl manga bubel up0003" x="0" y="0" width="475" height="673"/>
-	<SubTexture name="girl manga bubel up0004" x="0" y="0" width="475" height="673"/>
-	<SubTexture name="girl manga bubel up0005" x="0" y="0" width="475" height="673"/>
-	<SubTexture name="girl manga bubel up0006" x="0" y="0" width="475" height="673"/>
-	<SubTexture name="girl manga bubel up0007" x="0" y="0" width="475" height="673"/>
+	<SubTexture name="ghirl mange bad rote0000" x="1948" y="0" width="439" height="772" pivotX="19.2" pivotY="46"/>
+	<SubTexture name="ghirl mange bad rote0001" x="1948" y="0" width="439" height="772"/>
+	<SubTexture name="ghirl mange bad rote0002" x="1948" y="0" width="439" height="772"/>
+	<SubTexture name="ghirl mange bad rote0003" x="0" y="744" width="386" height="678" frameX="-19" frameY="-46" frameWidth="439" frameHeight="772"/>
+	<SubTexture name="ghirl mange bad rote0004" x="0" y="744" width="386" height="678" frameX="-19" frameY="-46" frameWidth="439" frameHeight="772"/>
+	<SubTexture name="ghirl mange bad rote0005" x="0" y="744" width="386" height="678" frameX="-19" frameY="-46" frameWidth="439" frameHeight="772"/>
+	<SubTexture name="ghirl mange bad rote0006" x="0" y="744" width="386" height="678" frameX="-19" frameY="-46" frameWidth="439" frameHeight="772"/>
+	<SubTexture name="ghirl mange bad rote0007" x="0" y="744" width="386" height="678" frameX="-19" frameY="-46" frameWidth="439" frameHeight="772"/>
+	<SubTexture name="ghirl mange right bubebel0000" x="1901" y="1176" width="221" height="387" pivotX="31.1" pivotY="33.7" frameX="-193" frameY="-208" frameWidth="418" frameHeight="733"/>
+	<SubTexture name="ghirl mange right bubebel0001" x="1901" y="1176" width="221" height="387" frameX="-193" frameY="-208" frameWidth="418" frameHeight="733"/>
+	<SubTexture name="ghirl mange right bubebel0002" x="2389" y="675" width="418" height="733"/>
+	<SubTexture name="ghirl mange right bubebel0003" x="2389" y="675" width="418" height="733"/>
+	<SubTexture name="ghirl mange right bubebel0004" x="527" y="735" width="386" height="678" frameX="-31" frameY="-33" frameWidth="418" frameHeight="733"/>
+	<SubTexture name="ghirl mange right bubebel0005" x="527" y="735" width="386" height="678" frameX="-31" frameY="-33" frameWidth="418" frameHeight="733"/>
+	<SubTexture name="ghirl mange right bubebel0006" x="527" y="735" width="386" height="678" frameX="-31" frameY="-33" frameWidth="418" frameHeight="733"/>
+	<SubTexture name="ghirl mange right bubebel0007" x="527" y="735" width="386" height="678" frameX="-31" frameY="-33" frameWidth="418" frameHeight="733"/>
+	<SubTexture name="girl buble manga black left0000" x="3343" y="0" width="450" height="704" pivotX="27.5" pivotY="41.2"/>
+	<SubTexture name="girl buble manga black left0001" x="3343" y="0" width="450" height="704"/>
+	<SubTexture name="girl buble manga black left0002" x="3343" y="0" width="450" height="704"/>
+	<SubTexture name="girl buble manga black left0003" x="1498" y="764" width="401" height="626" frameX="-27" frameY="-37" frameWidth="450" frameHeight="704"/>
+	<SubTexture name="girl buble manga black left0004" x="1498" y="764" width="401" height="626" frameX="-27" frameY="-37" frameWidth="450" frameHeight="704"/>
+	<SubTexture name="girl buble manga black left0005" x="1498" y="764" width="401" height="626" frameX="-27" frameY="-37" frameWidth="450" frameHeight="704"/>
+	<SubTexture name="girl buble manga black left0006" x="1498" y="764" width="401" height="626" frameX="-27" frameY="-37" frameWidth="450" frameHeight="704"/>
+	<SubTexture name="girl buble manga black left0007" x="1498" y="764" width="401" height="626" frameX="-27" frameY="-37" frameWidth="450" frameHeight="704"/>
+	<SubTexture name="girl buble manga left0000" x="1901" y="774" width="268" height="400" pivotX="1.4" pivotY="57.05" frameX="-3" frameY="-191" frameWidth="441" frameHeight="661"/>
+	<SubTexture name="girl buble manga left0001" x="1901" y="774" width="268" height="400" frameX="-3" frameY="-191" frameWidth="441" frameHeight="661"/>
+	<SubTexture name="girl buble manga left0002" x="2809" y="675" width="441" height="661"/>
+	<SubTexture name="girl buble manga left0003" x="2809" y="675" width="441" height="661"/>
+	<SubTexture name="girl buble manga left0004" x="915" y="767" width="389" height="583" frameX="-1" frameY="-57" frameWidth="441" frameHeight="661"/>
+	<SubTexture name="girl buble manga left0005" x="915" y="767" width="389" height="583" frameX="-1" frameY="-57" frameWidth="441" frameHeight="661"/>
+	<SubTexture name="girl buble manga left0006" x="915" y="767" width="389" height="583" frameX="-1" frameY="-57" frameWidth="441" frameHeight="661"/>
+	<SubTexture name="girl buble manga left0007" x="915" y="767" width="389" height="583" frameX="-1" frameY="-57" frameWidth="441" frameHeight="661"/>
+	<SubTexture name="girl down buble anime0000" x="3795" y="0" width="261" height="444" pivotX="46.15" pivotY="49.05" frameX="-182" frameY="-195" frameWidth="448" frameHeight="762"/>
+	<SubTexture name="girl down buble anime0001" x="3795" y="0" width="261" height="444" frameX="-182" frameY="-195" frameWidth="448" frameHeight="762"/>
+	<SubTexture name="girl down buble anime0002" x="1498" y="0" width="448" height="762"/>
+	<SubTexture name="girl down buble anime0003" x="1498" y="0" width="448" height="762"/>
+	<SubTexture name="girl down buble anime0004" x="3252" y="706" width="400" height="682" frameX="-46" frameY="-49" frameWidth="448" frameHeight="762"/>
+	<SubTexture name="girl down buble anime0005" x="3252" y="706" width="400" height="682" frameX="-46" frameY="-49" frameWidth="448" frameHeight="762"/>
+	<SubTexture name="girl down buble anime0006" x="3252" y="706" width="400" height="682" frameX="-46" frameY="-49" frameWidth="448" frameHeight="762"/>
+	<SubTexture name="girl down buble anime0007" x="3252" y="706" width="400" height="682" frameX="-46" frameY="-49" frameWidth="448" frameHeight="762"/>
+	<SubTexture name="girl down buble stupdi anime0000" x="1047" y="0" width="449" height="765" pivotX="22.6" pivotY="41.9"/>
+	<SubTexture name="girl down buble stupdi anime0001" x="1047" y="0" width="449" height="765"/>
+	<SubTexture name="girl down buble stupdi anime0002" x="1047" y="0" width="449" height="765"/>
+	<SubTexture name="girl down buble stupdi anime0003" x="3654" y="706" width="400" height="682" frameX="-22" frameY="-41" frameWidth="449" frameHeight="765"/>
+	<SubTexture name="girl down buble stupdi anime0004" x="3654" y="706" width="400" height="682" frameX="-22" frameY="-41" frameWidth="449" frameHeight="765"/>
+	<SubTexture name="girl down buble stupdi anime0005" x="3654" y="706" width="400" height="682" frameX="-22" frameY="-41" frameWidth="449" frameHeight="765"/>
+	<SubTexture name="girl down buble stupdi anime0006" x="3654" y="706" width="400" height="682" frameX="-22" frameY="-41" frameWidth="449" frameHeight="765"/>
+	<SubTexture name="girl down buble stupdi anime0007" x="3654" y="706" width="400" height="682" frameX="-22" frameY="-41" frameWidth="449" frameHeight="765"/>
+	<SubTexture name="girl manga bubel bad up0000" x="0" y="0" width="525" height="742" pivotX="27.05" pivotY="32.9"/>
+	<SubTexture name="girl manga bubel bad up0001" x="0" y="0" width="525" height="742"/>
+	<SubTexture name="girl manga bubel bad up0002" x="0" y="0" width="525" height="742"/>
+	<SubTexture name="girl manga bubel bad up0003" x="2866" y="0" width="475" height="673" frameX="-27" frameY="-32" frameWidth="525" frameHeight="742"/>
+	<SubTexture name="girl manga bubel bad up0004" x="2866" y="0" width="475" height="673" frameX="-27" frameY="-32" frameWidth="525" frameHeight="742"/>
+	<SubTexture name="girl manga bubel bad up0005" x="2866" y="0" width="475" height="673" frameX="-27" frameY="-32" frameWidth="525" frameHeight="742"/>
+	<SubTexture name="girl manga bubel bad up0006" x="2866" y="0" width="475" height="673" frameX="-27" frameY="-32" frameWidth="525" frameHeight="742"/>
+	<SubTexture name="girl manga bubel bad up0007" x="2866" y="0" width="475" height="673" frameX="-27" frameY="-32" frameWidth="525" frameHeight="742"/>
+	<SubTexture name="girl manga bubel up0000" x="2124" y="1176" width="218" height="309" pivotX="0.6" pivotY="41.95" frameX="-4" frameY="-291" frameWidth="518" frameHeight="733"/>
+	<SubTexture name="girl manga bubel up0001" x="2124" y="1176" width="218" height="309" frameX="-4" frameY="-291" frameWidth="518" frameHeight="733"/>
+	<SubTexture name="girl manga bubel up0002" x="527" y="0" width="518" height="733"/>
+	<SubTexture name="girl manga bubel up0003" x="527" y="0" width="518" height="733"/>
+	<SubTexture name="girl manga bubel up0004" x="2389" y="0" width="475" height="673" frameX="0" frameY="-41" frameWidth="518" frameHeight="733"/>
+	<SubTexture name="girl manga bubel up0005" x="2389" y="0" width="475" height="673" frameX="0" frameY="-41" frameWidth="518" frameHeight="733"/>
+	<SubTexture name="girl manga bubel up0006" x="2389" y="0" width="475" height="673" frameX="0" frameY="-41" frameWidth="518" frameHeight="733"/>
+	<SubTexture name="girl manga bubel up0007" x="2389" y="0" width="475" height="673" frameX="0" frameY="-41" frameWidth="518" frameHeight="733"/>
 </TextureAtlas>

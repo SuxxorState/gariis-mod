@@ -162,6 +162,8 @@ function onUpdate(elapsed)
         openCustomSubstate("error", true)
     end
 
+    if (not unlockSecrets) then return end
+
     if (getModSetting('gariiDebug')) then
         if (keyboardJustPressed("F5")) then 
             setPropertyFromClass("states.PlayState", "nextReloadAll", true)
@@ -199,9 +201,9 @@ function onUpdate(elapsed)
         end
     end
 
-    if (keyboardJustPressed(arcadeKey.keyboard) or anyGamepadJustPressed(arcadeKey.gamepad)) and unlockSecrets then 
+    if (keyboardJustPressed(arcadeKey.keyboard) or anyGamepadJustPressed(arcadeKey.gamepad)) then
         loadSong("gariis-arcade", 0)
-    elseif (keyboardJustPressed(achievementKey.keyboard) or anyGamepadJustPressed(achievementKey.gamepad)) then 
+    elseif (keyboardJustPressed(achievementKey.keyboard) or anyGamepadJustPressed(achievementKey.gamepad)) then
         addLuaScript('scripts/menus/achievements')
         callOnLuas("openAchievementsMenu") 
     end

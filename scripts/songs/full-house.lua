@@ -1,6 +1,7 @@
 
 local utils = (require (getVar("folDir").."scripts.backend.utils")):new()
 local closeMode = false
+local canIcon = false
 function onCreate()
     addLuaScript("scripts/objects/extraCharacter")
     setProperty("skipCountdown", true)
@@ -26,12 +27,12 @@ function onCreate()
 end
 
 function onCreatePost()
-    if (timeBarType ~= "Disabled") then setProperty("iconTimehunte.x", -150) end
     setProperty("dad.x", getProperty("dad.x") - 100)
     setProperty("spkr2.visible", false)
 
     callOnLuas("addExtraOpp", {"hunte", "hunte", -310,150})
     setProperty("hunte.visible", false)
+    if (timeBarType ~= "Disabled") then setProperty("iconTimehunte.x", -150) end
 end
 
 
@@ -65,11 +66,14 @@ end
 
 function opponentNoteHit()
     if (closeMode) then
+        local defOppX = defaultOpponentX
+        if (stringStartsWith(dadName, "hunte")) then defOppX = defOppX + 90 end
+
         cancelTween("oppAlphaTween")
         cancelTween("oppXTween")
         cancelTimer("oppCloseTween")
         setProperty("dad.alpha", 1)
-        setProperty("dad.x", defaultOpponentX + 300)
+        setProperty("dad.x", defOppX + 300)
         runTimer("oppCloseTween", 0.25)
     end
 end
@@ -94,7 +98,9 @@ end
 
 function onTimerCompleted(tmr)
     if (tmr == "oppCloseTween") then
-        doTweenX("oppXTween", "dad", defaultOpponentX - 200, 0.75, "circIn")
+        local defOppX = defaultOpponentX
+        if (stringStartsWith(dadName, "hunte")) then defOppX = defOppX + 90 end
+        doTweenX("oppXTween", "dad", defOppX - 200, 0.75, "circIn")
         doTweenAlpha("oppAlphaTween", "dad", 0, 0.25, "circIn")
     elseif (tmr == "plrCloseTween") then
         doTweenX("plrXTween", "boyfriend", defaultBoyfriendX + 800, 0.75, "circIn")

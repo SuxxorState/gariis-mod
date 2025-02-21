@@ -2,18 +2,44 @@
 <TextureAtlas imagePath="truckergirl-alt.png">
 	<!-- Created with Adobe Animate version 23.0.1.70 -->
 	<!-- http://www.adobe.com/products/animate.html -->
-	<SubTexture name="girl alt idle0000" x="1076" y="0" width="360" height="613" pivotX="70.25" pivotY="-13.55" frameX="0" frameY="-21" frameWidth="374" frameHeight="634"/>
-	<SubTexture name="girl alt idle0001" x="1076" y="0" width="360" height="613" frameX="0" frameY="-21" frameWidth="374" frameHeight="634"/>
-	<SubTexture name="girl alt idle0002" x="1438" y="0" width="350" height="615" frameX="-13" frameY="-19" frameWidth="374" frameHeight="634"/>
-	<SubTexture name="girl alt idle0003" x="1438" y="0" width="350" height="615" frameX="-13" frameY="-19" frameWidth="374" frameHeight="634"/>
-	<SubTexture name="girl alt idle0004" x="718" y="0" width="356" height="625" frameX="-14" frameY="-9" frameWidth="374" frameHeight="634"/>
-	<SubTexture name="girl alt idle0005" x="718" y="0" width="356" height="625" frameX="-14" frameY="-9" frameWidth="374" frameHeight="634"/>
-	<SubTexture name="girl alt idle0006" x="361" y="0" width="355" height="632" frameX="-16" frameY="-2" frameWidth="374" frameHeight="634"/>
-	<SubTexture name="girl alt idle0007" x="361" y="0" width="355" height="632" frameX="-16" frameY="-2" frameWidth="374" frameHeight="634"/>
-	<SubTexture name="girl alt idle0008" x="0" y="0" width="359" height="634" frameX="-15" frameY="0" frameWidth="374" frameHeight="634"/>
-	<SubTexture name="girl alt idle0009" x="0" y="0" width="359" height="634" frameX="-15" frameY="0" frameWidth="374" frameHeight="634"/>
-	<SubTexture name="girl alt idle0010" x="0" y="0" width="359" height="634" frameX="-15" frameY="0" frameWidth="374" frameHeight="634"/>
-	<SubTexture name="girl alt idle0011" x="0" y="0" width="359" height="634" frameX="-15" frameY="0" frameWidth="374" frameHeight="634"/>
-	<SubTexture name="girl alt idle0012" x="0" y="0" width="359" height="634" frameX="-15" frameY="0" frameWidth="374" frameHeight="634"/>
-	<SubTexture name="girl alt idle0013" x="0" y="0" width="359" height="634" frameX="-15" frameY="0" frameWidth="374" frameHeight="634"/>
+	<SubTexture name="girl alt down0000" x="2053" y="0" width="439" height="575" pivotX="111.1" pivotY="-72.5" frameX="0" frameY="-12" frameWidth="439" frameHeight="587"/>
+	<SubTexture name="girl alt down0001" x="2053" y="0" width="439" height="575" frameX="0" frameY="-12" frameWidth="439" frameHeight="587"/>
+	<SubTexture name="girl alt down0002" x="2494" y="0" width="418" height="584" frameX="-2" frameY="0" frameWidth="439" frameHeight="587"/>
+	<SubTexture name="girl alt down0003" x="2494" y="0" width="418" height="584" frameX="-2" frameY="0" frameWidth="439" frameHeight="587"/>
+	<SubTexture name="girl alt idle0000" x="3654" y="627" width="360" height="613" pivotX="70.25" pivotY="-13.55" frameX="0" frameY="-21" frameWidth="374" frameHeight="634"/>
+	<SubTexture name="girl alt idle0001" x="3654" y="627" width="360" height="613" frameX="0" frameY="-21" frameWidth="374" frameHeight="634"/>
+	<SubTexture name="girl alt idle0002" x="2787" y="636" width="350" height="615" frameX="-13" frameY="-19" frameWidth="374" frameHeight="634"/>
+	<SubTexture name="girl alt idle0003" x="2787" y="636" width="350" height="615" frameX="-13" frameY="-19" frameWidth="374" frameHeight="634"/>
+	<SubTexture name="girl alt idle0004" x="0" y="620" width="356" height="625" frameX="-14" frameY="-9" frameWidth="374" frameHeight="634"/>
+	<SubTexture name="girl alt idle0005" x="0" y="620" width="356" height="625" frameX="-14" frameY="-9" frameWidth="374" frameHeight="634"/>
+	<SubTexture name="girl alt idle0006" x="570" y="619" width="355" height="632" frameX="-16" frameY="-2" frameWidth="374" frameHeight="634"/>
+	<SubTexture name="girl alt idle0007" x="570" y="619" width="355" height="632" frameX="-16" frameY="-2" frameWidth="374" frameHeight="634"/>
+	<SubTexture name="girl alt idle0008" x="2053" y="577" width="359" height="634" frameX="-15" frameY="0" frameWidth="374" frameHeight="634"/>
+	<SubTexture name="girl alt idle0009" x="2053" y="577" width="359" height="634" frameX="-15" frameY="0" frameWidth="374" frameHeight="634"/>
+	<SubTexture name="girl alt idle0010" x="2053" y="577" width="359" height="634" frameX="-15" frameY="0" frameWidth="374" frameHeight="634"/>
+	<SubTexture name="girl alt idle0011" x="2053" y="577" width="359" height="634" frameX="-15" frameY="0" frameWidth="374" frameHeight="634"/>
+	<SubTexture name="girl alt idle0012" x="2053" y="577" width="359" height="634" frameX="-15" frameY="0" frameWidth="374" frameHeight="634"/>
+	<SubTexture name="girl alt idle0013" x="2053" y="577" width="359" height="634" frameX="-15" frameY="0" frameWidth="374" frameHeight="634"/>
+	<SubTexture name="girl alt left0000" x="570" y="0" width="547" height="617" pivotX="157.05" pivotY="-29.25" frameX="0" frameY="-1" frameWidth="602" frameHeight="618"/>
+	<SubTexture name="girl alt left0001" x="570" y="0" width="547" height="617" frameX="0" frameY="-1" frameWidth="602" frameHeight="618"/>
+	<SubTexture name="girl alt left0002" x="0" y="0" width="568" height="618" frameX="-34" frameY="0" frameWidth="602" frameHeight="618"/>
+	<SubTexture name="girl alt left0003" x="0" y="0" width="568" height="618" frameX="-34" frameY="0" frameWidth="602" frameHeight="618"/>
+	<SubTexture name="girl alt slt idle0000" x="2414" y="586" width="371" height="613" pivotX="81.55" pivotY="-13.55" frameX="0" frameY="-21" frameWidth="385" frameHeight="634"/>
+	<SubTexture name="girl alt slt idle0001" x="2414" y="586" width="371" height="613" frameX="0" frameY="-21" frameWidth="385" frameHeight="634"/>
+	<SubTexture name="girl alt slt idle0002" x="3286" y="634" width="358" height="615" frameX="-16" frameY="-19" frameWidth="385" frameHeight="634"/>
+	<SubTexture name="girl alt slt idle0003" x="3286" y="634" width="358" height="615" frameX="-16" frameY="-19" frameWidth="385" frameHeight="634"/>
+	<SubTexture name="girl alt slt idle0004" x="3654" y="0" width="366" height="625" frameX="-15" frameY="-9" frameWidth="385" frameHeight="634"/>
+	<SubTexture name="girl alt slt idle0005" x="3654" y="0" width="366" height="625" frameX="-15" frameY="-9" frameWidth="385" frameHeight="634"/>
+	<SubTexture name="girl alt slt idle0006" x="3286" y="0" width="366" height="632" frameX="-16" frameY="-2" frameWidth="385" frameHeight="634"/>
+	<SubTexture name="girl alt slt idle0007" x="3286" y="0" width="366" height="632" frameX="-16" frameY="-2" frameWidth="385" frameHeight="634"/>
+	<SubTexture name="girl alt slt idle0008" x="2914" y="0" width="370" height="634" frameX="-15" frameY="0" frameWidth="385" frameHeight="634"/>
+	<SubTexture name="girl alt slt idle0009" x="2914" y="0" width="370" height="634" frameX="-15" frameY="0" frameWidth="385" frameHeight="634"/>
+	<SubTexture name="girl alt slt idle0010" x="2914" y="0" width="370" height="634" frameX="-15" frameY="0" frameWidth="385" frameHeight="634"/>
+	<SubTexture name="girl alt slt idle0011" x="2914" y="0" width="370" height="634" frameX="-15" frameY="0" frameWidth="385" frameHeight="634"/>
+	<SubTexture name="girl alt slt idle0012" x="2914" y="0" width="370" height="634" frameX="-15" frameY="0" frameWidth="385" frameHeight="634"/>
+	<SubTexture name="girl alt slt idle0013" x="2914" y="0" width="370" height="634" frameX="-15" frameY="0" frameWidth="385" frameHeight="634"/>
+	<SubTexture name="girl alt up pose0000" x="1119" y="0" width="467" height="660" pivotX="86.4" pivotY="11.8" frameX="-9" frameY="0" frameWidth="476" frameHeight="660"/>
+	<SubTexture name="girl alt up pose0001" x="1119" y="0" width="467" height="660" frameX="-9" frameY="0" frameWidth="476" frameHeight="660"/>
+	<SubTexture name="girl alt up pose0002" x="1588" y="0" width="463" height="644" frameX="0" frameY="-16" frameWidth="476" frameHeight="660"/>
+	<SubTexture name="girl alt up pose0003" x="1588" y="0" width="463" height="644" frameX="0" frameY="-16" frameWidth="476" frameHeight="660"/>
 </TextureAtlas>

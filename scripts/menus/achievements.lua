@@ -21,7 +21,7 @@ local achievements = {
 
     ["100k-chips"] = {title = "The Big Cheese", description = "Get one hundred thousand or more poker chips in the casino", iconFile = "", secret = false, gariiPoints = 50},
     ["true-bjs"] = {title = "The House Is Cheating!", description = "End in a draw with both you and the house having a true blackjack", iconFile = "cheating", secret = false, gariiPoints = 25},
-    ["tb-foak"] = {title = "Planet X", description = "Get the highest Five of a Kind you can get in Picture Poker", iconFile = "", secret = false, gariiPoints = 25},
+    ["tb-foak"] = {title = "Planet X", description = "Get the highest Five of a Kind you can get in Picture Poker", iconFile = "balatro", secret = false, gariiPoints = 25},
     ["no-fish"] = {title = "Go...Fish?", description = "It doesn't exist. You're hallucinating.", iconFile = "", secret = false, gariiPoints = 10},
 
     ["stag-quarters"] = {title = "Dollar Fitty", description = "Survive all six quarters at Garii's Manor", iconFile = "", secret = false, gariiPoints = 50},

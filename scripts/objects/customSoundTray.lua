@@ -13,8 +13,6 @@ local targetAlpha = 0
 function initLuas()
     addHaxeLibrary('FlxG')
     runHaxeCode([[ FlxG.game.soundTray.silent = true; ]])
-    makeLuaText("stVolume", "", 0,-100,-100)
-    makeLuaText("stMuted", "", 0,-100,-100)
 
     makeLuaSprite("stBG", "soundTray/volumebox")
     setProperty("stBG.scale.x", glbScale)
@@ -62,10 +60,6 @@ function updateST(elp)
         targetAlpha = 0
     end
     if (keyReleased("volume_mute") or keyReleased("volume_up") or keyReleased("volume_down")) then
-        runHaxeCode([[
-            game.modchartTexts.get("stVolume").text = "" + Math.round(FlxG.sound.volume * 10);
-            game.modchartTexts.get("stMuted").text = FlxG.sound.muted ? "0" : "1";
-        ]])
         showST(keyReleased("volume_up"))
     end
 end
@@ -77,8 +71,8 @@ function showST(presUp)
 
     bringTrayToFront()
     showTimer = 1
-    local glbVolume = (getProperty("stVolume.text")+1)-1
-    if (getProperty("stMuted.text") == "0") then glbVolume = 0 end
+    local glbVolume = getPropertyFromClass("flixel.FlxG", "sound.volume")*10
+    if (getPropertyFromClass("flixel.FlxG", "sound.muted")) then glbVolume = 0 end
     setTrayY(0)
 
     for i=1,10 do

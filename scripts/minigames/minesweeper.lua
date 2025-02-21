@@ -138,36 +138,37 @@ function setupGame()
         for j=1,width do
             removeLuaSprite("tile"..i.."-"..j)
             makeLuaSprite("tile"..i.."-"..j, nil, x + ((j-1) * 16), y + ((i-1) * 16))
-            addGridAnims("tile"..i.."-"..j, sfld..tileSkin, 16, 16, {["reg"] = {0}, ["open"] = {1}, ["dead"] = {2}})
+            addGridAnims("tile"..i.."-"..j, sfld..tileSkin, 16, 16, {{"reg", 0}, {"open", 1}, {"dead", 2}})
             quickAddSprite("tile"..i.."-"..j)
 
             if (compareIndexTables(data.mines, {j,i})) then
                 local curMine = bigIndexOf(data.mines, {j,i}) --prevents desync because a simple counter can sometimes... be wrong
                 removeLuaSprite("mine"..curMine)
                 makeLuaSprite("mine"..curMine, nil, x + ((j-1) * 16), y + ((i-1) * 16))
-                addGridAnims("mine"..curMine, sfld..tileSkin, 16, 16, {["reg"] = {3}})
+                addGridAnims("mine"..curMine, sfld..tileSkin, 16, 16, {{"reg", 3}})
                 quickAddSprite("mine"..curMine, false)
             elseif (compareIndexTables(data.flowers, {j,i})) then
                 local curFlwr = bigIndexOf(data.flowers, {j,i})
                 removeLuaSprite("flower"..curFlwr)
                 makeLuaSprite("flower"..curFlwr, nil, x + ((j-1) * 16), y + ((i-1) * 16))
-                addGridAnims("flower"..curFlwr, sfld..tileSkin, 16, 16, {["reg"] = {6}, ["open"] = {7}})
+                addGridAnims("flower"..curFlwr, sfld..tileSkin, 16, 16, {{"reg", 6}, {"open", 7}})
                 quickAddSprite("flower"..curFlwr, false)
             end
             removeLuaSprite("flag"..i.."-"..j)
             makeLuaSprite("flag"..i.."-"..j, nil, x + ((j-1) * 16), y + ((i-1) * 16))
-            addGridAnims("flag"..i.."-"..j, sfld..tileSkin, 16, 16, {["flag"] = {4}, ["mark"] = {5}})
+            addGridAnims("flag"..i.."-"..j, sfld..tileSkin, 16, 16, {{"flag", 4}, {"mark", 5}})
             quickAddSprite("flag"..i.."-"..j, false)
 
             removeLuaSprite("data"..i.."-"..j)
             makeAnimatedLuaSprite("data"..i.."-"..j, fold.."infostuff", x + ((j-1) * 16), y + ((i-1) * 16))
             local adjcount = countAdjacentMines(j, i)
             setProperty("data"..i.."-"..j..".color", getColorFromHex(skinStats[tileSkin].colours[adjcount.mines]))
-            if (adjcount.mines >= 1 and adjcount.flowers <= 0) then addAnimationByPrefix("data"..i.."-"..j, "num", adjcount.mines.."num", 24, true)
+            if (adjcount.mines >= 1 and adjcount.flowers <= 0) then addAnimationByPrefix("data"..i.."-"..j, "num", (adjcount.mines).."num", 24, true)
             elseif (adjcount.flowers >= 1) then addAnimationByPrefix("data"..i.."-"..j, "num", (adjcount.mines + adjcount.flowers).."fakenum", 24, true)
             else setProperty("data"..i.."-"..j..".color", getColorFromHex("434253"))
             end
             addAnimationByPrefix("data"..i.."-"..j, "x", "x", 24, true)
+            playAnim("data"..i.."-"..j, "num")
             quickAddSprite("data"..i.."-"..j, false)
         end
     end
@@ -186,9 +187,9 @@ end
 
 function addGridAnims(spr, texture, wid, hei, anims) --added for convenience
     loadGraphic(spr, texture, wid, hei)
-    for k,v in pairs(anims) do
-        addAnimation(spr, k, v)
-        if (k == "reg") then playAnim(spr, k) end --default anim basically
+    for _,v in ipairs(anims) do
+        addAnimation(spr, v[1], {v[2]})
+        playAnim(spr, "reg") --default anim basically
     end
 end
 

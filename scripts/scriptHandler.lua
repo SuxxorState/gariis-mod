@@ -19,7 +19,7 @@ if (not errored) then
     
     addLuaScript(bkend..'globalFunctions')
     addLuaScript(bkend.."achievementStalker")
-    if (not stringStartsWith(version, "1.0")) then addLuaScript(objts..'customSoundTray') end
+    addLuaScript(objts..'customSoundTray')
     addLuaScript(objts..'stickerTrans')
     addLuaScript(objts..'cursor')
     if (utils:lwrKebab(songName) == "gariis-arcade") then --arcade menu handles the heavy lifting for everything non-fnf related

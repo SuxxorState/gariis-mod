@@ -43,6 +43,10 @@ function noteMissPress()
 	keyPresses = keyPresses + 1
 end
 
+function onCreate()
+    unlockAchievement("true-bjs")
+end
+
 function onEndSong()
     if (posesHit <= 0 and utils.songNameFmt == "full-house") then
         unlockAchievement("no-pose")
