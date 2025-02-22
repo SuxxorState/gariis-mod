@@ -96,6 +96,12 @@ function onCreatePost() --in general this hud kinda fucking sucks however thats 
     for i = 1,maxsouls do
         setProperty("soul"..i..".y", souly + ((bigframe - getProperty("soul"..i..".frameHeight"))/2))
     end
+    local comboy = souly - 60
+    if (downscroll) then comboy = souly + 60 end
+    makeAnimatedLuaSprite("combolbl", hudFld.."fishbones", (screenWidth - 305) + 25, comboy)
+    addAnimationByPrefix("combolbl", "reg" ,"hits", 24, true)
+    setObjectCamera("combolbl", 'hud')
+    addLuaSprite("combolbl")
 
     setProperty("iconP1.flipX", not downscroll)
     setProperty("iconP2.flipX", downscroll)
@@ -121,6 +127,7 @@ function onUpdatePost()
     end
 end
 
+local comboMaxLen = 0
 function onRecalculateRating()
     local scrstr = utils:numToStr(score)
 
@@ -136,6 +143,43 @@ function onRecalculateRating()
         end
         playAnim("scrnum"..(i-1), ""..scrstr[i])
         setProperty("scrnum"..(i-1)..".y", 5 + (getProperty("scrtxt.frameHeight") - getProperty("scrnum"..(i-1)..".frameHeight")))
+    end
+
+    local comstr = utils:numToStr(combo)
+    if (#comstr > comboMaxLen) then comboMaxLen = #comstr end
+    local comboy = screenHeight - 130
+    local combox = 305
+    if (downscroll) then combox = screenWidth - 165
+        comboy = 75
+    end
+    local exsub = (combox - ((#comstr * 25) + 85))
+
+    if (combo < 5) then
+        for i = 1, comboMaxLen do
+            setProperty("comnum"..(i-1)..".visible", false)
+            setProperty("combolbl.visible", false)
+        end
+    else
+        setProperty("combolbl.visible", true)
+        for i = 1, #comstr do
+            if (not luaSpriteExists("comnum"..(i-1))) then
+                makeAnimatedLuaSprite("comnum"..(i-1), hudFld.."fishbones", combox, comboy)
+                for j = 0,9 do
+                    local numnames = {"zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine"}
+                    for k = 1,3 do
+                        addAnimationByPrefix("comnum"..(i-1), j.."-"..k, numnames[j+1]..k, 24, true)
+                    end
+                end
+                setObjectCamera("comnum"..(i-1), 'hud')
+                addLuaSprite("comnum"..(i-1))
+            end
+            playAnim("comnum"..(i-1), ""..comstr[i].."-"..getRandomInt(1,3))
+            setProperty("comnum"..(i-1)..".y", comboy + (getProperty("combolbl.frameHeight") - getProperty("comnum"..(i-1)..".frameHeight")))
+            setProperty("comnum"..(i-1)..".x", exsub)
+            exsub = exsub + getProperty("comnum"..(i-1)..".frameWidth") + getRandomInt(3,6)
+            setProperty("comnum"..(i-1)..".visible", true)
+        end
+        setProperty("combolbl.x", exsub + 10)
     end
 end
 

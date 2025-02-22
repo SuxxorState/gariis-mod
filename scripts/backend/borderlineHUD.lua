@@ -1,4 +1,5 @@
 local utils = (require (getVar("folDir").."scripts.backend.utils")):new()
+local font = (require (getVar("folDir").."scripts.objects.fontHandler")):new("lumeglyph")
 local hudFold = "borderlineUI/"
 local angerpoints = {}
 local disableBar = (timeBarType == "Disabled")
@@ -91,6 +92,9 @@ function onCreatePost()
     addAnimatedOneoff("comboX", "grafix", "numX", comboOff[1],comboOff[2])
     scaleObject("comboX", 0.4, 0.4)
     setProperty('comboX.alpha', 0)
+
+    --font:createNewText("testFont", 130, 60, "You NOT Rappin'", "left", "333333", "hud")
+    --font:setTextScale("testFont", 0.9, 0.9)
 end
 
 function onCountdownTick(count)
@@ -354,11 +358,15 @@ rank = "You NOT Rappin'"
 sepScr = {}
 function onRecalculateRating() --so these functions arent constantly called. performance stuffs
     if (rating == 1)        then rank = ratingShits[curGFRead][2][1]
-    elseif (rating >= 0.4) then rank = "You Rappin'  "..ratingShits[curGFRead][2][11 - math.floor(rating*10)]
-    elseif (rating >= 0.2) then rank = "You Rappin'  "..ratingShits[curGFRead][2][10 - (math.floor(rating*10) + (math.floor(rating*10) % 2))] --bc ratings lower than 40% go by 20% instead of 10%... i dont know why it needs 10 instead of 11
+    elseif (rating >= 0.4) then rank = "You Rappin' "..ratingShits[curGFRead][2][11 - math.floor(rating*10)]
+    elseif (rating >= 0.2) then rank = "You Rappin' "..ratingShits[curGFRead][2][10 - (math.floor(rating*10) + (math.floor(rating*10) % 2))] --bc ratings lower than 40% go by 20% instead of 10%... i dont know why it needs 10 instead of 11
     elseif (misses > 0)     then rank = ratingShits[curGFRead][2][9]
     end
 
+    if (font:textExists("testFont")) then
+        font:setTextString("testFont", rank)
+        font:setTextScale("testFont", math.min(0.9 * (17/#rank), 0.9), 0.9)
+    end
     setTextString("scrTxt", rank)--.." (x"..combo..")") --rating text
 
     if (misscap > -1 and misses > misscap) then setHealth(-2) end --miss cap

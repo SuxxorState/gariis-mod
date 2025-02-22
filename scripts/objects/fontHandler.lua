@@ -1,10 +1,13 @@
 local utils = (require (getVar("folDir").."scripts.backend.utils")):new() --ough we love utils
-local fonts = {["poker-freak"] = {name = "poker-freak", width = 15, height = 21}, ["rom-byte"] = {name = "rom-byte", width = 8, height = 8, disableLowercase = true}}
+local fonts = {["poker-freak"] = {name = "poker-freak", width = 15, height = 21, antialiasing = false}, ["rom-byte"] = {name = "rom-byte", width = 8, height = 8, disableLowercase = true, antialiasing = false}, ["lumeglyph"] = {name = "lumeglyph", dynamicSize = true, animateNames = true, antialiasing = true, randomSpacing = {0,1}}}
 local loadedFont = {}
 local Font = {}
-local rawAlphaNumerals = {"a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z", "0", "1", "2", "3", "4", "5", "6", "7", "8", "9", ",", ".", "!", "?", ":", "<", ">", "+", "-", "%"}
+local rawAlphaNumerals = {"a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z", "0", "1", "2", "3", "4", "5", "6", "7", "8", "9", ",", ".", "!", "?", ":", "<", ">", "+", "-", "%", "'"}
 local sheetNames = {["0"] = "zero", ["1"] = "one", ["2"] = "two", ["3"] = "three", ["4"] = "four", ["5"] = "five", ["6"] = "six", ["7"] = "seven", ["8"] = "eight", ["9"] = "nine", ["!"] = "exclamation", [","] = "comma", ["."] = "period", ["?"] = "question", [":"] = "colon", ["<"] = "less than", [">"] = "greater than", ["+"] = "plus", ["-"] = "minus"} --any characters that need special names
-
+local animateFixedNames = {["/"] = "slash", ["\\"] = "backslash"}
+local excemptDynamicPos = {
+    ["lumeglyph"] = {["'"] = {y = 0}, ["p"] = {y = 11}, ["q"] = {y = 11}, ["g"] = {y = 11}, ["y"] = {y = 11}}
+}
 list = {}
 atts = {}
 
@@ -26,16 +29,35 @@ function Font:createNewText(name, dax,day, txt, algnmnt, clr, camra)
 
     if (#txt > 0) then
         local splttxt = utils:numToStr(txt)
+        local chrx = dax
+        local biggestChar = 0
         for i,chr in pairs(splttxt) do
-            local chrx = dax + ((i-1) * loadedFont.width)
-            if (algnmnt:lower() == "right") then chrx = (dax + ((i-1) * (loadedFont.width))) - (loadedFont.width * #txt) end
+            if (loadedFont.dynamicSize == nil) then
+                chrx = dax + ((i-1) * loadedFont.width)
+                if (algnmnt:lower() == "right") then chrx = (dax + ((i-1) * (loadedFont.width))) - (loadedFont.width * #txt) end
+            end
             makeAnimatedLuaSprite(name..i, "fonts/"..loadedFont.name,chrx, day)
             addAnimations(name..i)
             setChar(name..i, chr)
-            setProperty(name..i..".antialiasing", false)
+            setProperty(name..i..".x", chrx)
+            if (loadedFont.dynamicSize ~= nil) then
+                if (loadedFont.randomSpacing ~= nil) then chrx = chrx + getProperty(name..i..".frameWidth") + getRandomFloat(loadedFont.randomSpacing[1], loadedFont.randomSpacing[2])
+                else chrx = chrx + getProperty(name..i..".frameWidth") + 4
+                end
+                if (getProperty(name..i..".frameHeight") > biggestChar) then biggestChar = getProperty(name..i..".frameHeight") end
+            end
+            setProperty(name..i..".antialiasing", loadedFont.antialiasing)
             setProperty(name..i..".color", getColorFromHex(clr))
             setObjectCamera(name..i, camra)
             addLuaSprite(name..i)
+        end
+
+        if (loadedFont.dynamicSize ~= nil) then
+            for i,chr in pairs(splttxt) do
+                if (excemptDynamicPos[loadedFont.name][chr] ~= nil) then setProperty(name..i..".y", day + excemptDynamicPos[loadedFont.name][chr].y)
+                else setProperty(name..i..".y", day + (biggestChar - getProperty(name..i..".frameHeight")))
+                end
+            end
         end
     end
     
@@ -44,43 +66,81 @@ function Font:createNewText(name, dax,day, txt, algnmnt, clr, camra)
     atts[name] = txtAtts
 end
 
-function addAnimations(name)
+function addAnimations(name, curFont)
+    if (curFont == nil) then curFont = loadedFont end
     for i,chr in pairs(rawAlphaNumerals) do
+        local suffix = " "
+        if (curFont.animateNames ~= nil) then suffix = " char" end
         if (chr:match("%a")) then --upper and lowercase
-            addAnimationByPrefix(name, chr:upper(), chr:upper().." ")
-            addAnimationByPrefix(name, chr:lower(), chr:lower().." ")
+            if (curFont.animateNames ~= nil) then
+                addAnimationByPrefix(name, chr:upper(), "upper "..chr..suffix)
+                addAnimationByPrefix(name, chr:lower(), "lower "..chr..suffix)
+            else
+                addAnimationByPrefix(name, chr:upper(), chr:upper()..suffix)
+                addAnimationByPrefix(name, chr:lower(), chr:lower()..suffix)
+            end
         else
             local shtName = chr
-            if (sheetNames[chr] ~= nil) then shtName = sheetNames[chr] end
-            addAnimationByPrefix(name, chr, shtName.." ")
+            if (curFont.animateNames ~= nil and animateFixedNames[chr] ~= nil) then shtName = animateFixedNames[chr]
+            elseif (sheetNames[chr] ~= nil) then shtName = sheetNames[chr]
+            end
+            addAnimationByPrefix(name, chr, shtName..suffix)
         end
     end
 end
 
 function setChar(name, chr)
-    if (chr == " ") then setProperty(name..".visible", false)
+    if (chr == " ") then 
+        playAnim(name, "o")
+        setProperty(name..".visible", false)
+        setProperty(name..".active", false)
     else setProperty(name..".visible", true)
+        setProperty(name..".active", true)
         playAnim(name, chr)
     end
 end
 
 function Font:setTextX(name, newx)
+    if (newx == atts[name].x) then return end
+    local dynamicX = newx
     for i=1,atts[name].length do
-        if (atts[name].alignment == "right") then setProperty(name..i..".x", (newx + ((i-1) * (fonts[atts[name].font].width * atts[name].scalex))) - (fonts[atts[name].font].width * atts[name].length * atts[name].scalex))
-        else setProperty(name..i..".x", newx + ((i-1) * (fonts[atts[name].font].width * atts[name].scalex)))
+        if (fonts[atts[name].font].dynamicSize) then
+            setProperty(name..i..".x", dynamicX)
+            if (fonts[atts[name].font].randomSpacing ~= nil) then dynamicX = dynamicX + getProperty(name..i..".frameWidth") + (getRandomFloat(fonts[atts[name].font].randomSpacing[1], fonts[atts[name].font].randomSpacing[2]) * atts[name].scalex)
+            else dynamicX = dynamicX + getProperty(name..i..".frameWidth") + (4 * atts[name].scalex)
+            end
+        else
+            if (atts[name].alignment == "right") then setProperty(name..i..".x", (newx + ((i-1) * (fonts[atts[name].font].width * atts[name].scalex))) - (fonts[atts[name].font].width * atts[name].length * atts[name].scalex))
+            else setProperty(name..i..".x", newx + ((i-1) * (fonts[atts[name].font].width * atts[name].scalex)))
+            end
         end
     end
     atts[name].x = newx
 end
 
 function Font:setTextY(name, newy)
-    for i=1,atts[name].length do
-        setProperty(name..i..".y", newy)
+    if (newy == atts[name].y) then return end
+    if (fonts[atts[name].font].dynamicSize) then
+        local biggestChar = 0
+        for i=1,atts[name].length do
+            if (getProperty(name..i..".frameHeight") > biggestChar) then biggestChar = getProperty(name..i..".frameHeight") end
+        end
+        local splttxt = utils:numToStr(atts[name].text)
+        for i,chr in pairs(splttxt) do
+            if (excemptDynamicPos[atts[name].font][chr] ~= nil) then setProperty(name..i..".y", newy + (excemptDynamicPos[atts[name].font][chr].y * atts[name].scaley))
+            else setProperty(name..i..".y", newy + (biggestChar - getProperty(name..i..".frameHeight")))
+            end
+        end
+    else
+        for i=1,atts[name].length do
+            setProperty(name..i..".y", newy)
+        end
     end
     atts[name].y = newy
 end
 
 function Font:setTextCamera(name, newcam)
+    if (newcam == atts[name].cam) then return end
     for i=1,atts[name].length do
         setObjectCamera(name..i, newcam)
     end
@@ -99,12 +159,14 @@ function Font:setTextString(name, txt)
     if (txt == atts[name].text) then return end
     local leg = atts[name].length
     local splttxt = utils:numToStr(txt)
+    local dynamicX = atts[name].x
+    local biggestChar = 0
     if (#splttxt > leg) then leg = #splttxt end
     
     for i= 1,leg do
         if (not luaSpriteExists(name..i)) then
             makeAnimatedLuaSprite(name..i, "fonts/"..atts[name].font,0, atts[name].y)
-            addAnimations(name..i)
+            addAnimations(name..i, fonts[atts[name].font])
             setProperty(name..i..".antialiasing", false)
             setProperty(name..i..".visible", atts[name].visible)
             setProperty(name..i..".color", getColorFromHex(atts[name].color))
@@ -113,14 +175,29 @@ function Font:setTextString(name, txt)
             setObjectCamera(name..i, atts[name].cam)
             addLuaSprite(name..i, true)
         end
-
-        if (atts[name].alignment == "right") then setProperty(name..i..".x", (atts[name].x + ((i-1) * (fonts[atts[name].font].width * atts[name].scalex))) - (fonts[atts[name].font].width * #splttxt * atts[name].scalex))
-        else setProperty(name..i..".x", atts[name].x + ((i-1) * (fonts[atts[name].font].width * atts[name].scalex)))
-        end
         
         if (i > #splttxt) then removeLuaSprite(name..i, true)
-        else setChar(name..i, splttxt[i]) 
+        else setChar(name..i, splttxt[i])
             setProperty(name..i..".visible", atts[name].visible and splttxt[i] ~= " ")
+
+            if (fonts[atts[name].font].dynamicSize) then
+                setProperty(name..i..".x", dynamicX)
+                if (fonts[atts[name].font].randomSpacing ~= nil) then dynamicX = dynamicX + getProperty(name..i..".frameWidth") + (getRandomFloat(fonts[atts[name].font].randomSpacing[1], fonts[atts[name].font].randomSpacing[2]) * atts[name].scalex)
+                else dynamicX = dynamicX + getProperty(name..i..".frameWidth") + (4 * atts[name].scalex)
+                end
+                if (getProperty(name..i..".frameHeight") > biggestChar) then biggestChar = getProperty(name..i..".frameHeight") end
+            else
+                if (atts[name].alignment == "right") then setProperty(name..i..".x", (atts[name].x + ((i-1) * (fonts[atts[name].font].width * atts[name].scalex))) - (fonts[atts[name].font].width * #splttxt * atts[name].scalex))
+                else setProperty(name..i..".x", atts[name].x + ((i-1) * (fonts[atts[name].font].width * atts[name].scalex)))
+                end
+            end
+        end
+    end
+    if (fonts[atts[name].font].dynamicSize) then
+        for i,chr in pairs(splttxt) do
+            if (excemptDynamicPos[atts[name].font][chr] ~= nil) then setProperty(name..i..".y", atts[name].y + (excemptDynamicPos[atts[name].font][chr].y * atts[name].scaley))
+            else setProperty(name..i..".y", atts[name].y + (biggestChar - getProperty(name..i..".frameHeight")))
+            end
         end
     end
     atts[name].text = txt
@@ -129,13 +206,37 @@ function Font:setTextString(name, txt)
 end
 
 function Font:setTextScale(name, scalx, scaly)
+    if (scalx == atts[name].scalex and scaly == atts[name].scaley) then return end
+    local dynamicX = atts[name].x
+    local biggestChar = 0
     for i=1,atts[name].length do
         scaleObject(name..i, scalx, scaly)
         updateHitbox(name..i)
-        if (atts[name].alignment == "right") then setProperty(name..i..".x", (atts[name].x + ((i-1) * (fonts[atts[name].font].width * scalx))) - (fonts[atts[name].font].width * atts[name].length * scalx))
-        else setProperty(name..i..".x", atts[name].x + ((i-1) * (fonts[atts[name].font].width * scalx)))
+        if (fonts[atts[name].font].dynamicSize) then
+            setProperty(name..i..".x", dynamicX)
+            if (fonts[atts[name].font].randomSpacing ~= nil) then dynamicX = dynamicX + getProperty(name..i..".frameWidth") + (getRandomFloat(fonts[atts[name].font].randomSpacing[1], fonts[atts[name].font].randomSpacing[2]) * scalx)
+            else dynamicX = dynamicX + getProperty(name..i..".frameWidth") + (4 * scalx)
+            end
+        else
+            if (atts[name].alignment == "right") then setProperty(name..i..".x", (atts[name].x + ((i-1) * (fonts[atts[name].font].width * scalx))) - (fonts[atts[name].font].width * atts[name].length * scalx))
+            else setProperty(name..i..".x", atts[name].x + ((i-1) * (fonts[atts[name].font].width * scalx)))
+            end
         end
-        setProperty(name..i..".y", atts[name].y)
+        if (fonts[atts[name].font].dynamicSize) then
+            for i=1,atts[name].length do
+                if (getProperty(name..i..".frameHeight") > biggestChar) then biggestChar = getProperty(name..i..".frameHeight") end
+            end
+        else
+            setProperty(name..i..".y", atts[name].y)
+        end
+    end
+    if (fonts[atts[name].font].dynamicSize) then
+        local splttxt = utils:numToStr(atts[name].text)
+        for i,chr in pairs(splttxt) do
+            if (excemptDynamicPos[atts[name].font][chr] ~= nil) then setProperty(name..i..".y", atts[name].y + (excemptDynamicPos[atts[name].font][chr].y * atts[name].scaley))
+            else setProperty(name..i..".y", atts[name].y + (biggestChar - getProperty(name..i..".frameHeight")))
+            end
+        end
     end
     atts[name].scalex = scalx
     atts[name].scaley = scaly
