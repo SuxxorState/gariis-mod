@@ -203,14 +203,14 @@ end
 function percUpdate()
 	percentLerp = math.floor(getProperty("percentSpr.x"))
 	if (getTextString('clearPercTxt') ~= "Clear:\n"..percentLerp.."%") then
-		playSound("scrollMenu")
+		utils:playSound("scrollMenu")
 		setTextString('clearPercTxt', "Clear:\n"..percentLerp.."%")
 		screenCenter('clearPercTxt')
 	end
 end
 
 function percCompleted()
-	playSound("confirmMenu")
+	utils:playSound("confirmMenu")
 	if (percentLerp ~= percentTarget) then
 		percentLerp = percentTarget
 		setTextString('clearPercTxt', "Clear:\n"..percentLerp.."%")
@@ -239,7 +239,7 @@ end
 
 function onSoundFinished(tag)
     if tag == 'resultsMusic' then
-        playSound(resultsMusic, 1, 'resultsMusic')
+        utils:playSound(resultsMusic, 1, 'resultsMusic')
     end
 end
 
@@ -254,10 +254,10 @@ function onTimerCompleted(tag, loops, loopsLeft)
 	elseif (tag == "startMusic") then
 		resultsMusic = resultsMusic..finalRanking:upper()
 		if (checkFileExists(getVar("folDir").."sounds/"..resultsMusic.."-intro.ogg", true)) then
-			playSound(resultsMusic.."-intro", 1, 'resultsMusic')
-		elseif (checkFileExists(getVar("folDir").."sounds/"..resultsMusic..".ogg", true)) then playSound(resultsMusic, 1, 'resultsMusic')
+			utils:playSound(resultsMusic.."-intro", 1, 'resultsMusic')
+		elseif (checkFileExists(getVar("folDir").."sounds/"..resultsMusic..".ogg", true)) then utils:playSound(resultsMusic, 1, 'resultsMusic')
 		else resultsMusic = resultsMusicDef
-			playSound(resultsMusicDef, 1, 'resultsMusic')
+			utils:playSound(resultsMusicDef, 1, 'resultsMusic')
 		end
 	elseif (tag == 'switchbgFrame') then
         bgFrame = bgFrame + 1

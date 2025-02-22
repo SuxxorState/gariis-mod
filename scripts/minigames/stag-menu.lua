@@ -132,7 +132,7 @@ end
 function updateClockVis()
     if (lastNightLerp ~= math.floor(nightLerp) and math.floor(nightLerp) % 6 == 0 and ((not luaSoundExists("tick")) or getSoundTime("tick") > 50)) then
         lastNightLerp = math.floor(nightLerp)
-        playSound(fldr.."tick", 0.25, "tick")
+        utils:playSound(fldr.."tick", 0.25, "tick")
     end
     setProperty("amHand.angle", ((nightLerp)/24)+90)
     setProperty("hourHand.angle", ((nightLerp)/12)-180)
@@ -145,13 +145,13 @@ function openDoor()
     callOnLuas("cursorPlayAnim", {"good"})
     playAnim("foyerDoor", ""..nightSel)
     doTweenAlpha("stagTitle", "stagTitle", 0, 1, "quadin")
-    playSound(fldr.."bell", 1)
+    utils:playSound(fldr.."bell", 1)
     runTimer("transStart", 3)
 end
 
 function transToNight()
     destroyMenu(false)
-    playSound(fldr.."changecam", 0.75)
+    utils:playSound(fldr.."changecam", 0.75)
     callOnLuas("cursorPlayAnim")
     runTimer("nightStart", 2)
 

@@ -31,7 +31,7 @@ function startMinigame()
     setObjectCamera('chipicon', 'other')
     updateChipCount(0)
 
-    playSound(fldr.."music", 0.5, "casinomusic")
+    utils:playSound(fldr.."music", 0.5, "casinomusic")
 
     for i,opt in pairs(opts) do
         makeAnimatedLuaSprite('menu'..opt,fldr.."gamesnobacon",200 + ((i-1) * 300),100)
@@ -109,7 +109,7 @@ function updateChipVis()
     if (lastChip ~= math.floor(chipLerp)) then
         lastChip = math.floor(chipLerp)
         stopSound("chip")
-        playSound(fldr.."chip"..getRandomInt(1,5), 0.25, "chip")
+        utils:playSound(fldr.."chip"..getRandomInt(1,5), 0.25, "chip")
     end
     local chipstr = utils:numToStr(math.floor(chipLerp))
     if (#chipstr > maxCntr) then maxCntr = #chipstr end
@@ -158,7 +158,7 @@ function onTimerCompleted(tmr)
 end
 
 function onSoundFinished(tag)
-    if tag == 'casinomusic' then playSound(fldr.."music", 0.5, "casinomusic") end
+    if tag == 'casinomusic' then utils:playSound(fldr.."music", 0.5, "casinomusic") end
 end
 
 function onDestroy()

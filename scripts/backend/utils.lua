@@ -47,7 +47,7 @@ function Utils:dirFileList(dir)
 end
 
 function Utils:enterOptions()
-    if version >= '0.7' then
+    if (stringStartsWith(version, "1.0.") or stringStartsWith(version, "0.7")) then
         runHaxeCode([[
             import options.OptionsState;
             import backend.MusicBeatState;
@@ -55,9 +55,8 @@ function Utils:enterOptions()
             game.vocals.volume = 0;
             MusicBeatState.switchState(new OptionsState());
             if (ClientPrefs.data.pauseMusic != 'None') {
-                FlxG.sound.playMusic(Paths.sound(Paths.formatToSongPath("pause/pitstop")), game.modchartSounds('bgmusic').volume);
+                FlxG.sound.playMusic(Paths.sound(Paths.formatToSongPath("pause/pit-stop")), 0);
                 FlxTween.tween(FlxG.sound.music, {volume: 1}, 0.8);
-                FlxG.sound.music.time = game.modchartSounds('bgmusic').time;
             }
             OptionsState.onPlayState = true;
         ]])
@@ -260,15 +259,15 @@ end
 function Utils:newCountdown(count) --something thats needed as gariis mod starts on a pickup beat
     if (countdownChecks[count]) then return end
 
-    if (count == 0) then playSound('intro3')
+    if (count == 0) then Utils:playSound('intro3')
     elseif (count == 1) then 
-        playSound('intro2')
+        Utils:playSound('intro2')
         makeCountSpr("Ready")
     elseif (count == 2) then 
-        playSound('intro1')
+        Utils:playSound('intro1')
         makeCountSpr("Set")
     elseif (count == 3) then 
-        playSound('introGo')
+        Utils:playSound('introGo')
         makeCountSpr("Go")
     end
     countdownChecks[count] = true --countdown checks are a thing because sometimes this function is called more than it should be
@@ -358,6 +357,43 @@ end
 function Utils:getKeyFromBind(key, number)
     number = number or 1
     return callMethodFromClass("backend.InputFormatter", "getKeyName", {getProperty("controls.keyboardBinds")[key][number]})
+end
+
+function Utils:playSound(file, vol, tag) --for any menus that literally pause the game lole (achievements menu)- from what i know theres no way to grab a list of sounds that are currently playing
+    if (tag == nil) then tag = "soundNil_"..getRandomInt() end
+    Utils:cleanSoundList()
+    local soundList = getVar("soundList") or {}
+    playSound(file, vol, tag)
+    table.insert(soundList, tag)
+    setVar("soundList", soundList)
+end
+
+function Utils:cleanSoundList() --lol?
+    local soundList = getVar("soundList") or {}
+    for i,snd in pairs(soundList) do
+        if (not luaSoundExists(snd)) then table.remove(soundList, i) end
+    end
+    setVar("soundList", soundList)
+end
+
+function Utils:pauseAllKnownSounds()
+    Utils:cleanSoundList()
+    local soundList = getVar("soundList") or {}
+    for _,snd in pairs(soundList) do
+        if (luaSoundExists(snd)) then
+            pauseSound(snd)
+        end
+    end
+end
+
+function Utils:resumeAllKnownSounds()
+    Utils:cleanSoundList()
+    local soundList = getVar("soundList") or {}
+    for _,snd in pairs(soundList) do
+        if (luaSoundExists(snd)) then
+            resumeSound(snd)
+        end
+    end
 end
 
 return Utils

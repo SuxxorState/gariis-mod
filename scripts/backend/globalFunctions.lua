@@ -4,6 +4,7 @@ local gameovered = false
 local arcadeKey = getModSetting('arcadeMenu')
 local achievementKey = getModSetting('achievementsMenu')
 local boomPerSect, bamIntensity = 4, 1
+local unlockSecrets = (utils:lwrKebab(songName) == "gariis-arcade")
 
 function initLuas()
     utils:setGariiData("test", true) --i dont remember why this is here however i dont feel like finding out if removing it breaks shit or not
@@ -46,7 +47,6 @@ end
 
 local hpDrain = 0
 local hpMultiplier = 1
-local unlockSecrets = false
 function setupSpice(speed, hpamt, missamt, pushback, scrmult)
     if (speed ~= nil) then setProperty("songSpeed", speed) end
     if (hpamt ~= nil) then 
@@ -111,7 +111,7 @@ local maxPoses = 4
 function opponentNoteHit(id, dir, ntype)
     if (ntype == "Missed Note") then
         setProperty("health", getProperty("health") + (0.0475 / hpMultiplier) / healthLossMult)
-        playSound("missnote"..getRandomInt(1,3), getRandomFloat(0.1,0.2))
+        utils:playSound("missnote"..getRandomInt(1,3), getRandomFloat(0.1,0.2))
     elseif (getProperty("health") > (hpDrain + 0.025)) then --adding the hp drain ensures that the health cant accidentally overlook it and kill the player for being too small
         setProperty("health", getProperty("health") - hpDrain)
     end
@@ -273,7 +273,7 @@ end
 
 function onCustomSubstateCreate(tag)
     if tag == "error" then
-        playSound("errorjingle", 1)
+        utils:playSound("errorjingle", 1)
 
         makeLuaSprite('garError','error',0,0)
         addLuaSprite('garError', true)

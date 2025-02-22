@@ -89,7 +89,7 @@ function onTimerCompleted(tag)
         removeStickers()
     elseif (string.find(tag, "stickerTrans")) then
         setProperty(stkr..".visible", true)
-        playSound('stickers/'..sounds[getRandomInt(1, #sounds)])
+        utils:playSound('stickers/'..sounds[getRandomInt(1, #sounds)])
 
         local frtmr = getRandomInt(0,2)
         if (j == #stkrGrp) then frtmr = 2 
@@ -109,7 +109,7 @@ function onTimerCompleted(tag)
         runTimer("stickerUnPop"..j, (1/24)*frtmr)
     elseif (string.find(tag, "stickerUnPop")) then
         setProperty(stkr..".visible", false)
-        playSound('stickers/'..sounds[getRandomInt(1, #sounds)])
+        utils:playSound('stickers/'..sounds[getRandomInt(1, #sounds)])
     end
 end
 

@@ -174,7 +174,7 @@ function setupGame()
     end
 
     checkForOptimalStartPos()
-    playSound("minigames/start")
+    utils:playSound("minigames/start")
     runTimer("timerup",0.0000001)
 
     playAnim("smileyicon", diff.."-idle")
@@ -316,7 +316,7 @@ function interactWithTile(tilex, tiley, flag, massopen)
                 cancelTimer("timerup")
                 if (countAdjacentMines(tilex, tiley).mines == 9) then
                     playAnim("tile"..tiley.."-"..tilex, "9mines")
-                    playSound("minigames/fuckedup")
+                    utils:playSound("minigames/fuckedup")
                     runTimer("delayboom", 2)
                 else loseStuff()
                     playAnim("tile"..tiley.."-"..tilex, "dead")
@@ -331,7 +331,7 @@ function interactWithTile(tilex, tiley, flag, massopen)
                 end
                 playAnim("tile"..tiley.."-"..tilex, "open")
                 if ((adjtiles.mines + adjtiles.flowers) < 1 and (not compareIndexTables(data.flowers, {tilex, tiley}))) then
-                    if (not luaSoundExists("bigclick")) and (not massopen) then playSound("minigames/click", 1, "bigclick") end
+                    if (not luaSoundExists("bigclick")) and (not massopen) then utils:playSound("minigames/click", 1, "bigclick") end
                     intWithAdjTiles(tilex, tiley)
                 end
             end
@@ -348,7 +348,7 @@ end
 function revealMines(bad)
     bad = bad or false
     for i = 1,#data.mines do
-        if (bad) then playSound("minigames/lose_minesweeper", 1, "losemine") end
+        if (bad) then utils:playSound("minigames/lose_minesweeper", 1, "losemine") end
         setProperty("mine"..i..".visible", true)
     end
     for i = 1,#data.flaggedtiles do
@@ -407,7 +407,7 @@ function winStuff()
     canPlay = false
     cancelTimer("timerup")
     playAnim("smileyicon", diff.."-win")
-    playSound("results/resultsEXCELLENT", 1, "winmusic")
+    utils:playSound("results/resultsEXCELLENT", 1, "winmusic")
     revealMines()
 end
 

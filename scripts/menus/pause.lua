@@ -24,7 +24,7 @@ function onCustomSubstateCreate(css)
 	if (utils:getGariiData("curSauce") ~= nil) then 
 		diffint = utils:getGariiData("curSauce")-1
 	end
-	playSound(pausemusic, 0, 'bgmusic')
+	utils:playSound(pausemusic, 0, 'bgmusic')
 	setSoundTime('bgmusic', getRandomInt(0,30000))
 	soundFadeIn('bgmusic', 3, 0, 0.3)
 	
@@ -109,7 +109,7 @@ function onCustomSubstateUpdate(css)
 end
 
 function changeSelected(amt)
-	if (amt ~= 0) then playSound(fldr..'scribble'..getRandomInt(1,3), getRandomFloat(0.5,0.9)) end
+	if (amt ~= 0) then utils:playSound(fldr..'scribble'..getRandomInt(1,3), getRandomFloat(0.5,0.9)) end
 
 	pauseSel = pauseSel + amt
 	if (pauseSel > 3) then pauseSel = 0
@@ -121,7 +121,7 @@ end
 
 function onSoundFinished(snd)
     if (snd == 'bgmusic') then
-        playSound(pausemusic, 0.5, 'bgmusic')
+        utils:playSound(pausemusic, 0.5, 'bgmusic')
     end
 end
 

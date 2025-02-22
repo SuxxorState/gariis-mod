@@ -58,7 +58,7 @@ function onStartCountdown()
     if (not errored) then return end
 
     setProperty("inCutscene", true)
-    playSound("errorjingle", 1)
+    utils:playSound("errorjingle", 1)
 
     makeLuaSprite('garError','error',0,0)
     addLuaSprite('garError', true)

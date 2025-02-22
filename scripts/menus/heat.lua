@@ -238,7 +238,7 @@ function changeSelected(lol)
 	if (curSauce > #sauces) then
 		curSauce = #sauces
 		if (#sauces < 5) then
-			playSound("lockedMenu")
+			utils:playSound("lockedMenu")
 			setProperty("spsneedle.angle", ndlAngs[curSauce] + 5)
 		end
 		return
@@ -258,7 +258,7 @@ function changeSelected(lol)
 		return
 	end
 
-	if (lol ~= 0) then playSound("gaugeScroll") end
+	if (lol ~= 0) then utils:playSound("gaugeScroll") end
 	playAnim("bfspice", "sauce"..curSauce)
 	if (curSauce >= 3 and curSauce <= 4 and highwayjammin) then playAnim("sausbtls", "sauce"..curSauce.."-old")
 	else playAnim("sausbtls", "sauce"..curSauce)

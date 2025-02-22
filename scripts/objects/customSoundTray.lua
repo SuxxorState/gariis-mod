@@ -11,8 +11,7 @@ local targetY = 0
 local targetAlpha = 0
 
 function initLuas()
-    addHaxeLibrary('FlxG')
-    runHaxeCode([[ FlxG.game.soundTray.silent = true; ]])
+    setPropertyFromClass("flixel.FlxG", "game.soundTray.silent", true)
 
     makeLuaSprite("stBG", "soundTray/volumebox")
     setProperty("stBG.scale.x", glbScale)
@@ -45,10 +44,8 @@ function onCustomSubstateUpdate(tag, elp)
 end
 
 function updateST(elp)
-    runHaxeCode([[
-        if (FlxG.game.soundTray.active) FlxG.game.soundTray.active = false;
-        if (FlxG.game.soundTray.y > -100) FlxG.game.soundTray.y = -100;
-    ]])
+    setPropertyFromClass("flixel.FlxG", "game.soundTray.active", false)
+    if (getPropertyFromClass("flixel.FlxG", "game.soundTray.y") > -100) then setPropertyFromClass("flixel.FlxG", "game.soundTray.y", -100) end
     setTrayY(funkinLerp(glbY, targetY, 0.1, elp))
     setTrayAlpha(funkinLerp(glbAlpha, targetAlpha, 0.25, elp))
 
@@ -71,7 +68,7 @@ function showST(presUp)
 
     bringTrayToFront()
     showTimer = 1
-    local glbVolume = getPropertyFromClass("flixel.FlxG", "sound.volume")*10
+    local glbVolume = math.floor((getPropertyFromClass("flixel.FlxG", "sound.volume")*10)+0.5) --shoutout to that one dude that indirectly showed me a better way of grabbing the volume level
     if (getPropertyFromClass("flixel.FlxG", "sound.muted")) then glbVolume = 0 end
     setTrayY(0)
 
@@ -90,10 +87,7 @@ function showST(presUp)
 end
 
 function onDestroy()
-    runHaxeCode([[
-        FlxG.game.soundTray.show();
-        FlxG.game.soundTray.silent = false;
-    ]])
+    setPropertyFromClass("flixel.FlxG", "game.soundTray.silent", false)
 end
 
 function setTrayX(newX)

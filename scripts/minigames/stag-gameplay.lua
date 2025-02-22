@@ -15,7 +15,16 @@ local chrStats = {
     ["lino"] = {ai = 0, cam = 1, cooldown = 7, presetAI = {0,0,0,8,6,10,20}, camOffsets = {{-2, -999,0}, {-1, -286,0}, {1, -618,-610}, {2, -691,-503}, {3, -697,0}, {5, 0,-179}, {6, -61,-264}, {7, -327,0}}},
     ["jack"] = {ai = 0, cam = 5, action = 1, polarity = false, usedSwitch = false, inOffice = false, lookMeter = 0, bored = 0, cooldown = 5, presetAI = {0,0,0,0,7,9,20}, camOffsets = {{-6, -1100,-229}, {-5, -979,-226}, {1, -651,-263}, {2, -211,-268}, {3, -958,-109}, {5, -756,-204}, {6, -693,-370}, {7, -734,-480}}}, 
 }
-
+local qtrCallLists = {
+    {{"garimad", 3.8}, {"gariexit", 1}, {"garimad", 3.8}, {"garitime", 2.9}, {"garipissed"}},
+    {{"garifakehappy", 2.4}, {"gariunhappy", 6.8}, {"garimad"}},
+    {{"garitime", 1.2}, {"garimad", 12.7}, {"garipissed", 5.6}, {"gariugh", 3.2}, {"gariunhappy", 2.9}, {"fazesock", 2.2}, {"garimad", 2.8}, {"fazesock", 1.9}, {"garimad", 1.4}, {"gariunhappy", 1.4}, {"gariugh", 3.5}, {"gariunhappy"}},
+    {{"gariphone", 7.3}, {"gariunhappy", 2.5}, {"garipoint", 2.7}, {"gariagree", 2}, {"garimad", 3.6}, {"garipissed", 1.9}, {"gariwtf"}},
+    {{"gariyawn", 3.5}, {"garitired", 1.5}, {"gariunhappy", 3}, {"garicough", 2.7}, {"garitired", 2.3}, {"gariburp", 1}, {"garitired", 4}, {"gariunhappy", 3.6}, {"gariugh", 1.2}, {"gariunhappy", 3.2}, {"garitired"}},
+    {{"goonscarv", 1.2}, {"goonshnte", 0.9}, {"goonscarv", 3.3}, {"goonshnte", 14.1}, {"goonscarv", 11.5}, {"goonshnte"}}
+}
+local curQtrCallList = {}
+local qtrCallTime = 0
 local pwrLoad = 0
 local idleTime = 0
 local curQtr, curTime, curPwr, curCam = 1, 0, 100, 1
@@ -41,6 +50,16 @@ function makeAssets()
     for _,snd in pairs({"6am", "ambience/ambience", "bangnoyell", "bangyell", "cameraflip", "cameraflipdown", "ambience/clicks", "congrat", "doordeny", "doorclose", "dooropen", "ambience/drip", "ambience/drippy", "hurt1", "hurt2", "hurt3", "jumpscare", "ambience/pop", "ambience/shh", "ambience/stupid", "ambience/stupidphoneihate","ambience/wind"}) do precacheSound(fld..snd) end
 
     utils:makeBlankBG("officeBlack", screenWidth,screenHeight, "000000", "hud")
+
+    makeOneShotSpr('tvbg', "tvbg", nil, 831,265, 'hud', false)
+    makeAnimatedLuaSprite('tvanims',fld..'tv',831,265)
+    for _,anim in pairs({"gariexit", "garifakehappy", "garimad", "garipissed", "garitime", "garitv", "gariugh", "gariunhappy", "tvstatic", "fazesock", "gariagree", "gariwtf", "garipoint", "gariphone", "gariyawn", "garitired", "gariburp", "garicough", "goonscarv", "goonshnte"}) do
+        addAnimationByPrefix('tvanims', anim, anim, 2, true)
+    end
+    setProperty("tvanims.visible", false)
+    addLuaSprite('tvanims')
+    setObjectCamera('tvanims', 'hud')
+
     makeOneShotSpr('ofic', "ofic", nil, 0,0, 'hud')
 
     for _,dor in pairs({{"gari", 802,205}, {"carv", 637,235}, {"hnte", 1325,80}, {"slot", 876,282}, {"dorlef", 69,87}, {"dorcen", 504,205}, {"dorrig", 1413,111}, {"btnlef", 11, 317}, {"btncen", 465,324}, {"btnrig", 1452,304}, {"jack", 302,202}}) do
@@ -187,11 +206,7 @@ function activateFNAF()
     setProperty("camHUD.width", 1580)
     callOnLuas("initCursor")
 
-    if (checkFileExists("sounds/"..bFld.."qtr"..curQtr.."call.ogg")) then
-        makeOneShotSpr('mutebtn', "mutebtn", nil, 10,10, 'other')
-        setProperty("mutebtn.alpha", 0.8)
-        playSound(bFld.."qtr"..curQtr.."call", 1, "phonecall")
-    end
+    runTimer("initCall", 1)
 
     font:setTextString("qtrTxt", "Quarter "..curQtr)
     for _,chr in pairs(chrList) do
@@ -199,7 +214,7 @@ function activateFNAF()
     end
     runTimer("timeInc", 1/60, 0)
 
-    playSound(aFld.."ambience", 0.1, "ambience")
+    utils:playSound(aFld.."ambience", 0.1, "ambience")
     runTimer("ambnoises", 15)
     runTimer("blink",1)
     canUpdate = true
@@ -241,6 +256,10 @@ function onUpdatePost(elp)
 
     if (luaSpriteExists("mutebtn") and mouseClicked() and utils:mouseWithinBounds({10,10, 155,82}, "other")) then
         removeLuaSprite("mutebtn", true)
+        removeLuaSprite("tvbg", true)
+        removeLuaSprite("tvanims", true)
+        cancelTimer("callAdvance")
+        stopSound("phonecallintro")
         stopSound("phonecall")
         local muteList = utils:getGariiData("STaGmutes")
         if (not utils:tableContains(muteList, curQtr)) then
@@ -303,8 +322,8 @@ function onUpdatePost(elp)
         if (not withinbounds) then callOnLuas("cursorPlayAnim") end
 
         if (mouseClicked()) then 
-            if (utils:mouseWithinBounds({1295,357, 1311,366}, "hud")) then playSound("minigames/stag/car_honk", 1, "carhonk") 
-            elseif (utils:mouseWithinBounds({312,403, 331,415}, "hud")) then playSound("minigames/stag/car_stupid"..getRandomInt(1,2), 1, "carstupid") 
+            if (utils:mouseWithinBounds({1295,357, 1311,366}, "hud")) then utils:playSound("minigames/stag/car_honk", 1, "carhonk") 
+            elseif (utils:mouseWithinBounds({312,403, 331,415}, "hud")) then utils:playSound("minigames/stag/car_stupid"..getRandomInt(1,2), 1, "carstupid") 
             end
         end
     end
@@ -357,9 +376,9 @@ function toggleStat(fuck)
     updateStats()
 
     if not fuck then return end
-    if statUP then playSound(fld.."cameraflip", 0.8)
-        playSound(fld.."statopen", 0.8)
-    else playSound(fld.."cameraflipdown", 0.8)
+    if statUP then utils:playSound(fld.."cameraflip", 0.8)
+        utils:playSound(fld.."statopen", 0.8)
+    else utils:playSound(fld.."cameraflipdown", 0.8)
     end
 end
 
@@ -385,8 +404,8 @@ function toggleCam()
     setProperty("vntmap.visible", camUP)
     updateCams(false)
     for i = 1,7 do setProperty('cambtn'..i..".visible", camUP) end
-    if camUP then playSound(fld.."cameraflip", 0.8)
-    else playSound(fld.."cameraflipdown", 0.8)
+    if camUP then utils:playSound(fld.."cameraflip", 0.8)
+    else utils:playSound(fld.."cameraflipdown", 0.8)
     end
     
     if camUP then return end
@@ -407,7 +426,7 @@ end
 
 forcingJack = false
 function updateCams(snd, camChange)
-    if snd then playSound(fld.."changecam", 0.75) end
+    if snd then utils:playSound(fld.."changecam", 0.75) end
     if (camChange ~= nil and camChange ~= curCam) then
         cancelTimer("fazeEgoInc")
         chrStats["faze"].timerRan = false
@@ -478,15 +497,15 @@ end
 
 function toggleDoor(dor)
     if camUP then return end
-    if doorStats[dor].disabled then playSound(fld.."doordeny", 0.8)
+    if doorStats[dor].disabled then utils:playSound(fld.."doordeny", 0.8)
         return 
     end
 
     doorStats[dor].active = not doorStats[dor].active
     setProperty("oficdor"..posiblDors[dor]..".visible", doorStats[dor].active)
     setProperty("oficbtn"..posiblDors[dor]..".visible", doorStats[dor].active)
-    if (doorStats[dor].active) then playSound(fld.."doorclose", 0.8)
-    else playSound(fld.."dooropen", 0.8)
+    if (doorStats[dor].active) then utils:playSound(fld.."doorclose", 0.8)
+    else utils:playSound(fld.."dooropen", 0.8)
     end
 end
 
@@ -499,10 +518,10 @@ function powerDown()
         doorStats[i].active = false
         setProperty("oficdor"..posiblDors[i]..".visible", false)
         setProperty("oficbtn"..posiblDors[i]..".visible", false)
-        playSound(fld.."dooropen", 0.8) 
+        utils:playSound(fld.."dooropen", 0.8) 
         doorStats[i].disabled = true
     end
-    playSound(fld.."powerdown", 0.8) 
+    utils:playSound(fld.."powerdown", 0.8) 
 end
 
 function jumpscare(char)
@@ -529,7 +548,7 @@ function jumpscare(char)
     setProperty("jmpscr.y", screenHeight - getProperty("jmpscr.height"))
     addLuaSprite('jmpscr')
     setObjectCamera('jmpscr', 'other')
-    playSound(fld.."jumpscare", 1, "jmp")
+    utils:playSound(fld.."jumpscare", 1, "jmp")
     if (char == "slot") then setSoundPitch("jmp", 0.5) end
     runTimer("endinSTaG", 2)
 end
@@ -544,7 +563,7 @@ function nightOver()
     if not canUpdate then return end
     debugPrint("NIGHT IS OVER")
     disableGame()
-    playSound(fld.."6am", 1)
+    utils:playSound(fld.."6am", 1)
     
     makeLuaSprite('stagfg','',0,0)
     makeGraphic("stagfg", screenWidth, screenHeight, "000000")
@@ -582,13 +601,13 @@ function disableGame()
 end
 
 function bangOnDoor()
-    if (getRandomInt(1,100) == 1) then playSound(fld.."bangyell", 0.8)
-    else playSound(fld.."bangnoyell", 0.8) end
+    if (getRandomInt(1,100) == 1) then utils:playSound(fld.."bangyell", 0.8)
+    else utils:playSound(fld.."bangnoyell", 0.8) end
     curPwr = curPwr - getRandomInt(1,3)
 end
 
 function rollRndmSound()
-    if (getRandomInt(1,1000) == 1) then playSound(fld.."hurt"..getRandomInt(1,3), 0.5) end
+    if (getRandomInt(1,1000) == 1) then utils:playSound(fld.."hurt"..getRandomInt(1,3), 0.5) end
 end
 
 
@@ -629,7 +648,7 @@ function moveLino()
             chrStats["lino"].cam = getRandomInt(2,6,"4,5")
         else
             openDoor(3-(chrStats["lino"].cam%3))
-            playSound(fld.."ventbreak", 0.75) 
+            utils:playSound(fld.."ventbreak", 0.75) 
             runTimer("linoNotify", 2)
             doorStats[3-(chrStats["lino"].cam%3)].disabled = true
             toggleStat(false)
@@ -653,7 +672,7 @@ function openDoor(dor)
     doorStats[dor].active = false
     setProperty("oficdor"..posiblDors[dor]..".visible", false)
     setProperty("oficbtn"..posiblDors[dor]..".visible", false)
-    playSound(fld.."dooropen", 0.8) 
+    utils:playSound(fld.."dooropen", 0.8) 
 end
 
 function moveDefault(char, actionAmt, camPaths, shouldBore)
@@ -677,10 +696,10 @@ function moveJack()
 
     if (chrStats["jack"].cam < 0) then
         if (doorStats[(chrStats["jack"].cam % 2)+1].active) then
-            playSound(fld.."bangnoyell", 1)
+            utils:playSound(fld.."bangnoyell", 1)
             runTimer("jackBangKill",1)
         else
-            playSound(fld.."jackroomflicker", 0.75, "jackflicker")
+            utils:playSound(fld.."jackroomflicker", 0.75, "jackflicker")
             chrStats["jack"].inOffice = true
             chrStats["jack"].cam = 0
             runTimer("jackOffice", 5)
@@ -702,7 +721,7 @@ end
 
 function moveCarv()
     if (getRandomInt(1,20) > chrStats["carv"].ai) then rollRndmSound() return end
-    if (getRandomInt(1,10000) == 1) then playSound("carvdum"..getRandomInt(1,3), 0.5) end
+    if (getRandomInt(1,10000) == 1) then utils:playSound("carvdum"..getRandomInt(1,3), 0.5) end
 
     chrStats["carv"].moveNum = chrStats["carv"].moveNum + 1
     if ((chrStats["carv"].moveNum % 3) ~= 1 and (chrStats["carv"].cam ~= curCam or (not camUP))) then return end
@@ -743,10 +762,10 @@ end
 function playVentSound(ventnum)
     if (math.abs(ventnum) < 8) then return end
 
-    if (ventnum == -8) then playSound(fld.."ventloud", 1) 
-    elseif (ventnum == 8) then playSound(fld.."ventloud", 0.5) 
-    elseif (ventnum == -12 or ventnum == 9) then playSound(fld.."ventquiet", 1) 
-    else playSound(fld.."ventquiet", 0.5) 
+    if (ventnum == -8) then utils:playSound(fld.."ventloud", 1) 
+    elseif (ventnum == 8) then utils:playSound(fld.."ventloud", 0.5) 
+    elseif (ventnum == -12 or ventnum == 9) then utils:playSound(fld.."ventquiet", 1) 
+    else utils:playSound(fld.."ventquiet", 0.5) 
     end
 end
 
@@ -799,17 +818,42 @@ function makeNewPath(curPos, posTo, allOptions)
     return path
 end
 
+function callScreenAdvance()
+    qtrCallTime = qtrCallTime + 1
+    if (curQtrCallList[qtrCallTime] == nil) then return end
+    playAnim("tvanims", curQtrCallList[qtrCallTime][1])
+    runTimer("callAdvance", curQtrCallList[qtrCallTime][2])
+end
+
 
 function onSoundFinished(tag)
-    if tag == 'ambience' then playSound(aFld.."ambience", 0.05, "ambience")
+    if tag == 'ambience' then utils:playSound(aFld.."ambience", 0.05, "ambience")
     elseif tag == 'phonecall' then removeLuaSprite("mutebtn", true)
+        removeLuaSprite("tvbg", true)
+        removeLuaSprite("tvanims", true)
+        cancelTimer("callAdvance")
+    elseif tag == "phonecallintro" then utils:playSound(bFld.."qtr"..curQtr.."bcst", 1, "phonecall")
+        curQtrCallList = qtrCallLists[curQtr]
+        qtrCallTime = 0
+        callScreenAdvance()
     end
 end
 
-function onTimerCompleted(tag, left, elp)
-    if (tag == "cheer") then playSound(fld.."congrat", 1)
+function onTimerCompleted(tag)
+    if (tag == "cheer") then utils:playSound(fld.."congrat", 1)
     elseif (tag == "changesamtxt") then setTextString("samTxt", calcAMPM((6+(6*(curQtr-1)))*3600,true,false))
     elseif (tag == "endinSTaG") then restartSong() 
+    elseif (tag == "initCall") then
+        if (checkFileExists("sounds/"..bFld.."qtr"..curQtr.."bcst.ogg")) then
+            makeOneShotSpr('mutebtn', "mutebtn", nil, 10,10, 'other')
+            setProperty("mutebtn.alpha", 0.8)
+            utils:playSound(bFld.."broadcaststart", 1, "phonecallintro")
+            curQtrCallList = {{"garitv", 2.03}, {"tvstatic", 2}}
+            setProperty("tvbg.visible", true)
+            setProperty("tvanims.visible", true)
+            callScreenAdvance()
+        end
+    elseif (tag == "callAdvance") then callScreenAdvance()
     elseif (tag == "forceJumpscare") then 
         if camUP then toggleCam()
         else jumpscare(jumpQueued) end
@@ -822,13 +866,13 @@ function onTimerCompleted(tag, left, elp)
     elseif (tag == "slotJumpscr") then jumpscare("slot")
     elseif (tag == "fazeEgoInc") then chrStats["faze"].egoMeter = chrStats["faze"].egoMeter + 1
         updateCams()
-    elseif (tag == "linoNotify") then playSound(fld.."/statuspanel/Windows XP Error", 0.8) 
+    elseif (tag == "linoNotify") then utils:playSound(fld.."/statuspanel/Windows XP Error", 0.8) 
     elseif (tag == "jackCountdown") then
         if (doorStats[(chrStats["jack"].cam % 2)+1].active) then
-            playSound(fld.."bangnoyell", 1)
+            utils:playSound(fld.."bangnoyell", 1)
             runTimer("jackBangKill",1)
         else
-            playSound(fld.."jackroomflicker", 0.75, "jackflicker")
+            utils:playSound(fld.."jackroomflicker", 0.75, "jackflicker")
             chrStats["jack"].inOffice = true
             chrStats["jack"].cam = 0
             runTimer("jackOffice", 5)
@@ -860,7 +904,7 @@ function onTimerCompleted(tag, left, elp)
         doorStats[door].active = false
         setProperty("oficdor"..posiblDors[door]..".visible", false)
         setProperty("oficbtn"..posiblDors[door]..".visible", false)
-        playSound(fld.."dooropen", 0.8) 
+        utils:playSound(fld.."dooropen", 0.8) 
         doorStats[door].disabled = true
         jumpCountdown("jack", 2)
     elseif (stringEndsWith(tag, "MO")) then --the master movement code. would also put the ai check here but some characters have different checks than others so im afraid to do so without losing my mind
@@ -886,7 +930,7 @@ function onTimerCompleted(tag, left, elp)
         if (getRandomInt(0,15) ~= 0) then return end
 
         local amb = {"clicks", "drip", "drippy", "pop", "shh", "stupid", "wind", "stupidphoneihate"}
-        playSound(aFld..amb[getRandomInt(1,#amb)], getRandomFloat(0.05, 0.2))
+        utils:playSound(aFld..amb[getRandomInt(1,#amb)], getRandomFloat(0.05, 0.2))
     end
 end
 

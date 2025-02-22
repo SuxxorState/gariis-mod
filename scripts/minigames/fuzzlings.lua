@@ -195,7 +195,7 @@ function reloadMap() --hopefully seperating this as its own function reduces a b
     utils:makeBlankBG("blankFG", screenWidth,screenHeight, "111111", "other")
     setProperty("blankFG.visible", false)
 
-    playSound(fldr.."start", 1, "start")
+    utils:playSound(fldr.."start", 1, "start")
 end
 
 function onUpdate(elp)
@@ -220,20 +220,20 @@ end
 
 function handlePellets()
     if (map[trucker.targetCoords.y+1][trucker.targetCoords.x+1] == 2) then
-        playSound(fldr.."eat_dot_"..(pelletCount%2))
+        utils:playSound(fldr.."eat_dot_"..(pelletCount%2))
         pelletCount = pelletCount + 1
         removeLuaSprite("pellet"..(trucker.targetCoords.x).." "..(trucker.targetCoords.y), true)
         map[trucker.targetCoords.y+1][trucker.targetCoords.x+1] = 1
         score = score + 10
     elseif (map[trucker.targetCoords.y+1][trucker.targetCoords.x+1] == 3) then
-        playSound(fldr.."fright", 1, "frightloop")
+        utils:playSound(fldr.."fright", 1, "frightloop")
         runTimer("fright", 10)
         pelletCount = pelletCount + 1
         removeLuaSprite("energizer"..(trucker.targetCoords.x).." "..(trucker.targetCoords.y), true)
         map[trucker.targetCoords.y+1][trucker.targetCoords.x+1] = 1
         score = score + 50
     elseif (map[trucker.targetCoords.y+1][trucker.targetCoords.x+1] == 4) then
-        playSound(fldr.."eat_fruit")
+        utils:playSound(fldr.."eat_fruit")
         for y,row in ipairs(map) do for x,squ in ipairs(row) do
             if (squ == 4) then map[y][x] = 1 end
         end end
@@ -297,7 +297,7 @@ function handlePellets()
     end
     if (score >= 10000 and not extraLifeGiven) then
         extraLifeGiven = true
-        playSound(fldr.."extend")
+        utils:playSound(fldr.."extend")
         lives = lives + 1
         updateLives(true)
     end
@@ -471,7 +471,7 @@ function handlePlayerMovement()
 end
 
 function onSoundFinished(snd)
-    if (snd == "frightloop") then playSound(fldr.."fright", 1, "frightloop")
+    if (snd == "frightloop") then utils:playSound(fldr.."fright", 1, "frightloop")
     elseif (snd == "start") then canUpdate = true
         font:setTextVisible("readyUp", false)
     end

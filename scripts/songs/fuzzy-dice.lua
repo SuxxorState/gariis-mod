@@ -86,7 +86,7 @@ end
 function advancePanel()
     curPanel = curPanel + 1
     local sounds = {{"fuzzyloopstart", 0.8}, {"mmm_chicen", 0.75}, {"le_bubel_pop", 0.75}, {"boybeep",0.8}, {"boydah",0.75}}
-    if (sounds[curPanel] ~= nil) then playSound("cutscene/"..sounds[curPanel][1], sounds[curPanel][2], sounds[curPanel][1]) end
+    if (sounds[curPanel] ~= nil) then utils:playSound("cutscene/"..sounds[curPanel][1], sounds[curPanel][2], sounds[curPanel][1]) end
     doTweenAlpha("tcpanel"..curPanel, "tcpanel"..curPanel, 1, 0.5)
     setProperty("camFollow.y", camYs[curPanel])
     setProperty("advancehint.visible", curPanel < 1)
@@ -196,7 +196,7 @@ canShit = false
 doGFChecks = false
 function onTimerCompleted(tag, loops, loopsLeft)
 	if (tag == 'fly gf fly') then
-        playSound("badexplosion", 0.25)
+        utils:playSound("badexplosion", 0.25)
         setProperty("gf.alpha", 0)
         doGFChecks = true
         playAnim("truckergf-looney", "looney")
@@ -226,9 +226,9 @@ end
 
 function onSoundFinished(tag)
     if tag == 'fuzzyloop' or tag == 'fuzzyloopstart' then 
-        if (curPanel >= 6) then playSound("cutscene/fuzzyloopend", 0.8, "fuzzyloopend")
-        else playSound("cutscene/fuzzyloop", 0.8, "fuzzyloop") 
-            playSound("cutscene/fuzzyloopend", 0, "fuzzyloopcoverend") 
+        if (curPanel >= 6) then utils:playSound("cutscene/fuzzyloopend", 0.8, "fuzzyloopend")
+        else utils:playSound("cutscene/fuzzyloop", 0.8, "fuzzyloop") 
+            utils:playSound("cutscene/fuzzyloopend", 0, "fuzzyloopcoverend") 
         end
     elseif (tag == 'fuzzyloopend' or (tag == 'fuzzyloopcoverend' and curPanel >= 7)) and doingScene then 
         if (tag == "fuzzyloopcoverend" and luaSoundExists("fuzzyloop")) then return end

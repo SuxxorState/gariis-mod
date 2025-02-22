@@ -64,6 +64,7 @@ end
 
 function onCustomSubstateCreate(tag)
     if (tag ~= "achievementsMenu") then return end
+    utils:pauseAllKnownSounds()
     playSound(fold.."openmenu")
 
     makeLuaSprite("menuBlackout")
@@ -186,7 +187,7 @@ function quickAddSprite(name, isText, initShow, category)
     setObjectCamera(name, "other")
     setProperty(name..".visible", initShow)
     if (isText) then addLuaText(name)
-    else addLuaSprite(name)
+    else addLuaSprite(name, true)
     end
     if (category == "back") then table.insert(backVariables, name)
     elseif (category == "scroll") then table.insert(scrollVariables, name)
@@ -474,6 +475,7 @@ function onTimerCompleted(tmr)
 end
 
 function closeMenu()
+    utils:resumeAllKnownSounds()
     callOnLuas("toggleCursor", {true})
     for i,spr in pairs(backVariables) do
         removeLuaSprite(spr, true)

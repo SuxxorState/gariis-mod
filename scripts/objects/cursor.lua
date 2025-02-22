@@ -2,7 +2,7 @@ local utils = (require (getVar("folDir").."scripts.backend.utils")):new()
 local curIdleState = "idle"
 
 function initCursor()
-    runHaxeCode([[FlxG.mouse.visible = false;]])
+    setPropertyFromClass("flixel.FlxG", "mouse.visible", false)
     if (luaSpriteExists("gariiCursor")) then return end
     makeAnimatedLuaSprite('gariiCursor',"minigames/cursor",0,0)
     for i,anim in pairs({"idle", "enter", "good", "bad", "clickhold"}) do

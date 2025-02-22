@@ -44,7 +44,7 @@ function noteMissPress()
 end
 
 function onCreate()
-    unlockAchievement("true-bjs")
+
 end
 
 function onEndSong()

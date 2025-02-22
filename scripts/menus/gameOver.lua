@@ -62,7 +62,7 @@ function onGameOver()
     setProperty("boyfriend.stunned", true)
     callOnScripts("disablePause")
     doTweenAlpha("lole", "camHUD", 0, 0.5)
-    playSound(fldr.."fallin", 0.5, 'gofall')
+    utils:playSound(fldr.."fallin", 0.5, 'gofall')
 
     setProperty("generatedMusic", false) --disables shit like events... mainly cause of sfx playing
     setProperty("vocals.volume", 0)
@@ -196,13 +196,13 @@ function onTimerCompleted(tmr)
         stopSound("golosemusic")
         openCustomSubstate("GameOver", true)
     elseif (tmr == "jingle") then
-        playSound(fldr.."jingles/"..((songName:lower()):gsub(" ", "-")), 1, 'golosemusic')
+        utils:playSound(fldr.."jingles/"..((songName:lower()):gsub(" ", "-")), 1, 'golosemusic')
         runTimer("jinglequickend", 3)
         runTimer("opengameover", 4)
     elseif (tmr == "jinglequickend") then soundFadeOut("golosemusic", 1, 0)
     elseif (tmr == "anvilsound") then
         stopSound("gofall")
-        playSound(fldr.."ANVIL", 1)
+        utils:playSound(fldr.."ANVIL", 1)
         runTimer("finishgocircle", 0.2)
         runTimer("runGOBG", 0.5)
     elseif (tmr == "finishgocircle") then
