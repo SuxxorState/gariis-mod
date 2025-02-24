@@ -28,6 +28,7 @@ local sprs = {"trees", "icparlor", "skobeloff", "bush", "exitsign", "gariimanor"
 local bounds = {{854,145, 1248,518}, {10,227, 311,489}, {373,225, 791,566}, {400,537, 729,715}, {10,500, 178,699}, {1077,0, 1279,694}}
 function onUpdate()
     if (not canUpdate) then return end
+    utils:setDiscord("In GARII'S ARCADE", "Sinopia Sanctuary")
 
     local curSel = 0
     for i,bnd in ipairs(bounds) do --this has a priority system--the further in the list the bounds are, the more they are prioritized, for shit like layering selectable layers on top of each other

@@ -63,6 +63,7 @@ function onUpdatePost()
 
     if (inGame) then return end
 
+    utils:setDiscord("In GARII'S ARCADE", "SKOBELOFF CASINO")
     local curSel = 0
     for i,bnd in ipairs(opts) do
         if (utils:mouseWithinBounds({200 + ((i-1) * 300),100, 550 + ((i-1) * 300),350})) then curSel = i end

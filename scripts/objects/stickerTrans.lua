@@ -38,7 +38,7 @@ function placeStickers(openScript, callFunc)
     local yPos = -150
     local inc = 1
     while (xPos <= screenWidth) do
-        if (getRandomInt(1,100) == 1) then makeLuaSprite('sticker'..inc, 'stickers/'..rareStickers[getRandomInt(1, #rareStickers)], xPos, yPos)
+        if (getRandomInt(0,255) == 0) then makeLuaSprite('sticker'..inc, 'stickers/'..rareStickers[getRandomInt(1, #rareStickers)], xPos, yPos)
         else makeLuaSprite('sticker'..inc, 'stickers/'..stickers[getRandomInt(1, #stickers)], xPos, yPos)
         end
         addLuaSprite('sticker'..inc, true)

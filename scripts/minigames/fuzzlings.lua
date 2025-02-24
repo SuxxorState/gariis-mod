@@ -57,6 +57,7 @@ local map = {}
 
 function startMinigame()
     utils:setWindowTitle("Friday Night Funkin': GARII'S ARCADE: Fuzzlings!")
+    utils:setDiscord("In GARII'S ARCADE", "Fuzzlings!")
     callOnLuas("toggleCursor", {false})
     setProperty("camHUD.zoom", 2)
     setVar("pacMapBase", baseMap)
@@ -117,6 +118,7 @@ end
 
 function reloadMap() --hopefully seperating this as its own function reduces a bit of lag and load on the pc
     map = getVar("pacMapBase")
+    utils:setDiscord("In GARII'S ARCADE", "Fuzzlings! (Level "..curLevel..")")
 
     if (math.floor((curLevel/2)+0.5) > #levelFruits) then
         local trash = {"tire", "notebook", "bottle", "can"}

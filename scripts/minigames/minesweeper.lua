@@ -1,22 +1,24 @@
 local utils = (require (getVar("folDir").."scripts.backend.utils")):new()
 local pfFont = (require (getVar("folDir").."scripts.objects.fontHandler")):new("poker-freak")
 
-local fold = "minigames/minesweeper/"
+local fold = "minigames/bushtrimmer/"
 local sfld, mfld = fold.."skins/", fold.."menu/"
 local skinList = {"tiles"}
-local tileSkin = "tiles"
+local tileSkin, prevSkin = "", ""
 local skinStats = {
-    ["tiles"] = {title = "Hydrangea", colours = {[0] = "ffffff"; "a284b9","9ad6ff","8fc79b","f4f3ad","dbaf85","ea9fd0","c55252","7e464f","ffffff","c0c0c0","635245","000000","4e7faf"}},
-    ["tiles-xp"] = {title = "Experience", colours = {[0] = "ffffff"; "4e7faf","4d664d","c55252","434253","7e464f","4e7faf","000000","333333"}},
-    ["tiles-seven"] = {title = "Silver Seven", colours = {[0] = "ffffff"; "4e7faf","4d664d","c55252","434253","7e464f","4e7faf","c55252","c55252"}},
-    ["tiles-lino"] = {title = "Fall Dolphin", colours = {[0] = "ffffff"; "a284b9","9ad6ff","8fc79b","f4f3ad","dbaf85","ea9fd0","c55252","4e7faf"}},
-    ["tiles-faithful"] = {title = "Programmer Art", colours = {[0] = "ffffff"; "a284b9","9ad6ff","8fc79b","f4f3ad","dbaf85","ea9fd0","c55252","7e464f"}},
-    ["tiles-xp-faithful"] = {title = "Windows XP", colours = {[0] = "ffffff"; "4e7faf","4d664d","c55252","434253","7e464f","4e7faf","000000","333333"}},
-    ["tiles-seven-faithful"] = {title = "Windows 7", colours = {[0] = "ffffff"; "4e7faf","4d664d","c55252","434253","7e464f","4e7faf","c55252","c55252"}},
-    ["tiles-lino-faithful"] = {title = "Dolphin Lino", colours = {[0] = "ffffff"; "a284b9","9ad6ff","8fc79b","f4f3ad","dbaf85","ea9fd0","c55252","4e7faf"}},
-    ["unknown"] = {title = "Unknown Skin", colours = {[0] = "ffffff"; "a284b9","9ad6ff","8fc79b","f4f3ad","dbaf85","ea9fd0","c55252","7e464f"}}
+    ["tiles"] = {title = "Hydrangea", colours = {x = "434253", [0] = "ffffff"; "a284b9","9ad6ff","8fc79b","f4f3ad","dbaf85","ea9fd0","c55252","7e464f","ffffff","c0c0c0","635245","000000","4e7faf"}},
+    ["tiles-xp"] = {title = "Experience", colours = {x = "434253", [0] = "ffffff"; "4e7faf","4d664d","c55252","434253","7e464f","4e7faf","000000","333333"}},
+    ["tiles-seven"] = {title = "Silver Seven", colours = {x = "FFFFFF", [0] = "ffffff"; "4e7faf","4d664d","c55252","434253","7e464f","4e7faf","c55252","c55252"}},
+    ["tiles-lino"] = {title = "Fall Dolphin", colours = {x = "7e464f", [0] = "ffffff"; "a284b9","9ad6ff","8fc79b","f4f3ad","dbaf85","ea9fd0","c55252","4e7faf"}},
+    ["tiles-wire"] = {title = "Evil Dark Mode", colours = {x = "FFFFFF", [0] = "ffffff"; "a284b9","9ad6ff","8fc79b","f4f3ad","dbaf85","ea9fd0","c55252","4e7faf"}},
+    ["tiles-mboi"] = {title = "Navy Buoy", colours = {x = "434253", [0] = "ffffff"; "a284b9","9ad6ff","8fc79b","f4f3ad","dbaf85","ea9fd0","c55252","FFFFFF"}},
+    ["tiles-faithful"] = {title = "Programmer Art", colours = {x = "434253", [0] = "ffffff"; "a284b9","9ad6ff","8fc79b","f4f3ad","dbaf85","ea9fd0","c55252","7e464f"}},
+    ["tiles-xp-faithful"] = {title = "Windows XP", colours = {x = "808080", [0] = "ffffff"; "0000ff","008000","ff0000","000080","800000","008080","000000","808080"}},
+    ["tiles-seven-faithful"] = {title = "Windows 7", colours = {x = "FFFFFF", [0] = "ffffff"; "0000ff","008000","ff0000","000080","800000","008080","ff0000","ff0000"}},
+    ["tiles-lino-faithful"] = {title = "Dolphin Lino", colours = {x = "7e464f", [0] = "ffffff"; "a284b9","9ad6ff","8fc79b","f4f3ad","dbaf85","ea9fd0","c55252","4e7faf"}},
+    ["unknown"] = {title = "Unknown Skin", colours = {x = "434253", [0] = "ffffff"; "a284b9","9ad6ff","8fc79b","f4f3ad","dbaf85","ea9fd0","c55252","7e464f"}}
 }
-local diffs = {"Beginner","Novice","Intermediate","Advanced","Expert","Custom"}
+local options = {"Beginner","Novice","Intermediate","Advanced","Expert","Custom","Style","Stats"}
 local diffStats = {
     ["beginner"] = {width = 9, height = 9, mines = 10, flowers = 0},
     ["novice"] = {width = 16, height = 16, mines = 40, flowers = 0},
@@ -39,57 +41,60 @@ local queuedUpTiles = {}
 
 function startMinigame()
     utils:setWindowTitle("Friday Night Funkin': GARII'S ARCADE: Bushtrimmer")
+    utils:setDiscord("In GARII'S ARCADE", "Bushtrimmer")
     setProperty("camHUD.zoom", 2)
     callOnScripts("initCursor")
 
+    tileSkin = utils:getGariiData("btSkin")
+    if (tileSkin == nil) then tileSkin = "tiles" end
+    if (getModSetting('faithfulMode')) then skinList[1] = "tiles-faithful"
+        if (not stringEndsWith(utils:lwrKebab(tileSkin), "-faithful")) then tileSkin = tileSkin.."-faithful" end
+    elseif (stringEndsWith(utils:lwrKebab(tileSkin), "-faithful")) then
+        tileSkin = stringSplit(tileSkin, "-faithful")[1]
+    end
+    utils:setGariiData("btSkin", tileSkin)
     for _,file in pairs(utils:dirFileList('images/'..sfld)) do
         if (stringEndsWith(file, ".png")) then
             local clippedFile = string.sub(file, 1, #file - 4)
-            if (not (stringEndsWith(utils:lwrKebab(clippedFile), "-faithful") or utils:tableContains(skinList, clippedFile))) then
-                table.insert(skinList, clippedFile)
+            if (not (stringEndsWith(utils:lwrKebab(clippedFile), "-faithful") or utils:tableContains(skinList, clippedFile) or utils:tableContains(skinList, clippedFile.."-faithful"))) then
+                if (getModSetting('faithfulMode') and checkFileExists("images/"..sfld..clippedFile.."-faithful.png")) then table.insert(skinList, clippedFile.."-faithful")
+                else table.insert(skinList, clippedFile)
+                end
                 if (skinStats[clippedFile] == nil) then skinStats[clippedFile] = skinStats["unknown"] end
             end
         end
     end
-    debugPrint(skinList)
+    curSkin = utils:indexOf(skinList, tileSkin)
 
     makeLuaSprite('grass',fold..'grass',320,180)
     quickAddSprite("grass")
 
-    for i,dif in pairs(diffs) do
+    for i,dif in pairs(options) do
         makeLuaSprite(dif:lower(),mfld..dif:lower(),359 + (200 * ((i-1)%3)),186 + (180 * math.floor((i-1) /3)))
         quickAddSprite(dif:lower())
     end
 
     makeLuaSprite("style",mfld.."style",359 + (400) + 4,186 + (180) + 68)
     quickAddSprite("style")
-    table.insert(diffs, "Style")
     makeLuaSprite("stats",mfld.."stats",359 + (400) + 86,186 + (180) + 68)
     quickAddSprite("stats")
-    table.insert(diffs, "Stats")
     skinSel(0)
 end
 
 function firstTimeSetup()
-    width = math.min(diffStats[utils:lwrKebab(diffs[curDiff])].width, 36)
-    height = math.min(diffStats[utils:lwrKebab(diffs[curDiff])].height, 18)
+    width = math.min(diffStats[utils:lwrKebab(options[curDiff])].width, 36)
+    height = math.min(diffStats[utils:lwrKebab(options[curDiff])].height, 18)
     x = (screenWidth - (width * 16)) / 2
     y = ((screenHeight - (height * 16)) / 2) + 16
-    mines = math.min(diffStats[utils:lwrKebab(diffs[curDiff])].mines, math.floor((width * height) * 0.85))
-    flowers = math.min(diffStats[utils:lwrKebab(diffs[curDiff])].flowers, 5)
+    mines = math.min(diffStats[utils:lwrKebab(options[curDiff])].mines, math.floor((width * height) * 0.85))
+    flowers = math.min(diffStats[utils:lwrKebab(options[curDiff])].flowers, 5)
     if (mines >= 99) then diff = "exp" end
 
-    makeLuaSprite('minebgbgbg','',x - 12,y - 12)
-    makeGraphic("minebgbgbg", (width * 16) + 24, (height * 16) + 24, "000000")
-    quickAddSprite("minebgbgbg")
-
-    makeLuaSprite('minebgbg','',x - 10,y - 10)
-    makeGraphic("minebgbg", (width * 16) + 20, (height * 16) + 20, "7e464f")
-    quickAddSprite("minebgbg")
-
-    makeLuaSprite('minebg','',x - 2,y - 2)
-    makeGraphic("minebg", (width * 16) + 4, (height * 16) + 4, "000000")
-    quickAddSprite("minebg")
+    for i,s in pairs({{24, "000000"}, {20, "7e464f"}, {4, "000000"}}) do
+        makeLuaSprite('minebg'..i,'',x - (s[1] / 2),y - (s[1] / 2))
+        makeGraphic('minebg'..i, (width * 16) + s[1], (height * 16) + s[1], s[2])
+        quickAddSprite('minebg'..i)
+    end
     
     makeAnimatedLuaSprite("smileyicon", fold.."smiley", 600,184)
     for _,anim in pairs{"reg-idle","reg-click","reg-dead","reg-win","exp-idle","exp-click","exp-dead","exp-win"} do
@@ -165,7 +170,7 @@ function setupGame()
             setProperty("data"..i.."-"..j..".color", getColorFromHex(skinStats[tileSkin].colours[adjcount.mines]))
             if (adjcount.mines >= 1 and adjcount.flowers <= 0) then addAnimationByPrefix("data"..i.."-"..j, "num", (adjcount.mines).."num", 24, true)
             elseif (adjcount.flowers >= 1) then addAnimationByPrefix("data"..i.."-"..j, "num", (adjcount.mines + adjcount.flowers).."fakenum", 24, true)
-            else setProperty("data"..i.."-"..j..".color", getColorFromHex("434253"))
+            else setProperty("data"..i.."-"..j..".color", getColorFromHex(skinStats[tileSkin].colours.x))
             end
             addAnimationByPrefix("data"..i.."-"..j, "x", "x", 24, true)
             playAnim("data"..i.."-"..j, "num")
@@ -174,7 +179,7 @@ function setupGame()
     end
 
     checkForOptimalStartPos()
-    utils:playSound("minigames/start")
+    utils:playSound(fold.."start")
     runTimer("timerup",0.0000001)
 
     playAnim("smileyicon", diff.."-idle")
@@ -201,14 +206,123 @@ function quickAddSprite(spr, visible)
     addLuaSprite(spr)
 end
 
+local tester = {x = 732, y = 302, width = 8, height = 8, mine = {x = 3, y = 2}}
+function openSkinMenu()
+    canSkin = true
+    prevSkin = tileSkin
+    curSkin = utils:indexOf(skinList, tileSkin)
+
+    utils:makeBlankBG("blackout", screenWidth,screenHeight, "000000", "hud")
+    setProperty("blackout.alpha", 0)
+    doTweenAlpha("blackout", "blackout", 0.5, 0.5, "circOut")
+    for i=1,5 do
+        pfFont:createNewText("skin"..i.."Txt", 250, 250 + ((i-1) * 50), " ")
+        if (i == 3) then pfFont:setTextX("skin"..i.."Txt", 275) end
+        pfFont:setTextAlpha("skin"..i.."Txt", 0)
+        pfFont:setTextCamera("skin"..i.."Txt", "hud")
+    end
+
+    for i,s in pairs({{24, "000000"}, {20, "7e464f"}, {4, "000000"}}) do
+        makeLuaSprite('skinminebg'..i,'',tester.x - (s[1] / 2),tester.y - (s[1] / 2))
+        makeGraphic('skinminebg'..i, (tester.width * 16) + s[1], (tester.height * 16) + s[1], s[2])
+        quickAddSprite('skinminebg'..i)
+    end
+
+    for i = 1,tester.height do
+        for j=1,tester.width do
+            removeLuaSprite("testtile"..i.."-"..j)
+            makeLuaSprite("testtile"..i.."-"..j, nil, tester.x + ((j-1) * 16), tester.y + ((i-1) * 16))
+            quickAddSprite("testtile"..i.."-"..j)
+        end
+    end
+
+    for _,v in pairs({{name = "flag", x=4,y=7}, {name = "mark", x=1,y=6}, {name = "mine", x=tester.mine.x,y=tester.mine.y}, {name = "flower1", x=7,y=1}, {name = "flower2", x=8,y=7}}) do
+        removeLuaSprite("test"..v.name)
+        makeLuaSprite("test"..v.name, nil, tester.x + ((v.x-1) * 16), tester.y + ((v.y-1) * 16))
+        quickAddSprite("test"..v.name)
+    end
+
+    for i,v in pairs({{x = 8, y = 4}, {x = 7, y = 4}, {x = 6, y = 4}, {x = 5, y = 4}, {x = 5, y = 5}, {x = 5, y = 6}, {x = 5, y = 7}, {x = 5, y = 8}}) do
+        removeLuaSprite("testdata"..i)
+        makeAnimatedLuaSprite("testdata"..i, fold.."infostuff", tester.x + ((v.x-1) * 16), tester.y + ((v.y-1) * 16))
+        addAnimationByPrefix("testdata"..i, "reg", i.."num", 24, true)
+        quickAddSprite("testdata"..i)
+    end
+
+    removeLuaSprite("testdatax")
+    makeAnimatedLuaSprite("testdatax", fold.."infostuff", tester.x + ((2-1) * 16), tester.y + ((4-1) * 16))
+    addAnimationByPrefix("testdatax", "reg", "x", 24, true)
+    quickAddSprite("testdatax")
+
+    skinSel(0)
+
+    for i=1,5 do
+        pfFont:tweenTextX("skin"..i.."Txt", pfFont:getTextX("skin"..i.."Txt") + 100, 0.5 + (0.1 * (i-1)), "circOut")
+        if (i == 3) then pfFont:tweenTextAlpha("skin"..i.."Txt", 1, 0.5, "circOut")
+        else pfFont:tweenTextAlpha("skin"..i.."Txt", 0.5, 0.5, "circOut")
+        end
+    end
+end
+
+function closeSkinMenu(saveSkin)
+    canSkin = false
+    if (saveSkin) then utils:setGariiData("btSkin", tileSkin)
+        utils:playSound(fold.."click")
+    else tileSkin = prevSkin
+        utils:playSound(fold.."Windows Recycle")
+    end
+    doTweenAlpha("blackout", "blackout", 0, 0.5, "circOut")
+    pfFont:destroyAll()
+
+    for i = 1,tester.height do
+        for j=1,tester.width do
+            removeLuaSprite("testtile"..i.."-"..j)
+        end
+    end
+
+    for _,v in pairs({"flag", "mark", "mine", "flower1", "flower2"}) do
+        removeLuaSprite("test"..v)
+    end
+
+    for i=1,8 do
+        removeLuaSprite('skinminebg'..i)
+        removeLuaSprite("testdata"..i)
+    end
+    removeLuaSprite("testdatax")
+end
+
 function skinSel(move)
     curSkin = curSkin + move
     if (curSkin > #skinList) then curSkin = 1
     elseif (curSkin < 1) then curSkin = #skinList
     end
+    if (move ~= 0) then utils:playSound(fold.."Windows Restore") end
 
     tileSkin = skinList[curSkin]
-    pfFont:setTextString("skinTxt", tileSkin)
+    for i=1,5 do
+        pfFont:setTextVisible("skin"..i.."Txt", skinList[curSkin + (i-3)] ~= nil)
+        if (skinList[curSkin + (i-3)] ~= nil) then
+            pfFont:setTextString("skin"..i.."Txt", skinStats[skinList[curSkin + (i-3)]].title)
+        end
+    end
+    
+    for i = 1,tester.height do
+        for j=1,tester.width do
+            addGridAnims("testtile"..i.."-"..j, sfld..tileSkin, 16, 16, {{"reg", 0}, {"open", 1}, {"dead", 2}})
+            if (i == tester.mine.y and j == tester.mine.x) then playAnim("testtile"..i.."-"..j, "dead")
+            elseif (i == 8 and j == 9) then playAnim("testtile"..i.."-"..j, "open")
+            elseif (i >= 4 and j >= 5) then playAnim("testtile"..i.."-"..j, "open")
+            end
+        end
+    end
+    for _,v in pairs({{name = "flag", tile = 4}, {name = "mark", tile = 5}, {name = "mine", tile = 3}, {name = "flower1", tile = 6}, {name = "flower2", tile = 7}}) do
+        addGridAnims("test"..v.name, sfld..tileSkin, 16, 16, {{"reg", v.tile}})
+    end
+
+    for i=1,8 do
+        setProperty("testdata"..i..".color", getColorFromHex(skinStats[tileSkin].colours[i]))
+    end
+    setProperty("testdatax.color", getColorFromHex(skinStats[tileSkin].colours.x))
 end
 
 function onUpdate()
@@ -217,6 +331,11 @@ function onUpdate()
             cancelTimer("delayboom")
             stopSound("winmusic")
             setupGame()
+        end
+        if (keyJustPressed("back")) then 
+            canChoose = true
+            onDestroy()
+            startMinigame()
         end
     end
     if (canPlay) then
@@ -245,12 +364,11 @@ function onUpdate()
     if (canSkin) then
         if (keyJustPressed("ui_up")) then skinSel(-1)
         elseif (keyJustPressed("ui_down")) then skinSel(1)
-        elseif (keyJustPressed("back")) then canSkin = false
-        pfFont:removeText("skinTxt")
+        elseif (keyJustPressed("back") or keyJustPressed("ui_right") or keyJustPressed("accept")) then closeSkinMenu(not keyJustPressed("back"))
         end
     elseif (canChoose) then
         local curChoice = 0
-        for i,spr in pairs(diffs) do
+        for i,spr in pairs(options) do
             local dif = utils:lwrKebab(spr)
             if (utils:mouseWithinBounds({getProperty(dif..".x"), getProperty(dif..".y"), getProperty(dif..".x")+getProperty(dif..".width"), getProperty(dif..".y")+getProperty(dif..".height")}, "hud")) then
                 curChoice = i
@@ -260,15 +378,12 @@ function onUpdate()
             if ((mouseReleased() or mouseReleased("right"))) then
                 if (curChoice == 6) then
                     
-                elseif (curChoice == 7) then
-                    canSkin = true
-                    pfFont:createNewText("skinTxt", 400, 190, tileSkin)
-                    pfFont:setTextCamera("skinTxt", "hud")
+                elseif (curChoice == 7) then openSkinMenu()
                 elseif (curChoice == 8) then
                 else
                     canChoose = false
                     curDiff = curChoice
-                    for _,jif in pairs(diffs) do
+                    for _,jif in pairs(options) do
                         removeLuaSprite(utils:lwrKebab(jif))
                     end
                     removeLuaSprite("style")
@@ -277,8 +392,12 @@ function onUpdate()
                     canPlay = true
                 end
                 callOnLuas("cursorPlayAnim")
+                local rpc = options[curChoice]
+                if (curChoice >= 7) then rpc = rpc.." Menu" end
+                utils:setDiscord("In GARII'S ARCADE", "Bushtrimmer: "..rpc)
             end
         else callOnLuas("cursorPlayAnim")
+            utils:setDiscord("In GARII'S ARCADE", "Bushtrimmer")
         end
         if (keyJustPressed("back")) then
             callOnLuas("placeStickers")
@@ -316,7 +435,7 @@ function interactWithTile(tilex, tiley, flag, massopen)
                 cancelTimer("timerup")
                 if (countAdjacentMines(tilex, tiley).mines == 9) then
                     playAnim("tile"..tiley.."-"..tilex, "9mines")
-                    utils:playSound("minigames/fuckedup")
+                    utils:playSound(fold.."fuckedup")
                     runTimer("delayboom", 2)
                 else loseStuff()
                     playAnim("tile"..tiley.."-"..tilex, "dead")
@@ -331,7 +450,7 @@ function interactWithTile(tilex, tiley, flag, massopen)
                 end
                 playAnim("tile"..tiley.."-"..tilex, "open")
                 if ((adjtiles.mines + adjtiles.flowers) < 1 and (not compareIndexTables(data.flowers, {tilex, tiley}))) then
-                    if (not luaSoundExists("bigclick")) and (not massopen) then utils:playSound("minigames/click", 1, "bigclick") end
+                    if (not luaSoundExists("bigclick")) and (not massopen) then utils:playSound(fold.."click", 1, "bigclick") end
                     intWithAdjTiles(tilex, tiley)
                 end
             end
@@ -341,6 +460,9 @@ end
 
 function loseStuff()
     canPlay = false
+    local curStreak = utils:getGariiData("btStreak") or {0,0,0,0,0}
+    curStreak[curDiff] = 0
+    utils:setGariiData("btStreak", curStreak)
     playAnim("smileyicon", diff.."-dead")
     revealMines(true)
 end
@@ -348,7 +470,7 @@ end
 function revealMines(bad)
     bad = bad or false
     for i = 1,#data.mines do
-        if (bad) then utils:playSound("minigames/lose_minesweeper", 1, "losemine") end
+        if (bad) then utils:playSound(fold.."lose_minesweeper", 1, "losemine") end
         setProperty("mine"..i..".visible", true)
     end
     for i = 1,#data.flaggedtiles do
@@ -409,6 +531,23 @@ function winStuff()
     playAnim("smileyicon", diff.."-win")
     utils:playSound("results/resultsEXCELLENT", 1, "winmusic")
     revealMines()
+
+    if (curDiff > 5) then return end --no achievements for custom diff
+    callOnLuas("unlockAchievement", {"bt-simple"})
+    if (curDiff == 5) then callOnLuas("unlockAchievement", {"bt-expert"}) end
+
+    local saveStreak = utils:getGariiData("btStreak") or {0,0,0,0,0}
+    local saveScores = utils:getGariiData("btBestScores") or {}
+    saveStreak[curDiff] = saveStreak[curDiff] + 1
+    saveScores[curDiff] = {time = math.min(saveScores[curDiff].time or math.huge, time), streak = math.max(saveScores[curDiff].streak or 0, saveStreak[curDiff])}
+    utils:setGariiData("btBestScores", saveScores)
+
+    if (saveStreak[curDiff] >= 5) then
+        callOnLuas("unlockAchievement", {"bt-5simple"})
+        if (curDiff == 5) then callOnLuas("unlockAchievement", {"bt-5expert"}) end
+    end
+    if (time <= 60) then callOnLuas("unlockAchievement", {"bt-speedy"}) end
+    if (time <= 300 and curDiff == 5) then callOnLuas("unlockAchievement", {"bt-exp-speed"}) end
 end
 
 function checkForOptimalStartPos()
@@ -472,6 +611,8 @@ function onTimerCompleted(tag)
         setProperty("timeicon.x", pfFont:getTextX("timeTxt") - 25)
         runTimer("timerup", 1)
     elseif tag == "destroy" then onDestroy()
+        close()
+        callOnLuas("backToMinigameHUB")
     end
 end
 
@@ -479,8 +620,9 @@ function onDestroy()
     canPlay = false
     setProperty("camHUD.zoom", 1)
     stopSound("winmusic")
+    closeSkinMenu()
     for _,tmr in pairs({"delayboom", "timerup", "destroy"}) do cancelTimer(tmr) end
-    for _,spr in pairs({"blankBG", "minebgbgbg", "minebgbg", "minebg", "timeicon", "mineicon", "smileyicon", "grass"}) do removeLuaSprite(spr) end
+    for _,spr in pairs({"blankBG", "minebg3", "minebg1", "minebg2", "timeicon", "mineicon", "smileyicon", "grass", "blackout"}) do removeLuaSprite(spr) end
     for i = 1,height do
         for j=1,width do 
             removeLuaSprite("tile"..i.."-"..j)
@@ -492,10 +634,8 @@ function onDestroy()
     removeLuaSprite("stats")
     for i = 1,mines do removeLuaSprite("mine"..i) end
     for i = 1,flowers do removeLuaSprite("flower"..i) end
-    for _,jif in pairs(diffs) do
+    for _,jif in pairs(options) do
         removeLuaSprite(utils:lwrKebab(jif))
     end
     pfFont:destroyAll()
-    close()
-    callOnLuas("backToMinigameHUB")
 end

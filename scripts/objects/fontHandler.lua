@@ -1,5 +1,9 @@
 local utils = (require (getVar("folDir").."scripts.backend.utils")):new() --ough we love utils
-local fonts = {["poker-freak"] = {name = "poker-freak", width = 15, height = 21, antialiasing = false}, ["rom-byte"] = {name = "rom-byte", width = 8, height = 8, disableLowercase = true, antialiasing = false}, ["lumeglyph"] = {name = "lumeglyph", dynamicSize = true, animateNames = true, antialiasing = true, randomSpacing = {0,1}}}
+local fonts = {
+    ["poker-freak"] = {name = "poker-freak", width = 15, height = 21, antialiasing = false, animated = false},
+    ["rom-byte"] = {name = "rom-byte", width = 8, height = 8, disableLowercase = true, antialiasing = false, animated = false},
+    ["lumeglyph"] = {name = "lumeglyph", dynamicSize = true, animateNames = true, antialiasing = true, randomSpacing = {0,1}, animated = true}
+}
 local loadedFont = {}
 local Font = {}
 local rawAlphaNumerals = {"a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z", "0", "1", "2", "3", "4", "5", "6", "7", "8", "9", ",", ".", "!", "?", ":", "<", ">", "+", "-", "%", "'"}
@@ -47,6 +51,7 @@ function Font:createNewText(name, dax,day, txt, algnmnt, clr, camra)
                 if (getProperty(name..i..".frameHeight") > biggestChar) then biggestChar = getProperty(name..i..".frameHeight") end
             end
             setProperty(name..i..".antialiasing", loadedFont.antialiasing)
+            setProperty(name..i..".active", loadedFont.animated)
             setProperty(name..i..".color", getColorFromHex(clr))
             setObjectCamera(name..i, camra)
             addLuaSprite(name..i)
@@ -62,7 +67,7 @@ function Font:createNewText(name, dax,day, txt, algnmnt, clr, camra)
     end
     
     table.insert(list, name)
-    local txtAtts = {x = dax, y = day, text = txt, alignment = algnmnt:lower(), color = clr, length = #txt, maxlength = #txt, scalex = 1, scaley = 1, visible = true, cam = camra, font = loadedFont.name}
+    local txtAtts = {x = dax, y = day, text = txt, alignment = algnmnt:lower(), color = clr, length = #txt, maxlength = #txt, scalex = 1, scaley = 1, visible = true, alpha = 1, cam = camra, font = loadedFont.name}
     atts[name] = txtAtts
 end
 
@@ -147,11 +152,25 @@ function Font:setTextCamera(name, newcam)
     atts[name].cam = newcam
 end
 
-function Font:tweenTextY(name, newy, time)
+function Font:tweenTextX(name, newx, time, ease)
     for i=1,atts[name].length do
-        doTweenY(name..i, name..i, newy, time)
+        doTweenX(name..i.."x", name..i, newx + (getProperty(name..i..".x") - atts[name].x), time, ease)
+    end
+    atts[name].x = newx
+end
+
+function Font:tweenTextY(name, newy, time, ease)
+    for i=1,atts[name].length do
+        doTweenY(name..i.."y", name..i, newy, time, ease)
     end
     atts[name].y = newy
+end
+
+function Font:tweenTextAlpha(name, newalpha, time, ease)
+    for i=1,atts[name].length do
+        doTweenAlpha(name..i.."alpha", name..i, newalpha, time, ease)
+    end
+    atts[name].alpha = newalpha
 end
 
 function Font:setTextString(name, txt)
@@ -170,6 +189,7 @@ function Font:setTextString(name, txt)
             setProperty(name..i..".antialiasing", false)
             setProperty(name..i..".visible", atts[name].visible)
             setProperty(name..i..".color", getColorFromHex(atts[name].color))
+            setProperty(name..i..".active", fonts[atts[name].font].animated)
             scaleObject(name..i, atts[name].scalex, atts[name].scaley)
             updateHitbox(name..i)
             setObjectCamera(name..i, atts[name].cam)
@@ -179,6 +199,7 @@ function Font:setTextString(name, txt)
         if (i > #splttxt) then removeLuaSprite(name..i, true)
         else setChar(name..i, splttxt[i])
             setProperty(name..i..".visible", atts[name].visible and splttxt[i] ~= " ")
+            setProperty(name..i..".alpha", atts[name].alpha)
 
             if (fonts[atts[name].font].dynamicSize) then
                 setProperty(name..i..".x", dynamicX)
@@ -247,6 +268,13 @@ function Font:setTextVisible(name, visible)
         setProperty(name..i..".visible", visible and utils:numToStr(atts[name].text)[i] ~= " ")
     end
     atts[name].visible = visible
+end
+
+function Font:setTextAlpha(name, alpha)
+    for i=1,atts[name].length do
+        setProperty(name..i..".alpha", alpha)
+    end
+    atts[name].alpha = alpha
 end
 
 function Font:setTextColour(name, clr)

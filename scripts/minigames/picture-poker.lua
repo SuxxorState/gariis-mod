@@ -110,6 +110,7 @@ function allowCardSwap()
 end
 
 function onUpdatePost(elp)
+    utils:setDiscord("In GARII'S ARCADE", "SKOBELOFF CASINO: Picture Poker")
     if (luaSpriteExists("arrow") and getProperty('arrow.visible')) then
         arrsine = arrsine + (180 * (elp/2))
         if (arrsine >= 360) then arrsine = 0 end --overflow prevention

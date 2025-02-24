@@ -61,6 +61,7 @@ end
 
 function onUpdate()
     if (not canUpdate) then return end
+    utils:setDiscord("In GARII'S ARCADE", "Some Time at Garii's")
 
     if (nightLerp ~= (nightSel*2160)) then
         nightLerp = utils:lerp(nightLerp, (nightSel*2160), 0.025)

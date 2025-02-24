@@ -32,7 +32,7 @@ local achievements = {
     --["stag-7-20"] = {title = "7/20 Blazin", description = "Survive Night-mare at Garii's Manor", iconFile = "", secret = false, gariiPoints = 75},
 
     ["bt-simple"] = {title = "Who Put These Here?", description = "Clear your first round.", iconFile = "mine", secret = false, gariiPoints = 10},
-    ["bt-5simple"] = {title = "Handle With Care", description = "Clear 5 rounds.", iconFile = "flag", secret = false, gariiPoints = 25},
+    ["bt-5simple"] = {title = "Handle With Care", description = "Clear 5 rounds in a row.", iconFile = "flag", secret = false, gariiPoints = 25},
     ["bt-speedy"] = {title = "Little Smiley Face", description = "Clear a round in under a minute.", iconFile = "smiley", secret = false, gariiPoints = 20},
     ["bt-expert"] = {title = "Minefield in a Bush", description = "Clear your first round on Expert.", iconFile = "mine-bush", secret = false, gariiPoints = 25},
     ["bt-5expert"] = {title = "Clusterluck", description = "Clear 5 rounds in a row on Expert.", iconFile = "boom", secret = false, gariiPoints = 50},

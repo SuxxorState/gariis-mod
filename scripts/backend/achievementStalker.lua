@@ -14,12 +14,12 @@ local achievements = {
     ["no-doors-save"] = {title = "Lino's Bad Day", description = "Hit the end of a quarter with all three of your doors disabled"},         --done
     ["the-yapper"] = {title = "Keep Talking and I'll Explode", description = "Skip every Garii broadcast"},                                 --done
     ["stag-deaths"] = {title = "Rocket Science", description = "Die to every lethal character at Garii's Manor"},                           --done
-    ["bt-simple"] = {title = "Who Put These Here?", description = "Clear your first round."},
-    ["bt-5simple"] = {title = "Handle With Care", description = "Clear 5 rounds."},
-    ["bt-speedy"] = {title = "Little Smiley Face", description = "Clear a round in under a minute."},
-    ["bt-expert"] = {title = "Minefield in a Bush", description = "Clear your first round on Expert."},
-    ["bt-5expert"] = {title = "Clusterluck", description = "Clear 5 rounds in a row on Expert."},
-    ["bt-exp-speed"] = {title = "Horticulturist", description = "Clear a round on Expert in under two minutes."},
+    ["bt-simple"] = {title = "Who Put These Here?", description = "Clear your first round."},                                               --done
+    ["bt-5simple"] = {title = "Handle With Care", description = "Clear 5 rounds in a row."},                                                --done
+    ["bt-speedy"] = {title = "Little Smiley Face", description = "Clear a round in under a minute."},                                       --done
+    ["bt-expert"] = {title = "Minefield in a Bush", description = "Clear your first round on Expert."},                                     --done
+    ["bt-5expert"] = {title = "Clusterluck", description = "Clear 5 rounds in a row on Expert."},                                           --done
+    ["bt-exp-speed"] = {title = "Horticulturist", description = "Clear a round on Expert in under two minutes."},                           --done
     ["fl-everyfruit"] = {title = "Pic-a-nic Basket", description = "Gather every Food and Drink"},                                          --done
     ["fl-everytrash"] = {title = "Junkyard", description = "Collect Every Type of Trash"},                                                  --done
     ["fl-16levels"] = {title = "Salad Dressing", description = "Beat 16 Levels"},                                                           --done

@@ -49,6 +49,7 @@ function startCasinoGame()
 end
 
 function onUpdatePost(elp)
+    utils:setDiscord("In GARII'S ARCADE", "SKOBELOFF CASINO: Blackjack")
     if (canChoose) then
         if (keyJustPressed("accept")) then selectOption()
         elseif (keyJustPressed("ui_left")) then changeOption(-1)
