@@ -5,7 +5,7 @@ local lastChr = {["boyfriend"] = "", ["gf"] = "", ["dad"] = ""}
 luaDebugMode = (getModSetting('gariiDebug') ~= nil and getModSetting('gariiDebug'))
 errored = not (stringStartsWith(version, "1.0.") or stringStartsWith(version, "0.7")) --set as 1.0.x because 1.0 kinda fucking sucks
 if (not errored) then
-    initSaveData("gariis-mod_v0.96", "SuxxorState")
+    initSaveData("gariis-mod_v0.97", "SuxxorState")
     setProperty("autoUpdateRPC", false)
 
     hudType = getPropertyFromClass("states.PlayState", "stageUI")

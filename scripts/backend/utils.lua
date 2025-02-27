@@ -1,5 +1,5 @@
 local defWindowTitle = "Friday Night Funkin': Psych Engine"
-local saveDir = "gariis-mod_v0.96"
+local saveDir = "gariis-mod_v0.97"
 local Utils = {}
 local songNameFmt = ""
 if stringEndsWith(songName, "-sss") then songNameFmt = (stringSplit(songName, "-s")[1]):lower():gsub(" ", "-")
