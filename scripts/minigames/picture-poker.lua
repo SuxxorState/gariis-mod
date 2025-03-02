@@ -51,7 +51,7 @@ function startCasinoGame()
     setProperty('hiearchy.antialiasing', false)
     setObjectCamera('hiearchy', 'other')
 
-    makeLuaSprite('arrow',fldr.."arrow",0,530)
+    makeLuaSprite('arrow',"minigames/arrow",0,530)
     addLuaSprite('arrow', true)
     setProperty('arrow.antialiasing', false)
     setProperty('arrow.visible', false)

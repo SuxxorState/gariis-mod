@@ -1,0 +1,5 @@
+Plays an animation just like Play Animation,
+but is difficulty dependent.
+
+Value 1: Animation to play. (Seperate by ",,")
+Value 2: Which character in specific to target

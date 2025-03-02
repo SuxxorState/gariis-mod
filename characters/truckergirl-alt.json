@@ -2,7 +2,10 @@
 	"animations": [
 		{
 			"loop": false,
-			"offsets": [0, 0],
+			"offsets": [
+				0,
+				0
+			],
 			"anim": "idle",
 			"fps": 24,
 			"name": "girl alt idle idle",
@@ -10,14 +13,20 @@
 		},
 		{
 			"loop": false,
-			"offsets": [11, 0],
+			"offsets": [
+				11,
+				0
+			],
 			"anim": "idle-alt",
 			"fps": 24,
 			"name": "girl alt alt idle idle",
 			"indices": []
 		},
 		{
-			"offsets": [87, -16],
+			"offsets": [
+				87,
+				-16
+			],
 			"loop": false,
 			"fps": 24,
 			"anim": "singLEFT",
@@ -25,7 +34,10 @@
 			"name": "girl alt left left"
 		},
 		{
-			"offsets": [41, -59],
+			"offsets": [
+				41,
+				-59
+			],
 			"loop": false,
 			"fps": 24,
 			"anim": "singDOWN",
@@ -33,7 +45,10 @@
 			"name": "girl alt down down"
 		},
 		{
-			"offsets": [16, 24],
+			"offsets": [
+				16,
+				24
+			],
 			"loop": false,
 			"fps": 24,
 			"anim": "singUP",
@@ -41,30 +56,90 @@
 			"name": "girl alt up up"
 		},
 		{
-			"offsets": [28, 8],
-			"indices": [],
-			"fps": 24,
-			"anim": "singRIGHT",
 			"loop": false,
-			"name": "girl alt right right"
+			"offsets": [
+				52,
+				-7
+			],
+			"anim": "singRIGHT",
+			"fps": 24,
+			"name": "girl alt righhjt",
+			"indices": []
 		},
 		{
-			"offsets": [31, 1],
-			"indices": [],
-			"fps": 24,
-			"anim": "hey",
 			"loop": false,
-			"name": "girl alt hey hey"
+			"offsets": [
+				87,
+				-10
+			],
+			"anim": "singLEFTmiss",
+			"fps": 24,
+			"name": "girl left mis",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				43,
+				-59
+			],
+			"anim": "singDOWNmiss",
+			"fps": 24,
+			"name": "girl down mis",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				16,
+				26
+			],
+			"anim": "singUPmiss",
+			"fps": 24,
+			"name": "gitl alt mis up",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				52,
+				-7
+			],
+			"anim": "singRIGHTmiss",
+			"fps": 24,
+			"name": "girl alrt rigth mss",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				31,
+				1
+			],
+			"anim": "hey",
+			"fps": 24,
+			"name": "girl alt hey hey",
+			"indices": []
 		}
 	],
 	"vocals_file": "",
 	"no_antialiasing": false,
 	"image": "characters/truckergirl-alt",
-	"position": [0, 120],
+	"position": [
+		0,
+		120
+	],
 	"healthicon": "truckgirl",
 	"flip_x": true,
-	"healthbar_colors": [197, 82, 82],
-	"camera_position": [-50, 50],
+	"healthbar_colors": [
+		197,
+		82,
+		82
+	],
+	"camera_position": [
+		-50,
+		50
+	],
 	"sing_duration": 4,
 	"scale": 1,
 	"_editor_isPlayer": true

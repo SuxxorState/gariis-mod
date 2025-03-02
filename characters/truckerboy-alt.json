@@ -1,118 +1,227 @@
 {
 	"animations": [
 		{
-			"offsets": [0, 0],
-			"indices": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13],
-			"fps": 24,
-			"anim": "danceLeft",
 			"loop": false,
+			"offsets": [
+				0,
+				0
+			],
+			"anim": "danceLeft",
+			"fps": 24,
+			"name": "boy alt/-anims/truckboyalt idle",
+			"indices": [
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13
+			]
+		},
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "danceRight",
+			"indices": [
+				14,
+				15,
+				16,
+				17,
+				18,
+				19,
+				20,
+				21,
+				22,
+				23,
+				24,
+				25,
+				26,
+				27
+			],
 			"name": "boy alt/-anims/truckboyalt idle"
 		},
 		{
 			"loop": false,
-			"offsets": [0, 0],
-			"anim": "danceRight",
-			"fps": 24,
-			"name": "boy alt/-anims/truckboyalt idle",
-			"indices": [14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27]
-		},
-		{
-			"offsets": [0, 0],
-			"indices": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13],
-			"fps": 24,
+			"offsets": [
+				0,
+				0
+			],
 			"anim": "danceLeft-alt",
-			"loop": false,
-			"name": "boy alt/-anims/truckboyalt idle alt"
+			"fps": 24,
+			"name": "boy alt/-anims/truckboyalt idle alt",
+			"indices": [
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13
+			]
 		},
 		{
-			"offsets": [0, 0],
-			"indices": [14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27],
-			"fps": 24,
+			"loop": false,
+			"offsets": [
+				0,
+				0
+			],
 			"anim": "danceRight-alt",
-			"loop": false,
-			"name": "boy alt/-anims/truckboyalt idle alt"
+			"fps": 24,
+			"name": "boy alt/-anims/truckboyalt idle alt",
+			"indices": [
+				14,
+				15,
+				16,
+				17,
+				18,
+				19,
+				20,
+				21,
+				22,
+				23,
+				24,
+				25,
+				26,
+				27
+			]
 		},
 		{
+			"offsets": [
+				0,
+				0
+			],
 			"loop": false,
-			"offsets": [0, 0],
+			"fps": 24,
 			"anim": "singLEFT",
-			"fps": 24,
-			"name": "boy alt/-anims/truckboyalt left going to run",
-			"indices": []
+			"indices": [],
+			"name": "boy alt/-anims/truckboyalt left going to run"
 		},
 		{
+			"offsets": [
+				0,
+				0
+			],
 			"loop": false,
-			"offsets": [0, 0],
+			"fps": 24,
 			"anim": "singDOWN",
-			"fps": 24,
-			"name": "boy alt/-anims/truckboyalt downright awesome",
-			"indices": []
+			"indices": [],
+			"name": "boy alt/-anims/truckboyalt downright awesome"
 		},
 		{
+			"offsets": [
+				0,
+				0
+			],
 			"loop": false,
-			"offsets": [0, 0],
+			"fps": 24,
 			"anim": "singUP",
-			"fps": 24,
-			"name": "boy alt/-anims/truckboyalt up up and away",
-			"indices": []
+			"indices": [],
+			"name": "boy alt/-anims/truckboyalt up up and away"
 		},
 		{
+			"offsets": [
+				0,
+				0
+			],
 			"loop": false,
-			"offsets": [0, 0],
+			"fps": 24,
 			"anim": "singRIGHT",
-			"fps": 24,
-			"name": "boy alt/-anims/truckboyalt am i right lads",
-			"indices": []
+			"indices": [],
+			"name": "boy alt/-anims/truckboyalt am i right lads"
 		},
 		{
+			"offsets": [
+				0,
+				0
+			],
 			"loop": false,
-			"offsets": [0, 0],
+			"fps": 24,
 			"anim": "singLEFTmiss",
-			"fps": 24,
-			"name": "boy alt/-anims/truckboyalt missed left",
-			"indices": []
+			"indices": [],
+			"name": "boy alt/-anims/truckboyalt missed left"
 		},
 		{
+			"offsets": [
+				0,
+				0
+			],
 			"loop": false,
-			"offsets": [0, 0],
+			"fps": 24,
 			"anim": "singDOWNmiss",
-			"fps": 24,
-			"name": "boy alt/-anims/truckboyalt mis the down",
-			"indices": []
+			"indices": [],
+			"name": "boy alt/-anims/truckboyalt mis the down"
 		},
 		{
+			"offsets": [
+				0,
+				0
+			],
 			"loop": false,
-			"offsets": [0, 0],
+			"fps": 24,
 			"anim": "singUPmiss",
-			"fps": 24,
-			"name": "boy alt/-anims/truckboyalt mis mis up",
-			"indices": []
+			"indices": [],
+			"name": "boy alt/-anims/truckboyalt mis mis up"
 		},
 		{
+			"offsets": [
+				0,
+				0
+			],
 			"loop": false,
-			"offsets": [0, 0],
+			"fps": 24,
 			"anim": "singRIGHTmiss",
-			"fps": 24,
-			"name": "boy alt/-anims/truckboyalt miss you are rite lad",
-			"indices": []
+			"indices": [],
+			"name": "boy alt/-anims/truckboyalt miss you are rite lad"
 		},
 		{
-			"loop": false,
-			"offsets": [0, 0],
-			"anim": "hey",
+			"offsets": [
+				0,
+				0
+			],
+			"indices": [],
 			"fps": 24,
-			"name": "boy alt/-anims/boy trucker hey!",
-			"indices": []
+			"anim": "sad",
+			"loop": false,
+			"name": "boy alt/-anims/truckboyalt cringe"
 		}
 	],
 	"vocals_file": "",
 	"no_antialiasing": false,
 	"image": "characters/truckerboy-alt",
-	"position": [240, 110],
+	"position": [
+		240,
+		110
+	],
 	"healthicon": "truckboy",
 	"flip_x": true,
-	"healthbar_colors": [78, 127, 175],
-	"camera_position": [-10, 230],
+	"healthbar_colors": [
+		78,
+		127,
+		175
+	],
+	"camera_position": [
+		-10,
+		230
+	],
 	"sing_duration": 4,
 	"scale": 1,
 	"_editor_isPlayer": true

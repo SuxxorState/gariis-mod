@@ -305,6 +305,7 @@ function openGameAchievements(game)
         if (checkFileExists("images/"..fold.."icons/"..achievements[ach].iconFile..'.png')) then iconThing = achievements[ach].iconFile end
         if (saveShit[1] ~= true or saveShit[1] == nil) then iconThing = "lockedach" end
         makeLuaSprite("gameAchievement"..i, fold.."icons/"..iconThing, offset.x + 56 + (((i-1)%8) * 99), offset.y + 193.5 + (math.floor((i-1)/8) * 100))
+        setProperty("gameAchievement"..i..".antialiasing", getProperty("gameAchievement"..i..".width") >= 64)
         setGraphicSize("gameAchievement"..i, 64, 64)
         setProperty("gameAchievement"..i..".alpha", 0)
         quickAddGameSprite("gameAchievement"..i)

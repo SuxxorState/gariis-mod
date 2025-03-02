@@ -38,6 +38,7 @@ local flowers = 0
 local diff = "reg"
 local data = {}
 local queuedUpTiles = {}
+local arrsine = 0
 
 function startMinigame()
     utils:setWindowTitle("Friday Night Funkin': GARII'S ARCADE: Bushtrimmer")
@@ -221,6 +222,11 @@ function openSkinMenu()
         pfFont:setTextAlpha("skin"..i.."Txt", 0)
         pfFont:setTextCamera("skin"..i.."Txt", "hud")
     end
+    
+    makeLuaSprite('arrowSkin',"minigames/arrow",233,343)
+    setProperty('arrowSkin.alpha', 0)
+    setProperty('arrowSkin.angle', 270)
+    quickAddSprite("arrowSkin")
 
     for i,s in pairs({{24, "000000"}, {20, "7e464f"}, {4, "000000"}}) do
         makeLuaSprite('skinminebg'..i,'',tester.x - (s[1] / 2),tester.y - (s[1] / 2))
@@ -256,6 +262,8 @@ function openSkinMenu()
 
     skinSel(0)
 
+    doTweenX("arrowSkinInX", "arrowSkin", getProperty("arrowSkin.x") + 100, 0.7, "circOut")
+    doTweenAlpha("arrowSkinInAlpha", "arrowSkin", 1, 0.5, "circOut")
     for i=1,5 do
         pfFont:tweenTextX("skin"..i.."Txt", pfFont:getTextX("skin"..i.."Txt") + 100, 0.5 + (0.1 * (i-1)), "circOut")
         if (i == 3) then pfFont:tweenTextAlpha("skin"..i.."Txt", 1, 0.5, "circOut")
@@ -288,6 +296,7 @@ function closeSkinMenu(saveSkin)
         removeLuaSprite('skinminebg'..i)
         removeLuaSprite("testdata"..i)
     end
+    removeLuaSprite("arrowSkin")
     removeLuaSprite("testdatax")
 end
 
@@ -325,7 +334,7 @@ function skinSel(move)
     setProperty("testdatax.color", getColorFromHex(skinStats[tileSkin].colours.x))
 end
 
-function onUpdate()
+function onUpdate(elp)
     if (luaSpriteExists("smileyicon")) then
         if ((mouseReleased() or mouseReleased("right")) and utils:mouseWithinBounds({getProperty("smileyicon.x"),getProperty("smileyicon.y"), getProperty("smileyicon.x")+getProperty("smileyicon.width"),getProperty("smileyicon.y")+getProperty("smileyicon.height")}, "hud")) then
             cancelTimer("delayboom")
@@ -362,6 +371,11 @@ function onUpdate()
     end
 
     if (canSkin) then
+        if (luaSpriteExists("arrowSkin") and getProperty('arrowSkin.alpha') == 1) then
+            arrsine = arrsine + (180 * (elp/2))
+            if (arrsine >= 360) then arrsine = 0 end --overflow prevention
+            setProperty('arrowSkin.x', 333 - math.floor(math.sin((math.pi * arrsine) / 180) * 4))
+        end
         if (keyJustPressed("ui_up")) then skinSel(-1)
         elseif (keyJustPressed("ui_down")) then skinSel(1)
         elseif (keyJustPressed("back") or keyJustPressed("ui_right") or keyJustPressed("accept")) then closeSkinMenu(not keyJustPressed("back"))

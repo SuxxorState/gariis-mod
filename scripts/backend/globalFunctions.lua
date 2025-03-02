@@ -225,6 +225,16 @@ function onEvent(name, value1, value2, strumTime)
         if (val2 == "bf") then val2 = "boyfriend" end
         if (val2 == "girlfriend") then val2 = "gf" end
         setProperty(val2..".specialAnim", true)
+    elseif (event == "play-diff-dependent-anim") then
+        if (val2 == "bf") then val2 = "boyfriend" end
+        if (val2 == "girlfriend") then val2 = "gf" end
+        setProperty(val2..".specialAnim", true)
+        local anims = stringSplit(value1, ",,")
+        local lelAnim = anims[2]
+        if (difficultyPath == "simple") then lelAnim = anims[1]
+        elseif (difficultyPath == "harder") then lelAnim = anims[3] end
+
+        triggerEvent("Play Animation", lelAnim, val2)
     elseif (event == "cam-boom-speed") then
         boomPerSect = tonumber(val1) or 4
         bamIntensity = tonumber(val2) or 1

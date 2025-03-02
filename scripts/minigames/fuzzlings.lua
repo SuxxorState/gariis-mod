@@ -4,7 +4,8 @@ local fldr = "minigames/fuzzlings/"
 
 local gameOffsets = {x = 528, y = 240}
 local trucker = {}
-local ghost = {}
+local ghostList = {"andy", "mandy", "randy", "brandy"}
+local ghosts = {}
 local dirIndex = {["right"] = {x = 1, y = 0}, ["down"] = {x = 0, y = 1}, ["left"] = {x = -1, y = 0}, ["up"] = {x = 0, y = -1}}
 local levelFruits = {"carrot", "grapes", "pineapple", "lemon", "cherries", "salad", "sandwich", "spirit"}
 local fruitPoints = {["carrot"] = 100, ["grapes"] = 300, ["pineapple"] = 500, ["lemon"] = 700, ["cherries"] = 1000, ["salad"] = 2000, ["sandwich"] = 3000, ["spirit-boy"] = 4000, ["spirit-girl"] = 4000, ["tire"] = 5000, ["notebook"] = 5000, ["bottle"] = 5000, ["can"] = 5000, ["mic"] = 10000}
@@ -20,6 +21,7 @@ local pelletCount, maxPellets = 0, 0
 local blinkVis = true
 local score, highScore = 0, 0
 local canUpdate = false
+local canTweenPlr = false
 local baseMap = {--0 is for walls, 1 is for paths, 2 is for pellets, 3 is for energizers, 4 is for fruits, 5 is for ghost-only-- any collectable nums fall back to 1 when collected
     {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
     {0,2,2,2,2,2,3,0,0,2,2,2,2,2,2,2,2,2,2,0,0,3,2,2,2,2,2,0},
@@ -78,6 +80,18 @@ function startMinigame()
     setObjectCamera("ghostDoor", "hud")
     addLuaSprite("ghostDoor")
 
+    for _,fuzz in pairs(ghostList) do
+        makeAnimatedLuaSprite(fuzz, fldr.."fuzzling", 0,0)
+        for _,anim in pairs({"left", "down", "up", "right"}) do
+            addAnimationByPrefix(fuzz, fuzz.."-"..anim, fuzz.."-"..anim, 8)
+            addOffset(fuzz, fuzz.."-"..anim, 4,4)
+        end
+        playAnim(fuzz, fuzz.."-right")
+        setProperty(fuzz..".antialiasing", false)
+        setObjectCamera(fuzz, "hud")
+        addLuaSprite(fuzz, true)
+    end
+
     makeAnimatedLuaSprite("truckPlayer", fldr..plrChar.."-mini", gameOffsets.x + 112, gameOffsets.y + 184)
     for i,anim in pairs({"left", "down", "up", "right"}) do
         addAnimationByPrefix("truckPlayer", "walk-"..anim, "walk "..anim, 12)
@@ -85,21 +99,13 @@ function startMinigame()
         addAnimationByPrefix("truckPlayer", "idle-"..anim, "idle "..anim)
         addOffset("truckPlayer", "idle-"..anim, 4,4)
     end
+    addAnimationByPrefix("truckPlayer", "die", "die")
+    addOffset("truckPlayer", "die", 4,4)
     addAnimationByPrefix("truckPlayer", "idle-down-start", "idle down")
     addOffset("truckPlayer", "idle-down-start", 8,4)
     setProperty("truckPlayer.antialiasing", false)
     setObjectCamera("truckPlayer", "hud")
-    addLuaSprite("truckPlayer")
-
-    makeAnimatedLuaSprite("andy", fldr.."fuzzling", gameOffsets.x + 112, gameOffsets.y + 80)
-    for i,anim in pairs({"left", "down", "up", "right"}) do
-        addAnimationByPrefix("andy", "andy-"..anim, "andy-"..anim, 8)
-        addOffset("andy", "andy-"..anim, 4,4)
-    end
-    playAnim("andy", "andy-right")
-    setProperty("andy.antialiasing", false)
-    setObjectCamera("andy", "hud")
-    addLuaSprite("andy")
+    addLuaSprite("truckPlayer", true)
     
     font:createNewText("levelTxt", gameOffsets.x + 24, gameOffsets.y - 24, "LEVEL "..curLevel, "left", "FFFFFF", "hud")
     font:createNewText("scoreTxt", gameOffsets.x + 32, gameOffsets.y - 16, score.."", "left", "FFFFFF", "hud")
@@ -184,9 +190,12 @@ function reloadMap() --hopefully seperating this as its own function reduces a b
     end
 
     trucker = {targetCoords = {x = 14, y = 23}, moveDir = {x = 0, y = 0}, queueDir = {x = 0, y = 0}, queueQueueDir = {x = 0, y = 0}}
-    ghost = {targetCoords = {x = 14, y = 10}, moveDir = {x = 1, y = 0}, queueDir = {x = 1, y = 0}, queueQueueDir = {x = 0, y = 0}, lastMoveDir = {x = 0, y = 0}}
-    setProperty("andy.x", gameOffsets.x + 112)
-    setProperty("andy.y", gameOffsets.y + 80)
+    ghosts.moveMode = "scatter"
+    for _,name in pairs(ghostList) do
+        ghosts[name] = {x = 14, y = 10, targetCoords = {x = 14, y = 10}, moveDir = {x = 1, y = 0}, dead = false}
+        setProperty(name..".x", gameOffsets.x + (ghosts[name].targetCoords.x * 8))
+        setProperty(name..".y", gameOffsets.y + (ghosts[name].targetCoords.y * 8))
+    end
     setProperty("truckPlayer.x", gameOffsets.x + 112)
     setProperty("truckPlayer.y", gameOffsets.y + 184)
     playAnim("truckPlayer", "idle-down-start")
@@ -200,7 +209,17 @@ function reloadMap() --hopefully seperating this as its own function reduces a b
     utils:playSound(fldr.."start", 1, "start")
 end
 
+local accX = 1 * getRandomInt(-1,1,"0")
+local accY = -2
 function onUpdate(elp)
+    if (canTweenPlr) then
+        setProperty("truckPlayer.x", getProperty("truckPlayer.x") + accX)
+        setProperty("truckPlayer.y", getProperty("truckPlayer.y") + accY)
+        if (accX < 0) then accX = math.min(accX + 0.01, 0)
+        else accX = math.max(accX - 0.01, 0)
+        end
+        accY = accY + math.min((0.1 * (math.abs(accY) + 0.1)), 0.25)
+    end
     if (not canUpdate) then return end
 
     if (keyJustPressed("back")) then
@@ -210,7 +229,9 @@ function onUpdate(elp)
     end
 
     handlePellets()
-    handleGhostMovement()
+    for _,ghst in pairs(ghostList) do
+        handleGhostMovement(ghst)
+    end
     handlePlayerMovement()
     font:setTextString("scoreTxt", score)
     if (score >= highScore) then 
@@ -339,72 +360,112 @@ function updateFruitIndis()
     end
 end
 
-function rerollGhostMove()
-    local dirz = {{x = 1, y = 0}, {x = -1, y = 0}, {x = 0, y = -1}, {x = 0, y = 1}}
-    local triedDirz = {}
-
-    for _=1,4 do
-        local theInt = getRandomInt(1,4, table.concat(triedDirz,","))
-        local point = dirz[theInt]
-        local fuckassMapPos = map[ghost.targetCoords.y+1+point.y][ghost.targetCoords.x+1+point.x]
-        local yCheck = true
-        local xCheck = true
-        if (point.x ~= 0 and ghost.lastMoveDir.x ~= 0) then
-            xCheck = (point.x ~= -ghost.lastMoveDir.x)
-        end
-        if (point.y ~= 0 and ghost.lastMoveDir.y ~= 0) then
-            yCheck = (point.y ~= -ghost.lastMoveDir.y)
-        end
-        if (fuckassMapPos ~= 0 and fuckassMapPos ~= 5 and (ghost.targetCoords.x < 28 and ghost.targetCoords.x > 0) and xCheck and yCheck) then --lol?
-            ghost.queueDir = point
-            local animDirz = {"right", "left", "up", "down"}
-            playAnim("andy", "andy-"..animDirz[theInt])
-            return
-        end
-        table.insert(triedDirz, theInt)
+function isPosGood(leX, leY, isGhost)
+    if (isGhost) then return (map[math.floor(leY+1)][math.floor(leX+1)] ~= nil and map[math.floor(leY+1)][math.floor(leX+1)] ~= 0)
+    else return (map[math.floor(leY+1)][math.floor(leX+1)] ~= nil and map[math.floor(leY+1)][math.floor(leX+1)] ~= 0 and map[math.floor(leY+1)][math.floor(leX+1)] ~= 5)
     end
 end
 
-function handleGhostMovement()
-    if (not luaSpriteExists("andy")) then return end
+function dirIsOpen(ghost, dir)
+    if (dir == nil or ghost == nil) then return false end
+    local new_x, new_y = ghost.x + dir.x, ghost.y + dir.y
+    return isPosGood(new_x, new_y, ghost.dead)
+end
 
-    if ((getProperty("andy.x")-gameOffsets.x)/8 == ghost.targetCoords.x and (getProperty("andy.y")-gameOffsets.y)/8 == ghost.targetCoords.y) then
-        rerollGhostMove()
-        if (ghost.queueDir.x ~= ghost.moveDir.x) then 
-            ghost.moveDir.x = ghost.queueDir.x
-        end
-        if (ghost.queueDir.y ~= ghost.moveDir.y) then 
-            ghost.moveDir.y = ghost.queueDir.y
-        end
+function availableDirs(ghost)
+    local slf = ghosts[ghost]
+    local turns = {}
+    if dirIsOpen(slf, slf.moveDir) then turns = {slf.moveDir} end
+    for sign = -1, 1, 2 do
+        local t = {x = slf.moveDir.y * sign, y = slf.moveDir.x * sign}
+        if dirIsOpen(slf, t) then table.insert(turns, t) end
+    end
+    if #turns == 0 then table.insert(turns, {x = -slf.moveDir.x, y = -slf.moveDir.y}) end
+    return turns
+end
 
-        if (map[ghost.targetCoords.y+1+ghost.queueDir.y][ghost.targetCoords.x+1+ghost.queueDir.x] ~= nil and map[ghost.targetCoords.y+1][ghost.targetCoords.x + ghost.moveDir.x+1] == 0) then 
-            ghost.moveDir.x = 0
-        end
-        ghost.targetCoords.x = ghost.targetCoords.x + ghost.moveDir.x
+function ghostRegisterTurn(ghost)
+    local key = utils:toStr({ghosts[ghost].x, ghosts[ghost].y})
+    local value = ghosts[ghost].past_turns[key]
+    if (value ~= nil and utils:toStr(value.dir) == utils:toStr(ghosts[ghost].moveDir)) then
+        value.times = value.times + 1
+    else
+        ghosts[ghost].past_turns[key] = {dir = ghosts[ghost].moveDir, times = 1}
+    end
+end
 
-        if (map[ghost.targetCoords.y+1+ghost.queueDir.y][ghost.targetCoords.x+1+ghost.queueDir.x] ~= nil and map[ghost.targetCoords.y + ghost.moveDir.y+1][ghost.targetCoords.x+1] == 0) then 
-            ghost.moveDir.y = 0 
+function ghostTurnOpp(ghost, turn)
+    if (ghostTurnScore(ghost, turn) > ghostTurnScore(ghost, ghosts[ghost].moveDir)) then
+        ghosts[ghost].moveDir = turn
+        ghosts[ghost].last_turn = {ghosts[ghost].x, ghosts[ghost].y}
+    end
+end
+
+function ghostTurnScore(ghost, dir)
+    local gstPos = ghosts[ghost]
+    local target = getGhostTarget(ghost)
+    local target_dir = {target.x - gstPos.x, target.y - gstPos.y}
+    local score = (target_dir[1] * dir.x) + (target_dir[2] * dir.y)
+
+    return score
+end
+
+function getGhostTarget(ghost)
+    local ghostScatter = {["andy"] = {x = 3, y = 1}, ["mandy"] = {x = 26, y = 1}, ["randy"] = {x = 1, y = 36}, ["brandy"] = {x = 26, y = 36}}
+
+    if (ghosts.moveMode == "scatter") then return ghostScatter[ghost]
+    elseif (ghosts.moveMode == "pursue") then
+        local trkPos = trucker.targetCoords
+        if (ghost == "andy") then return {x = trkPos.x, y = trkPos.y}
+        elseif (ghost == "mandy") then return {x = trkPos.x + (trucker.moveDir.x * 2), y = trkPos.y + (trucker.moveDir.y * 2)}
+        elseif (ghost == "randy") then
+            local trkMove = {x = trkPos.x + trucker.moveDir.x, y = trkPos.y + trucker.moveDir.y}
+            local redMove = {x = trkMove.x - ghosts["andy"].targetCoords.x, y = trkMove.y - ghosts["andy"].targetCoords.y}
+            return {y = trkMove.x + redMove.x, x = trkMove.y + redMove.y}
+        elseif (ghost == "brandy") then return {x = trkPos.x, y = trkPos.y}
         end
-        ghost.lastMoveDir.x = ghost.moveDir.x
-        ghost.lastMoveDir.y = ghost.moveDir.y
-        ghost.targetCoords.y = ghost.targetCoords.y + ghost.moveDir.y
+    end
+end
+
+function handleGhostMovement(ghost)
+    if (not luaSpriteExists(ghost)) then return end
+
+    if (ghosts[ghost].x == ghosts[ghost].targetCoords.x and ghosts[ghost].y == ghosts[ghost].targetCoords.y) then
+        if ((ghosts[ghost].x <= 2 or ghosts[ghost].x >= 27) and (ghosts[ghost].y == 12 or ghosts[ghost].y == 15)) then
+        else
+            local availableDis = availableDirs(ghost)
+            ghosts[ghost].moveDir = availableDis[1]
+            for _,dir in pairs(availableDis) do ghostTurnOpp(ghost, dir) end
+        end
+        ghosts[ghost].targetCoords.x = ghosts[ghost].targetCoords.x + ghosts[ghost].moveDir.x
+        ghosts[ghost].targetCoords.y = ghosts[ghost].targetCoords.y + ghosts[ghost].moveDir.y
     end
 
-    if ((getProperty("andy.x")-gameOffsets.x)/8 ~= ghost.targetCoords.x and ghost.moveDir.x ~= 0) then
-        setProperty("andy.x", getProperty("andy.x") + (ghost.moveDir.x))
+    if (ghosts[ghost].x ~= ghosts[ghost].targetCoords.x and ghosts[ghost].moveDir.x ~= 0) then
+        setGhostX(ghost, ghosts[ghost].x + (ghosts[ghost].moveDir.x/8))
     end
 
-    if ((getProperty("andy.y")-gameOffsets.y)/8 ~= ghost.targetCoords.y and ghost.moveDir.y ~= 0) then
-        setProperty("andy.y", getProperty("andy.y") + (ghost.moveDir.y))
+    if (ghosts[ghost].y ~= ghosts[ghost].targetCoords.y and ghosts[ghost].moveDir.y ~= 0) then
+        setGhostY(ghost, ghosts[ghost].y + (ghosts[ghost].moveDir.y/8))
     end
     
-    if ((getProperty("andy.x")-gameOffsets.x)/8 < -1) then 
-        ghost.targetCoords.x = 29
-        setProperty("andy.x", gameOffsets.x+(ghost.targetCoords.x*8))
-    elseif ((getProperty("andy.x")-gameOffsets.x)/8 > 29) then 
-        ghost.targetCoords.x = -1
-        setProperty("andy.x", gameOffsets.x+(ghost.targetCoords.x*8))
+    if (ghosts[ghost].x < -1) then
+        ghosts[ghost].targetCoords.x = 29
+        setGhostX(ghost, ghosts[ghost].targetCoords.x)
+    elseif (ghosts[ghost].x > 29) then
+        ghosts[ghost].targetCoords.x = -1
+        setGhostX(ghost, ghosts[ghost].targetCoords.x)
     end
+end
+
+function setGhostX(ghost, newX)
+    setProperty(ghost..".x", gameOffsets.x + (newX * 8))
+    ghosts[ghost].x = newX
+end
+
+function setGhostY(ghost, newY)
+    setProperty(ghost..".y", gameOffsets.y + (newY * 8))
+    ghosts[ghost].y = newY
 end
 
 function handlePlayerMovement()
@@ -414,10 +475,6 @@ function handlePlayerMovement()
         if (keyJustPressed("ui_"..key)) then 
             trucker.queueQueueDir = dirIndex[key] 
         end
-    end
-
-    if (trucker.targetCoords.x == ghost.targetCoords.x and trucker.targetCoords.y == ghost.targetCoords.y) then
-        debugPrint("ass")
     end
 
     local fuckassMapPos = map[trucker.targetCoords.y+1+trucker.queueQueueDir.y][trucker.targetCoords.x+1+trucker.queueQueueDir.x]
@@ -470,17 +527,38 @@ function handlePlayerMovement()
         trucker.targetCoords.x = -1
         setProperty("truckPlayer.x", gameOffsets.x+(trucker.targetCoords.x*8))
     end
+    
+    for _,gst in pairs(ghostList) do
+        if (trucker.targetCoords.x == ghosts[gst].targetCoords.x and trucker.targetCoords.y == ghosts[gst].targetCoords.y) then
+            loseLife()
+        end
+    end
+end
+
+function loseLife()
+    canUpdate = false
+    utils:stopAllKnownSounds()
+    runTimer("lifeFlash"..(lives-1), 0.25, 13)
+    runTimer("fallChild", 0.5)
+    utils:playSound(fldr.."die")
+    playAnim("truckPlayer", "die")
 end
 
 function onSoundFinished(snd)
     if (snd == "frightloop") then utils:playSound(fldr.."fright", 1, "frightloop")
     elseif (snd == "start") then canUpdate = true
+        runTimer("scatterOver", 7)
         font:setTextVisible("readyUp", false)
     end
 end
 
 function onTimerCompleted(tmr, _, loopsLeft)
     if (tmr == "fright") then stopSound("frightloop")
+    elseif (tmr == "fallChild") then canTweenPlr = true
+    elseif (tmr == "scatterOver") then ghosts.moveMode = "pursue"
+        runTimer("scatterBreak", 20)
+    elseif (tmr == "scatterBreak") then ghosts.moveMode = "scatter"
+        runTimer("scatterOver", 7)
     elseif (tmr == "fruitPointDisappear") then
         for i=1,#utils:numToStr(fruitPoints[curFruit]) do
             setProperty("fruitPoint"..i..".visible", false)

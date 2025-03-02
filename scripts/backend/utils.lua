@@ -167,6 +167,35 @@ function Utils:strToNumIndex(tab, ind)
     return nil
 end
 
+function Utils:toStr(str)
+    if type(t) == 'table' then
+        local s = '{'
+        if is_array(t) then
+          for i, v in ipairs(str) do
+            if #s > 1 then s = s .. ', ' end
+            s = s .. Utils:toStr(v)
+          end
+        else
+          -- It's a non-array table.
+          for k, v in pairs(t) do
+            if #s > 1 then s = s .. ', ' end
+            s = s .. Utils:toStr(k)
+            s = s .. ' = '
+            s = s .. Utils:toStr(v)
+          end
+        end
+        s = s .. '}'
+        return s
+      elseif type(str) == 'number' then
+        return tostring(str)
+      elseif type(str) == 'boolean' then
+        return tostring(str)
+      elseif type(str) == 'string' then
+        return t
+      end
+      return 'unknown type'
+end
+
 function Utils:removeAllOf(tab, var)
     local fixedtab = {}
     for k,v in pairs(tab) do
@@ -374,6 +403,16 @@ function Utils:cleanSoundList() --lol?
         if (not luaSoundExists(snd)) then table.remove(soundList, i) end
     end
     setVar("soundList", soundList)
+end
+
+function Utils:stopAllKnownSounds()
+    Utils:cleanSoundList()
+    local soundList = getVar("soundList") or {}
+    for _,snd in pairs(soundList) do
+        if (luaSoundExists(snd)) then
+            stopSound(snd)
+        end
+    end
 end
 
 function Utils:pauseAllKnownSounds()

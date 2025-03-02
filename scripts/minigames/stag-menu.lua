@@ -121,7 +121,8 @@ function changeNightSel(addamt)
     local less, more = "<", ">"
     if (nightSel <= 1) then less = " " 
         nightSel = 1 
-    elseif (nightSel >= math.min(utils:getGariiData("STaGprog"),6)) then more = " "
+    end
+    if (nightSel >= math.min(utils:getGariiData("STaGprog"),6)) then more = " "
         nightSel = math.min(utils:getGariiData("STaGprog"),6) 
     end
 
