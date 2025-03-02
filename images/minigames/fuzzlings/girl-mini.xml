@@ -27,4 +27,5 @@
 	<SubTexture name="idle right0000" x="48" y="0" width="16" height="16"/>
 	
 	<SubTexture name="die0000" x="64" y="0" width="16" height="16"/>
+	<SubTexture name="die0001" x="64" y="16" width="16" height="16"/>
 </TextureAtlas>

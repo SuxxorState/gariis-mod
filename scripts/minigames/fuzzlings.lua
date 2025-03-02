@@ -10,7 +10,7 @@ local dirIndex = {["right"] = {x = 1, y = 0}, ["down"] = {x = 0, y = 1}, ["left"
 local levelFruits = {"carrot", "grapes", "pineapple", "lemon", "cherries", "salad", "sandwich", "spirit"}
 local fruitPoints = {["carrot"] = 100, ["grapes"] = 300, ["pineapple"] = 500, ["lemon"] = 700, ["cherries"] = 1000, ["salad"] = 2000, ["sandwich"] = 3000, ["spirit-boy"] = 4000, ["spirit-girl"] = 4000, ["tire"] = 5000, ["notebook"] = 5000, ["bottle"] = 5000, ["can"] = 5000, ["mic"] = 10000}
 local plrColours = {["boy"] = "4E7FAF", ["girl"] = "C55252"}
-local plrChar = "girl"
+local plrChar = "boy"
 local fruitDisp = {}
 local curFruit = "carrot"
 local levelColour = "4d664d"
@@ -34,7 +34,7 @@ local baseMap = {--0 is for walls, 1 is for paths, 2 is for pellets, 3 is for en
     {0,0,0,2,0,0,2,0,0,0,0,0,1,0,0,1,0,0,0,0,0,2,0,0,2,0,0,0},
     {0,0,0,2,0,0,2,0,0,0,0,0,1,0,0,1,0,0,0,0,0,2,0,0,2,0,0,0},
     {0,0,0,2,0,0,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,0,0,2,0,0,0},
-    {0,0,0,2,0,0,2,0,0,1,0,0,0,5,5,0,0,0,1,0,0,2,0,0,2,0,0,0},
+    {0,0,0,2,0,0,2,0,0,1,0,0,0,5,0,0,0,0,1,0,0,2,0,0,2,0,0,0},
     {2,2,2,2,0,0,2,0,0,1,0,5,5,5,5,5,5,0,1,0,0,2,0,0,2,2,2,2},
     {0,0,0,0,0,0,2,0,0,1,0,5,5,5,5,5,5,0,1,0,0,2,0,0,0,0,0,0},
     {0,0,0,0,0,0,2,0,0,1,0,5,5,5,5,5,5,0,1,0,0,2,0,0,0,0,0,0},
@@ -85,6 +85,8 @@ function startMinigame()
         for _,anim in pairs({"left", "down", "up", "right"}) do
             addAnimationByPrefix(fuzz, fuzz.."-"..anim, fuzz.."-"..anim, 8)
             addOffset(fuzz, fuzz.."-"..anim, 4,4)
+            addAnimationByPrefix(fuzz, "house-"..anim, fuzz.."-"..anim, 8)
+            addOffset(fuzz, "house-"..anim, 0,0)
         end
         playAnim(fuzz, fuzz.."-right")
         setProperty(fuzz..".antialiasing", false)
@@ -99,7 +101,7 @@ function startMinigame()
         addAnimationByPrefix("truckPlayer", "idle-"..anim, "idle "..anim)
         addOffset("truckPlayer", "idle-"..anim, 4,4)
     end
-    addAnimationByPrefix("truckPlayer", "die", "die")
+    addAnimationByPrefix("truckPlayer", "die", "die", 6)
     addOffset("truckPlayer", "die", 4,4)
     addAnimationByPrefix("truckPlayer", "idle-down-start", "idle down")
     addOffset("truckPlayer", "idle-down-start", 8,4)
@@ -191,10 +193,13 @@ function reloadMap() --hopefully seperating this as its own function reduces a b
 
     trucker = {targetCoords = {x = 14, y = 23}, moveDir = {x = 0, y = 0}, queueDir = {x = 0, y = 0}, queueQueueDir = {x = 0, y = 0}}
     ghosts.moveMode = "scatter"
+    local ghostCoords = {["andy"] = {x = 14, y = 10, tmr = 0.001}, ["mandy"] = {x = 11, y = 12, tmr = 1}, ["randy"] = {x = 11, y = 14, tmr = 8}, ["brandy"] = {x = 15, y = 12, tmr = 10}, ["sandy"] = {x = 13, y = 14}, ["paul"] = {x = 15, y = 14}}
     for _,name in pairs(ghostList) do
-        ghosts[name] = {x = 14, y = 10, targetCoords = {x = 14, y = 10}, moveDir = {x = 1, y = 0}, dead = false}
+        ghosts[name] = {x = ghostCoords[name].x, y = ghostCoords[name].y, targetCoords = ghostCoords[name], moveDir = {x = 1, y = 0}, dead = false, inHouse = (name ~= "andy"), active = (name == "andy")}
+        runTimer("initLeave"..name, ghostCoords[name].tmr)
         setProperty(name..".x", gameOffsets.x + (ghosts[name].targetCoords.x * 8))
         setProperty(name..".y", gameOffsets.y + (ghosts[name].targetCoords.y * 8))
+        if (name ~= "andy") then playAnim(name, "house-up") end
     end
     setProperty("truckPlayer.x", gameOffsets.x + 112)
     setProperty("truckPlayer.y", gameOffsets.y + 184)
@@ -369,7 +374,7 @@ end
 function dirIsOpen(ghost, dir)
     if (dir == nil or ghost == nil) then return false end
     local new_x, new_y = ghost.x + dir.x, ghost.y + dir.y
-    return isPosGood(new_x, new_y, ghost.dead)
+    return isPosGood(new_x, new_y, ghost.dead or ghost.inHouse)
 end
 
 function availableDirs(ghost)
@@ -413,7 +418,8 @@ end
 function getGhostTarget(ghost)
     local ghostScatter = {["andy"] = {x = 3, y = 1}, ["mandy"] = {x = 26, y = 1}, ["randy"] = {x = 1, y = 36}, ["brandy"] = {x = 26, y = 36}}
 
-    if (ghosts.moveMode == "scatter") then return ghostScatter[ghost]
+    if (ghosts[ghost].inHouse) then return {x = 14, y = 10}
+    elseif (ghosts.moveMode == "scatter") then return ghostScatter[ghost]
     elseif (ghosts.moveMode == "pursue") then
         local trkPos = trucker.targetCoords
         if (ghost == "andy") then return {x = trkPos.x, y = trkPos.y}
@@ -422,15 +428,21 @@ function getGhostTarget(ghost)
             local trkMove = {x = trkPos.x + trucker.moveDir.x, y = trkPos.y + trucker.moveDir.y}
             local redMove = {x = trkMove.x - ghosts["andy"].targetCoords.x, y = trkMove.y - ghosts["andy"].targetCoords.y}
             return {y = trkMove.x + redMove.x, x = trkMove.y + redMove.y}
-        elseif (ghost == "brandy") then return {x = trkPos.x, y = trkPos.y}
+        elseif (ghost == "brandy") then
+            local dist_v = {ghosts["brandy"].x - ((getProperty("truckPlayer.x")-gameOffsets.x)/8), ghosts["brandy"].y - ((getProperty("truckPlayer.y")-gameOffsets.y)/8)}
+            local dist_sq = (dist_v[1] * dist_v[1]) + (dist_v[2] * dist_v[2])
+            if dist_sq > 16 then return {x = trkPos.x, y = trkPos.y}
+            else return ghostScatter["brandy"]
+            end
         end
     end
 end
 
 function handleGhostMovement(ghost)
-    if (not luaSpriteExists(ghost)) then return end
+    if (not (luaSpriteExists(ghost) and ghosts[ghost].active)) then return end
 
     if (ghosts[ghost].x == ghosts[ghost].targetCoords.x and ghosts[ghost].y == ghosts[ghost].targetCoords.y) then
+        if (ghosts[ghost].inHouse and ghosts[ghost].targetCoords.x == 14 and ghosts[ghost].targetCoords.y == 10) then ghosts[ghost].inHouse = false end
         if ((ghosts[ghost].x <= 2 or ghosts[ghost].x >= 27) and (ghosts[ghost].y == 12 or ghosts[ghost].y == 15)) then
         else
             local availableDis = availableDirs(ghost)
@@ -441,13 +453,22 @@ function handleGhostMovement(ghost)
         ghosts[ghost].targetCoords.y = ghosts[ghost].targetCoords.y + ghosts[ghost].moveDir.y
     end
 
+    local animName = ghost
+    if (ghosts[ghost].inHouse) then animName = "house" end
     if (ghosts[ghost].x ~= ghosts[ghost].targetCoords.x and ghosts[ghost].moveDir.x ~= 0) then
         setGhostX(ghost, ghosts[ghost].x + (ghosts[ghost].moveDir.x/8))
+        if (ghosts[ghost].moveDir.x > 0) then playAnim(ghost, animName.."-right")
+        else playAnim(ghost, animName.."-left")
+        end
     end
 
     if (ghosts[ghost].y ~= ghosts[ghost].targetCoords.y and ghosts[ghost].moveDir.y ~= 0) then
         setGhostY(ghost, ghosts[ghost].y + (ghosts[ghost].moveDir.y/8))
+        if (ghosts[ghost].moveDir.y > 0) then playAnim(ghost, animName.."-down")
+        else playAnim(ghost, animName.."-up")
+        end
     end
+
     
     if (ghosts[ghost].x < -1) then
         ghosts[ghost].targetCoords.x = 29
@@ -529,7 +550,7 @@ function handlePlayerMovement()
     end
     
     for _,gst in pairs(ghostList) do
-        if (trucker.targetCoords.x == ghosts[gst].targetCoords.x and trucker.targetCoords.y == ghosts[gst].targetCoords.y) then
+        if (dist_to_pt({x = (getProperty("truckPlayer.x")-gameOffsets.x)/8, y = (getProperty("truckPlayer.y")-gameOffsets.y)/8}, ghosts[gst]) < 1) then
             loseLife()
         end
     end
@@ -559,6 +580,8 @@ function onTimerCompleted(tmr, _, loopsLeft)
         runTimer("scatterBreak", 20)
     elseif (tmr == "scatterBreak") then ghosts.moveMode = "scatter"
         runTimer("scatterOver", 7)
+    elseif (stringStartsWith(tmr, "initLeave")) then
+        ghosts[stringSplit(tmr, "initLeave")[2]].active = true
     elseif (tmr == "fruitPointDisappear") then
         for i=1,#utils:numToStr(fruitPoints[curFruit]) do
             setProperty("fruitPoint"..i..".visible", false)
@@ -609,4 +632,11 @@ function destroyGame()
     setProperty("camHUD.zoom", 1)
     callOnLuas("backToMinigameHUB")
     close()
+end
+
+
+function dist_to_pt(ptone, pttwo)
+    local dist_v = {ptone.x - pttwo.x, ptone.y - pttwo.y}
+    -- Using L1 makes it easier to survive close-pursuit turns.
+    return math.abs(dist_v[1]) + math.abs(dist_v[2])
 end
