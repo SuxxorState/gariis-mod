@@ -20,6 +20,8 @@ local curLevel = 1
 local pelletCount, maxPellets = 0, 0
 local blinkVis = true
 local score, highScore = 0, 0
+local accX = 1 * getRandomInt(-1,1,"0")
+local accY = -2
 local canUpdate = false
 local canTweenPlr = false
 local baseMap = {--0 is for walls, 1 is for paths, 2 is for pellets, 3 is for energizers, 4 is for fruits, 5 is for ghost-only-- any collectable nums fall back to 1 when collected
@@ -204,6 +206,9 @@ function reloadMap() --hopefully seperating this as its own function reduces a b
     setProperty("truckPlayer.x", gameOffsets.x + 112)
     setProperty("truckPlayer.y", gameOffsets.y + 184)
     playAnim("truckPlayer", "idle-down-start")
+    canTweenPlr = false
+    accX = 1 * getRandomInt(-1,1,"0")
+    accY = -2
 
     font:setTextVisible("readyUp", true)
     font:setTextString("levelTxt", "LEVEL "..curLevel)
@@ -214,8 +219,19 @@ function reloadMap() --hopefully seperating this as its own function reduces a b
     utils:playSound(fldr.."start", 1, "start")
 end
 
-local accX = 1 * getRandomInt(-1,1,"0")
-local accY = -2
+function deathReset()
+    setProperty("truckPlayer.x", gameOffsets.x + 112)
+    setProperty("truckPlayer.y", gameOffsets.y + 184)
+    trucker = {targetCoords = {x = 14, y = 23}, moveDir = {x = 0, y = 0}, queueDir = {x = 0, y = 0}, queueQueueDir = {x = 0, y = 0}}
+    playAnim("truckPlayer", "idle-down-start")
+    font:setTextVisible("readyUp", true)
+    canTweenPlr = false
+    accX = 1 * getRandomInt(-1,1,"0")
+    accY = -2
+
+    utils:playSound(fldr.."die", 0, "start")
+end
+
 function onUpdate(elp)
     if (canTweenPlr) then
         setProperty("truckPlayer.x", getProperty("truckPlayer.x") + accX)
@@ -560,8 +576,9 @@ function loseLife()
     canUpdate = false
     utils:stopAllKnownSounds()
     runTimer("lifeFlash"..(lives-1), 0.25, 13)
+    lives = lives - 1
     runTimer("fallChild", 0.5)
-    utils:playSound(fldr.."die")
+    utils:playSound(fldr.."die", 1, "deathSnd")
     playAnim("truckPlayer", "die")
 end
 
@@ -570,6 +587,7 @@ function onSoundFinished(snd)
     elseif (snd == "start") then canUpdate = true
         runTimer("scatterOver", 7)
         font:setTextVisible("readyUp", false)
+    elseif (snd == "deathSnd") then runTimer("deathI", 0.1)
     end
 end
 
@@ -609,6 +627,12 @@ function onTimerCompleted(tmr, _, loopsLeft)
         elseif (curLevel >= 16) then callOnLuas("unlockAchievement", {"fl-16levels"})
         end
         reloadMap()
+    elseif (tmr == "deathI") then
+        runTimer("deathII", 0.25)
+        setProperty("blankFG.visible", true)
+    elseif (tmr == "deathII") then
+        deathReset()
+        setProperty("blankFG.visible", false)
     elseif (tmr == "blinkLoop") then 
         blinkVis = not blinkVis
         runTimer("blinkLoop", 0.2)

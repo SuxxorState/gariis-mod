@@ -136,7 +136,7 @@ function onStartCountdown(tick)
 		setBlendMode('pprovr', "multiply")
 		setObjectCamera('pprovr', 'other')
 
-		playMusic('spice', 1, true)
+		playMusic('freaky-hotmix', 1, true)
 
 		changeSelected(0)
 		return Function_Stop;

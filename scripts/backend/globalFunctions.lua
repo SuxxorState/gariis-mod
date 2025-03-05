@@ -107,7 +107,7 @@ function fixTheDamnStrums()
 end
 
 local usedPoses = {}
-local maxPoses = 4
+local maxPoses = 5
 function opponentNoteHit(id, dir, ntype)
     if (ntype == "Missed Note") then
         setProperty("health", getProperty("health") + (0.0475 / hpMultiplier) / healthLossMult)
