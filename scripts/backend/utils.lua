@@ -96,7 +96,7 @@ function Utils:endToMenu()
     if (not isStoryMode or songNameFmt == "full-house") then --im probably just gonna make it reset on the final songs of each week. just sounds simpler at this point.
         if (not botPlay) and (not practice) then
             if (isStoryMode) then
-                if Utils:getGariiData("harderSauces") == nil then Utils:setGariiData("harderSauces", true) end
+                if Utils:getGariiData("expertSauces") == nil then Utils:setGariiData("expertSauces", true) end
                 if Utils:getGariiData("levelRevealed") == nil then
                     saveFile(folDir.."weeks/garii.json", "{\n\"storyName\": \"Roadblock Ruckus\",\n\"difficulties\": \"‿\",\n\"hideFreeplay\": false,\n\"weekBackground\": \"orange\",\n\"freeplayColor\": [146,113,253],\n\"weekBefore\": \"tutorial\",\n\"startUnlocked\": true,\n\"weekCharacters\": [\"garii\", \"bftrans\", \"gftrans\"],\n\"songs\": [[\"Fuzzy Dice\", \"garfree\", [177, 82, 82]], [\"Full House\", \"goonsfree\", [67,66,83]]],\n\"hideStoryMode\": false,\n\"weekName\": \"Episode ][\",\n\"hiddenUntilUnlocked\": false\n}", true)
                     Utils:setGariiData("levelRevealed", true)

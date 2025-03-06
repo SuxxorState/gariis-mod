@@ -2,7 +2,638 @@
 	"song": {
 		"player1": "truckerboy-girl-simple",
 		"player2": "carv-simple",
-		"events": [],
+		"events": [
+			[
+				16386.5546218487,
+				[
+					[
+						"Change Character",
+						"bf",
+						"truckerboy-kissed"
+					]
+				]
+			],
+			[
+				18025.2100840336,
+				[
+					[
+						"Extra Char Alt Idle",
+						"hunte",
+						"-nomic-alt"
+					]
+				]
+			],
+			[
+				25966.3865546218,
+				[
+					[
+						"Alt Idle Animation",
+						"dad",
+						"-alt"
+					]
+				]
+			],
+			[
+				26092.4369747899,
+				[
+					[
+						"Extra Char Alt Anims",
+						"hunte",
+						"-nomic"
+					]
+				]
+			],
+			[
+				34033.6134453781,
+				[
+					[
+						"Alt Idle Animation",
+						"dad",
+						""
+					],
+					[
+						"Extra Char Alt Idle",
+						"hunte",
+						"-nomic"
+					],
+					[
+						"Alt Idle Animation",
+						"gf",
+						"-alt"
+					]
+				]
+			],
+			[
+				34285.7142857143,
+				[
+					[
+						"Extra Char Alt Anims",
+						"hunte",
+						""
+					]
+				]
+			],
+			[
+				41848.7394957983,
+				[
+					[
+						"Alt Idle Animation",
+						"bf",
+						"-alt"
+					]
+				]
+			],
+			[
+				50168.0672268908,
+				[
+					[
+						"Alt Idle Animation",
+						"bf",
+						""
+					],
+					[
+						"Extra Char Alt Idle",
+						"hunte",
+						"-nomic-alt"
+					],
+					[
+						"Alt Idle Animation",
+						"gf",
+						""
+					]
+				]
+			],
+			[
+				50420.1680672269,
+				[
+					[
+						"Advance Anger",
+						"true",
+						"2"
+					]
+				]
+			],
+			[
+				52184.8739495799,
+				[
+					[
+						"Extra Char Alt Idle",
+						"hunte",
+						"-nomic"
+					],
+					[
+						"Alt Idle Animation",
+						"gf",
+						"-alt"
+					]
+				]
+			],
+			[
+				54201.6806722689,
+				[
+					[
+						"Alt Idle Animation",
+						"dad",
+						"-nomic-alt"
+					],
+					[
+						"Alt Idle Animation",
+						"gf",
+						""
+					],
+					[
+						"Extra Char Alt Idle",
+						"hunte",
+						""
+					]
+				]
+			],
+			[
+				56218.487394958,
+				[
+					[
+						"Alt Idle Animation",
+						"bf",
+						"-alt"
+					],
+					[
+						"Alt Idle Animation",
+						"dad",
+						"-nomic"
+					]
+				]
+			],
+			[
+				58235.2941176471,
+				[
+					[
+						"Alt Idle Animation",
+						"bf",
+						""
+					],
+					[
+						"Extra Char Alt Idle",
+						"hunte",
+						"-nomic-alt"
+					],
+					[
+						"Alt Idle Animation",
+						"dad",
+						""
+					]
+				]
+			],
+			[
+				58487.3949579832,
+				[
+					[
+						"Advance Anger",
+						"",
+						"1"
+					]
+				]
+			],
+			[
+				62268.9075630252,
+				[
+					[
+						"Alt Idle Animation",
+						"dad",
+						"-nomic-alt"
+					],
+					[
+						"Extra Char Alt Anims",
+						"hunte",
+						""
+					]
+				]
+			],
+			[
+				66302.5210084034,
+				[
+					[
+						"Alt Idle Animation",
+						"dad",
+						"-nomic"
+					],
+					[
+						"Extra Char Alt Idle",
+						"hunte",
+						""
+					],
+					[
+						"Alt Idle Animation",
+						"gf",
+						"-alt"
+					]
+				]
+			],
+			[
+				74369.7478991597,
+				[
+					[
+						"Alt Idle Animation",
+						"dad",
+						"-alt"
+					],
+					[
+						"Alt Idle Animation",
+						"gf",
+						""
+					],
+					[
+						"Extra Char Alt Idle",
+						"hunte",
+						"-nomic-alt"
+					],
+					[
+						"Extra Char Alt Anims",
+						"hunte",
+						"-nomic"
+					]
+				]
+			],
+			[
+				77899.1596638655,
+				[
+					[
+						"Alt Idle Animation",
+						"bf",
+						"-alt"
+					],
+					[
+						"Alt Idle Animation",
+						"dad",
+						""
+					]
+				]
+			],
+			[
+				82431.7226890756,
+				[
+					[
+						"Play Diff-Dependent Anim",
+						"yeah,,what",
+						"gf"
+					]
+				]
+			],
+			[
+				82436.974789916,
+				[
+					[
+						"Alt Idle Animation",
+						"bf",
+						""
+					],
+					[
+						"Extra Char Alt Idle",
+						"hunte",
+						"-nomic-alt"
+					]
+				]
+			],
+			[
+				85966.3865546218,
+				[
+					[
+						"Extra Char Alt Idle",
+						"hunte",
+						"-nomic"
+					]
+				]
+			],
+			[
+				88739.4957983193,
+				[
+					[
+						"Advance Anger",
+						"true",
+						"-1"
+					]
+				]
+			],
+			[
+				90504.2016806722,
+				[
+					[
+						"Extra Char Alt Idle",
+						"hunte",
+						"-alt"
+					]
+				]
+			],
+			[
+				90756.3025210084,
+				[
+					[
+						"Change Character",
+						"bf",
+						"truckergirl-alt"
+					],
+					[
+						"Change Character",
+						"gf",
+						"truckerboy-alt"
+					],
+					[
+						"Advance Anger",
+						"",
+						"0"
+					]
+				]
+			],
+			[
+				98571.4285714285,
+				[
+					[
+						"Alt Idle Animation",
+						"dad",
+						"-alt"
+					]
+				]
+			],
+			[
+				106638.655462185,
+				[
+					[
+						"Alt Idle Animation",
+						"dad",
+						""
+					],
+					[
+						"Extra Char Alt Idle",
+						"hunte",
+						""
+					]
+				]
+			],
+			[
+				106764.705882353,
+				[
+					[
+						"Alt Idle Animation",
+						"gf",
+						"-alt"
+					]
+				]
+			],
+			[
+				114705.882352941,
+				[
+					[
+						"Alt Idle Animation",
+						"bf",
+						"-alt"
+					]
+				]
+			],
+			[
+				130840.336134454,
+				[
+					[
+						"Extra Char Alt Idle",
+						"hunte",
+						"-alt"
+					],
+					[
+						"Alt Idle Animation",
+						"gf",
+						""
+					],
+					[
+						"Alt Idle Animation",
+						"bf",
+						""
+					]
+				]
+			],
+			[
+				137142.857142857,
+				[
+					[
+						"Toggle Blackout",
+						"",
+						""
+					],
+					[
+						"Change Character",
+						"dad",
+						"carv-lineart"
+					],
+					[
+						"Change Character",
+						"bf",
+						"truckerboy-lineart"
+					],
+					[
+						"Setup Close Shit",
+						"",
+						""
+					],
+					[
+						"Camera Follow Pos",
+						"1100",
+						"485"
+					],
+					[
+						"Toggle Borderline HUD",
+						"",
+						""
+					],
+					[
+						"Set Cam Zoom",
+						"1",
+						"0.001"
+					],
+					[
+						"Change Note Skin",
+						"borderlineUI/NOTE_assets-sketch",
+						"borderlineUI/splashsketch"
+					]
+				]
+			],
+			[
+				139159.663865546,
+				[
+					[
+						"Advance Anger",
+						"true",
+						"2"
+					],
+					[
+						"Toggle Blackout",
+						"",
+						""
+					]
+				]
+			],
+			[
+				139663.865546218,
+				[
+					[
+						"Alt Idle Animation",
+						"bf",
+						"-homer"
+					]
+				]
+			],
+			[
+				142689.075630252,
+				[
+					[
+						"Change Character",
+						"dad",
+						"hunte-lineart"
+					],
+					[
+						"Set Char Colour",
+						"dad",
+						"DBAF85"
+					]
+				]
+			],
+			[
+				144663.865546218,
+				[
+					[
+						"Alt Idle Animation",
+						"bf",
+						""
+					]
+				]
+			],
+			[
+				144705.882352941,
+				[
+					[
+						"Set Char Colour",
+						"boyfriend",
+						"4E7FAF"
+					]
+				]
+			],
+			[
+				148235.294117647,
+				[
+					[
+						"Change Character",
+						"dad",
+						"carv-lineart"
+					],
+					[
+						"Set Char Colour",
+						"dad",
+						"4D664D"
+					]
+				]
+			],
+			[
+				150714.285714286,
+				[
+					[
+						"Alt Idle Animation",
+						"bf",
+						"-homer"
+					]
+				]
+			],
+			[
+				150756.302521008,
+				[
+					[
+						"Set Char Colour",
+						"boyfriend",
+						"C55252"
+					]
+				]
+			],
+			[
+				152773.109243697,
+				[
+					[
+						"Change Character",
+						"dad",
+						"hunte-lineart"
+					],
+					[
+						"Set Char Colour",
+						"dad",
+						"DBAF85"
+					]
+				]
+			],
+			[
+				153781.512605042,
+				[
+					[
+						"Alt Idle Animation",
+						"bf",
+						""
+					]
+				]
+			],
+			[
+				155168.067226891,
+				[
+					[
+						"Setup Close Shit",
+						"die",
+						""
+					],
+					[
+						"Toggle Borderline HUD",
+						"",
+						""
+					],
+					[
+						"Camera Follow Pos",
+						"",
+						""
+					],
+					[
+						"Set Cam Zoom",
+						"0.58",
+						"0.001"
+					],
+					[
+						"Change Character",
+						"dad",
+						"carv"
+					],
+					[
+						"Change Character",
+						"boyfriend",
+						"truckergirl-alt"
+					],
+					[
+						"Change Note Skin",
+						"borderlineUI/NOTE_assets-awesome",
+						"borderlineUI/awesome"
+					]
+				]
+			],
+			[
+				155294.117647059,
+				[
+					[
+						"Advance Anger",
+						"true",
+						"1"
+					]
+				]
+			],
+			[
+				159075.630252101,
+				[
+					[
+						"Alt Idle Animation",
+						"dad",
+						""
+					]
+				]
+			]
+		],
 		"notes": [
 			{
 				"sectionNotes": [],
@@ -428,11 +1059,6 @@
 						22689.0756302521,
 						0,
 						0
-					],
-					[
-						23949.5798319328,
-						2,
-						0
 					]
 				],
 				"sectionBeats": 4,
@@ -472,11 +1098,6 @@
 					[
 						25714.2857142857,
 						0,
-						0
-					],
-					[
-						25966.3865546218,
-						1,
 						0
 					],
 					[
@@ -594,13 +1215,7 @@
 					[
 						30252.1008403361,
 						3,
-						381,
-						"Hunte Note"
-					],
-					[
-						30630.2521008403,
-						2,
-						381,
+						889,
 						"Hunte Note"
 					],
 					[
@@ -801,7 +1416,7 @@
 					[
 						39831.9327731092,
 						2,
-						127
+						129
 					]
 				],
 				"sectionBeats": 4,
@@ -1081,7 +1696,7 @@
 					[
 						54348.7394957983,
 						2,
-						127
+						255
 					],
 					[
 						52436.974789916,
@@ -1492,7 +2107,7 @@
 					[
 						73865.5462184874,
 						0,
-						254
+						381
 					]
 				],
 				"sectionBeats": 4,
@@ -1953,11 +2568,6 @@
 						0
 					],
 					[
-						96554.6218487395,
-						1,
-						0
-					],
-					[
 						95294.1176470588,
 						1,
 						0
@@ -2025,11 +2635,6 @@
 					[
 						98319.3277310924,
 						0,
-						0
-					],
-					[
-						98571.4285714286,
-						1,
 						0
 					]
 				],
@@ -2142,13 +2747,7 @@
 					[
 						102857.142857143,
 						2,
-						381,
-						"Hunte Note"
-					],
-					[
-						103298.319327731,
-						3,
-						381,
+						889,
 						"Hunte Note"
 					],
 					[
@@ -3274,21 +3873,15 @@
 						"Hunte Note"
 					],
 					[
-						156554.621848739,
-						1,
-						0,
-						"Hunte Note"
-					],
-					[
-						156806.722689075,
-						3,
-						0,
-						"Hunte Note"
-					],
-					[
 						157058.823529412,
 						1,
 						127,
+						"Hunte Note"
+					],
+					[
+						156680.672268907,
+						3,
+						0,
 						"Hunte Note"
 					]
 				],
@@ -3332,13 +3925,7 @@
 						"Hunte Note"
 					],
 					[
-						158571.428571428,
-						1,
-						0,
-						"Hunte Note"
-					],
-					[
-						158823.529411765,
+						158697.478991596,
 						2,
 						0,
 						"Hunte Note"
@@ -3379,12 +3966,7 @@
 						127
 					],
 					[
-						160588.235294117,
-						1,
-						127
-					],
-					[
-						160840.336134454,
+						160714.285714286,
 						3,
 						0
 					]
@@ -3419,19 +4001,9 @@
 						0
 					],
 					[
-						162773.109243697,
-						3,
-						127
-					],
-					[
 						163109.243697479,
 						1,
 						0
-					],
-					[
-						163298.319327731,
-						0,
-						635
 					],
 					[
 						161580.882352941,
@@ -3442,6 +4014,11 @@
 						162605.042016807,
 						1,
 						0
+					],
+					[
+						162857.142857143,
+						3,
+						127
 					]
 				],
 				"sectionBeats": 4,
@@ -3490,6 +4067,11 @@
 						3,
 						0,
 						"Hunte Note"
+					],
+					[
+						163361.344537815,
+						4,
+						1397
 					]
 				],
 				"sectionBeats": 4,

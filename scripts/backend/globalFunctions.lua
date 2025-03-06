@@ -232,7 +232,7 @@ function onEvent(name, value1, value2, strumTime)
         local anims = stringSplit(value1, ",,")
         local lelAnim = anims[2]
         if (difficultyPath == "simple") then lelAnim = anims[1]
-        elseif (difficultyPath == "harder") then lelAnim = anims[3] end
+        elseif (difficultyPath == "expert") then lelAnim = anims[3] end
 
         triggerEvent("Play Animation", lelAnim, val2)
     elseif (event == "cam-boom-speed") then

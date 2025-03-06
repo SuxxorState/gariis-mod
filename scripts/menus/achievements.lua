@@ -1,7 +1,7 @@
 local utils = (require (getVar("folDir").."scripts.backend.utils")):new()
 
 local categories = {
-    {"Garii's Mod", {"fuzzy-dice-fc","full-house-fc","episode-ii-fc","story-deaths","no-pose"}},
+    {"Garii's Mod", {"fuzzy-dice-fc","full-house-fc","episode-ii-fc","story-deaths","garii-hud-death","no-pose","fuzzy-dice-ex-fc","full-house-ex-fc","episode-ii-ex-fc"}},
     {"SKOBELOFF CASINO", {"100k-chips","true-bjs","tb-foak","no-fish"}},
     {"Some Time At Garii's", {"stag-quarters","no-power-save","no-doors-save","the-yapper","stag-deaths"}},
     {"Bushtrimmer", {"bt-simple","bt-5simple","bt-speedy","bt-expert","bt-5expert","bt-exp-speed"}},
@@ -9,15 +9,17 @@ local categories = {
 }
 local achievements = {
     ["fuzzy-dice-fc"] = {title = "Capicola Gang", description = "100% Clear Fuzzy Dice", iconFile = "fuzzydice", secret = false, gariiPoints = 10},
+    ["fuzzy-dice-ex-fc"] = {title = "All Bark No Bite", description = "100% Clear Fuzzy Dice EX", iconFile = "", secret = false, gariiPoints = 20},
+    --["goons-flipped"] = {title = "Something's Amiss", description = "You're telling me", iconFile = "", secret = false, gariiPoints = 20},
+
     ["full-house-fc"] = {title = "The Power Of Two", description = "100% Clear Full House", iconFile = "fullhouse", secret = false, gariiPoints = 10},
-    ["episode-ii-fc"] = {title = "Show Off", description = "100% Clear Episode ][ without dying once", iconFile = "episodeii", secret = false, gariiPoints = 25},
-
-    --["fuzzy-dice-rm-fc"] = {title = "All Bark No Bite", description = "100% Clear Fuzzy Dice rematch", iconFile = "", secret = false, gariiPoints = 20},
-    --["full-house-rm-fc"] = {title = "Decked Out", description = "100% Clear Full House rematch", iconFile = "", secret = false, gariiPoints = 20},
-    --["episode-ii-rm-fc"] = {title = "You Made Your Point", description = "100% Clear Episode ][ rematch without dying once", iconFile = "", secret = false, gariiPoints = 50},
-
-    ["story-deaths"] = {title = "The Part Where He Kills You", description = "Experience every possible death Episode ][ has to offer", iconFile = "portal2", secret = false, gariiPoints = 25},
+    ["full-house-ex-fc"] = {title = "Decked Out", description = "100% Clear Full House EX", iconFile = "", secret = false, gariiPoints = 20},
+    ["garii-hud-death"] = {title = "KNOCK IT OFF!!!", description = "Die because Garii was messing with your HUD", iconFile = "", secret = false, gariiPoints = 10},
     ["no-pose"] = {title = "Not Feelin' It", description = "Beat Full House without ever hitting a pose note", iconFile = "poseless", secret = false, gariiPoints = 10},
+
+    ["episode-ii-fc"] = {title = "Show Off", description = "100% Clear Episode ][ without dying once", iconFile = "episodeii", secret = false, gariiPoints = 25},
+    ["episode-ii-ex-fc"] = {title = "You Made Your Point", description = "100% Clear Episode ][ EX without dying once", iconFile = "", secret = false, gariiPoints = 50},
+    ["story-deaths"] = {title = "The Part Where He Kills You", description = "Experience every possible death Episode ][ has to offer", iconFile = "portal2", secret = false, gariiPoints = 25},
 
     ["100k-chips"] = {title = "The Big Cheese", description = "Get one hundred thousand or more poker chips in the casino", iconFile = "", secret = false, gariiPoints = 50},
     ["true-bjs"] = {title = "The House Is Cheating!", description = "End in a draw with both you and the house having a true blackjack", iconFile = "cheating", secret = false, gariiPoints = 25},
@@ -42,7 +44,7 @@ local achievements = {
     ["fl-everytrash"] = {title = "Junkyard", description = "Collect Every Type of Trash", iconFile = "", secret = false, gariiPoints = 25},
     ["fl-16levels"] = {title = "Salad Dressing", description = "Beat 16 Levels", iconFile = "", secret = false, gariiPoints = 20},
     ["fl-64levels"] = {title = "Sandwich Tower", description = "Beat 64 Levels", iconFile = "", secret = false, gariiPoints = 50},
-    --["fl-256levels"] = {title = "Byte Overflow", description = "Beat the 256/0th Level in Fuzzlings!", iconFile = "", secret = false, gariiPoints = 100},
+    --["fl-256levels"] = {title = "Byte Overflow", description = "Beat the 256/0th Level", iconFile = "", secret = false, gariiPoints = 100},
     --["fl-512levels"] = {title = "Exquisitely Stuffed", description = "Beat the 256/0th Level With Both Boy and Girl", iconFile = "", secret = false, gariiPoints = 250},
     ["fl-deaths"] = {title = "Knuckle Sandwich", description = "Die to every fuzzling as both Boy and Girl", iconFile = "", secret = false, gariiPoints = 25},
 }

@@ -145,7 +145,7 @@
 			"indices": []
 		}
 	],
-	"vocals_file": "PlrEasy",
+	"vocals_file": "PlrSimple",
 	"no_antialiasing": false,
 	"image": "characters/truckerboy",
 	"position": [11, 260],

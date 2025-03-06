@@ -20,7 +20,7 @@ local ndlAngs = {-77, -48, -14, 24, 58, 84, 105}
 local inMenu = false
 local sssCounter = 0
 local hasSimple = false
-local hasHarder = false
+local hasExpert = false
 local playedCrossout = false
 
 function onStartCountdown(tick)
@@ -28,12 +28,12 @@ function onStartCountdown(tick)
 		callOnLuas("setupSpice", sauceTrueFX[utils:getGariiData("curSauce")])
 		close()
 	else
-		if (utils:getGariiData("harderSauces") ~= nil) then
+		if (utils:getGariiData("expertSauces") ~= nil) then
 			table.insert(sauces, "Shit The Bed")
 			table.insert(sauces, "Solar Flare")
 		end
 		hasSimple = checkFileExists('data/'..utils.songNameFmt..'/'..utils.songNameFmt..'-simple.json')
-		hasHarder = checkFileExists('data/'..utils.songNameFmt..'/'..utils.songNameFmt..'-harder.json')
+		hasExpert = checkFileExists('data/'..utils.songNameFmt..'/'..utils.songNameFmt..'-expert.json')
 		inMenu = true
 		setProperty('inCutscene', true)
 		setProperty('camHUD.alpha', 0)
@@ -181,10 +181,10 @@ function onUpdatePost(elapsed)
 					}
 					PlayState.SONG = Song.loadFromJson(Highscore.formatSong(ogName+"-sss", 0), ogName+"-sss");
 				]])
-			elseif(curSauce >= 5 and hasHarder) then
+			elseif(curSauce >= 5 and hasExpert) then
 				runHaxeCode([[
 					import backend.Difficulty;
-					Difficulty.list.push("Harder");
+					Difficulty.list.push("Expert");
 					PlayState.storyDifficulty = 1;
 				]])
 				loadSong(nil, 1)
@@ -242,7 +242,7 @@ function changeSelected(lol)
 			setProperty("spsneedle.angle", ndlAngs[curSauce] + 5)
 		end
 		return
-		--[[if (getDataFromSave("gariis-mod_v0.95", "harderSauces") ~= nil and #sauces < 7) then
+		--[[if (getDataFromSave("gariis-mod_v0.95", "expertSauces") ~= nil and #sauces < 7) then
 			if (sssCounter < 10) then sssCounter = sssCounter+1
 				cancelTimer("sssTimer")
 				setProperty("spsneedle.angle", getProperty("spsneedle.angle") + sssCounter)

@@ -31,8 +31,9 @@ function onCreatePost()
     setProperty("spkr2.visible", false)
 
     callOnLuas("addExtraOpp", {"hunte", "hunte", -310,150})
-    setProperty("hunte.visible", false)
-    if (timeBarType ~= "Disabled") then setProperty("iconTimehunte.x", -150) end
+    setProperty("hunte.visible", difficultyPath == "expert")
+    if (difficultyPath == "expert") then updateGF() end
+    if (timeBarType ~= "Disabled" and difficultyPath ~= "expert") then setProperty("iconTimehunte.x", -150) end
 end
 
 
@@ -41,18 +42,21 @@ function onStepHit()
         callOnScripts("onCountdownTick", {curBeat})
         utils:newCountdown(curBeat)
     end
-    if (curStep == 130) or (curStep == 720) then
-        setProperty("spkr2.visible", true)
-        if (curStep == 130) then triggerEvent("Change Character", "gf", "truckergirl") end
-        setProperty("gf.scrollFactor.x", 1)
-        setProperty("gf.scrollFactor.y", 1)
-        setObjectOrder('gfGroup', getObjectOrder('boyfriendGroup')+1)
-        setProperty("gf.flipX", false)
-        setProperty("gf.x", 1060 + getProperty("gf.positionArray")[1])
-        setProperty("gf.y", 200 + getProperty("gf.positionArray")[2])
+    if ((curStep == 130) or (curStep == 720)) then updateGF()
     elseif (curStep == 144) then setProperty("hunte.visible", true)
     elseif (curStep == 208) then canIcon = true
     end
+end
+
+function updateGF()
+    setProperty("spkr2.visible", true)
+    if (curStep == 130 and difficultyPath ~= "expert") then triggerEvent("Change Character", "gf", "truckergirl") end
+    setProperty("gf.scrollFactor.x", 1)
+    setProperty("gf.scrollFactor.y", 1)
+    setObjectOrder('gfGroup', getObjectOrder('boyfriendGroup')+1)
+    setProperty("gf.flipX", false)
+    setProperty("gf.x", 1060 + getProperty("gf.positionArray")[1])
+    setProperty("gf.y", 200 + getProperty("gf.positionArray")[2])
 end
 
 function onUpdate()
