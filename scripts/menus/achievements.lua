@@ -1,7 +1,7 @@
 local utils = (require (getVar("folDir").."scripts.backend.utils")):new()
 
 local categories = {
-    {"Garii's Mod", {"fuzzy-dice-fc","full-house-fc","episode-ii-fc","story-deaths","garii-hud-death","no-pose","fuzzy-dice-ex-fc","full-house-ex-fc","episode-ii-ex-fc"}},
+    {"Garii's Mod", {"fuzzy-dice-fc","full-house-fc","episode-ii-fc","story-deaths","garii-hud-death","no-pose","fuzzy-dice-ex-fc","full-house-ex-fc","episode-ii-ex-fc", "all-achievements"}},
     {"SKOBELOFF CASINO", {"100k-chips","true-bjs","tb-foak","no-fish"}},
     {"Some Time At Garii's", {"stag-quarters","no-power-save","no-doors-save","the-yapper","stag-deaths"}},
     {"Bushtrimmer", {"bt-simple","bt-5simple","bt-speedy","bt-expert","bt-5expert","bt-exp-speed"}},
@@ -9,17 +9,17 @@ local categories = {
 }
 local achievements = {
     ["fuzzy-dice-fc"] = {title = "Capicola Gang", description = "100% Clear Fuzzy Dice", iconFile = "fuzzydice", secret = false, gariiPoints = 10},
-    ["fuzzy-dice-ex-fc"] = {title = "All Bark No Bite", description = "100% Clear Fuzzy Dice EX", iconFile = "", secret = false, gariiPoints = 20},
-    --["goons-flipped"] = {title = "Something's Amiss", description = "You're telling me", iconFile = "", secret = false, gariiPoints = 20},
+    ["fuzzy-dice-ex-fc"] = {title = "All Bark No Bite", description = "100% Clear Fuzzy Dice EX", iconFile = "", secret = true, gariiPoints = 20},
 
     ["full-house-fc"] = {title = "The Power Of Two", description = "100% Clear Full House", iconFile = "fullhouse", secret = false, gariiPoints = 10},
-    ["full-house-ex-fc"] = {title = "Decked Out", description = "100% Clear Full House EX", iconFile = "", secret = false, gariiPoints = 20},
+    ["full-house-ex-fc"] = {title = "Decked Out", description = "100% Clear Full House EX", iconFile = "", secret = true, gariiPoints = 20},
     ["garii-hud-death"] = {title = "KNOCK IT OFF!!!", description = "Die because Garii was messing with your HUD", iconFile = "", secret = false, gariiPoints = 10},
     ["no-pose"] = {title = "Not Feelin' It", description = "Beat Full House without ever hitting a pose note", iconFile = "poseless", secret = false, gariiPoints = 10},
 
     ["episode-ii-fc"] = {title = "Show Off", description = "100% Clear Episode ][ without dying once", iconFile = "episodeii", secret = false, gariiPoints = 25},
-    ["episode-ii-ex-fc"] = {title = "You Made Your Point", description = "100% Clear Episode ][ EX without dying once", iconFile = "", secret = false, gariiPoints = 50},
+    ["episode-ii-ex-fc"] = {title = "You Made Your Point", description = "100% Clear Episode ][ EX without dying once", iconFile = "", secret = true, gariiPoints = 50},
     ["story-deaths"] = {title = "The Part Where He Kills You", description = "Experience every possible death Episode ][ has to offer", iconFile = "portal2", secret = false, gariiPoints = 25},
+    ["all-achievements"] = {title = "Don't You Have Anything Better to Do?", description = "Unlock every achievement, including this one.", iconFile = "", secret = true, gariiPoints = 20},
 
     ["100k-chips"] = {title = "The Big Cheese", description = "Get one hundred thousand or more poker chips in the casino", iconFile = "", secret = false, gariiPoints = 50},
     ["true-bjs"] = {title = "The House Is Cheating!", description = "End in a draw with both you and the house having a true blackjack", iconFile = "cheating", secret = false, gariiPoints = 25},

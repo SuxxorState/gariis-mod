@@ -10,6 +10,11 @@
 						"Change Character",
 						"bf",
 						"truckerboy-kissed"
+					],
+					[
+						"Change Character",
+						"gf",
+						"truckergirl"
 					]
 				]
 			],
@@ -472,9 +477,19 @@
 				139663.865546218,
 				[
 					[
-						"Alt Idle Animation",
+						"Change Character",
 						"bf",
-						"-homer"
+						"truckergirl-lineart"
+					]
+				]
+			],
+			[
+				139789.915966386,
+				[
+					[
+						"Set Char Colour",
+						"boyfriend",
+						"C55252"
 					]
 				]
 			],
@@ -497,9 +512,9 @@
 				144663.865546218,
 				[
 					[
-						"Alt Idle Animation",
+						"Change Character",
 						"bf",
-						""
+						"truckerboy-lineart"
 					]
 				]
 			],
@@ -532,9 +547,9 @@
 				150714.285714286,
 				[
 					[
-						"Alt Idle Animation",
+						"Change Character",
 						"bf",
-						"-homer"
+						"truckergirl-lineart"
 					]
 				]
 			],
@@ -3507,8 +3522,7 @@
 					[
 						140924.369747899,
 						4,
-						0,
-						"No Animation"
+						0
 					]
 				],
 				"sectionBeats": 4,
@@ -3523,38 +3537,32 @@
 					[
 						143109.243697479,
 						2,
-						254,
-						"No Animation"
-					],
-					[
-						141932.773109244,
-						2,
-						0,
-						"No Animation"
-					],
-					[
-						142352.94117647,
-						1,
-						0,
-						"No Animation"
+						254
 					],
 					[
 						141176.470588235,
 						3,
-						0,
-						"No Animation"
+						0
 					],
 					[
-						141601.890756302,
+						141596.638655462,
 						1,
-						0,
-						"No Animation"
+						0
+					],
+					[
+						141932.773109244,
+						2,
+						0
+					],
+					[
+						142352.94117647,
+						1,
+						0
 					],
 					[
 						142689.075630252,
 						0,
-						0,
-						"No Animation"
+						0
 					]
 				],
 				"sectionBeats": 4,
@@ -3762,46 +3770,39 @@
 			{
 				"sectionNotes": [
 					[
-						151512.605042017,
-						1,
-						0,
-						"No Animation"
-					],
-					[
 						152268.907563025,
 						3,
-						127,
-						"No Animation"
+						127
 					],
 					[
 						153193.277310924,
 						1,
-						254,
-						"No Animation"
-					],
-					[
-						151764.705882353,
-						2,
-						0,
-						"No Animation"
-					],
-					[
-						151995.798319328,
-						0,
-						0,
-						"No Animation"
+						254
 					],
 					[
 						152689.075630252,
 						0,
-						0,
-						"No Animation"
+						0
 					],
 					[
 						152941.176470588,
 						1,
+						0
+					],
+					[
+						151512.605042017,
+						1,
+						0
+					],
+					[
+						151764.705882353,
+						2,
+						0
+					],
+					[
+						151995.798319328,
 						0,
-						"No Animation"
+						0
 					]
 				],
 				"sectionBeats": 4,

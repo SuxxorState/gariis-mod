@@ -3888,26 +3888,22 @@
 					[
 						140840.336134454,
 						7,
-						0,
-						"No Animation"
+						0
 					],
 					[
 						140903.361344538,
 						4,
-						0,
-						"No Animation"
+						0
 					],
 					[
 						141029.411764706,
 						7,
-						0,
-						"No Animation"
+						0
 					],
 					[
 						141113.445378151,
 						6,
-						0,
-						"No Animation"
+						0
 					]
 				],
 				"gfSection": false,
@@ -3922,68 +3918,57 @@
 					[
 						143109.243697479,
 						2,
-						254,
-						"No Animation"
+						254
 					],
 					[
 						141407.56302521,
 						0,
-						0,
-						"No Animation"
+						0
 					],
 					[
 						141596.638655462,
 						3,
-						0,
-						"No Animation"
+						0
 					],
 					[
 						141827.731092437,
 						1,
-						0,
-						"No Animation"
+						0
 					],
 					[
 						141932.773109244,
 						2,
-						0,
-						"No Animation"
+						0
 					],
 					[
 						142184.87394958,
 						0,
-						0,
-						"No Animation"
+						0
 					],
 					[
 						142352.94117647,
 						1,
-						0,
-						"No Animation"
+						0
 					],
 					[
 						142584.033613445,
 						3,
-						0,
-						"No Animation"
+						0
 					],
 					[
 						142689.075630252,
 						2,
-						0,
-						"No Animation"
+						0
 					],
 					[
 						142815.12605042,
 						0,
-						0,
-						"No Animation"
+						0
 					],
 					[
 						142941.176470588,
 						1,
-						0,
-						"No Animation"
+						0
 					]
 				],
 				"gfSection": false,
@@ -4213,50 +4198,42 @@
 					[
 						151512.605042017,
 						1,
-						0,
-						"No Animation"
+						0
 					],
 					[
 						152268.907563025,
 						3,
-						127,
-						"No Animation"
+						127
 					],
 					[
 						153193.277310924,
 						1,
-						254,
-						"No Animation"
+						254
 					],
 					[
 						151764.705882353,
 						2,
-						0,
-						"No Animation"
+						0
 					],
 					[
 						151995.798319328,
 						0,
-						0,
-						"No Animation"
+						0
 					],
 					[
 						152521.008403361,
 						2,
-						0,
-						"No Animation"
+						0
 					],
 					[
 						152689.075630252,
 						0,
-						0,
-						"No Animation"
+						0
 					],
 					[
 						152941.176470588,
 						1,
-						0,
-						"No Animation"
+						0
 					]
 				],
 				"gfSection": false,
@@ -4955,6 +4932,11 @@
 						"Change Character",
 						"bf",
 						"truckerboy-kissed"
+					],
+					[
+						"Change Character",
+						"gf",
+						"truckergirl"
 					]
 				]
 			],
@@ -5417,9 +5399,19 @@
 				139663.865546218,
 				[
 					[
-						"Alt Idle Animation",
+						"Change Character",
 						"bf",
-						"-homer"
+						"truckergirl-lineart"
+					]
+				]
+			],
+			[
+				139789.915966386,
+				[
+					[
+						"Set Char Colour",
+						"boyfriend",
+						"C55252"
 					]
 				]
 			],
@@ -5442,9 +5434,9 @@
 				144663.865546218,
 				[
 					[
-						"Alt Idle Animation",
+						"Change Character",
 						"bf",
-						""
+						"truckerboy-lineart"
 					]
 				]
 			],
@@ -5477,9 +5469,9 @@
 				150714.285714286,
 				[
 					[
-						"Alt Idle Animation",
+						"Change Character",
 						"bf",
-						"-homer"
+						"truckergirl-lineart"
 					]
 				]
 			],

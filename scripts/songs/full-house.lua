@@ -42,15 +42,13 @@ function onStepHit()
         callOnScripts("onCountdownTick", {curBeat})
         utils:newCountdown(curBeat)
     end
-    if ((curStep == 130) or (curStep == 720)) then updateGF()
-    elseif (curStep == 144) then setProperty("hunte.visible", true)
+    if (curStep == 144) then setProperty("hunte.visible", true)
     elseif (curStep == 208) then canIcon = true
     end
 end
 
 function updateGF()
     setProperty("spkr2.visible", true)
-    if (curStep == 130 and difficultyPath ~= "expert") then triggerEvent("Change Character", "gf", "truckergirl") end
     setProperty("gf.scrollFactor.x", 1)
     setProperty("gf.scrollFactor.y", 1)
     setObjectOrder('gfGroup', getObjectOrder('boyfriendGroup')+1)
@@ -88,11 +86,13 @@ function noteMiss() playerAlpha() end
 
 function playerAlpha()
     if (not closeMode) then return end
+    local defPlrX = defaultBoyfriendX
+    if (stringStartsWith(boyfriendName, "truckergirl")) then defPlrX = defPlrX - 50 end
     cancelTween("plrAlphaTween")
     cancelTween("plrXTween")
     cancelTimer("plrCloseTween")
     setProperty("boyfriend.alpha", 1)
-    setProperty("boyfriend.x", defaultBoyfriendX + 300)
+    setProperty("boyfriend.x", defPlrX + 300)
     runTimer("plrCloseTween", 0.25)
 end
 
@@ -117,8 +117,7 @@ function onEvent(name, value1, value2, strumTime)
     local val1 = value1:lower()
     local val2 = value2:lower()
 
-	if (event == "change-character") and (val1 == "gf" or val1 == "girlfriend" or val1 == "1") then
-		setProperty("gf.flipX", false)
+	if (event == "change-character") and (val1 == "gf" or val1 == "girlfriend" or val1 == "1") then updateGF()
     elseif (event == "hunte-be-evil") then
     elseif (event == "toggle-blackout") then
         setProperty("blackoutSpr.visible", not getProperty("blackoutSpr.visible"))

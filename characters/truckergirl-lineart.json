@@ -2,128 +2,106 @@
 	"animations": [
 		{
 			"offsets": [
-				0,
-				0
+				20,
+				78
 			],
-			"loop": true,
-			"fps": 2,
-			"anim": "idel",
-			"indices": [],
-			"name": "boy idle"
-		},
-		{
 			"loop": false,
-			"offsets": [
-				51,
-				-24
-			],
+			"fps": 24,
 			"anim": "singLEFT",
-			"fps": 12,
-			"name": "boy left",
-			"indices": []
+			"indices": [],
+			"name": "girl left"
 		},
 		{
-			"loop": false,
 			"offsets": [
-				-1,
-				-40
+				-85,
+				33
 			],
+			"loop": false,
+			"fps": 24,
 			"anim": "singDOWN",
-			"fps": 12,
-			"name": "boy down",
-			"indices": []
+			"indices": [],
+			"name": "girl down"
 		},
 		{
-			"loop": false,
 			"offsets": [
-				-40,
-				42
+				32,
+				138
 			],
+			"loop": false,
+			"fps": 24,
 			"anim": "singUP",
-			"fps": 12,
-			"name": "boy up",
-			"indices": []
+			"indices": [],
+			"name": "girl up"
 		},
 		{
-			"loop": false,
 			"offsets": [
-				-32,
-				3
+				84,
+				55
 			],
+			"loop": false,
+			"fps": 24,
 			"anim": "singRIGHT",
-			"fps": 12,
-			"name": "boy right",
-			"indices": []
+			"indices": [],
+			"name": "girl right"
 		},
 		{
 			"offsets": [
-				0,
-				0
+				6,
+				16
 			],
 			"loop": false,
 			"fps": 1,
 			"anim": "singLEFTmiss",
 			"indices": [],
-			"name": "miss"
+			"name": "girl miss"
 		},
 		{
 			"offsets": [
-				0,
-				0
+				6,
+				16
 			],
 			"loop": false,
 			"fps": 1,
 			"anim": "singDOWNmiss",
 			"indices": [],
-			"name": "miss"
+			"name": "girl miss"
 		},
 		{
 			"offsets": [
-				0,
-				0
+				6,
+				16
 			],
 			"loop": false,
 			"fps": 1,
 			"anim": "singUPmiss",
 			"indices": [],
-			"name": "miss"
+			"name": "girl miss"
 		},
 		{
 			"offsets": [
-				0,
-				0
+				6,
+				16
 			],
 			"loop": false,
 			"fps": 1,
 			"anim": "singRIGHTmiss",
 			"indices": [],
-			"name": "miss"
-		},
-		{
-			"offsets": [
-				-103,
-				28
-			],
-			"loop": false,
-			"fps": 24,
-			"anim": "homer",
-			"indices": [],
-			"name": "homer"
+			"name": "girl miss"
 		}
 	],
 	"vocals_file": "",
 	"no_antialiasing": false,
-	"image": "characters/truckerboy-lineart",
+	"image": "characters/girl-lineart",
 	"position": [
 		240,
-		110
+		190
 	],
-	"healthicon": "truckboy",
+	"healthicon": "truckgirl",
 	"flip_x": true,
 	"healthbar_colors": [
-		78,
-		127,
-		175
+		197,
+		82,
+		82
 	],
 	"camera_position": [
 		-10,

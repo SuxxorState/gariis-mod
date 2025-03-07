@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Created with Funkin Packer v0.1.3 https://neeeoo.github.io/funkin-packer/
+-->
+<TextureAtlas imagePath="girl-lineart.png" width="2224" height="2084">
+	<SubTexture name="girl down0000" x="812" y="763" width="634" height="527" rotated="true" frameX="-0" frameY="-22" frameWidth="552" frameHeight="676"/>
+	<SubTexture name="girl down0001" x="812" y="763" width="634" height="527" rotated="true" frameX="-0" frameY="-22" frameWidth="552" frameHeight="676"/>
+	<SubTexture name="girl down0002" x="1482" y="1370" width="546" height="676" frameX="-6" frameY="-0" frameWidth="552" frameHeight="676"/>
+	<SubTexture name="girl down0003" x="1482" y="1370" width="546" height="676" frameX="-6" frameY="-0" frameWidth="552" frameHeight="676"/>
+	<SubTexture name="girl left0000" x="1628" y="0" width="596" height="716" frameX="-0" frameY="-14" frameWidth="617" frameHeight="730"/>
+	<SubTexture name="girl left0001" x="1628" y="0" width="596" height="716" frameX="-0" frameY="-14" frameWidth="617" frameHeight="730"/>
+	<SubTexture name="girl left0002" x="1482" y="763" width="716" height="605" rotated="true" frameX="-12" frameY="-0" frameWidth="617" frameHeight="730"/>
+	<SubTexture name="girl left0003" x="1482" y="763" width="716" height="605" rotated="true" frameX="-12" frameY="-0" frameWidth="617" frameHeight="730"/>
+	<SubTexture name="girl miss0000" x="743" y="1353" width="737" height="660" frameX="-0" frameY="-0" frameWidth="737" frameHeight="660"/>
+	<SubTexture name="girl right0000" x="0" y="0" width="900" height="670" frameX="-0" frameY="-21" frameWidth="900" frameHeight="691"/>
+	<SubTexture name="girl right0001" x="0" y="0" width="900" height="670" frameX="-0" frameY="-21" frameWidth="900" frameHeight="691"/>
+	<SubTexture name="girl right0002" x="0" y="672" width="810" height="679" frameX="-53" frameY="-0" frameWidth="900" frameHeight="691"/>
+	<SubTexture name="girl right0003" x="0" y="672" width="810" height="679" frameX="-53" frameY="-0" frameWidth="900" frameHeight="691"/>
+	<SubTexture name="girl up0000" x="902" y="0" width="724" height="761" frameX="-0" frameY="-0" frameWidth="741" frameHeight="761"/>
+	<SubTexture name="girl up0001" x="902" y="0" width="724" height="761" frameX="-0" frameY="-0" frameWidth="741" frameHeight="761"/>
+	<SubTexture name="girl up0002" x="0" y="1353" width="741" height="731" rotated="true" frameX="-10" frameY="-15" frameWidth="741" frameHeight="761"/>
+	<SubTexture name="girl up0003" x="0" y="1353" width="741" height="731" rotated="true" frameX="-10" frameY="-15" frameWidth="741" frameHeight="761"/>
+</TextureAtlas>
