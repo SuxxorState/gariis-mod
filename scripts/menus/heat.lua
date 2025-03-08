@@ -28,7 +28,7 @@ function onStartCountdown(tick)
 		callOnLuas("setupSpice", sauceTrueFX[utils:getGariiData("curSauce")])
 		close()
 	else
-		if (utils:getGariiData("expertSauces") == nil) then
+		if (utils:getGariiData("expertSauces") ~= nil) then
 			table.insert(sauces, "Shit The Bed")
 			table.insert(sauces, "Solar Flare")
 		end

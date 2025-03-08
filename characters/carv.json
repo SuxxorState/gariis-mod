@@ -1,222 +1,167 @@
 {
 	"animations": [
 		{
-			"offsets": [
-				0,
-				0
-			],
 			"loop": false,
-			"fps": 24,
+			"offsets": [0, 0],
 			"anim": "idle",
-			"indices": [],
-			"name": "carv opp/-carv anims/carv drag opp idle"
+			"fps": 24,
+			"name": "carv opp/-carv anims/carv drag opp idle",
+			"indices": []
 		},
 		{
-			"offsets": [
-				0,
-				0
-			],
 			"loop": false,
-			"fps": 24,
+			"offsets": [0, 0],
 			"anim": "idle-alt",
-			"indices": [],
-			"name": "carv opp/-carv anims/carv idle alt"
+			"fps": 24,
+			"name": "carv opp/-carv anims/carv idle alt",
+			"indices": []
 		},
 		{
-			"offsets": [
-				0,
-				0
-			],
 			"loop": false,
-			"fps": 24,
+			"offsets": [0, 0],
 			"anim": "idle-nomic",
-			"indices": [],
-			"name": "carv opp/-carv anims/carv drag idle no mic"
+			"fps": 24,
+			"name": "carv opp/-carv anims/carv drag idle no mic",
+			"indices": []
 		},
 		{
-			"offsets": [
-				0,
-				0
-			],
 			"loop": false,
-			"fps": 24,
+			"offsets": [0, 0],
 			"anim": "idle-nomic-alt",
-			"indices": [],
-			"name": "carv opp/-carv anims/carv alt idle bc i can"
+			"fps": 24,
+			"name": "carv opp/-carv anims/carv alt idle bc i can",
+			"indices": []
 		},
 		{
+			"offsets": [212, 395],
 			"loop": false,
-			"offsets": [
-				212,
-				395
-			],
+			"fps": 24,
 			"anim": "singLEFT",
-			"fps": 24,
-			"name": "carv opp/-carv anims/carv lean posture",
-			"indices": []
+			"indices": [],
+			"name": "carv opp/-carv anims/carv lean posture"
 		},
 		{
+			"offsets": [212, 395],
 			"loop": true,
-			"offsets": [
-				212,
-				395
-			],
+			"fps": 24,
 			"anim": "singLEFT-loop",
-			"fps": 24,
-			"name": "carv opp/-carv anims/carv lean posture",
-			"indices": [
-				2,
-				3,
-				4,
-				5,
-				6,
-				7
-			]
+			"indices": [2, 3, 4, 5, 6, 7],
+			"name": "carv opp/-carv anims/carv lean posture"
 		},
 		{
+			"offsets": [-3, 0],
 			"loop": false,
-			"offsets": [
-				-3,
-				0
-			],
+			"fps": 24,
 			"anim": "singDOWN",
-			"fps": 24,
-			"name": "carv opp/-carv anims/carv downe note",
-			"indices": []
+			"indices": [],
+			"name": "carv opp/-carv anims/carv downe note"
 		},
 		{
+			"offsets": [-2, -1],
 			"loop": false,
-			"offsets": [
-				-2,
-				-1
-			],
+			"fps": 24,
 			"anim": "singUP",
-			"fps": 24,
-			"name": "carv opp/-carv anims/carv vertical strike",
-			"indices": []
+			"indices": [],
+			"name": "carv opp/-carv anims/carv vertical strike"
 		},
 		{
+			"offsets": [2, 0],
 			"loop": false,
-			"offsets": [
-				2,
-				0
-			],
+			"fps": 24,
 			"anim": "singRIGHT",
-			"fps": 24,
-			"name": "carv opp/-carv anims/carv RITE pose",
-			"indices": []
+			"indices": [],
+			"name": "carv opp/-carv anims/carv RITE pose"
 		},
 		{
+			"offsets": [212, 395],
 			"loop": false,
-			"offsets": [
-				212,
-				395
-			],
+			"fps": 24,
 			"anim": "singLEFT-nomic",
-			"fps": 24,
-			"name": "carv opp/-carv anims/carv mean posture",
-			"indices": []
+			"indices": [],
+			"name": "carv opp/-carv anims/carv mean posture"
 		},
 		{
+			"offsets": [212, 395],
 			"loop": true,
-			"offsets": [
-				212,
-				395
-			],
+			"fps": 24,
 			"anim": "singLEFT-nomic-loop",
-			"fps": 24,
-			"name": "carv opp/-carv anims/carv mean posture",
-			"indices": [
-				2,
-				3,
-				4,
-				5,
-				6,
-				7
-			]
+			"indices": [2, 3, 4, 5, 6, 7],
+			"name": "carv opp/-carv anims/carv mean posture"
 		},
 		{
+			"offsets": [-3, 0],
 			"loop": false,
-			"offsets": [
-				-3,
-				0
-			],
+			"fps": 24,
 			"anim": "singDOWN-nomic",
-			"fps": 24,
-			"name": "carv opp/-carv anims/carv downe no mic",
-			"indices": []
+			"indices": [],
+			"name": "carv opp/-carv anims/carv downe no mic"
 		},
 		{
+			"offsets": [-2, -1],
 			"loop": false,
-			"offsets": [
-				-2,
-				-1
-			],
+			"fps": 24,
 			"anim": "singUP-nomic",
-			"fps": 24,
-			"name": "carv opp/-carv anims/carv vertical rno mic",
-			"indices": []
+			"indices": [],
+			"name": "carv opp/-carv anims/carv vertical rno mic"
 		},
 		{
+			"offsets": [2, 0],
 			"loop": false,
-			"offsets": [
-				2,
-				0
-			],
+			"fps": 24,
 			"anim": "singRIGHT-nomic",
+			"indices": [],
+			"name": "carv opp/-carv anims/carv RITE micless"
+		},
+		{
+			"offsets": [0, 0],
+			"indices": [],
 			"fps": 24,
-			"name": "carv opp/-carv anims/carv RITE micless",
-			"indices": []
+			"anim": "throwMIC",
+			"loop": false,
+			"name": "carv opp/-carv anims/carv throw mic"
 		},
 		{
+			"offsets": [0, 0],
+			"indices": [],
+			"fps": 24,
+			"anim": "catchMIC",
 			"loop": false,
-			"offsets": [
-				0,
-				0
-			],
-			"anim": "pose1",
+			"name": "carv opp/-carv anims/carv catch mic"
+		},
+		{
+			"offsets": [0, 0],
+			"indices": [],
 			"fps": 2,
-			"name": "carv opp/-carv anims/carv pose sponge",
-			"indices": []
+			"anim": "pose1",
+			"loop": false,
+			"name": "carv opp/-carv anims/carv pose sponge"
 		},
 		{
-			"offsets": [
-				0,
-				0
-			],
-			"loop": false,
+			"offsets": [0, 0],
+			"indices": [],
 			"fps": 2,
 			"anim": "pose2",
-			"indices": [],
+			"loop": false,
 			"name": "carv opp/-carv anims/carv pose mario"
 		},
 		{
-			"loop": false,
-			"offsets": [
-				0,
-				0
-			],
-			"anim": "pose3",
+			"offsets": [0, 0],
+			"indices": [],
 			"fps": 2,
-			"name": "carv opp/-carv anims/carv pose comic",
-			"indices": []
+			"anim": "pose3",
+			"loop": false,
+			"name": "carv opp/-carv anims/carv pose comic"
 		},
 		{
-			"offsets": [
-				0,
-				0
-			],
-			"loop": false,
+			"offsets": [0, 0],
+			"indices": [],
 			"fps": 2,
 			"anim": "pose4",
-			"indices": [],
+			"loop": false,
 			"name": "carv opp/-carv anims/carv pose nice"
 		},
 		{
-			"offsets": [
-				0,
-				0
-			],
+			"offsets": [0, 0],
 			"indices": [],
 			"fps": 2,
 			"anim": "pose5",
@@ -227,21 +172,11 @@
 	"vocals_file": "",
 	"no_antialiasing": false,
 	"image": "characters/carv",
-	"position": [
-		195,
-		556
-	],
+	"position": [195, 556],
 	"healthicon": "carv",
 	"flip_x": false,
-	"healthbar_colors": [
-		77,
-		102,
-		77
-	],
-	"camera_position": [
-		-205,
-		-40
-	],
+	"healthbar_colors": [77, 102, 77],
+	"camera_position": [-205, -40],
 	"sing_duration": 4,
 	"scale": 1,
 	"_editor_isPlayer": false

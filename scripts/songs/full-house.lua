@@ -31,9 +31,14 @@ function onCreatePost()
     setProperty("spkr2.visible", false)
 
     callOnLuas("addExtraOpp", {"hunte", "hunte", -310,150})
-    setProperty("hunte.visible", difficultyPath == "expert")
-    if (difficultyPath == "expert") then updateGF() end
-    if (timeBarType ~= "Disabled" and difficultyPath ~= "expert") then setProperty("iconTimehunte.x", -150) end
+    setProperty("hunte.visible", stringEndsWith(difficultyPath, "expert"))
+    triggerEvent("Extra Char Alt Anims", "hunte", "-nomic")
+    triggerEvent("Extra Char Alt Idle", "hunte", "-nomic")
+    playAnim("hunte", "idle-nomic", true)
+    if (stringEndsWith(difficultyPath, "expert")) then
+        updateGF()
+    end
+    if (timeBarType ~= "Disabled" and (not stringEndsWith(difficultyPath, "expert"))) then setProperty("iconTimehunte.x", -150) end
 end
 
 

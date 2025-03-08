@@ -231,8 +231,8 @@ function onEvent(name, value1, value2, strumTime)
         setProperty(val2..".specialAnim", true)
         local anims = stringSplit(value1, ",,")
         local lelAnim = anims[2]
-        if (difficultyPath == "simple") then lelAnim = anims[1]
-        elseif (difficultyPath == "expert") then lelAnim = anims[3] end
+        if (stringEndsWith(difficultyPath, "simple")) then lelAnim = anims[1]
+        elseif (stringEndsWith(difficultyPath, "expert")) then lelAnim = anims[3] end
 
         triggerEvent("Play Animation", lelAnim, val2)
     elseif (event == "cam-boom-speed") then
