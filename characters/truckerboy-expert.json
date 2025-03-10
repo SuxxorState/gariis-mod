@@ -1,14 +1,13 @@
 {
 	"animations": [
 		{
-			"loop": false,
 			"offsets": [
 				0,
 				0
 			],
-			"anim": "idle",
+			"loop": false,
 			"fps": 24,
-			"name": "-anims/reg/boy trucker idfle",
+			"anim": "idle",
 			"indices": [
 				0,
 				1,
@@ -18,17 +17,17 @@
 				5,
 				6,
 				7
-			]
+			],
+			"name": "-anims/reg/boy trucker idfle"
 		},
 		{
-			"loop": true,
 			"offsets": [
 				0,
 				0
 			],
-			"anim": "idle-loop",
+			"loop": true,
 			"fps": 24,
-			"name": "-anims/reg/boy trucker idfle",
+			"anim": "idle-loop",
 			"indices": [
 				8,
 				9,
@@ -54,183 +53,204 @@
 				29,
 				30,
 				31
-			]
+			],
+			"name": "-anims/reg/boy trucker idfle"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				0,
 				0
 			],
+			"indices": [
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7
+			],
+			"fps": 24,
+			"anim": "idle-alt",
+			"loop": false,
+			"name": "-anims/reg/boy truck idfle alt"
+		},
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"loop": false,
+			"fps": 24,
 			"anim": "idle-confused",
-			"fps": 24,
-			"name": "-anims/reg/boy trucker distracted idle",
-			"indices": []
+			"indices": [],
+			"name": "-anims/reg/boy trucker distracted idle"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				15,
 				5
 			],
+			"loop": false,
+			"fps": 24,
 			"anim": "singLEFT",
-			"fps": 24,
-			"name": "-anims/reg/boy trucker left",
-			"indices": []
+			"indices": [],
+			"name": "-anims/reg/boy trucker left"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				1,
 				5
 			],
-			"anim": "singDOWN",
+			"loop": false,
 			"fps": 24,
-			"name": "-anims/reg/boy truck down",
-			"indices": []
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "-anims/reg/boy truck down"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				1,
 				3
 			],
-			"anim": "singUP",
+			"loop": false,
 			"fps": 24,
-			"name": "-anims/reg/boy tr up",
-			"indices": []
+			"anim": "singUP",
+			"indices": [],
+			"name": "-anims/reg/boy tr up"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				-8,
 				2
 			],
-			"anim": "singRIGHT",
+			"loop": false,
 			"fps": 24,
-			"name": "-anims/reg/boy trucker roight",
-			"indices": []
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "-anims/reg/boy trucker roight"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				15,
 				5
 			],
-			"anim": "singLEFTmiss",
+			"loop": false,
 			"fps": 24,
-			"name": "-anims/reg/boy trucker miss left",
-			"indices": []
+			"anim": "singLEFTmiss",
+			"indices": [],
+			"name": "-anims/reg/boy trucker miss left"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				1,
 				5
 			],
-			"anim": "singDOWNmiss",
+			"loop": false,
 			"fps": 24,
-			"name": "-anims/reg/boy truck miss down",
-			"indices": []
+			"anim": "singDOWNmiss",
+			"indices": [],
+			"name": "-anims/reg/boy truck miss down"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				1,
 				3
 			],
-			"anim": "singUPmiss",
+			"loop": false,
 			"fps": 24,
-			"name": "-anims/reg/boy truke miss up",
-			"indices": []
+			"anim": "singUPmiss",
+			"indices": [],
+			"name": "-anims/reg/boy truke miss up"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				-8,
 				2
 			],
-			"anim": "singRIGHTmiss",
+			"loop": false,
 			"fps": 24,
-			"name": "-anims/reg/boy trucker miss rigte",
-			"indices": []
+			"anim": "singRIGHTmiss",
+			"indices": [],
+			"name": "-anims/reg/boy trucker miss rigte"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				-1,
 				0
 			],
-			"anim": "singLEFT-confused",
+			"loop": false,
 			"fps": 24,
-			"name": "-anims/reg/boy trucker dist left",
-			"indices": []
+			"anim": "singLEFT-confused",
+			"indices": [],
+			"name": "-anims/reg/boy trucker dist left"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				-2,
 				1
 			],
-			"anim": "singDOWN-confused",
+			"loop": false,
 			"fps": 24,
-			"name": "-anims/reg/boy trucker down diss",
-			"indices": []
+			"anim": "singDOWN-confused",
+			"indices": [],
+			"name": "-anims/reg/boy trucker down diss"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				-1,
 				-1
 			],
-			"anim": "singUP-confused",
+			"loop": false,
 			"fps": 24,
-			"name": "-anims/reg/boy teuck dstr up",
-			"indices": []
+			"anim": "singUP-confused",
+			"indices": [],
+			"name": "-anims/reg/boy teuck dstr up"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				-1,
 				1
 			],
-			"anim": "singRIGHT-confused",
+			"loop": false,
 			"fps": 24,
-			"name": "-anims/reg/boy trucker righte dis",
-			"indices": []
+			"anim": "singRIGHT-confused",
+			"indices": [],
+			"name": "-anims/reg/boy trucker righte dis"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				-14,
 				-2
 			],
-			"anim": "hey",
+			"loop": false,
 			"fps": 24,
-			"name": "-anims/reg/boy trucker hey!",
-			"indices": []
+			"anim": "hey",
+			"indices": [],
+			"name": "-anims/reg/boy trucker hey!"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				0,
 				0
 			],
-			"anim": "startled",
+			"loop": false,
 			"fps": 24,
-			"name": "-anims/reg/boy trucker startled",
-			"indices": []
+			"anim": "startled",
+			"indices": [],
+			"name": "-anims/reg/boy trucker startled"
 		},
 		{
+			"loop": false,
 			"offsets": [
 				1,
 				3
 			],
-			"loop": false,
-			"fps": 24,
 			"anim": "singUP-trans",
-			"indices": [],
-			"name": "-anims/reg/boy tr trans up"
+			"fps": 24,
+			"name": "-anims/reg/boy tr trans up",
+			"indices": []
 		}
 	],
 	"vocals_file": "PlrExpert",

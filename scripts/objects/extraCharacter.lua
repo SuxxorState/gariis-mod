@@ -194,6 +194,7 @@ function onEvent(name, value1, value2, strumTime)
         storedChrs[val1].poseSuffix = value2
     elseif (event == "extra-char-play-anim") then
         callMethod(val2..".playAnim", {value1})
+        setProperty(val2..".holdTimer", 0) --how did i catch this so late in development
         setProperty(val2..".specialAnim", true)
 	elseif (event == "advance-anger") and (tonumber(val2) ~= nil) and not disableBar then
         for chr,_ in pairs(storedChrs) do

@@ -1,7 +1,7 @@
 
 local utils = (require (getVar("folDir").."scripts.backend.utils")):new()
 local closeMode = false
-local canIcon = false
+local canIcon, didIcon = false, false
 function onCreate()
     addLuaScript("scripts/objects/extraCharacter")
     setProperty("skipCountdown", true)
@@ -48,7 +48,7 @@ function onStepHit()
         utils:newCountdown(curBeat)
     end
     if (curStep == 144) then setProperty("hunte.visible", true)
-    elseif (curStep == 208) then canIcon = true
+    elseif (curStep >= 208 and not didIcon) then canIcon = true
     end
 end
 
@@ -66,6 +66,7 @@ function onUpdate()
     if (canIcon) then
         setProperty("iconTimehunte.x", utils:lerp(getProperty("iconTimehunte.x"), 0, 0.1))
         if (getProperty("iconTimehunte.x") > -1) then canIcon = false
+            didIcon = true
             setProperty("iconTimehunte.x", 0)
         end
     end

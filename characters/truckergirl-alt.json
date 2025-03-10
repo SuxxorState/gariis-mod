@@ -1,125 +1,125 @@
 {
 	"animations": [
 		{
-			"loop": false,
 			"offsets": [
 				0,
 				0
 			],
-			"anim": "idle",
+			"loop": false,
 			"fps": 24,
-			"name": "girl alt idle idle",
-			"indices": []
+			"anim": "idle",
+			"indices": [],
+			"name": "girl alt idle idle"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				11,
 				0
 			],
-			"anim": "idle-alt",
+			"loop": false,
 			"fps": 24,
-			"name": "girl alt alt idle idle",
-			"indices": []
+			"anim": "idle-alt",
+			"indices": [],
+			"name": "girl alt alt idle idle"
 		},
 		{
+			"loop": false,
 			"offsets": [
 				87,
 				-16
 			],
-			"loop": false,
-			"fps": 24,
 			"anim": "singLEFT",
-			"indices": [],
-			"name": "girl alt left left"
+			"fps": 24,
+			"name": "girl alt left left",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
 				41,
 				-59
 			],
-			"loop": false,
-			"fps": 24,
 			"anim": "singDOWN",
-			"indices": [],
-			"name": "girl alt down down"
+			"fps": 24,
+			"name": "girl alt down down",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
 				16,
 				24
 			],
-			"loop": false,
-			"fps": 24,
 			"anim": "singUP",
-			"indices": [],
-			"name": "girl alt up up"
+			"fps": 24,
+			"name": "girl alt up up",
+			"indices": []
 		},
 		{
-			"loop": false,
 			"offsets": [
 				52,
 				-7
 			],
-			"anim": "singRIGHT",
+			"loop": false,
 			"fps": 24,
-			"name": "girl alt righhjt",
-			"indices": []
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "girl alt righhjt"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				87,
 				-10
 			],
-			"anim": "singLEFTmiss",
+			"loop": false,
 			"fps": 24,
-			"name": "girl left mis",
-			"indices": []
+			"anim": "singLEFTmiss",
+			"indices": [],
+			"name": "girl left mis"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				43,
 				-59
 			],
-			"anim": "singDOWNmiss",
+			"loop": false,
 			"fps": 24,
-			"name": "girl down mis",
-			"indices": []
+			"anim": "singDOWNmiss",
+			"indices": [],
+			"name": "girl down mis"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				16,
 				26
 			],
-			"anim": "singUPmiss",
+			"loop": false,
 			"fps": 24,
-			"name": "gitl alt mis up",
-			"indices": []
+			"anim": "singUPmiss",
+			"indices": [],
+			"name": "gitl alt mis up"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				52,
 				-7
 			],
-			"anim": "singRIGHTmiss",
+			"loop": false,
 			"fps": 24,
-			"name": "girl alrt rigth mss",
-			"indices": []
+			"anim": "singRIGHTmiss",
+			"indices": [],
+			"name": "girl alrt rigth mss"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				31,
 				1
 			],
-			"anim": "hey",
+			"loop": false,
 			"fps": 24,
-			"name": "girl alt hey hey",
-			"indices": []
+			"anim": "hey",
+			"indices": [],
+			"name": "girl alt hey hey"
 		}
 	],
 	"vocals_file": "",
@@ -137,7 +137,7 @@
 		82
 	],
 	"camera_position": [
-		-50,
+		230,
 		50
 	],
 	"sing_duration": 4,

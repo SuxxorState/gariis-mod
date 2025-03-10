@@ -9,15 +9,15 @@ local categories = {
 }
 local achievements = {
     ["fuzzy-dice-fc"] = {title = "Capicola Gang", description = "100% Clear Fuzzy Dice", iconFile = "fuzzydice", secret = false, gariiPoints = 10},
-    ["fuzzy-dice-ex-fc"] = {title = "All Bark No Bite", description = "100% Clear Fuzzy Dice EX", iconFile = "", secret = true, gariiPoints = 20},
+    ["fuzzy-dice-ex-fc"] = {title = "All Bark No Bite", description = "100% Clear Fuzzy Dice EX", iconFile = "gariimedal", secret = true, gariiPoints = 20},
 
     ["full-house-fc"] = {title = "The Power Of Two", description = "100% Clear Full House", iconFile = "fullhouse", secret = false, gariiPoints = 10},
-    ["full-house-ex-fc"] = {title = "Decked Out", description = "100% Clear Full House EX", iconFile = "", secret = true, gariiPoints = 20},
+    ["full-house-ex-fc"] = {title = "Decked Out", description = "100% Clear Full House EX", iconFile = "goonmedal", secret = true, gariiPoints = 20},
     ["garii-hud-death"] = {title = "KNOCK IT OFF!!!", description = "Die because Garii was messing with your HUD", iconFile = "", secret = false, gariiPoints = 10},
     ["no-pose"] = {title = "Not Feelin' It", description = "Beat Full House without ever hitting a pose note", iconFile = "poseless", secret = false, gariiPoints = 10},
 
     ["episode-ii-fc"] = {title = "Show Off", description = "100% Clear Episode ][ without dying once", iconFile = "episodeii", secret = false, gariiPoints = 25},
-    ["episode-ii-ex-fc"] = {title = "You Made Your Point", description = "100% Clear Episode ][ EX without dying once", iconFile = "", secret = true, gariiPoints = 50},
+    ["episode-ii-ex-fc"] = {title = "You Made Your Point", description = "100% Clear Episode ][ EX without dying once", iconFile = "truckermedal", secret = true, gariiPoints = 50},
     ["story-deaths"] = {title = "The Part Where He Kills You", description = "Experience every possible death Episode ][ has to offer", iconFile = "portal2", secret = false, gariiPoints = 25},
     ["all-achievements"] = {title = "Don't You Have Anything Better to Do?", description = "Unlock every achievement, including this one.", iconFile = "", secret = true, gariiPoints = 20},
 
@@ -26,11 +26,11 @@ local achievements = {
     ["tb-foak"] = {title = "Planet X", description = "Get the highest Five of a Kind you can get in Picture Poker", iconFile = "balatro", secret = false, gariiPoints = 25},
     ["no-fish"] = {title = "Go...Fish?", description = "It doesn't exist. You're hallucinating.", iconFile = "", secret = false, gariiPoints = 10},
 
-    ["stag-quarters"] = {title = "Dollar Fitty", description = "Survive all six quarters at Garii's Manor", iconFile = "", secret = false, gariiPoints = 50},
-    ["no-power-save"] = {title = "Saved By The Bell", description = "Hit the end of a quarter whilst in a blackout", iconFile = "", secret = false, gariiPoints = 25},
-    ["no-doors-save"] = {title = "Lino's Bad Day", description = "Hit the end of a quarter with all three of your doors disabled", iconFile = "", secret = false, gariiPoints = 20},
-    ["the-yapper"] = {title = "Keep Talking and I'll Explode", description = "Skip every Garii broadcast", iconFile = "", secret = false, gariiPoints = 10},
-    ["stag-deaths"] = {title = "Rocket Science", description = "Die to every lethal character at Garii's Manor", iconFile = "", secret = false, gariiPoints = 20},
+    ["stag-quarters"] = {title = "Dollar Fitty", description = "Survive all six quarters at Garii's Manor", iconFile = "garimascot", secret = false, gariiPoints = 50},
+    ["no-power-save"] = {title = "Saved By The Bell", description = "Hit the end of a quarter whilst in a blackout", iconFile = "carvmascot", secret = false, gariiPoints = 25},
+    ["no-doors-save"] = {title = "Lino's Bad Day", description = "Hit the end of a quarter with all three of your doors disabled", iconFile = "linomascot", secret = false, gariiPoints = 20},
+    ["the-yapper"] = {title = "Keep Talking and I'll Explode", description = "Skip every Garii broadcast", iconFile = "garitv", secret = false, gariiPoints = 10},
+    ["stag-deaths"] = {title = "Rocket Science", description = "Die to every lethal character at Garii's Manor", iconFile = "hntemascot", secret = false, gariiPoints = 20},
     --["stag-7-20"] = {title = "7/20 Blazin", description = "Survive Night-mare at Garii's Manor", iconFile = "", secret = false, gariiPoints = 75},
 
     ["bt-simple"] = {title = "Who Put These Here?", description = "Clear your first round.", iconFile = "mine", secret = false, gariiPoints = 10},
@@ -301,11 +301,15 @@ function openGameAchievements(game)
     setProperty("gameSelectBox.alpha", 0)
     quickAddGameSprite("gameSelectBox")
 
+    local testMode = false
     for i,ach in pairs(categories[curSel][2]) do
         local saveShit = getAchievementSave(ach)
         local iconThing = "award"
-        if (checkFileExists("images/"..fold.."icons/"..achievements[ach].iconFile..'.png')) then iconThing = achievements[ach].iconFile end
-        if (saveShit[1] ~= true or saveShit[1] == nil) then iconThing = "lockedach" end
+        if (testMode) then iconThing = achievements[ach].iconFile
+        else
+            if (checkFileExists("images/"..fold.."icons/"..achievements[ach].iconFile..'.png')) then iconThing = achievements[ach].iconFile end
+            if (saveShit[1] ~= true or saveShit[1] == nil) then iconThing = "lockedach" end
+        end
         makeLuaSprite("gameAchievement"..i, fold.."icons/"..iconThing, offset.x + 56 + (((i-1)%8) * 99), offset.y + 193.5 + (math.floor((i-1)/8) * 100))
         setProperty("gameAchievement"..i..".antialiasing", getProperty("gameAchievement"..i..".width") >= 64)
         setGraphicSize("gameAchievement"..i, 64, 64)

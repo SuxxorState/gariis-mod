@@ -1,10 +1,14 @@
 local utils = (require (getVar("folDir").."scripts.backend.utils")):new()
 local achievements = {
-    ["fuzzy-dice-fc"] = {title = "Capicola Gang", description = "100% Clear Fuzzy Dice"},                                                   --done
-    ["full-house-fc"] = {title = "The Power Of Two", description = "100% Clear Full House"},                                                --done
+    ["fuzzy-dice-fc"] = {title = "Capicola Gang", description = "100% Clear Fuzzy Dice"},
+    ["fuzzy-dice-ex-fc"] = {title = "All Bark No Bite", description = "100% Clear Fuzzy Dice EX"},
+    ["full-house-fc"] = {title = "The Power Of Two", description = "100% Clear Full House"},
+    ["full-house-ex-fc"] = {title = "Decked Out", description = "100% Clear Full House EX"},
     ["episode-ii-fc"] = {title = "Show Off", description = "100% Clear Episode ][ without dying once"},
+    ["episode-ii-ex-fc"] = {title = "You Made Your Point", description = "100% Clear Episode ][ EX without dying once"},
     ["story-deaths"] = {title = "The Part Where He Kills You", description = "Experience every possible death Episode ][ has to offer"},
     ["no-pose"] = {title = "Not Feelin' It", description = "Beat Full House without ever hitting a pose note"},                             --done
+    ["garii-hud-death"] = {title = "KNOCK IT OFF!!!", description = "Die because Garii was messing with your HUD"},
     ["100k-chips"] = {title = "The Big Cheese", description = "Get one hundred thousand or more poker chips in the casino"},                --done
     ["true-bjs"] = {title = "The House Is Cheating!", description = "End in a draw with both you and the house having a true blackjack"},   --done
     ["tb-foak"] = {title = "Planet X", description = "Get the highest Five of a Kind you can get in Picture Poker"},                        --done
@@ -25,6 +29,7 @@ local achievements = {
     ["fl-16levels"] = {title = "Salad Dressing", description = "Beat 16 Levels"},                                                           --done
     ["fl-64levels"] = {title = "Sandwich Tower", description = "Beat 64 Levels"},                                                           --done
     ["fl-deaths"] = {title = "Knuckle Sandwich", description = "Die to every fuzzling as both Boy and Girl"},
+    ["all-achievements"] = {title = "Don't You Have Anything Better to Do?", description = "Unlock every achievement, including this one."},
 }
 local ratingAccumulation = {0,0,0,0}
 local keyPresses = 0
@@ -44,7 +49,6 @@ function noteMissPress()
 end
 
 function onCreate()
-
 end
 
 function onEndSong()

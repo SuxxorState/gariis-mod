@@ -2101,7 +2101,7 @@
 					[
 						77542.0168067227,
 						2,
-						508,
+						480,
 						"Hunte Note"
 					],
 					[
@@ -5121,6 +5121,26 @@
 				]
 			],
 			[
+				61512.6050420168,
+				[
+					[
+						"Play Animation",
+						"throwMIC",
+						"dad"
+					]
+				]
+			],
+			[
+				62184.8739495799,
+				[
+					[
+						"Extra Char Play Anim",
+						"catchMIC",
+						"hunte"
+					]
+				]
+			],
+			[
 				62268.9075630252,
 				[
 					[
@@ -5144,14 +5164,14 @@
 						"-nomic"
 					],
 					[
-						"Extra Char Alt Idle",
-						"hunte",
-						""
-					],
-					[
 						"Alt Idle Animation",
 						"gf",
 						"-alt"
+					],
+					[
+						"Extra Char Alt Idle",
+						"hunte",
+						""
 					]
 				]
 			],
@@ -5161,22 +5181,12 @@
 					[
 						"Alt Idle Animation",
 						"dad",
-						"-alt"
+						"-nomic-alt"
 					],
 					[
 						"Alt Idle Animation",
 						"gf",
 						""
-					],
-					[
-						"Extra Char Alt Idle",
-						"hunte",
-						"-nomic-alt"
-					],
-					[
-						"Extra Char Alt Anims",
-						"hunte",
-						"-nomic"
 					]
 				]
 			],
@@ -5191,17 +5201,42 @@
 					[
 						"Alt Idle Animation",
 						"dad",
-						""
+						"-nomic"
 					]
 				]
 			],
 			[
-				82431.7226890756,
+				78151.2605042017,
 				[
 					[
-						"Play Diff-Dependent Anim",
-						"yeah,,what",
-						"gf"
+						"Extra Char Play Anim",
+						"throwMIC",
+						"hunte"
+					],
+					[
+						"Extra Char Alt Idle",
+						"hunte",
+						"-nomic"
+					],
+					[
+						"Extra Char Alt Anims",
+						"hunte",
+						"-nomic"
+					]
+				]
+			],
+			[
+				81680.6722689076,
+				[
+					[
+						"Play Animation",
+						"catchMIC",
+						"dad"
+					],
+					[
+						"Alt Idle Animation",
+						"dad",
+						""
 					]
 				]
 			],
@@ -5217,6 +5252,11 @@
 						"Extra Char Alt Idle",
 						"hunte",
 						"-nomic-alt"
+					],
+					[
+						"Play Diff-Dependent Anim",
+						"yeah,,what",
+						"gf"
 					]
 				]
 			],
@@ -5246,7 +5286,7 @@
 					[
 						"Extra Char Alt Idle",
 						"hunte",
-						"-alt"
+						"-nomic-alt"
 					]
 				]
 			],
@@ -5291,7 +5331,7 @@
 					[
 						"Extra Char Alt Idle",
 						"hunte",
-						""
+						"-nomic"
 					]
 				]
 			],
@@ -5321,7 +5361,7 @@
 					[
 						"Extra Char Alt Idle",
 						"hunte",
-						"-alt"
+						"-nomic-alt"
 					],
 					[
 						"Alt Idle Animation",
@@ -5567,6 +5607,11 @@
 						"Alt Idle Animation",
 						"dad",
 						""
+					],
+					[
+						"Extra Char Alt Idle",
+						"hunte",
+						"-nomic"
 					]
 				]
 			]

@@ -1,9 +1,9 @@
 {
 	"name": "Garii's Mod",
-	"description": "Fight Garii in this one song mod!",
-	"restart":false,
+	"description": "Welcome to the BORDERLINE universe, where bullshit happens constantly, and comical villains are commonplace. Fight against Garii in his song, and find the many secrets and easter eggs hidden throughout!",
+	"restart": false,
 	"runsGlobally": false,
 	"color": [197, 75, 75],
 	"discordRPC": "1250939326112469083",
-	"iconFramerate": 10
+	"iconFramerate": 2
 }
