@@ -1,6 +1,6 @@
 local utils = (require (getVar("folDir").."scripts.backend.utils")):new()
 local levelEnds = {["full-house"] = true} -- for story mode and allat
-local songArtists = {["fuzzy-dice"] = "Vruzzzen", ["dis-track"] = "sock.clip", ["full-house"] = "Vruzzzen", ["twenty-sixteen"] = "George"}
+local songArtists = {["fuzzy-dice"] = "Vruzzzen", ["dis-track"] = "sock.clip", ["full-house"] = "Vruzzzen", ["twenty-sixteen"] = "Suxxor"}
 local musicDelays = {["perfect"] = 95/24, ["excellent"] = 0, ["great"] = 5/24, ["good"] = 3/24, ["shit"] = 2/24}
 local sauces = {"Whire's Gentle Zest", "Hoppin Honey Mustard", "Outburst", "Garden Grown Habanero", "Shit The Bed", "Solar Flare", "Suxxor's Secret Sauce"}
 local resultsMusic = "results/results"
@@ -30,13 +30,23 @@ end
 
 function onEndSong()
 	if ((not botPlay) and (not practice) and canUpdate) then
-		if (not isStoryMode or levelEnds[utils.songNameFmt]) and (not inResults) then 
-			openCustomSubstate("resultsmenu", false)
-			inResults = true
-			return Function_Stop;
+		if ((stringEndsWith(version, "1.0-prerelease") or stringEndsWith(version, "1.0") or stringStartsWith(version, "1.0.1") or stringStartsWith(version, "1.0.2") or stringStartsWith(version, "1.0.2h"))) then --workaround for the story mode bug that SHOULD HAVE BEEN NOTICED PRIOR TO 1.0'S RELEASE.
+			if (isStoryMode and week == "garii" and utils.songNameFmt == "fuzzy-dice") then
+				loadSong("Full House")
+				utils:runHaxeCode([[PlayState.storyPlaylist = ["Full House"];]])
+				updateCampaignStats()
+				calculateEverything()
+				return Function_Stop;
+			end
+		else
+			if (not isStoryMode or levelEnds[utils.songNameFmt]) and (not inResults) then
+				openCustomSubstate("resultsmenu", false)
+				inResults = true
+				return Function_Stop;
+			end
+			updateCampaignStats()
+			calculateEverything()
 		end
-		updateCampaignStats()
-		calculateEverything()
 	elseif (canUpdate) then utils:exitToMenu()
 		return Function_Stop;
 	end
@@ -88,7 +98,7 @@ function onCustomSubstateCreate(tag)
 		calculateEverything()
 		for i=0,2 do
 			makeLuaSprite('bgResults'..i, 'pause/pausebg'..i, 0, 0)
-			setObjectCamera('bgResults'..i, 'other')
+			utils:setObjectCamera('bgResults'..i, 'other')
 			addLuaSprite('bgResults'..i)
 			setProperty('bgResults'..i..'.alpha', 0)
 			doTweenAlpha('bgResults'..i, 'bgResults'..i, 0.5, 2.5, 'circOut')
@@ -101,56 +111,56 @@ function onCustomSubstateCreate(tag)
 		setTextBorder('sickTxt', 2, '000000')
 		addLuaText('sickTxt')
 		setTextSize('sickTxt', 64)
-		setObjectCamera('sickTxt', 'other')
+		utils:setObjectCamera('sickTxt', 'other')
 
 		makeLuaText('goodTxt', "Goods: "..ratingAccumulation[2], 0, 20, 75)
 		setTextFont('goodTxt', "Lasting Sketch.ttf")
 		setTextBorder('goodTxt', 2, '000000')
 		addLuaText('goodTxt')
 		setTextSize('goodTxt', 64)
-		setObjectCamera('goodTxt', 'other')
+		utils:setObjectCamera('goodTxt', 'other')
 
 		makeLuaText('badTxt', "Bads: "..ratingAccumulation[3], 0, 20, 150)
 		setTextFont('badTxt', "Lasting Sketch.ttf")
 		setTextBorder('badTxt', 2, '000000')
 		addLuaText('badTxt')
 		setTextSize('badTxt', 64)
-		setObjectCamera('badTxt', 'other')
+		utils:setObjectCamera('badTxt', 'other')
 
 		makeLuaText('shitTxt', "Shits: "..ratingAccumulation[4], 0, 20, 225)
 		setTextFont('shitTxt', "Lasting Sketch.ttf")
 		setTextBorder('shitTxt', 2, '000000')
 		addLuaText('shitTxt')
 		setTextSize('shitTxt', 64)
-		setObjectCamera('shitTxt', 'other')
+		utils:setObjectCamera('shitTxt', 'other')
 
 		makeLuaText('missTxt', "Misses: "..combinedMiss, 0, 20, 300)
 		setTextFont('missTxt', "Lasting Sketch.ttf")
 		setTextBorder('missTxt', 2, '000000')
 		addLuaText('missTxt')
 		setTextSize('missTxt', 64)
-		setObjectCamera('missTxt', 'other')
+		utils:setObjectCamera('missTxt', 'other')
 
 		makeLuaText('scoreTxt', "Score: "..campScr, 0, 20, screenHeight - 210)
 		setTextFont('scoreTxt', "Lasting Sketch.ttf")
 		setTextBorder('scoreTxt', 2, '000000')
 		addLuaText('scoreTxt')
 		setTextSize('scoreTxt', 64)
-		setObjectCamera('scoreTxt', 'other')
+		utils:setObjectCamera('scoreTxt', 'other')
 
 		makeLuaText('multTxt', "Diff Multiplier: "..scoreMulti.."x", 0, 20, screenHeight - 160)
 		setTextFont('multTxt', "Lasting Sketch.ttf")
 		setTextBorder('multTxt', 2, '000000')
 		addLuaText('multTxt')
 		setTextSize('multTxt', 64)
-		setObjectCamera('multTxt', 'other')
+		utils:setObjectCamera('multTxt', 'other')
 
 		makeLuaText('finalScoreTxt', "FINAL SCORE: "..math.floor(campScr * scoreMulti), 0, 20, screenHeight - 110)
 		setTextFont('finalScoreTxt', "Lasting Sketch.ttf")
 		setTextBorder('finalScoreTxt', 2, '000000')
 		addLuaText('finalScoreTxt')
 		setTextSize('finalScoreTxt', 96)
-		setObjectCamera('finalScoreTxt', 'other')
+		utils:setObjectCamera('finalScoreTxt', 'other')
 		if not (isStoryMode) then setProperty("songScore", math.floor(campScr * scoreMulti)) end
 
 		local curArtist = songArtists[utils.songNameFmt] or "unknown"
@@ -159,9 +169,9 @@ function onCustomSubstateCreate(tag)
 		setTextBorder('songStatTxt', 2, '000000')
 		addLuaText('songStatTxt')
 		setTextSize('songStatTxt', 48)
-		setObjectCamera('songStatTxt', 'other')
+		utils:setObjectCamera('songStatTxt', 'other')
 
-		runHaxeCode([[
+		utils:runHaxeCode([[
 			import backend.WeekData;
 			if (PlayState.isStoryMode) {
 				PlayState.storyDifficulty = 0;
@@ -180,7 +190,7 @@ function onCustomSubstateCreate(tag)
 		setProperty("songStatTxt.x", screenWidth - (getProperty("songStatTxt.width") + 20))
 
 		makeLuaSprite('bfFinal', 'results/bf'..finalRanking, 0, 0)
-		setObjectCamera('bfFinal', 'other')
+		utils:setObjectCamera('bfFinal', 'other')
 		addLuaSprite('bfFinal')
 
 		percentTarget = ratingPercent * 100
@@ -193,7 +203,7 @@ function onCustomSubstateCreate(tag)
 		addLuaText('clearPercTxt')
 		screenCenter('clearPercTxt')
 		setTextSize('clearPercTxt', 128)
-		setObjectCamera('clearPercTxt', 'other')
+		utils:setObjectCamera('clearPercTxt', 'other')
 
 		runTimer("startFuckin", 37 / 24)
 		runTimer("startMusic", musicDelays[finalRanking:lower()] or 0)
@@ -220,7 +230,7 @@ end
 
 function onCustomSubstateUpdate(tag)
     if tag == "resultsmenu" and canUpdate then
-		runHaxeCode([[
+		utils:runHaxeCode([[
 			FlxG.sound.music.pause(); 
 			game.vocals.pause();
 			game.opponentVocals.pause();

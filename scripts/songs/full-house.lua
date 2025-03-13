@@ -14,14 +14,14 @@ function onCreate()
     
     makeLuaSprite('blackoutSpr','gameOver/black-paper',-10,-10)
     setGraphicSize("blackoutSpr", 1300, 740)
-    setObjectCamera('blackoutSpr','other')
+    utils:setObjectCamera('blackoutSpr','other')
     setProperty('blackoutSpr.visible', false)
     addLuaSprite('blackoutSpr')
 
     makeLuaSprite('over','gameOver/not-black-paper',-10,-10)
     setGraphicSize("over", 1300, 740)
 	setBlendMode('over', "multiply")
-    setObjectCamera('over','other')
+    utils:setObjectCamera('over','other')
     setProperty('over.visible', false)
     addLuaSprite('over')
 end

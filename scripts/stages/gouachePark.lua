@@ -74,12 +74,12 @@ function onCreatePost()
 	scaleObject('bg', 1.15, 1)
 	setScrollFactor('bg', 0, 0.5)
 	setBlendMode('bg', "multiply")
-	setObjectCamera('bg','other')
+	utils:setObjectCamera('bg','other')
 	addLuaSprite('bg')
 
 	for i=0,2 do
 		makeLuaSprite('cr'..i,'bg/crumple'..i,0,0)
-		setObjectCamera('cr'..i,'other')
+		utils:setObjectCamera('cr'..i,'other')
 		setProperty('cr'..i..'.visible', i==0)
 		addLuaSprite('cr'..i)
 	end

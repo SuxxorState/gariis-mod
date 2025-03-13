@@ -15,7 +15,7 @@ function startMenu()
     local xylist = {{0,0}, {834,126}, {0,205}, {353,203}, {0,0}, {379,515}, {0,478}, {1057,0}, {387,-194}}
     for i,spr in ipairs({"backlayer", "treesglow", "icparlorglow", "skobeloffglow", "frontlayer", "bushglow", "exitsignglow", "gariimanorglow", "sinopiatext"}) do
         makeLuaSprite(spr, "minigames/sinopia/"..spr, xylist[i][1], xylist[i][2])
-        setObjectCamera(spr, "hud")
+        utils:setObjectCamera(spr, "hud")
         addLuaSprite(spr)
         if (stringEndsWith(spr:lower(), "glow")) then setProperty(spr..".alpha", 0.5) end
         setProperty(spr..".visible", not stringEndsWith(spr:lower(), "glow"))

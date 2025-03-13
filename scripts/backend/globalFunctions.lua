@@ -30,7 +30,7 @@ end
 function doubleCheckWeeks()
     if not isStoryMode then return end --these functions aren't needed for freeplay
     if (week == "garii" and utils.songNameFmt == "fuzzy-dice") then
-        runHaxeCode([[
+        utils:runHaxeCode([[
             PlayState.storyPlaylist = ["Fuzzy Dice", "Full House"];
         ]])
     end
@@ -95,7 +95,7 @@ function fixTheDamnStrums()
             end
         end
     end
-    runHaxeCode([[
+    utils:runHaxeCode([[
         for (note in game.unspawnNotes) {
             note.multAlpha = 1;
             if (note.noteType == "Pose Note" || note.noteType == "Pose Note Filler") {
@@ -190,7 +190,7 @@ function onUpdate(elapsed)
                 os.execute("start https://drive.google.com/drive/folders/1HmqI39zEi19OY3gh6a1BWcfmYIm7SXrQ?usp=sharing")
                 exitSong()
             else
-                runHaxeCode([[
+                utils:runHaxeCode([[
                     import backend.Highscore;
                     import backend.Song;
                     PlayState.isStoryMode = false;
@@ -266,7 +266,7 @@ end
 
 function goodNoteHit() --this detects when bf SHOULD be dancing but isnt (due to gf singing whilst he was singing) and forces him to do so when he's stuck in a pose
     if curBeat % 2 == 0 then
-        runHaxeCode([[
+        utils:runHaxeCode([[
             import psychlua.LuaUtils;
             if (boyfriend.holdTimer > Conductor.stepCrochet * (0.0011 #if FLX_PITCH / FlxG.sound.music.pitch #end) * boyfriend.singDuration) {
                 boyfriend.dance();
@@ -287,14 +287,14 @@ function onCustomSubstateCreate(tag)
 
         makeLuaSprite('garError','error',0,0)
         addLuaSprite('garError', true)
-        setObjectCamera('garError', 'other')
+        utils:setObjectCamera('garError', 'other')
 
         makeLuaText('errorTxt', "You have a script that's messing with our scripts!\nWe recommend turning off any mod scripts that edit the window text before resuming.", 1000, 12, 600)
         setTextFont('errorTxt', "Lasting Sketch.ttf")
 		setTextBorder('errorTxt', 1, '000000')
 		addLuaText('errorTxt')
 		setTextSize('errorTxt', 32)
-		setObjectCamera('errorTxt', 'other')
+		utils:setObjectCamera('errorTxt', 'other')
 		screenCenter('errorTxt', 'x')
     elseif tag == "gameover" then
         gameovered = true
@@ -310,7 +310,7 @@ function onCustomSubstateUpdate(tag)
 end
 
 function onDestroy()
-    runHaxeCode([[
+    utils:runHaxeCode([[
         import Main;
         import backend.ClientPrefs;
         Main.fpsVar.visible = ClientPrefs.data.showFPS;

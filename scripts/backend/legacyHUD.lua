@@ -21,13 +21,13 @@ function onCreatePost() --in general this hud kinda fucking sucks however thats 
     if (downscroll) then barpos = {100, screenHeight - 85} end
     makeAnimatedLuaSprite("hpbarback", hudFld.."hudnums", barpos[1]-10, barpos[2])
     addAnimationByPrefix("hpbarback", "reg" ,"hp bar", 24, true)
-    setObjectCamera("hpbarback", 'hud')
+    utils:setObjectCamera("hpbarback", 'hud')
     setProperty("hpbarback.flipX", downscroll)
     addLuaSprite("hpbarback")
     
     makeAnimatedLuaSprite("hpbarfill", hudFld.."hudnums", barpos[1], barpos[2]-4)
     addAnimationByPrefix("hpbarfill", "reg" ,"bar fill", 24, true)
-    setObjectCamera("hpbarfill", 'hud')
+    utils:setObjectCamera("hpbarfill", 'hud')
     setProperty("hpbarfill.flipX", downscroll)
     addLuaSprite("hpbarfill")
 
@@ -45,25 +45,25 @@ function onCreatePost() --in general this hud kinda fucking sucks however thats 
                 addAnimationByPrefix("hudnumstc"..i, j.."-"..k, numnames[j+1]..k, 24, true)
             end
         end
-        setObjectCamera("hudnumdyn"..i, 'hud')
-        setObjectCamera("hudnumstc"..i, 'hud')
+        utils:setObjectCamera("hudnumdyn"..i, 'hud')
+        utils:setObjectCamera("hudnumstc"..i, 'hud')
         addLuaSprite("hudnumdyn"..i)
         addLuaSprite("hudnumstc"..i)
     end
         
     makeAnimatedLuaSprite("hudlbl", hudFld.."fishbones", (hpx - ((#maxnum * 2)+3) * 25), hpy)
     addAnimationByPrefix("hudlbl", "reg" ,"hp text", 24, true)
-    setObjectCamera("hudlbl", 'hud')
+    utils:setObjectCamera("hudlbl", 'hud')
     addLuaSprite("hudlbl")
 
     makeAnimatedLuaSprite("hudnumsls", hudFld.."fishbones", (hpx - ((#maxnum+1) * 25)) + 5, hpy)
     addAnimationByPrefix("hudnumsls", "reg" ,"slash", 24, true)
-    setObjectCamera("hudnumsls", 'hud')
+    utils:setObjectCamera("hudnumsls", 'hud')
     addLuaSprite("hudnumsls")
 
     makeAnimatedLuaSprite("scrtxt", hudFld.."fishbones", screenWidth - 400, 10)
     addAnimationByPrefix("scrtxt", "reg" ,"score", 24, true)
-    setObjectCamera("scrtxt", 'hud')
+    utils:setObjectCamera("scrtxt", 'hud')
     --addLuaSprite("scrtxt")
     
     makeAnimatedLuaSprite("scrnum0", hudFld.."fishbones", screenWidth - 285, 10)
@@ -73,7 +73,7 @@ function onCreatePost() --in general this hud kinda fucking sucks however thats 
     end
     addAnimationByPrefix("scrnum0", "-" ,"negative", 24, true)
     playAnim("scrnum0", "0")
-    setObjectCamera("scrnum0", 'hud')
+    utils:setObjectCamera("scrnum0", 'hud')
     --addLuaSprite("scrnum0")
 
     local bigframe = 0
@@ -90,7 +90,7 @@ function onCreatePost() --in general this hud kinda fucking sucks however thats 
         playAnim("soul"..i, "reg")
         if (getProperty("soul"..i..".frameHeight") > bigframe) then bigframe = getProperty("soul"..i..".frameHeight") end
         playAnim("soul"..i, "0")
-        setObjectCamera("soul"..i, 'hud')
+        utils:setObjectCamera("soul"..i, 'hud')
         addLuaSprite("soul"..i)
     end
     for i = 1,maxsouls do
@@ -100,7 +100,7 @@ function onCreatePost() --in general this hud kinda fucking sucks however thats 
     if (downscroll) then comboy = souly + 60 end
     makeAnimatedLuaSprite("combolbl", hudFld.."fishbones", (screenWidth - 305) + 25, comboy)
     addAnimationByPrefix("combolbl", "reg" ,"hits", 24, true)
-    setObjectCamera("combolbl", 'hud')
+    utils:setObjectCamera("combolbl", 'hud')
     addLuaSprite("combolbl")
 
     setProperty("iconP1.flipX", not downscroll)
@@ -138,7 +138,7 @@ function onRecalculateRating()
                 local numnames = {"zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine"}
                 addAnimationByPrefix("scrnum"..(i-1), ""..j ,numnames[j+1].."1", 24, true)
             end
-            setObjectCamera("scrnum"..(i-1), 'hud')
+            utils:setObjectCamera("scrnum"..(i-1), 'hud')
             --addLuaSprite("scrnum"..(i-1))
         end
         playAnim("scrnum"..(i-1), ""..scrstr[i])
@@ -170,7 +170,7 @@ function onRecalculateRating()
                         addAnimationByPrefix("comnum"..(i-1), j.."-"..k, numnames[j+1]..k, 24, true)
                     end
                 end
-                setObjectCamera("comnum"..(i-1), 'hud')
+                utils:setObjectCamera("comnum"..(i-1), 'hud')
                 addLuaSprite("comnum"..(i-1))
             end
             playAnim("comnum"..(i-1), ""..comstr[i].."-"..getRandomInt(1,3))

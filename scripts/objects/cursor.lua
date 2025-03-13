@@ -10,7 +10,7 @@ function initCursor()
     end
     addAnimationByPrefix('gariiCursor', "clickstart", "cursorclickstart", 24, false) 
     playAnim("gariiCursor", "idle")
-    setObjectCamera('gariiCursor', 'other')
+    utils:setObjectCamera('gariiCursor', 'other')
     addLuaSprite('gariiCursor', true)
 end
 

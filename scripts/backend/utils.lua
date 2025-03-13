@@ -47,20 +47,18 @@ function Utils:dirFileList(dir)
 end
 
 function Utils:enterOptions()
-    if (stringStartsWith(version, "1.0.") or stringStartsWith(version, "0.7")) then
-        runHaxeCode([[
-            import options.OptionsState;
-            import backend.MusicBeatState;
-            game.paused = true;
-            game.vocals.volume = 0;
-            MusicBeatState.switchState(new OptionsState());
-            if (ClientPrefs.data.pauseMusic != 'None') {
-                FlxG.sound.playMusic(Paths.sound(Paths.formatToSongPath("pause/pit-stop")), 0);
-                FlxTween.tween(FlxG.sound.music, {volume: 1}, 0.8);
-            }
-            OptionsState.onPlayState = true;
-        ]])
-    end
+    Utils:runHaxeCode([[
+        import options.OptionsState;
+        import backend.MusicBeatState;
+        game.paused = true;
+        game.vocals.volume = 0;
+        MusicBeatState.switchState(new OptionsState());
+        if (ClientPrefs.data.pauseMusic != 'None') {
+            FlxG.sound.playMusic(Paths.sound(Paths.formatToSongPath("pause/pit-stop")), 0);
+            FlxTween.tween(FlxG.sound.music, {volume: 1}, 0.8);
+        }
+        OptionsState.onPlayState = true;
+    ]])
 end
 
 
@@ -304,7 +302,7 @@ end
 
 function makeCountSpr(count)  
     makeLuaSprite('count'..count, "borderlineUI/"..count:lower(),0,0)
-    setObjectCamera('count'..count, 'hud')
+    Utils:setObjectCamera('count'..count, 'hud')
     screenCenter('count'..count, 'xy')
     addLuaSprite('count'..count)
     doTweenAlpha('count'..count, 'count'..count, 0, 60 / curBpm, 'cubeInOut')
@@ -344,17 +342,27 @@ function Utils:makeBlankBG(name, width,height, colour, cam)
 	setScrollFactor(name, 0, 0)
 	scaleObject(name, width,height)
 	screenCenter(name)
-    if (cam ~= nil) then setObjectCamera(name, cam) end
+    if (cam ~= nil) then Utils:setObjectCamera(name, cam) end
     addLuaSprite(name)
 end
 
-function Utils:setObjectCam(spr, cam) --why do i have to do this period psych engine fix your shit i hate you
-    local camerafix = ""
-    if (cam:lower() == "camhud" or cam:lower() == "hud") then camerafix = "camHUD"
-    elseif (cam:lower() == "camother" or cam:lower() == "other") then camerafix = "camOther"
-    else camerafix = "camGame"
+function Utils:setObjectCamera(spr, cam) --why do i have to do this period psych engine stay consistent in your fucking updates i hate you
+    if (version == "1.0" or version == "1.0-prerelease") then
+        local camerafix = ""
+        if (cam:lower() == "camhud" or cam:lower() == "hud") then camerafix = "camHUD"
+        elseif (cam:lower() == "camother" or cam:lower() == "other") then camerafix = "camOther"
+        else camerafix = "camGame"
+        end
+        setProperty(spr..".camera", instanceArg(camerafix), false, true)
+    else setObjectCamera(spr, cam)
     end
-    setProperty(spr..".camera", instanceArg(camerafix), false, true)
+end
+
+function Utils:runHaxeCode(code, args, funcs, funcArgs)
+    if (version == "1.0" or version == "1.0-prerelease") then
+        Utils:trc("utils: Failed to run haxe code. v1.0 sucks lole!", 3)
+    else runHaxeCode(code, args, funcs, funcArgs)
+    end
 end
 
 function Utils:copyTable(t)

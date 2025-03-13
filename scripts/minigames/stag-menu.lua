@@ -21,7 +21,7 @@ function startMinigame()
         addOffset('foyerDoor', ""..i, anim[2], anim[3])
     end
     playAnim("foyerDoor", "idle")
-    setObjectCamera('foyerDoor', 'other')
+    utils:setObjectCamera('foyerDoor', 'other')
     addLuaSprite('foyerDoor')
 
     quickAddSpr("foyerRoom","room", 0,0)
@@ -53,7 +53,7 @@ function quickAddSpr(name, file, daX, daY, sprVisible, sprAlpha)
     if (sprVisible == nil) then sprVisible = true end
     if (sprAlpha == nil) then sprAlpha = 1 end
     makeLuaSprite(name,fldrassts..file,daX,daY)
-    setObjectCamera(name, 'other')
+    utils:setObjectCamera(name, 'other')
     setProperty(name..".visible", sprVisible)
     setProperty(name..".alpha", sprAlpha)
     addLuaSprite(name) --have to set it to true or else 1 singular thing breaks </3

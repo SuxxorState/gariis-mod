@@ -74,12 +74,12 @@ function startMinigame()
     makeLuaSprite("fuzzMap", fldr.."map", gameOffsets.x, gameOffsets.y)
     setProperty("fuzzMap.antialiasing", false)
     setProperty("fuzzMap.color", getColorFromHex(levelColour))
-    setObjectCamera("fuzzMap", "hud")
+    utils:setObjectCamera("fuzzMap", "hud")
     addLuaSprite("fuzzMap")
 
     makeLuaSprite("ghostDoor", "", gameOffsets.x + 104, gameOffsets.y + 93)
     makeGraphic("ghostDoor", 16,2, "FFFFFF")
-    setObjectCamera("ghostDoor", "hud")
+    utils:setObjectCamera("ghostDoor", "hud")
     addLuaSprite("ghostDoor")
 
     for _,fuzz in pairs(ghostList) do
@@ -92,7 +92,7 @@ function startMinigame()
         end
         playAnim(fuzz, fuzz.."-right")
         setProperty(fuzz..".antialiasing", false)
-        setObjectCamera(fuzz, "hud")
+        utils:setObjectCamera(fuzz, "hud")
         addLuaSprite(fuzz, true)
     end
 
@@ -108,7 +108,7 @@ function startMinigame()
     addAnimationByPrefix("truckPlayer", "idle-down-start", "idle down")
     addOffset("truckPlayer", "idle-down-start", 8,4)
     setProperty("truckPlayer.antialiasing", false)
-    setObjectCamera("truckPlayer", "hud")
+    utils:setObjectCamera("truckPlayer", "hud")
     addLuaSprite("truckPlayer", true)
     
     font:createNewText("levelTxt", gameOffsets.x + 24, gameOffsets.y - 24, "LEVEL "..curLevel, "left", "FFFFFF", "hud")
@@ -119,7 +119,7 @@ function startMinigame()
     updateLives(false)
     
     makeLuaSprite("bnyuBorder", fldr.."border", 0, 0)
-    setObjectCamera("bnyuBorder", "other")
+    utils:setObjectCamera("bnyuBorder", "other")
     addLuaSprite("bnyuBorder", true)
 
     runTimer("blinkLoop", 0.2)
@@ -146,7 +146,7 @@ function reloadMap() --hopefully seperating this as its own function reduces a b
     addAnimationByPrefix("picnicFruit", "idle", curFruit)
     setProperty("picnicFruit.antialiasing", false)
     setProperty("picnicFruit.visible", false)
-    setObjectCamera("picnicFruit", "hud")
+    utils:setObjectCamera("picnicFruit", "hud")
     addLuaSprite("picnicFruit")
     setObjectOrder("picnicFruit", getObjectOrder("truckPlayer"))
     updateFruitIndis()
@@ -162,7 +162,7 @@ function reloadMap() --hopefully seperating this as its own function reduces a b
         addAnimationByPrefix("fruitPoint"..i, "idle", font:sheetName(utils:numToStr(fruitPoints[curFruit])[i]))
         setProperty("fruitPoint"..i..".antialiasing", false)
         setProperty("fruitPoint"..i..".visible", false)
-        setObjectCamera("fruitPoint"..i, "hud")
+        utils:setObjectCamera("fruitPoint"..i, "hud")
         addLuaSprite("fruitPoint"..i)
         setObjectOrder("fruitPoint"..i, getObjectOrder("truckPlayer"))
     end
@@ -177,14 +177,14 @@ function reloadMap() --hopefully seperating this as its own function reduces a b
                 removeLuaSprite("pellet"..x.." "..y)
                 makeLuaSprite("pellet"..x.." "..y, "", gameOffsets.x + (x*8) + 3, gameOffsets.y + (y * 8) + 3)
                 makeGraphic("pellet"..x.." "..y, 2, 2, "FFFFFF")
-                setObjectCamera("pellet"..x.." "..y, "hud")
+                utils:setObjectCamera("pellet"..x.." "..y, "hud")
                 addLuaSprite("pellet"..x.." "..y)
                 setObjectOrder("pellet"..x.." "..y, getObjectOrder("truckPlayer"))
                 maxPellets = maxPellets + 1
             elseif (squ == 3) then
                 removeLuaSprite("energizer"..x.." "..y)
                 makeLuaSprite("energizer"..x.." "..y, fldr.."energizer", gameOffsets.x + (x*8), gameOffsets.y + (y * 8))
-                setObjectCamera("energizer"..x.." "..y, "hud")
+                utils:setObjectCamera("energizer"..x.." "..y, "hud")
                 setProperty("energizer"..x.." "..y..".antialiasing", false)
                 addLuaSprite("energizer"..x.." "..y)
                 setObjectOrder("energizer"..x.." "..y, getObjectOrder("truckPlayer"))
@@ -360,7 +360,7 @@ function updateLives(extra)
         if ((not luaSpriteExists("life"..i)) and lives > i) then
             makeLuaSprite("life"..i, fldr..plrChar.."-life", gameOffsets.x + (i * 16), gameOffsets.y + (31*8))
             setProperty("life"..i..".antialiasing", false)
-            setObjectCamera("life"..i, "hud")
+            utils:setObjectCamera("life"..i, "hud")
             addLuaSprite("life"..i)
             if (extra) then runTimer("lifeFlash"..i, 0.25, 8) end
         elseif (luaSpriteExists("life"..i) and lives <= i) then 
@@ -376,7 +376,7 @@ function updateFruitIndis()
         makeAnimatedLuaSprite("fruitDisp"..i, fldr.."fruits", gameOffsets.x + (210 - (i*16)), gameOffsets.y + (31*8))
         addAnimationByPrefix("fruitDisp"..i, "idle", fruitDisp[i])
         setProperty("fruitDisp"..i..".antialiasing", false)
-        setObjectCamera("fruitDisp"..i, "hud")
+        utils:setObjectCamera("fruitDisp"..i, "hud")
         addLuaSprite("fruitDisp"..i)
     end
 end

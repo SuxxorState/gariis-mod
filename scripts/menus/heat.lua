@@ -150,7 +150,7 @@ end
 
 function quickAddSprite(spr)
 	addLuaSprite(spr)
-	setObjectCamera(spr, 'other')
+	utils:setObjectCamera(spr, 'other')
 end
 
 local accX = 1 * getRandomInt(-3,3,"0")
@@ -195,7 +195,7 @@ function onUpdatePost(elapsed)
 			utils:setGariiData("curSauce", curSauce)
 
 			if(curSauce == 7) then
-				runHaxeCode([[
+				utils:runHaxeCode([[
 					import backend.Paths;
 					import backend.Song;
 					import backend.Highscore;
@@ -206,7 +206,7 @@ function onUpdatePost(elapsed)
 					PlayState.SONG = Song.loadFromJson(Highscore.formatSong(ogName+"-sss", 0), ogName+"-sss");
 				]])
 			elseif (sauceFX[utils:lwrKebab(sauces[curSauce])].chart ~= "normal" and utils:tableContains(chartList, utils:lwrKebab(sauceFX[utils:lwrKebab(sauces[curSauce])].chart))) then
-				runHaxeCode([[
+				utils:runHaxeCode([[
 					import backend.Difficulty;
 					Difficulty.list = ["]]..sauceFX[utils:lwrKebab(sauces[curSauce])].chart..[["];
 				]])

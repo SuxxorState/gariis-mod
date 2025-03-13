@@ -3,7 +3,7 @@ local bkend, menus, chars, songs, stges, objts = 'scripts/backend/', 'scripts/me
 local lastChr = {["boyfriend"] = "", ["gf"] = "", ["dad"] = ""}
 
 luaDebugMode = (getModSetting('gariiDebug') ~= nil and getModSetting('gariiDebug'))
-errored = not (stringStartsWith(version, "1.0.") or stringStartsWith(version, "0.7")) --set as 1.0.x because 1.0 kinda fucking sucks
+errored = not (stringStartsWith(version, "1.0") or stringStartsWith(version, "0.7"))
 if (not errored) then
     initSaveData("gariis-mod_v0.97", "SuxxorState")
     setProperty("autoUpdateRPC", false)
@@ -62,14 +62,14 @@ function onStartCountdown()
 
     makeLuaSprite('garError','error',0,0)
     addLuaSprite('garError', true)
-    setObjectCamera('garError', 'other')
+    utils:setObjectCamera('garError', 'other')
 
     makeLuaText('errorTxt', "HEY!! Garii's Mod is not built for this version! Please use Psych 0.7.X or higher! (DO NOT USE 1.0 THAT SHIT SUCKS USE 1.0.l OR HIGHER)", 1000, 12, 600)
     setTextFont('errorTxt', "Lasting Sketch.ttf")
     setTextBorder('errorTxt', 1, '000000')
     addLuaText('errorTxt')
     setTextSize('errorTxt', 32)
-    setObjectCamera('errorTxt', 'other')
+    utils:setObjectCamera('errorTxt', 'other')
     screenCenter('errorTxt', 'x')
     return Function_Stop;
 end

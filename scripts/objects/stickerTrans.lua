@@ -42,7 +42,7 @@ function placeStickers(openScript, callFunc)
         else makeLuaSprite('sticker'..inc, 'stickers/'..stickers[getRandomInt(1, #stickers)], xPos, yPos)
         end
         addLuaSprite('sticker'..inc, true)
-        setObjectCamera("sticker"..inc, 'other')
+        utils:setObjectCamera("sticker"..inc, 'other')
         setProperty("sticker"..inc..".visible", false)
         setProperty("sticker"..inc..".active", false)
 

@@ -186,7 +186,7 @@ function quickAddGameSprite(name, isText) quickAddSprite(name, isText, true, "ga
 function quickAddSprite(name, isText, initShow, category)
     isText = isText or false
     initShow = initShow or false
-    setObjectCamera(name, "other")
+    utils:setObjectCamera(name, "other")
     setProperty(name..".visible", initShow)
     if (isText) then addLuaText(name)
     else addLuaSprite(name, true)

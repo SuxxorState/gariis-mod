@@ -1,3 +1,4 @@
+local utils = (require (getVar("folDir").."scripts.backend.utils")):new()
 local glbX = 0
 local glbY = 0
 local glbWidth = 0
@@ -19,7 +20,7 @@ function initLuas()
     updateHitbox("stBG")
     glbWidth = getProperty("stBG.width")
     glbHeight = getProperty("stBG.height")
-    setObjectCamera("stBG", "other")
+    utils:setObjectCamera("stBG", "other")
     addLuaSprite("stBG")
 
     for i=1,10 do
@@ -27,7 +28,7 @@ function initLuas()
         setProperty("stBar"..i..".scale.x", glbScale)
         setProperty("stBar"..i..".scale.y", glbScale)
         updateHitbox("stBar"..i)
-        setObjectCamera("stBar"..i, "other")
+        utils:setObjectCamera("stBar"..i, "other")
         addLuaSprite("stBar"..i)
     end
 

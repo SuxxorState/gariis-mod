@@ -44,7 +44,7 @@ function onGameOver()
     end
 
     makeLuaSprite('circleGameOver', fldr..'silhouette', 620-1450, 320-900)
-    setObjectCamera('circleGameOver', 'other')
+    utils:setObjectCamera('circleGameOver', 'other')
     addLuaSprite('circleGameOver')
     setProperty("circleGameOver.alpha", 0.5)
     setProperty("circleGameOver.scale.x", 12)
@@ -54,7 +54,7 @@ function onGameOver()
 
     makeLuaSprite('bgGameOver',fldr..'black-paper',0,0)
     setProperty("bgGameOver.alpha", 0)
-	setObjectCamera('bgGameOver','other')
+	utils:setObjectCamera('bgGameOver','other')
 	addLuaSprite('bgGameOver')
 
     setProperty("inCutscene", true)
@@ -67,7 +67,7 @@ function onGameOver()
     setProperty("generatedMusic", false) --disables shit like events... mainly cause of sfx playing
     setProperty("vocals.volume", 0)
     setProperty("opponentVocals.volume", 0)
-    if (stringStartsWith(version, "1.0.")) then --im surprised this breaks in 0.7.3 ill be honest
+    if (stringStartsWith(version, "1.0")) then --im surprised this breaks in 0.7.3 ill be honest
         callMethod("vocals.stop")
         callMethod("opponentVocals.stop")
     end
@@ -136,7 +136,7 @@ function onCustomSubstateCreate(css)
         end
 
         setProperty('tauntTxtGameOver'..i..'.alpha', 0)
-        setObjectCamera('tauntTxtGameOver'..i, 'other')
+        utils:setObjectCamera('tauntTxtGameOver'..i, 'other')
         addLuaText('tauntTxtGameOver'..i)
     end
     

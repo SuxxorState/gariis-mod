@@ -203,7 +203,7 @@ function quickAddSprite(spr, visible)
     setProperty(spr..".visible", visible == nil or visible == true)
     setProperty(spr..".antialiasing", false)
     setProperty(spr..".active", false) --optimization
-    setObjectCamera(spr, "hud")
+    utils:setObjectCamera(spr, "hud")
     addLuaSprite(spr)
 end
 

@@ -12,6 +12,7 @@ local bubbleCanLoop = {}
 local bubbleAnims = {}
 
 function onRequestBubble(chr) --checks to see if a txt file exists for a given character's bubble and goes off of that. did i really just softcode a softcode file system.
+    if (version == "1.0" or version == "1.0-prerelease") then return end --im not gonna bother with fixing them in 1.0 its just not worth my time
     local chrgrab = chr
     chr = getProperty(chr..".curCharacter") or chr --for the extra opp script, its gotta check if the char name is the var name of an actual char or not
 
@@ -146,7 +147,7 @@ end
 function onUpdatePost(elp)
     for i,char in pairs(bubbleChars) do
         local shitass = (stringStartsWith(getProperty(char..".animation.curAnim.name"), "idle") or stringStartsWith(getProperty(char..".atlas.anim.lastPlayedAnim"), "idle") or stringStartsWith(getProperty(char..".animation.curAnim.name"), "dance") or stringStartsWith(getProperty(char..".atlas.anim.lastPlayedAnim"), "dance"))
-        if (stringStartsWith(version, "1.0.")) then shitass = (stringStartsWith(callMethod(char..".getAnimationName"), "idle") or stringStartsWith(callMethod(char..".getAnimationName"), "dance")) end
+        if (stringStartsWith(version, "1.0")) then shitass = (stringStartsWith(callMethod(char..".getAnimationName"), "idle") or stringStartsWith(callMethod(char..".getAnimationName"), "dance")) end
         if (shitass) then --actually wait this is way simpler
             setProperty(char.."Bubbles.alpha", 0)
         end

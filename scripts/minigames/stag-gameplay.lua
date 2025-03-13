@@ -58,7 +58,7 @@ function makeAssets()
     end
     setProperty("tvanims.visible", false)
     addLuaSprite('tvanims')
-    setObjectCamera('tvanims', 'hud')
+    utils:setObjectCamera('tvanims', 'hud')
 
     makeOneShotSpr('ofic', "ofic", nil, 0,0, 'hud')
 
@@ -72,7 +72,7 @@ function makeAssets()
     for i = 1,7 do addAnimationByPrefix('cammain', "cam"..i, "cam0"..i, 24, true) end
     setProperty("cammain.visible", false)
     addLuaSprite('cammain')
-    setObjectCamera('cammain', 'other')
+    utils:setObjectCamera('cammain', 'other')
 
     for _,chr in pairs(chrList) do
         if (chrStats[chr].camOffsets ~= nil and chrStats[chr].ai > 0) then
@@ -83,7 +83,7 @@ function makeAssets()
             addOffset("cam"..chr,""..ofsts[i][1], ofsts[i][2],ofsts[i][3]) end
             setProperty("cam"..chr..".visible", false)
             addLuaSprite('cam'..chr)
-            setObjectCamera('cam'..chr, 'other')
+            utils:setObjectCamera('cam'..chr, 'other')
             runTimer(chr.."MO", chrStats[chr].cooldown + 5)
         end
     end
@@ -100,7 +100,7 @@ function makeAssets()
         playAnim("cambtn"..i, "desel")
         setProperty('cambtn'..i..".visible", false)
         addLuaSprite('cambtn'..i)
-        setObjectCamera('cambtn'..i, 'other')
+        utils:setObjectCamera('cambtn'..i, 'other')
     end
 
     makeOneShotSpr('camBtn', "cambumbup", nil, 0,0, 'hud')
@@ -144,7 +144,7 @@ function makeAssets()
             setProperty('statdoor'..i..".color", getColorFromHex("DBAF85"))
             setProperty('statdoor'..i..".visible", false)
             addLuaSprite('statdoor'..i)
-            setObjectCamera('statdoor'..i, 'other')
+            utils:setObjectCamera('statdoor'..i, 'other')
         end
 
         for i,heat in pairs({{280,516}, {243,424}, {444,560}}) do
@@ -157,7 +157,7 @@ function makeAssets()
             setProperty('statheat'..i..".color", getColorFromHex("DBAF85"))
             setProperty('statheat'..i..".visible", false)
             addLuaSprite('statheat'..i)
-            setObjectCamera('statheat'..i, 'other')
+            utils:setObjectCamera('statheat'..i, 'other')
         end
     
         font:createNewText("huntesysTxt", 100, 65, "HunteSYS v0.1.1", "LEFT", "DBAF85")
@@ -230,7 +230,7 @@ function makeOneShotSpr(tag, name, anim, lax, lay, cam, visd)
     end
     addLuaSprite(tag)
     if (visd ~= nil and visd == false) then setProperty(tag..".visible", false) end --a lot of sprs start off not visible
-    setObjectCamera(tag, cam)
+    utils:setObjectCamera(tag, cam)
 end
 
 function onUpdatePost(elp)
@@ -547,7 +547,7 @@ function jumpscare(char)
     screenCenter("jmpscr", "x")
     setProperty("jmpscr.y", screenHeight - getProperty("jmpscr.height"))
     addLuaSprite('jmpscr')
-    setObjectCamera('jmpscr', 'other')
+    utils:setObjectCamera('jmpscr', 'other')
     utils:playSound(fld.."jumpscare", 1, "jmp")
     if (char == "slot") then setSoundPitch("jmp", 0.5) end
     runTimer("endinSTaG", 2)
@@ -568,14 +568,14 @@ function nightOver()
     makeLuaSprite('stagfg','',0,0)
     makeGraphic("stagfg", screenWidth, screenHeight, "000000")
     addLuaSprite('stagfg')
-    setObjectCamera('stagfg', 'other')
+    utils:setObjectCamera('stagfg', 'other')
     
     makeLuaText('samTxt', calcAMPM((5+(6*(curQtr-1)))*3600,true,false), 0, 0, 0)
     setTextFont('samTxt', "Lasting Sketch.ttf")
     setTextBorder('samTxt', 2, '000000')
     setTextSize('samTxt', 128)
     screenCenter("samTxt")
-    setObjectCamera('samTxt', 'other')
+    utils:setObjectCamera('samTxt', 'other')
     addLuaText('samTxt')
 
     if (curQtr < 7 and (utils:getGariiData("STaGprog") < curQtr+1)) then

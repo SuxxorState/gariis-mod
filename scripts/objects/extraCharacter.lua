@@ -116,7 +116,7 @@ end
 function charDance(dncbeat)
     for chr,vals in pairs(storedChrs) do
         local isSinging = (stringStartsWith(getProperty(chr..".animation.curAnim.name"), "sing") or stringStartsWith(getProperty(chr..".atlas.anim.lastPlayedAnim"), "sing"))
-        if (stringStartsWith(version, "1.0.")) then isSinging = (stringStartsWith(callMethod(chr..".getAnimationName"), "sing")) end
+        if (stringStartsWith(version, "1.0")) then isSinging = (stringStartsWith(callMethod(chr..".getAnimationName"), "sing")) end
         if (dncbeat % getProperty(chr..".danceEveryNumBeats") == 0 and (getProperty(chr..".holdTimer") <= 0) and (not isSinging) and (not getProperty(chr..".stunned")) and (not getProperty(chr..".specialAnim"))) then
             if (callMethod(chr..".animOffsets.exists", {"danceLeft"})) then
                 if (getProperty(chr..".danced")) then callMethod(chr..".playAnim", {"danceRight"..getProperty(chr..".idleSuffix")})
@@ -148,7 +148,7 @@ function makeNewTimeIcon(chrName, iconName)
         addAnimationByPrefix("iconTime"..chrName, 'stg'..(i+vars.lolthing), iconName.." stage "..i, 24, true) 
     end
 
-    setObjectCamera('iconTime'..chrName, 'hud')
+    utils:setObjectCamera('iconTime'..chrName, 'hud')
     playAnim('iconTime'..chrName, 'stg'..vars.lolthing)
     
     if downscroll then setProperty('iconTime'..chrName..'.y', 0 + (45 * vars.index)) end

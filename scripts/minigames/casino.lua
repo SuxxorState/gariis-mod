@@ -22,13 +22,13 @@ function startMinigame()
 
     makeLuaSprite('table',fldr..'bacl',0,0)
     addLuaSprite('table')
-    setObjectCamera('table', 'hud')
+    utils:setObjectCamera('table', 'hud')
 
     makeLuaSprite('chipicon', fldr.."pokerchip",100,18)
     addLuaSprite('chipicon')
     setProperty('chipicon.antialiasing', false)
     scaleObject('chipicon', 2, 2)
-    setObjectCamera('chipicon', 'other')
+    utils:setObjectCamera('chipicon', 'other')
     updateChipCount(0)
 
     utils:playSound(fldr.."music", 0.5, "casinomusic")
@@ -39,7 +39,7 @@ function startMinigame()
         addLuaSprite('menu'..opt)
         setProperty('menu'..opt..'.antialiasing', false)
         if (i ~= curOpt) then setProperty('menu'..opt..'.alpha', 0.5) end
-        setObjectCamera('menu'..opt, 'other')
+        utils:setObjectCamera('menu'..opt, 'other')
     end
     
     pfFont:createNewText("chipNumTxt", 10, 20, " ")

@@ -41,7 +41,7 @@ function onCreatePost()
     for i=25,100,25 do addAnimationByPrefix("timBar", 'fil'..i, "timebar"..i.."full", 24, true) end
     setProperty("timBar.color", utils:convColours(getProperty("dad.healthColorArray")))
     playAnim('timBar', 'fil100')
-    setObjectCamera('timBar', 'hud')
+    utils:setObjectCamera('timBar', 'hud')
 	if not disableBar then setObjectOrder('timBar', getObjectOrder('timeBar') + 1) end
 
     addAnimatedOneoff("timerBarfbg", "timebar", "time bar fill bg", 0,0)
@@ -57,7 +57,7 @@ function onCreatePost()
         setProperty('scrTxt.x', 125)
         setProperty('scrTxt.y', 50)
     end
-    setObjectCamera('scrTxt', 'hud')
+    utils:setObjectCamera('scrTxt', 'hud')
 	addLuaText('scrTxt')
 
     if (ratingShits[getProperty("gf.healthIcon")] ~= nil) then curGFRead = getProperty("gf.healthIcon") end
@@ -108,7 +108,7 @@ function onCountdownTick(count)
                 addOffset("missMarker"..i, "missing", 12, 20)
                 addAnimationByPrefix("missMarker"..i, 'missed', "ex pin done x", 24, true)
                 addOffset("missMarker"..i, "missed", 8, 14)
-                setObjectCamera("missMarker"..i, 'hud')
+                utils:setObjectCamera("missMarker"..i, 'hud')
                 setProperty('missMarker'..i..".alpha", 0)
                 playAnim("missMarker"..i, "idle")
     
@@ -135,7 +135,7 @@ function onSongStart()
             if not downscroll then setProperty('marker'..i..".flipY", true) end
             addAnimationByPrefix("marker"..i, 'def', "timebarmarker", 24 + (i-2), true)
             setProperty('marker'..i..".x", 85 + (420 * (angerpoints[i] / (songLength / (((60/bpm)*1000) / 4)))))
-            setObjectCamera('marker'..i, 'hud')
+            utils:setObjectCamera('marker'..i, 'hud')
             setProperty('marker'..i..".alpha", 0)
             addLuaSprite('marker'..i, true)
             setObjectOrder('marker'..i, getObjectOrder('timerBar') + 1)
@@ -327,7 +327,7 @@ function replaceTimerIcon(nilgf)
         addAnimationByPrefix("iconTime", 'stg0', getProperty("gf.healthIcon").." stage "..ratingShits[curGFRead][3][1], 24, true)
         addAnimationByPrefix("iconTime", 'stg1', getProperty("gf.healthIcon").." stage "..ratingShits[curGFRead][3][2], 24, true)
     end
-    setObjectCamera('iconTime', 'hud')
+    utils:setObjectCamera('iconTime', 'hud')
     setProperty("iconTime.visible", isHudVisible)
     playAnim('iconTime', 'stg'..lolthing)
     if downscroll then setProperty('iconTime.y', 5) end
@@ -340,7 +340,7 @@ function replaceHealthIcon()
     removeLuaSprite('iconHP')
     makeAnimatedLuaSprite("iconHP", "icons/"..getProperty("boyfriend.healthIcon").."-anim", screenWidth - 130, screenHeight - 160)
     for i,anim in pairs(hpAnims) do addAnimationByPrefix("iconHP", anim, getProperty("boyfriend.healthIcon").." stage "..(i-2), 24, true) end
-    setObjectCamera('iconHP', 'hud')
+    utils:setObjectCamera('iconHP', 'hud')
     setProperty('iconHP.flipX', true)
     setProperty("iconHP.visible", isHudVisible)
     playAnim('iconHP', 'fc')
@@ -508,7 +508,7 @@ function addAnimatedOneoff(tag, spr, anim, xPos, yPos, canAdd)
     
     makeAnimatedLuaSprite(tag, hudFold..spr, xPos, yPos)
     addAnimationByPrefix(tag, "reg" ,anim, 24, true)
-	setObjectCamera(tag, 'hud')
+	utils:setObjectCamera(tag, 'hud')
     if (canAdd) then addLuaSprite(tag) end
 end
 

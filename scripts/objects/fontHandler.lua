@@ -53,7 +53,7 @@ function Font:createNewText(name, dax,day, txt, algnmnt, clr, camra)
             setProperty(name..i..".antialiasing", loadedFont.antialiasing)
             setProperty(name..i..".active", loadedFont.animated)
             setProperty(name..i..".color", getColorFromHex(clr))
-            setObjectCamera(name..i, camra)
+            utils:setObjectCamera(name..i, camra)
             addLuaSprite(name..i)
         end
 
@@ -147,7 +147,7 @@ end
 function Font:setTextCamera(name, newcam)
     if (newcam == atts[name].cam) then return end
     for i=1,atts[name].length do
-        setObjectCamera(name..i, newcam)
+        utils:setObjectCamera(name..i, newcam)
     end
     atts[name].cam = newcam
 end
@@ -192,7 +192,7 @@ function Font:setTextString(name, txt)
             setProperty(name..i..".active", fonts[atts[name].font].animated)
             scaleObject(name..i, atts[name].scalex, atts[name].scaley)
             updateHitbox(name..i)
-            setObjectCamera(name..i, atts[name].cam)
+            utils:setObjectCamera(name..i, atts[name].cam)
             addLuaSprite(name..i, true)
         end
         

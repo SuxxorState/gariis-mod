@@ -301,7 +301,7 @@ function addToHand(dealer)
         if (#dlrCards == 1) then playAnim('dlrcard'..#dlrCards, "back") end
         addLuaSprite('dlrcard'..#dlrCards, true)
         setProperty('dlrcard'..#dlrCards..'.antialiasing', false)
-        setObjectCamera('dlrcard'..#dlrCards, 'other')
+        utils:setObjectCamera('dlrcard'..#dlrCards, 'other')
     else
         curCards = selHand
         curHand = selAmt
@@ -314,7 +314,7 @@ function addToHand(dealer)
         addLuaSprite('card'..#curCards, true)
         setProperty('card'..#curCards..'.antialiasing', false)
         doTweenY('card'..#curCards, 'card'..#curCards, 600, 0.25)
-        setObjectCamera('card'..#curCards, 'other')
+        utils:setObjectCamera('card'..#curCards, 'other')
     end
 end
 

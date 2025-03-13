@@ -15,7 +15,7 @@ function onCreate()
     setProperty("carv.visible", false)
     setProperty("hunte.visible", false)
 
-    runHaxeCode([[
+    utils:runHaxeCode([[
         import flixel.sprite.FlxSprite;
         var camAlt:FlxCamera;
         var camAltTwo:FlxCamera;
@@ -163,7 +163,7 @@ function onEvent(name, value1, value2, strumTime)
         runTimer("startle bf", 6/24)
         runTimer("die goons", 30/24)
     elseif (event == "toggle close-up cams") then
-        runHaxeCode([[
+        utils:runHaxeCode([[
             FlxG.cameras.list[1].visible = !FlxG.cameras.list[1].visible;
             FlxG.cameras.list[2].visible = !FlxG.cameras.list[2].visible;
 
