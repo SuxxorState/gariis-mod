@@ -1,47 +1,50 @@
 local utils = (require (getVar("folDir").."scripts.backend.utils")):new()
-local sauces = {"Whire's Gentle Zest", "Hoppin' Honey Mustard", "Outburst", "Garden Grown Habanero"}
+local sauces = {"Whire's Gentle Zest", "Hoppin' Honey Mustard", "Outburst", "Garden Grown Habanero", "Shit The Bed", "Solar Flare"}
+local sauceFX = {
+	["whire's-gentle-zest"] = 	{chart = "simple",	needleAngle = -84; 	scrollSpd = 2.25, 	hpMult = 1.5, 	missCap = nil, 	hpLoss = 0.010, scoreMult = 0.5},
+	["hoppin'-honey-mustard"] = {chart = "simple",	needleAngle = -50; 	scrollSpd = 2.5, 	hpMult = 1.25, 	missCap = nil, 	hpLoss = 0.013, scoreMult = 0.75},
+	["outburst"] = 				{chart = "normal",	needleAngle = -14; 	scrollSpd = 2.75, 	hpMult = 1, 	missCap = nil, 	hpLoss = 0.018, scoreMult = 1},
+	["garden-grown-habanero"] = {chart = "normal",	needleAngle = 24; 	scrollSpd = 3, 		hpMult = 0.75, 	missCap = nil, 	hpLoss = 0.023, scoreMult = 1.25},
+	["shit-the-bed"] = 			{chart = "expert",	needleAngle = 64; 	scrollSpd = 3.25, 	hpMult = nil, 	missCap = 5, 	hpLoss = nil, 	scoreMult = 1.5},
+	["solar-flare"] = 			{chart = "expert",	needleAngle = 91; 	scrollSpd = 3.5, 	hpMult = nil, 	missCap = 3, 	hpLoss = nil, 	scoreMult = 1.75},
+	[""] = 						{chart = "master",	needleAngle = 105; 	scrollSpd = 4, 		hpMult = nil, 	missCap = 0, 	hpLoss = nil, 	scoreMult = 2},
+}
+local chartList, lastChart = {}, ""
+local gariNormal, ridMeOfHim, goodbyeGarii = {x = 0, y = 0}, false, false
 local textspeed = {-1.75, 2.75, -0.75}
 local keyCombo = {{"TWO", "NUMPADTWO"}, {"ZERO", "NUMPADZERO"}, {"TWO", "NUMPADTWO"}, {"ONE", "NUMPADONE"}}
 local curKey = 1
 local highwayjammin = false
 local curSauce = 1
-local sauceTrueFX = {--speed, hpamt, missamt, pushback
-	{2.25, 1.5, nil, 0.010, 0.5},
-	{2.5, 1.25, nil, 0.013, 0.75},
-	{2.75, 1, nil, 0.018, 1},
-	{3, 0.75, nil, 0.023, 1.25},
-	{3.25, nil, 5, nil, 1.5},
-	{3.5, nil, 3, nil, 1.75},
-	{4, nil, 0, nil, 2},
-}
-
 local spsFld = "spice/"
-local ndlAngs = {-77, -48, -14, 24, 58, 84, 105}
 local inMenu = false
 local sssCounter = 0
-local hasSimple = false
-local hasExpert = false
-local playedCrossout = false
 
 function onStartCountdown(tick)
 	if (utils:getGariiData("curSauce") ~= nil) then 
-		callOnLuas("setupSpice", sauceTrueFX[utils:getGariiData("curSauce")])
+		callOnLuas("setupSpice", {sauceFX[utils:lwrKebab(sauces[utils:getGariiData("curSauce")])]})
 		close()
 	else
-		if (utils:getGariiData("expertSauces") ~= nil) then
-			table.insert(sauces, "Shit The Bed")
-			table.insert(sauces, "Solar Flare")
+		local goodSauces = {}
+		for i,dif in pairs(sauces) do
+			local leCurChart, noBogusChart = sauceFX[utils:lwrKebab(dif)].chart, sauceFX[utils:lwrKebab(dif)].chart
+			if (sauceFX[utils:lwrKebab(dif)].chart == "normal") then leCurChart = "‿" end
+
+			if (checkFileExists('data/'..utils.songNameFmt..'/'..utils.songNameFmt..'-'..leCurChart..'.json')) then
+				if (not utils:tableContains(chartList, noBogusChart)) then table.insert(chartList, noBogusChart) end
+				table.insert(goodSauces, dif)
+			end
 		end
-		hasSimple = checkFileExists('data/'..utils.songNameFmt..'/'..utils.songNameFmt..'-simple.json')
-		hasExpert = checkFileExists('data/'..utils.songNameFmt..'/'..utils.songNameFmt..'-expert.json')
+		if (#chartList == 1 and chartList[1] == "normal") then ridMeOfHim = true
+		else sauces = goodSauces
+		end
 		inMenu = true
 		setProperty('inCutscene', true)
 		setProperty('camHUD.alpha', 0)
 
 		makeLuaSprite('white','',0,0)
 		makeGraphic("white", screenWidth, screenHeight, "FFFFFF")
-		addLuaSprite('white', true)
-		setObjectCamera('white', 'other')
+		quickAddSprite('white')
 		
 		for i=0,2 do
 			makeAnimatedLuaSprite('spstex'..i,spsFld..'heat bg texts',1830 - (750 * i),30)
@@ -49,109 +52,130 @@ function onStartCountdown(tick)
 			addAnimationByPrefix('spstex'..i, 'hj', "highway jammin", 24, false)
 			--setProperty("spstex"..i..".alpha", 0.75)
 			playAnim('spstex'..i, 'reg')
-			addLuaSprite('spstex'..i, true)
-			setObjectCamera('spstex'..i, 'other')
+			quickAddSprite('spstex'..i)
 
 			makeAnimatedLuaSprite('tastex'..i,spsFld..'heat bg texts',-1200 + (825 * i),413)
 			addAnimationByPrefix('tastex'..i, 'reg', "prepare ur tastebudz", 24, false)
 			setProperty("tastex"..i..".alpha", 0.75)
-			addLuaSprite('tastex'..i, true)
-			setObjectCamera('tastex'..i, 'other')
+			quickAddSprite('tastex'..i)
 		end
 		makeAnimatedLuaSprite('loltex',spsFld..'heat bg texts',1280,215)
 		addAnimationByPrefix('loltex', 'reg', "thank you wire", 24, false)
 		setProperty("loltex.alpha", 0.5)
 		setProperty("loltex.active", false)
-		addLuaSprite('loltex', true)
-		setObjectCamera('loltex', 'other')
+		quickAddSprite('loltex')
 
 		makeAnimatedLuaSprite('bfspice',spsFld..'truckcouple-heat',450,50)
 		for i=0,6 do addAnimationByPrefix("bfspice", 'sauce'..(i+1), "exp"..i, 24, false) end
-		addLuaSprite('bfspice', true)
-		setObjectCamera('bfspice', 'other')
+		quickAddSprite('bfspice')
 		
 		makeLuaSprite('gre','',0,630)
 		makeGraphic("gre", screenWidth, 200, "333333")
-		addLuaSprite('gre', true)
-		setObjectCamera('gre', 'other')
-
-		makeLuaSprite('blcak','',-120,-50)
-		makeGraphic("blcak", 500, 1000, "000000")
-		setProperty("blcak.angle", -10)
-		addLuaSprite('blcak', true)
-		setObjectCamera('blcak', 'other')
-
-		makeAnimatedLuaSprite('spsflavs',spsFld..'heatflavors',10,screenHeight - 80)
-		for i=0,6 do addAnimationByPrefix("spsflavs", 'sauce'..(i+1), "desc"..i, 24, true) end
-		addLuaSprite('spsflavs', true)
-		setObjectCamera('spsflavs', 'other')
-		
-		makeAnimatedLuaSprite('sausbtls',spsFld..'saucebottles',10,10)
-		for i=0,6 do addAnimationByPrefix("sausbtls", 'sauce'..(i+1), "sauc"..i, 24, true) end
-		for i=2,3 do addAnimationByPrefix("sausbtls", 'sauce'..(i+1).."-old", "oldsauc"..i, 24, true) end
-		addLuaSprite('sausbtls', true)
-		setObjectCamera('sausbtls', 'other')
-				
-		makeAnimatedLuaSprite('sausdescs',spsFld..'heatdescs',20,150)
-		for i=0,6 do addAnimationByPrefix("sausdescs", 'sauce'..(i+1), "sauc"..i, 24, true) end
-		addLuaSprite('sausdescs', true)
-		setObjectCamera('sausdescs', 'other')
-
-		makeAnimatedLuaSprite('nosimplechart',spsFld..'no simple chart',15,360)
-		addAnimationByPrefix("nosimplechart", 'reg', "no simple chart", 24, false)
-		addLuaSprite('nosimplechart', true)
-		setObjectCamera('nosimplechart', 'other')
-
-		if (#sauces >= 5) then makeLuaSprite('spsmeterbg',spsFld..'spicemeterbg',30,screenHeight - 240)
-		elseif (#sauces >= 3) then makeLuaSprite('spsmeterbg',spsFld..'spicemeterbglocked',30,screenHeight - 240)
-		else makeLuaSprite('spsmeterbg',spsFld..'spicemeterbgnormallocked',30,screenHeight - 240)
-		end
-		addLuaSprite('spsmeterbg', true)
-		setObjectCamera('spsmeterbg', 'other')
-
-		makeLuaSprite('spsneedle',spsFld..'spiceneedle',175,screenHeight - 185)
-		setProperty("spsneedle.angle", ndlAngs[curSauce])
-		addLuaSprite('spsneedle', true)
-		setObjectCamera('spsneedle', 'other')
-
-		makeLuaSprite('spstxt',spsFld..'spice text',65,screenHeight - 45)
-		addLuaSprite('spstxt', true)
-		setObjectCamera('spstxt', 'other')
-
-		for i=0,2 do
-			makeLuaSprite('cru'..i,'bg/crumple'..i,0,0)
-			setObjectCamera('cru'..i,'other')
-			setProperty('cru'..i..'.alpha', 0.75)
-			setProperty('cru'..i..'.visible', i==0)
-			addLuaSprite('cru'..i,true)
-		end
-		runTimer("crumple", 120/130)
-		runTimer("wirequote", 30)
+		quickAddSprite('gre')
 		
 		makeLuaSprite('pprovr','bg/paperbase',0,-380)
 		scaleObject('pprovr', 1.15, 1.1)
 		setProperty("pprovr.alpha", 0.5)
 		setProperty("pprovr.flipX", true)
-		addLuaSprite('pprovr', true)
+		quickAddSprite('pprovr')
 		setBlendMode('pprovr', "multiply")
-		setObjectCamera('pprovr', 'other')
+
+		for i=0,2 do
+			makeLuaSprite('cru'..i,'bg/crumple'..i,0,0)
+			setProperty('cru'..i..'.visible', i==0)
+			quickAddSprite('cru'..i)
+		end
+		runTimer("crumple", 120/130)
+		runTimer("wirequote", 30)
+
+		makeLuaSprite('blcak','gameOver/black-paper',-120,-50)
+		setGraphicSize('blcak', 500,1000)
+		setProperty("blcak.angle", -10)
+		quickAddSprite('blcak')
+
+		makeAnimatedLuaSprite('spsflavs',spsFld..'heatflavors',10,screenHeight - 80)
+		for i=0,6 do addAnimationByPrefix("spsflavs", 'sauce'..(i+1), "desc"..i, 24, true) end
+		quickAddSprite('spsflavs')
+				
+		makeFlxAnimateSprite("sausdescs", 10, 19, "spice/desctexts")
+		for i=0,6 do addAnimationBySymbol("sausdescs", 'sauce'..(i+1), "descs/sauc"..i) end
+		quickAddSprite('sausdescs')
+
+		if (#sauces >= 5) then makeLuaSprite('spsmeterbg',spsFld..'spicemeterbg',30,screenHeight - 240)
+		elseif (#sauces >= 3) then makeLuaSprite('spsmeterbg',spsFld..'spicemeterbglocked',30,screenHeight - 240)
+		else makeLuaSprite('spsmeterbg',spsFld..'spicemeterbgnormallocked',30,screenHeight - 240)
+		end
+		quickAddSprite('spsmeterbg')
+
+		makeLuaSprite('spsneedle',spsFld..'spiceneedle',175,screenHeight - 200)
+		setProperty("spsneedle.angle", sauceFX[utils:lwrKebab(sauces[curSauce])].needleAngle)
+		quickAddSprite('spsneedle')
+
+		makeAnimatedLuaSprite('chartgarii',spsFld..'garii chart',150,screenHeight - 120)
+		addAnimationByPrefix("chartgarii", "hurt", "garii chart hurt")
+		for _,dif in pairs(chartList) do addAnimationByPrefix("chartgarii", dif, "garii chart "..dif) end
+		playAnim("chartgarii", sauceFX[utils:lwrKebab(sauces[curSauce])].chart)
+		gariNormal = {x = 150 + (getProperty("chartgarii.frameWidth") / 2), y = (screenHeight - 120) + (getProperty("chartgarii.frameHeight") / 2)}
+		quickAddSprite('chartgarii')
+		
+		makeAnimatedLuaSprite('spstxt',spsFld..'chart texts',65,screenHeight - 50)
+		addAnimationByPrefix("spstxt", "reg", "heat text")
+		for _,dif in pairs(chartList) do addAnimationByPrefix("spstxt", dif, dif.. " txt") end
+		addOffset('spstxt', 'normal', 0, 0)
+		addOffset('spstxt', 'simple', 0, 6)
+		addOffset('spstxt', 'expert', -6, 1)
+		addOffset('spstxt', 'reg', 0, 3)
+		playAnim("spstxt", sauceFX[utils:lwrKebab(sauces[curSauce])].chart)
+		quickAddSprite('spstxt')
+		
+		makeLuaSprite('fgGameOver', 'gameOver/not-black-paper',-120,-50)
+		setGraphicSize('fgGameOver', 500,1000)
+		setBlendMode('fgGameOver', "multiply")
+		setProperty("fgGameOver.alpha", 0.75)
+		setProperty("fgGameOver.angle", -10)
+		quickAddSprite('fgGameOver')
+		
+		makeAnimatedLuaSprite('sausbtls',spsFld..'saucebottles',10,10)
+		for i=0,6 do addAnimationByPrefix("sausbtls", 'sauce'..(i+1), "sauc"..i, 24, true) end
+		for i=2,3 do addAnimationByPrefix("sausbtls", 'sauce'..(i+1).."-old", "oldsauc"..i, 24, true) end
+		quickAddSprite('sausbtls')
 
 		playMusic('freaky-hotmix', 1, true)
 
 		changeSelected(0)
+		if (ridMeOfHim) then runTimer("killHim", 0.75) end
 		return Function_Stop;
 	end
 end
 
+function quickAddSprite(spr)
+	addLuaSprite(spr)
+	setObjectCamera(spr, 'other')
+end
+
+local accX = 1 * getRandomInt(-3,3,"0")
+local accY = -5
 local doingSomething = false
 function onUpdatePost(elapsed)
-	if (curSauce == 7 and (getProperty("spsneedle.angle") >= ndlAngs[curSauce] - 2 or getProperty("spsneedle.angle") <= ndlAngs[curSauce] + 2)) then
-		setProperty("spsneedle.angle", ndlAngs[curSauce] + getRandomInt(-2,2))
+	if (curSauce == 7 and (getProperty("spsneedle.angle") >= sauceFX[utils:lwrKebab(sauces[curSauce])].needleAngle - 2 or getProperty("spsneedle.angle") <= sauceFX[utils:lwrKebab(sauces[curSauce])].needleAngle + 2)) then
+		setProperty("spsneedle.angle", sauceFX[utils:lwrKebab(sauces[curSauce])].needleAngle + getRandomInt(-2,2))
 	else
-		setProperty("spsneedle.angle", utils:lerp(getProperty("spsneedle.angle"), ndlAngs[curSauce], 0.25))
+		setProperty("spsneedle.angle", utils:lerp(getProperty("spsneedle.angle"), sauceFX[utils:lwrKebab(sauces[curSauce])].needleAngle, 0.25))
 	end
 	utils:setDiscord("Choosing Their Heat", "["..sauces[curSauce].."]") --CHANGE DAMN YOU
 
+	if (goodbyeGarii) then
+		setProperty("chartgarii.x", getProperty("chartgarii.x") + accX)
+        setProperty("chartgarii.y", getProperty("chartgarii.y") + accY)
+        if (accX < 0) then accX = math.min(accX + 0.01, 0)
+        else accX = math.max(accX - 0.01, 0)
+        end
+        accY = accY + math.min((0.25 * (math.abs(accY) + 0.1)), 0.25)
+		if (getProperty("chartgarii.y") > 750) then 
+			goodbyeGarii = false 
+			removeLuaSprite("chartgarii")
+		end
+	end
 	for i=0,2 do
 		setProperty('spstex'..i..".x", getProperty('spstex'..i..".x") + (textspeed[1] * (60/framerate)))
 		if (getProperty('spstex'..i..".x") < -970) then setProperty('spstex'..i..".x", 1280) end
@@ -181,20 +205,12 @@ function onUpdatePost(elapsed)
 					}
 					PlayState.SONG = Song.loadFromJson(Highscore.formatSong(ogName+"-sss", 0), ogName+"-sss");
 				]])
-			elseif(curSauce >= 5 and hasExpert) then
+			elseif (sauceFX[utils:lwrKebab(sauces[curSauce])].chart ~= "normal" and utils:tableContains(chartList, utils:lwrKebab(sauceFX[utils:lwrKebab(sauces[curSauce])].chart))) then
 				runHaxeCode([[
 					import backend.Difficulty;
-					Difficulty.list.push("Expert");
-					PlayState.storyDifficulty = 1;
+					Difficulty.list = ["]]..sauceFX[utils:lwrKebab(sauces[curSauce])].chart..[["];
 				]])
-				loadSong(nil, 1)
-			elseif (curSauce <= 2 and hasSimple) then
-				runHaxeCode([[
-					import backend.Difficulty;
-					Difficulty.list.push("Simple");
-					PlayState.storyDifficulty = 1;
-				]])
-				loadSong(nil, 1)
+				loadSong()
 			end
 			stopSound("fuzzyloopstart") --brah
 			restartSong()
@@ -239,7 +255,7 @@ function changeSelected(lol)
 		curSauce = #sauces
 		if (#sauces < 5) then
 			utils:playSound("lockedMenu")
-			setProperty("spsneedle.angle", ndlAngs[curSauce] + 5)
+			setProperty("spsneedle.angle", sauceFX[utils:lwrKebab(sauces[curSauce])].needleAngle + 5)
 		end
 		return
 		--[[if (getDataFromSave("gariis-mod_v0.95", "expertSauces") ~= nil and #sauces < 7) then
@@ -251,9 +267,6 @@ function changeSelected(lol)
 				curSauce = #sauces
 			end
 		end]]--
-	elseif (curSauce <= 2 and (not hasSimple) and (not playedCrossout)) then
-		playedCrossout = true
-		playAnim("nosimplechart", 'reg')
 	elseif (curSauce < 1) then curSauce = 1
 		return
 	end
@@ -265,11 +278,27 @@ function changeSelected(lol)
 	end
 	playAnim("sausdescs", "sauce"..curSauce)
 	playAnim("spsflavs", "sauce"..curSauce)
+	if (not ridMeOfHim) then
+		playAnim("spstxt", sauceFX[utils:lwrKebab(sauces[curSauce])].chart)
+		playAnim("chartgarii", sauceFX[utils:lwrKebab(sauces[curSauce])].chart, true, false, getProperty("chartgarii.animation.curAnim.curFrame")+1)
+		if (lastChart ~= sauceFX[utils:lwrKebab(sauces[curSauce])].chart) then
+			cancelTimer("gariichartstretch")
+			cancelTimer("gariichartnormal")
+			stretchGarii(1.2, 0.8)
+			runTimer("gariichartstretch", 2/24)
+		end
+	end
 	setProperty("spsflavs.x", 210 + ((screenWidth - getProperty("spsflavs.frameWidth"))/2))
 	setProperty("spsflavs.y", screenHeight - math.min((85 + getProperty("spsflavs.frameHeight"))/2, 85))
-	setProperty("nosimplechart.visible", curSauce <= 2 and (not hasSimple))
+	lastChart = sauceFX[utils:lwrKebab(sauces[curSauce])].chart
 
 	setTextString('nameTxt', sauces[curSauce])
+end
+
+function stretchGarii(wid, hei)
+	scaleObject("chartgarii", wid, hei)
+	setProperty("chartgarii.x", gariNormal.x - (getProperty("chartgarii.width")/2))
+	setProperty("chartgarii.y", gariNormal.y - (getProperty("chartgarii.height")/2))
 end
 
 local crumpnum = 0
@@ -281,7 +310,25 @@ function onTimerCompleted(tag)
 		for i = 0,2 do setProperty('cru'..i..'.visible', (crumpnum % 3) == i) end
 		runTimer("crumple", 120/130)
 	elseif (tag == "wirequote") then setProperty("loltex.active", true)
+	elseif (tag == "gariichartstretch") then
+		stretchGarii(0.8, 1.2)
+		runTimer("gariichartnormal", 2/24)
+	elseif (tag == "gariichartnormal") then stretchGarii(1,1)
+	elseif (tag == "killHim") then
+		playAnim("chartgarii", "hurt")
+		utils:playSound("gariknockedoff")
+		goodbyeGarii = true
+		runTimer("changeText", 1.5)
+	elseif (tag == "changeText") then doTweenY("loleTextDown", "spstxt", screenHeight + 10, 0.75)
+	elseif (tag == "changeTextUp") then doTweenY("loleTextUp", "spstxt", screenHeight - 50, 0.75)
 	end
+end
+
+function onTweenCompleted(twn)
+    if (twn == "loleTextDown") then
+		playAnim("spstxt", "reg")
+		runTimer("changeTextUp", 0.25)
+    end
 end
 
 function destroySpiceMenu()

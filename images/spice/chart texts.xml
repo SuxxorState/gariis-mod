@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="chart texts.png">
+	<!-- Created with Adobe Animate version 23.0.1.70 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="expert txt0000" x="0" y="62" width="264" height="58" pivotX="2.4" pivotY="2.5"/>
+	<SubTexture name="heat text0000" x="0" y="122" width="284" height="46" pivotX="2.6" pivotY="2.4"/>
+	<SubTexture name="normal txt0000" x="0" y="170" width="271" height="48" pivotX="2.45" pivotY="0.85"/>
+	<SubTexture name="simple txt0000" x="0" y="0" width="275" height="60" pivotX="2.45" pivotY="2.45"/>
+</TextureAtlas>

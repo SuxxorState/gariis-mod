@@ -47,18 +47,18 @@ end
 
 local hpDrain = 0
 local hpMultiplier = 1
-function setupSpice(speed, hpamt, missamt, pushback, scrmult)
-    if (speed ~= nil) then setProperty("songSpeed", speed) end
-    if (hpamt ~= nil) then 
+function setupSpice(stats)
+    if (stats.scrollSpd ~= nil) then setProperty("songSpeed", stats.scrollSpd) end
+    if (stats.hpMult ~= nil) then 
         for i = 0, getProperty('unspawnNotes.length')-1 do
             if (getPropertyFromGroup('unspawnNotes', i, 'noteType') ~= "Missed Opportunity") then
-                setPropertyFromGroup('unspawnNotes', i, 'hitHealth', (0.023 / hpamt) / healthGainMult)
-                setPropertyFromGroup('unspawnNotes', i, 'missHealth', (0.0475 / hpamt) / healthLossMult)
+                setPropertyFromGroup('unspawnNotes', i, 'hitHealth', (0.023 / stats.hpMult) / healthGainMult)
+                setPropertyFromGroup('unspawnNotes', i, 'missHealth', (0.0475 / stats.hpMult) / healthLossMult)
             end
         end
-        hpMultiplier = hpamt
+        hpMultiplier = stats.hpMult
+        if (stats.hpLoss ~= nil) then hpDrain = stats.hpLoss / stats.hpMult end
     end
-    if (pushback ~= nil) then hpDrain = pushback / hpamt end
     unlockSecrets = true
     utils:setDiscord("Story Mode: "..utils.weekName, utils.songName.." ["..utils:getHeat(true).."]", getProperty("dad.healthIcon"))
 end

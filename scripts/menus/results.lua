@@ -24,8 +24,8 @@ function onCreate()
 	precacheSound(resultsMusic)
 end
 
-function setupSpice(speed, hpamt, missamt, pushback, scrmult)
-    if (scrmult ~= nil) then scoreMulti = scrmult end
+function setupSpice(stats)
+    if (stats.scoreMult ~= nil) then scoreMulti = stats.scoreMult end
 end
 
 function onEndSong()

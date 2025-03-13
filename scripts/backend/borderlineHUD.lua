@@ -497,9 +497,9 @@ function comboFall()
     end
 end
 
-function setupSpice(speed, hpamt, missamt, pushback, scrmult)
-    if (instakillOnMiss) then missamt = 0 end
-    if (missamt ~= nil) then misscap = missamt end
+function setupSpice(stats)
+    if (instakillOnMiss) then stats.missCap = 0 end
+    if (stats.missCap ~= nil) then misscap = stats.missCap end
 end
 
 function addAnimatedOneoff(tag, spr, anim, xPos, yPos, canAdd)

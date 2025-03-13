@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="garii chart.png">
+	<!-- Created with Adobe Animate version 23.0.1.70 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="garii chart expert0000" x="348" y="102" width="102" height="101" pivotX="0" pivotY="0" frameX="-4" frameY="0" frameWidth="106" frameHeight="101"/>
+	<SubTexture name="garii chart expert0001" x="348" y="102" width="102" height="101" frameX="-4" frameY="0" frameWidth="106" frameHeight="101"/>
+	<SubTexture name="garii chart expert0002" x="348" y="102" width="102" height="101" frameX="-4" frameY="0" frameWidth="106" frameHeight="101"/>
+	<SubTexture name="garii chart expert0003" x="348" y="102" width="102" height="101" frameX="-4" frameY="0" frameWidth="106" frameHeight="101"/>
+	<SubTexture name="garii chart expert0004" x="348" y="102" width="102" height="101" frameX="-4" frameY="0" frameWidth="106" frameHeight="101"/>
+	<SubTexture name="garii chart expert0005" x="348" y="102" width="102" height="101" frameX="-4" frameY="0" frameWidth="106" frameHeight="101"/>
+	<SubTexture name="garii chart expert0006" x="348" y="102" width="102" height="101" frameX="-4" frameY="0" frameWidth="106" frameHeight="101"/>
+	<SubTexture name="garii chart expert0007" x="348" y="102" width="102" height="101" frameX="-4" frameY="0" frameWidth="106" frameHeight="101"/>
+	<SubTexture name="garii chart expert0008" x="348" y="102" width="102" height="101" frameX="-4" frameY="0" frameWidth="106" frameHeight="101"/>
+	<SubTexture name="garii chart expert0009" x="348" y="102" width="102" height="101" frameX="-4" frameY="0" frameWidth="106" frameHeight="101"/>
+	<SubTexture name="garii chart expert0010" x="348" y="102" width="102" height="101" frameX="-4" frameY="0" frameWidth="106" frameHeight="101"/>
+	<SubTexture name="garii chart expert0011" x="348" y="102" width="102" height="101" frameX="-4" frameY="0" frameWidth="106" frameHeight="101"/>
+	<SubTexture name="garii chart expert0012" x="241" y="102" width="105" height="100" frameX="0" frameY="0" frameWidth="106" frameHeight="101"/>
+	<SubTexture name="garii chart expert0013" x="241" y="102" width="105" height="100" frameX="0" frameY="0" frameWidth="106" frameHeight="101"/>
+	<SubTexture name="garii chart expert0014" x="241" y="102" width="105" height="100" frameX="0" frameY="0" frameWidth="106" frameHeight="101"/>
+	<SubTexture name="garii chart expert0015" x="241" y="102" width="105" height="100" frameX="0" frameY="0" frameWidth="106" frameHeight="101"/>
+	<SubTexture name="garii chart expert0016" x="241" y="102" width="105" height="100" frameX="0" frameY="0" frameWidth="106" frameHeight="101"/>
+	<SubTexture name="garii chart expert0017" x="241" y="102" width="105" height="100" frameX="0" frameY="0" frameWidth="106" frameHeight="101"/>
+	<SubTexture name="garii chart expert0018" x="241" y="102" width="105" height="100" frameX="0" frameY="0" frameWidth="106" frameHeight="101"/>
+	<SubTexture name="garii chart expert0019" x="241" y="102" width="105" height="100" frameX="0" frameY="0" frameWidth="106" frameHeight="101"/>
+	<SubTexture name="garii chart expert0020" x="241" y="102" width="105" height="100" frameX="0" frameY="0" frameWidth="106" frameHeight="101"/>
+	<SubTexture name="garii chart expert0021" x="241" y="102" width="105" height="100" frameX="0" frameY="0" frameWidth="106" frameHeight="101"/>
+	<SubTexture name="garii chart expert0022" x="241" y="102" width="105" height="100" frameX="0" frameY="0" frameWidth="106" frameHeight="101"/>
+	<SubTexture name="garii chart expert0023" x="241" y="102" width="105" height="100" frameX="0" frameY="0" frameWidth="106" frameHeight="101"/>
+	<SubTexture name="garii chart hurt0000" x="0" y="0" width="120" height="105" pivotX="0" pivotY="0" frameX="0" frameY="0" frameWidth="123" frameHeight="105"/>
+	<SubTexture name="garii chart hurt0001" x="0" y="0" width="120" height="105" frameX="0" frameY="0" frameWidth="123" frameHeight="105"/>
+	<SubTexture name="garii chart hurt0002" x="0" y="0" width="120" height="105" frameX="0" frameY="0" frameWidth="123" frameHeight="105"/>
+	<SubTexture name="garii chart hurt0003" x="0" y="107" width="119" height="103" frameX="-4" frameY="-1" frameWidth="123" frameHeight="105"/>
+	<SubTexture name="garii chart hurt0004" x="0" y="107" width="119" height="103" frameX="-4" frameY="-1" frameWidth="123" frameHeight="105"/>
+	<SubTexture name="garii chart hurt0005" x="0" y="107" width="119" height="103" frameX="-4" frameY="-1" frameWidth="123" frameHeight="105"/>
+	<SubTexture name="garii chart master0000" x="121" y="107" width="118" height="100" pivotX="0.85" pivotY="0" frameX="0" frameY="0" frameWidth="120" frameHeight="100"/>
+	<SubTexture name="garii chart master0001" x="121" y="107" width="118" height="100" frameX="0" frameY="0" frameWidth="120" frameHeight="100"/>
+	<SubTexture name="garii chart master0002" x="121" y="107" width="118" height="100" frameX="0" frameY="0" frameWidth="120" frameHeight="100"/>
+	<SubTexture name="garii chart master0003" x="121" y="107" width="118" height="100" frameX="0" frameY="0" frameWidth="120" frameHeight="100"/>
+	<SubTexture name="garii chart master0004" x="121" y="107" width="118" height="100" frameX="0" frameY="0" frameWidth="120" frameHeight="100"/>
+	<SubTexture name="garii chart master0005" x="121" y="107" width="118" height="100" frameX="0" frameY="0" frameWidth="120" frameHeight="100"/>
+	<SubTexture name="garii chart master0006" x="121" y="107" width="118" height="100" frameX="0" frameY="0" frameWidth="120" frameHeight="100"/>
+	<SubTexture name="garii chart master0007" x="121" y="107" width="118" height="100" frameX="0" frameY="0" frameWidth="120" frameHeight="100"/>
+	<SubTexture name="garii chart master0008" x="121" y="107" width="118" height="100" frameX="0" frameY="0" frameWidth="120" frameHeight="100"/>
+	<SubTexture name="garii chart master0009" x="121" y="107" width="118" height="100" frameX="0" frameY="0" frameWidth="120" frameHeight="100"/>
+	<SubTexture name="garii chart master0010" x="121" y="107" width="118" height="100" frameX="0" frameY="0" frameWidth="120" frameHeight="100"/>
+	<SubTexture name="garii chart master0011" x="121" y="107" width="118" height="100" frameX="0" frameY="0" frameWidth="120" frameHeight="100"/>
+	<SubTexture name="garii chart master0012" x="122" y="0" width="120" height="98" frameX="0" frameY="0" frameWidth="120" frameHeight="100"/>
+	<SubTexture name="garii chart master0013" x="122" y="0" width="120" height="98" frameX="0" frameY="0" frameWidth="120" frameHeight="100"/>
+	<SubTexture name="garii chart master0014" x="122" y="0" width="120" height="98" frameX="0" frameY="0" frameWidth="120" frameHeight="100"/>
+	<SubTexture name="garii chart master0015" x="122" y="0" width="120" height="98" frameX="0" frameY="0" frameWidth="120" frameHeight="100"/>
+	<SubTexture name="garii chart master0016" x="122" y="0" width="120" height="98" frameX="0" frameY="0" frameWidth="120" frameHeight="100"/>
+	<SubTexture name="garii chart master0017" x="122" y="0" width="120" height="98" frameX="0" frameY="0" frameWidth="120" frameHeight="100"/>
+	<SubTexture name="garii chart master0018" x="122" y="0" width="120" height="98" frameX="0" frameY="0" frameWidth="120" frameHeight="100"/>
+	<SubTexture name="garii chart master0019" x="122" y="0" width="120" height="98" frameX="0" frameY="0" frameWidth="120" frameHeight="100"/>
+	<SubTexture name="garii chart master0020" x="122" y="0" width="120" height="98" frameX="0" frameY="0" frameWidth="120" frameHeight="100"/>
+	<SubTexture name="garii chart master0021" x="122" y="0" width="120" height="98" frameX="0" frameY="0" frameWidth="120" frameHeight="100"/>
+	<SubTexture name="garii chart master0022" x="122" y="0" width="120" height="98" frameX="0" frameY="0" frameWidth="120" frameHeight="100"/>
+	<SubTexture name="garii chart master0023" x="122" y="0" width="120" height="98" frameX="0" frameY="0" frameWidth="120" frameHeight="100"/>
+	<SubTexture name="garii chart normal0000" x="0" y="212" width="110" height="103" pivotX="0" pivotY="0" frameX="-2" frameY="0" frameWidth="112" frameHeight="103"/>
+	<SubTexture name="garii chart normal0001" x="0" y="212" width="110" height="103" frameX="-2" frameY="0" frameWidth="112" frameHeight="103"/>
+	<SubTexture name="garii chart normal0002" x="0" y="212" width="110" height="103" frameX="-2" frameY="0" frameWidth="112" frameHeight="103"/>
+	<SubTexture name="garii chart normal0003" x="0" y="212" width="110" height="103" frameX="-2" frameY="0" frameWidth="112" frameHeight="103"/>
+	<SubTexture name="garii chart normal0004" x="0" y="212" width="110" height="103" frameX="-2" frameY="0" frameWidth="112" frameHeight="103"/>
+	<SubTexture name="garii chart normal0005" x="0" y="212" width="110" height="103" frameX="-2" frameY="0" frameWidth="112" frameHeight="103"/>
+	<SubTexture name="garii chart normal0006" x="0" y="212" width="110" height="103" frameX="-2" frameY="0" frameWidth="112" frameHeight="103"/>
+	<SubTexture name="garii chart normal0007" x="0" y="212" width="110" height="103" frameX="-2" frameY="0" frameWidth="112" frameHeight="103"/>
+	<SubTexture name="garii chart normal0008" x="0" y="212" width="110" height="103" frameX="-2" frameY="0" frameWidth="112" frameHeight="103"/>
+	<SubTexture name="garii chart normal0009" x="0" y="212" width="110" height="103" frameX="-2" frameY="0" frameWidth="112" frameHeight="103"/>
+	<SubTexture name="garii chart normal0010" x="0" y="212" width="110" height="103" frameX="-2" frameY="0" frameWidth="112" frameHeight="103"/>
+	<SubTexture name="garii chart normal0011" x="0" y="212" width="110" height="103" frameX="-2" frameY="0" frameWidth="112" frameHeight="103"/>
+	<SubTexture name="garii chart normal0012" x="244" y="0" width="108" height="100" frameX="0" frameY="-1" frameWidth="112" frameHeight="103"/>
+	<SubTexture name="garii chart normal0013" x="244" y="0" width="108" height="100" frameX="0" frameY="-1" frameWidth="112" frameHeight="103"/>
+	<SubTexture name="garii chart normal0014" x="244" y="0" width="108" height="100" frameX="0" frameY="-1" frameWidth="112" frameHeight="103"/>
+	<SubTexture name="garii chart normal0015" x="244" y="0" width="108" height="100" frameX="0" frameY="-1" frameWidth="112" frameHeight="103"/>
+	<SubTexture name="garii chart normal0016" x="244" y="0" width="108" height="100" frameX="0" frameY="-1" frameWidth="112" frameHeight="103"/>
+	<SubTexture name="garii chart normal0017" x="244" y="0" width="108" height="100" frameX="0" frameY="-1" frameWidth="112" frameHeight="103"/>
+	<SubTexture name="garii chart normal0018" x="244" y="0" width="108" height="100" frameX="0" frameY="-1" frameWidth="112" frameHeight="103"/>
+	<SubTexture name="garii chart normal0019" x="244" y="0" width="108" height="100" frameX="0" frameY="-1" frameWidth="112" frameHeight="103"/>
+	<SubTexture name="garii chart normal0020" x="244" y="0" width="108" height="100" frameX="0" frameY="-1" frameWidth="112" frameHeight="103"/>
+	<SubTexture name="garii chart normal0021" x="244" y="0" width="108" height="100" frameX="0" frameY="-1" frameWidth="112" frameHeight="103"/>
+	<SubTexture name="garii chart normal0022" x="244" y="0" width="108" height="100" frameX="0" frameY="-1" frameWidth="112" frameHeight="103"/>
+	<SubTexture name="garii chart normal0023" x="244" y="0" width="108" height="100" frameX="0" frameY="-1" frameWidth="112" frameHeight="103"/>
+	<SubTexture name="garii chart simple0000" x="237" y="209" width="110" height="102" pivotX="0" pivotY="0" frameX="-1" frameY="0" frameWidth="114" frameHeight="103"/>
+	<SubTexture name="garii chart simple0001" x="237" y="209" width="110" height="102" frameX="-1" frameY="0" frameWidth="114" frameHeight="103"/>
+	<SubTexture name="garii chart simple0002" x="237" y="209" width="110" height="102" frameX="-1" frameY="0" frameWidth="114" frameHeight="103"/>
+	<SubTexture name="garii chart simple0003" x="237" y="209" width="110" height="102" frameX="-1" frameY="0" frameWidth="114" frameHeight="103"/>
+	<SubTexture name="garii chart simple0004" x="237" y="209" width="110" height="102" frameX="-1" frameY="0" frameWidth="114" frameHeight="103"/>
+	<SubTexture name="garii chart simple0005" x="237" y="209" width="110" height="102" frameX="-1" frameY="0" frameWidth="114" frameHeight="103"/>
+	<SubTexture name="garii chart simple0006" x="237" y="209" width="110" height="102" frameX="-1" frameY="0" frameWidth="114" frameHeight="103"/>
+	<SubTexture name="garii chart simple0007" x="237" y="209" width="110" height="102" frameX="-1" frameY="0" frameWidth="114" frameHeight="103"/>
+	<SubTexture name="garii chart simple0008" x="237" y="209" width="110" height="102" frameX="-1" frameY="0" frameWidth="114" frameHeight="103"/>
+	<SubTexture name="garii chart simple0009" x="237" y="209" width="110" height="102" frameX="-1" frameY="0" frameWidth="114" frameHeight="103"/>
+	<SubTexture name="garii chart simple0010" x="237" y="209" width="110" height="102" frameX="-1" frameY="0" frameWidth="114" frameHeight="103"/>
+	<SubTexture name="garii chart simple0011" x="237" y="209" width="110" height="102" frameX="-1" frameY="0" frameWidth="114" frameHeight="103"/>
+	<SubTexture name="garii chart simple0012" x="121" y="209" width="114" height="103"/>
+	<SubTexture name="garii chart simple0013" x="121" y="209" width="114" height="103"/>
+	<SubTexture name="garii chart simple0014" x="121" y="209" width="114" height="103"/>
+	<SubTexture name="garii chart simple0015" x="121" y="209" width="114" height="103"/>
+	<SubTexture name="garii chart simple0016" x="121" y="209" width="114" height="103"/>
+	<SubTexture name="garii chart simple0017" x="121" y="209" width="114" height="103"/>
+	<SubTexture name="garii chart simple0018" x="121" y="209" width="114" height="103"/>
+	<SubTexture name="garii chart simple0019" x="121" y="209" width="114" height="103"/>
+	<SubTexture name="garii chart simple0020" x="121" y="209" width="114" height="103"/>
+	<SubTexture name="garii chart simple0021" x="121" y="209" width="114" height="103"/>
+	<SubTexture name="garii chart simple0022" x="121" y="209" width="114" height="103"/>
+	<SubTexture name="garii chart simple0023" x="121" y="209" width="114" height="103"/>
+</TextureAtlas>
