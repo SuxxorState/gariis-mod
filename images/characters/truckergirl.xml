@@ -111,14 +111,14 @@
 	<SubTexture name="girl missed left0005" x="859" y="0" width="422" height="701" frameX="-12" frameY="-1" frameWidth="434" frameHeight="702"/>
 	<SubTexture name="girl missed left0006" x="859" y="0" width="422" height="701" frameX="-12" frameY="-1" frameWidth="434" frameHeight="702"/>
 	<SubTexture name="girl missed left0007" x="1283" y="0" width="422" height="701" frameX="-12" frameY="-1" frameWidth="434" frameHeight="702"/>
-	<SubTexture name="girl missed tuen0000" x="7666" y="689" width="349" height="665" pivotX="-1.4" pivotY="-8.6" frameX="-1" frameY="-26" frameWidth="355" frameHeight="691"/>
-	<SubTexture name="girl missed tuen0001" x="4830" y="0" width="355" height="691"/>
-	<SubTexture name="girl missed tuen0002" x="4830" y="0" width="355" height="691"/>
-	<SubTexture name="girl missed tuen0003" x="5923" y="0" width="349" height="683" frameX="0" frameY="-8" frameWidth="355" frameHeight="691"/>
-	<SubTexture name="girl missed tuen0004" x="5923" y="0" width="349" height="683" frameX="0" frameY="-8" frameWidth="355" frameHeight="691"/>
-	<SubTexture name="girl missed tuen0005" x="6628" y="0" width="342" height="687" frameX="0" frameY="-4" frameWidth="355" frameHeight="691"/>
-	<SubTexture name="girl missed tuen0006" x="6628" y="0" width="342" height="687" frameX="0" frameY="-4" frameWidth="355" frameHeight="691"/>
-	<SubTexture name="girl missed tuen0007" x="7691" y="0" width="341" height="687" frameX="0" frameY="-4" frameWidth="355" frameHeight="691"/>
+	<SubTexture name="girl missed turn0000" x="7666" y="689" width="349" height="665" pivotX="-1.4" pivotY="-8.6" frameX="-1" frameY="-26" frameWidth="355" frameHeight="691"/>
+	<SubTexture name="girl missed turn0001" x="4830" y="0" width="355" height="691"/>
+	<SubTexture name="girl missed turn0002" x="4830" y="0" width="355" height="691"/>
+	<SubTexture name="girl missed turn0003" x="5923" y="0" width="349" height="683" frameX="0" frameY="-8" frameWidth="355" frameHeight="691"/>
+	<SubTexture name="girl missed turn0004" x="5923" y="0" width="349" height="683" frameX="0" frameY="-8" frameWidth="355" frameHeight="691"/>
+	<SubTexture name="girl missed turn0005" x="6628" y="0" width="342" height="687" frameX="0" frameY="-4" frameWidth="355" frameHeight="691"/>
+	<SubTexture name="girl missed turn0006" x="6628" y="0" width="342" height="687" frameX="0" frameY="-4" frameWidth="355" frameHeight="691"/>
+	<SubTexture name="girl missed turn0007" x="7691" y="0" width="341" height="687" frameX="0" frameY="-4" frameWidth="355" frameHeight="691"/>
 	<SubTexture name="girl rihgt turn0000" x="2406" y="680" width="350" height="665" pivotX="0" pivotY="-8.95"/>
 	<SubTexture name="girl rihgt turn0001" x="2406" y="680" width="350" height="665"/>
 	<SubTexture name="girl rihgt turn0002" x="859" y="703" width="347" height="664" frameX="0" frameY="-1" frameWidth="350" frameHeight="665"/>

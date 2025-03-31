@@ -313,7 +313,7 @@ function Font:removeText(name, destroy)
     for i = 1,atts[name].maxlength do
         removeLuaSprite(name..i, destroy)
     end
-    table.remove(list, name)
+    table.remove(list, utils:indexOf(list, name))
     atts[name] = nil
 end
 

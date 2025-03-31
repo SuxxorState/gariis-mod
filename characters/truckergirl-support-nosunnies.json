@@ -1,0 +1,351 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [
+				0,
+				0
+			],
+			"anim": "danceLeft",
+			"fps": 24,
+			"name": "-nosunnies/girl idle cool mask no flip thing its just the idle idk what to tell you",
+			"indices": [
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13
+			]
+		},
+		{
+			"loop": false,
+			"offsets": [
+				0,
+				0
+			],
+			"anim": "danceRight",
+			"fps": 24,
+			"name": "-nosunnies/girl idle cool mask no flip thing its just the idle idk what to tell you",
+			"indices": [
+				14,
+				15,
+				16,
+				17,
+				18,
+				19,
+				20,
+				21,
+				22,
+				23,
+				24,
+				25,
+				26,
+				27
+			]
+		},
+		{
+			"loop": false,
+			"offsets": [
+				0,
+				0
+			],
+			"anim": "danceLeft-left",
+			"fps": 24,
+			"name": "-nosunnies/girl idle lookin left thats kinda it idk",
+			"indices": [
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13
+			]
+		},
+		{
+			"loop": false,
+			"offsets": [
+				0,
+				0
+			],
+			"anim": "danceRight-left",
+			"fps": 24,
+			"name": "-nosunnies/girl idle lookin left thats kinda it idk",
+			"indices": [
+				14,
+				15,
+				16,
+				17,
+				18,
+				19,
+				20,
+				21,
+				22,
+				23,
+				24,
+				25,
+				26,
+				27
+			]
+		},
+		{
+			"loop": false,
+			"offsets": [
+				0,
+				0
+			],
+			"anim": "danceLeft-right",
+			"fps": 24,
+			"name": "-nosunnies/girl idle lookin right idk what u think im gonna say here",
+			"indices": [
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13
+			]
+		},
+		{
+			"loop": false,
+			"offsets": [
+				0,
+				0
+			],
+			"anim": "danceRight-right",
+			"fps": 24,
+			"name": "-nosunnies/girl idle lookin right idk what u think im gonna say here",
+			"indices": [
+				14,
+				15,
+				16,
+				17,
+				18,
+				19,
+				20,
+				21,
+				22,
+				23,
+				24,
+				25,
+				26,
+				27
+			]
+		},
+		{
+			"loop": false,
+			"offsets": [
+				0,
+				0
+			],
+			"anim": "danceLeft-toleft",
+			"fps": 24,
+			"name": "-nosunnies/girl idle strart lookin left both bops",
+			"indices": [
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13
+			]
+		},
+		{
+			"loop": false,
+			"offsets": [
+				0,
+				0
+			],
+			"anim": "danceRight-toleft",
+			"fps": 24,
+			"name": "-nosunnies/girl idle strart lookin left both bops",
+			"indices": [
+				14,
+				15,
+				16,
+				17,
+				18,
+				19,
+				20,
+				21,
+				22,
+				23,
+				24,
+				25,
+				26,
+				27
+			]
+		},
+		{
+			"loop": false,
+			"offsets": [
+				0,
+				0
+			],
+			"anim": "danceLeft-toright",
+			"fps": 24,
+			"name": "-nosunnies/girl start lookin rite NOWW!!",
+			"indices": [
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13
+			]
+		},
+		{
+			"loop": false,
+			"offsets": [
+				0,
+				0
+			],
+			"anim": "danceRight-toright",
+			"fps": 24,
+			"name": "-nosunnies/girl start lookin rite NOWW!!",
+			"indices": [
+				14,
+				15,
+				16,
+				17,
+				18,
+				19,
+				20,
+				21,
+				22,
+				23,
+				24,
+				25,
+				26,
+				27
+			]
+		},
+		{
+			"loop": false,
+			"offsets": [
+				0,
+				0
+			],
+			"anim": "sad",
+			"fps": 24,
+			"name": "-nosunnies/girl sad face :(",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-3,
+				30
+			],
+			"anim": "cheer",
+			"fps": 24,
+			"name": "-nosunnies/girl chair animation she is sitting",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				0,
+				0
+			],
+			"anim": "count3",
+			"fps": 24,
+			"name": "-nosunnies/girl countdown thre",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				0,
+				0
+			],
+			"anim": "count2",
+			"fps": 24,
+			"name": "-nosunnies/girl countdown twoo",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				0,
+				0
+			],
+			"anim": "count1",
+			"fps": 24,
+			"name": "-nosunnies/girl countdown once",
+			"indices": []
+		},
+		{
+			"loop": true,
+			"offsets": [
+				-10,
+				0
+			],
+			"anim": "tomnjerry",
+			"fps": 24,
+			"name": "-nosunnies/girl mario ahahahaha",
+			"indices": []
+		}
+	],
+	"vocals_file": "",
+	"no_antialiasing": false,
+	"image": "characters/truckergirl-support",
+	"position": [
+		250,
+		90
+	],
+	"healthicon": "truckgirl",
+	"flip_x": false,
+	"healthbar_colors": [
+		197,
+		82,
+		82
+	],
+	"camera_position": [
+		-170,
+		-80
+	],
+	"sing_duration": 4,
+	"scale": 1,
+	"_editor_isPlayer": false
+}

@@ -10,7 +10,8 @@ local dirIndex = {["right"] = {x = 1, y = 0}, ["down"] = {x = 0, y = 1}, ["left"
 local levelFruits = {"carrot", "grapes", "pineapple", "lemon", "cherries", "salad", "sandwich", "spirit"}
 local fruitPoints = {["carrot"] = 100, ["grapes"] = 300, ["pineapple"] = 500, ["lemon"] = 700, ["cherries"] = 1000, ["salad"] = 2000, ["sandwich"] = 3000, ["spirit-boy"] = 4000, ["spirit-girl"] = 4000, ["tire"] = 5000, ["notebook"] = 5000, ["bottle"] = 5000, ["can"] = 5000, ["mic"] = 10000}
 local plrColours = {["boy"] = "4E7FAF", ["girl"] = "C55252"}
-local plrChar = "boy"
+local plrPrefix = {["boy"] = "", ["girl"] = ""}
+local plrChar = "girl"
 local fruitDisp = {}
 local curFruit = "carrot"
 local levelColour = "4d664d"
@@ -70,6 +71,19 @@ function startMinigame()
     highScore = utils:getGariiData("fuzzlingsHighScore")
 
     utils:makeBlankBG("blankBG", screenWidth,screenHeight, "111111", "hud")
+        
+    if (utils:getGariiData("lostSunnies")) then makeLuaSprite("bnyuBorderL", fldr.."borderleft-alt", 0, 0)
+        plrPrefix["girl"] = "alt "
+    else makeLuaSprite("bnyuBorderL", fldr.."borderleft", 0, 0)
+    end
+    utils:setObjectCamera("bnyuBorderL", "other")
+    addLuaSprite("bnyuBorderL", true)
+    if (utils:getGariiData("lostHat")) then makeLuaSprite("bnyuBorderR", fldr.."borderright-alt", 640, 0)
+            plrPrefix["boy"] = "alt "
+    else makeLuaSprite("bnyuBorderR", fldr.."borderright", 640, 0)
+    end
+    utils:setObjectCamera("bnyuBorderR", "other")
+    addLuaSprite("bnyuBorderR", true)
 
     makeLuaSprite("fuzzMap", fldr.."map", gameOffsets.x, gameOffsets.y)
     setProperty("fuzzMap.antialiasing", false)
@@ -98,14 +112,14 @@ function startMinigame()
 
     makeAnimatedLuaSprite("truckPlayer", fldr..plrChar.."-mini", gameOffsets.x + 112, gameOffsets.y + 184)
     for i,anim in pairs({"left", "down", "up", "right"}) do
-        addAnimationByPrefix("truckPlayer", "walk-"..anim, "walk "..anim, 12)
+        addAnimationByPrefix("truckPlayer", "walk-"..anim, plrPrefix[plrChar].."walk "..anim, 12)
         addOffset("truckPlayer", "walk-"..anim, 4,4)
-        addAnimationByPrefix("truckPlayer", "idle-"..anim, "idle "..anim)
+        addAnimationByPrefix("truckPlayer", "idle-"..anim, plrPrefix[plrChar].."idle "..anim)
         addOffset("truckPlayer", "idle-"..anim, 4,4)
     end
-    addAnimationByPrefix("truckPlayer", "die", "die", 6)
+    addAnimationByPrefix("truckPlayer", "die", plrPrefix[plrChar].."die", 6)
     addOffset("truckPlayer", "die", 4,4)
-    addAnimationByPrefix("truckPlayer", "idle-down-start", "idle down")
+    addAnimationByPrefix("truckPlayer", "idle-down-start", plrPrefix[plrChar].."idle down")
     addOffset("truckPlayer", "idle-down-start", 8,4)
     setProperty("truckPlayer.antialiasing", false)
     utils:setObjectCamera("truckPlayer", "hud")
@@ -117,10 +131,6 @@ function startMinigame()
     font:createNewText("hiScrTxt", gameOffsets.x + 192, gameOffsets.y - 16, highScore.."", "right", "FFFFFF", "hud")
     font:createNewText("readyUp", gameOffsets.x + 89, gameOffsets.y + 136, "READY!", "left", plrColours[plrChar], "hud")
     updateLives(false)
-    
-    makeLuaSprite("bnyuBorder", fldr.."border", 0, 0)
-    utils:setObjectCamera("bnyuBorder", "other")
-    addLuaSprite("bnyuBorder", true)
 
     runTimer("blinkLoop", 0.2)
     reloadMap()
@@ -224,6 +234,16 @@ function deathReset()
     setProperty("truckPlayer.y", gameOffsets.y + 184)
     trucker = {targetCoords = {x = 14, y = 23}, moveDir = {x = 0, y = 0}, queueDir = {x = 0, y = 0}, queueQueueDir = {x = 0, y = 0}}
     playAnim("truckPlayer", "idle-down-start")
+    local ghostCoords = {["andy"] = {x = 14, y = 10, tmr = 0.001}, ["mandy"] = {x = 11, y = 12, tmr = 1}, ["randy"] = {x = 11, y = 14, tmr = 8}, ["brandy"] = {x = 15, y = 12, tmr = 10}, ["sandy"] = {x = 13, y = 14}, ["paul"] = {x = 15, y = 14}}
+    for _,name in pairs(ghostList) do
+        ghosts[name] = {x = ghostCoords[name].x, y = ghostCoords[name].y, targetCoords = ghostCoords[name], moveDir = {x = 1, y = 0}, dead = false, inHouse = (name ~= "andy"), active = (name == "andy")}
+        cancelTimer("initLeave"..name)
+        runTimer("initLeave"..name, ghostCoords[name].tmr)
+        setProperty(name..".x", gameOffsets.x + (ghosts[name].targetCoords.x * 8))
+        setProperty(name..".y", gameOffsets.y + (ghosts[name].targetCoords.y * 8))
+        setProperty(name..".visible", true)
+        if (name ~= "andy") then playAnim(name, "house-up") end
+    end
     font:setTextVisible("readyUp", true)
     canTweenPlr = false
     accX = 1 * getRandomInt(-1,1,"0")
@@ -247,6 +267,11 @@ function onUpdate(elp)
         callOnLuas("placeStickers")
         runTimer("destroyGame", 1)
         canUpdate = false
+    end
+
+    if (keyJustPressed("reset")) then
+        lives = 0
+        loseLife()
     end
 
     handlePellets()
@@ -582,6 +607,32 @@ function loseLife()
     playAnim("truckPlayer", "die")
 end
 
+function openLeaderboardEnter()
+    for _,spr in pairs({"truckPlayer", "blankFG", "fuzzMap", "picnicFruit", "ghostDoor"}) do removeLuaSprite(spr, true) end
+    for _,spr in pairs(ghostList) do removeLuaSprite(spr, true) end
+    for y,row in ipairs(map) do for x,squ in ipairs(row) do
+        if (luaSpriteExists("pellet"..(x-1).." "..(y-1))) then removeLuaSprite("pellet"..(x-1).." "..(y-1), true) end
+        if (luaSpriteExists("energizer"..(x-1).." "..(y-1))) then removeLuaSprite("energizer"..(x-1).." "..(y-1), true) end
+    end end
+    for i=1,7 do
+        removeLuaSprite("fruitDisp"..i, true)
+        removeLuaSprite("life"..i, true)
+    end
+    font:removeText("readyUp")
+
+    font:createNewText("enterInitTxt", gameOffsets.x + 24, gameOffsets.y + 24, "ENTER YOUR INITIALS !", "left", "9ad6ff", "hud")
+    font:createNewText("scoreTitleTxt", gameOffsets.x + 56, gameOffsets.y + 44, "SCORE  REB  NAME", "left", "f4f3ad", "hud")
+    font:createNewText("plrScoreTxt", gameOffsets.x + 32, gameOffsets.y + 56, "99999999   99   SUX", "left", "ffffff", "hud")
+    font:createNewText("leaScoreTxt", gameOffsets.x + 88, gameOffsets.y + 80, "SCORE REB NAME", "left", "ffffff", "hud")
+
+    local suffix = {"ST", "ND", "RD", "TH"}
+    for i=1,10 do
+        local xOff = gameOffsets.x + 24
+        if (i > 9) then xOff = gameOffsets.x + 16 end
+        font:createNewText("leaderboardRank"..i, xOff, gameOffsets.y + 96 + ((i-1)*16), i..suffix[math.min(i,4)].."  99999999  16  SUX", "left", "ffffff", "hud")
+    end
+end
+
 function onSoundFinished(snd)
     if (snd == "frightloop") then utils:playSound(fldr.."fright", 1, "frightloop")
     elseif (snd == "start") then canUpdate = true
@@ -594,6 +645,7 @@ end
 function onTimerCompleted(tmr, _, loopsLeft)
     if (tmr == "fright") then stopSound("frightloop")
     elseif (tmr == "fallChild") then canTweenPlr = true
+        for _,spr in pairs(ghostList) do setProperty(spr..".visible", false) end
     elseif (tmr == "scatterOver") then ghosts.moveMode = "pursue"
         runTimer("scatterBreak", 20)
     elseif (tmr == "scatterBreak") then ghosts.moveMode = "scatter"
@@ -628,12 +680,21 @@ function onTimerCompleted(tmr, _, loopsLeft)
         end
         reloadMap()
     elseif (tmr == "deathI") then
-        runTimer("deathII", 0.25)
-        setProperty("blankFG.visible", true)
+        if (lives > 0) then
+            runTimer("deathII", 0.25)
+            setProperty("blankFG.visible", true)
+        else
+            font:setTextX("readyUp", gameOffsets.x + 73)
+            font:setTextString("readyUp", "GAME  OVER")
+            font:setTextColour("readyUp", "C55252")
+            font:setTextVisible("readyUp", true)
+            runTimer("deathIII", 2)
+        end
     elseif (tmr == "deathII") then
         deathReset()
         setProperty("blankFG.visible", false)
-    elseif (tmr == "blinkLoop") then 
+    elseif (tmr == "deathIII") then openLeaderboardEnter()
+    elseif (tmr == "blinkLoop") then
         blinkVis = not blinkVis
         runTimer("blinkLoop", 0.2)
     elseif (tmr == "destroyGame") then destroyGame()
@@ -641,7 +702,8 @@ function onTimerCompleted(tmr, _, loopsLeft)
 end
 
 function destroyGame()
-    for i,spr in pairs({"truckPlayer", "blankBG", "blankFG", "fuzzMap", "picnicFruit", "ghostDoor", "bnyuBorder", "andy"}) do removeLuaSprite(spr, true) end
+    for _,spr in pairs({"truckPlayer", "blankBG", "blankFG", "fuzzMap", "picnicFruit", "ghostDoor", "bnyuBorderL", "bnyuBorderR"}) do removeLuaSprite(spr, true) end
+    for _,spr in pairs(ghostList) do removeLuaSprite(spr, true) end
     for y,row in ipairs(map) do for x,squ in ipairs(row) do
         if (luaSpriteExists("pellet"..(x-1).." "..(y-1))) then removeLuaSprite("pellet"..(x-1).." "..(y-1), true) end
         if (luaSpriteExists("energizer"..(x-1).." "..(y-1))) then removeLuaSprite("energizer"..(x-1).." "..(y-1), true) end

@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="truckerboy-lineart-nosunnies.png">
+	<!-- Created with Adobe Animate version 23.0.1.70 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="boy down0000" x="1861" y="634" width="572" height="592" pivotX="-1.75" pivotY="-27.5" frameX="-5" frameY="-24" frameWidth="577" frameHeight="616"/>
+	<SubTexture name="boy down0001" x="2436" y="632" width="556" height="609" frameX="0" frameY="0" frameWidth="577" frameHeight="616"/>
+	<SubTexture name="boy idle0000" x="1861" y="0" width="573" height="632" pivotX="2.25" pivotY="3.25" frameX="-2" frameY="-3" frameWidth="585" frameHeight="644"/>
+	<SubTexture name="boy idle0001" x="1274" y="0" width="585" height="644"/>
+	<SubTexture name="boy left0000" x="3002" y="0" width="547" height="642" pivotX="9.6" pivotY="3" frameX="0" frameY="0" frameWidth="548" frameHeight="642"/>
+	<SubTexture name="boy left0001" x="2994" y="644" width="539" height="627" frameX="-9" frameY="-3" frameWidth="548" frameHeight="642"/>
+	<SubTexture name="boy right0000" x="682" y="0" width="590" height="645" pivotX="0" pivotY="0"/>
+	<SubTexture name="boy right0001" x="2436" y="0" width="564" height="630" frameX="-24" frameY="-13" frameWidth="590" frameHeight="645"/>
+	<SubTexture name="boy up0000" x="1274" y="646" width="482" height="683" pivotX="-54.5" pivotY="35.3" frameX="-12" frameY="0" frameWidth="495" frameHeight="691"/>
+	<SubTexture name="boy up0001" x="3551" y="0" width="495" height="685" frameX="0" frameY="-6" frameWidth="495" frameHeight="691"/>
+	<SubTexture name="miss0000" x="0" y="0" width="680" height="661" pivotX="0" pivotY="0"/>
+</TextureAtlas>

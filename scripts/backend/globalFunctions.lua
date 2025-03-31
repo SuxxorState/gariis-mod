@@ -5,9 +5,11 @@ local arcadeKey = getModSetting('arcadeMenu')
 local achievementKey = getModSetting('achievementsMenu')
 local boomPerSect, bamIntensity = 4, 1
 local unlockSecrets = (utils:lwrKebab(songName) == "gariis-arcade")
+local truckerChecks = {["sunnies"] = {"truckergirl-support", "truckergirl", "truckerboy-alt", "truckerboy-girl", "truckerboy-lineart"}, ["hat"] = {"truckerboy", "truckerboy-kissed", "truckergirl-alt", "truckerboy-girl", "truckerboy-girl-nosunnies", "truckergirl-lineart"}}
 
 function initLuas()
-    utils:setGariiData("test", true) --i dont remember why this is here however i dont feel like finding out if removing it breaks shit or not
+    utils:setGariiData("lostSunnies", true)
+    utils:setGariiData("lostHat", true)
     if not (getModSetting('gariiDebug')) then setPropertyFromClass("Main", "fpsVar.visible", false) end
     if (getPropertyFromClass('openfl.Lib', 'application.window.title') ~= "Friday Night Funkin': GARII'S MOD") then
         if (not getModSetting('sauceLock')) then utils:setGariiData("curSauce", nil) end
@@ -22,6 +24,9 @@ function initLuas()
 end
 
 function onCreatePost()
+    for _,chra in pairs({"boyfriend", "gf", "dad"}) do
+        charCheckNSwap(chra, getProperty(chra..".curCharacter"))
+    end
     setProperty("camZooming", utils:lwrKebab(songName) ~= "gariis-arcade")
 	setProperty("camZoomingMult", 0)
     setProperty("boyfriend.stunned", true)
@@ -107,7 +112,7 @@ function fixTheDamnStrums()
 end
 
 local usedPoses = {}
-local maxPoses = 5
+local maxPoses = 6
 function opponentNoteHit(id, dir, ntype)
     if (ntype == "Missed Note") then
         setProperty("health", getProperty("health") + (0.0475 / hpMultiplier) / healthLossMult)
@@ -202,7 +207,7 @@ function onUpdate(elapsed)
     end
 
     if (keyboardJustPressed(arcadeKey.keyboard) or anyGamepadJustPressed(arcadeKey.gamepad)) then
-        loadSong("gariis-arcade", 0)
+        loadSong("gariis-arcade")
     elseif (keyboardJustPressed(achievementKey.keyboard) or anyGamepadJustPressed(achievementKey.gamepad)) then
         addLuaScript('scripts/menus/achievements')
         callOnLuas("openAchievementsMenu") 
@@ -261,6 +266,18 @@ function onEvent(name, value1, value2, strumTime)
                 setPropertyFromGroup('unspawnNotes', i, 'noteSplashData.texture', value2);
             end
         end
+    elseif (event == "change-character") then charCheckNSwap(val1, val2)
+    end
+end
+
+function charCheckNSwap(charVar, charName)
+    local charNameFixed = stringSplit(stringSplit(charName, "-expert")[1], "-simple")[1] --ignores simple and expert characters
+    if ((utils:getGariiData("lostSunnies") and utils:getGariiData("lostHat")) and utils:tableContains(truckerChecks["hat"], charNameFixed.."-nosunnies") and checkFileExists("characters/"..charNameFixed.."-nosunnies-nobrim.json")) then
+        triggerEvent("Change Character", charVar, charNameFixed.."-nosunnies-nobrim")
+    elseif (utils:getGariiData("lostHat") and utils:tableContains(truckerChecks["hat"], charNameFixed) and checkFileExists("characters/"..charNameFixed.."-nobrim.json")) then
+        triggerEvent("Change Character", charVar, charNameFixed.."-nobrim")
+    elseif (utils:getGariiData("lostSunnies") and utils:tableContains(truckerChecks["sunnies"], charNameFixed) and checkFileExists("characters/"..charNameFixed.."-nosunnies.json")) then
+        triggerEvent("Change Character", charVar, charNameFixed.."-nosunnies")
     end
 end
 

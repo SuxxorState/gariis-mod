@@ -18,6 +18,7 @@ if (not errored) then
     if (utils:getGariiData("dirFldr") == nil or utils:getGariiData("dirFldr") ~= nil) then utils:setGariiData("dirFldr", getVar("folDir")) end
     
     addLuaScript(bkend..'globalFunctions')
+    callOnLuas("initLuas")
     addLuaScript(bkend.."achievementStalker")
     addLuaScript(objts..'customSoundTray')
     addLuaScript(objts..'stickerTrans')

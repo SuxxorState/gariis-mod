@@ -1,0 +1,155 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [
+				1,
+				5
+			],
+			"anim": "singDOWN",
+			"fps": 24,
+			"name": "-anims/nobrimkiss/boy kiss down",
+			"indices": []
+		},
+		{
+			"offsets": [
+				-7,
+				1
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "-anims/nobrimkiss/boy kiss roight"
+		},
+		{
+			"offsets": [
+				15,
+				5
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "-anims/nobrimkiss/boy kiss left"
+		},
+		{
+			"offsets": [
+				2,
+				2
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singUP",
+			"indices": [],
+			"name": "-anims/nobrimkiss/boy ks up"
+		},
+		{
+			"loop": false,
+			"offsets": [
+				0,
+				0
+			],
+			"anim": "idle",
+			"fps": 24,
+			"name": "-anims/nobrimkiss/boy kiss idfle",
+			"indices": [
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7
+			]
+		},
+		{
+			"loop": false,
+			"offsets": [
+				2,
+				2
+			],
+			"anim": "singUPmiss",
+			"fps": 24,
+			"name": "-anims/nobrimkiss/boy ksis miss up",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				1,
+				5
+			],
+			"anim": "singDOWNmiss",
+			"fps": 24,
+			"name": "-anims/nobrimkiss/boy kiss miss down",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-7,
+				1
+			],
+			"anim": "singRIGHTmiss",
+			"fps": 24,
+			"name": "-anims/nobrimkiss/boy kiss miss rigte",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				15,
+				5
+			],
+			"anim": "singLEFTmiss",
+			"fps": 24,
+			"name": "-anims/nobrimkiss/boy kiss miss left",
+			"indices": []
+		},
+		{
+			"offsets": [
+				-13,
+				-2
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "hey",
+			"indices": [],
+			"name": "-anims/nobrimkiss/boy kiss hey!"
+		},
+		{
+			"loop": false,
+			"offsets": [
+				0,
+				0
+			],
+			"anim": "idle-alt",
+			"fps": 24,
+			"name": "-anims/nobrimkiss/boy kiss idfle alt",
+			"indices": []
+		}
+	],
+	"vocals_file": "",
+	"no_antialiasing": false,
+	"image": "characters/truckerboy",
+	"position": [
+		11,
+		260
+	],
+	"healthicon": "truckboy",
+	"flip_x": true,
+	"healthbar_colors": [
+		78,
+		127,
+		175
+	],
+	"camera_position": [
+		-10,
+		230
+	],
+	"sing_duration": 4,
+	"scale": 1,
+	"_editor_isPlayer": true
+}

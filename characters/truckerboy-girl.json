@@ -1,169 +1,235 @@
 {
 	"animations": [
 		{
+			"loop": false,
 			"offsets": [
 				0,
 				0
 			],
-			"loop": false,
-			"fps": 24,
 			"anim": "idle",
-			"indices": [],
-			"name": "truckcoupl idle"
+			"fps": 24,
+			"name": "-anims/reg/truckcoupl idle",
+			"indices": []
 		},
 		{
-			"loop": false,
 			"offsets": [
-				39,
-				850
+				0,
+				0
 			],
+			"loop": false,
+			"fps": 24,
 			"anim": "catchGF",
-			"fps": 24,
-			"name": "truckboy catch girl",
-			"indices": []
+			"indices": [],
+			"name": "-anims/truckboy catch girl"
 		},
 		{
-			"offsets": [
-				-6,
-				-3
-			],
 			"loop": false,
-			"fps": 24,
+			"offsets": [
+				-5,
+				-1
+			],
 			"anim": "singLEFT",
-			"indices": [],
-			"name": "truckcoupl left"
+			"fps": 24,
+			"name": "-anims/reg/truckcoupl left",
+			"indices": []
 		},
 		{
-			"offsets": [
-				-33,
-				-20
-			],
 			"loop": false,
-			"fps": 24,
+			"offsets": [
+				0,
+				0
+			],
 			"anim": "singDOWN",
-			"indices": [],
-			"name": "truckcoupl down"
+			"fps": 24,
+			"name": "-anims/reg/truckcoupl down",
+			"indices": []
 		},
 		{
-			"offsets": [
-				-13,
-				195
-			],
 			"loop": false,
-			"fps": 24,
+			"offsets": [
+				7,
+				7
+			],
 			"anim": "singUP",
-			"indices": [],
-			"name": "truckcoupl up"
+			"fps": 24,
+			"name": "-anims/reg/truckcoupl up",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
-				-86,
+				0,
 				0
 			],
-			"loop": false,
-			"fps": 24,
 			"anim": "singRIGHT",
-			"indices": [],
-			"name": "truckcoupl right"
+			"fps": 24,
+			"name": "-anims/reg/truckcoupl right",
+			"indices": []
 		},
 		{
-			"offsets": [
-				4,
-				0
-			],
 			"loop": false,
-			"fps": 24,
+			"offsets": [
+				-5,
+				-1
+			],
 			"anim": "singLEFTmiss",
-			"indices": [],
-			"name": "truckcoupl misleft"
+			"fps": 24,
+			"name": "-anims/truckcoupl misleft",
+			"indices": []
 		},
 		{
-			"offsets": [
-				-27,
-				-16
-			],
 			"loop": false,
-			"fps": 24,
+			"offsets": [
+				0,
+				0
+			],
 			"anim": "singDOWNmiss",
-			"indices": [],
-			"name": "truckcoupl missdown"
+			"fps": 24,
+			"name": "-anims/truckcoupl missdown",
+			"indices": []
 		},
 		{
-			"offsets": [
-				-8,
-				194
-			],
 			"loop": false,
-			"fps": 24,
+			"offsets": [
+				7,
+				6
+			],
 			"anim": "singUPmiss",
-			"indices": [],
-			"name": "truckcoupl missup"
+			"fps": 24,
+			"name": "-anims/truckcoupl missup",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
-				-77,
+				0,
 				0
 			],
-			"loop": false,
-			"fps": 24,
 			"anim": "singRIGHTmiss",
-			"indices": [],
-			"name": "truckcoupl missright"
+			"fps": 24,
+			"name": "-anims/truckcoupl missright",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
 				0,
 				0
 			],
-			"loop": false,
-			"fps": 24,
 			"anim": "idle-smug",
-			"indices": [],
-			"name": "truckcoupl smug idle"
+			"fps": 24,
+			"name": "-anims/smug/truckcoupl smug idle",
+			"indices": []
 		},
 		{
-			"offsets": [
-				-6,
-				-3
-			],
 			"loop": false,
-			"fps": 24,
+			"offsets": [
+				-5,
+				-1
+			],
 			"anim": "singLEFT-smug",
-			"indices": [],
-			"name": "truckcoupl smuggin left"
+			"fps": 24,
+			"name": "-anims/smug/truckcoupl smuggin left",
+			"indices": []
 		},
 		{
-			"offsets": [
-				-33,
-				-20
-			],
 			"loop": false,
-			"fps": 24,
+			"offsets": [
+				0,
+				0
+			],
 			"anim": "singDOWN-smug",
-			"indices": [],
-			"name": "truckcoupl smug down"
-		},
-		{
-			"offsets": [
-				-13,
-				195
-			],
-			"loop": false,
 			"fps": 24,
+			"name": "-anims/smug/truckcoupl smug down",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				7,
+				7
+			],
 			"anim": "singUP-smug",
-			"indices": [],
-			"name": "truckcoup smg uped"
+			"fps": 24,
+			"name": "-anims/smug/truckcoup smg uped",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				0,
+				0
+			],
+			"anim": "singRIGHT-smug",
+			"fps": 24,
+			"name": "-anims/smug/truckcou p smugg right",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				0,
+				0
+			],
+			"anim": "idle-confused",
+			"fps": 24,
+			"name": "-anims/confused/truckcoupl confus idl",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-5,
+				-1
+			],
+			"anim": "singLEFT-confused",
+			"fps": 24,
+			"name": "-anims/confused/truckcoupl cnof left",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				0,
+				0
+			],
+			"anim": "singDOWN-confused",
+			"fps": 24,
+			"name": "-anims/confused/truckcoupl vonfused down",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				7,
+				7
+			],
+			"anim": "singUP-confused",
+			"fps": 24,
+			"name": "-anims/confused/truckcoupl confusd ip",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				0,
+				0
+			],
+			"anim": "singRIGHT-confused",
+			"fps": 24,
+			"name": "-anims/confused/truckcoupl fonf rite",
+			"indices": []
 		},
 		{
 			"offsets": [
-				-86,
+				3,
 				0
 			],
 			"loop": false,
 			"fps": 24,
-			"anim": "singRIGHT-smug",
+			"anim": "hey",
 			"indices": [],
-			"name": "truckcou p smugg right"
+			"name": "-anims/truckcoupl hey pose"
 		},
 		{
 			"offsets": [
@@ -172,90 +238,24 @@
 			],
 			"loop": false,
 			"fps": 24,
-			"anim": "idle-confused",
-			"indices": [],
-			"name": "truckcoupl confus idl"
-		},
-		{
-			"offsets": [
-				-6,
-				-3
-			],
-			"loop": false,
-			"fps": 24,
-			"anim": "singLEFT-confused",
-			"indices": [],
-			"name": "truckcoupl cnof left"
-		},
-		{
-			"offsets": [
-				-33,
-				-20
-			],
-			"loop": false,
-			"fps": 24,
-			"anim": "singDOWN-confused",
-			"indices": [],
-			"name": "truckcoupl vonfused down"
-		},
-		{
-			"offsets": [
-				-13,
-				195
-			],
-			"loop": false,
-			"fps": 24,
-			"anim": "singUP-confused",
-			"indices": [],
-			"name": "truckcoupl confusd ip"
-		},
-		{
-			"offsets": [
-				-86,
-				0
-			],
-			"loop": false,
-			"fps": 24,
-			"anim": "singRIGHT-confused",
-			"indices": [],
-			"name": "truckcoupl fonf rite"
-		},
-		{
-			"loop": false,
-			"offsets": [
-				-54,
-				2
-			],
-			"anim": "hey",
-			"fps": 24,
-			"name": "truckcoupl hey pose",
-			"indices": []
-		},
-		{
-			"loop": false,
-			"offsets": [
-				4,
-				9
-			],
 			"anim": "wink",
-			"fps": 24,
-			"name": "truckcoupl wink",
-			"indices": []
+			"indices": [],
+			"name": "-anims/truckcoupl wink"
 		}
 	],
 	"vocals_file": "",
 	"no_antialiasing": false,
 	"image": "characters/truckerboy-girl",
 	"position": [
-		-108,
-		265
+		8,
+		263
 	],
 	"healthicon": "truckboy",
 	"flip_x": true,
 	"healthbar_colors": [
 		78,
 		127,
-		175
+		195
 	],
 	"camera_position": [
 		30,

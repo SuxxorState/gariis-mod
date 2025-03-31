@@ -1,0 +1,267 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [
+				0,
+				0
+			],
+			"anim": "idle",
+			"fps": 24,
+			"name": "-nobrimanims/reg/truckcoupl idle",
+			"indices": []
+		},
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "catchGF",
+			"indices": [],
+			"name": "-nobrimanims/truckboy catch girl"
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-5,
+				-1
+			],
+			"anim": "singLEFT",
+			"fps": 24,
+			"name": "-nobrimanims/reg/truckcoupl left",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				0,
+				0
+			],
+			"anim": "singDOWN",
+			"fps": 24,
+			"name": "-nobrimanims/reg/truckcoupl down",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				7,
+				7
+			],
+			"anim": "singUP",
+			"fps": 24,
+			"name": "-nobrimanims/reg/truckcoupl up",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				0,
+				0
+			],
+			"anim": "singRIGHT",
+			"fps": 24,
+			"name": "-nobrimanims/reg/truckcoupl right",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-5,
+				-1
+			],
+			"anim": "singLEFTmiss",
+			"fps": 24,
+			"name": "-nobrimanims/truckcoupl misleft",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				0,
+				0
+			],
+			"anim": "singDOWNmiss",
+			"fps": 24,
+			"name": "-nobrimanims/truckcoupl missdown",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				7,
+				6
+			],
+			"anim": "singUPmiss",
+			"fps": 24,
+			"name": "-nobrimanims/truckcoupl missup",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				0,
+				0
+			],
+			"anim": "singRIGHTmiss",
+			"fps": 24,
+			"name": "-nobrimanims/truckcoupl missright",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				0,
+				0
+			],
+			"anim": "idle-smug",
+			"fps": 24,
+			"name": "-nobrimanims/smug/truckcoupl smug idle",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-5,
+				-1
+			],
+			"anim": "singLEFT-smug",
+			"fps": 24,
+			"name": "-nobrimanims/smug/truckcoupl smuggin left",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				0,
+				0
+			],
+			"anim": "singDOWN-smug",
+			"fps": 24,
+			"name": "-nobrimanims/smug/truckcoupl smug down",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				7,
+				7
+			],
+			"anim": "singUP-smug",
+			"fps": 24,
+			"name": "-nobrimanims/smug/truckcoup smg uped",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				0,
+				0
+			],
+			"anim": "singRIGHT-smug",
+			"fps": 24,
+			"name": "-nobrimanims/smug/truckcou p smugg right",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				0,
+				0
+			],
+			"anim": "idle-confused",
+			"fps": 24,
+			"name": "-nobrimanims/confused/truckcoupl confus idl",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-5,
+				-1
+			],
+			"anim": "singLEFT-confused",
+			"fps": 24,
+			"name": "-nobrimanims/confused/truckcoupl cnof left",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				0,
+				0
+			],
+			"anim": "singDOWN-confused",
+			"fps": 24,
+			"name": "-nobrimanims/confused/truckcoupl vonfused down",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				7,
+				7
+			],
+			"anim": "singUP-confused",
+			"fps": 24,
+			"name": "-nobrimanims/confused/truckcoupl confusd ip",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				0,
+				0
+			],
+			"anim": "singRIGHT-confused",
+			"fps": 24,
+			"name": "-nobrimanims/confused/truckcoupl fonf rite",
+			"indices": []
+		},
+		{
+			"offsets": [
+				3,
+				0
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "hey",
+			"indices": [],
+			"name": "-nobrimanims/truckcoupl hey pose"
+		},
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "wink",
+			"indices": [],
+			"name": "-nobrimanims/truckcoupl wink"
+		}
+	],
+	"vocals_file": "",
+	"no_antialiasing": false,
+	"image": "characters/truckerboy-girl",
+	"position": [
+		8,
+		263
+	],
+	"healthicon": "truckboy",
+	"flip_x": true,
+	"healthbar_colors": [
+		78,
+		127,
+		195
+	],
+	"camera_position": [
+		30,
+		-432.5
+	],
+	"sing_duration": 4,
+	"scale": 1,
+	"_editor_isPlayer": true
+}

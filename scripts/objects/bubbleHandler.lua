@@ -55,7 +55,7 @@ function onRequestBubble(chr) --checks to see if a txt file exists for a given c
                 table.insert(chranimz, fln)
             end
         end
-        onCreateBubble(chrgrab, bublpos[1], bublpos[2], chrgrab == "boyfriend" or chrgrab == "gf", chrgrab == "boyfriend" or chrgrab == "gf", chranimz, noteBubls, chrref)
+        onCreateBubble(chrgrab, bublpos[1], bublpos[2], chrgrab == "boyfriend" or chrgrab == "gf", chrgrab == "boyfriend", chranimz, noteBubls, chrref)
 
     else utils:trc("bubbleHandler: ".."could not find bubble text file for "..chr, 2)
     end
@@ -151,7 +151,8 @@ function onUpdatePost(elp)
         if (shitass) then --actually wait this is way simpler
             setProperty(char.."Bubbles.alpha", 0)
         end
-        if getProperty(char.."Bubbles.animation.curAnim.finished") and bubbleCanLoop[char] then --why was i having trouble with this. why.
+
+        if (getProperty(char.."Bubbles.animation.curAnim.finished") and bubbleCanLoop[char]) then --why was i having trouble with this. why.
             playAnim(char.."Bubbles", bubbleAnims[char].."-loop", false)
         end
     end

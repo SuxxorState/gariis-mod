@@ -5,7 +5,7 @@ local categories = {
     {"SKOBELOFF CASINO", {"100k-chips","true-bjs","tb-foak","no-fish"}},
     {"Some Time At Garii's", {"stag-quarters","no-power-save","no-doors-save","the-yapper","stag-deaths"}},
     {"Bushtrimmer", {"bt-simple","bt-5simple","bt-speedy","bt-expert","bt-5expert","bt-exp-speed"}},
-    {"Fuzzlings!", {"fl-everyfruit","fl-everytrash","fl-16levels","fl-64levels","fl-deaths"}}
+    {"Fuzzlings!", {"fl-everyfruit","fl-everytrash","fl-16levels","fl-64levels","fl-deaths","fl-rebirth","fl-2rebirth"}}
 }
 local achievements = {
     ["fuzzy-dice-fc"] = {title = "Capicola Gang", description = "100% Clear Fuzzy Dice", iconFile = "fuzzydice", secret = false, gariiPoints = 10},
@@ -44,8 +44,8 @@ local achievements = {
     ["fl-everytrash"] = {title = "Junkyard", description = "Collect Every Type of Trash", iconFile = "", secret = false, gariiPoints = 25},
     ["fl-16levels"] = {title = "Salad Dressing", description = "Beat 16 Levels", iconFile = "", secret = false, gariiPoints = 20},
     ["fl-64levels"] = {title = "Sandwich Tower", description = "Beat 64 Levels", iconFile = "", secret = false, gariiPoints = 50},
-    --["fl-256levels"] = {title = "Byte Overflow", description = "Beat the 256/0th Level", iconFile = "", secret = false, gariiPoints = 100},
-    --["fl-512levels"] = {title = "Exquisitely Stuffed", description = "Beat the 256/0th Level With Both Boy and Girl", iconFile = "", secret = false, gariiPoints = 250},
+    ["fl-rebirth"] = {title = "Byte Overflow", description = "Rebirth", iconFile = "", secret = false, gariiPoints = 100},
+    ["fl-2rebirth"] = {title = "Exquisitely Stuffed", description = "Rebirth as Both Boy and Girl", iconFile = "", secret = false, gariiPoints = 250},
     ["fl-deaths"] = {title = "Knuckle Sandwich", description = "Die to every fuzzling as both Boy and Girl", iconFile = "", secret = false, gariiPoints = 25},
 }
 
@@ -301,7 +301,7 @@ function openGameAchievements(game)
     setProperty("gameSelectBox.alpha", 0)
     quickAddGameSprite("gameSelectBox")
 
-    local testMode = false
+    local testMode = true
     for i,ach in pairs(categories[curSel][2]) do
         local saveShit = getAchievementSave(ach)
         local iconThing = "award"

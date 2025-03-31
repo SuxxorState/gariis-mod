@@ -8,7 +8,7 @@
 			],
 			"anim": "danceLeft",
 			"fps": 24,
-			"name": "girl idle cool mask no flip thing its just the idle idk what to tell you",
+			"name": "-anims/girl idle cool mask no flip thing its just the idle idk what to tell you",
 			"indices": [
 				0,
 				1,
@@ -34,7 +34,7 @@
 			],
 			"anim": "danceRight",
 			"fps": 24,
-			"name": "girl idle cool mask no flip thing its just the idle idk what to tell you",
+			"name": "-anims/girl idle cool mask no flip thing its just the idle idk what to tell you",
 			"indices": [
 				14,
 				15,
@@ -60,7 +60,7 @@
 			],
 			"anim": "danceLeft-left",
 			"fps": 24,
-			"name": "girl idle lookin left thats kinda it idk",
+			"name": "-anims/girl idle lookin left thats kinda it idk",
 			"indices": [
 				0,
 				1,
@@ -86,7 +86,7 @@
 			],
 			"anim": "danceRight-left",
 			"fps": 24,
-			"name": "girl idle lookin left thats kinda it idk",
+			"name": "-anims/girl idle lookin left thats kinda it idk",
 			"indices": [
 				14,
 				15,
@@ -104,7 +104,6 @@
 				27
 			]
 		},
-		
 		{
 			"loop": false,
 			"offsets": [
@@ -113,7 +112,7 @@
 			],
 			"anim": "danceLeft-right",
 			"fps": 24,
-			"name": "girl idle lookin right idk what u think im gonna say here",
+			"name": "-anims/girl idle lookin right idk what u think im gonna say here",
 			"indices": [
 				0,
 				1,
@@ -139,7 +138,7 @@
 			],
 			"anim": "danceRight-right",
 			"fps": 24,
-			"name": "girl idle lookin right idk what u think im gonna say here",
+			"name": "-anims/girl idle lookin right idk what u think im gonna say here",
 			"indices": [
 				14,
 				15,
@@ -165,7 +164,7 @@
 			],
 			"anim": "danceLeft-toleft",
 			"fps": 24,
-			"name": "girl idle strart lookin left both bops",
+			"name": "-anims/girl idle strart lookin left both bops",
 			"indices": [
 				0,
 				1,
@@ -191,7 +190,7 @@
 			],
 			"anim": "danceRight-toleft",
 			"fps": 24,
-			"name": "girl idle strart lookin left both bops",
+			"name": "-anims/girl idle strart lookin left both bops",
 			"indices": [
 				14,
 				15,
@@ -217,7 +216,7 @@
 			],
 			"anim": "danceLeft-toright",
 			"fps": 24,
-			"name": "girl start lookin rite NOWW!!",
+			"name": "-anims/girl start lookin rite NOWW!!",
 			"indices": [
 				0,
 				1,
@@ -243,7 +242,7 @@
 			],
 			"anim": "danceRight-toright",
 			"fps": 24,
-			"name": "girl start lookin rite NOWW!!",
+			"name": "-anims/girl start lookin rite NOWW!!",
 			"indices": [
 				14,
 				15,
@@ -264,67 +263,67 @@
 		{
 			"loop": false,
 			"offsets": [
-				-17,
+				0,
 				0
 			],
 			"anim": "sad",
 			"fps": 24,
-			"name": "girl sad face :(",
+			"name": "-anims/girl sad face :(",
 			"indices": []
 		},
 		{
 			"loop": false,
 			"offsets": [
-				204,
-				288
+				-3,
+				30
 			],
 			"anim": "cheer",
 			"fps": 24,
-			"name": "girl chair animation she is sitting",
+			"name": "-anims/girl chair animation she is sitting",
 			"indices": []
 		},
 		{
 			"loop": false,
 			"offsets": [
-				-25,
+				0,
 				0
 			],
 			"anim": "count3",
 			"fps": 24,
-			"name": "girl countdown thre",
+			"name": "-anims/girl countdown thre",
 			"indices": []
 		},
 		{
 			"loop": false,
 			"offsets": [
-				-8,
-				1
+				0,
+				0
 			],
 			"anim": "count2",
 			"fps": 24,
-			"name": "girl countdown twoo",
+			"name": "-anims/girl countdown twoo",
 			"indices": []
 		},
 		{
 			"loop": false,
 			"offsets": [
-				-24,
-				-14
+				0,
+				0
 			],
 			"anim": "count1",
 			"fps": 24,
-			"name": "girl countdown once",
+			"name": "-anims/girl countdown once",
 			"indices": []
 		},
 		{
 			"loop": true,
 			"offsets": [
-				50,
+				-10,
 				0
 			],
 			"anim": "tomnjerry",
 			"fps": 24,
-			"name": "girl mario ahahahaha",
+			"name": "-anims/girl mario ahahahaha",
 			"indices": []
 		}
 	],
@@ -332,8 +331,8 @@
 	"no_antialiasing": false,
 	"image": "characters/truckergirl-support",
 	"position": [
-		200,
-		120
+		250,
+		90
 	],
 	"healthicon": "truckgirl",
 	"flip_x": false,

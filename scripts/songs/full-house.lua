@@ -6,11 +6,10 @@ function onCreate()
     addLuaScript("scripts/objects/extraCharacter")
     setProperty("skipCountdown", true)
 
-    makeLuaSprite('blackin','gameOver/black-paper',450,116)
-    setGraphicSize("blackin", 1300, 740)
-    addLuaSprite('blackin')
-    setObjectOrder("blackin", getObjectOrder('gfGroup'))
-    setProperty("blackin.visible", false)
+    makeLuaSprite('breakdownBG','gameOver/black-paper',450,116)
+    setGraphicSize("breakdownBG", 1300, 740)
+    addLuaSprite('breakdownBG')
+    setProperty("breakdownBG.visible", false)
     
     makeLuaSprite('blackoutSpr','gameOver/black-paper',-10,-10)
     setGraphicSize("blackoutSpr", 1300, 740)
@@ -53,6 +52,7 @@ function onStepHit()
 end
 
 function updateGF()
+    setObjectOrder("breakdownBG", getObjectOrder("dadGroup")) --????? (・・?
     setProperty("spkr2.visible", true)
     setProperty("gf.scrollFactor.x", 1)
     setProperty("gf.scrollFactor.y", 1)
@@ -130,7 +130,7 @@ function onEvent(name, value1, value2, strumTime)
     elseif (event == "set-char-colour") then
         setProperty(val1..".color", getColorFromHex(val2))
     elseif (event == "setup-close-shit") then
-        setProperty("blackin.visible", val1 == "")
+        setProperty("breakdownBG.visible", val1 == "")
         setProperty("bg.visible", val1 ~= "")
         setProperty("gf.visible", val1 ~= "")
         setProperty('over.visible', val1 == "")

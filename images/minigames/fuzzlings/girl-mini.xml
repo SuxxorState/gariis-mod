@@ -28,4 +28,32 @@
 	
 	<SubTexture name="die0000" x="64" y="0" width="16" height="16"/>
 	<SubTexture name="die0001" x="64" y="16" width="16" height="16"/>
+		
+	<SubTexture name="alt walk up0000" x="0" y="16" width="16" height="16"/>
+	<SubTexture name="alt walk up0001" x="0" y="0" width="16" height="16"/>
+	<SubTexture name="alt walk up0002" x="0" y="32" width="16" height="16"/>
+	<SubTexture name="alt walk up0003" x="0" y="0" width="16" height="16"/>
+	
+	<SubTexture name="alt walk down0000" x="0" y="64" width="16" height="16"/>
+	<SubTexture name="alt walk down0001" x="0" y="48" width="16" height="16"/>
+	<SubTexture name="alt walk down0002" x="48" y="64" width="16" height="16"/>
+	<SubTexture name="alt walk down0003" x="0" y="48" width="16" height="16"/>
+	
+	<SubTexture name="alt walk left0000" x="16" y="64" width="16" height="16"/>
+	<SubTexture name="alt walk left0001" x="16" y="48" width="16" height="16"/>
+	<SubTexture name="alt walk left0002" x="64" y="64" width="16" height="16"/>
+	<SubTexture name="alt walk left0003" x="16" y="48" width="16" height="16"/>
+
+	<SubTexture name="alt walk right0000" x="32" y="64" width="16" height="16"/>
+	<SubTexture name="alt walk right0001" x="32" y="48" width="16" height="16"/>
+	<SubTexture name="alt walk right0002" x="48" y="48" width="16" height="16"/>
+	<SubTexture name="alt walk right0003" x="32" y="48" width="16" height="16"/>
+	
+	<SubTexture name="alt idle up0000" x="0" y="0" width="16" height="16"/>
+	<SubTexture name="alt idle down0000" x="0" y="48" width="16" height="16"/>
+	<SubTexture name="alt idle left0000" x="16" y="48" width="16" height="16"/>
+	<SubTexture name="alt idle right0000" x="32" y="48" width="16" height="16"/>
+	
+	<SubTexture name="alt die0000" x="64" y="32" width="16" height="16"/>
+	<SubTexture name="alt die0001" x="64" y="48" width="16" height="16"/>
 </TextureAtlas>

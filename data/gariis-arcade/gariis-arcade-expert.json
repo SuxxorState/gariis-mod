@@ -1,0 +1,16 @@
+{
+	"song": {
+		"player1": "bf",
+		"gfVersion": "bf",
+		"notes": [],
+		"events": [],
+		"player2": "bf",
+		"splashSkin": "",
+		"song": "gariis-arcade",
+		"needsVoices": false,
+		"arrowSkin": "",
+		"stage": "empty",
+		"bpm": 100,
+		"speed": 1
+	}
+}

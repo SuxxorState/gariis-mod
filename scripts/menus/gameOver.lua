@@ -42,6 +42,9 @@ function onGameOver()
     if (utils:lwrKebab(songName) == "full-house") or (utils:lwrKebab(songName) == "fuzzy-dice" and getSongPosition() >= 67500) then gameOverChar = "truckercouple"
     elseif (utils:lwrKebab(songName) == "twenty-sixteen") then gameOverChar = "cup"
     end
+    if (utils:getGariiData("lostHat") and stringStartsWith(gameOverChar, "trucker")) then
+        gameOverChar = gameOverChar.."-nobrim"
+    end
 
     makeLuaSprite('circleGameOver', fldr..'silhouette', 620-1450, 320-900)
     utils:setObjectCamera('circleGameOver', 'other')
