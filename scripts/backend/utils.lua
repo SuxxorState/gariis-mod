@@ -241,6 +241,13 @@ function Utils:shuffle(tab)
     return tab
 end
 
+function Utils:numSuffix(int)
+    local suffix = {[0] = "TH"; "ST", "ND", "RD", "TH"}
+    local suf = suffix[math.min(int%10,4)]
+    if (int > 10 and int < 20) then suf = "TH" end --i freaking love english
+    return suf
+end
+
 function Utils:rmpToRng(val, inSt, inNd, nwSt, nwNd)
     return nwSt + (val - inSt) * ((nwNd - nwSt) / (inNd - inSt))
 end

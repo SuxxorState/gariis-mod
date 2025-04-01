@@ -9,9 +9,12 @@ local toFunc = ""
 
 function onCreate()
     for _,stkr in pairs(utils:dirFileList('images/stickers/')) do
-        if (stringEndsWith(stkr:lower(), ".png")) then 
-            if (stringEndsWith(string.sub(stkr, 1, #stkr - 4):lower(), "rare")) then table.insert(rareStickers, string.sub(stkr, 1, #stkr - 4))
-            else table.insert(stickers, string.sub(stkr, 1, #stkr - 4)) 
+        if (stringEndsWith(stkr:lower(), ".png")) then
+            local stickName = string.sub(stkr, 1, #stkr - 4):lower()
+            if ((stickName == "miscsticker3" and (not utils:getGariiData("lostHat"))) or (stickName == "miscsticker5" and (not utils:getGariiData("lostSunnies"))) or (stickName ~= "miscsticker3" and stickName ~= "miscsticker5")) then
+                if (stringEndsWith(stickName, "rare")) then table.insert(rareStickers, string.sub(stkr, 1, #stkr - 4))
+                else table.insert(stickers, string.sub(stkr, 1, #stkr - 4)) 
+                end
             end
         end
     end
@@ -38,7 +41,8 @@ function placeStickers(openScript, callFunc)
     local yPos = -150
     local inc = 1
     while (xPos <= screenWidth) do
-        if (getRandomInt(0,255) == 0) then makeLuaSprite('sticker'..inc, 'stickers/'..rareStickers[getRandomInt(1, #rareStickers)], xPos, yPos)
+        local randi = getRandomInt(0,255)
+        if (randi == 0) then makeLuaSprite('sticker'..inc, 'stickers/'..rareStickers[getRandomInt(1, #rareStickers)], xPos, yPos)
         else makeLuaSprite('sticker'..inc, 'stickers/'..stickers[getRandomInt(1, #stickers)], xPos, yPos)
         end
         addLuaSprite('sticker'..inc, true)

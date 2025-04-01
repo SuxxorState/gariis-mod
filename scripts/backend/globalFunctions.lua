@@ -5,7 +5,6 @@ local arcadeKey = getModSetting('arcadeMenu')
 local achievementKey = getModSetting('achievementsMenu')
 local boomPerSect, bamIntensity = 4, 1
 local unlockSecrets = (utils:lwrKebab(songName) == "gariis-arcade")
-local truckerChecks = {["sunnies"] = {"truckergirl-support", "truckergirl", "truckerboy-alt", "truckerboy-girl", "truckerboy-lineart"}, ["hat"] = {"truckerboy", "truckerboy-kissed", "truckergirl-alt", "truckerboy-girl", "truckerboy-girl-nosunnies", "truckergirl-lineart"}}
 
 function initLuas()
     utils:setGariiData("lostSunnies", true)
@@ -271,12 +270,12 @@ function onEvent(name, value1, value2, strumTime)
 end
 
 function charCheckNSwap(charVar, charName)
-    local charNameFixed = stringSplit(stringSplit(charName, "-expert")[1], "-simple")[1] --ignores simple and expert characters
-    if ((utils:getGariiData("lostSunnies") and utils:getGariiData("lostHat")) and utils:tableContains(truckerChecks["hat"], charNameFixed.."-nosunnies") and checkFileExists("characters/"..charNameFixed.."-nosunnies-nobrim.json")) then
+    local charNameFixed = stringSplit(stringSplit(charName, "-expert")[1], "-simple")[1] --ignores simple and expert suffixes on characters
+    if ((utils:getGariiData("lostSunnies") and utils:getGariiData("lostHat")) and checkFileExists("characters/"..charNameFixed.."-nosunnies-nobrim.json")) then
         triggerEvent("Change Character", charVar, charNameFixed.."-nosunnies-nobrim")
-    elseif (utils:getGariiData("lostHat") and utils:tableContains(truckerChecks["hat"], charNameFixed) and checkFileExists("characters/"..charNameFixed.."-nobrim.json")) then
+    elseif (utils:getGariiData("lostHat") and checkFileExists("characters/"..charNameFixed.."-nobrim.json")) then
         triggerEvent("Change Character", charVar, charNameFixed.."-nobrim")
-    elseif (utils:getGariiData("lostSunnies") and utils:tableContains(truckerChecks["sunnies"], charNameFixed) and checkFileExists("characters/"..charNameFixed.."-nosunnies.json")) then
+    elseif (utils:getGariiData("lostSunnies") and checkFileExists("characters/"..charNameFixed.."-nosunnies.json")) then
         triggerEvent("Change Character", charVar, charNameFixed.."-nosunnies")
     end
 end

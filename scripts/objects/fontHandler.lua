@@ -304,6 +304,7 @@ end
 function Font:textExists(name) return (utils:indexOf(list, name) ~= nil) end
 function Font:getTextX(name) return atts[name].x end
 function Font:getTextY(name) return atts[name].y end
+function Font:getTextVisible(name) return atts[name].visible end
 function Font:sheetName(name) return sheetNames[name] end
 
 function Font:removeText(name, destroy)

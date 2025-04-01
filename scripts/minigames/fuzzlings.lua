@@ -9,8 +9,7 @@ local ghosts = {}
 local dirIndex = {["right"] = {x = 1, y = 0}, ["down"] = {x = 0, y = 1}, ["left"] = {x = -1, y = 0}, ["up"] = {x = 0, y = -1}}
 local levelFruits = {"carrot", "grapes", "pineapple", "lemon", "cherries", "salad", "sandwich", "spirit"}
 local fruitPoints = {["carrot"] = 100, ["grapes"] = 300, ["pineapple"] = 500, ["lemon"] = 700, ["cherries"] = 1000, ["salad"] = 2000, ["sandwich"] = 3000, ["spirit-boy"] = 4000, ["spirit-girl"] = 4000, ["tire"] = 5000, ["notebook"] = 5000, ["bottle"] = 5000, ["can"] = 5000, ["mic"] = 10000}
-local plrColours = {["boy"] = "4E7FAF", ["girl"] = "C55252"}
-local plrPrefix = {["boy"] = "", ["girl"] = ""}
+local plrData = {["boy"] = {colour = "4E7FAF", icons = {0,2}, prefix = ""}, ["girl"] = {colour = "C55252", icons = {1,3}, prefix = ""}}
 local plrChar = "girl"
 local fruitDisp = {}
 local curFruit = "carrot"
@@ -20,11 +19,17 @@ local extraLifeGiven = false
 local curLevel = 1
 local pelletCount, maxPellets = 0, 0
 local blinkVis = true
+local rebirths = 0
 local score, highScore = 0, 0
 local accX = 1 * getRandomInt(-1,1,"0")
 local accY = -2
 local canUpdate = false
 local canTweenPlr = false
+local charList, curChar = {"A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"}, 1
+local placeholderLB = {{100, 0, "SUX"}, {90, 0, "XOR"}, {80, 0, "RAZ"}, {70, 0, "GAR"}, {60, 0, "LIN"}, {50, 0, "BKM"}, {40, 0, "PVG"}, {30, 0, "AGE"}, {20, 0, "AMO"}, {10, 0, "AST"}}
+local playerName, hoveredChar, activatedName = "", "A", false
+local noMorePlayerAnims = false
+
 local baseMap = {--0 is for walls, 1 is for paths, 2 is for pellets, 3 is for energizers, 4 is for fruits, 5 is for ghost-only-- any collectable nums fall back to 1 when collected
     {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
     {0,2,2,2,2,2,3,0,0,2,2,2,2,2,2,2,2,2,2,0,0,3,2,2,2,2,2,0},
@@ -67,19 +72,19 @@ function startMinigame()
     setProperty("camHUD.zoom", 2)
     setVar("pacMapBase", baseMap)
 
-    if (utils:getGariiData("fuzzlingsHighScore") == nil) then utils:setGariiData("fuzzlingsHighScore", 0) end
-    highScore = utils:getGariiData("fuzzlingsHighScore")
+    if (utils:getGariiData("fuzzLeaderboard") == nil) then utils:setGariiData("fuzzLeaderboard", placeholderLB) end
+    highScore = utils:getGariiData("fuzzLeaderboard")[1][1]
 
     utils:makeBlankBG("blankBG", screenWidth,screenHeight, "111111", "hud")
         
     if (utils:getGariiData("lostSunnies")) then makeLuaSprite("bnyuBorderL", fldr.."borderleft-alt", 0, 0)
-        plrPrefix["girl"] = "alt "
+        plrData["girl"].prefix = "alt "
     else makeLuaSprite("bnyuBorderL", fldr.."borderleft", 0, 0)
     end
     utils:setObjectCamera("bnyuBorderL", "other")
     addLuaSprite("bnyuBorderL", true)
     if (utils:getGariiData("lostHat")) then makeLuaSprite("bnyuBorderR", fldr.."borderright-alt", 640, 0)
-            plrPrefix["boy"] = "alt "
+        plrData["boy"].prefix = "alt "
     else makeLuaSprite("bnyuBorderR", fldr.."borderright", 640, 0)
     end
     utils:setObjectCamera("bnyuBorderR", "other")
@@ -112,14 +117,14 @@ function startMinigame()
 
     makeAnimatedLuaSprite("truckPlayer", fldr..plrChar.."-mini", gameOffsets.x + 112, gameOffsets.y + 184)
     for i,anim in pairs({"left", "down", "up", "right"}) do
-        addAnimationByPrefix("truckPlayer", "walk-"..anim, plrPrefix[plrChar].."walk "..anim, 12)
+        addAnimationByPrefix("truckPlayer", "walk-"..anim, (plrData[plrChar].prefix).."walk "..anim, 12)
         addOffset("truckPlayer", "walk-"..anim, 4,4)
-        addAnimationByPrefix("truckPlayer", "idle-"..anim, plrPrefix[plrChar].."idle "..anim)
+        addAnimationByPrefix("truckPlayer", "idle-"..anim, (plrData[plrChar].prefix).."idle "..anim)
         addOffset("truckPlayer", "idle-"..anim, 4,4)
     end
-    addAnimationByPrefix("truckPlayer", "die", plrPrefix[plrChar].."die", 6)
+    addAnimationByPrefix("truckPlayer", "die", (plrData[plrChar].prefix).."die", 6)
     addOffset("truckPlayer", "die", 4,4)
-    addAnimationByPrefix("truckPlayer", "idle-down-start", plrPrefix[plrChar].."idle down")
+    addAnimationByPrefix("truckPlayer", "idle-down-start", (plrData[plrChar].prefix).."idle down")
     addOffset("truckPlayer", "idle-down-start", 8,4)
     setProperty("truckPlayer.antialiasing", false)
     utils:setObjectCamera("truckPlayer", "hud")
@@ -127,9 +132,9 @@ function startMinigame()
     
     font:createNewText("levelTxt", gameOffsets.x + 24, gameOffsets.y - 24, "LEVEL "..curLevel, "left", "FFFFFF", "hud")
     font:createNewText("scoreTxt", gameOffsets.x + 32, gameOffsets.y - 16, score.."", "left", "FFFFFF", "hud")
-    font:createNewText("highScore", gameOffsets.x + 120, gameOffsets.y - 24, "HI SCORE:SUX", "left", "FFFFFF", "hud")
+    font:createNewText("highScore", gameOffsets.x + 120, gameOffsets.y - 24, "HI SCORE:"..(utils:getGariiData("fuzzLeaderboard")[1][3]), "left", "FFFFFF", "hud")
     font:createNewText("hiScrTxt", gameOffsets.x + 192, gameOffsets.y - 16, highScore.."", "right", "FFFFFF", "hud")
-    font:createNewText("readyUp", gameOffsets.x + 89, gameOffsets.y + 136, "READY!", "left", plrColours[plrChar], "hud")
+    font:createNewText("readyUp", gameOffsets.x + 89, gameOffsets.y + 136, "READY!", "left", plrData[plrChar].colour, "hud")
     updateLives(false)
 
     runTimer("blinkLoop", 0.2)
@@ -216,6 +221,7 @@ function reloadMap() --hopefully seperating this as its own function reduces a b
     setProperty("truckPlayer.x", gameOffsets.x + 112)
     setProperty("truckPlayer.y", gameOffsets.y + 184)
     playAnim("truckPlayer", "idle-down-start")
+    noMorePlayerAnims = false
     canTweenPlr = false
     accX = 1 * getRandomInt(-1,1,"0")
     accY = -2
@@ -234,6 +240,7 @@ function deathReset()
     setProperty("truckPlayer.y", gameOffsets.y + 184)
     trucker = {targetCoords = {x = 14, y = 23}, moveDir = {x = 0, y = 0}, queueDir = {x = 0, y = 0}, queueQueueDir = {x = 0, y = 0}}
     playAnim("truckPlayer", "idle-down-start")
+    noMorePlayerAnims = false
     local ghostCoords = {["andy"] = {x = 14, y = 10, tmr = 0.001}, ["mandy"] = {x = 11, y = 12, tmr = 1}, ["randy"] = {x = 11, y = 14, tmr = 8}, ["brandy"] = {x = 15, y = 12, tmr = 10}, ["sandy"] = {x = 13, y = 14}, ["paul"] = {x = 15, y = 14}}
     for _,name in pairs(ghostList) do
         ghosts[name] = {x = ghostCoords[name].x, y = ghostCoords[name].y, targetCoords = ghostCoords[name], moveDir = {x = 1, y = 0}, dead = false, inHouse = (name ~= "andy"), active = (name == "andy")}
@@ -253,6 +260,31 @@ function deathReset()
 end
 
 function onUpdate(elp)
+    if (activatedName) then
+        if (keyJustPressed("ui_up")) then scrollName(-1)
+        elseif (keyJustPressed("ui_down")) then scrollName(1)
+        elseif (keyJustPressed("ui_right") or keyJustPressed("accept")) then playerName = playerName..hoveredChar
+            curChar = 1
+            if (#utils:numToStr(playerName) >= 3) then activatedName = false
+                finishLeaderboard()
+            else scrollName(0)
+            end
+        elseif (keyJustPressed("ui_left") or keyJustPressed("back")) then
+            local nameTable = utils:numToStr(playerName)
+            playerName = ""
+            if (#nameTable > 1) then for i=1,#nameTable-1 do
+                playerName = playerName..nameTable[i]
+            end end
+            scrollName(0)
+        end
+    else
+        if (keyJustPressed("back")) then
+            callOnLuas("placeStickers")
+            runTimer("destroyGame", 1)
+            canUpdate = false
+        end
+    end
+
     if (canTweenPlr) then
         setProperty("truckPlayer.x", getProperty("truckPlayer.x") + accX)
         setProperty("truckPlayer.y", getProperty("truckPlayer.y") + accY)
@@ -261,13 +293,8 @@ function onUpdate(elp)
         end
         accY = accY + math.min((0.1 * (math.abs(accY) + 0.1)), 0.25)
     end
-    if (not canUpdate) then return end
 
-    if (keyJustPressed("back")) then
-        callOnLuas("placeStickers")
-        runTimer("destroyGame", 1)
-        canUpdate = false
-    end
+    if (not canUpdate) then return end
 
     if (keyJustPressed("reset")) then
         lives = 0
@@ -282,9 +309,18 @@ function onUpdate(elp)
     font:setTextString("scoreTxt", score)
     if (score >= highScore) then 
         highScore = score
-        utils:setGariiData("fuzzlingsHighScore", score)
+        font:setTextString("highScore", "HI SCORE:YOU")
         font:setTextString("hiScrTxt", highScore)
     end
+end
+
+function scrollName(inc)
+    curChar = curChar + inc
+    if (curChar < 1) then curChar = #charList
+    elseif (curChar > #charList) then curChar = 1 end
+
+    hoveredChar = charList[curChar]
+    font:setTextString("plrNameTxt", playerName..hoveredChar)
 end
 
 function handlePellets()
@@ -383,7 +419,12 @@ function updateLives(extra)
     if (extra == nil) then extra = false end
     for i=1,6 do
         if ((not luaSpriteExists("life"..i)) and lives > i) then
-            makeLuaSprite("life"..i, fldr..plrChar.."-life", gameOffsets.x + (i * 16), gameOffsets.y + (31*8))
+            local iconUsed = 1
+            if (plrData[plrChar].prefix ~= "") then iconUsed = 2 end
+            makeLuaSprite("life"..i, fldr.."life-icons", gameOffsets.x + (i * 16), gameOffsets.y + (31*8))
+            loadGraphic("life"..i, fldr.."life-icons", 16, 16)
+            addAnimation("life"..i, "reg", {plrData[plrChar].icons[iconUsed]})
+            setProperty("life"..i..".color", getColorFromHex(plrData[plrChar].colour))
             setProperty("life"..i..".antialiasing", false)
             utils:setObjectCamera("life"..i, "hud")
             addLuaSprite("life"..i)
@@ -549,8 +590,10 @@ function handlePlayerMovement()
             trucker.moveDir.x = trucker.queueDir.x
         end
         if (map[trucker.targetCoords.y+1+trucker.queueQueueDir.y][trucker.targetCoords.x+1+trucker.queueQueueDir.x] ~= nil and map[trucker.targetCoords.y+1][trucker.targetCoords.x + trucker.moveDir.x+1] == 0) then 
-            if (trucker.moveDir.x < 1) then playAnim("truckPlayer", "idle-left")
-            else playAnim("truckPlayer", "idle-right")
+            if (not noMorePlayerAnims) then
+                if (trucker.moveDir.x < 1) then playAnim("truckPlayer", "idle-left")
+                else playAnim("truckPlayer", "idle-right")
+                end
             end
             trucker.moveDir.x = 0
         end
@@ -560,8 +603,10 @@ function handlePlayerMovement()
             trucker.moveDir.y = trucker.queueDir.y 
         end
         if (map[trucker.targetCoords.y+1+trucker.queueQueueDir.y][trucker.targetCoords.x+1+trucker.queueQueueDir.x] ~= nil and map[trucker.targetCoords.y + trucker.moveDir.y+1][trucker.targetCoords.x+1] == 0) then 
-            if (trucker.moveDir.y < 1) then playAnim("truckPlayer", "idle-up")
-            else playAnim("truckPlayer", "idle-down")
+            if (not noMorePlayerAnims) then
+                if (trucker.moveDir.y < 1) then playAnim("truckPlayer", "idle-up")
+                else playAnim("truckPlayer", "idle-down")
+                end
             end
             trucker.moveDir.y = 0 
         end
@@ -570,15 +615,19 @@ function handlePlayerMovement()
 
     if ((getProperty("truckPlayer.x")-gameOffsets.x)/8 ~= trucker.targetCoords.x and trucker.moveDir.x ~= 0) then
         setProperty("truckPlayer.x", getProperty("truckPlayer.x") + (trucker.moveDir.x))
-        if (trucker.moveDir.x > 0) then playAnim("truckPlayer", "walk-right")
-        else playAnim("truckPlayer", "walk-left")
+        if (not noMorePlayerAnims) then
+            if (trucker.moveDir.x > 0) then playAnim("truckPlayer", "walk-right")
+            else playAnim("truckPlayer", "walk-left")
+            end
         end
     end
 
     if ((getProperty("truckPlayer.y")-gameOffsets.y)/8 ~= trucker.targetCoords.y and trucker.moveDir.y ~= 0) then
         setProperty("truckPlayer.y", getProperty("truckPlayer.y") + (trucker.moveDir.y))
-        if (trucker.moveDir.y > 0) then playAnim("truckPlayer", "walk-down")
-        else playAnim("truckPlayer", "walk-up")
+        if (not noMorePlayerAnims) then
+            if (trucker.moveDir.y > 0) then playAnim("truckPlayer", "walk-down")
+            else playAnim("truckPlayer", "walk-up")
+            end
         end
     end
 
@@ -604,9 +653,13 @@ function loseLife()
     lives = lives - 1
     runTimer("fallChild", 0.5)
     utils:playSound(fldr.."die", 1, "deathSnd")
-    playAnim("truckPlayer", "die")
+    noMorePlayerAnims = true
+    playAnim("truckPlayer", "die", true)
 end
 
+local localLB = utils:getGariiData("fuzzLeaderboard")
+local snapshotScr = {score, rebirths, "YOU"}
+local rank = 0
 function openLeaderboardEnter()
     for _,spr in pairs({"truckPlayer", "blankFG", "fuzzMap", "picnicFruit", "ghostDoor"}) do removeLuaSprite(spr, true) end
     for _,spr in pairs(ghostList) do removeLuaSprite(spr, true) end
@@ -620,17 +673,64 @@ function openLeaderboardEnter()
     end
     font:removeText("readyUp")
 
+    snapshotScr = {score, rebirths, "YOU"}
+    if (localLB == nil) then localLB = placeholderLB end
+    for i,scr in pairs(localLB) do
+        if (snapshotScr[1] > scr[1]) then
+            table.insert(localLB, i, snapshotScr)
+            rank = i
+            break
+        end
+    end
+    if (rank == 0) then
+        rank = #localLB+1
+        localLB[rank] = snapshotScr
+    end
     font:createNewText("enterInitTxt", gameOffsets.x + 24, gameOffsets.y + 24, "ENTER YOUR INITIALS !", "left", "9ad6ff", "hud")
     font:createNewText("scoreTitleTxt", gameOffsets.x + 56, gameOffsets.y + 44, "SCORE  REB  NAME", "left", "f4f3ad", "hud")
-    font:createNewText("plrScoreTxt", gameOffsets.x + 32, gameOffsets.y + 56, "99999999   99   SUX", "left", "ffffff", "hud")
+    local plrText = gimmeSpaces(10, #utils:numToStr(snapshotScr[1]))..snapshotScr[1]..gimmeSpaces(5, #utils:numToStr(snapshotScr[2]))..snapshotScr[2]
+    font:createNewText("plrScoreTxt", gameOffsets.x + 16, gameOffsets.y + 56, plrText, "left", "ffffff", "hud")
+    font:createNewText("plrNameTxt", gameOffsets.x + 160, gameOffsets.y + 56, "A", "left", "ffffff", "hud")
     font:createNewText("leaScoreTxt", gameOffsets.x + 88, gameOffsets.y + 80, "SCORE REB NAME", "left", "ffffff", "hud")
+    activatedName = true
 
-    local suffix = {"ST", "ND", "RD", "TH"}
     for i=1,10 do
-        local xOff = gameOffsets.x + 24
-        if (i > 9) then xOff = gameOffsets.x + 16 end
-        font:createNewText("leaderboardRank"..i, xOff, gameOffsets.y + 96 + ((i-1)*16), i..suffix[math.min(i,4)].."  99999999  16  SUX", "left", "ffffff", "hud")
+        local lbText = i..utils:numSuffix(i)
+        if (i <= 9) then lbText = " "..lbText end
+
+        local singleLB = localLB[i]
+        if (singleLB == nil) then singleLB = placeholderLB[i] end
+        lbText = lbText..gimmeSpaces(10, #utils:numToStr(singleLB[1]))..singleLB[1]..gimmeSpaces(4, #utils:numToStr(singleLB[2]))..singleLB[2].."  "..singleLB[3]
+
+        local colourText = "FFFFFF"
+        if (rank == i) then colourText = "f4f3ad"
+            runTimer("placeFlicker"..i, 1)
+        elseif (i == 10 and rank > 10) then colourText = "f4f3ad"
+            runTimer("placeFlicker10", 1)
+            lbText = rank..(utils:numSuffix(rank))..gimmeSpaces(10, #utils:numToStr(snapshotScr[1]))..snapshotScr[1]..gimmeSpaces(4, #utils:numToStr(snapshotScr[2]))..snapshotScr[2].."  "..snapshotScr[3]
+        end
+
+        font:createNewText("leaderboardRank"..i, gameOffsets.x + 16, gameOffsets.y + 96 + ((i-1)*16), lbText, "left", colourText, "hud")
     end
+end
+
+function finishLeaderboard()
+    snapshotScr[3] = playerName
+    localLB[rank] = snapshotScr
+    cancelTimer("placeFlicker"..math.min(rank,10))
+    font:setTextVisible("leaderboardRank"..math.min(rank,10), true)
+    local lbNewTxt = rank..(utils:numSuffix(rank))..gimmeSpaces(10, #utils:numToStr(snapshotScr[1]))..snapshotScr[1]..gimmeSpaces(4, #utils:numToStr(snapshotScr[2]))..snapshotScr[2].."  "..snapshotScr[3]
+    if (rank <= 9) then lbNewTxt = " "..lbNewTxt end
+    font:setTextString("leaderboardRank"..math.min(rank,10), lbNewTxt)
+    utils:setGariiData("fuzzLeaderboard", localLB)
+end
+
+function gimmeSpaces(compMax, varComp)
+    local spaces = ""
+    if (compMax-varComp > 0) then for _=1,(compMax-varComp) do
+        spaces = spaces.." "
+    end end
+    return spaces
 end
 
 function onSoundFinished(snd)
@@ -697,6 +797,10 @@ function onTimerCompleted(tmr, _, loopsLeft)
     elseif (tmr == "blinkLoop") then
         blinkVis = not blinkVis
         runTimer("blinkLoop", 0.2)
+    elseif (stringStartsWith(tmr, "placeFlicker")) then
+        local curPlace = stringSplit(tmr, "placeFlicker")[2]
+        font:setTextVisible("leaderboardRank"..curPlace, not font:getTextVisible("leaderboardRank"..curPlace))
+        runTimer("placeFlicker"..curPlace, 1)
     elseif (tmr == "destroyGame") then destroyGame()
     end
 end
@@ -714,6 +818,7 @@ function destroyGame()
     end
 
     font:destroyAll()
+    utils:stopAllKnownSounds()
     callOnLuas("toggleCursor", {true})
     setProperty("camHUD.zoom", 1)
     callOnLuas("backToMinigameHUB")
