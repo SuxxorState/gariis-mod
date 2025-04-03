@@ -9,6 +9,12 @@
 	<SubTexture name="andy-up0001" x="16" y="32" width="16" height="16"/>
 	<SubTexture name="andy-down0000" x="0" y="48" width="16" height="16"/>
 	<SubTexture name="andy-down0001" x="16" y="48" width="16" height="16"/>
+	<SubTexture name="andy-fright0000" x="0" y="64" width="16" height="16"/>
+	<SubTexture name="andy-fright0001" x="16" y="64" width="16" height="16"/>
+	<SubTexture name="andy-eatendown0000" x="16" y="112" width="16" height="16"/>
+	<SubTexture name="andy-eatenleft0000" x="16" y="96" width="16" height="16"/>
+	<SubTexture name="andy-eatenup0000" x="0" y="112" width="16" height="16"/>
+	<SubTexture name="andy-eatenright0000" x="0" y="96" width="16" height="16"/>
 	
 	<SubTexture name="mandy-right0000" x="32" y="0" width="16" height="16"/>
 	<SubTexture name="mandy-right0001" x="48" y="0" width="16" height="16"/>
@@ -18,6 +24,12 @@
 	<SubTexture name="mandy-up0001" x="48" y="32" width="16" height="16"/>
 	<SubTexture name="mandy-down0000" x="32" y="48" width="16" height="16"/>
 	<SubTexture name="mandy-down0001" x="48" y="48" width="16" height="16"/>
+	<SubTexture name="mandy-fright0000" x="32" y="64" width="16" height="16"/>
+	<SubTexture name="mandy-fright0001" x="48" y="64" width="16" height="16"/>
+	<SubTexture name="mandy-eatendown0000" x="48" y="112" width="16" height="16"/>
+	<SubTexture name="mandy-eatenleft0000" x="48" y="96" width="16" height="16"/>
+	<SubTexture name="mandy-eatenup0000" x="32" y="112" width="16" height="16"/>
+	<SubTexture name="mandy-eatenright0000" x="32" y="96" width="16" height="16"/>
 	
 	<SubTexture name="randy-right0000" x="64" y="0" width="16" height="16"/>
 	<SubTexture name="randy-right0001" x="80" y="0" width="16" height="16"/>
@@ -27,6 +39,12 @@
 	<SubTexture name="randy-up0001" x="80" y="32" width="16" height="16"/>
 	<SubTexture name="randy-down0000" x="64" y="48" width="16" height="16"/>
 	<SubTexture name="randy-down0001" x="80" y="48" width="16" height="16"/>
+	<SubTexture name="randy-fright0000" x="64" y="64" width="16" height="16"/>
+	<SubTexture name="randy-fright0001" x="80" y="64" width="16" height="16"/>
+	<SubTexture name="randy-eatendown0000" x="80" y="112" width="16" height="16"/>
+	<SubTexture name="randy-eatenleft0000" x="80" y="96" width="16" height="16"/>
+	<SubTexture name="randy-eatenup0000" x="64" y="112" width="16" height="16"/>
+	<SubTexture name="randy-eatenright0000" x="64" y="96" width="16" height="16"/>
 	
 	<SubTexture name="brandy-right0000" x="96" y="0" width="16" height="16"/>
 	<SubTexture name="brandy-right0001" x="112" y="0" width="16" height="16"/>
@@ -36,4 +54,10 @@
 	<SubTexture name="brandy-up0001" x="112" y="32" width="16" height="16"/>
 	<SubTexture name="brandy-down0000" x="96" y="48" width="16" height="16"/>
 	<SubTexture name="brandy-down0001" x="112" y="48" width="16" height="16"/>
+	<SubTexture name="brandy-fright0000" x="96" y="64" width="16" height="16"/>
+	<SubTexture name="brandy-fright0001" x="112" y="64" width="16" height="16"/>
+	<SubTexture name="brandy-eatendown0000" x="112" y="112" width="16" height="16"/>
+	<SubTexture name="brandy-eatenleft0000" x="112" y="96" width="16" height="16"/>
+	<SubTexture name="brandy-eatenup0000" x="96" y="112" width="16" height="16"/>
+	<SubTexture name="brandy-eatenright0000" x="96" y="96" width="16" height="16"/>
 </TextureAtlas>

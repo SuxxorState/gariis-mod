@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="girl-mini.png">
+	<!-- dick and ass -->
+	<SubTexture name="graveinit0000" x="0" y="0" width="16" height="16"/>
+	<SubTexture name="graveflowers-none0000" x="16" y="0" width="16" height="16"/>
+	<SubTexture name="graveflowers-boy0000" x="48" y="0" width="16" height="16"/>
+	<SubTexture name="graveflowers-girl0000" x="32" y="0" width="16" height="16"/>
+	<SubTexture name="graveflowers-couple0000" x="64" y="0" width="16" height="16"/>
+</TextureAtlas>
