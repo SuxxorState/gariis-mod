@@ -256,8 +256,15 @@ function Utils:numToStr(nerm) -- converts a number/string to a table of strings.
     local strnerm = ""..nerm 
     local numtbl = {}
 
+    local skipThisNum = -1
     for i = 1,#strnerm do
-        table.insert(numtbl, string.sub(strnerm, i, i))
+        if (i ~= skipThisNum) then
+            if (string.byte(string.sub(strnerm, i, i)) > 127) then
+                table.insert(numtbl, string.sub(strnerm, i, i+1))
+                skipThisNum = i+1
+            else table.insert(numtbl, string.sub(strnerm, i, i))
+            end
+        end
     end
 
     return numtbl

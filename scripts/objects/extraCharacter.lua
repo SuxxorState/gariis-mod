@@ -6,12 +6,13 @@ local chrAmts = {["opp"] = 0, ["sup"] = 0}
 local lastMHS = true
 local lastcombo = 0
 
-function addExtraOpp(varName, chName, xPos, yPos) makeNewCommon(varName, chName, xPos, yPos, getObjectOrder('dadGroup')+1, "opp") end
-function addExtraSup(varName, chName, xPos, yPos) makeNewCommon(varName, chName, xPos, yPos, getObjectOrder('gfGroup')+1, "sup") end
+function addExtraOpp(varName, chName, xPos, yPos, def) makeNewCommon(varName, chName, xPos, yPos, getObjectOrder('dadGroup')+1, "opp", def) end
+function addExtraSup(varName, chName, xPos, yPos, def) makeNewCommon(varName, chName, xPos, yPos, getObjectOrder('gfGroup')+1, "sup", def) end
 
-function makeNewCommon(varName, chName, xPos, yPos, pos, tipe) --pretty barebones way of having another character; its WAY better than the old system i was using, though.
+function makeNewCommon(varName, chName, xPos, yPos, pos, tipe, def) --pretty barebones way of having another character; its WAY better than the old system i was using, though.
+    if (def == nil) then def = false end
     chrAmts[tipe] = chrAmts[tipe] + 1
-    storedChrs[varName] = {chrName = chName, x = xPos, y = yPos, reduced = false, lolthing = 0, index = chrAmts[tipe], chrType = tipe, idleSuffix = "", switchTo = "", poseSuffix = ""}
+    storedChrs[varName] = {chrName = chName, x = xPos, y = yPos, reduced = false, lolthing = 0, index = chrAmts[tipe], chrType = tipe, idleSuffix = "", switchTo = "", poseSuffix = "", defaultNote = def}
 
     createInstance(varName, "objects.Character", {xPos, yPos, chName, false})
     setProperty(varName..".x", getProperty(varName..".x") + getProperty(varName..".positionArray")[1])
@@ -103,8 +104,8 @@ end
 
 function opponentNoteHit(index, dir, noteType, sustain) 
     local dirs = {"left", "down", "up", "right"}
-    for chr,_ in pairs(storedChrs) do
-        if utils:lwrKebab(noteType) == chr..'-note' and storedChrs[chr].chrType == "opp" then
+    for chr,vr in pairs(storedChrs) do
+        if (utils:lwrKebab(noteType) == chr..'-note' or (vr.defaultNote and noteType == "")) and storedChrs[chr].chrType == "opp" then
             callMethod(chr..".playAnim", {"sing"..(dirs[dir+1]:upper())..storedChrs[chr].poseSuffix, true})
             setProperty(chr..".holdTimer", 0)
             setObjectOrder("iconTime"..chr, getObjectOrder("iconTime") + 1)

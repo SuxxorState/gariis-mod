@@ -7,8 +7,8 @@ local boomPerSect, bamIntensity = 4, 1
 local unlockSecrets = (utils:lwrKebab(songName) == "gariis-arcade")
 
 function initLuas()
-    utils:setGariiData("lostSunnies", false)
-    utils:setGariiData("lostHat", false)
+    utils:setGariiData("lostSunnies", true)
+    utils:setGariiData("lostHat", true)
     if not (getModSetting('gariiDebug')) then setPropertyFromClass("Main", "fpsVar.visible", false) end
     if (getPropertyFromClass('openfl.Lib', 'application.window.title') ~= "Friday Night Funkin': GARII'S MOD") then
         if (not getModSetting('sauceLock')) then utils:setGariiData("curSauce", nil) end

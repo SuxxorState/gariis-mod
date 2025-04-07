@@ -6,8 +6,8 @@ local fonts = {
 }
 local loadedFont = {}
 local Font = {}
-local rawAlphaNumerals = {"a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z", "0", "1", "2", "3", "4", "5", "6", "7", "8", "9", ",", ".", "!", "?", ":", "<", ">", "+", "-", "%", "'", "(", ")"}
-local sheetNames = {["0"] = "zero", ["1"] = "one", ["2"] = "two", ["3"] = "three", ["4"] = "four", ["5"] = "five", ["6"] = "six", ["7"] = "seven", ["8"] = "eight", ["9"] = "nine", ["!"] = "exclamation", [","] = "comma", ["."] = "period", ["?"] = "question", [":"] = "colon", ["<"] = "less than", [">"] = "greater than", ["+"] = "plus", ["-"] = "minus"} --any characters that need special names
+local rawAlphaNumerals = {"a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z", "0", "1", "2", "3", "4", "5", "6", "7", "8", "9", ",", ".", "!", "?", ":", "<", ">", "+", "-", "%", "'", "(", ")", '"', "/", "©"}
+local sheetNames = {["0"] = "zero", ["1"] = "one", ["2"] = "two", ["3"] = "three", ["4"] = "four", ["5"] = "five", ["6"] = "six", ["7"] = "seven", ["8"] = "eight", ["9"] = "nine", ["!"] = "exclamation", [","] = "comma", ["."] = "period", ["?"] = "question", [":"] = "colon", ["<"] = "less than", [">"] = "greater than", ["+"] = "plus", ["-"] = "minus", ['"'] = "quotations", ["©"] = "copyright"} --any characters that need special names
 local animateFixedNames = {["/"] = "slash", ["\\"] = "backslash"}
 local excemptDynamicPos = {
     ["lumeglyph"] = {["'"] = {y = 0}, ["p"] = {y = 11}, ["q"] = {y = 11}, ["g"] = {y = 11}, ["y"] = {y = 11}}

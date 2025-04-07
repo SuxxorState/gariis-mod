@@ -39,6 +39,11 @@ function onCreate()
 end
 
 function onCreatePost()
+    if (stringEndsWith(difficultyPath, "expert")) then
+        callOnLuas("addExtraOpp", {"garii2", "garii-redeyes", -60,70, true})
+        setProperty("garii2.alpha", 0)
+        removeLuaSprite("iconTimegarii2")
+    end
     if (not isStoryMode) or (not notDoneScene) then return end
 
     makeLuaSprite('tcbg','',0,-((590 * 1.75)*2))
@@ -147,6 +152,7 @@ function onEventPushed(name, value1, value2, strumTime)
     end
 end
 
+local shit = false
 function onEvent(name, value1, value2, strumTime)
     local event = name:lower()
     local val1 = value1:lower()
@@ -162,7 +168,13 @@ function onEvent(name, value1, value2, strumTime)
         runTimer("fly gf fly", 4/24)
         runTimer("startle bf", 6/24)
         runTimer("die goons", 30/24)
+    elseif (event == "kill extra garii") then 
+        setProperty("garii2.alpha", 0)
+        callOnLuas("removeExtraChar", {"garii2"})
     elseif (event == "toggle close-up cams") then
+        shit = not shit
+        if (shit) then doTweenAlpha("garii2", "garii2", 1, 5)
+        end
         utils:runHaxeCode([[
             FlxG.cameras.list[1].visible = !FlxG.cameras.list[1].visible;
             FlxG.cameras.list[2].visible = !FlxG.cameras.list[2].visible;

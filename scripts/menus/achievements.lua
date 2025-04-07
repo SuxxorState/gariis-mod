@@ -1,11 +1,11 @@
 local utils = (require (getVar("folDir").."scripts.backend.utils")):new()
 
 local categories = {
-    {"Garii's Mod", {"fuzzy-dice-fc","full-house-fc","episode-ii-fc","story-deaths","garii-hud-death","no-pose","fuzzy-dice-ex-fc","full-house-ex-fc","episode-ii-ex-fc", "all-achievements"}},
+    {"Garii's Mod", {"fuzzy-dice-fc","full-house-fc","episode-ii-fc","story-deaths","garii-hud-death","no-pose","expert2simple","fuzzy-dice-ex-fc","full-house-ex-fc","episode-ii-ex-fc", "all-achievements"}},
     {"SKOBELOFF CASINO", {"100k-chips","true-bjs","tb-foak","no-fish"}},
     {"Some Time At Garii's", {"stag-quarters","no-power-save","no-doors-save","the-yapper","stag-deaths"}},
     {"Bushtrimmer", {"bt-simple","bt-5simple","bt-speedy","bt-expert","bt-5expert","bt-exp-speed"}},
-    {"Fuzzlings!", {"fl-everyfruit","fl-everytrash","fl-16levels","fl-64levels","fl-deaths","fl-rebirth","fl-2rebirth"}}
+    {"Fuzzlings!", {"fl-everyfruit","fl-everytrash","fl-pacifist","fl-sadist","fl-16levels","fl-64levels","fl-deaths","fl-rebirth","fl-2rebirth"}}
 }
 local achievements = {
     ["fuzzy-dice-fc"] = {title = "Capicola Gang", description = "100% Clear Fuzzy Dice", iconFile = "fuzzydice", secret = false, gariiPoints = 10},
@@ -18,6 +18,7 @@ local achievements = {
 
     ["episode-ii-fc"] = {title = "Show Off", description = "100% Clear Episode ][ without dying once", iconFile = "episodeii", secret = false, gariiPoints = 25},
     ["episode-ii-ex-fc"] = {title = "You Made Your Point", description = "100% Clear Episode ][ EX without dying once", iconFile = "truckermedal", secret = true, gariiPoints = 50},
+    ["expert2simple"] = {title = "Chat Told Me To", description = "Play a Simple Chart After Beating every Normal and Expert Chart in a Row", iconFile = "", secret = false, gariiPoints = 25},
     ["story-deaths"] = {title = "The Part Where He Kills You", description = "Experience every possible death Episode ][ has to offer", iconFile = "portal2", secret = false, gariiPoints = 25},
     ["all-achievements"] = {title = "Don't You Have Anything Better to Do?", description = "Unlock every achievement, including this one.", iconFile = "", secret = true, gariiPoints = 20},
 
@@ -42,6 +43,8 @@ local achievements = {
 
     ["fl-everyfruit"] = {title = "Pic-a-nic Basket", description = "Gather Every Food and Drink", iconFile = "", secret = false, gariiPoints = 10},
     ["fl-everytrash"] = {title = "Junkyard", description = "Collect Every Type of Trash", iconFile = "", secret = false, gariiPoints = 25},
+    ["fl-pacifist"] = {title = "Green Hamm", description = "Avoid Sending the Fuzzlings Back to Their Base—for 16+ Levels in a row", iconFile = "", secret = false, gariiPoints = 25},
+    ["fl-sadist"] = {title = "Seeing Red Wine", description = "Send EVERY fuzzling back to their base for EVERY energizer you eat in a level—for 4+ Levels in a row", iconFile = "", secret = false, gariiPoints = 25},
     ["fl-16levels"] = {title = "Salad Dressing", description = "Beat 16 Levels", iconFile = "", secret = false, gariiPoints = 20},
     ["fl-64levels"] = {title = "Sandwich Tower", description = "Beat 64 Levels", iconFile = "", secret = false, gariiPoints = 50},
     ["fl-rebirth"] = {title = "Byte Overflow", description = "Rebirth", iconFile = "", secret = false, gariiPoints = 100},
@@ -290,8 +293,9 @@ function openGameAchievements(game)
     setProperty('achNameTxt.y', offset.y + 47)
     quickAddGameSprite('achNameTxt', true)
     
-    makeLuaText('descNameTxt', achievements[categories[curSel][2][curAch]].description,0,0,832)
+    makeLuaText('descNameTxt', achievements[categories[curSel][2][curAch]].description,840,0,832)
     utils:quickFormatTxt('descNameTxt', "segoe.ttf", 24, "BFC8CD")
+    setTextAlignment("descNameTxt", "left")
     setProperty('descNameTxt.x', offset.x + 16)
     setProperty('descNameTxt.y', offset.y + 82)
     quickAddGameSprite('descNameTxt', true)
@@ -301,7 +305,7 @@ function openGameAchievements(game)
     setProperty("gameSelectBox.alpha", 0)
     quickAddGameSprite("gameSelectBox")
 
-    local testMode = true
+    local testMode = false
     for i,ach in pairs(categories[curSel][2]) do
         local saveShit = getAchievementSave(ach)
         local iconThing = "award"

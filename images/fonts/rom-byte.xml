@@ -20,8 +20,8 @@
 	
 	<SubTexture name="period 0000" x="88" y="16" width="8" height="8"/>
 	<SubTexture name="colon 0000" x="96" y="16" width="8" height="8"/>
-	<SubTexture name="pointer 0000" x="104" y="16" width="8" height="8"/>
-	<SubTexture name="gariiright 0000" x="112" y="16" width="8" height="8"/>
+	<SubTexture name="greater than 0000" x="104" y="16" width="8" height="8"/>
+	<SubTexture name="copyright 0000" x="112" y="16" width="8" height="8"/>
 	
 	<SubTexture name="[ 0000" x="0" y="24" width="8" height="8"/>
 	<SubTexture name="] 0000" x="8" y="24" width="8" height="8"/>

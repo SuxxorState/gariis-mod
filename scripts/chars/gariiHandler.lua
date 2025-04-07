@@ -6,8 +6,10 @@ function onCreatePost()
     elseif (stringStartsWith(getProperty("gf.curCharacter"), "garii")) then garchar = "gf"
     end
 
-    setProperty(garchar..'.idleSuffix', '-fake')
-    playAnim(garchar, "idle-fake", true)
+    if (not stringEndsWith(difficultyPath, "expert")) then
+        setProperty(garchar..'.idleSuffix', '-fake')
+        playAnim(garchar, "idle-fake", true) 
+    end
 end
 
 function onCountdownTick(counter)

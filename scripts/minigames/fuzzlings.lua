@@ -9,28 +9,36 @@ local ghosts = {}
 local dirIndex = {["right"] = {x = 1, y = 0}, ["down"] = {x = 0, y = 1}, ["left"] = {x = -1, y = 0}, ["up"] = {x = 0, y = -1}}
 local levelFruits = {"carrot", "grapes", "pineapple", "lemon", "cherries", "salad", "sandwich", "spirit"}
 local fruitPoints = {["carrot"] = 100, ["grapes"] = 300, ["pineapple"] = 500, ["lemon"] = 700, ["cherries"] = 1000, ["salad"] = 2000, ["sandwich"] = 3000, ["spirit-boy"] = 4000, ["spirit-girl"] = 4000, ["tire"] = 5000, ["notebook"] = 5000, ["bottle"] = 5000, ["can"] = 5000, ["mic"] = 10000}
-local plrData = {["boy"] = {colour = "4E7FAF", icons = {0,2}, prefix = ""}, ["girl"] = {colour = "C55252", icons = {1,3}, prefix = ""}}
-local plrChar = "girl"
+local plrList, curPlrSel = {"boy", "girl"}, 1
+local plrData = {
+    ["boy"] = {colour = "4E7FAF", icons = {0,2}, prefix = "", pinCond = "lostHat"}, 
+    ["girl"] = {colour = "C55252", icons = {1,3}, prefix = "", pinCond = "lostSunnies"},
+    ["garii"] = {colour = "F4F3AD", icons = {4}, prefix = "", pinCond = nil},
+    ["hunte"] = {colour = "DBAF85", icons = {5}, prefix = "", pinCond = nil},
+    ["carv"] = {colour = "4D664D", icons = {6}, prefix = "", pinCond = nil}
+}
+local plrChar = "boy"
 local fruitDisp = {}
 local curFruit = "carrot"
+local levelColourList = {"4d664d", "8fc79b", "f4f3ad", "dbaf85", "c55252", "7e464f", "635245", "333333"}
 local levelColour = "4d664d"
 local lives = 5
-local extraLifeGiven = false
-local curLevel = 0
+local extraLivesGiven = 0
+local curLevel = 1
 local pelletCount, maxPellets = 0, 0
 local blinkVis = true
 local rebirths = 0
 local score, highScore = 0, 0
 local accX = 1 * getRandomInt(-1,1,"0")
 local accY = -2
-local canUpdate = false
+local attractMode, titleMode, canUpdate = false, false, false
 local canTweenPlr = false
 local ghostPointMult = 200
 local charList, curChar = {"A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"}, 1
 local placeholderLB = {{100, 0, "SUX"}, {90, 0, "XOR"}, {80, 0, "RAZ"}, {70, 0, "GAR"}, {60, 0, "LIN"}, {50, 0, "BKM"}, {40, 0, "PVG"}, {30, 0, "BEE"}, {20, 0, "AMO"}, {10, 0, "AST"}}
 local playerName, hoveredChar, activatedName = "", "A", false
 local noMorePlayerAnims = false
-local zeroLoops = 5
+local zeroLoops = 0
 
 local behaviorList, curAction = { --mimic pacman behaviors please!
     {{"scatter", 7}, {"pursue", 20}, {"scatter", 7}, {"pursue", 20}, {"scatter", 5}, {"pursue", 20}, {"scatter", 5}, {"pursue"}},
@@ -160,13 +168,135 @@ function startMinigame()
     else makeLuaSprite("bnyuBorderL", fldr.."borderleft", 0, 0)
     end
     utils:setObjectCamera("bnyuBorderL", "other")
+    setProperty("bnyuBorderL.antialiasing", false)
     addLuaSprite("bnyuBorderL", true)
     if (utils:getGariiData("lostHat")) then makeLuaSprite("bnyuBorderR", fldr.."borderright-alt", 640, 0)
         plrData["boy"].prefix = "alt "
     else makeLuaSprite("bnyuBorderR", fldr.."borderright", 640, 0)
     end
     utils:setObjectCamera("bnyuBorderR", "other")
+    setProperty("bnyuBorderR.antialiasing", false)
     addLuaSprite("bnyuBorderR", true)
+
+    font:createNewText("levelTxt", gameOffsets.x + 24, gameOffsets.y - 24, "LEVEL ", "left", "FFFFFF", "hud")
+    font:createNewText("scoreTxt", gameOffsets.x + 32, gameOffsets.y - 16, "0", "left", "FFFFFF", "hud")
+    font:createNewText("highScore", gameOffsets.x + 120, gameOffsets.y - 24, "HI SCORE:"..(utils:getGariiData("fuzzLeaderboard")[1][3]), "left", "FFFFFF", "hud")
+    font:createNewText("hiScrTxt", gameOffsets.x + 192, gameOffsets.y - 16, highScore.."", "right", "FFFFFF", "hud")
+
+    runTimer("blinkLoop", 0.2)
+    setupAttractMode()
+end
+
+function setupAttractMode()
+    font:createNewText("charTitleTxt", gameOffsets.x + 56, gameOffsets.y + 16, "CHARACTER / NICKNAME", "left", "FFFFFF", "hud")
+    local charListList = {{'CHARLIE-----"ANDY"', "c55252"}, {'NAVI-------"MANDY"', "ea9fd0"}, {'BOLAVARD---"RANDY"', "9ad6ff"}, {'HAROLD----"BRANDY"', "dbaf85"}, {'KIM--------"SANDY"', "f4f3ad"}, {'PABLO-------"PAUL"', "8fc79b"}}
+    for i,name in pairs(charListList) do
+        if (i > #ghostList) then break end
+        font:createNewText(ghostList[i].."TitleTxt", gameOffsets.x + 64, gameOffsets.y + 8 + (24 * i), name[1], "left", name[2], "hud")
+        makeAnimatedLuaSprite(ghostList[i].."attract", fldr.."fuzzling", gameOffsets.x + 32,(gameOffsets.y+4) + (24 * i))
+        addAnimationByPrefix(ghostList[i].."attract", "reg", ghostList[i].."-right", 8, false)
+        playAnim(ghostList[i].."attract", "reg")
+        setProperty(ghostList[i].."attract"..".antialiasing", false)
+        utils:setObjectCamera(ghostList[i].."attract", "hud")
+        addLuaSprite(ghostList[i].."attract", true)
+    end
+
+    font:createNewText("pelletPTAmt", gameOffsets.x + (8*12), gameOffsets.y + (8*21), "10", "left", "FFFFFF", "hud")
+    font:createNewText("energizerPTAmt", gameOffsets.x + (8*12), gameOffsets.y + (8*23), "50", "left", "FFFFFF", "hud")
+    font:createNewText("attractEnter", gameOffsets.x + 16, gameOffsets.y + (8*32), "PRESS "..((utils:getKeyFromBind("accept")):upper()), "left", "FFFFFF", "hud")
+
+    for i=1,2 do
+        makeAnimatedLuaSprite("pts"..i, fldr.."pointnums", gameOffsets.x + (8*15), gameOffsets.y + (8*(21 + ((i-1)*2)))+1)
+        addAnimationByPrefix("pts"..i, "reg", "points ")
+        playAnim("pts"..i, "reg")
+        utils:setObjectCamera("pts"..i, "hud")
+        setProperty("pts"..i..".antialiasing", false)
+        addLuaSprite("pts"..i)
+    end
+
+    makeLuaSprite("pelletAttract", "", gameOffsets.x + (10*8) + 3, gameOffsets.y + (21 * 8) + 3)
+    makeGraphic("pelletAttract", 2, 2, "FFFFFF")
+    utils:setObjectCamera("pelletAttract", "hud")
+    addLuaSprite("pelletAttract")
+
+    makeLuaSprite("energizerAttract", fldr.."energizer", gameOffsets.x + (10*8), gameOffsets.y + (23 * 8))
+    utils:setObjectCamera("energizerAttract", "hud")
+    setProperty("energizerAttract.antialiasing", false)
+    addLuaSprite("energizerAttract")
+
+    makeLuaSprite("gariiMark", fldr.."gariiwatermark", gameOffsets.x + (8*8), gameOffsets.y + (8*28))
+    utils:setObjectCamera("gariiMark", "hud")
+    setProperty("gariiMark.color", getColorFromHex("f4f3ad"))
+    setProperty("gariiMark.antialiasing", false)
+    addLuaSprite("gariiMark")
+    attractMode = true
+end
+
+function removeAttractScr()
+    for i,fuzz in pairs(ghostList) do
+        font:removeText(fuzz.."TitleTxt")
+        removeLuaSprite(fuzz.."attract")
+        removeLuaSprite("pts"..i)
+    end
+    for _,txt in pairs({"pelletPTAmt", "energizerPTAmt", "attractEnter", "charTitleTxt"}) do font:removeText(txt) end
+    
+    removeLuaSprite("pelletAttract")
+    removeLuaSprite("energizerAttract")
+    removeLuaSprite("gariiMark")
+
+end
+
+function setupTitleScreen()
+    makeLuaSprite("logo", fldr.."logo", gameOffsets.x + (8*2.5), gameOffsets.y + 8)
+    utils:setObjectCamera("logo", "hud")
+    setProperty("logo.antialiasing", false)
+    addLuaSprite("logo")
+
+    for i,chr in pairs(plrList) do
+        makeAnimatedLuaSprite(chr.."title", fldr..chr.."-mini", gameOffsets.x + 24, gameOffsets.y + (8*(10+((i-1)*3)))-4)
+        addAnimationByPrefix(chr.."title", "reg", (plrData[chr].prefix).."walk right", 12)
+        playAnim(chr.."title", "reg")
+        setProperty(chr.."title.antialiasing", false)
+        setProperty(chr.."title.visible", i == curPlrSel)
+        utils:setObjectCamera(chr.."title", "hud")
+        addLuaSprite(chr.."title", true)
+
+        if (utils:getGariiData(plrData[chr].pinCond) ~= nil and utils:getGariiData(plrData[chr].pinCond)) then
+            makeLuaSprite("pin"..chr, fldr.."pin", gameOffsets.x + (8*(12 + #chr)), gameOffsets.y + (8*(10+((i-1)*3))))
+            utils:setObjectCamera("pin"..chr, "hud")
+            setProperty("pin"..chr..".antialiasing", false)
+            addLuaSprite("pin"..chr)
+        end
+        font:createNewText(chr.."titleTxt", gameOffsets.x + (8*6), gameOffsets.y + (8*(10+((i-1)*3))), (chr:upper()).." GAME", "left", plrData[chr].colour, "hud")
+    end
+
+    local plrOffset = 12+((#plrList-1)*3)
+    font:createNewText("bonusLifeTxt", gameOffsets.x + (8*7), gameOffsets.y + (8*(plrOffset + 2)), "BONUS LIFE FOR", "left", "ffffff", "hud")
+    for i,num in pairs({"10000", "25000", "50000", "100000"}) do
+        font:createNewText(i.."LifeTxt", gameOffsets.x + (8*2), gameOffsets.y + (8*(plrOffset + (2*(i+1)))), gimmeSpaces(11, math.floor((#num+3)/2))..num.." PTS", "left", "ffffff", "hud")
+    end
+    font:createNewText("gModSlogan", gameOffsets.x + (8*3), gameOffsets.y + (8*30), "© CAT GOT YOUR TOUNGE?", "left", "f4f3ad", "hud")
+    titleMode = true
+end
+
+function removeTitleScreen()
+    removeLuaSprite("logo")
+    for i=1,4 do font:removeText(i.."LifeTxt") end
+
+    for _,chr in pairs(plrList) do
+        removeLuaSprite(chr.."title")
+        removeLuaSprite("pin"..chr)
+        font:removeText(chr.."titleTxt")
+    end
+
+    font:removeText("bonusLifeTxt")
+    font:removeText("gModSlogan")
+end
+
+function firstTimeSetup()
+    pelletCount, maxPellets, rebirths, score, zeroLoops, extraLivesGiven = 0, 0, 0, 0, 0, 0
+    lives, curLevel, ghostPointMult = 5, 1, 200
+    fruitDisp = {}
 
     makeLuaSprite("fuzzMap", fldr.."map", gameOffsets.x, gameOffsets.y)
     setProperty("fuzzMap.antialiasing", false)
@@ -181,7 +311,7 @@ function startMinigame()
 
     for _,fuzz in pairs(ghostList) do
         makeAnimatedLuaSprite(fuzz, fldr.."fuzzling", 0,0)
-        for _,anim in pairs({"left", "down", "up", "right", "fright", "eatenleft", "eatendown", "eatenup", "eatenright"}) do
+        for _,anim in pairs({"left", "down", "up", "right", "fright", "eatenleft", "eatendown", "eatenup", "eatenright", "flashfright"}) do
             addAnimationByPrefix(fuzz, fuzz.."-"..anim, fuzz.."-"..anim, 8)
             addOffset(fuzz, fuzz.."-"..anim, 4,4)
             addAnimationByPrefix(fuzz, "house-"..anim, fuzz.."-"..anim, 8)
@@ -208,17 +338,11 @@ function startMinigame()
     utils:setObjectCamera("truckPlayer", "hud")
     addLuaSprite("truckPlayer", true)
     
-    font:createNewText("levelTxt", gameOffsets.x + 24, gameOffsets.y - 24, "LEVEL "..curLevel, "left", "FFFFFF", "hud")
-    font:createNewText("scoreTxt", gameOffsets.x + 32, gameOffsets.y - 16, score.."", "left", "FFFFFF", "hud")
-    font:createNewText("highScore", gameOffsets.x + 120, gameOffsets.y - 24, "HI SCORE:"..(utils:getGariiData("fuzzLeaderboard")[1][3]), "left", "FFFFFF", "hud")
-    font:createNewText("hiScrTxt", gameOffsets.x + 192, gameOffsets.y - 16, highScore.."", "right", "FFFFFF", "hud")
     utils:makeBlankBG("readyBG", 48,8, "111111", "hud")
     setProperty("readyBG.x", gameOffsets.x + 88)
     setProperty("readyBG.y", gameOffsets.y + 136)
     font:createNewText("readyUp", gameOffsets.x + 89, gameOffsets.y + 136, "READY!", "left", plrData[plrChar].colour, "hud")
     updateLives(false)
-
-    runTimer("blinkLoop", 0.2)
     reloadMap()
 end
 
@@ -251,7 +375,7 @@ function reloadMap() --hopefully seperating this as its own function reduces a b
     setProperty("picnicFruit.visible", false)
     utils:setObjectCamera("picnicFruit", "hud")
     addLuaSprite("picnicFruit")
-    setObjectOrder("picnicFruit", getObjectOrder("truckPlayer"))
+    setObjectOrder("picnicFruit", getObjectOrder(ghostList[1])-1)
     updateFruitIndis()
 
     for i=1,#utils:numToStr(fruitPoints[curFruit]) do
@@ -282,7 +406,7 @@ function reloadMap() --hopefully seperating this as its own function reduces a b
                 makeGraphic("pellet"..x.." "..y, 2, 2, "FFFFFF")
                 utils:setObjectCamera("pellet"..x.." "..y, "hud")
                 addLuaSprite("pellet"..x.." "..y)
-                setObjectOrder("pellet"..x.." "..y, getObjectOrder("truckPlayer"))
+                setObjectOrder("pellet"..x.." "..y, getObjectOrder(ghostList[1])-1)
                 maxPellets = maxPellets + 1
             elseif (squ == 3) then
                 removeLuaSprite("energizer"..x.." "..y)
@@ -290,7 +414,7 @@ function reloadMap() --hopefully seperating this as its own function reduces a b
                 utils:setObjectCamera("energizer"..x.." "..y, "hud")
                 setProperty("energizer"..x.." "..y..".antialiasing", false)
                 addLuaSprite("energizer"..x.." "..y)
-                setObjectOrder("energizer"..x.." "..y, getObjectOrder("truckPlayer"))
+                setObjectOrder("energizer"..x.." "..y, getObjectOrder(ghostList[1])-1)
                 maxPellets = maxPellets + 1
             end
         end
@@ -317,6 +441,7 @@ function reloadMap() --hopefully seperating this as its own function reduces a b
     accY = -2
 
     font:setTextString("levelTxt", "LEVEL "..curLevel)
+    levelColour = levelColourList[(math.floor((curLevel+1)/8) % #levelColourList) + 1]
     setProperty("fuzzMap.color", getColorFromHex(levelColour))
     utils:makeBlankBG("blankFG", screenWidth,screenHeight, "111111", "other")
     setProperty("blankFG.visible", false)
@@ -364,6 +489,16 @@ function reloadSecretMap()
         addLuaSprite("grave")
     end
 
+    trucker = {targetCoords = {x = 14, y = 29}, moveDir = {x = 0, y = 0}, queueDir = {x = 0, y = 0}, queueQueueDir = {x = 0, y = 0}, facing = {x = 0, y = 0}}
+    setProperty("truckPlayer.x", gameOffsets.x + 112)
+    setProperty("truckPlayer.y", gameOffsets.y + 232)
+    playAnim("truckPlayer", "idle-up")
+    updateLives()
+    noMorePlayerAnims = false
+    canTweenPlr = false
+    accX = 1 * getRandomInt(-1,1,"0")
+    accY = -2
+
     for i,char in pairs({"carv", "hunte", "garii"}) do
         removeLuaSprite(char)
         local loopFourOffsets = {{gameOffsets.x + 92},{gameOffsets.x + 124},{gameOffsets.x + 108}}
@@ -386,6 +521,9 @@ function reloadSecretMap()
         setProperty(char..".antialiasing", false)
         utils:setObjectCamera(char, "hud")
         addLuaSprite(char)
+        addAnimation("life"..(i+1), "reg", {plrData[char].icons[1]})
+        playAnim("life"..(i+1), "reg")
+        setProperty("life"..(i+1)..".color", getColorFromHex(plrData[char].colour))
     end
 
     removeLuaSprite("visualBorder")
@@ -398,21 +536,6 @@ function reloadSecretMap()
     else maxPellets = 1
     end
     pelletCount = 0
-
-    trucker = {targetCoords = {x = 14, y = 29}, moveDir = {x = 0, y = 0}, queueDir = {x = 0, y = 0}, queueQueueDir = {x = 0, y = 0}, facing = {x = 0, y = 0}}
-    setProperty("truckPlayer.x", gameOffsets.x + 112)
-    setProperty("truckPlayer.y", gameOffsets.y + 232)
-    playAnim("truckPlayer", "idle-up")
-    updateLives()
-    local colours = {nil, "4d664d", "dbaf85", "f4f3ad"}
-    for i=2,4 do
-        addAnimation("life"..i, "reg", {8-i})
-        setProperty("life"..i..".color", getColorFromHex(colours[i]))
-    end
-    noMorePlayerAnims = false
-    canTweenPlr = false
-    accX = 1 * getRandomInt(-1,1,"0")
-    accY = -2
 
     font:setTextVisible("readyUp", zeroLoops ~= 4)
     font:setTextVisible("scoreTxt", false)
@@ -431,7 +554,7 @@ end
 function readyErUp(volume)
     font:setTextVisible("readyUp", zeroLoops ~= 4 or curLevel > 0)
     setProperty("readyBG.visible", zeroLoops ~= 4 or curLevel > 0)
-    utils:playSound(fldr.."eat_dot_0", volume, "start")
+    utils:playSound(fldr.."start", volume, "start")
 end
 
 function advanceAction()
@@ -446,6 +569,7 @@ function deathReset()
     setProperty("truckPlayer.y", gameOffsets.y + 184)
     trucker = {targetCoords = {x = 14, y = 23}, moveDir = {x = 0, y = 0}, queueDir = {x = 0, y = 0}, queueQueueDir = {x = 0, y = 0}, facing = {x = 0, y = 0}}
     playAnim("truckPlayer", "idle-down-start")
+    currentXTWO = 0
     updateLives()
     noMorePlayerAnims = false
     local ghostCoords = {["andy"] = {x = 14, y = 10, tmr = 0.001}, ["mandy"] = {x = 11, y = 12, tmr = 1}, ["randy"] = {x = 11, y = 14, tmr = 8}, ["brandy"] = {x = 15, y = 12, tmr = 10}, ["sandy"] = {x = 13, y = 14}, ["paul"] = {x = 15, y = 14}}
@@ -468,8 +592,41 @@ function deathReset()
     readyErUp(0)
 end
 
+function updateAttract()
+    if (luaSpriteExists("energizerAttract")) then setProperty("energizerAttract.visible", blinkVis) end
+end
+
+local turnIndi = 0
+local fruitElp, frightElp = -1, -1
 local textAdvance = {["garii"] = {1,1}, ["carv"] = {1,1}}
 function onUpdate(elp)
+    if (attractMode) then
+        updateAttract()
+        if (keyJustPressed("accept")) then
+            attractMode = false
+            utils:playSound(fldr.."credit")
+            removeAttractScr()
+            runTimer("delayTitle", 0.25)
+        elseif (keyJustPressed("back")) then
+            attractMode = false
+            callOnLuas("placeStickers")
+            runTimer("destroyGame", 1)
+        end
+    elseif (titleMode) then
+        if (keyJustPressed("ui_up")) then scrollPlr(-1)
+        elseif (keyJustPressed("ui_down")) then scrollPlr(1)
+        elseif (keyJustPressed("accept")) then
+            titleMode = false
+            plrChar = plrList[curPlrSel]
+            removeTitleScreen()
+            runTimer("delayStart", 0.25)
+        elseif (keyJustPressed("back")) then
+            titleMode = false
+            removeTitleScreen()
+            runTimer("goBackToAttract", 0.25)
+        end
+    end
+
     if (activatedName) then
         if (keyJustPressed("ui_up")) then scrollName(-1)
         elseif (keyJustPressed("ui_down")) then scrollName(1)
@@ -486,12 +643,6 @@ function onUpdate(elp)
                 playerName = playerName..nameTable[i]
             end end
             scrollName(0)
-        end
-    else
-        if (keyJustPressed("back")) then
-            callOnLuas("placeStickers")
-            runTimer("destroyGame", 1)
-            canUpdate = false
         end
     end
 
@@ -538,16 +689,43 @@ function onUpdate(elp)
     end
 
     if (not canUpdate) then return end
+
+    if (keyJustPressed("back")) then
+        canUpdate = false
+        removeGameplay()
+        runTimer("goBackToAttract", 0.25)
+    end
+
+    if (fruitElp >= 0) then
+        fruitElp = fruitElp + elp
+        if (fruitElp >= 10) then
+            fruitElp = -1
+            onTimerCompleted("fruitDisappear")
+        end
+    end
+    if (frightElp >= 0) then
+        frightElp = frightElp + elp
+        if (frightElp >= (11 - (curLevel/2)) or not (ghosts["andy"].frightened or ghosts["mandy"].frightened or ghosts["randy"].frightened or ghosts["brandy"].frightened)) then
+            frightElp = -1
+            onTimerCompleted("fright")
+        end
+    end
     if (keyJustPressed("reset")) then
-        lives = 0
         loseLife()
+    elseif (keyJustPressed("accept")) then
+        pelletCount = 1000
+        curLevel = curLevel+7
+    elseif (keyboardJustPressed("F2")) then
+        lives = lives+1
+        updateLives()
     end
 
     handlePellets()
     for _,ghst in pairs(ghostList) do
-        handleGhostMovement(ghst)
+        if ((ghosts[ghst].frightened and (not ghosts[ghst].eaten) and (turnIndi ~= 0)) or (not ghosts[ghst].frightened) or ghosts[ghst].eaten) then handleGhostMovement(ghst) end
         if (ghosts[ghst].eaten) then handleGhostMovement(ghst) end
     end
+    turnIndi = (turnIndi + 1) % 4
     handlePlayerMovement()
     font:setTextString("scoreTxt", score)
     if (score >= highScore) then
@@ -611,6 +789,16 @@ function scrollName(inc)
     font:setTextString("plrNameTxt", playerName..hoveredChar)
 end
 
+function scrollPlr(inc)
+    curPlrSel = curPlrSel + inc
+    if (curPlrSel < 1) then curPlrSel = #plrList
+    elseif (curPlrSel > #plrList) then curPlrSel = 1 end
+
+    for i,chr in pairs(plrList) do
+        setProperty(chr.."title.visible", i == curPlrSel)
+    end
+end
+
 local nuhuh = false
 function handlePellets()
     if (map[trucker.targetCoords.y+1][trucker.targetCoords.x+1] == 2) then
@@ -628,12 +816,12 @@ function handlePellets()
                     ghosts[name].targetCoords.x = ghosts[name].targetCoords.x + ghosts[name].moveDir.x
                     ghosts[name].targetCoords.y = ghosts[name].targetCoords.y + ghosts[name].moveDir.y
                 end
-                ghosts[name].frightened = true
+                ghosts[name].frightened = (curLevel <= 21)
             end
         end
-        cancelTimer("fright")
+        frightElp = -1
         ghostPointMult = 200
-        runTimer("fright", 10)
+        if (curLevel <= 21) then frightElp = 0 end
         pelletCount = pelletCount + 1
         removeLuaSprite("energizer"..(trucker.targetCoords.x).." "..(trucker.targetCoords.y), true)
         map[trucker.targetCoords.y+1][trucker.targetCoords.x+1] = 1
@@ -647,7 +835,7 @@ function handlePellets()
         for i=1,#utils:numToStr(fruitPoints[curFruit]) do
             setProperty("fruitPoint"..i..".visible", true)
         end
-        cancelTimer("fruitDisappear")
+        fruitElp = -1
         runTimer("fruitPointDisappear", 2)
         score = score + fruitPoints[curFruit]
 
@@ -700,8 +888,8 @@ function handlePellets()
         stopSound("frightloop")
     elseif (pelletCount == 70 or pelletCount == 170) then spawnFruit()
     end
-    if (score >= 10000 and not extraLifeGiven) then
-        extraLifeGiven = true
+    if ((score >= 10000 and extraLivesGiven <= 0) or (score >= 25000 and extraLivesGiven <= 1) or (score >= 50000 and extraLivesGiven <= 2) or (score >= 100000 and extraLivesGiven <= 3)) then
+        extraLivesGiven = extraLivesGiven + 1
         utils:playSound(fldr.."extend")
         lives = lives + 1
         updateLives(true)
@@ -713,17 +901,18 @@ function spawnFruit()
     map[18][14] = 4
     map[18][15] = 4
     setProperty("picnicFruit.visible", true)
-    runTimer("fruitDisappear", 10)
+    fruitElp = 0
 end
 
-local maxLives = 0
+local maxLives, currentXTWO = 0, 0
 function updateLives(extra)
     if (extra == nil) then extra = false end
+    lives = math.min(lives, 9)
     if (lives > maxLives) then maxLives = lives end
-    for i=1,maxLives do
+    local iconUsed = 1
+    if (plrData[plrChar].prefix ~= "") then iconUsed = 2 end
+    for i=1,5 do
         if ((not luaSpriteExists("life"..i)) and lives > i) then
-            local iconUsed = 1
-            if (plrData[plrChar].prefix ~= "") then iconUsed = 2 end
             makeLuaSprite("life"..i, fldr.."life-icons", gameOffsets.x + (i * 16), gameOffsets.y + (31*8))
             loadGraphic("life"..i, fldr.."life-icons", 16, 16)
             addAnimation("life"..i, "reg", {plrData[plrChar].icons[iconUsed]})
@@ -732,17 +921,30 @@ function updateLives(extra)
             utils:setObjectCamera("life"..i, "hud")
             addLuaSprite("life"..i)
             if (extra) then runTimer("lifeFlash"..i, 0.25, 8) end
-        elseif (luaSpriteExists("life"..i) and lives <= i) then 
-            removeLuaSprite("life"..i, true)
+        elseif (luaSpriteExists("life"..i)) then 
+            if (lives <= i) then removeLuaSprite("life"..i, true)
+            elseif (math.floor((lives+1)/2) ~= i) then
+                addAnimation("life"..i, "reg", {plrData[plrChar].icons[iconUsed]})
+                playAnim("life"..i, "reg")
+                setProperty("life"..i..".visible", true)
+            end
         end
     end
+    if (lives == 7) then removeLuaSprite("life5") end
+    if (lives > 6 and currentXTWO ~= math.floor((lives+1)/2)) then
+        setProperty("life"..math.floor((lives+1)/2)..".visible", true)
+        addAnimation("life"..math.floor((lives+1)/2), "reg", {7})
+        playAnim("life"..math.floor((lives+1)/2), "reg")
+        if (extra) then runTimer("lifeFlash"..math.floor((lives+1)/2), 0.25, 8) end
+    end
+    currentXTWO = math.floor((lives+1)/2)
 end
 
 function updateFruitIndis()
     for i=1,7 do
         if (i > #fruitDisp) then return end
         removeLuaSprite("fruitDisp"..i)
-        makeAnimatedLuaSprite("fruitDisp"..i, fldr.."fruits", gameOffsets.x + (210 - (i*16)), gameOffsets.y + (31*8))
+        makeAnimatedLuaSprite("fruitDisp"..i, fldr.."fruits", gameOffsets.x + (209 - (i*16)), gameOffsets.y + (31*8))
         addAnimationByPrefix("fruitDisp"..i, "idle", fruitDisp[i])
         setProperty("fruitDisp"..i..".antialiasing", false)
         utils:setObjectCamera("fruitDisp"..i, "hud")
@@ -807,7 +1009,8 @@ function getGhostTarget(ghost)
     elseif (ghosts[ghost].eaten) then return {x = 13, y = 13}
     elseif (ghosts[ghost].frightened) then
         local availableDis = availableDirs(ghost)
-        return {x = ghosts[ghost].x + availableDis[1].x, y = ghosts[ghost].y + availableDis[1].y}
+        local dirChosen = getRandomInt(1,#availableDis)
+        return {x = ghosts[ghost].x + availableDis[dirChosen].x, y = ghosts[ghost].y + availableDis[dirChosen].y}
     elseif (ghosts.moveMode == "scatter") then
         local remainingDots = {20, 30, 40, 40, 40, 50, 50, 50, 60, 60, 60, 80, 80, 80, 100, 100, 100, 100, 120}
         if (ghost == "andy" and (maxPellets-pelletCount) <= remainingDots[math.min(curLevel, 19)]) then return {x = trucker.targetCoords.x, y = trucker.targetCoords.y} --andy ignores scatter when conditions are met
@@ -855,24 +1058,30 @@ function handleGhostMovement(ghost)
     local animName = ghost
     if (ghosts[ghost].inHouse) then animName = "house" end
     if (ghosts[ghost].x ~= ghosts[ghost].targetCoords.x and ghosts[ghost].moveDir.x ~= 0) then
-        setGhostX(ghost, ghosts[ghost].x + (ghosts[ghost].moveDir.x/8))
+        setGhostX(ghost, ghosts[ghost].x + ((ghosts[ghost].moveDir.x/8)*(60/framerate)))
         if (ghosts[ghost].eaten) then
             if (ghosts[ghost].moveDir.x > 0) then playAnim(ghost, animName.."-eatenright")
             else playAnim(ghost, animName.."-eatenleft")
             end
-        elseif (ghosts[ghost].frightened) then playAnim(ghost, animName.."-fright")
+        elseif (ghosts[ghost].frightened) then  
+            if (frightElp >= (9.5 - (curLevel/2))) then playAnim(ghost, animName.."-flashfright")
+            else playAnim(ghost, animName.."-fright")
+            end
         elseif (ghosts[ghost].moveDir.x > 0) then playAnim(ghost, animName.."-right")
         else playAnim(ghost, animName.."-left")
         end
     end
 
     if (ghosts[ghost].y ~= ghosts[ghost].targetCoords.y and ghosts[ghost].moveDir.y ~= 0) then
-        setGhostY(ghost, ghosts[ghost].y + (ghosts[ghost].moveDir.y/8))
+        setGhostY(ghost, ghosts[ghost].y + ((ghosts[ghost].moveDir.y/8)*(60/framerate)))
         if (ghosts[ghost].eaten) then
             if (ghosts[ghost].moveDir.y > 0) then playAnim(ghost, animName.."-eatendown")
             else playAnim(ghost, animName.."-eatenup")
             end
-        elseif (ghosts[ghost].frightened) then playAnim(ghost, animName.."-fright")
+        elseif (ghosts[ghost].frightened) then
+            if (frightElp >= (9.5 - (curLevel/2))) then playAnim(ghost, animName.."-flashfright")
+            else playAnim(ghost, animName.."-fright")
+            end
         elseif (ghosts[ghost].moveDir.y > 0) then playAnim(ghost, animName.."-down")
         else playAnim(ghost, animName.."-up")
         end
@@ -947,7 +1156,7 @@ function handlePlayerMovement()
     end
 
     if ((getProperty("truckPlayer.x")-gameOffsets.x)/8 ~= trucker.targetCoords.x and trucker.moveDir.x ~= 0) then
-        setProperty("truckPlayer.x", getProperty("truckPlayer.x") + (trucker.moveDir.x))
+        setProperty("truckPlayer.x", getProperty("truckPlayer.x") + ((trucker.moveDir.x)*(60/framerate)))
         if (not noMorePlayerAnims) then
             if (trucker.moveDir.x > 0) then playAnim("truckPlayer", "walk-right")
             else playAnim("truckPlayer", "walk-left")
@@ -956,7 +1165,7 @@ function handlePlayerMovement()
     end
 
     if ((getProperty("truckPlayer.y")-gameOffsets.y)/8 ~= trucker.targetCoords.y and trucker.moveDir.y ~= 0) then
-        setProperty("truckPlayer.y", getProperty("truckPlayer.y") + (trucker.moveDir.y))
+        setProperty("truckPlayer.y", getProperty("truckPlayer.y") + ((trucker.moveDir.y)*(60/framerate)))
         if (not noMorePlayerAnims) then
             if (trucker.moveDir.y > 0) then playAnim("truckPlayer", "walk-down")
             else playAnim("truckPlayer", "walk-up")
@@ -996,8 +1205,11 @@ end
 function loseLife()
     canUpdate = false
     utils:stopAllKnownSounds()
-    runTimer("lifeFlash"..(lives-1), 0.25, 13)
-    runTimer("removeLife"..(lives-1), 0.25*12)
+    if (lives <= 6) then
+        runTimer("lifeFlash"..(lives-1), 0.25, 13)
+    else
+        runTimer("lifeFlash"..(math.floor((lives+2)/2)), 0.25, 13)
+    end
     lives = lives - 1
     runTimer("fallChild", 0.5)
     utils:playSound(fldr.."die", 1, "deathSnd")
@@ -1009,17 +1221,7 @@ local localLB = utils:getGariiData("fuzzLeaderboard")
 local snapshotScr = {score, rebirths, "YOU"}
 local rank = 0
 function openLeaderboardEnter()
-    for _,spr in pairs({"truckPlayer", "blankFG", "fuzzMap", "picnicFruit", "ghostDoor"}) do removeLuaSprite(spr, true) end
-    for _,spr in pairs(ghostList) do removeLuaSprite(spr, true) end
-    for y,row in ipairs(map) do for x,squ in ipairs(row) do
-        if (luaSpriteExists("pellet"..(x-1).." "..(y-1))) then removeLuaSprite("pellet"..(x-1).." "..(y-1), true) end
-        if (luaSpriteExists("energizer"..(x-1).." "..(y-1))) then removeLuaSprite("energizer"..(x-1).." "..(y-1), true) end
-    end end
-    for i=1,7 do
-        removeLuaSprite("fruitDisp"..i, true)
-        removeLuaSprite("life"..i, true)
-    end
-    font:removeText("readyUp")
+    removeGameplay()
 
     snapshotScr = {score, rebirths, "YOU"}
     if (localLB == nil) then localLB = placeholderLB end
@@ -1071,6 +1273,15 @@ function finishLeaderboard()
     if (rank <= 9) then lbNewTxt = " "..lbNewTxt end
     font:setTextString("leaderboardRank"..math.min(rank,10), lbNewTxt)
     utils:setGariiData("fuzzLeaderboard", localLB)
+
+    runTimer("killLeaderboard", 3)
+end
+
+function killLeaderboard()
+    for _,txt in pairs({"enterInitTxt", "scoreTitleTxt", "plrScoreTxt", "plrNameTxt", "leaScoreTxt"}) do font:removeText(txt) end
+    for i=1,10 do font:removeText("leaderboardRank"..i) end
+
+    runTimer("goBackToAttract", 0.25)
 end
 
 function gimmeSpaces(compMax, varComp)
@@ -1099,8 +1310,12 @@ end
 
 function onTimerCompleted(tmr, _, loopsLeft)
     if (tmr == "fright") then stopSound("frightloop")
-    elseif (tmr == "floweredGrave") then playAnim("grave", "flowers-none")
         for _,name in pairs(ghostList) do ghosts[name].frightened = false end
+    elseif (tmr == "killLeaderboard") then killLeaderboard()
+    elseif (tmr == "goBackToAttract") then setupAttractMode()
+    elseif (tmr == "delayTitle") then setupTitleScreen()
+    elseif (tmr == "delayStart") then firstTimeSetup()
+    elseif (tmr == "floweredGrave") then playAnim("grave", "flowers-none")
     elseif (tmr == "warningDis") then font:setTextVisible("warningTxt", false)
     elseif (tmr == "unfreezeGame") then canUpdate = true
     for _,gst in pairs(ghostList) do setProperty(gst..".visible", true) end
@@ -1116,7 +1331,6 @@ function onTimerCompleted(tmr, _, loopsLeft)
     elseif (stringStartsWith(tmr, "lifeFlash")) then
         local curLife = stringSplit(tmr, "lifeFlash")[2]
         setProperty("life"..curLife..".visible", not getProperty("life"..curLife..".visible"))
-    elseif (stringStartsWith(tmr, "removeLife")) then updateLives()
     elseif (tmr == "fruitDisappear") then 
         for y,row in ipairs(map) do for x,squ in ipairs(row) do
             if (squ == 4) then map[y][x] = 1 end
@@ -1167,8 +1381,9 @@ function onTimerCompleted(tmr, _, loopsLeft)
     end
 end
 
-function destroyGame()
-    for _,spr in pairs({"truckPlayer", "blankBG", "blankFG", "fuzzMap", "picnicFruit", "ghostDoor", "bnyuBorderL", "bnyuBorderR"}) do removeLuaSprite(spr, true) end
+function removeGameplay()
+    for _,spr in pairs({"truckPlayer", "blankFG", "fuzzMap", "picnicFruit", "ghostDoor", "carv", "hunte", "garii", "grave", "visualBorder", "readyBG"}) do removeLuaSprite(spr) end
+    font:removeText("readyUp")
     for _,spr in pairs(ghostList) do removeLuaSprite(spr, true) end
     for y,row in ipairs(map) do for x,squ in ipairs(row) do
         if (luaSpriteExists("pellet"..(x-1).." "..(y-1))) then removeLuaSprite("pellet"..(x-1).." "..(y-1), true) end
@@ -1178,10 +1393,21 @@ function destroyGame()
         removeLuaSprite("fruitDisp"..i, true)
         removeLuaSprite("life"..i, true)
     end
-    for _,tmr in pairs({"blinkLoop", "destroyGame", "fright", "advanceAction", "fallChild", "fruitPointDisappear", "fruitDisappear", "completedLevelI", "completedLevelII", "completedLevelIII", "deathI", "deathII", "deathIII", "unfreezeGame"}) do
+    for _,tmr in pairs({"fright", "advanceAction", "fallChild", "fruitDisappear", "fruitPointDisappear", "completedLevelI", "completedLevelII", "completedLevelIII", "deathI", "deathII", "deathIII", "unfreezeGame", "floweredGrave", "warningDis"}) do
+        cancelTimer(tmr)
+    end
+    utils:stopAllKnownSounds()
+end
+
+function destroyGame()
+    for _,spr in pairs({"blankBG", "bnyuBorderL", "bnyuBorderR", "blankBG2"}) do removeLuaSprite(spr, true) end
+    for _,tmr in pairs({"blinkLoop", "destroyGame", "killLeaderboard", "goBackToAttract", "delayTitle", "delayStart"}) do
         cancelTimer(tmr)
     end
 
+    removeAttractScr()
+    removeTitleScreen()
+    removeGameplay()
     font:destroyAll()
     utils:stopAllKnownSounds()
     callOnLuas("toggleCursor", {true})

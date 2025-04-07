@@ -326,7 +326,7 @@
 			"indices": []
 		},
 		{
-			"loop": false,
+			"loop": true,
 			"offsets": [
 				0,
 				0

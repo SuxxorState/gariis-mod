@@ -1,0 +1,98 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "idle",
+			"indices": [],
+			"name": "-anims/redeye/garii idle maybe"
+		},
+		{
+			"offsets": [
+				11,
+				-15
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "-anims/redeye/gari left"
+		},
+		{
+			"offsets": [
+				-14,
+				-9
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "-anims/redeye/garii down pose"
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-6,
+				19
+			],
+			"anim": "singUP",
+			"fps": 24,
+			"name": "-anims/redeye/gari up",
+			"indices": []
+		},
+		{
+			"loop": true,
+			"offsets": [
+				-6,
+				19
+			],
+			"anim": "singUP-loop",
+			"fps": 24,
+			"name": "-anims/redeye/gari up",
+			"indices": [
+				2,
+				3,
+				4,
+				5,
+				6,
+				7
+			]
+		},
+		{
+			"offsets": [
+				-13,
+				1
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "-anims/redeye/gari righte"
+		}
+	],
+	"vocals_file": "OppExpert",
+	"no_antialiasing": false,
+	"image": "characters/garii",
+	"position": [
+		-44,
+		243
+	],
+	"healthicon": "gar",
+	"flip_x": false,
+	"healthbar_colors": [
+		51,
+		51,
+		51
+	],
+	"camera_position": [
+		-180,
+		60
+	],
+	"sing_duration": 4,
+	"scale": 1,
+	"_editor_isPlayer": false
+}

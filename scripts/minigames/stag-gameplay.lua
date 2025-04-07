@@ -340,6 +340,10 @@ function onUpdatePost(elp)
         close() 
     end
 
+    if (keyJustPressed("reset")) then 
+        curTime = 21601
+    end
+
     if (not hasPower) then return end
     if utils:mouseWithinBounds({getProperty("camBtn.x"),getProperty("camBtn.y"), getProperty("camBtn.x")+getProperty("camBtn.width"),screenHeight}, "hud") and getProperty("camBtn.visible") then 
         toggleCam() 

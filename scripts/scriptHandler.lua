@@ -48,7 +48,7 @@ function onCreatePost()
     for chr,nm in pairs(lastChr) do
         if (getProperty(chr..".curCharacter") ~= nil) then
             callOnLuas("onRequestBubble", {utils:lwrKebab(getProperty(chr..".curCharacter"))})
-            addLuaScript(chars..utils:lwrKebab(getProperty(chr..".curCharacter")).."Handler")
+            addLuaScript(chars..(stringSplit(stringSplit(utils:lwrKebab(getProperty(chr..".curCharacter")), "-expert")[1], "-simple")[1]).."Handler")
             lastChr[chr] = getProperty(chr..".curCharacter")
         end
     end

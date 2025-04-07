@@ -11,6 +11,8 @@
 	<SubTexture name="andy-down0001" x="16" y="48" width="16" height="16"/>
 	<SubTexture name="andy-fright0000" x="0" y="64" width="16" height="16"/>
 	<SubTexture name="andy-fright0001" x="16" y="64" width="16" height="16"/>
+	<SubTexture name="andy-flashfright0000" x="0" y="80" width="16" height="16"/>
+	<SubTexture name="andy-flashfright0001" x="16" y="64" width="16" height="16"/>
 	<SubTexture name="andy-eatendown0000" x="16" y="112" width="16" height="16"/>
 	<SubTexture name="andy-eatenleft0000" x="16" y="96" width="16" height="16"/>
 	<SubTexture name="andy-eatenup0000" x="0" y="112" width="16" height="16"/>
@@ -26,6 +28,8 @@
 	<SubTexture name="mandy-down0001" x="48" y="48" width="16" height="16"/>
 	<SubTexture name="mandy-fright0000" x="32" y="64" width="16" height="16"/>
 	<SubTexture name="mandy-fright0001" x="48" y="64" width="16" height="16"/>
+	<SubTexture name="mandy-flashfright0000" x="32" y="80" width="16" height="16"/>
+	<SubTexture name="mandy-flashfright0001" x="48" y="64" width="16" height="16"/>
 	<SubTexture name="mandy-eatendown0000" x="48" y="112" width="16" height="16"/>
 	<SubTexture name="mandy-eatenleft0000" x="48" y="96" width="16" height="16"/>
 	<SubTexture name="mandy-eatenup0000" x="32" y="112" width="16" height="16"/>
@@ -41,6 +45,8 @@
 	<SubTexture name="randy-down0001" x="80" y="48" width="16" height="16"/>
 	<SubTexture name="randy-fright0000" x="64" y="64" width="16" height="16"/>
 	<SubTexture name="randy-fright0001" x="80" y="64" width="16" height="16"/>
+	<SubTexture name="randy-flashfright0000" x="64" y="80" width="16" height="16"/>
+	<SubTexture name="randy-flashfright0001" x="80" y="64" width="16" height="16"/>
 	<SubTexture name="randy-eatendown0000" x="80" y="112" width="16" height="16"/>
 	<SubTexture name="randy-eatenleft0000" x="80" y="96" width="16" height="16"/>
 	<SubTexture name="randy-eatenup0000" x="64" y="112" width="16" height="16"/>
@@ -56,8 +62,44 @@
 	<SubTexture name="brandy-down0001" x="112" y="48" width="16" height="16"/>
 	<SubTexture name="brandy-fright0000" x="96" y="64" width="16" height="16"/>
 	<SubTexture name="brandy-fright0001" x="112" y="64" width="16" height="16"/>
+	<SubTexture name="brandy-flashfright0000" x="96" y="80" width="16" height="16"/>
+	<SubTexture name="brandy-flashfright0001" x="112" y="64" width="16" height="16"/>
 	<SubTexture name="brandy-eatendown0000" x="112" y="112" width="16" height="16"/>
 	<SubTexture name="brandy-eatenleft0000" x="112" y="96" width="16" height="16"/>
 	<SubTexture name="brandy-eatenup0000" x="96" y="112" width="16" height="16"/>
 	<SubTexture name="brandy-eatenright0000" x="96" y="96" width="16" height="16"/>
+	
+	<SubTexture name="sandy-right0000" x="128" y="0" width="16" height="16"/>
+	<SubTexture name="sandy-right0001" x="144" y="0" width="16" height="16"/>
+	<SubTexture name="sandy-left0000" x="128" y="16" width="16" height="16"/>
+	<SubTexture name="sandy-left0001" x="144" y="16" width="16" height="16"/>
+	<SubTexture name="sandy-up0000" x="128" y="32" width="16" height="16"/>
+	<SubTexture name="sandy-up0001" x="144" y="32" width="16" height="16"/>
+	<SubTexture name="sandy-down0000" x="128" y="48" width="16" height="16"/>
+	<SubTexture name="sandy-down0001" x="144" y="48" width="16" height="16"/>
+	<SubTexture name="sandy-fright0000" x="128" y="64" width="16" height="16"/>
+	<SubTexture name="sandy-fright0001" x="144" y="64" width="16" height="16"/>
+	<SubTexture name="sandy-flashfright0000" x="128" y="80" width="16" height="16"/>
+	<SubTexture name="sandy-flashfright0001" x="144" y="64" width="16" height="16"/>
+	<SubTexture name="sandy-eatendown0000" x="144" y="112" width="16" height="16"/>
+	<SubTexture name="sandy-eatenleft0000" x="144" y="96" width="16" height="16"/>
+	<SubTexture name="sandy-eatenup0000" x="128" y="112" width="16" height="16"/>
+	<SubTexture name="sandy-eatenright0000" x="128" y="96" width="16" height="16"/>
+	
+	<SubTexture name="paul-right0000" x="160" y="0" width="16" height="16"/>
+	<SubTexture name="paul-right0001" x="176" y="0" width="16" height="16"/>
+	<SubTexture name="paul-left0000" x="160" y="16" width="16" height="16"/>
+	<SubTexture name="paul-left0001" x="176" y="16" width="16" height="16"/>
+	<SubTexture name="paul-up0000" x="160" y="32" width="16" height="16"/>
+	<SubTexture name="paul-up0001" x="176" y="32" width="16" height="16"/>
+	<SubTexture name="paul-down0000" x="160" y="48" width="16" height="16"/>
+	<SubTexture name="paul-down0001" x="176" y="48" width="16" height="16"/>
+	<SubTexture name="paul-fright0000" x="160" y="64" width="16" height="16"/>
+	<SubTexture name="paul-fright0001" x="176" y="64" width="16" height="16"/>
+	<SubTexture name="paul-flashfright0000" x="160" y="80" width="16" height="16"/>
+	<SubTexture name="paul-flashfright0001" x="176" y="64" width="16" height="16"/>
+	<SubTexture name="paul-eatendown0000" x="176" y="112" width="16" height="16"/>
+	<SubTexture name="paul-eatenleft0000" x="176" y="96" width="16" height="16"/>
+	<SubTexture name="paul-eatenup0000" x="160" y="112" width="16" height="16"/>
+	<SubTexture name="paul-eatenright0000" x="160" y="96" width="16" height="16"/>
 </TextureAtlas>
