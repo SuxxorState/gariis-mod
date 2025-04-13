@@ -2,8 +2,8 @@
 	"animations": [
 		{
 			"offsets": [
-				-6,
-				-5
+				-25,
+				-6
 			],
 			"loop": false,
 			"fps": 24,
@@ -24,12 +24,12 @@
 				12,
 				13
 			],
-			"name": "girl idel assist"
+			"name": "girl/-anims/girl idel assist"
 		},
 		{
 			"offsets": [
-				-6,
-				-5
+				-25,
+				-6
 			],
 			"loop": false,
 			"fps": 24,
@@ -50,28 +50,28 @@
 				26,
 				27
 			],
-			"name": "girl idel assist"
+			"name": "girl/-anims/girl idel assist"
 		},
 		{
 			"loop": false,
 			"offsets": [
-				60,
-				-13
+				78,
+				-5
 			],
 			"anim": "singLEFT",
 			"fps": 24,
-			"name": "girl left",
+			"name": "girl/-anims/girl left",
 			"indices": []
 		},
 		{
 			"loop": false,
 			"offsets": [
 				-25,
-				-47
+				-46
 			],
 			"anim": "singDOWN",
 			"fps": 24,
-			"name": "girl goin down",
+			"name": "girl/-anims/girl goin down",
 			"indices": []
 		},
 		{
@@ -82,68 +82,68 @@
 			],
 			"anim": "singUP",
 			"fps": 24,
-			"name": "girl le up pose",
+			"name": "girl/-anims/girl le up pose",
 			"indices": []
 		},
 		{
 			"loop": false,
 			"offsets": [
-				-30,
-				-28
+				-27,
+				-17
 			],
 			"anim": "singRIGHT",
 			"fps": 24,
-			"name": "girl rihgt turn",
+			"name": "girl/-anims/girl rihgt turn",
 			"indices": []
 		},
 		{
 			"loop": false,
 			"offsets": [
-				64,
-				10
+				78,
+				-5
 			],
 			"anim": "singLEFTmiss",
 			"fps": 24,
-			"name": "girl missed left",
+			"name": "girl/-anims/girl missed left",
 			"indices": []
 		},
 		{
 			"loop": false,
 			"offsets": [
 				-25,
-				-25
+				-46
 			],
 			"anim": "singDOWNmiss",
 			"fps": 24,
-			"name": "girl uh oh down",
+			"name": "girl/-anims/girl uh oh down",
 			"indices": []
 		},
 		{
 			"loop": false,
 			"offsets": [
-				-33,
-				63
+				-25,
+				40
 			],
 			"anim": "singUPmiss",
 			"fps": 24,
-			"name": "girl el miss up",
+			"name": "girl/-anims/girl el miss up",
 			"indices": []
 		},
 		{
 			"loop": false,
 			"offsets": [
-				-30,
-				-3
+				-27,
+				-17
 			],
 			"anim": "singRIGHTmiss",
 			"fps": 24,
-			"name": "girl missed turn",
+			"name": "girl/-anims/girl missed turn",
 			"indices": []
 		},
 		{
 			"offsets": [
-				-6,
-				-5
+				-25,
+				-6
 			],
 			"loop": false,
 			"fps": 24,
@@ -164,12 +164,12 @@
 				12,
 				13
 			],
-			"name": "girl idel le alte"
+			"name": "girl/-anims/girl idel le alte"
 		},
 		{
 			"offsets": [
-				-6,
-				-5
+				-25,
+				-6
 			],
 			"loop": false,
 			"fps": 24,
@@ -190,40 +190,40 @@
 				26,
 				27
 			],
-			"name": "girl idel le alte"
+			"name": "girl/-anims/girl idel le alte"
 		},
 		{
 			"loop": false,
 			"offsets": [
-				-17,
-				0
+				-24,
+				-5
 			],
 			"anim": "what",
 			"fps": 24,
-			"name": "girl what",
+			"name": "girl/-anims/girl what",
 			"indices": []
 		},
 		{
 			"loop": false,
 			"offsets": [
-				-11,
-				27
+				-25,
+				-6
 			],
 			"anim": "yeah",
 			"fps": 1,
-			"name": "girl eyah ppose",
+			"name": "girl/-anims/girl eyah ppose",
 			"indices": []
 		},
 		{
 			"offsets": [
-				-18,
-				-21
+				-25,
+				-6
 			],
-			"indices": [],
+			"loop": false,
 			"fps": 24,
 			"anim": "sad",
-			"loop": false,
-			"name": "girl cruy"
+			"indices": [],
+			"name": "girl/-anims/girl cruy"
 		}
 	],
 	"vocals_file": "",

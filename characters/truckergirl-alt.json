@@ -9,125 +9,125 @@
 			"fps": 24,
 			"anim": "idle",
 			"indices": [],
-			"name": "girl alt idle idle"
+			"name": "girl alt/-anims/girl alt idle"
 		},
 		{
 			"offsets": [
-				11,
+				0,
 				0
 			],
 			"loop": false,
 			"fps": 24,
 			"anim": "idle-alt",
 			"indices": [],
-			"name": "girl alt alt idle idle"
+			"name": "girl alt/-anims/girl alt slt idle"
 		},
 		{
 			"loop": false,
 			"offsets": [
-				87,
-				-16
+				2,
+				-1
 			],
 			"anim": "singLEFT",
 			"fps": 24,
-			"name": "girl alt left left",
+			"name": "girl alt/-anims/girl alt left",
 			"indices": []
 		},
 		{
 			"loop": false,
 			"offsets": [
-				41,
-				-59
+				0,
+				0
 			],
 			"anim": "singDOWN",
 			"fps": 24,
-			"name": "girl alt down down",
+			"name": "girl alt/-anims/girl alt down",
 			"indices": []
 		},
 		{
 			"loop": false,
 			"offsets": [
-				16,
-				24
+				0,
+				0
 			],
 			"anim": "singUP",
 			"fps": 24,
-			"name": "girl alt up up",
+			"name": "girl alt/-anims/girl alt up pose",
 			"indices": []
 		},
 		{
 			"offsets": [
-				52,
-				-7
+				0,
+				0
 			],
 			"loop": false,
 			"fps": 24,
 			"anim": "singRIGHT",
 			"indices": [],
-			"name": "girl alt righhjt"
+			"name": "girl alt/-anims/girl alt right pose"
 		},
 		{
 			"offsets": [
-				87,
-				-10
+				2,
+				-1
 			],
 			"loop": false,
 			"fps": 24,
 			"anim": "singLEFTmiss",
 			"indices": [],
-			"name": "girl left mis"
+			"name": "girl alt/-anims/girl alt miss left"
 		},
 		{
 			"offsets": [
-				43,
-				-59
+				0,
+				0
 			],
 			"loop": false,
 			"fps": 24,
 			"anim": "singDOWNmiss",
 			"indices": [],
-			"name": "girl down mis"
+			"name": "girl alt/-anims/girl alt msde doen"
 		},
 		{
 			"offsets": [
-				16,
-				26
+				0,
+				0
 			],
 			"loop": false,
 			"fps": 24,
 			"anim": "singUPmiss",
 			"indices": [],
-			"name": "gitl alt mis up"
+			"name": "girl alt/-anims/girl alt mised dat up"
 		},
 		{
 			"offsets": [
-				52,
-				-7
+				0,
+				0
 			],
 			"loop": false,
 			"fps": 24,
 			"anim": "singRIGHTmiss",
 			"indices": [],
-			"name": "girl alrt rigth mss"
+			"name": "girl alt/-anims/girl right lol mis"
 		},
 		{
 			"offsets": [
-				31,
-				1
+				0,
+				0
 			],
 			"loop": false,
 			"fps": 24,
 			"anim": "hey",
 			"indices": [],
-			"name": "girl alt hey hey"
+			"name": "girl alt/-anims/girl alt hey!"
 		}
 	],
 	"vocals_file": "",
 	"no_antialiasing": false,
 	"image": "characters/truckergirl-alt",
 	"position": [
-		0,
-		120
+		70,
+		106
 	],
 	"healthicon": "truckgirl",
 	"flip_x": true,
@@ -137,8 +137,8 @@
 		82
 	],
 	"camera_position": [
-		230,
-		50
+		40,
+		390
 	],
 	"sing_duration": 4,
 	"scale": 1,

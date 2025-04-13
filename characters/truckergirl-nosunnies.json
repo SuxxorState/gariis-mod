@@ -1,14 +1,13 @@
 {
 	"animations": [
 		{
-			"loop": false,
 			"offsets": [
-				-6,
-				-5
+				-25,
+				-6
 			],
-			"anim": "danceLeft",
+			"loop": false,
 			"fps": 24,
-			"name": "girl idel assist",
+			"anim": "danceLeft",
 			"indices": [
 				0,
 				1,
@@ -24,17 +23,17 @@
 				11,
 				12,
 				13
-			]
+			],
+			"name": "girl/-nosunnies/girl idel assist"
 		},
 		{
-			"loop": false,
 			"offsets": [
-				-6,
-				-5
+				-25,
+				-6
 			],
-			"anim": "danceRight",
+			"loop": false,
 			"fps": 24,
-			"name": "girl idel assist",
+			"anim": "danceRight",
 			"indices": [
 				14,
 				15,
@@ -50,105 +49,105 @@
 				25,
 				26,
 				27
-			]
-		},
-		{
-			"offsets": [
-				60,
-				-13
 			],
-			"loop": false,
-			"fps": 24,
-			"anim": "singLEFT",
-			"indices": [],
-			"name": "girl left"
+			"name": "girl/-nosunnies/girl idel assist"
 		},
 		{
+			"loop": false,
+			"offsets": [
+				78,
+				-5
+			],
+			"anim": "singLEFT",
+			"fps": 24,
+			"name": "girl/-nosunnies/girl left",
+			"indices": []
+		},
+		{
+			"loop": false,
 			"offsets": [
 				-25,
-				-47
+				-46
 			],
-			"loop": false,
-			"fps": 24,
 			"anim": "singDOWN",
-			"indices": [],
-			"name": "girl goin down"
+			"fps": 24,
+			"name": "girl/-nosunnies/girl goin down",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
 				-25,
 				40
 			],
-			"loop": false,
-			"fps": 24,
 			"anim": "singUP",
-			"indices": [],
-			"name": "girl le up pose"
+			"fps": 24,
+			"name": "girl/-nosunnies/girl le up pose",
+			"indices": []
 		},
 		{
-			"offsets": [
-				-30,
-				-28
-			],
 			"loop": false,
-			"fps": 24,
+			"offsets": [
+				-27,
+				-17
+			],
 			"anim": "singRIGHT",
-			"indices": [],
-			"name": "girl rihgt turn"
+			"fps": 24,
+			"name": "girl/-nosunnies/girl rihgt turn",
+			"indices": []
 		},
 		{
-			"offsets": [
-				64,
-				10
-			],
 			"loop": false,
-			"fps": 24,
+			"offsets": [
+				78,
+				-5
+			],
 			"anim": "singLEFTmiss",
-			"indices": [],
-			"name": "girl missed left"
+			"fps": 24,
+			"name": "girl/-nosunnies/girl missed left",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-25,
+				-46
+			],
+			"anim": "singDOWNmiss",
+			"fps": 24,
+			"name": "girl/-nosunnies/girl uh oh down",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-25,
+				40
+			],
+			"anim": "singUPmiss",
+			"fps": 24,
+			"name": "girl/-nosunnies/girl el miss up",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-27,
+				-17
+			],
+			"anim": "singRIGHTmiss",
+			"fps": 24,
+			"name": "girl/-nosunnies/girl missed turn",
+			"indices": []
 		},
 		{
 			"offsets": [
 				-25,
-				-25
+				-6
 			],
 			"loop": false,
 			"fps": 24,
-			"anim": "singDOWNmiss",
-			"indices": [],
-			"name": "girl uh oh down"
-		},
-		{
-			"offsets": [
-				-33,
-				63
-			],
-			"loop": false,
-			"fps": 24,
-			"anim": "singUPmiss",
-			"indices": [],
-			"name": "girl el miss up"
-		},
-		{
-			"offsets": [
-				-30,
-				-3
-			],
-			"loop": false,
-			"fps": 24,
-			"anim": "singRIGHTmiss",
-			"indices": [],
-			"name": "girl missed turn"
-		},
-		{
-			"loop": false,
-			"offsets": [
-				-6,
-				-5
-			],
 			"anim": "danceLeft-alt",
-			"fps": 24,
-			"name": "girl idel le alte",
 			"indices": [
 				0,
 				1,
@@ -164,17 +163,17 @@
 				11,
 				12,
 				13
-			]
+			],
+			"name": "girl/-nosunnies/girl idel le alte"
 		},
 		{
-			"loop": false,
 			"offsets": [
-				-6,
-				-5
+				-25,
+				-6
 			],
-			"anim": "danceRight-alt",
+			"loop": false,
 			"fps": 24,
-			"name": "girl idel le alte",
+			"anim": "danceRight-alt",
 			"indices": [
 				14,
 				15,
@@ -190,45 +189,46 @@
 				25,
 				26,
 				27
-			]
+			],
+			"name": "girl/-nosunnies/girl idel le alte"
 		},
 		{
-			"offsets": [
-				-17,
-				0
-			],
 			"loop": false,
-			"fps": 24,
+			"offsets": [
+				-24,
+				-5
+			],
 			"anim": "what",
-			"indices": [],
-			"name": "girl what"
-		},
-		{
-			"offsets": [
-				-11,
-				27
-			],
-			"loop": false,
-			"fps": 1,
-			"anim": "yeah",
-			"indices": [],
-			"name": "girl eyah ppose"
-		},
-		{
-			"loop": false,
-			"offsets": [
-				-18,
-				-21
-			],
-			"anim": "sad",
 			"fps": 24,
-			"name": "girl cruy",
+			"name": "girl/-nosunnies/girl what",
 			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-25,
+				-6
+			],
+			"anim": "yeah",
+			"fps": 1,
+			"name": "girl/-nosunnies/girl eyah ppose",
+			"indices": []
+		},
+		{
+			"offsets": [
+				-25,
+				-6
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "sad",
+			"indices": [],
+			"name": "girl/-nosunnies/girl cruy"
 		}
 	],
 	"vocals_file": "",
 	"no_antialiasing": false,
-	"image": "characters/truckergirl-nosunnies",
+	"image": "characters/truckergirl",
 	"position": [
 		190,
 		40

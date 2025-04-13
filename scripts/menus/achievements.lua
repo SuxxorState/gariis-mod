@@ -2,7 +2,7 @@ local utils = (require (getVar("folDir").."scripts.backend.utils")):new()
 
 local categories = {
     {"Garii's Mod", {"fuzzy-dice-fc","full-house-fc","episode-ii-fc","story-deaths","garii-hud-death","no-pose","expert2simple","fuzzy-dice-ex-fc","full-house-ex-fc","episode-ii-ex-fc", "all-achievements"}},
-    {"SKOBELOFF CASINO", {"100k-chips","true-bjs","tb-foak","no-fish"}},
+    {"SKOBELOFF CASINO", {"100k-chips","true-bjs","tb-foak"}},
     {"Some Time At Garii's", {"stag-quarters","no-power-save","no-doors-save","the-yapper","stag-deaths"}},
     {"Bushtrimmer", {"bt-simple","bt-5simple","bt-speedy","bt-expert","bt-5expert","bt-exp-speed"}},
     {"Fuzzlings!", {"fl-everyfruit","fl-everytrash","fl-pacifist","fl-sadist","fl-16levels","fl-64levels","fl-deaths","fl-rebirth","fl-2rebirth"}}
@@ -25,7 +25,7 @@ local achievements = {
     ["100k-chips"] = {title = "The Big Cheese", description = "Get one hundred thousand or more poker chips in the casino", iconFile = "", secret = false, gariiPoints = 50},
     ["true-bjs"] = {title = "The House Is Cheating!", description = "End in a draw with both you and the house having a true blackjack", iconFile = "cheating", secret = false, gariiPoints = 25},
     ["tb-foak"] = {title = "Planet X", description = "Get the highest Five of a Kind you can get in Picture Poker", iconFile = "balatro", secret = false, gariiPoints = 25},
-    ["no-fish"] = {title = "Go...Fish?", description = "It doesn't exist. You're hallucinating.", iconFile = "", secret = false, gariiPoints = 10},
+    --["no-fish"] = {title = "Go...Fish?", description = "It doesn't exist. You're hallucinating.", iconFile = "", secret = false, gariiPoints = 10},
 
     ["stag-quarters"] = {title = "Dollar Fitty", description = "Survive all six quarters at Garii's Manor", iconFile = "garimascot", secret = false, gariiPoints = 50},
     ["no-power-save"] = {title = "Saved By The Bell", description = "Hit the end of a quarter whilst in a blackout", iconFile = "carvmascot", secret = false, gariiPoints = 25},
