@@ -42,14 +42,14 @@ if (not errored) then
     callOnLuas("initLuas")
 end
 
-function onCreatePost()   
+function onCreatePost()
     if (errored or utils:getGariiData("curSauce") == nil or utils:lwrKebab(songName) == "gariis-arcade") then return end
 
     for chr,nm in pairs(lastChr) do
         if (getProperty(chr..".curCharacter") ~= nil) then
-            callOnLuas("onRequestBubble", {utils:lwrKebab(getProperty(chr..".curCharacter"))})
-            addLuaScript(chars..(stringSplit(stringSplit(utils:lwrKebab(getProperty(chr..".curCharacter")), "-expert")[1], "-simple")[1]).."Handler")
-            lastChr[chr] = getProperty(chr..".curCharacter")
+            callOnLuas("onRequestBubble", {chr})
+            addLuaScript(chars..(utils:putErThroughTheRinger(getProperty(chr..".curCharacter"))).."Handler")
+            lastChr[chr] = utils:putErThroughTheRinger(getProperty(chr..".curCharacter"))
         end
     end
 end
@@ -84,11 +84,13 @@ function onEvent(name, value1, value2, strumTime)
         local valExc = {["gf"] = "gf", ["girlfriend"] = "gf", ["1"] = "gf", ["dad"] = "dad", ["opponent"] = "dad", ["0"] = "dad"}
         local chngChr = valExc[val1] or "boyfriend"
 
-        removeLuaScript(chars..utils:lwrKebab(lastChr[chngChr]).."Handler")
-        callOnLuas("onDeleteBubble", {chngChr})
-        callOnLuas("onRequestBubble", {utils:lwrKebab(getProperty(chngChr..".curCharacter"))})
-        addLuaScript(chars..utils:lwrKebab(getProperty(chngChr..".curCharacter")).."Handler")
-        lastChr[chngChr] = getProperty(chngChr..".curCharacter")
+        if (lastChr[chngChr] ~= utils:putErThroughTheRinger(getProperty(chngChr..".curCharacter"))) then --so it isnt replacing an already suitable script or bubble
+            removeLuaScript(chars..utils:putErThroughTheRinger(lastChr[chngChr]).."Handler")
+            callOnLuas("onDeleteBubble", {chngChr})
+            callOnLuas("onRequestBubble", {chngChr})
+            addLuaScript(chars..utils:putErThroughTheRinger(getProperty(chngChr..".curCharacter")).."Handler")
+            lastChr[chngChr] = getProperty(chngChr..".curCharacter")
+        end
     end
 end
 

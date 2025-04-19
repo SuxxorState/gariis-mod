@@ -5,7 +5,7 @@ local lockCam = false
 function onCreatePost()
 	setProperty("gf.scrollFactor.x", 0.99)
 	setProperty("gf.scrollFactor.y", 0.99)
-	if (not isStoryMode) or utils:getGariiData("watchedCutscene") then lockCam = true end
+	if (not isStoryMode) or (utils:getGariiData("watchedCutscene") == utils.songNameFmt) then lockCam = true end
 
     utils:makeBlankBG("blankBG", 2300,1400, "FFFFFF")
 	

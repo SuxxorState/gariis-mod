@@ -252,6 +252,10 @@ function Utils:rmpToRng(val, inSt, inNd, nwSt, nwNd)
     return nwSt + (val - inSt) * ((nwNd - nwSt) / (inNd - inSt))
 end
 
+function Utils:putErThroughTheRinger(strp) --character file names need to be stripped of any modifiers for lotsa shit so i can think without having to make 50 million alt bubble files
+    return stringSplit(stringSplit(stringSplit(stringSplit(Utils:lwrKebab(strp), "-nobrim")[1], "-nosunnies")[1], "-expert")[1], "-simple")[1]
+end
+
 function Utils:numToStr(nerm) -- converts a number/string to a table of strings. pretty handy.
     local strnerm = ""..nerm 
     local numtbl = {}

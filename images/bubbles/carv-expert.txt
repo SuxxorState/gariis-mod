@@ -1,7 +1,0 @@
-carv
-, Bubble Only
-
-bubbleLEFT, carv bubbl roundish, 60, 223
-bubbleDOWN, cavr bube squirvle, -296, 161
-bubbleUP, couldy burbl, 25, 198
-bubbleRIGHT, carv bubl polyugon, 279, 228

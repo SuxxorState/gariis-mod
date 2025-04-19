@@ -14,7 +14,7 @@ local bubbleAnims = {}
 function onRequestBubble(chr) --checks to see if a txt file exists for a given character's bubble and goes off of that. did i really just softcode a softcode file system.
     if (version == "1.0" or version == "1.0-prerelease") then return end --im not gonna bother with fixing them in 1.0 its just not worth my time
     local chrgrab = chr
-    chr = getProperty(chr..".curCharacter") or chr --for the extra opp script, its gotta check if the char name is the var name of an actual char or not
+    if (getProperty(chr..".curCharacter") ~= nil) then chr = utils:putErThroughTheRinger(getProperty(chr..".curCharacter")) end
 
     if (checkFileExists("images/bubbles/"..chr..".txt")) then
         local spltchrtxt = stringSplit(getTextFromFile("images/bubbles/"..chr..".txt").." ", "\n")
@@ -23,11 +23,11 @@ function onRequestBubble(chr) --checks to see if a txt file exists for a given c
         local chrref = ""
         local bublpos = {}
 
-        if (getProperty("dad.curCharacter") == chr) then chrgrab = "dad"
+        if (utils:putErThroughTheRinger(getProperty("dad.curCharacter")) == chr) then chrgrab = "dad"
             bublpos = {defaultOpponentX, defaultOpponentY}
-        elseif (getProperty("boyfriend.curCharacter") == chr) then chrgrab = "boyfriend"
+        elseif (utils:putErThroughTheRinger(getProperty("boyfriend.curCharacter")) == chr) then chrgrab = "boyfriend"
             bublpos = {defaultBoyfriendX, defaultBoyfriendY}
-        elseif (getProperty("gf.curCharacter") == chr) then chrgrab = "gf"
+        elseif (utils:putErThroughTheRinger(getProperty("gf.curCharacter")) == chr) then chrgrab = "gf"
             bublpos = {defaultGirlfriendX, defaultGirlfriendY}
             noteBubls = {"gf-sing"}
         else
@@ -62,9 +62,8 @@ function onRequestBubble(chr) --checks to see if a txt file exists for a given c
 end
 
 function onCreateBubble(char, bublX, bublY, playable, loopable, bublanims, useableNotes, chroverride)
-    if (chroverride ~= nil) then bubbleFiles[char] = chroverride
-    elseif (char ~= "boyfriend" and char ~= "gf" and char ~= "dad") then bubbleFiles[char] = char
-    else bubbleFiles[char] = getProperty(char..".curCharacter")  end
+    bubbleFiles[char] = utils:putErThroughTheRinger(getProperty(char..".curCharacter"))
+    if (chroverride ~= nil) then bubbleFiles[char] = chroverride end
     table.insert(bubbleChars, char)
     playerAct[char] = playable
     bubbleCanLoop[char] = loopable

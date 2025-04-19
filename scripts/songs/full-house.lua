@@ -42,10 +42,6 @@ end
 
 
 function onStepHit()
-    if (curStep == 1 or (curStep % 4 == 0 and curBeat < 5)) then
-        callOnScripts("onCountdownTick", {curBeat})
-        utils:newCountdown(curBeat)
-    end
     if (curStep == 144) then setProperty("hunte.visible", true)
     elseif (curStep >= 208 and not didIcon) then canIcon = true
     end

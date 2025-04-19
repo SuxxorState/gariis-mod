@@ -12,7 +12,7 @@ function initLuas()
     if not (getModSetting('gariiDebug')) then setPropertyFromClass("Main", "fpsVar.visible", false) end
     if (getPropertyFromClass('openfl.Lib', 'application.window.title') ~= "Friday Night Funkin': GARII'S MOD") then
         if (not getModSetting('sauceLock')) then utils:setGariiData("curSauce", nil) end
-        utils:setGariiData("watchedCutscene", false)
+        utils:setGariiData("watchedCutscene", "")
         utils:setGariiData("cachedInMyStupidToken", false)
         utils:setGariiData("storyStats", nil)
         utils:setGariiData("deathCounter", 0)
@@ -65,6 +65,22 @@ function setupSpice(stats)
     end
     unlockSecrets = true
     utils:setDiscord("Story Mode: "..utils.weekName, utils.songName.." ["..utils:getHeat(true).."]", getProperty("dad.healthIcon"))
+end
+
+function onStartCountdown()
+	if ((utils:getGariiData("watchedCutscene") ~= utils.songNameFmt) and isStoryMode) then
+        addLuaScript("scripts/objects/comicHandler")
+        callOnLuas("onCreateComic", {utils.songNameFmt})
+        return Function_Stop;
+	end
+end
+
+function onStepHit()
+    if (not getProperty("skipCountdown")) then return end
+    if (curStep == 1 or (curStep % 4 == 0 and curBeat < 5)) then
+        callOnLuas("onCountdownTick", {curBeat}, false, false)
+        utils:newCountdown(curBeat)
+    end
 end
 
 function onCountdownTick(tick) fixTheDamnStrums() --for songs that keep the countdown
@@ -170,6 +186,7 @@ function onUpdate(elapsed)
 
     if (getModSetting('gariiDebug')) then
         if (keyboardJustPressed("F5")) then 
+            utils:setGariiData("watchedCutscene", "")
             setPropertyFromClass("states.PlayState", "nextReloadAll", true)
             restartSong()
         end

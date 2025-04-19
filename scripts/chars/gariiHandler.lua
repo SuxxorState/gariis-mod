@@ -8,7 +8,7 @@ function onCreatePost()
 
     if (not stringEndsWith(difficultyPath, "expert")) then
         setProperty(garchar..'.idleSuffix', '-fake')
-        playAnim(garchar, "idle-fake", true) 
+        playAnim(garchar, "idle-fake", true)
     end
 end
 
