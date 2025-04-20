@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="borderhalf.png">
+	<!-- Created with Adobe Animate version 23.0.1.70 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="bordersplit0000" x="0" y="0" width="1280" height="1119" pivotX="0" pivotY="0"/>
+	<SubTexture name="bordersplit0001" x="0" y="0" width="1280" height="1119"/>
+	<SubTexture name="bordersplit0002" x="0" y="0" width="1280" height="1119"/>
+	<SubTexture name="bordersplit0003" x="0" y="0" width="1280" height="1119"/>
+	<SubTexture name="bordersplit0004" x="0" y="0" width="1280" height="1119"/>
+	<SubTexture name="bordersplit0005" x="0" y="0" width="1280" height="1119"/>
+	<SubTexture name="bordersplit0006" x="0" y="0" width="1280" height="1119"/>
+	<SubTexture name="bordersplit0007" x="0" y="0" width="1280" height="1119"/>
+	<SubTexture name="bordersplit0008" x="1282" y="0" width="1280" height="1119"/>
+	<SubTexture name="bordersplit0009" x="1282" y="0" width="1280" height="1119"/>
+	<SubTexture name="bordersplit0010" x="1282" y="0" width="1280" height="1119"/>
+	<SubTexture name="bordersplit0011" x="1282" y="0" width="1280" height="1119"/>
+	<SubTexture name="bordersplit0012" x="1282" y="0" width="1280" height="1119"/>
+	<SubTexture name="bordersplit0013" x="1282" y="0" width="1280" height="1119"/>
+	<SubTexture name="bordersplit0014" x="1282" y="0" width="1280" height="1119"/>
+	<SubTexture name="bordersplit0015" x="1282" y="0" width="1280" height="1119"/>
+	<SubTexture name="bordersplit0016" x="2564" y="0" width="1280" height="1119"/>
+	<SubTexture name="bordersplit0017" x="2564" y="0" width="1280" height="1119"/>
+	<SubTexture name="bordersplit0018" x="2564" y="0" width="1280" height="1119"/>
+	<SubTexture name="bordersplit0019" x="2564" y="0" width="1280" height="1119"/>
+	<SubTexture name="bordersplit0020" x="2564" y="0" width="1280" height="1119"/>
+	<SubTexture name="bordersplit0021" x="2564" y="0" width="1280" height="1119"/>
+	<SubTexture name="bordersplit0022" x="2564" y="0" width="1280" height="1119"/>
+	<SubTexture name="bordersplit0023" x="2564" y="0" width="1280" height="1119"/>
+</TextureAtlas>

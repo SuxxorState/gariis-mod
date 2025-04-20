@@ -198,10 +198,11 @@ function onUpdate(elapsed)
         end
         if (keyboardJustPressed("F8")) then endSong() end
         if (keyboardJustPressed("F9")) then exitSong() end --anti softlock
-        if (keyboardJustPressed("F10")) then callMethod("setSongTime", {136000}) --fullhouse blackout
+        local shits = {["fuzzy-dice"] = {90000, 58000}, ["full-house"] = {136000, 58000}}
+        if (keyboardJustPressed("F10")) then callMethod("setSongTime", {shits[utils.songNameFmt][1]}) --fullhouse blackout
             callMethod("clearNotesBefore", {getPropertyFromClass("backend.Conductor", "songPosition")}) 
         end
-        if (keyboardJustPressed("F11")) then callMethod("setSongTime", {58000}) --fullhouse taunt test
+        if (keyboardJustPressed("F11")) then callMethod("setSongTime", {shits[utils.songNameFmt][2]}) --fullhouse taunt test
             callMethod("clearNotesBefore", {getPropertyFromClass("backend.Conductor", "songPosition")}) 
         end
     else
