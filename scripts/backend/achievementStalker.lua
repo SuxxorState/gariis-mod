@@ -36,8 +36,10 @@ local lastCheckedAch = ""
 local ratingAccumulation = {0,0,0,0}
 local keyPresses = 0
 local posesHit = 0
+local canEndSong = true
+local ENDINGLESONG = false
 
-function onGoodNoteHit(_,_,nType)
+function goodNoteHit(id,_,nType)
     if (stringStartsWith(utils:lwrKebab(nType), "pose-note")) then posesHit = posesHit + 1 end
 
     if (getPropertyFromGroup('notes', id, 'rating') == "unknown") then return end
@@ -51,6 +53,7 @@ function noteMissPress()
 end
 
 function onCreate()
+    utils:setGariiData("achievements", nil)
 end
 
 function onUpdate()
@@ -61,10 +64,14 @@ function onUpdate()
 end
 
 function onEndSong()
+    ENDINGLESONG = true
     if (posesHit <= 0 and utils.songNameFmt == "full-house") then
         unlockAchievement("no-pose")
     end
     calculateFC()
+    if (not canEndSong) then
+        return Function_Stop;
+    end
 end
 
 
@@ -72,11 +79,12 @@ function unlockAchievement(ach)
     local save = utils:getGariiData("achievements") or {}
 
     if (save[ach] == nil) then save[ach] = {}
-    elseif (save[ach][1] == true or achievements[ach] == nil) then return end
+    elseif (save[ach][1] == true or achievements[ach] == nil) then return false end
 
     save[ach] = {true, os.time(os.date('*t'))}
     utils:setGariiData("achievements", save)
     table.insert(queuedAchievements, ach)
+    return true
 end
 
 function calculateFC()
@@ -84,8 +92,8 @@ function calculateFC()
 	local totals = goods + ratingAccumulation[3] + ratingAccumulation[4] + (misses - keyPresses)
 	local ratingPercent = math.floor((goods/totals)*100)/100
 
-	if (ratingPercent == 1) then
-		unlockAchievement(utils:lwrKebab(songName).."-fc")
+    if (ratingPercent == 1) then
+		canEndSong = not unlockAchievement(utils:lwrKebab(songName).."-fc")
 	end
 end
 
@@ -114,5 +122,9 @@ function onTimerCompleted(tmr)
         removeLuaText("achievementTxt")
         removeLuaText("actualAchTxt")
         table.remove(queuedAchievements, 1)
+        if (ENDINGLESONG and #queuedAchievements <= 0) then
+            canEndSong = true
+            endSong()
+        end
     end
 end

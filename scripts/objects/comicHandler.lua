@@ -31,20 +31,20 @@ local comicInfo = {
         ["normal"] = {
             [0] = {camY = -1900, snd = "fuzzyloopend",vol = 0.8, autoAdv = 3},
             {x = -440,y = -2510, camY = -1900, snd = "micdrop_quick",vol = 0.8},
-            {x = 540,y = -2360, camY = -1900},
+            {x = 540,y = -2360, camY = -1900, snd = "garimad",vol = 0.6},
             {x = 1060,y = -2360, camY = -1900, snd = "boyyeah",vol = 0.8},
-            {x = -440,y = -1700, camY = -1200},
-            {x = -435,y = -1345, camY = -1200},
+            {x = -440,y = -1700, camY = -1200, snd = "blink",vol = 0.6},
+            {x = -435,y = -1345, camY = -1200, snd = "boythink",vol = 0.8},
             {x = 370,y = -1770, camY = -1200, snd = "boyah",vol = 0.8},
             {x = 635,y = -1745, camY = -1200, snd = "boybooh",vol = 0.8},
             {x = -450,y = -975, camY = -400},
-            {x = 195,y = -970, camY = -400},
-            {x = 700,y = -1020, camY = -400, snd = "boyyeah2",vol = 0.8},
-            {x = 1320,y = -980, camY = -400},
+            {x = 195,y = -970, camY = -400, snd = "goonshuh",vol = 0.8},
+            {x = 700,y = -1020, camY = -400, snd = "boyyeah2",vol = 0.7},
+            {x = 1320,y = -980, camY = -400, snd = "stolencarvlaugh",vol = 0.7},
             {x = -410,y = -425, camY = 160, snd = "fullhouseloopstart",vol = 0.8},
             {x = 655,y = -425, camY = 160},
-            {x = 1175,y = -430, camY = 160},
-            {x = 0,y = -100, camY = 485}
+            {x = 1175,y = -430, camY = 160, snd = "carvheh",vol = 0.9},
+            {x = -445,y = -85, camY = 485}
         },
         ["expert"] = {
             [0] = {x = 0,y = 0, camY = 0, snd = "",vol = 1},

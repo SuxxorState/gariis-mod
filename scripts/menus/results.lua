@@ -28,7 +28,7 @@ function setupSpice(stats)
     if (stats.scoreMult ~= nil) then scoreMulti = stats.scoreMult end
 end
 
-function onEndSong()
+function notonEndSong()
 	if ((not botPlay) and (not practice) and canUpdate) then
 		if ((stringEndsWith(version, "1.0-prerelease") or stringEndsWith(version, "1.0") or stringStartsWith(version, "1.0.1") or stringStartsWith(version, "1.0.2") or stringStartsWith(version, "1.0.2h"))) then --workaround for the story mode bug that SHOULD HAVE BEEN NOTICED PRIOR TO 1.0'S RELEASE.
 			if (isStoryMode and week == "garii" and utils.songNameFmt == "fuzzy-dice") then
