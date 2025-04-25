@@ -7,8 +7,8 @@ local boomPerSect, bamIntensity = 4, 1
 local unlockSecrets = (utils:lwrKebab(songName) == "gariis-arcade")
 
 function initLuas()
-    utils:setGariiData("lostSunnies", true)
-    utils:setGariiData("lostHat", false)
+    utils:setGariiData("lostSunnies", false)
+    utils:setGariiData("lostHat", true)
     if not (getModSetting('gariiDebug')) then setPropertyFromClass("Main", "fpsVar.visible", false) end
     if (getPropertyFromClass('openfl.Lib', 'application.window.title') ~= "Friday Night Funkin': GARII'S MOD") then
         if (not getModSetting('sauceLock')) then utils:setGariiData("curSauce", nil) end
@@ -212,13 +212,7 @@ function onUpdate(elapsed)
                 os.execute("start https://drive.google.com/drive/folders/1HmqI39zEi19OY3gh6a1BWcfmYIm7SXrQ?usp=sharing")
                 exitSong()
             else
-                utils:runHaxeCode([[
-                    import backend.Highscore;
-                    import backend.Song;
-                    PlayState.isStoryMode = false;
-                    PlayState.SONG = Song.loadFromJson(Highscore.formatSong("twenty-sixteen", 0), "twenty-sixteen");
-                ]])
-                restartSong()
+                loadSong("twenty-sixteen")
             end
         end
     end

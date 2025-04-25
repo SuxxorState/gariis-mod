@@ -31,8 +31,10 @@ function onStartCountdown(tick)
 			if (sauceFX[utils:lwrKebab(dif)].chart == "normal") then leCurChart = "‿" end
 
 			if (checkFileExists('data/'..utils.songNameFmt..'/'..utils.songNameFmt..'-'..leCurChart..'.json')) then
-				if (not utils:tableContains(chartList, noBogusChart)) then table.insert(chartList, noBogusChart) end
-				table.insert(goodSauces, dif)
+				if ((noBogusChart == "expert" and utils:getGariiData("expertSauces") == true) or noBogusChart ~= "expert") then
+					if (not utils:tableContains(chartList, noBogusChart)) then table.insert(chartList, noBogusChart) end
+					table.insert(goodSauces, dif)
+				end
 			end
 		end
 		if (#chartList == 1 and chartList[1] == "normal") then ridMeOfHim = true

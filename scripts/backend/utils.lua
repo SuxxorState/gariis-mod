@@ -97,6 +97,7 @@ function Utils:endToMenu()
                 if Utils:getGariiData("expertSauces") == nil then Utils:setGariiData("expertSauces", true) end
                 if Utils:getGariiData("levelRevealed") == nil then
                     saveFile(folDir.."weeks/garii.json", "{\n\"storyName\": \"Roadblock Ruckus\",\n\"difficulties\": \"‿\",\n\"hideFreeplay\": false,\n\"weekBackground\": \"orange\",\n\"freeplayColor\": [146,113,253],\n\"weekBefore\": \"tutorial\",\n\"startUnlocked\": true,\n\"weekCharacters\": [\"garii\", \"bftrans\", \"gftrans\"],\n\"songs\": [[\"Fuzzy Dice\", \"garfree\", [177, 82, 82]], [\"Full House\", \"goonsfree\", [67,66,83]]],\n\"hideStoryMode\": false,\n\"weekName\": \"Episode ][\",\n\"hiddenUntilUnlocked\": false\n}", true)
+                    deleteFile("pack.png")
                     Utils:setGariiData("levelRevealed", true)
                 end
             end
