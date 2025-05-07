@@ -55,6 +55,7 @@ function Font:createNewText(name, dax,day, txt, algnmnt, clr, camra)
             setProperty(name..i..".color", getColorFromHex(clr))
             utils:setObjectCamera(name..i, camra)
             addLuaSprite(name..i)
+            if (i > 1) then setObjectOrder(name..i, getObjectOrder(name.."1")) end
         end
 
         if (loadedFont.dynamicSize ~= nil) then
@@ -194,6 +195,7 @@ function Font:setTextString(name, txt)
             updateHitbox(name..i)
             utils:setObjectCamera(name..i, atts[name].cam)
             addLuaSprite(name..i, true)
+            if (i > 1) then setObjectOrder(name..i, getObjectOrder(name.."1")) end
         end
         
         if (i > #splttxt) then removeLuaSprite(name..i, true)
@@ -304,6 +306,7 @@ end
 function Font:textExists(name) return (utils:indexOf(list, name) ~= nil) end
 function Font:getTextX(name) return atts[name].x end
 function Font:getTextY(name) return atts[name].y end
+function Font:getTextLength(name) return atts[name].length end
 function Font:getTextVisible(name) return atts[name].visible end
 function Font:sheetName(name) return sheetNames[name] end
 

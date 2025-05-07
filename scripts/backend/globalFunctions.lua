@@ -5,10 +5,11 @@ local arcadeKey = getModSetting('arcadeMenu')
 local achievementKey = getModSetting('achievementsMenu')
 local boomPerSect, bamIntensity = 4, 1
 local unlockSecrets = (utils:lwrKebab(songName) == "gariis-arcade")
+local pendingBubbleCache = {}
 
 function initLuas()
     utils:setGariiData("lostSunnies", false)
-    utils:setGariiData("lostHat", true)
+    utils:setGariiData("lostHat", false)
     if not (getModSetting('gariiDebug')) then setPropertyFromClass("Main", "fpsVar.visible", false) end
     if (getPropertyFromClass('openfl.Lib', 'application.window.title') ~= "Friday Night Funkin': GARII'S MOD") then
         if (not getModSetting('sauceLock')) then utils:setGariiData("curSauce", nil) end
@@ -24,7 +25,9 @@ end
 
 function onCreatePost()
     for _,chra in pairs({"boyfriend", "gf", "dad"}) do
-        charCheckNSwap(chra, getProperty(chra..".curCharacter"))
+        if (charCheckNSwap(getProperty(chra..".curCharacter")) ~= getProperty(chra..".curCharacter")) then --cleans up characters so they properly align to any accessory modifiers. also removes expert & simple tags to make my life easy
+            triggerEvent("Change Character", chra, charCheckNSwap(getProperty(chra..".curCharacter")))
+        end
     end
     setProperty("camZooming", utils:lwrKebab(songName) ~= "gariis-arcade")
 	setProperty("camZoomingMult", 0)
@@ -231,6 +234,25 @@ function onBeatHit()
 	triggerEvent("Add Camera Zoom",0.015*bamIntensity,0.03*bamIntensity)
 end
 
+local cachedCharacters = {}
+function onEventPushed(name, value1, value2, strumTime)
+    local event = utils:lwrKebab(name)
+    local val1 = utils:lwrKebab(value1)
+    local val2 = utils:lwrKebab(value2)
+
+	if (event == "change-character") then
+        local valExc = {["gf"] = "gf", ["girlfriend"] = "gf", ["1"] = "gf", ["dad"] = "dad", ["opponent"] = "dad", ["0"] = "dad"}
+        local chngChr = valExc[val1] or "bf"
+
+        if (not utils:tableContains(cachedCharacters, charCheckNSwap(val2))) then
+            addCharacterToList(val2, val1)
+            if (charCheckNSwap(val2) ~= val2) then addCharacterToList(charCheckNSwap(val2), val1) end
+            callOnLuas("onPrecacheBubble", {val2})
+            table.insert(cachedCharacters, charCheckNSwap(val2)) --using checknswap bc it cleans up characters
+        end
+    end
+end
+
 local curTexture = ""
 function onEvent(name, value1, value2, strumTime)
     local event = utils:lwrKebab(name)
@@ -277,19 +299,19 @@ function onEvent(name, value1, value2, strumTime)
                 setPropertyFromGroup('unspawnNotes', i, 'noteSplashData.texture', value2);
             end
         end
-    elseif (event == "change-character") then charCheckNSwap(val1, val2)
+    elseif (event == "change-character" and charCheckNSwap(val2) ~= val2) then triggerEvent("Change Character", val1, charCheckNSwap(val2))
     end
 end
 
-function charCheckNSwap(charVar, charName)
+function charCheckNSwap(charName)
     local charNameFixed = stringSplit(stringSplit(charName, "-expert")[1], "-simple")[1] --ignores simple and expert suffixes on characters
-    if ((utils:getGariiData("lostSunnies") and utils:getGariiData("lostHat")) and checkFileExists("characters/"..charNameFixed.."-nosunnies-nobrim.json")) then
-        triggerEvent("Change Character", charVar, charNameFixed.."-nosunnies-nobrim")
-    elseif (utils:getGariiData("lostHat") and checkFileExists("characters/"..charNameFixed.."-nobrim.json")) then
-        triggerEvent("Change Character", charVar, charNameFixed.."-nobrim")
-    elseif (utils:getGariiData("lostSunnies") and checkFileExists("characters/"..charNameFixed.."-nosunnies.json")) then
-        triggerEvent("Change Character", charVar, charNameFixed.."-nosunnies")
+    if (utils:getGariiData("lostSunnies") and checkFileExists("characters/"..charNameFixed.."-nosunnies.json")) then
+        charNameFixed = charNameFixed.."-nosunnies"
     end
+    if (utils:getGariiData("lostHat") and checkFileExists("characters/"..charNameFixed.."-nobrim.json")) then
+        charNameFixed = charNameFixed.."-nobrim"
+    end
+    return charNameFixed
 end
 
 function goodNoteHit() --this detects when bf SHOULD be dancing but isnt (due to gf singing whilst he was singing) and forces him to do so when he's stuck in a pose

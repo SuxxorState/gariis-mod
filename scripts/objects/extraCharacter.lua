@@ -6,19 +6,20 @@ local chrAmts = {["opp"] = 0, ["sup"] = 0}
 local lastMHS = true
 local lastcombo = 0
 
-function addExtraOpp(varName, chName, xPos, yPos, def) makeNewCommon(varName, chName, xPos, yPos, getObjectOrder('dadGroup')+1, "opp", def) end
-function addExtraSup(varName, chName, xPos, yPos, def) makeNewCommon(varName, chName, xPos, yPos, getObjectOrder('gfGroup')+1, "sup", def) end
+function addExtraOpp(varName, chName, xPos, yPos, def, hasIcon) makeNewCommon(varName, chName, xPos, yPos, getObjectOrder('dadGroup')+1, "opp", def, hasIcon) end
+function addExtraSup(varName, chName, xPos, yPos, def, hasIcon) makeNewCommon(varName, chName, xPos, yPos, getObjectOrder('gfGroup')+1, "sup", def, hasIcon) end
 
-function makeNewCommon(varName, chName, xPos, yPos, pos, tipe, def) --pretty barebones way of having another character; its WAY better than the old system i was using, though.
+function makeNewCommon(varName, chName, xPos, yPos, pos, tipe, def, hasIcn) --pretty barebones way of having another character; its WAY better than the old system i was using, though.
     if (def == nil) then def = false end
+    if (hasIcn == nil) then hasIcn = true end
     chrAmts[tipe] = chrAmts[tipe] + 1
-    storedChrs[varName] = {chrName = chName, x = xPos, y = yPos, reduced = false, lolthing = 0, index = chrAmts[tipe], chrType = tipe, idleSuffix = "", switchTo = "", poseSuffix = "", defaultNote = def}
+    storedChrs[varName] = {chrName = chName, x = xPos, y = yPos, reduced = false, lolthing = 0, index = chrAmts[tipe], chrType = tipe, idleSuffix = "", switchTo = "", poseSuffix = "", defaultNote = def, hasIcon = hasIcn}
 
     createInstance(varName, "objects.Character", {xPos, yPos, chName, false})
     setProperty(varName..".x", getProperty(varName..".x") + getProperty(varName..".positionArray")[1])
     setProperty(varName..".y", getProperty(varName..".y") + getProperty(varName..".positionArray")[2])
     callMethod("insert", {pos, instanceArg(varName)}) --what??
-    makeNewTimeIcon(varName, getProperty(varName..".healthIcon"))
+    if (hasIcn) then makeNewTimeIcon(varName, getProperty(varName..".healthIcon")) end
 
     local oppList = getVar("extraOppList") or {}
     table.insert(oppList, varName)
@@ -89,7 +90,7 @@ function onUpdatePost()
                 end
             end
         end
-        playAnim('iconTime'..chr, 'stg'..vals.lolthing)
+        if (luaSpriteExists('iconTime'..chr)) then playAnim('iconTime'..chr, 'stg'..vals.lolthing) end
     end
 end
 
@@ -140,13 +141,13 @@ end
 
 function makeNewTimeIcon(chrName, iconName)
     local vars = storedChrs[chrName]
-    if (disableBar and (vars.chrType == "opp")) or ((not disableBar) and (vars.chrType == "sup")) then return end
+    if (disableBar and (vars.chrType == "opp")) or ((not disableBar) and (vars.chrType == "sup") or (not vars.hasIcon)) then return end
 
     removeLuaSprite('iconTime'..chrName)
 
     makeAnimatedLuaSprite("iconTime"..chrName, "icons/"..iconName.."-anim", ((vars.index-1) % 2) * 45, screenHeight - (205 * vars.index))
     for i=iconLimits[1],iconLimits[2] do  
-        addAnimationByPrefix("iconTime"..chrName, 'stg'..(i+vars.lolthing), iconName.." stage "..i, 24, true) 
+        addAnimationByPrefix("iconTime"..chrName, 'stg'..i, iconName.." stage "..i, 24, true) 
     end
 
     utils:setObjectCamera('iconTime'..chrName, 'hud')
@@ -176,8 +177,9 @@ function onEventPushed(name, value1, value2, strumTime)
             if (tonumber(val2) < iconLimits[1]) then iconLimits[1] = tonumber(val2) 
             elseif (tonumber(val2) > iconLimits[2]) then iconLimits[2] = tonumber(val2) 
             end
-            for chr,_ in pairs(storedChrs) do
-                makeNewTimeIcon(chr, getProperty(chr..".healthIcon"))
+            if (disableBar) then iconLimits = {0,1} end
+            for chr,vars in pairs(storedChrs) do
+                if (vars.hasIcon) then makeNewTimeIcon(chr, getProperty(chr..".healthIcon")) end
             end
         end
     end
@@ -198,14 +200,18 @@ function onEvent(name, value1, value2, strumTime)
         setProperty(val2..".holdTimer", 0) --how did i catch this so late in development
         setProperty(val2..".specialAnim", true)
 	elseif (event == "advance-anger") and (tonumber(val2) ~= nil) and not disableBar then
-        for chr,_ in pairs(storedChrs) do
+        for chr,vars in pairs(storedChrs) do
             storedChrs[chr].lolthing = tonumber(val2)
             storedChrs[chr].reduced = false
-            playAnim('iconTime'..chr, 'stg'..storedChrs[chr].lolthing)
+            if (luaSpriteExists('iconTime'..chr) and vars.chrType == "opp") then
+                playAnim('iconTime'..chr, 'stg'..vars.lolthing)
+            end
         end
     elseif (event == "toggle-borderline-hud") then
         for chr,_ in pairs(storedChrs) do
-            setProperty('iconTime'..chr..'.visible', not getProperty('iconTime'..chr..'.visible'))
+            if (luaSpriteExists('iconTime'..chr)) then
+                setProperty('iconTime'..chr..'.visible', not getProperty('iconTime'..chr..'.visible'))
+            end
         end
     end
 end

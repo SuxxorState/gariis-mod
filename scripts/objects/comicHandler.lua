@@ -116,7 +116,9 @@ end
 function advancePanel()
     cur.panel = cur.panel + 1
     if (cur.panel > 0) then utils:playSound('pause/scribble'..getRandomInt(1,3), getRandomFloat(0.3,0.5)) end
-    if (comicInfo[cur.comic][cur.diff][cur.panel].snd ~= nil) then utils:playSound("cutscene/"..comicInfo[cur.comic][cur.diff][cur.panel].snd, comicInfo[cur.comic][cur.diff][cur.panel].vol, comicInfo[cur.comic][cur.diff][cur.panel].snd) end
+    if (comicInfo[cur.comic][cur.diff][cur.panel].snd ~= nil and comicInfo[cur.comic][cur.diff][cur.panel].snd ~= "") then 
+        utils:playSound("cutscene/"..comicInfo[cur.comic][cur.diff][cur.panel].snd, comicInfo[cur.comic][cur.diff][cur.panel].vol, comicInfo[cur.comic][cur.diff][cur.panel].snd) 
+    end
     if (luaSpriteExists("tcpanel"..cur.panel)) then doTweenAlpha("tcpanel"..cur.panel, "tcpanel"..cur.panel, 1, 0.5) end
     setProperty("camFollow.y", comicInfo[cur.comic][cur.diff][cur.panel].camY)
     setProperty("advancehint.visible", not pressedAcc)

@@ -949,11 +949,6 @@ function calcAMPM(uncutTime, hourOnly, military)
     if (cutTime == 0 and (not military)) then cutTime = 12 end
     if (hourRaw % 24) >= 12 then suffix = "PM" end
     if (hourOnly) then return cutTime.." "..suffix end
-    if (not military) then return cutTime..":"..formatDigit(minuteRaw)..":"..formatDigit(secondRaw).." "..suffix end
-    return formatDigit(cutTimeMil)..":"..formatDigit(minuteRaw)..":"..formatDigit(secondRaw)
-end
-
-function formatDigit(num)
-    if (num < 10) then return "0"..num end
-    return num
+    if (not military) then return cutTime..":"..utils:formatDigit(minuteRaw)..":"..utils:formatDigit(secondRaw).." "..suffix end
+    return utils:formatDigit(cutTimeMil)..":"..utils:formatDigit(minuteRaw)..":"..utils:formatDigit(secondRaw)
 end

@@ -14,10 +14,13 @@ local ratingShits = { --rating image names, rating comments, icon progresses or 
 }
 local curGFRead = "def"
 local misscap = -1
+local altGFSystem = false
+local gfIdleSuff = ""
 
 function onCreatePost()
     setProperty('showComboNum', false)
     setProperty('showRating', false)
+    altGFSystem = callMethod("gf.animOffsets.exists", {"danceLeft"..gfIdleSuff.."-left"})
 
     precacheImage(hudFold.."grafix")
 
@@ -44,8 +47,8 @@ function onCreatePost()
     utils:setObjectCamera('timBar', 'hud')
 	if not disableBar then setObjectOrder('timBar', getObjectOrder('timeBar') + 1) end
 
-    addAnimatedOneoff("timerBarfbg", "timebar", "time bar fill bg", 0,0)
-    if not disableBar then setObjectOrder('timerBarfbg', getObjectOrder('timBar')) end
+    if not disableBar then addAnimatedOneoff("timerBarfbg", "timebar", "time bar fill bg", 0,0)
+    setObjectOrder('timerBarfbg', getObjectOrder('timBar')) end
 
     makeLuaText('scrTxt', "You NOT Rappin'", 220, 130, 50)
     utils:quickFormatTxt("scrTxt", "Lasting Sketch.ttf", 32, "000000", 0, "FFFFFF")
@@ -167,7 +170,6 @@ end
 
 local nearestNote = 0
 local gfSwitchTo = ""
-local gfIdleSuff = ""
 local lastMHS = true
 local canWipeCombo = false
 function onBeatHit() --AWESOME accurate combo drop calculations.
@@ -223,7 +225,7 @@ end
 
 function onUpdate()
     if lastMHS ~= mustHitSection then 
-        if (callMethod("gf.animOffsets.exists", {"danceLeft"..gfIdleSuff.."-left"})) then --this system is a beat late but im too lazy to find a solution to it as it still works fine
+        if (altGFSystem) then --this system is a beat late but im too lazy to find a solution to it as it still works fine
             if mustHitSection then
                 setProperty("gf.idleSuffix", gfIdleSuff.."-toright")
                 gfSwitchTo = gfIdleSuff.."-right"
@@ -233,7 +235,6 @@ function onUpdate()
             end
         else 
             setProperty("gf.idleSuffix", gfIdleSuff)
-            utils:trc("borderlineHUD: No dynamic idle set found for gf, switching to default idle system", 2)
         end
         lastMHS = mustHitSection 
     end
@@ -291,6 +292,9 @@ function onEvent(name, value1, value2, strumTime)
         playAnim('iconTime', 'stg'..lolthing)
     elseif (event == "change character") then
         if (val1 == "gf" or val1 == "girlfriend" or val1 == "1") then
+            altGFSystem = callMethod("gf.animOffsets.exists", {"danceLeft"..gfIdleSuff.."-left"}) --bc it doesnt need to check multiple times with one character bc the outcome will always be the same
+            if (not altGFSystem) then utils:trc("borderlineHUD: No dynamic idle set found for "..val2..", using default idle system") end --also i hate constantly seeing this message
+
             if (ratingShits[getProperty("gf.healthIcon")] ~= nil) then curGFRead = getProperty("gf.healthIcon")
             else curGFRead = "def" end
             if disableBar then replaceTimerIcon() end
@@ -467,6 +471,8 @@ function noteMissPress(direction) --hate my life
 end
 
 function noteMiss(id, direction, noteType, isSustainNote)
+    local shit = {[0] = "LEFT", "DOWN", "UP", "RIGHT"}
+    playAnim("boyfriend", "sing"..shit[direction].."miss") --fix bc alt anims have misses so ive learned
     table.insert(storedRanks, -2) --penalty is worse considering 3 miss limit
     if (misscap > -1) then fillHealth(misses) end
 end

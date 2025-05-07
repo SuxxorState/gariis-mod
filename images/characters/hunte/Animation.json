@@ -13,11 +13,11 @@
 "E": [
 {
 "SI": {
-"SN": "hunte opp/-hunte anims/hunte opp idle",
+"SN": "hunte opp/-anims/-nomic/hunte opp idle",
 "IN": "",
 "ST": "G",
 "FF": 0,
-"LP": "PO",
+"LP": "LP",
 "TRP": {
 "x": -30.150000000000003,
 "y": 26.1
@@ -50,11 +50,11 @@
 "E": [
 {
 "SI": {
-"SN": "hunte opp/-hunte anims/hunte opp idle",
+"SN": "hunte opp/-anims/-nomic/hunte opp idle",
 "IN": "",
 "ST": "G",
 "FF": 1,
-"LP": "PO",
+"LP": "LP",
 "TRP": {
 "x": -30.15,
 "y": 26.1
@@ -87,11 +87,11 @@
 "E": [
 {
 "SI": {
-"SN": "hunte opp/-hunte anims/hunte opp idle",
+"SN": "hunte opp/-anims/-nomic/hunte opp idle",
 "IN": "",
 "ST": "G",
 "FF": 2,
-"LP": "PO",
+"LP": "LP",
 "TRP": {
 "x": -30.15,
 "y": 26.1
@@ -124,11 +124,11 @@
 "E": [
 {
 "SI": {
-"SN": "hunte opp/-hunte anims/hunte opp idle",
+"SN": "hunte opp/-anims/-nomic/hunte opp idle",
 "IN": "",
 "ST": "G",
 "FF": 3,
-"LP": "PO",
+"LP": "LP",
 "TRP": {
 "x": -30.15,
 "y": 26.1
@@ -161,11 +161,11 @@
 "E": [
 {
 "SI": {
-"SN": "hunte opp/-hunte anims/hunte opp idle",
+"SN": "hunte opp/-anims/-nomic/hunte opp idle",
 "IN": "",
 "ST": "G",
 "FF": 4,
-"LP": "PO",
+"LP": "LP",
 "TRP": {
 "x": -30.15,
 "y": 26.1
@@ -198,11 +198,11 @@
 "E": [
 {
 "SI": {
-"SN": "hunte opp/-hunte anims/hunte opp idle",
+"SN": "hunte opp/-anims/-nomic/hunte opp idle",
 "IN": "",
 "ST": "G",
 "FF": 5,
-"LP": "PO",
+"LP": "LP",
 "TRP": {
 "x": -30.15,
 "y": 26.1
@@ -235,11 +235,11 @@
 "E": [
 {
 "SI": {
-"SN": "hunte opp/-hunte anims/hunte opp idle",
+"SN": "hunte opp/-anims/-nomic/hunte opp idle",
 "IN": "",
 "ST": "G",
 "FF": 6,
-"LP": "PO",
+"LP": "LP",
 "TRP": {
 "x": -30.15,
 "y": 26.1
@@ -272,11 +272,11 @@
 "E": [
 {
 "SI": {
-"SN": "hunte opp/-hunte anims/hunte opp idle",
+"SN": "hunte opp/-anims/-nomic/hunte opp idle",
 "IN": "",
 "ST": "G",
 "FF": 7,
-"LP": "PO",
+"LP": "LP",
 "TRP": {
 "x": -30.15,
 "y": 26.1
@@ -309,11 +309,11 @@
 "E": [
 {
 "SI": {
-"SN": "hunte opp/-hunte anims/hunte opp idle",
+"SN": "hunte opp/-anims/-nomic/hunte opp idle",
 "IN": "",
 "ST": "G",
 "FF": 8,
-"LP": "PO",
+"LP": "LP",
 "TRP": {
 "x": -30.15,
 "y": 26.1
@@ -346,11 +346,11 @@
 "E": [
 {
 "SI": {
-"SN": "hunte opp/-hunte anims/hunte opp idle",
+"SN": "hunte opp/-anims/-nomic/hunte opp idle",
 "IN": "",
 "ST": "G",
 "FF": 9,
-"LP": "PO",
+"LP": "LP",
 "TRP": {
 "x": -30.15,
 "y": 26.1
@@ -383,11 +383,11 @@
 "E": [
 {
 "SI": {
-"SN": "hunte opp/-hunte anims/hunte opp idle",
+"SN": "hunte opp/-anims/-nomic/hunte opp idle",
 "IN": "",
 "ST": "G",
 "FF": 10,
-"LP": "PO",
+"LP": "LP",
 "TRP": {
 "x": -30.15,
 "y": 26.1
@@ -420,11 +420,11 @@
 "E": [
 {
 "SI": {
-"SN": "hunte opp/-hunte anims/hunte opp idle",
+"SN": "hunte opp/-anims/-nomic/hunte opp idle",
 "IN": "",
 "ST": "G",
 "FF": 11,
-"LP": "PO",
+"LP": "LP",
 "TRP": {
 "x": -30.15,
 "y": 26.1
@@ -457,11 +457,11 @@
 "E": [
 {
 "SI": {
-"SN": "hunte opp/-hunte anims/hunte opp idle",
+"SN": "hunte opp/-anims/-nomic/hunte opp idle",
 "IN": "",
 "ST": "G",
 "FF": 12,
-"LP": "PO",
+"LP": "LP",
 "TRP": {
 "x": -30.15,
 "y": 26.1
@@ -494,11 +494,11 @@
 "E": [
 {
 "SI": {
-"SN": "hunte opp/-hunte anims/hunte opp idle",
+"SN": "hunte opp/-anims/-nomic/hunte opp idle",
 "IN": "",
 "ST": "G",
 "FF": 13,
-"LP": "PO",
+"LP": "LP",
 "TRP": {
 "x": -30.15,
 "y": 26.1
@@ -531,11 +531,11 @@
 "E": [
 {
 "SI": {
-"SN": "hunte opp/-hunte anims/hunte idle alt",
+"SN": "hunte opp/-anims/-nomic/hunte idle alt",
 "IN": "",
 "ST": "G",
 "FF": 0,
-"LP": "PO",
+"LP": "LP",
 "TRP": {
 "x": -30.150000000000003,
 "y": 26.1
@@ -568,11 +568,11 @@
 "E": [
 {
 "SI": {
-"SN": "hunte opp/-hunte anims/hunte idle alt",
+"SN": "hunte opp/-anims/-nomic/hunte idle alt",
 "IN": "",
 "ST": "G",
 "FF": 1,
-"LP": "PO",
+"LP": "LP",
 "TRP": {
 "x": -30.15,
 "y": 26.1
@@ -605,11 +605,11 @@
 "E": [
 {
 "SI": {
-"SN": "hunte opp/-hunte anims/hunte idle alt",
+"SN": "hunte opp/-anims/-nomic/hunte idle alt",
 "IN": "",
 "ST": "G",
 "FF": 2,
-"LP": "PO",
+"LP": "LP",
 "TRP": {
 "x": -30.15,
 "y": 26.1
@@ -642,11 +642,11 @@
 "E": [
 {
 "SI": {
-"SN": "hunte opp/-hunte anims/hunte idle alt",
+"SN": "hunte opp/-anims/-nomic/hunte idle alt",
 "IN": "",
 "ST": "G",
 "FF": 3,
-"LP": "PO",
+"LP": "LP",
 "TRP": {
 "x": -30.15,
 "y": 26.1
@@ -679,11 +679,11 @@
 "E": [
 {
 "SI": {
-"SN": "hunte opp/-hunte anims/hunte idle alt",
+"SN": "hunte opp/-anims/-nomic/hunte idle alt",
 "IN": "",
 "ST": "G",
 "FF": 4,
-"LP": "PO",
+"LP": "LP",
 "TRP": {
 "x": -30.15,
 "y": 26.1
@@ -716,11 +716,11 @@
 "E": [
 {
 "SI": {
-"SN": "hunte opp/-hunte anims/hunte idle alt",
+"SN": "hunte opp/-anims/-nomic/hunte idle alt",
 "IN": "",
 "ST": "G",
 "FF": 5,
-"LP": "PO",
+"LP": "LP",
 "TRP": {
 "x": -30.15,
 "y": 26.1
@@ -753,11 +753,11 @@
 "E": [
 {
 "SI": {
-"SN": "hunte opp/-hunte anims/hunte idle alt",
+"SN": "hunte opp/-anims/-nomic/hunte idle alt",
 "IN": "",
 "ST": "G",
 "FF": 6,
-"LP": "PO",
+"LP": "LP",
 "TRP": {
 "x": -30.15,
 "y": 26.1
@@ -790,11 +790,11 @@
 "E": [
 {
 "SI": {
-"SN": "hunte opp/-hunte anims/hunte idle alt",
+"SN": "hunte opp/-anims/-nomic/hunte idle alt",
 "IN": "",
 "ST": "G",
 "FF": 7,
-"LP": "PO",
+"LP": "LP",
 "TRP": {
 "x": -30.15,
 "y": 26.1
@@ -827,11 +827,11 @@
 "E": [
 {
 "SI": {
-"SN": "hunte opp/-hunte anims/hunte idle alt",
+"SN": "hunte opp/-anims/-nomic/hunte idle alt",
 "IN": "",
 "ST": "G",
 "FF": 8,
-"LP": "PO",
+"LP": "LP",
 "TRP": {
 "x": -30.15,
 "y": 26.1
@@ -864,11 +864,11 @@
 "E": [
 {
 "SI": {
-"SN": "hunte opp/-hunte anims/hunte idle alt",
+"SN": "hunte opp/-anims/-nomic/hunte idle alt",
 "IN": "",
 "ST": "G",
 "FF": 9,
-"LP": "PO",
+"LP": "LP",
 "TRP": {
 "x": -30.15,
 "y": 26.1
@@ -901,11 +901,11 @@
 "E": [
 {
 "SI": {
-"SN": "hunte opp/-hunte anims/hunte idle alt",
+"SN": "hunte opp/-anims/-nomic/hunte idle alt",
 "IN": "",
 "ST": "G",
 "FF": 10,
-"LP": "PO",
+"LP": "LP",
 "TRP": {
 "x": -30.15,
 "y": 26.1
@@ -938,11 +938,11 @@
 "E": [
 {
 "SI": {
-"SN": "hunte opp/-hunte anims/hunte idle alt",
+"SN": "hunte opp/-anims/-nomic/hunte idle alt",
 "IN": "",
 "ST": "G",
 "FF": 11,
-"LP": "PO",
+"LP": "LP",
 "TRP": {
 "x": -30.15,
 "y": 26.1
@@ -975,11 +975,11 @@
 "E": [
 {
 "SI": {
-"SN": "hunte opp/-hunte anims/hunte idle alt",
+"SN": "hunte opp/-anims/-nomic/hunte idle alt",
 "IN": "",
 "ST": "G",
 "FF": 12,
-"LP": "PO",
+"LP": "LP",
 "TRP": {
 "x": -30.15,
 "y": 26.1
@@ -1012,11 +1012,11 @@
 "E": [
 {
 "SI": {
-"SN": "hunte opp/-hunte anims/hunte idle alt",
+"SN": "hunte opp/-anims/-nomic/hunte idle alt",
 "IN": "",
 "ST": "G",
 "FF": 13,
-"LP": "PO",
+"LP": "LP",
 "TRP": {
 "x": -30.15,
 "y": 26.1
@@ -1049,7 +1049,7 @@
 "E": [
 {
 "SI": {
-"SN": "hunte opp/-hunte anims/hunte mic idle",
+"SN": "hunte opp/-anims/-nomic/hunte no mic left hit",
 "IN": "",
 "ST": "G",
 "FF": 0,
@@ -1086,7 +1086,7 @@
 "E": [
 {
 "SI": {
-"SN": "hunte opp/-hunte anims/hunte mic idle",
+"SN": "hunte opp/-anims/-nomic/hunte no mic left hit",
 "IN": "",
 "ST": "G",
 "FF": 1,
@@ -1123,7 +1123,7 @@
 "E": [
 {
 "SI": {
-"SN": "hunte opp/-hunte anims/hunte mic idle",
+"SN": "hunte opp/-anims/-nomic/hunte no mic left hit",
 "IN": "",
 "ST": "G",
 "FF": 2,
@@ -1160,7 +1160,7 @@
 "E": [
 {
 "SI": {
-"SN": "hunte opp/-hunte anims/hunte mic idle",
+"SN": "hunte opp/-anims/-nomic/hunte no mic left hit",
 "IN": "",
 "ST": "G",
 "FF": 3,
@@ -1197,7 +1197,7 @@
 "E": [
 {
 "SI": {
-"SN": "hunte opp/-hunte anims/hunte mic idle",
+"SN": "hunte opp/-anims/-nomic/hunte no mic left hit",
 "IN": "",
 "ST": "G",
 "FF": 4,
@@ -1234,7 +1234,7 @@
 "E": [
 {
 "SI": {
-"SN": "hunte opp/-hunte anims/hunte mic idle",
+"SN": "hunte opp/-anims/-nomic/hunte no mic left hit",
 "IN": "",
 "ST": "G",
 "FF": 5,
@@ -1271,10 +1271,10 @@
 "E": [
 {
 "SI": {
-"SN": "hunte opp/-hunte anims/hunte mic idle",
+"SN": "hunte opp/-anims/-nomic/hunte no mic left hit",
 "IN": "",
 "ST": "G",
-"FF": 6,
+"FF": 5,
 "LP": "PO",
 "TRP": {
 "x": -30.15,
@@ -1308,10 +1308,10 @@
 "E": [
 {
 "SI": {
-"SN": "hunte opp/-hunte anims/hunte mic idle",
+"SN": "hunte opp/-anims/-nomic/hunte no mic left hit",
 "IN": "",
 "ST": "G",
-"FF": 7,
+"FF": 5,
 "LP": "PO",
 "TRP": {
 "x": -30.15,
@@ -1345,13 +1345,13 @@
 "E": [
 {
 "SI": {
-"SN": "hunte opp/-hunte anims/hunte mic idle",
+"SN": "hunte opp/-anims/-nomic/hunte no mic down",
 "IN": "",
 "ST": "G",
-"FF": 8,
+"FF": 0,
 "LP": "PO",
 "TRP": {
-"x": -30.15,
+"x": -30.150000000000003,
 "y": 26.1
 },
 "M3D": [
@@ -1382,10 +1382,10 @@
 "E": [
 {
 "SI": {
-"SN": "hunte opp/-hunte anims/hunte mic idle",
+"SN": "hunte opp/-anims/-nomic/hunte no mic down",
 "IN": "",
 "ST": "G",
-"FF": 9,
+"FF": 1,
 "LP": "PO",
 "TRP": {
 "x": -30.15,
@@ -1419,10 +1419,10 @@
 "E": [
 {
 "SI": {
-"SN": "hunte opp/-hunte anims/hunte mic idle",
+"SN": "hunte opp/-anims/-nomic/hunte no mic down",
 "IN": "",
 "ST": "G",
-"FF": 10,
+"FF": 2,
 "LP": "PO",
 "TRP": {
 "x": -30.15,
@@ -1456,10 +1456,10 @@
 "E": [
 {
 "SI": {
-"SN": "hunte opp/-hunte anims/hunte mic idle",
+"SN": "hunte opp/-anims/-nomic/hunte no mic down",
 "IN": "",
 "ST": "G",
-"FF": 11,
+"FF": 3,
 "LP": "PO",
 "TRP": {
 "x": -30.15,
@@ -1493,10 +1493,10 @@
 "E": [
 {
 "SI": {
-"SN": "hunte opp/-hunte anims/hunte mic idle",
+"SN": "hunte opp/-anims/-nomic/hunte no mic down",
 "IN": "",
 "ST": "G",
-"FF": 12,
+"FF": 4,
 "LP": "PO",
 "TRP": {
 "x": -30.15,
@@ -1530,10 +1530,10 @@
 "E": [
 {
 "SI": {
-"SN": "hunte opp/-hunte anims/hunte mic idle",
+"SN": "hunte opp/-anims/-nomic/hunte no mic down",
 "IN": "",
 "ST": "G",
-"FF": 13,
+"FF": 5,
 "LP": "PO",
 "TRP": {
 "x": -30.15,
@@ -1567,13 +1567,13 @@
 "E": [
 {
 "SI": {
-"SN": "hunte opp/-hunte anims/hunte alt mic idle",
+"SN": "hunte opp/-anims/-nomic/hunte no mic down",
 "IN": "",
 "ST": "G",
-"FF": 0,
+"FF": 5,
 "LP": "PO",
 "TRP": {
-"x": -30.150000000000003,
+"x": -30.15,
 "y": 26.1
 },
 "M3D": [
@@ -1604,10 +1604,10 @@
 "E": [
 {
 "SI": {
-"SN": "hunte opp/-hunte anims/hunte alt mic idle",
+"SN": "hunte opp/-anims/-nomic/hunte no mic down",
 "IN": "",
 "ST": "G",
-"FF": 1,
+"FF": 5,
 "LP": "PO",
 "TRP": {
 "x": -30.15,
@@ -1641,451 +1641,7 @@
 "E": [
 {
 "SI": {
-"SN": "hunte opp/-hunte anims/hunte alt mic idle",
-"IN": "",
-"ST": "G",
-"FF": 2,
-"LP": "PO",
-"TRP": {
-"x": -30.15,
-"y": 26.1
-},
-"M3D": [
-1.0,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
-324.2,
-467.55,
-0.0,
-1.0
-]
-}
-}
-]
-},
-{
-"I": 45,
-"DU": 1,
-"E": [
-{
-"SI": {
-"SN": "hunte opp/-hunte anims/hunte alt mic idle",
-"IN": "",
-"ST": "G",
-"FF": 3,
-"LP": "PO",
-"TRP": {
-"x": -30.15,
-"y": 26.1
-},
-"M3D": [
-1.0,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
-324.2,
-467.55,
-0.0,
-1.0
-]
-}
-}
-]
-},
-{
-"I": 46,
-"DU": 1,
-"E": [
-{
-"SI": {
-"SN": "hunte opp/-hunte anims/hunte alt mic idle",
-"IN": "",
-"ST": "G",
-"FF": 4,
-"LP": "PO",
-"TRP": {
-"x": -30.15,
-"y": 26.1
-},
-"M3D": [
-1.0,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
-324.2,
-467.55,
-0.0,
-1.0
-]
-}
-}
-]
-},
-{
-"I": 47,
-"DU": 1,
-"E": [
-{
-"SI": {
-"SN": "hunte opp/-hunte anims/hunte alt mic idle",
-"IN": "",
-"ST": "G",
-"FF": 5,
-"LP": "PO",
-"TRP": {
-"x": -30.15,
-"y": 26.1
-},
-"M3D": [
-1.0,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
-324.2,
-467.55,
-0.0,
-1.0
-]
-}
-}
-]
-},
-{
-"I": 48,
-"DU": 1,
-"E": [
-{
-"SI": {
-"SN": "hunte opp/-hunte anims/hunte alt mic idle",
-"IN": "",
-"ST": "G",
-"FF": 6,
-"LP": "PO",
-"TRP": {
-"x": -30.15,
-"y": 26.1
-},
-"M3D": [
-1.0,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
-324.2,
-467.55,
-0.0,
-1.0
-]
-}
-}
-]
-},
-{
-"I": 49,
-"DU": 1,
-"E": [
-{
-"SI": {
-"SN": "hunte opp/-hunte anims/hunte alt mic idle",
-"IN": "",
-"ST": "G",
-"FF": 7,
-"LP": "PO",
-"TRP": {
-"x": -30.15,
-"y": 26.1
-},
-"M3D": [
-1.0,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
-324.2,
-467.55,
-0.0,
-1.0
-]
-}
-}
-]
-},
-{
-"I": 50,
-"DU": 1,
-"E": [
-{
-"SI": {
-"SN": "hunte opp/-hunte anims/hunte alt mic idle",
-"IN": "",
-"ST": "G",
-"FF": 8,
-"LP": "PO",
-"TRP": {
-"x": -30.15,
-"y": 26.1
-},
-"M3D": [
-1.0,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
-324.2,
-467.55,
-0.0,
-1.0
-]
-}
-}
-]
-},
-{
-"I": 51,
-"DU": 1,
-"E": [
-{
-"SI": {
-"SN": "hunte opp/-hunte anims/hunte alt mic idle",
-"IN": "",
-"ST": "G",
-"FF": 9,
-"LP": "PO",
-"TRP": {
-"x": -30.15,
-"y": 26.1
-},
-"M3D": [
-1.0,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
-324.2,
-467.55,
-0.0,
-1.0
-]
-}
-}
-]
-},
-{
-"I": 52,
-"DU": 1,
-"E": [
-{
-"SI": {
-"SN": "hunte opp/-hunte anims/hunte alt mic idle",
-"IN": "",
-"ST": "G",
-"FF": 10,
-"LP": "PO",
-"TRP": {
-"x": -30.15,
-"y": 26.1
-},
-"M3D": [
-1.0,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
-324.2,
-467.55,
-0.0,
-1.0
-]
-}
-}
-]
-},
-{
-"I": 53,
-"DU": 1,
-"E": [
-{
-"SI": {
-"SN": "hunte opp/-hunte anims/hunte alt mic idle",
-"IN": "",
-"ST": "G",
-"FF": 11,
-"LP": "PO",
-"TRP": {
-"x": -30.15,
-"y": 26.1
-},
-"M3D": [
-1.0,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
-324.2,
-467.55,
-0.0,
-1.0
-]
-}
-}
-]
-},
-{
-"I": 54,
-"DU": 1,
-"E": [
-{
-"SI": {
-"SN": "hunte opp/-hunte anims/hunte alt mic idle",
-"IN": "",
-"ST": "G",
-"FF": 12,
-"LP": "PO",
-"TRP": {
-"x": -30.15,
-"y": 26.1
-},
-"M3D": [
-1.0,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
-324.2,
-467.55,
-0.0,
-1.0
-]
-}
-}
-]
-},
-{
-"I": 55,
-"DU": 1,
-"E": [
-{
-"SI": {
-"SN": "hunte opp/-hunte anims/hunte alt mic idle",
-"IN": "",
-"ST": "G",
-"FF": 13,
-"LP": "PO",
-"TRP": {
-"x": -30.15,
-"y": 26.1
-},
-"M3D": [
-1.0,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
-324.2,
-467.55,
-0.0,
-1.0
-]
-}
-}
-]
-},
-{
-"I": 56,
-"DU": 1,
-"E": [
-{
-"SI": {
-"SN": "hunte opp/-hunte anims/hunte left hit",
+"SN": "hunte opp/-anims/-nomic/hunte up is proud",
 "IN": "",
 "ST": "G",
 "FF": 0,
@@ -2108,7 +1664,7 @@
 1.0,
 0.0,
 324.2,
-467.55,
+461.3,
 0.0,
 1.0
 ]
@@ -2117,12 +1673,12 @@
 ]
 },
 {
-"I": 57,
+"I": 45,
 "DU": 1,
 "E": [
 {
 "SI": {
-"SN": "hunte opp/-hunte anims/hunte left hit",
+"SN": "hunte opp/-anims/-nomic/hunte up is proud",
 "IN": "",
 "ST": "G",
 "FF": 1,
@@ -2145,7 +1701,7 @@
 1.0,
 0.0,
 324.2,
-467.55,
+461.3,
 0.0,
 1.0
 ]
@@ -2154,12 +1710,12 @@
 ]
 },
 {
-"I": 58,
+"I": 46,
 "DU": 1,
 "E": [
 {
 "SI": {
-"SN": "hunte opp/-hunte anims/hunte left hit",
+"SN": "hunte opp/-anims/-nomic/hunte up is proud",
 "IN": "",
 "ST": "G",
 "FF": 2,
@@ -2182,7 +1738,7 @@
 1.0,
 0.0,
 324.2,
-467.55,
+461.3,
 0.0,
 1.0
 ]
@@ -2191,12 +1747,12 @@
 ]
 },
 {
-"I": 59,
+"I": 47,
 "DU": 1,
 "E": [
 {
 "SI": {
-"SN": "hunte opp/-hunte anims/hunte left hit",
+"SN": "hunte opp/-anims/-nomic/hunte up is proud",
 "IN": "",
 "ST": "G",
 "FF": 3,
@@ -2219,7 +1775,451 @@
 1.0,
 0.0,
 324.2,
-467.55,
+461.3,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 48,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/-anims/-nomic/hunte up is proud",
+"IN": "",
+"ST": "G",
+"FF": 4,
+"LP": "PO",
+"TRP": {
+"x": -30.15,
+"y": 26.1
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+324.2,
+461.3,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 49,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/-anims/-nomic/hunte up is proud",
+"IN": "",
+"ST": "G",
+"FF": 5,
+"LP": "PO",
+"TRP": {
+"x": -30.15,
+"y": 26.1
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+324.2,
+461.3,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 50,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/-anims/-nomic/hunte up is proud",
+"IN": "",
+"ST": "G",
+"FF": 5,
+"LP": "PO",
+"TRP": {
+"x": -30.15,
+"y": 26.1
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+324.2,
+461.3,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 51,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/-anims/-nomic/hunte up is proud",
+"IN": "",
+"ST": "G",
+"FF": 5,
+"LP": "PO",
+"TRP": {
+"x": -30.15,
+"y": 26.1
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+324.2,
+461.3,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 52,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/-anims/-nomic/hunte no mic rite",
+"IN": "",
+"ST": "G",
+"FF": 0,
+"LP": "PO",
+"TRP": {
+"x": 0.0,
+"y": 0.0
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+322.95,
+475.05,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 53,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/-anims/-nomic/hunte no mic rite",
+"IN": "",
+"ST": "G",
+"FF": 1,
+"LP": "PO",
+"TRP": {
+"x": 0.0,
+"y": 0.0
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+322.95,
+475.05,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 54,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/-anims/-nomic/hunte no mic rite",
+"IN": "",
+"ST": "G",
+"FF": 2,
+"LP": "PO",
+"TRP": {
+"x": 0.0,
+"y": 0.0
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+322.95,
+475.05,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 55,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/-anims/-nomic/hunte no mic rite",
+"IN": "",
+"ST": "G",
+"FF": 3,
+"LP": "PO",
+"TRP": {
+"x": 0.0,
+"y": 0.0
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+322.95,
+475.05,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 56,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/-anims/-nomic/hunte no mic rite",
+"IN": "",
+"ST": "G",
+"FF": 4,
+"LP": "PO",
+"TRP": {
+"x": 0.0,
+"y": 0.0
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+322.95,
+475.05,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 57,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/-anims/-nomic/hunte no mic rite",
+"IN": "",
+"ST": "G",
+"FF": 5,
+"LP": "PO",
+"TRP": {
+"x": 0.0,
+"y": 0.0
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+322.95,
+475.05,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 58,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/-anims/-nomic/hunte no mic rite",
+"IN": "",
+"ST": "G",
+"FF": 5,
+"LP": "PO",
+"TRP": {
+"x": 0.0,
+"y": 0.0
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+322.95,
+475.05,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 59,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/-anims/-nomic/hunte no mic rite",
+"IN": "",
+"ST": "G",
+"FF": 5,
+"LP": "PO",
+"TRP": {
+"x": 0.0,
+"y": 0.0
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+322.95,
+475.05,
 0.0,
 1.0
 ]
@@ -2233,13 +2233,13 @@
 "E": [
 {
 "SI": {
-"SN": "hunte opp/-hunte anims/hunte left hit",
+"SN": "hunte opp/-anims/-mic/hunte mic idle",
 "IN": "",
 "ST": "G",
-"FF": 4,
-"LP": "PO",
+"FF": 0,
+"LP": "LP",
 "TRP": {
-"x": -30.15,
+"x": -30.150000000000003,
 "y": 26.1
 },
 "M3D": [
@@ -2270,11 +2270,11 @@
 "E": [
 {
 "SI": {
-"SN": "hunte opp/-hunte anims/hunte left hit",
+"SN": "hunte opp/-anims/-mic/hunte mic idle",
 "IN": "",
 "ST": "G",
-"FF": 5,
-"LP": "PO",
+"FF": 1,
+"LP": "LP",
 "TRP": {
 "x": -30.15,
 "y": 26.1
@@ -2307,11 +2307,11 @@
 "E": [
 {
 "SI": {
-"SN": "hunte opp/-hunte anims/hunte left hit",
+"SN": "hunte opp/-anims/-mic/hunte mic idle",
 "IN": "",
 "ST": "G",
-"FF": 5,
-"LP": "PO",
+"FF": 2,
+"LP": "LP",
 "TRP": {
 "x": -30.15,
 "y": 26.1
@@ -2344,11 +2344,11 @@
 "E": [
 {
 "SI": {
-"SN": "hunte opp/-hunte anims/hunte left hit",
+"SN": "hunte opp/-anims/-mic/hunte mic idle",
 "IN": "",
 "ST": "G",
-"FF": 5,
-"LP": "PO",
+"FF": 3,
+"LP": "LP",
 "TRP": {
 "x": -30.15,
 "y": 26.1
@@ -2381,13 +2381,13 @@
 "E": [
 {
 "SI": {
-"SN": "hunte opp/-hunte anims/hunte downs",
+"SN": "hunte opp/-anims/-mic/hunte mic idle",
 "IN": "",
 "ST": "G",
-"FF": 0,
-"LP": "PO",
+"FF": 4,
+"LP": "LP",
 "TRP": {
-"x": -30.150000000000003,
+"x": -30.15,
 "y": 26.1
 },
 "M3D": [
@@ -2418,11 +2418,11 @@
 "E": [
 {
 "SI": {
-"SN": "hunte opp/-hunte anims/hunte downs",
+"SN": "hunte opp/-anims/-mic/hunte mic idle",
 "IN": "",
 "ST": "G",
-"FF": 1,
-"LP": "PO",
+"FF": 5,
+"LP": "LP",
 "TRP": {
 "x": -30.15,
 "y": 26.1
@@ -2455,11 +2455,11 @@
 "E": [
 {
 "SI": {
-"SN": "hunte opp/-hunte anims/hunte downs",
+"SN": "hunte opp/-anims/-mic/hunte mic idle",
 "IN": "",
 "ST": "G",
-"FF": 2,
-"LP": "PO",
+"FF": 6,
+"LP": "LP",
 "TRP": {
 "x": -30.15,
 "y": 26.1
@@ -2492,11 +2492,11 @@
 "E": [
 {
 "SI": {
-"SN": "hunte opp/-hunte anims/hunte downs",
+"SN": "hunte opp/-anims/-mic/hunte mic idle",
 "IN": "",
 "ST": "G",
-"FF": 3,
-"LP": "PO",
+"FF": 7,
+"LP": "LP",
 "TRP": {
 "x": -30.15,
 "y": 26.1
@@ -2529,11 +2529,11 @@
 "E": [
 {
 "SI": {
-"SN": "hunte opp/-hunte anims/hunte downs",
+"SN": "hunte opp/-anims/-mic/hunte mic idle",
 "IN": "",
 "ST": "G",
-"FF": 4,
-"LP": "PO",
+"FF": 8,
+"LP": "LP",
 "TRP": {
 "x": -30.15,
 "y": 26.1
@@ -2566,11 +2566,11 @@
 "E": [
 {
 "SI": {
-"SN": "hunte opp/-hunte anims/hunte downs",
+"SN": "hunte opp/-anims/-mic/hunte mic idle",
 "IN": "",
 "ST": "G",
-"FF": 5,
-"LP": "PO",
+"FF": 9,
+"LP": "LP",
 "TRP": {
 "x": -30.15,
 "y": 26.1
@@ -2603,11 +2603,11 @@
 "E": [
 {
 "SI": {
-"SN": "hunte opp/-hunte anims/hunte downs",
+"SN": "hunte opp/-anims/-mic/hunte mic idle",
 "IN": "",
 "ST": "G",
-"FF": 5,
-"LP": "PO",
+"FF": 10,
+"LP": "LP",
 "TRP": {
 "x": -30.15,
 "y": 26.1
@@ -2640,11 +2640,11 @@
 "E": [
 {
 "SI": {
-"SN": "hunte opp/-hunte anims/hunte downs",
+"SN": "hunte opp/-anims/-mic/hunte mic idle",
 "IN": "",
 "ST": "G",
-"FF": 5,
-"LP": "PO",
+"FF": 11,
+"LP": "LP",
 "TRP": {
 "x": -30.15,
 "y": 26.1
@@ -2677,11 +2677,85 @@
 "E": [
 {
 "SI": {
-"SN": "hunte opp/-hunte anims/hunte up the pose",
+"SN": "hunte opp/-anims/-mic/hunte mic idle",
+"IN": "",
+"ST": "G",
+"FF": 12,
+"LP": "LP",
+"TRP": {
+"x": -30.15,
+"y": 26.1
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+324.2,
+467.55,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 73,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/-anims/-mic/hunte mic idle",
+"IN": "",
+"ST": "G",
+"FF": 13,
+"LP": "LP",
+"TRP": {
+"x": -30.15,
+"y": 26.1
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+324.2,
+467.55,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 74,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/-anims/-mic/hunte alt mic idle",
 "IN": "",
 "ST": "G",
 "FF": 0,
-"LP": "PO",
+"LP": "LP",
 "TRP": {
 "x": -30.150000000000003,
 "y": 26.1
@@ -2700,81 +2774,7 @@
 1.0,
 0.0,
 324.2,
-461.3,
-0.0,
-1.0
-]
-}
-}
-]
-},
-{
-"I": 73,
-"DU": 1,
-"E": [
-{
-"SI": {
-"SN": "hunte opp/-hunte anims/hunte up the pose",
-"IN": "",
-"ST": "G",
-"FF": 1,
-"LP": "PO",
-"TRP": {
-"x": -30.15,
-"y": 26.1
-},
-"M3D": [
-1.0,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
-324.2,
-461.3,
-0.0,
-1.0
-]
-}
-}
-]
-},
-{
-"I": 74,
-"DU": 1,
-"E": [
-{
-"SI": {
-"SN": "hunte opp/-hunte anims/hunte up the pose",
-"IN": "",
-"ST": "G",
-"FF": 2,
-"LP": "PO",
-"TRP": {
-"x": -30.15,
-"y": 26.1
-},
-"M3D": [
-1.0,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
-324.2,
-461.3,
+467.55,
 0.0,
 1.0
 ]
@@ -2788,11 +2788,11 @@
 "E": [
 {
 "SI": {
-"SN": "hunte opp/-hunte anims/hunte up the pose",
+"SN": "hunte opp/-anims/-mic/hunte alt mic idle",
 "IN": "",
 "ST": "G",
-"FF": 3,
-"LP": "PO",
+"FF": 1,
+"LP": "LP",
 "TRP": {
 "x": -30.15,
 "y": 26.1
@@ -2811,7 +2811,7 @@
 1.0,
 0.0,
 324.2,
-461.3,
+467.55,
 0.0,
 1.0
 ]
@@ -2825,11 +2825,11 @@
 "E": [
 {
 "SI": {
-"SN": "hunte opp/-hunte anims/hunte up the pose",
+"SN": "hunte opp/-anims/-mic/hunte alt mic idle",
 "IN": "",
 "ST": "G",
-"FF": 4,
-"LP": "PO",
+"FF": 2,
+"LP": "LP",
 "TRP": {
 "x": -30.15,
 "y": 26.1
@@ -2848,7 +2848,7 @@
 1.0,
 0.0,
 324.2,
-461.3,
+467.55,
 0.0,
 1.0
 ]
@@ -2862,11 +2862,11 @@
 "E": [
 {
 "SI": {
-"SN": "hunte opp/-hunte anims/hunte up the pose",
+"SN": "hunte opp/-anims/-mic/hunte alt mic idle",
 "IN": "",
 "ST": "G",
-"FF": 5,
-"LP": "PO",
+"FF": 3,
+"LP": "LP",
 "TRP": {
 "x": -30.15,
 "y": 26.1
@@ -2885,7 +2885,7 @@
 1.0,
 0.0,
 324.2,
-461.3,
+467.55,
 0.0,
 1.0
 ]
@@ -2899,11 +2899,11 @@
 "E": [
 {
 "SI": {
-"SN": "hunte opp/-hunte anims/hunte up the pose",
+"SN": "hunte opp/-anims/-mic/hunte alt mic idle",
 "IN": "",
 "ST": "G",
-"FF": 5,
-"LP": "PO",
+"FF": 4,
+"LP": "LP",
 "TRP": {
 "x": -30.15,
 "y": 26.1
@@ -2922,7 +2922,7 @@
 1.0,
 0.0,
 324.2,
-461.3,
+467.55,
 0.0,
 1.0
 ]
@@ -2936,11 +2936,11 @@
 "E": [
 {
 "SI": {
-"SN": "hunte opp/-hunte anims/hunte up the pose",
+"SN": "hunte opp/-anims/-mic/hunte alt mic idle",
 "IN": "",
 "ST": "G",
 "FF": 5,
-"LP": "PO",
+"LP": "LP",
 "TRP": {
 "x": -30.15,
 "y": 26.1
@@ -2959,7 +2959,7 @@
 1.0,
 0.0,
 324.2,
-461.3,
+467.55,
 0.0,
 1.0
 ]
@@ -2973,14 +2973,14 @@
 "E": [
 {
 "SI": {
-"SN": "hunte opp/-hunte anims/hunte writin",
+"SN": "hunte opp/-anims/-mic/hunte alt mic idle",
 "IN": "",
 "ST": "G",
-"FF": 0,
-"LP": "PO",
+"FF": 6,
+"LP": "LP",
 "TRP": {
-"x": 0.0,
-"y": 0.0
+"x": -30.15,
+"y": 26.1
 },
 "M3D": [
 1.0,
@@ -2995,8 +2995,8 @@
 0.0,
 1.0,
 0.0,
-322.95,
-475.05,
+324.2,
+467.55,
 0.0,
 1.0
 ]
@@ -3010,14 +3010,14 @@
 "E": [
 {
 "SI": {
-"SN": "hunte opp/-hunte anims/hunte writin",
+"SN": "hunte opp/-anims/-mic/hunte alt mic idle",
 "IN": "",
 "ST": "G",
-"FF": 1,
-"LP": "PO",
+"FF": 7,
+"LP": "LP",
 "TRP": {
-"x": 0.0,
-"y": 0.0
+"x": -30.15,
+"y": 26.1
 },
 "M3D": [
 1.0,
@@ -3032,8 +3032,8 @@
 0.0,
 1.0,
 0.0,
-322.95,
-475.05,
+324.2,
+467.55,
 0.0,
 1.0
 ]
@@ -3047,14 +3047,14 @@
 "E": [
 {
 "SI": {
-"SN": "hunte opp/-hunte anims/hunte writin",
+"SN": "hunte opp/-anims/-mic/hunte alt mic idle",
 "IN": "",
 "ST": "G",
-"FF": 2,
-"LP": "PO",
+"FF": 8,
+"LP": "LP",
 "TRP": {
-"x": 0.0,
-"y": 0.0
+"x": -30.15,
+"y": 26.1
 },
 "M3D": [
 1.0,
@@ -3069,8 +3069,8 @@
 0.0,
 1.0,
 0.0,
-322.95,
-475.05,
+324.2,
+467.55,
 0.0,
 1.0
 ]
@@ -3084,14 +3084,14 @@
 "E": [
 {
 "SI": {
-"SN": "hunte opp/-hunte anims/hunte writin",
+"SN": "hunte opp/-anims/-mic/hunte alt mic idle",
 "IN": "",
 "ST": "G",
-"FF": 3,
-"LP": "PO",
+"FF": 9,
+"LP": "LP",
 "TRP": {
-"x": 0.0,
-"y": 0.0
+"x": -30.15,
+"y": 26.1
 },
 "M3D": [
 1.0,
@@ -3106,8 +3106,8 @@
 0.0,
 1.0,
 0.0,
-322.95,
-475.05,
+324.2,
+467.55,
 0.0,
 1.0
 ]
@@ -3121,14 +3121,14 @@
 "E": [
 {
 "SI": {
-"SN": "hunte opp/-hunte anims/hunte writin",
+"SN": "hunte opp/-anims/-mic/hunte alt mic idle",
 "IN": "",
 "ST": "G",
-"FF": 4,
-"LP": "PO",
+"FF": 10,
+"LP": "LP",
 "TRP": {
-"x": 0.0,
-"y": 0.0
+"x": -30.15,
+"y": 26.1
 },
 "M3D": [
 1.0,
@@ -3143,8 +3143,8 @@
 0.0,
 1.0,
 0.0,
-322.95,
-475.05,
+324.2,
+467.55,
 0.0,
 1.0
 ]
@@ -3158,14 +3158,14 @@
 "E": [
 {
 "SI": {
-"SN": "hunte opp/-hunte anims/hunte writin",
+"SN": "hunte opp/-anims/-mic/hunte alt mic idle",
 "IN": "",
 "ST": "G",
-"FF": 5,
-"LP": "PO",
+"FF": 11,
+"LP": "LP",
 "TRP": {
-"x": 0.0,
-"y": 0.0
+"x": -30.15,
+"y": 26.1
 },
 "M3D": [
 1.0,
@@ -3180,8 +3180,8 @@
 0.0,
 1.0,
 0.0,
-322.95,
-475.05,
+324.2,
+467.55,
 0.0,
 1.0
 ]
@@ -3195,14 +3195,14 @@
 "E": [
 {
 "SI": {
-"SN": "hunte opp/-hunte anims/hunte writin",
+"SN": "hunte opp/-anims/-mic/hunte alt mic idle",
 "IN": "",
 "ST": "G",
-"FF": 5,
-"LP": "PO",
+"FF": 12,
+"LP": "LP",
 "TRP": {
-"x": 0.0,
-"y": 0.0
+"x": -30.15,
+"y": 26.1
 },
 "M3D": [
 1.0,
@@ -3217,8 +3217,8 @@
 0.0,
 1.0,
 0.0,
-322.95,
-475.05,
+324.2,
+467.55,
 0.0,
 1.0
 ]
@@ -3232,14 +3232,14 @@
 "E": [
 {
 "SI": {
-"SN": "hunte opp/-hunte anims/hunte writin",
+"SN": "hunte opp/-anims/-mic/hunte alt mic idle",
 "IN": "",
 "ST": "G",
-"FF": 5,
-"LP": "PO",
+"FF": 13,
+"LP": "LP",
 "TRP": {
-"x": 0.0,
-"y": 0.0
+"x": -30.15,
+"y": 26.1
 },
 "M3D": [
 1.0,
@@ -3254,8 +3254,8 @@
 0.0,
 1.0,
 0.0,
-322.95,
-475.05,
+324.2,
+467.55,
 0.0,
 1.0
 ]
@@ -3269,7 +3269,7 @@
 "E": [
 {
 "SI": {
-"SN": "hunte opp/-hunte anims/hunte no mic left hit",
+"SN": "hunte opp/-anims/-mic/hunte left hit",
 "IN": "",
 "ST": "G",
 "FF": 0,
@@ -3306,7 +3306,7 @@
 "E": [
 {
 "SI": {
-"SN": "hunte opp/-hunte anims/hunte no mic left hit",
+"SN": "hunte opp/-anims/-mic/hunte left hit",
 "IN": "",
 "ST": "G",
 "FF": 1,
@@ -3343,7 +3343,7 @@
 "E": [
 {
 "SI": {
-"SN": "hunte opp/-hunte anims/hunte no mic left hit",
+"SN": "hunte opp/-anims/-mic/hunte left hit",
 "IN": "",
 "ST": "G",
 "FF": 2,
@@ -3380,7 +3380,7 @@
 "E": [
 {
 "SI": {
-"SN": "hunte opp/-hunte anims/hunte no mic left hit",
+"SN": "hunte opp/-anims/-mic/hunte left hit",
 "IN": "",
 "ST": "G",
 "FF": 3,
@@ -3417,7 +3417,7 @@
 "E": [
 {
 "SI": {
-"SN": "hunte opp/-hunte anims/hunte no mic left hit",
+"SN": "hunte opp/-anims/-mic/hunte left hit",
 "IN": "",
 "ST": "G",
 "FF": 4,
@@ -3454,7 +3454,7 @@
 "E": [
 {
 "SI": {
-"SN": "hunte opp/-hunte anims/hunte no mic left hit",
+"SN": "hunte opp/-anims/-mic/hunte left hit",
 "IN": "",
 "ST": "G",
 "FF": 5,
@@ -3491,7 +3491,7 @@
 "E": [
 {
 "SI": {
-"SN": "hunte opp/-hunte anims/hunte no mic left hit",
+"SN": "hunte opp/-anims/-mic/hunte left hit",
 "IN": "",
 "ST": "G",
 "FF": 5,
@@ -3528,7 +3528,7 @@
 "E": [
 {
 "SI": {
-"SN": "hunte opp/-hunte anims/hunte no mic left hit",
+"SN": "hunte opp/-anims/-mic/hunte left hit",
 "IN": "",
 "ST": "G",
 "FF": 5,
@@ -3565,7 +3565,7 @@
 "E": [
 {
 "SI": {
-"SN": "hunte opp/-hunte anims/hunte no mic down",
+"SN": "hunte opp/-anims/-mic/hunte downs",
 "IN": "",
 "ST": "G",
 "FF": 0,
@@ -3602,7 +3602,7 @@
 "E": [
 {
 "SI": {
-"SN": "hunte opp/-hunte anims/hunte no mic down",
+"SN": "hunte opp/-anims/-mic/hunte downs",
 "IN": "",
 "ST": "G",
 "FF": 1,
@@ -3639,7 +3639,7 @@
 "E": [
 {
 "SI": {
-"SN": "hunte opp/-hunte anims/hunte no mic down",
+"SN": "hunte opp/-anims/-mic/hunte downs",
 "IN": "",
 "ST": "G",
 "FF": 2,
@@ -3676,7 +3676,7 @@
 "E": [
 {
 "SI": {
-"SN": "hunte opp/-hunte anims/hunte no mic down",
+"SN": "hunte opp/-anims/-mic/hunte downs",
 "IN": "",
 "ST": "G",
 "FF": 3,
@@ -3713,7 +3713,7 @@
 "E": [
 {
 "SI": {
-"SN": "hunte opp/-hunte anims/hunte no mic down",
+"SN": "hunte opp/-anims/-mic/hunte downs",
 "IN": "",
 "ST": "G",
 "FF": 4,
@@ -3750,7 +3750,7 @@
 "E": [
 {
 "SI": {
-"SN": "hunte opp/-hunte anims/hunte no mic down",
+"SN": "hunte opp/-anims/-mic/hunte downs",
 "IN": "",
 "ST": "G",
 "FF": 5,
@@ -3787,7 +3787,7 @@
 "E": [
 {
 "SI": {
-"SN": "hunte opp/-hunte anims/hunte no mic down",
+"SN": "hunte opp/-anims/-mic/hunte downs",
 "IN": "",
 "ST": "G",
 "FF": 5,
@@ -3824,7 +3824,7 @@
 "E": [
 {
 "SI": {
-"SN": "hunte opp/-hunte anims/hunte no mic down",
+"SN": "hunte opp/-anims/-mic/hunte downs",
 "IN": "",
 "ST": "G",
 "FF": 5,
@@ -3861,7 +3861,7 @@
 "E": [
 {
 "SI": {
-"SN": "hunte opp/-hunte anims/hunte up is proud",
+"SN": "hunte opp/-anims/-mic/hunte up the pose",
 "IN": "",
 "ST": "G",
 "FF": 0,
@@ -3898,7 +3898,7 @@
 "E": [
 {
 "SI": {
-"SN": "hunte opp/-hunte anims/hunte up is proud",
+"SN": "hunte opp/-anims/-mic/hunte up the pose",
 "IN": "",
 "ST": "G",
 "FF": 1,
@@ -3935,7 +3935,7 @@
 "E": [
 {
 "SI": {
-"SN": "hunte opp/-hunte anims/hunte up is proud",
+"SN": "hunte opp/-anims/-mic/hunte up the pose",
 "IN": "",
 "ST": "G",
 "FF": 2,
@@ -3972,7 +3972,7 @@
 "E": [
 {
 "SI": {
-"SN": "hunte opp/-hunte anims/hunte up is proud",
+"SN": "hunte opp/-anims/-mic/hunte up the pose",
 "IN": "",
 "ST": "G",
 "FF": 3,
@@ -4009,7 +4009,7 @@
 "E": [
 {
 "SI": {
-"SN": "hunte opp/-hunte anims/hunte up is proud",
+"SN": "hunte opp/-anims/-mic/hunte up the pose",
 "IN": "",
 "ST": "G",
 "FF": 4,
@@ -4046,7 +4046,7 @@
 "E": [
 {
 "SI": {
-"SN": "hunte opp/-hunte anims/hunte up is proud",
+"SN": "hunte opp/-anims/-mic/hunte up the pose",
 "IN": "",
 "ST": "G",
 "FF": 5,
@@ -4083,7 +4083,7 @@
 "E": [
 {
 "SI": {
-"SN": "hunte opp/-hunte anims/hunte up is proud",
+"SN": "hunte opp/-anims/-mic/hunte up the pose",
 "IN": "",
 "ST": "G",
 "FF": 5,
@@ -4120,7 +4120,7 @@
 "E": [
 {
 "SI": {
-"SN": "hunte opp/-hunte anims/hunte up is proud",
+"SN": "hunte opp/-anims/-mic/hunte up the pose",
 "IN": "",
 "ST": "G",
 "FF": 5,
@@ -4157,7 +4157,7 @@
 "E": [
 {
 "SI": {
-"SN": "hunte opp/-hunte anims/hunte no mic rite",
+"SN": "hunte opp/-anims/-mic/hunte writin",
 "IN": "",
 "ST": "G",
 "FF": 0,
@@ -4194,7 +4194,7 @@
 "E": [
 {
 "SI": {
-"SN": "hunte opp/-hunte anims/hunte no mic rite",
+"SN": "hunte opp/-anims/-mic/hunte writin",
 "IN": "",
 "ST": "G",
 "FF": 1,
@@ -4231,7 +4231,7 @@
 "E": [
 {
 "SI": {
-"SN": "hunte opp/-hunte anims/hunte no mic rite",
+"SN": "hunte opp/-anims/-mic/hunte writin",
 "IN": "",
 "ST": "G",
 "FF": 2,
@@ -4268,7 +4268,7 @@
 "E": [
 {
 "SI": {
-"SN": "hunte opp/-hunte anims/hunte no mic rite",
+"SN": "hunte opp/-anims/-mic/hunte writin",
 "IN": "",
 "ST": "G",
 "FF": 3,
@@ -4305,7 +4305,7 @@
 "E": [
 {
 "SI": {
-"SN": "hunte opp/-hunte anims/hunte no mic rite",
+"SN": "hunte opp/-anims/-mic/hunte writin",
 "IN": "",
 "ST": "G",
 "FF": 4,
@@ -4342,7 +4342,7 @@
 "E": [
 {
 "SI": {
-"SN": "hunte opp/-hunte anims/hunte no mic rite",
+"SN": "hunte opp/-anims/-mic/hunte writin",
 "IN": "",
 "ST": "G",
 "FF": 5,
@@ -4379,7 +4379,7 @@
 "E": [
 {
 "SI": {
-"SN": "hunte opp/-hunte anims/hunte no mic rite",
+"SN": "hunte opp/-anims/-mic/hunte writin",
 "IN": "",
 "ST": "G",
 "FF": 5,
@@ -4416,7 +4416,7 @@
 "E": [
 {
 "SI": {
-"SN": "hunte opp/-hunte anims/hunte no mic rite",
+"SN": "hunte opp/-anims/-mic/hunte writin",
 "IN": "",
 "ST": "G",
 "FF": 5,
@@ -4453,7 +4453,7 @@
 "E": [
 {
 "SI": {
-"SN": "hunte opp/-hunte anims/hunte throw mix",
+"SN": "hunte opp/-anims/-altmic/hunte mic idle",
 "IN": "",
 "ST": "G",
 "FF": 0,
@@ -4490,7 +4490,7 @@
 "E": [
 {
 "SI": {
-"SN": "hunte opp/-hunte anims/hunte throw mix",
+"SN": "hunte opp/-anims/-altmic/hunte mic idle",
 "IN": "",
 "ST": "G",
 "FF": 1,
@@ -4527,7 +4527,7 @@
 "E": [
 {
 "SI": {
-"SN": "hunte opp/-hunte anims/hunte throw mix",
+"SN": "hunte opp/-anims/-altmic/hunte mic idle",
 "IN": "",
 "ST": "G",
 "FF": 2,
@@ -4564,7 +4564,7 @@
 "E": [
 {
 "SI": {
-"SN": "hunte opp/-hunte anims/hunte throw mix",
+"SN": "hunte opp/-anims/-altmic/hunte mic idle",
 "IN": "",
 "ST": "G",
 "FF": 3,
@@ -4601,7 +4601,7 @@
 "E": [
 {
 "SI": {
-"SN": "hunte opp/-hunte anims/hunte throw mix",
+"SN": "hunte opp/-anims/-altmic/hunte mic idle",
 "IN": "",
 "ST": "G",
 "FF": 4,
@@ -4638,7 +4638,7 @@
 "E": [
 {
 "SI": {
-"SN": "hunte opp/-hunte anims/hunte throw mix",
+"SN": "hunte opp/-anims/-altmic/hunte mic idle",
 "IN": "",
 "ST": "G",
 "FF": 5,
@@ -4675,7 +4675,7 @@
 "E": [
 {
 "SI": {
-"SN": "hunte opp/-hunte anims/hunte throw mix",
+"SN": "hunte opp/-anims/-altmic/hunte mic idle",
 "IN": "",
 "ST": "G",
 "FF": 6,
@@ -4712,7 +4712,7 @@
 "E": [
 {
 "SI": {
-"SN": "hunte opp/-hunte anims/hunte throw mix",
+"SN": "hunte opp/-anims/-altmic/hunte mic idle",
 "IN": "",
 "ST": "G",
 "FF": 7,
@@ -4749,7 +4749,7 @@
 "E": [
 {
 "SI": {
-"SN": "hunte opp/-hunte anims/hunte throw mix",
+"SN": "hunte opp/-anims/-altmic/hunte mic idle",
 "IN": "",
 "ST": "G",
 "FF": 8,
@@ -4786,7 +4786,7 @@
 "E": [
 {
 "SI": {
-"SN": "hunte opp/-hunte anims/hunte throw mix",
+"SN": "hunte opp/-anims/-altmic/hunte mic idle",
 "IN": "",
 "ST": "G",
 "FF": 9,
@@ -4823,7 +4823,7 @@
 "E": [
 {
 "SI": {
-"SN": "hunte opp/-hunte anims/hunte throw mix",
+"SN": "hunte opp/-anims/-altmic/hunte mic idle",
 "IN": "",
 "ST": "G",
 "FF": 10,
@@ -4860,7 +4860,7 @@
 "E": [
 {
 "SI": {
-"SN": "hunte opp/-hunte anims/hunte throw mix",
+"SN": "hunte opp/-anims/-altmic/hunte mic idle",
 "IN": "",
 "ST": "G",
 "FF": 11,
@@ -4897,7 +4897,7 @@
 "E": [
 {
 "SI": {
-"SN": "hunte opp/-hunte anims/hunte throw mix",
+"SN": "hunte opp/-anims/-altmic/hunte mic idle",
 "IN": "",
 "ST": "G",
 "FF": 12,
@@ -4934,7 +4934,7 @@
 "E": [
 {
 "SI": {
-"SN": "hunte opp/-hunte anims/hunte throw mix",
+"SN": "hunte opp/-anims/-altmic/hunte mic idle",
 "IN": "",
 "ST": "G",
 "FF": 13,
@@ -4971,13 +4971,13 @@
 "E": [
 {
 "SI": {
-"SN": "hunte opp/-hunte anims/hunte throw mix",
+"SN": "hunte opp/-anims/-altmic/hunte alt mic idle",
 "IN": "",
 "ST": "G",
-"FF": 14,
+"FF": 0,
 "LP": "LP",
 "TRP": {
-"x": -30.15,
+"x": -30.150000000000003,
 "y": 26.1
 },
 "M3D": [
@@ -5008,10 +5008,10 @@
 "E": [
 {
 "SI": {
-"SN": "hunte opp/-hunte anims/hunte throw mix",
+"SN": "hunte opp/-anims/-altmic/hunte alt mic idle",
 "IN": "",
 "ST": "G",
-"FF": 15,
+"FF": 1,
 "LP": "LP",
 "TRP": {
 "x": -30.15,
@@ -5045,10 +5045,10 @@
 "E": [
 {
 "SI": {
-"SN": "hunte opp/-hunte anims/hunte throw mix",
+"SN": "hunte opp/-anims/-altmic/hunte alt mic idle",
 "IN": "",
 "ST": "G",
-"FF": 16,
+"FF": 2,
 "LP": "LP",
 "TRP": {
 "x": -30.15,
@@ -5082,10 +5082,10 @@
 "E": [
 {
 "SI": {
-"SN": "hunte opp/-hunte anims/hunte throw mix",
+"SN": "hunte opp/-anims/-altmic/hunte alt mic idle",
 "IN": "",
 "ST": "G",
-"FF": 17,
+"FF": 3,
 "LP": "LP",
 "TRP": {
 "x": -30.15,
@@ -5119,10 +5119,10 @@
 "E": [
 {
 "SI": {
-"SN": "hunte opp/-hunte anims/hunte throw mix",
+"SN": "hunte opp/-anims/-altmic/hunte alt mic idle",
 "IN": "",
 "ST": "G",
-"FF": 18,
+"FF": 4,
 "LP": "LP",
 "TRP": {
 "x": -30.15,
@@ -5156,10 +5156,10 @@
 "E": [
 {
 "SI": {
-"SN": "hunte opp/-hunte anims/hunte throw mix",
+"SN": "hunte opp/-anims/-altmic/hunte alt mic idle",
 "IN": "",
 "ST": "G",
-"FF": 19,
+"FF": 5,
 "LP": "LP",
 "TRP": {
 "x": -30.15,
@@ -5193,10 +5193,10 @@
 "E": [
 {
 "SI": {
-"SN": "hunte opp/-hunte anims/hunte throw mix",
+"SN": "hunte opp/-anims/-altmic/hunte alt mic idle",
 "IN": "",
 "ST": "G",
-"FF": 20,
+"FF": 6,
 "LP": "LP",
 "TRP": {
 "x": -30.15,
@@ -5230,10 +5230,10 @@
 "E": [
 {
 "SI": {
-"SN": "hunte opp/-hunte anims/hunte throw mix",
+"SN": "hunte opp/-anims/-altmic/hunte alt mic idle",
 "IN": "",
 "ST": "G",
-"FF": 21,
+"FF": 7,
 "LP": "LP",
 "TRP": {
 "x": -30.15,
@@ -5267,10 +5267,10 @@
 "E": [
 {
 "SI": {
-"SN": "hunte opp/-hunte anims/hunte throw mix",
+"SN": "hunte opp/-anims/-altmic/hunte alt mic idle",
 "IN": "",
 "ST": "G",
-"FF": 22,
+"FF": 8,
 "LP": "LP",
 "TRP": {
 "x": -30.15,
@@ -5304,10 +5304,10 @@
 "E": [
 {
 "SI": {
-"SN": "hunte opp/-hunte anims/hunte throw mix",
+"SN": "hunte opp/-anims/-altmic/hunte alt mic idle",
 "IN": "",
 "ST": "G",
-"FF": 23,
+"FF": 9,
 "LP": "LP",
 "TRP": {
 "x": -30.15,
@@ -5341,10 +5341,10 @@
 "E": [
 {
 "SI": {
-"SN": "hunte opp/-hunte anims/hunte throw mix",
+"SN": "hunte opp/-anims/-altmic/hunte alt mic idle",
 "IN": "",
 "ST": "G",
-"FF": 24,
+"FF": 10,
 "LP": "LP",
 "TRP": {
 "x": -30.15,
@@ -5378,10 +5378,10 @@
 "E": [
 {
 "SI": {
-"SN": "hunte opp/-hunte anims/hunte throw mix",
+"SN": "hunte opp/-anims/-altmic/hunte alt mic idle",
 "IN": "",
 "ST": "G",
-"FF": 25,
+"FF": 11,
 "LP": "LP",
 "TRP": {
 "x": -30.15,
@@ -5415,10 +5415,10 @@
 "E": [
 {
 "SI": {
-"SN": "hunte opp/-hunte anims/hunte throw mix",
+"SN": "hunte opp/-anims/-altmic/hunte alt mic idle",
 "IN": "",
 "ST": "G",
-"FF": 26,
+"FF": 12,
 "LP": "LP",
 "TRP": {
 "x": -30.15,
@@ -5452,10 +5452,10 @@
 "E": [
 {
 "SI": {
-"SN": "hunte opp/-hunte anims/hunte throw mix",
+"SN": "hunte opp/-anims/-altmic/hunte alt mic idle",
 "IN": "",
 "ST": "G",
-"FF": 27,
+"FF": 13,
 "LP": "LP",
 "TRP": {
 "x": -30.15,
@@ -5489,11 +5489,11 @@
 "E": [
 {
 "SI": {
-"SN": "hunte opp/-hunte anims/hunte catch mic",
+"SN": "hunte opp/-anims/-altmic/hunte left hit",
 "IN": "",
 "ST": "G",
 "FF": 0,
-"LP": "LP",
+"LP": "PO",
 "TRP": {
 "x": -30.150000000000003,
 "y": 26.1
@@ -5526,11 +5526,11 @@
 "E": [
 {
 "SI": {
-"SN": "hunte opp/-hunte anims/hunte catch mic",
+"SN": "hunte opp/-anims/-altmic/hunte left hit",
 "IN": "",
 "ST": "G",
 "FF": 1,
-"LP": "LP",
+"LP": "PO",
 "TRP": {
 "x": -30.15,
 "y": 26.1
@@ -5563,11 +5563,11 @@
 "E": [
 {
 "SI": {
-"SN": "hunte opp/-hunte anims/hunte catch mic",
+"SN": "hunte opp/-anims/-altmic/hunte left hit",
 "IN": "",
 "ST": "G",
 "FF": 2,
-"LP": "LP",
+"LP": "PO",
 "TRP": {
 "x": -30.15,
 "y": 26.1
@@ -5600,11 +5600,11 @@
 "E": [
 {
 "SI": {
-"SN": "hunte opp/-hunte anims/hunte catch mic",
+"SN": "hunte opp/-anims/-altmic/hunte left hit",
 "IN": "",
 "ST": "G",
 "FF": 3,
-"LP": "LP",
+"LP": "PO",
 "TRP": {
 "x": -30.15,
 "y": 26.1
@@ -5637,11 +5637,11 @@
 "E": [
 {
 "SI": {
-"SN": "hunte opp/-hunte anims/hunte catch mic",
+"SN": "hunte opp/-anims/-altmic/hunte left hit",
 "IN": "",
 "ST": "G",
 "FF": 4,
-"LP": "LP",
+"LP": "PO",
 "TRP": {
 "x": -30.15,
 "y": 26.1
@@ -5674,11 +5674,11 @@
 "E": [
 {
 "SI": {
-"SN": "hunte opp/-hunte anims/hunte catch mic",
+"SN": "hunte opp/-anims/-altmic/hunte left hit",
 "IN": "",
 "ST": "G",
 "FF": 5,
-"LP": "LP",
+"LP": "PO",
 "TRP": {
 "x": -30.15,
 "y": 26.1
@@ -5711,11 +5711,11 @@
 "E": [
 {
 "SI": {
-"SN": "hunte opp/-hunte anims/hunte catch mic",
+"SN": "hunte opp/-anims/-altmic/hunte left hit",
 "IN": "",
 "ST": "G",
-"FF": 6,
-"LP": "LP",
+"FF": 5,
+"LP": "PO",
 "TRP": {
 "x": -30.15,
 "y": 26.1
@@ -5748,11 +5748,11 @@
 "E": [
 {
 "SI": {
-"SN": "hunte opp/-hunte anims/hunte catch mic",
+"SN": "hunte opp/-anims/-altmic/hunte left hit",
 "IN": "",
 "ST": "G",
-"FF": 7,
-"LP": "LP",
+"FF": 5,
+"LP": "PO",
 "TRP": {
 "x": -30.15,
 "y": 26.1
@@ -5785,13 +5785,13 @@
 "E": [
 {
 "SI": {
-"SN": "hunte opp/-hunte anims/hunte catch mic",
+"SN": "hunte opp/-anims/-altmic/hunte downs",
 "IN": "",
 "ST": "G",
-"FF": 8,
-"LP": "LP",
+"FF": 0,
+"LP": "PO",
 "TRP": {
-"x": -30.15,
+"x": -30.150000000000003,
 "y": 26.1
 },
 "M3D": [
@@ -5822,11 +5822,11 @@
 "E": [
 {
 "SI": {
-"SN": "hunte opp/-hunte anims/hunte catch mic",
+"SN": "hunte opp/-anims/-altmic/hunte downs",
 "IN": "",
 "ST": "G",
-"FF": 9,
-"LP": "LP",
+"FF": 1,
+"LP": "PO",
 "TRP": {
 "x": -30.15,
 "y": 26.1
@@ -5859,11 +5859,11 @@
 "E": [
 {
 "SI": {
-"SN": "hunte opp/-hunte anims/hunte catch mic",
+"SN": "hunte opp/-anims/-altmic/hunte downs",
 "IN": "",
 "ST": "G",
-"FF": 10,
-"LP": "LP",
+"FF": 2,
+"LP": "PO",
 "TRP": {
 "x": -30.15,
 "y": 26.1
@@ -5896,11 +5896,11 @@
 "E": [
 {
 "SI": {
-"SN": "hunte opp/-hunte anims/hunte catch mic",
+"SN": "hunte opp/-anims/-altmic/hunte downs",
 "IN": "",
 "ST": "G",
-"FF": 11,
-"LP": "LP",
+"FF": 3,
+"LP": "PO",
 "TRP": {
 "x": -30.15,
 "y": 26.1
@@ -5933,11 +5933,11 @@
 "E": [
 {
 "SI": {
-"SN": "hunte opp/-hunte anims/hunte catch mic",
+"SN": "hunte opp/-anims/-altmic/hunte downs",
 "IN": "",
 "ST": "G",
-"FF": 12,
-"LP": "LP",
+"FF": 4,
+"LP": "PO",
 "TRP": {
 "x": -30.15,
 "y": 26.1
@@ -5970,11 +5970,11 @@
 "E": [
 {
 "SI": {
-"SN": "hunte opp/-hunte anims/hunte catch mic",
+"SN": "hunte opp/-anims/-altmic/hunte downs",
 "IN": "",
 "ST": "G",
-"FF": 13,
-"LP": "LP",
+"FF": 5,
+"LP": "PO",
 "TRP": {
 "x": -30.15,
 "y": 26.1
@@ -6007,11 +6007,11 @@
 "E": [
 {
 "SI": {
-"SN": "hunte opp/-hunte anims/hunte catch mic",
+"SN": "hunte opp/-anims/-altmic/hunte downs",
 "IN": "",
 "ST": "G",
-"FF": 14,
-"LP": "LP",
+"FF": 5,
+"LP": "PO",
 "TRP": {
 "x": -30.15,
 "y": 26.1
@@ -6044,11 +6044,11 @@
 "E": [
 {
 "SI": {
-"SN": "hunte opp/-hunte anims/hunte catch mic",
+"SN": "hunte opp/-anims/-altmic/hunte downs",
 "IN": "",
 "ST": "G",
-"FF": 15,
-"LP": "LP",
+"FF": 5,
+"LP": "PO",
 "TRP": {
 "x": -30.15,
 "y": 26.1
@@ -6081,7 +6081,1191 @@
 "E": [
 {
 "SI": {
-"SN": "hunte opp/-hunte anims/hunte catch mic",
+"SN": "hunte opp/-anims/-altmic/hunte up the pose",
+"IN": "",
+"ST": "G",
+"FF": 0,
+"LP": "PO",
+"TRP": {
+"x": -30.150000000000003,
+"y": 26.1
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+324.2,
+461.3,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 165,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/-anims/-altmic/hunte up the pose",
+"IN": "",
+"ST": "G",
+"FF": 1,
+"LP": "PO",
+"TRP": {
+"x": -30.15,
+"y": 26.1
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+324.2,
+461.3,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 166,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/-anims/-altmic/hunte up the pose",
+"IN": "",
+"ST": "G",
+"FF": 2,
+"LP": "PO",
+"TRP": {
+"x": -30.15,
+"y": 26.1
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+324.2,
+461.3,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 167,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/-anims/-altmic/hunte up the pose",
+"IN": "",
+"ST": "G",
+"FF": 3,
+"LP": "PO",
+"TRP": {
+"x": -30.15,
+"y": 26.1
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+324.2,
+461.3,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 168,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/-anims/-altmic/hunte up the pose",
+"IN": "",
+"ST": "G",
+"FF": 4,
+"LP": "PO",
+"TRP": {
+"x": -30.15,
+"y": 26.1
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+324.2,
+461.3,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 169,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/-anims/-altmic/hunte up the pose",
+"IN": "",
+"ST": "G",
+"FF": 5,
+"LP": "PO",
+"TRP": {
+"x": -30.15,
+"y": 26.1
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+324.2,
+461.3,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 170,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/-anims/-altmic/hunte up the pose",
+"IN": "",
+"ST": "G",
+"FF": 5,
+"LP": "PO",
+"TRP": {
+"x": -30.15,
+"y": 26.1
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+324.2,
+461.3,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 171,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/-anims/-altmic/hunte up the pose",
+"IN": "",
+"ST": "G",
+"FF": 5,
+"LP": "PO",
+"TRP": {
+"x": -30.15,
+"y": 26.1
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+324.2,
+461.3,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 172,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/-anims/-altmic/hunte writin",
+"IN": "",
+"ST": "G",
+"FF": 0,
+"LP": "PO",
+"TRP": {
+"x": 0.0,
+"y": 0.0
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+322.95,
+475.05,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 173,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/-anims/-altmic/hunte writin",
+"IN": "",
+"ST": "G",
+"FF": 1,
+"LP": "PO",
+"TRP": {
+"x": 0.0,
+"y": 0.0
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+322.95,
+475.05,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 174,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/-anims/-altmic/hunte writin",
+"IN": "",
+"ST": "G",
+"FF": 2,
+"LP": "PO",
+"TRP": {
+"x": 0.0,
+"y": 0.0
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+322.95,
+475.05,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 175,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/-anims/-altmic/hunte writin",
+"IN": "",
+"ST": "G",
+"FF": 3,
+"LP": "PO",
+"TRP": {
+"x": 0.0,
+"y": 0.0
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+322.95,
+475.05,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 176,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/-anims/-altmic/hunte writin",
+"IN": "",
+"ST": "G",
+"FF": 4,
+"LP": "PO",
+"TRP": {
+"x": 0.0,
+"y": 0.0
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+322.95,
+475.05,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 177,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/-anims/-altmic/hunte writin",
+"IN": "",
+"ST": "G",
+"FF": 5,
+"LP": "PO",
+"TRP": {
+"x": 0.0,
+"y": 0.0
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+322.95,
+475.05,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 178,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/-anims/-altmic/hunte writin",
+"IN": "",
+"ST": "G",
+"FF": 5,
+"LP": "PO",
+"TRP": {
+"x": 0.0,
+"y": 0.0
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+322.95,
+475.05,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 179,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/-anims/-altmic/hunte writin",
+"IN": "",
+"ST": "G",
+"FF": 5,
+"LP": "PO",
+"TRP": {
+"x": 0.0,
+"y": 0.0
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+322.95,
+475.05,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 180,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/-anims/-mic/hunte throw mix",
+"IN": "",
+"ST": "G",
+"FF": 0,
+"LP": "LP",
+"TRP": {
+"x": -30.150000000000003,
+"y": 26.1
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+324.2,
+467.55,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 181,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/-anims/-mic/hunte throw mix",
+"IN": "",
+"ST": "G",
+"FF": 1,
+"LP": "LP",
+"TRP": {
+"x": -30.15,
+"y": 26.1
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+324.2,
+467.55,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 182,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/-anims/-mic/hunte throw mix",
+"IN": "",
+"ST": "G",
+"FF": 2,
+"LP": "LP",
+"TRP": {
+"x": -30.15,
+"y": 26.1
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+324.2,
+467.55,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 183,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/-anims/-mic/hunte throw mix",
+"IN": "",
+"ST": "G",
+"FF": 3,
+"LP": "LP",
+"TRP": {
+"x": -30.15,
+"y": 26.1
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+324.2,
+467.55,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 184,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/-anims/-mic/hunte throw mix",
+"IN": "",
+"ST": "G",
+"FF": 4,
+"LP": "LP",
+"TRP": {
+"x": -30.15,
+"y": 26.1
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+324.2,
+467.55,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 185,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/-anims/-mic/hunte throw mix",
+"IN": "",
+"ST": "G",
+"FF": 5,
+"LP": "LP",
+"TRP": {
+"x": -30.15,
+"y": 26.1
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+324.2,
+467.55,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 186,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/-anims/-mic/hunte throw mix",
+"IN": "",
+"ST": "G",
+"FF": 6,
+"LP": "LP",
+"TRP": {
+"x": -30.15,
+"y": 26.1
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+324.2,
+467.55,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 187,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/-anims/-mic/hunte throw mix",
+"IN": "",
+"ST": "G",
+"FF": 7,
+"LP": "LP",
+"TRP": {
+"x": -30.15,
+"y": 26.1
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+324.2,
+467.55,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 188,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/-anims/-mic/hunte throw mix",
+"IN": "",
+"ST": "G",
+"FF": 8,
+"LP": "LP",
+"TRP": {
+"x": -30.15,
+"y": 26.1
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+324.2,
+467.55,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 189,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/-anims/-mic/hunte throw mix",
+"IN": "",
+"ST": "G",
+"FF": 9,
+"LP": "LP",
+"TRP": {
+"x": -30.15,
+"y": 26.1
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+324.2,
+467.55,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 190,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/-anims/-mic/hunte throw mix",
+"IN": "",
+"ST": "G",
+"FF": 10,
+"LP": "LP",
+"TRP": {
+"x": -30.15,
+"y": 26.1
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+324.2,
+467.55,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 191,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/-anims/-mic/hunte throw mix",
+"IN": "",
+"ST": "G",
+"FF": 11,
+"LP": "LP",
+"TRP": {
+"x": -30.15,
+"y": 26.1
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+324.2,
+467.55,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 192,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/-anims/-mic/hunte throw mix",
+"IN": "",
+"ST": "G",
+"FF": 12,
+"LP": "LP",
+"TRP": {
+"x": -30.15,
+"y": 26.1
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+324.2,
+467.55,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 193,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/-anims/-mic/hunte throw mix",
+"IN": "",
+"ST": "G",
+"FF": 13,
+"LP": "LP",
+"TRP": {
+"x": -30.15,
+"y": 26.1
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+324.2,
+467.55,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 194,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/-anims/-mic/hunte throw mix",
+"IN": "",
+"ST": "G",
+"FF": 14,
+"LP": "LP",
+"TRP": {
+"x": -30.15,
+"y": 26.1
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+324.2,
+467.55,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 195,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/-anims/-mic/hunte throw mix",
+"IN": "",
+"ST": "G",
+"FF": 15,
+"LP": "LP",
+"TRP": {
+"x": -30.15,
+"y": 26.1
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+324.2,
+467.55,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 196,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/-anims/-mic/hunte throw mix",
 "IN": "",
 "ST": "G",
 "FF": 16,
@@ -6113,12 +7297,2084 @@
 ]
 },
 {
-"I": 165,
+"I": 197,
 "DU": 1,
 "E": [
 {
 "SI": {
-"SN": "hunte opp/-hunte anims/hunte pose sponge",
+"SN": "hunte opp/-anims/-mic/hunte throw mix",
+"IN": "",
+"ST": "G",
+"FF": 17,
+"LP": "LP",
+"TRP": {
+"x": -30.15,
+"y": 26.1
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+324.2,
+467.55,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 198,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/-anims/-mic/hunte throw mix",
+"IN": "",
+"ST": "G",
+"FF": 18,
+"LP": "LP",
+"TRP": {
+"x": -30.15,
+"y": 26.1
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+324.2,
+467.55,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 199,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/-anims/-mic/hunte throw mix",
+"IN": "",
+"ST": "G",
+"FF": 19,
+"LP": "LP",
+"TRP": {
+"x": -30.15,
+"y": 26.1
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+324.2,
+467.55,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 200,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/-anims/-mic/hunte throw mix",
+"IN": "",
+"ST": "G",
+"FF": 20,
+"LP": "LP",
+"TRP": {
+"x": -30.15,
+"y": 26.1
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+324.2,
+467.55,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 201,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/-anims/-mic/hunte throw mix",
+"IN": "",
+"ST": "G",
+"FF": 21,
+"LP": "LP",
+"TRP": {
+"x": -30.15,
+"y": 26.1
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+324.2,
+467.55,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 202,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/-anims/-mic/hunte throw mix",
+"IN": "",
+"ST": "G",
+"FF": 22,
+"LP": "LP",
+"TRP": {
+"x": -30.15,
+"y": 26.1
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+324.2,
+467.55,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 203,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/-anims/-mic/hunte throw mix",
+"IN": "",
+"ST": "G",
+"FF": 23,
+"LP": "LP",
+"TRP": {
+"x": -30.15,
+"y": 26.1
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+324.2,
+467.55,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 204,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/-anims/-mic/hunte throw mix",
+"IN": "",
+"ST": "G",
+"FF": 24,
+"LP": "LP",
+"TRP": {
+"x": -30.15,
+"y": 26.1
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+324.2,
+467.55,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 205,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/-anims/-mic/hunte throw mix",
+"IN": "",
+"ST": "G",
+"FF": 25,
+"LP": "LP",
+"TRP": {
+"x": -30.15,
+"y": 26.1
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+324.2,
+467.55,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 206,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/-anims/-mic/hunte throw mix",
+"IN": "",
+"ST": "G",
+"FF": 26,
+"LP": "LP",
+"TRP": {
+"x": -30.15,
+"y": 26.1
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+324.2,
+467.55,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 207,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/-anims/-mic/hunte throw mix",
+"IN": "",
+"ST": "G",
+"FF": 27,
+"LP": "LP",
+"TRP": {
+"x": -30.15,
+"y": 26.1
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+324.2,
+467.55,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 208,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/-anims/-nomic/hunte catch mic",
+"IN": "",
+"ST": "G",
+"FF": 0,
+"LP": "LP",
+"TRP": {
+"x": -30.150000000000003,
+"y": 26.1
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+324.2,
+467.55,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 209,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/-anims/-nomic/hunte catch mic",
+"IN": "",
+"ST": "G",
+"FF": 1,
+"LP": "LP",
+"TRP": {
+"x": -30.15,
+"y": 26.1
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+324.2,
+467.55,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 210,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/-anims/-nomic/hunte catch mic",
+"IN": "",
+"ST": "G",
+"FF": 2,
+"LP": "LP",
+"TRP": {
+"x": -30.15,
+"y": 26.1
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+324.2,
+467.55,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 211,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/-anims/-nomic/hunte catch mic",
+"IN": "",
+"ST": "G",
+"FF": 3,
+"LP": "LP",
+"TRP": {
+"x": -30.15,
+"y": 26.1
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+324.2,
+467.55,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 212,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/-anims/-nomic/hunte catch mic",
+"IN": "",
+"ST": "G",
+"FF": 4,
+"LP": "LP",
+"TRP": {
+"x": -30.15,
+"y": 26.1
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+324.2,
+467.55,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 213,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/-anims/-nomic/hunte catch mic",
+"IN": "",
+"ST": "G",
+"FF": 5,
+"LP": "LP",
+"TRP": {
+"x": -30.15,
+"y": 26.1
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+324.2,
+467.55,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 214,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/-anims/-nomic/hunte catch mic",
+"IN": "",
+"ST": "G",
+"FF": 6,
+"LP": "LP",
+"TRP": {
+"x": -30.15,
+"y": 26.1
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+324.2,
+467.55,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 215,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/-anims/-nomic/hunte catch mic",
+"IN": "",
+"ST": "G",
+"FF": 7,
+"LP": "LP",
+"TRP": {
+"x": -30.15,
+"y": 26.1
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+324.2,
+467.55,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 216,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/-anims/-nomic/hunte catch mic",
+"IN": "",
+"ST": "G",
+"FF": 8,
+"LP": "LP",
+"TRP": {
+"x": -30.15,
+"y": 26.1
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+324.2,
+467.55,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 217,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/-anims/-nomic/hunte catch mic",
+"IN": "",
+"ST": "G",
+"FF": 9,
+"LP": "LP",
+"TRP": {
+"x": -30.15,
+"y": 26.1
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+324.2,
+467.55,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 218,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/-anims/-nomic/hunte catch mic",
+"IN": "",
+"ST": "G",
+"FF": 10,
+"LP": "LP",
+"TRP": {
+"x": -30.15,
+"y": 26.1
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+324.2,
+467.55,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 219,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/-anims/-nomic/hunte catch mic",
+"IN": "",
+"ST": "G",
+"FF": 11,
+"LP": "LP",
+"TRP": {
+"x": -30.15,
+"y": 26.1
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+324.2,
+467.55,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 220,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/-anims/-nomic/hunte catch mic",
+"IN": "",
+"ST": "G",
+"FF": 12,
+"LP": "LP",
+"TRP": {
+"x": -30.15,
+"y": 26.1
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+324.2,
+467.55,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 221,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/-anims/-nomic/hunte catch mic",
+"IN": "",
+"ST": "G",
+"FF": 13,
+"LP": "LP",
+"TRP": {
+"x": -30.15,
+"y": 26.1
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+324.2,
+467.55,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 222,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/-anims/-nomic/hunte catch mic",
+"IN": "",
+"ST": "G",
+"FF": 14,
+"LP": "LP",
+"TRP": {
+"x": -30.15,
+"y": 26.1
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+324.2,
+467.55,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 223,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/-anims/-nomic/hunte catch mic",
+"IN": "",
+"ST": "G",
+"FF": 15,
+"LP": "LP",
+"TRP": {
+"x": -30.15,
+"y": 26.1
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+324.2,
+467.55,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 224,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/-anims/-nomic/hunte catch mic",
+"IN": "",
+"ST": "G",
+"FF": 16,
+"LP": "LP",
+"TRP": {
+"x": -30.15,
+"y": 26.1
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+324.2,
+467.55,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 225,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/-anims/-altmic/hunte do a lil spin",
+"IN": "",
+"ST": "G",
+"FF": 0,
+"LP": "LP",
+"TRP": {
+"x": -30.150000000000003,
+"y": 26.1
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+324.2,
+467.55,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 226,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/-anims/-altmic/hunte do a lil spin",
+"IN": "",
+"ST": "G",
+"FF": 1,
+"LP": "LP",
+"TRP": {
+"x": -30.15,
+"y": 26.1
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+324.2,
+467.55,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 227,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/-anims/-altmic/hunte do a lil spin",
+"IN": "",
+"ST": "G",
+"FF": 2,
+"LP": "LP",
+"TRP": {
+"x": -30.15,
+"y": 26.1
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+324.2,
+467.55,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 228,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/-anims/-altmic/hunte do a lil spin",
+"IN": "",
+"ST": "G",
+"FF": 3,
+"LP": "LP",
+"TRP": {
+"x": -30.15,
+"y": 26.1
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+324.2,
+467.55,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 229,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/-anims/-altmic/hunte do a lil spin",
+"IN": "",
+"ST": "G",
+"FF": 4,
+"LP": "LP",
+"TRP": {
+"x": -30.15,
+"y": 26.1
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+324.2,
+467.55,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 230,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/-anims/-altmic/hunte do a lil spin",
+"IN": "",
+"ST": "G",
+"FF": 5,
+"LP": "LP",
+"TRP": {
+"x": -30.15,
+"y": 26.1
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+324.2,
+467.55,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 231,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/-anims/-altmic/hunte do a lil spin",
+"IN": "",
+"ST": "G",
+"FF": 6,
+"LP": "LP",
+"TRP": {
+"x": -30.15,
+"y": 26.1
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+324.2,
+467.55,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 232,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/-anims/-altmic/hunte do a lil spin",
+"IN": "",
+"ST": "G",
+"FF": 7,
+"LP": "LP",
+"TRP": {
+"x": -30.15,
+"y": 26.1
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+324.2,
+467.55,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 233,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/-anims/-altmic/hunte do a lil spin",
+"IN": "",
+"ST": "G",
+"FF": 8,
+"LP": "LP",
+"TRP": {
+"x": -30.15,
+"y": 26.1
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+324.2,
+467.55,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 234,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/-anims/-altmic/hunte do a lil spin",
+"IN": "",
+"ST": "G",
+"FF": 9,
+"LP": "LP",
+"TRP": {
+"x": -30.15,
+"y": 26.1
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+324.2,
+467.55,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 235,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/-anims/-altmic/hunte do a lil spin",
+"IN": "",
+"ST": "G",
+"FF": 10,
+"LP": "LP",
+"TRP": {
+"x": -30.15,
+"y": 26.1
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+324.2,
+467.55,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 236,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/-anims/-altmic/hunte do a lil spin",
+"IN": "",
+"ST": "G",
+"FF": 11,
+"LP": "LP",
+"TRP": {
+"x": -30.15,
+"y": 26.1
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+324.2,
+467.55,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 237,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/-anims/-altmic/hunte do a lil spin",
+"IN": "",
+"ST": "G",
+"FF": 12,
+"LP": "LP",
+"TRP": {
+"x": -30.15,
+"y": 26.1
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+324.2,
+467.55,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 238,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/-anims/-altmic/hunte do a lil spin",
+"IN": "",
+"ST": "G",
+"FF": 13,
+"LP": "LP",
+"TRP": {
+"x": -30.15,
+"y": 26.1
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+324.2,
+467.55,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 239,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/-anims/-altmic/hunte do a lil spin",
+"IN": "",
+"ST": "G",
+"FF": 14,
+"LP": "LP",
+"TRP": {
+"x": -30.15,
+"y": 26.1
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+324.2,
+467.55,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 240,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/-anims/-altmic/hunte do a lil spin",
+"IN": "",
+"ST": "G",
+"FF": 15,
+"LP": "LP",
+"TRP": {
+"x": -30.15,
+"y": 26.1
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+324.2,
+467.55,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 241,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/-anims/-altmic/hunte do a lil spin",
+"IN": "",
+"ST": "G",
+"FF": 16,
+"LP": "LP",
+"TRP": {
+"x": -30.15,
+"y": 26.1
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+324.2,
+467.55,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 242,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/-anims/-altmic/hunte do a lil spin",
+"IN": "",
+"ST": "G",
+"FF": 17,
+"LP": "LP",
+"TRP": {
+"x": -30.15,
+"y": 26.1
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+324.2,
+467.55,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 243,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/-anims/-altmic/hunte do a lil spin",
+"IN": "",
+"ST": "G",
+"FF": 18,
+"LP": "LP",
+"TRP": {
+"x": -30.15,
+"y": 26.1
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+324.2,
+467.55,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 244,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/-anims/-altmic/hunte do a lil spin",
+"IN": "",
+"ST": "G",
+"FF": 19,
+"LP": "LP",
+"TRP": {
+"x": -30.15,
+"y": 26.1
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+324.2,
+467.55,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 245,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/-anims/-altmic/hunte do a lil spin",
+"IN": "",
+"ST": "G",
+"FF": 20,
+"LP": "LP",
+"TRP": {
+"x": -30.15,
+"y": 26.1
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+324.2,
+467.55,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 246,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/-anims/-altmic/hunte do a lil spin",
+"IN": "",
+"ST": "G",
+"FF": 21,
+"LP": "LP",
+"TRP": {
+"x": -30.15,
+"y": 26.1
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+324.2,
+467.55,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 247,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/-anims/-altmic/hunte do a lil spin",
+"IN": "",
+"ST": "G",
+"FF": 22,
+"LP": "LP",
+"TRP": {
+"x": -30.15,
+"y": 26.1
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+324.2,
+467.55,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 248,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/-anims/-altmic/hunte do a lil spin",
+"IN": "",
+"ST": "G",
+"FF": 23,
+"LP": "LP",
+"TRP": {
+"x": -30.15,
+"y": 26.1
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+324.2,
+467.55,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 249,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/-anims/-altmic/hunte do a lil spin",
+"IN": "",
+"ST": "G",
+"FF": 24,
+"LP": "LP",
+"TRP": {
+"x": -30.15,
+"y": 26.1
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+324.2,
+467.55,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 250,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/-anims/-altmic/hunte do a lil spin",
+"IN": "",
+"ST": "G",
+"FF": 25,
+"LP": "LP",
+"TRP": {
+"x": -30.15,
+"y": 26.1
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+324.2,
+467.55,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 251,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/-anims/-altmic/hunte do a lil spin",
+"IN": "",
+"ST": "G",
+"FF": 26,
+"LP": "LP",
+"TRP": {
+"x": -30.15,
+"y": 26.1
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+324.2,
+467.55,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 252,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/-anims/-altmic/hunte do a lil spin",
+"IN": "",
+"ST": "G",
+"FF": 27,
+"LP": "LP",
+"TRP": {
+"x": -30.15,
+"y": 26.1
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+324.2,
+467.55,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 253,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/-anims/hunte pose sponge",
 "IN": "",
 "ST": "G",
 "FF": 5,
@@ -6150,12 +9406,12 @@
 ]
 },
 {
-"I": 166,
+"I": 254,
 "DU": 1,
 "E": [
 {
 "SI": {
-"SN": "hunte opp/-hunte anims/hunte pose mario",
+"SN": "hunte opp/-anims/hunte pose mario",
 "IN": "",
 "ST": "G",
 "FF": 5,
@@ -6187,12 +9443,12 @@
 ]
 },
 {
-"I": 167,
+"I": 255,
 "DU": 1,
 "E": [
 {
 "SI": {
-"SN": "hunte opp/-hunte anims/hunte pose burg",
+"SN": "hunte opp/-anims/hunte pose burg",
 "IN": "",
 "ST": "G",
 "FF": 5,
@@ -6224,12 +9480,12 @@
 ]
 },
 {
-"I": 168,
+"I": 256,
 "DU": 1,
 "E": [
 {
 "SI": {
-"SN": "hunte opp/-hunte anims/hunte pose do it to em",
+"SN": "hunte opp/-anims/hunte pose do it to em",
 "IN": "",
 "ST": "G",
 "FF": 0,
@@ -6261,12 +9517,12 @@
 ]
 },
 {
-"I": 169,
+"I": 257,
 "DU": 1,
 "E": [
 {
 "SI": {
-"SN": "hunte opp/-hunte anims/hunte pose givin",
+"SN": "hunte opp/-anims/hunte pose givin",
 "IN": "",
 "ST": "G",
 "FF": 0,
@@ -6298,12 +9554,12 @@
 ]
 },
 {
-"I": 170,
+"I": 258,
 "DU": 1,
 "E": [
 {
 "SI": {
-"SN": "hunte opp/-hunte anims/hunte pose epic",
+"SN": "hunte opp/-anims/hunte pose epic",
 "IN": "",
 "ST": "G",
 "FF": 0,
@@ -6342,7 +9598,7 @@
 "SD": {
 "S": [
 {
-"SN": "hunte opp/-hunte anims/hunte opp idle",
+"SN": "hunte opp/-anims/-nomic/hunte opp idle",
 "TL": {
 "L": [
 {
@@ -7614,7 +10870,7 @@
 },
 {
 "I": 7,
-"DU": 3,
+"DU": 6,
 "E": [
 {
 "ASI": {
@@ -7644,7 +10900,7 @@
 ]
 },
 {
-"LN": "MergedLayer_2",
+"LN": "MergedLayer_1",
 "FR": [
 {
 "I": 0,
@@ -7935,6 +11191,93 @@
 }
 }
 ]
+},
+{
+"I": 10,
+"DU": 1,
+"E": [
+{
+"ASI": {
+"N": "0020",
+"M3D": [
+0.97711181640625,
+0.0,
+0.0,
+0.0,
+0.0,
+0.97711181640625,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+18.95,
+89.5,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 11,
+"DU": 1,
+"E": [
+{
+"ASI": {
+"N": "0021",
+"M3D": [
+0.97711181640625,
+0.0,
+0.0,
+0.0,
+0.0,
+0.97711181640625,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+30.6,
+60.35,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 12,
+"DU": 1,
+"E": [
+{
+"ASI": {
+"N": "0022",
+"M3D": [
+0.97711181640625,
+0.0,
+0.0,
+0.0,
+0.0,
+0.97711181640625,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+30.6,
+104.6,
+0.0,
+1.0
+]
+}
+}
+]
 }
 ]
 },
@@ -7943,11 +11286,11 @@
 "FR": [
 {
 "I": 0,
-"DU": 10,
+"DU": 13,
 "E": [
 {
 "ASI": {
-"N": "0020",
+"N": "0023",
 "M3D": [
 0.97711181640625,
 0.0,
@@ -7993,7 +11336,7 @@
 "E": [
 {
 "ASI": {
-"N": "0021",
+"N": "0024",
 "M3D": [
 0.9328155517578125,
 0.0,
@@ -8022,7 +11365,7 @@
 "E": [
 {
 "ASI": {
-"N": "0022",
+"N": "0025",
 "M3D": [
 0.9328155517578125,
 0.0,
@@ -8051,7 +11394,7 @@
 "E": [
 {
 "ASI": {
-"N": "0023",
+"N": "0026",
 "M3D": [
 0.9328155517578125,
 0.0,
@@ -8090,7 +11433,7 @@
 "E": [
 {
 "ASI": {
-"N": "0024",
+"N": "0027",
 "M3D": [
 0.9328155517578125,
 0.0,
@@ -8119,7 +11462,7 @@
 "E": [
 {
 "ASI": {
-"N": "0025",
+"N": "0028",
 "M3D": [
 0.9328155517578125,
 0.0,
@@ -8148,7 +11491,7 @@
 "E": [
 {
 "ASI": {
-"N": "0026",
+"N": "0029",
 "M3D": [
 0.9328155517578125,
 0.0,
@@ -8177,7 +11520,7 @@
 "E": [
 {
 "ASI": {
-"N": "0027",
+"N": "0030",
 "M3D": [
 0.9328155517578125,
 0.0,
@@ -8206,7 +11549,7 @@
 "E": [
 {
 "ASI": {
-"N": "0028",
+"N": "0031",
 "M3D": [
 0.9328155517578125,
 0.0,
@@ -8249,19 +11592,19 @@
 "ASI": {
 "N": "0006",
 "M3D": [
-0.908050537109375,
+0.907073974609375,
 0.0,
 0.0,
 0.0,
 0.0,
-0.908050537109375,
+0.907073974609375,
 0.0,
 0.0,
 0.0,
 0.0,
 1.0,
 0.0,
--11.25,
+-11.2,
 0.0,
 0.0,
 1.0
@@ -8276,7 +11619,7 @@
 }
 },
 {
-"SN": "hunte opp/-hunte anims/hunte idle alt",
+"SN": "hunte opp/-anims/-nomic/hunte idle alt",
 "TL": {
 "L": [
 {
@@ -9482,1720 +12825,7 @@
 }
 },
 {
-"SN": "hunte opp/-hunte anims/hunte mic idle",
-"TL": {
-"L": [
-{
-"LN": "hunte_head",
-"FR": [
-{
-"I": 0,
-"DU": 1,
-"E": [
-{
-"SI": {
-"SN": "hunte opp/hunte head",
-"IN": "",
-"ST": "G",
-"FF": 0,
-"LP": "SF",
-"TRP": {
-"x": 121.10000000000001,
-"y": 225.55
-},
-"M3D": [
-0.98638916015625,
-0.164306640625,
-0.0,
-0.0,
--0.164306640625,
-0.98638916015625,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
--39.5,
--387.4,
-0.0,
-1.0
-]
-}
-}
-]
-},
-{
-"I": 1,
-"DU": 1,
-"E": [
-{
-"SI": {
-"SN": "hunte opp/hunte head",
-"IN": "",
-"ST": "G",
-"FF": 0,
-"LP": "SF",
-"TRP": {
-"x": 121.1,
-"y": 225.55
-},
-"M3D": [
-0.98638916015625,
-0.164306640625,
-0.0,
-0.0,
--0.164306640625,
-0.98638916015625,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
--39.5,
--387.4,
-0.0,
-1.0
-]
-}
-}
-]
-},
-{
-"I": 2,
-"DU": 1,
-"E": [
-{
-"SI": {
-"SN": "hunte opp/hunte head",
-"IN": "",
-"ST": "G",
-"FF": 0,
-"LP": "SF",
-"TRP": {
-"x": 121.10000000000001,
-"y": 225.5
-},
-"M3D": [
-0.995330810546875,
-0.0962066650390625,
-0.0,
-0.0,
--0.0962066650390625,
-0.995330810546875,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
--55.85,
--401.65,
-0.0,
-1.0
-]
-}
-}
-]
-},
-{
-"I": 3,
-"DU": 1,
-"E": [
-{
-"SI": {
-"SN": "hunte opp/hunte head",
-"IN": "",
-"ST": "G",
-"FF": 0,
-"LP": "SF",
-"TRP": {
-"x": 121.1,
-"y": 225.5
-},
-"M3D": [
-0.995330810546875,
-0.0962066650390625,
-0.0,
-0.0,
--0.0962066650390625,
-0.995330810546875,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
--55.85,
--401.65,
-0.0,
-1.0
-]
-}
-}
-]
-},
-{
-"I": 4,
-"DU": 1,
-"E": [
-{
-"SI": {
-"SN": "hunte opp/hunte head",
-"IN": "",
-"ST": "G",
-"FF": 0,
-"LP": "SF",
-"TRP": {
-"x": 121.15,
-"y": 225.60000000000003
-},
-"M3D": [
-0.9972381591796875,
-0.07415771484375,
-0.0,
-0.0,
--0.07415771484375,
-0.9972381591796875,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
--61.15,
--413.0,
-0.0,
-1.0
-]
-}
-}
-]
-},
-{
-"I": 5,
-"DU": 1,
-"E": [
-{
-"SI": {
-"SN": "hunte opp/hunte head",
-"IN": "",
-"ST": "G",
-"FF": 0,
-"LP": "SF",
-"TRP": {
-"x": 121.15,
-"y": 225.6
-},
-"M3D": [
-0.9972381591796875,
-0.07415771484375,
-0.0,
-0.0,
--0.07415771484375,
-0.9972381591796875,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
--61.15,
--413.0,
-0.0,
-1.0
-]
-}
-}
-]
-},
-{
-"I": 6,
-"DU": 1,
-"E": [
-{
-"SI": {
-"SN": "hunte opp/hunte head",
-"IN": "",
-"ST": "G",
-"FF": 0,
-"LP": "SF",
-"TRP": {
-"x": 121.2,
-"y": 225.60000000000003
-},
-"M3D": [
-1.0,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
--78.3,
--417.05,
-0.0,
-1.0
-]
-}
-}
-]
-},
-{
-"I": 7,
-"DU": 1,
-"E": [
-{
-"SI": {
-"SN": "hunte opp/hunte head",
-"IN": "",
-"ST": "G",
-"FF": 0,
-"LP": "SF",
-"TRP": {
-"x": 121.2,
-"y": 225.6
-},
-"M3D": [
-1.0,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
--78.3,
--417.05,
-0.0,
-1.0
-]
-}
-}
-]
-},
-{
-"I": 8,
-"DU": 1,
-"E": [
-{
-"SI": {
-"SN": "hunte opp/hunte head",
-"IN": "",
-"ST": "G",
-"FF": 0,
-"LP": "SF",
-"TRP": {
-"x": 121.2,
-"y": 225.6
-},
-"M3D": [
-1.0,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
--78.3,
--417.05,
-0.0,
-1.0
-]
-}
-}
-]
-},
-{
-"I": 9,
-"DU": 1,
-"E": [
-{
-"SI": {
-"SN": "hunte opp/hunte head",
-"IN": "",
-"ST": "G",
-"FF": 0,
-"LP": "SF",
-"TRP": {
-"x": 121.2,
-"y": 225.6
-},
-"M3D": [
-1.0,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
--78.3,
--417.05,
-0.0,
-1.0
-]
-}
-}
-]
-},
-{
-"I": 10,
-"DU": 1,
-"E": [
-{
-"SI": {
-"SN": "hunte opp/hunte head",
-"IN": "",
-"ST": "G",
-"FF": 0,
-"LP": "SF",
-"TRP": {
-"x": 121.2,
-"y": 225.6
-},
-"M3D": [
-1.0,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
--78.3,
--417.05,
-0.0,
-1.0
-]
-}
-}
-]
-},
-{
-"I": 11,
-"DU": 1,
-"E": [
-{
-"SI": {
-"SN": "hunte opp/hunte head",
-"IN": "",
-"ST": "G",
-"FF": 0,
-"LP": "SF",
-"TRP": {
-"x": 121.2,
-"y": 225.6
-},
-"M3D": [
-1.0,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
--78.3,
--417.05,
-0.0,
-1.0
-]
-}
-}
-]
-},
-{
-"I": 12,
-"DU": 1,
-"E": [
-{
-"SI": {
-"SN": "hunte opp/hunte head",
-"IN": "",
-"ST": "G",
-"FF": 0,
-"LP": "SF",
-"TRP": {
-"x": 121.2,
-"y": 225.6
-},
-"M3D": [
-1.0,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
--78.3,
--417.05,
-0.0,
-1.0
-]
-}
-}
-]
-},
-{
-"I": 13,
-"DU": 1,
-"E": [
-{
-"SI": {
-"SN": "hunte opp/hunte head",
-"IN": "",
-"ST": "G",
-"FF": 0,
-"LP": "SF",
-"TRP": {
-"x": 121.2,
-"y": 225.6
-},
-"M3D": [
-1.0,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
--78.3,
--417.05,
-0.0,
-1.0
-]
-}
-}
-]
-}
-]
-},
-{
-"LN": "hunte_hand",
-"FR": [
-{
-"I": 0,
-"DU": 2,
-"E": [
-{
-"SI": {
-"SN": "hunte opp/hunte hand mic",
-"IN": "",
-"ST": "G",
-"FF": 0,
-"LP": "PO",
-"TRP": {
-"x": 88.10000000000001,
-"y": 46.6
-},
-"M3D": [
-0.9915618896484375,
--0.1296234130859375,
-0.0,
-0.0,
-0.1296234130859375,
-0.9915618896484375,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
--237.15,
--23.65,
-0.0,
-1.0
-]
-}
-}
-]
-},
-{
-"I": 2,
-"DU": 2,
-"E": [
-{
-"SI": {
-"SN": "hunte opp/hunte hand mic",
-"IN": "",
-"ST": "G",
-"FF": 0,
-"LP": "PO",
-"TRP": {
-"x": 88.15,
-"y": 46.6
-},
-"M3D": [
-0.9981689453125,
--0.06048583984375,
-0.0,
-0.0,
-0.06048583984375,
-0.9981689453125,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
--225.6,
--37.2,
-0.0,
-1.0
-]
-}
-}
-]
-},
-{
-"I": 4,
-"DU": 2,
-"E": [
-{
-"SI": {
-"SN": "hunte opp/hunte hand mic",
-"IN": "",
-"ST": "G",
-"FF": 0,
-"LP": "PO",
-"TRP": {
-"x": 88.15,
-"y": 46.65
-},
-"M3D": [
-1.0,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
--217.1,
--46.6,
-0.0,
-1.0
-]
-}
-}
-]
-},
-{
-"I": 6,
-"DU": 8,
-"E": [
-{
-"SI": {
-"SN": "hunte opp/hunte hand mic",
-"IN": "",
-"ST": "G",
-"FF": 0,
-"LP": "PO",
-"TRP": {
-"x": 88.10000000000001,
-"y": 46.65
-},
-"M3D": [
-0.989715576171875,
-0.143035888671875,
-0.0,
-0.0,
--0.143035888671875,
-0.989715576171875,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
--203.0,
--65.25,
-0.0,
-1.0
-]
-}
-}
-]
-}
-]
-},
-{
-"LN": "hunte_body",
-"FR": [
-{
-"I": 0,
-"DU": 2,
-"E": [
-{
-"SI": {
-"SN": "hunte opp/hunte body",
-"IN": "",
-"ST": "G",
-"FF": 0,
-"LP": "LP",
-"TRP": {
-"x": 200.05,
-"y": 616.45
-},
-"M3D": [
-1.1012420654296876,
-0.0,
-0.0,
-0.0,
-0.0,
-0.945068359375,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
--166.95,
--235.0,
-0.0,
-1.0
-]
-}
-}
-]
-},
-{
-"I": 2,
-"DU": 2,
-"E": [
-{
-"SI": {
-"SN": "hunte opp/hunte body",
-"IN": "",
-"ST": "G",
-"FF": 0,
-"LP": "LP",
-"TRP": {
-"x": 200.10000000000003,
-"y": 616.3000000000001
-},
-"M3D": [
-1.0652923583984376,
-0.0,
-0.0,
-0.0,
-0.0,
-0.9633026123046875,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
--159.8,
--246.15,
-0.0,
-1.0
-]
-}
-}
-]
-},
-{
-"I": 4,
-"DU": 2,
-"E": [
-{
-"SI": {
-"SN": "hunte opp/hunte body",
-"IN": "",
-"ST": "G",
-"FF": 0,
-"LP": "LP",
-"TRP": {
-"x": 200.0,
-"y": 616.4000000000001
-},
-"M3D": [
-1.029296875,
-0.0,
-0.0,
-0.0,
-0.0,
-0.979766845703125,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
--152.55,
--256.4,
-0.0,
-1.0
-]
-}
-}
-]
-},
-{
-"I": 6,
-"DU": 8,
-"E": [
-{
-"SI": {
-"SN": "hunte opp/hunte body",
-"IN": "",
-"ST": "G",
-"FF": 0,
-"LP": "LP",
-"TRP": {
-"x": 200.10000000000003,
-"y": 616.45
-},
-"M3D": [
-1.0,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
--146.75,
--268.9,
-0.0,
-1.0
-]
-}
-}
-]
-}
-]
-}
-]
-}
-},
-{
-"SN": "hunte opp/hunte hand mic",
-"TL": {
-"L": [
-{
-"LN": "Layer_2",
-"FR": [
-{
-"I": 0,
-"DU": 1,
-"E": [
-{
-"ASI": {
-"N": "0029",
-"M3D": [
-0.958892822265625,
-0.0,
-0.0,
-0.0,
-0.0,
-0.958892822265625,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
--65.85,
-23.6,
-0.0,
-1.0
-]
-}
-}
-]
-}
-]
-}
-]
-}
-},
-{
-"SN": "hunte opp/-hunte anims/hunte alt mic idle",
-"TL": {
-"L": [
-{
-"LN": "hunte_head",
-"FR": [
-{
-"I": 0,
-"DU": 1,
-"E": [
-{
-"SI": {
-"SN": "hunte opp/hunte head",
-"IN": "",
-"ST": "G",
-"FF": 9,
-"LP": "SF",
-"TRP": {
-"x": 121.10000000000001,
-"y": 225.55
-},
-"M3D": [
-0.98638916015625,
-0.164306640625,
-0.0,
-0.0,
--0.164306640625,
-0.98638916015625,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
--39.5,
--387.4,
-0.0,
-1.0
-]
-}
-}
-]
-},
-{
-"I": 1,
-"DU": 1,
-"E": [
-{
-"SI": {
-"SN": "hunte opp/hunte head",
-"IN": "",
-"ST": "G",
-"FF": 9,
-"LP": "SF",
-"TRP": {
-"x": 121.1,
-"y": 225.55
-},
-"M3D": [
-0.98638916015625,
-0.164306640625,
-0.0,
-0.0,
--0.164306640625,
-0.98638916015625,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
--39.5,
--387.4,
-0.0,
-1.0
-]
-}
-}
-]
-},
-{
-"I": 2,
-"DU": 1,
-"E": [
-{
-"SI": {
-"SN": "hunte opp/hunte head",
-"IN": "",
-"ST": "G",
-"FF": 9,
-"LP": "SF",
-"TRP": {
-"x": 121.10000000000001,
-"y": 225.5
-},
-"M3D": [
-0.995330810546875,
-0.0962066650390625,
-0.0,
-0.0,
--0.0962066650390625,
-0.995330810546875,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
--55.85,
--401.65,
-0.0,
-1.0
-]
-}
-}
-]
-},
-{
-"I": 3,
-"DU": 1,
-"E": [
-{
-"SI": {
-"SN": "hunte opp/hunte head",
-"IN": "",
-"ST": "G",
-"FF": 9,
-"LP": "SF",
-"TRP": {
-"x": 121.1,
-"y": 225.5
-},
-"M3D": [
-0.995330810546875,
-0.0962066650390625,
-0.0,
-0.0,
--0.0962066650390625,
-0.995330810546875,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
--55.85,
--401.65,
-0.0,
-1.0
-]
-}
-}
-]
-},
-{
-"I": 4,
-"DU": 1,
-"E": [
-{
-"SI": {
-"SN": "hunte opp/hunte head",
-"IN": "",
-"ST": "G",
-"FF": 9,
-"LP": "SF",
-"TRP": {
-"x": 121.15,
-"y": 225.60000000000003
-},
-"M3D": [
-0.9972381591796875,
-0.07415771484375,
-0.0,
-0.0,
--0.07415771484375,
-0.9972381591796875,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
--61.15,
--413.0,
-0.0,
-1.0
-]
-}
-}
-]
-},
-{
-"I": 5,
-"DU": 1,
-"E": [
-{
-"SI": {
-"SN": "hunte opp/hunte head",
-"IN": "",
-"ST": "G",
-"FF": 9,
-"LP": "SF",
-"TRP": {
-"x": 121.15,
-"y": 225.6
-},
-"M3D": [
-0.9972381591796875,
-0.07415771484375,
-0.0,
-0.0,
--0.07415771484375,
-0.9972381591796875,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
--61.15,
--413.0,
-0.0,
-1.0
-]
-}
-}
-]
-},
-{
-"I": 6,
-"DU": 1,
-"E": [
-{
-"SI": {
-"SN": "hunte opp/hunte head",
-"IN": "",
-"ST": "G",
-"FF": 9,
-"LP": "SF",
-"TRP": {
-"x": 121.2,
-"y": 225.60000000000003
-},
-"M3D": [
-1.0,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
--78.3,
--417.05,
-0.0,
-1.0
-]
-}
-}
-]
-},
-{
-"I": 7,
-"DU": 1,
-"E": [
-{
-"SI": {
-"SN": "hunte opp/hunte head",
-"IN": "",
-"ST": "G",
-"FF": 9,
-"LP": "SF",
-"TRP": {
-"x": 121.2,
-"y": 225.6
-},
-"M3D": [
-1.0,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
--78.3,
--417.05,
-0.0,
-1.0
-]
-}
-}
-]
-},
-{
-"I": 8,
-"DU": 1,
-"E": [
-{
-"SI": {
-"SN": "hunte opp/hunte head",
-"IN": "",
-"ST": "G",
-"FF": 9,
-"LP": "SF",
-"TRP": {
-"x": 121.2,
-"y": 225.6
-},
-"M3D": [
-1.0,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
--78.3,
--417.05,
-0.0,
-1.0
-]
-}
-}
-]
-},
-{
-"I": 9,
-"DU": 1,
-"E": [
-{
-"SI": {
-"SN": "hunte opp/hunte head",
-"IN": "",
-"ST": "G",
-"FF": 9,
-"LP": "SF",
-"TRP": {
-"x": 121.2,
-"y": 225.6
-},
-"M3D": [
-1.0,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
--78.3,
--417.05,
-0.0,
-1.0
-]
-}
-}
-]
-},
-{
-"I": 10,
-"DU": 1,
-"E": [
-{
-"SI": {
-"SN": "hunte opp/hunte head",
-"IN": "",
-"ST": "G",
-"FF": 9,
-"LP": "SF",
-"TRP": {
-"x": 121.2,
-"y": 225.6
-},
-"M3D": [
-1.0,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
--78.3,
--417.05,
-0.0,
-1.0
-]
-}
-}
-]
-},
-{
-"I": 11,
-"DU": 1,
-"E": [
-{
-"SI": {
-"SN": "hunte opp/hunte head",
-"IN": "",
-"ST": "G",
-"FF": 9,
-"LP": "SF",
-"TRP": {
-"x": 121.2,
-"y": 225.6
-},
-"M3D": [
-1.0,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
--78.3,
--417.05,
-0.0,
-1.0
-]
-}
-}
-]
-},
-{
-"I": 12,
-"DU": 1,
-"E": [
-{
-"SI": {
-"SN": "hunte opp/hunte head",
-"IN": "",
-"ST": "G",
-"FF": 9,
-"LP": "SF",
-"TRP": {
-"x": 121.2,
-"y": 225.6
-},
-"M3D": [
-1.0,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
--78.3,
--417.05,
-0.0,
-1.0
-]
-}
-}
-]
-},
-{
-"I": 13,
-"DU": 1,
-"E": [
-{
-"SI": {
-"SN": "hunte opp/hunte head",
-"IN": "",
-"ST": "G",
-"FF": 9,
-"LP": "SF",
-"TRP": {
-"x": 121.2,
-"y": 225.6
-},
-"M3D": [
-1.0,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
--78.3,
--417.05,
-0.0,
-1.0
-]
-}
-}
-]
-}
-]
-},
-{
-"LN": "hunte_hand",
-"FR": [
-{
-"I": 0,
-"DU": 2,
-"E": [
-{
-"SI": {
-"SN": "hunte opp/hunte hand mic",
-"IN": "",
-"ST": "G",
-"FF": 0,
-"LP": "PO",
-"TRP": {
-"x": 88.10000000000001,
-"y": 46.6
-},
-"M3D": [
-0.9915618896484375,
--0.1296234130859375,
-0.0,
-0.0,
-0.1296234130859375,
-0.9915618896484375,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
--237.15,
--23.65,
-0.0,
-1.0
-]
-}
-}
-]
-},
-{
-"I": 2,
-"DU": 2,
-"E": [
-{
-"SI": {
-"SN": "hunte opp/hunte hand mic",
-"IN": "",
-"ST": "G",
-"FF": 0,
-"LP": "PO",
-"TRP": {
-"x": 88.15,
-"y": 46.6
-},
-"M3D": [
-0.9981689453125,
--0.06048583984375,
-0.0,
-0.0,
-0.06048583984375,
-0.9981689453125,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
--225.6,
--37.2,
-0.0,
-1.0
-]
-}
-}
-]
-},
-{
-"I": 4,
-"DU": 2,
-"E": [
-{
-"SI": {
-"SN": "hunte opp/hunte hand mic",
-"IN": "",
-"ST": "G",
-"FF": 0,
-"LP": "PO",
-"TRP": {
-"x": 88.15,
-"y": 46.65
-},
-"M3D": [
-1.0,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
--217.1,
--46.6,
-0.0,
-1.0
-]
-}
-}
-]
-},
-{
-"I": 6,
-"DU": 8,
-"E": [
-{
-"SI": {
-"SN": "hunte opp/hunte hand mic",
-"IN": "",
-"ST": "G",
-"FF": 0,
-"LP": "PO",
-"TRP": {
-"x": 88.10000000000001,
-"y": 46.65
-},
-"M3D": [
-0.989715576171875,
-0.143035888671875,
-0.0,
-0.0,
--0.143035888671875,
-0.989715576171875,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
--203.0,
--65.25,
-0.0,
-1.0
-]
-}
-}
-]
-}
-]
-},
-{
-"LN": "hunte_body",
-"FR": [
-{
-"I": 0,
-"DU": 2,
-"E": [
-{
-"SI": {
-"SN": "hunte opp/hunte body",
-"IN": "",
-"ST": "G",
-"FF": 0,
-"LP": "LP",
-"TRP": {
-"x": 200.05,
-"y": 616.45
-},
-"M3D": [
-1.1012420654296876,
-0.0,
-0.0,
-0.0,
-0.0,
-0.945068359375,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
--166.95,
--235.0,
-0.0,
-1.0
-]
-}
-}
-]
-},
-{
-"I": 2,
-"DU": 2,
-"E": [
-{
-"SI": {
-"SN": "hunte opp/hunte body",
-"IN": "",
-"ST": "G",
-"FF": 0,
-"LP": "LP",
-"TRP": {
-"x": 200.10000000000003,
-"y": 616.3000000000001
-},
-"M3D": [
-1.0652923583984376,
-0.0,
-0.0,
-0.0,
-0.0,
-0.9633026123046875,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
--159.8,
--246.15,
-0.0,
-1.0
-]
-}
-}
-]
-},
-{
-"I": 4,
-"DU": 2,
-"E": [
-{
-"SI": {
-"SN": "hunte opp/hunte body",
-"IN": "",
-"ST": "G",
-"FF": 0,
-"LP": "LP",
-"TRP": {
-"x": 200.0,
-"y": 616.4000000000001
-},
-"M3D": [
-1.029296875,
-0.0,
-0.0,
-0.0,
-0.0,
-0.979766845703125,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
--152.55,
--256.4,
-0.0,
-1.0
-]
-}
-}
-]
-},
-{
-"I": 6,
-"DU": 8,
-"E": [
-{
-"SI": {
-"SN": "hunte opp/hunte body",
-"IN": "",
-"ST": "G",
-"FF": 0,
-"LP": "LP",
-"TRP": {
-"x": 200.10000000000003,
-"y": 616.45
-},
-"M3D": [
-1.0,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
--146.75,
--268.9,
-0.0,
-1.0
-]
-}
-}
-]
-}
-]
-}
-]
-}
-},
-{
-"SN": "hunte opp/-hunte anims/hunte left hit",
+"SN": "hunte opp/-anims/-nomic/hunte no mic left hit",
 "TL": {
 "L": [
 {
@@ -11207,7 +12837,7 @@
 "E": [
 {
 "SI": {
-"SN": "hunte opp/hunte arm left",
+"SN": "hunte opp/hunte hand jazz",
 "IN": "",
 "ST": "G",
 "FF": 0,
@@ -11244,7 +12874,7 @@
 "E": [
 {
 "SI": {
-"SN": "hunte opp/hunte arm left",
+"SN": "hunte opp/hunte hand jazz",
 "IN": "",
 "ST": "G",
 "FF": 0,
@@ -11587,11 +13217,11 @@
 }
 },
 {
-"SN": "hunte opp/hunte arm left",
+"SN": "hunte opp/hunte hand jazz",
 "TL": {
 "L": [
 {
-"LN": "Layer_5",
+"LN": "Layer_2",
 "FR": [
 {
 "I": 0,
@@ -11599,7 +13229,7 @@
 "E": [
 {
 "ASI": {
-"N": "0030",
+"N": "0032",
 "M3D": [
 1.0,
 0.0,
@@ -11613,8 +13243,8 @@
 0.0,
 1.0,
 0.0,
-0.0,
--22.8,
+-19.55,
+38.5,
 0.0,
 1.0
 ]
@@ -11640,7 +13270,7 @@
 "E": [
 {
 "ASI": {
-"N": "0031",
+"N": "0033",
 "M3D": [
 0.9979095458984375,
 0.0,
@@ -11669,7 +13299,7 @@
 }
 },
 {
-"SN": "hunte opp/-hunte anims/hunte downs",
+"SN": "hunte opp/-anims/-nomic/hunte no mic down",
 "TL": {
 "L": [
 {
@@ -11681,7 +13311,7 @@
 "E": [
 {
 "SI": {
-"SN": "hunte opp/hnte arm down",
+"SN": "hunte opp/hnte arm down no mic",
 "IN": "",
 "ST": "G",
 "FF": 0,
@@ -11749,7 +13379,7 @@
 "E": [
 {
 "SI": {
-"SN": "hunte opp/hnte arm down",
+"SN": "hunte opp/hnte arm down no mic",
 "IN": "",
 "ST": "G",
 "FF": 0,
@@ -12123,11 +13753,11 @@
 }
 },
 {
-"SN": "hunte opp/hnte arm down",
+"SN": "hunte opp/hnte arm down no mic",
 "TL": {
 "L": [
 {
-"LN": "Layer_4",
+"LN": "Layer_2",
 "FR": [
 {
 "I": 0,
@@ -12135,7 +13765,7 @@
 "E": [
 {
 "ASI": {
-"N": "0032",
+"N": "0034",
 "M3D": [
 0.999969482421875,
 0.0,
@@ -12150,7 +13780,7 @@
 1.0,
 0.0,
 0.05,
-0.55,
+-9.4,
 0.0,
 1.0
 ]
@@ -12176,7 +13806,7 @@
 "E": [
 {
 "ASI": {
-"N": "0033",
+"N": "0035",
 "M3D": [
 1.0,
 0.0,
@@ -12217,7 +13847,7 @@
 "E": [
 {
 "ASI": {
-"N": "0034",
+"N": "0036",
 "M3D": [
 0.915863037109375,
 0.0,
@@ -12246,1986 +13876,7 @@
 }
 },
 {
-"SN": "hunte opp/-hunte anims/hunte up the pose",
-"TL": {
-"L": [
-{
-"LN": "hunte_up_mic_arm",
-"FR": [
-{
-"I": 0,
-"DU": 2,
-"E": [
-{
-"SI": {
-"SN": "hunte opp/hunte up mic arm",
-"IN": "",
-"ST": "G",
-"FF": 0,
-"LP": "LP",
-"TRP": {
-"x": 134.75,
-"y": 131.4
-},
-"M3D": [
-0.9984130859375,
-0.056304931640625,
-0.0,
-0.0,
--0.056304931640625,
-0.9984130859375,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
--153.4,
--327.7,
-0.0,
-1.0
-]
-}
-}
-]
-},
-{
-"I": 2,
-"DU": 4,
-"E": [
-{
-"SI": {
-"SN": "hunte opp/hunte up mic arm",
-"IN": "",
-"ST": "G",
-"FF": 0,
-"LP": "LP",
-"TRP": {
-"x": 80.5,
-"y": 145.9
-},
-"M3D": [
-1.0,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
--175.75,
--293.8,
-0.0,
-1.0
-]
-}
-}
-]
-}
-]
-},
-{
-"LN": "hunte_head",
-"FR": [
-{
-"I": 0,
-"DU": 1,
-"E": [
-{
-"SI": {
-"SN": "hunte opp/hunte head",
-"IN": "",
-"ST": "G",
-"FF": 6,
-"LP": "SF",
-"TRP": {
-"x": 121.10000000000001,
-"y": 225.55
-},
-"M3D": [
-1.0,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
--87.1,
--460.9,
-0.0,
-1.0
-]
-}
-}
-]
-},
-{
-"I": 1,
-"DU": 1,
-"E": [
-{
-"SI": {
-"SN": "hunte opp/hunte head",
-"IN": "",
-"ST": "G",
-"FF": 6,
-"LP": "SF",
-"TRP": {
-"x": 121.1,
-"y": 225.55
-},
-"M3D": [
-1.0,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
--87.1,
--460.9,
-0.0,
-1.0
-]
-}
-}
-]
-},
-{
-"I": 2,
-"DU": 1,
-"E": [
-{
-"SI": {
-"SN": "hunte opp/hunte head",
-"IN": "",
-"ST": "G",
-"FF": 6,
-"LP": "SF",
-"TRP": {
-"x": 121.10000000000001,
-"y": 225.55
-},
-"M3D": [
-1.0,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
--87.1,
--444.4,
-0.0,
-1.0
-]
-}
-}
-]
-},
-{
-"I": 3,
-"DU": 1,
-"E": [
-{
-"SI": {
-"SN": "hunte opp/hunte head",
-"IN": "",
-"ST": "G",
-"FF": 6,
-"LP": "SF",
-"TRP": {
-"x": 121.1,
-"y": 225.55
-},
-"M3D": [
-1.0,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
--87.1,
--444.4,
-0.0,
-1.0
-]
-}
-}
-]
-},
-{
-"I": 4,
-"DU": 1,
-"E": [
-{
-"SI": {
-"SN": "hunte opp/hunte head",
-"IN": "",
-"ST": "G",
-"FF": 6,
-"LP": "SF",
-"TRP": {
-"x": 121.1,
-"y": 225.55
-},
-"M3D": [
-1.0,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
--87.1,
--444.4,
-0.0,
-1.0
-]
-}
-}
-]
-},
-{
-"I": 5,
-"DU": 1,
-"E": [
-{
-"SI": {
-"SN": "hunte opp/hunte head",
-"IN": "",
-"ST": "G",
-"FF": 6,
-"LP": "SF",
-"TRP": {
-"x": 121.1,
-"y": 225.55
-},
-"M3D": [
-1.0,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
--87.1,
--444.4,
-0.0,
-1.0
-]
-}
-}
-]
-}
-]
-},
-{
-"LN": "hunte_body_up",
-"FR": [
-{
-"I": 0,
-"DU": 2,
-"E": [
-{
-"SI": {
-"SN": "hunte opp/hunte body up",
-"IN": "",
-"ST": "G",
-"FF": 0,
-"LP": "LP",
-"TRP": {
-"x": 152.95000000000003,
-"y": 595.1
-},
-"M3D": [
-0.9233245849609375,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0333404541015626,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
--91.5,
--267.05,
-0.0,
-1.0
-]
-}
-}
-]
-},
-{
-"I": 2,
-"DU": 4,
-"E": [
-{
-"SI": {
-"SN": "hunte opp/hunte body up",
-"IN": "",
-"ST": "G",
-"FF": 0,
-"LP": "LP",
-"TRP": {
-"x": 151.3,
-"y": 297.05
-},
-"M3D": [
-1.0,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
--103.15,
--247.25,
-0.0,
-1.0
-]
-}
-}
-]
-}
-]
-}
-]
-}
-},
-{
-"SN": "hunte opp/hunte up mic arm",
-"TL": {
-"L": [
-{
-"LN": "Layer_5",
-"FR": [
-{
-"I": 0,
-"DU": 1,
-"E": [
-{
-"ASI": {
-"N": "0035",
-"M3D": [
-0.999969482421875,
-0.0,
-0.0,
-0.0,
-0.0,
-0.999969482421875,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
-0.0,
--11.5,
-0.0,
-1.0
-]
-}
-}
-]
-}
-]
-}
-]
-}
-},
-{
-"SN": "hunte opp/hunte body up",
-"TL": {
-"L": [
-{
-"LN": "Layer_5",
-"FR": [
-{
-"I": 0,
-"DU": 1,
-"E": [
-{
-"ASI": {
-"N": "0036",
-"M3D": [
-0.9677276611328125,
-0.0,
-0.0,
-0.0,
-0.0,
-0.9677276611328125,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
--21.15,
--58.45,
-0.0,
-1.0
-]
-}
-}
-]
-}
-]
-}
-]
-}
-},
-{
-"SN": "hunte opp/-hunte anims/hunte writin",
-"TL": {
-"L": [
-{
-"LN": "hunte_hand",
-"FR": [
-{
-"I": 0,
-"DU": 2,
-"E": [
-{
-"SI": {
-"SN": "hunte opp/hnte left aerm right",
-"IN": "",
-"ST": "G",
-"FF": 0,
-"LP": "LP",
-"TRP": {
-"x": 65.65,
-"y": 111.05
-},
-"M3D": [
-1.0,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
-166.35,
--165.95,
-0.0,
-1.0
-]
-}
-},
-{
-"SI": {
-"SN": "hunte opp/hnte rite arm rigt",
-"IN": "",
-"ST": "G",
-"FF": 0,
-"LP": "LP",
-"TRP": {
-"x": 63.7,
-"y": 51.050000000000007
-},
-"M3D": [
-0.98773193359375,
--0.156158447265625,
-0.0,
-0.0,
-0.156158447265625,
-0.98773193359375,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
--105.6,
--172.05,
-0.0,
-1.0
-]
-}
-}
-]
-},
-{
-"I": 2,
-"DU": 4,
-"E": [
-{
-"SI": {
-"SN": "hunte opp/hnte left aerm right",
-"IN": "",
-"ST": "G",
-"FF": 0,
-"LP": "LP",
-"TRP": {
-"x": 65.65,
-"y": 111.05
-},
-"M3D": [
-1.0,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
-126.85,
--168.7,
-0.0,
-1.0
-]
-}
-},
-{
-"SI": {
-"SN": "hunte opp/hnte rite arm rigt",
-"IN": "",
-"ST": "G",
-"FF": 0,
-"LP": "LP",
-"TRP": {
-"x": 136.85,
-"y": 55.7
-},
-"M3D": [
-1.0,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
--131.4,
--176.2,
-0.0,
-1.0
-]
-}
-}
-]
-}
-]
-},
-{
-"LN": "hunte_head",
-"FR": [
-{
-"I": 0,
-"DU": 1,
-"E": [
-{
-"SI": {
-"SN": "hunte opp/hunte head",
-"IN": "",
-"ST": "G",
-"FF": 7,
-"LP": "SF",
-"TRP": {
-"x": 121.15,
-"y": 225.5
-},
-"M3D": [
-0.99462890625,
--0.1032562255859375,
-0.0,
-0.0,
-0.1032562255859375,
-0.99462890625,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
-51.85,
--323.3,
-0.0,
-1.0
-]
-}
-}
-]
-},
-{
-"I": 1,
-"DU": 1,
-"E": [
-{
-"SI": {
-"SN": "hunte opp/hunte head",
-"IN": "",
-"ST": "G",
-"FF": 7,
-"LP": "SF",
-"TRP": {
-"x": 121.15,
-"y": 225.5
-},
-"M3D": [
-0.99462890625,
--0.1032562255859375,
-0.0,
-0.0,
-0.1032562255859375,
-0.99462890625,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
-51.85,
--323.3,
-0.0,
-1.0
-]
-}
-}
-]
-},
-{
-"I": 2,
-"DU": 1,
-"E": [
-{
-"SI": {
-"SN": "hunte opp/hunte head",
-"IN": "",
-"ST": "G",
-"FF": 8,
-"LP": "SF",
-"TRP": {
-"x": 121.15,
-"y": 225.55
-},
-"M3D": [
-0.9969482421875,
--0.07806396484375,
-0.0,
-0.0,
-0.07806396484375,
-0.9969482421875,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
-2.0,
--326.85,
-0.0,
-1.0
-]
-}
-}
-]
-},
-{
-"I": 3,
-"DU": 1,
-"E": [
-{
-"SI": {
-"SN": "hunte opp/hunte head",
-"IN": "",
-"ST": "G",
-"FF": 8,
-"LP": "SF",
-"TRP": {
-"x": 121.15,
-"y": 225.55
-},
-"M3D": [
-0.9969482421875,
--0.07806396484375,
-0.0,
-0.0,
-0.07806396484375,
-0.9969482421875,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
-2.0,
--326.85,
-0.0,
-1.0
-]
-}
-}
-]
-},
-{
-"I": 4,
-"DU": 1,
-"E": [
-{
-"SI": {
-"SN": "hunte opp/hunte head",
-"IN": "",
-"ST": "G",
-"FF": 8,
-"LP": "SF",
-"TRP": {
-"x": 121.15,
-"y": 225.55
-},
-"M3D": [
-0.9969482421875,
--0.07806396484375,
-0.0,
-0.0,
-0.07806396484375,
-0.9969482421875,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
-2.0,
--326.85,
-0.0,
-1.0
-]
-}
-}
-]
-},
-{
-"I": 5,
-"DU": 1,
-"E": [
-{
-"SI": {
-"SN": "hunte opp/hunte head",
-"IN": "",
-"ST": "G",
-"FF": 8,
-"LP": "SF",
-"TRP": {
-"x": 121.15,
-"y": 225.55
-},
-"M3D": [
-0.9969482421875,
--0.07806396484375,
-0.0,
-0.0,
-0.07806396484375,
-0.9969482421875,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
-2.0,
--326.85,
-0.0,
-1.0
-]
-}
-}
-]
-}
-]
-},
-{
-"LN": "hunt_bodey_rite",
-"FR": [
-{
-"I": 0,
-"DU": 2,
-"E": [
-{
-"SI": {
-"SN": "hunte opp/hunt bodey rite",
-"IN": "",
-"ST": "G",
-"FF": 0,
-"LP": "LP",
-"TRP": {
-"x": 141.75,
-"y": 451.75
-},
-"M3D": [
-1.0,
-0.0,
-0.0,
-0.0,
--0.1097259521484375,
-1.0,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
--35.5,
--115.2,
-0.0,
-1.0
-]
-}
-}
-]
-},
-{
-"I": 2,
-"DU": 4,
-"E": [
-{
-"SI": {
-"SN": "hunte opp/hunt bodey rite",
-"IN": "",
-"ST": "G",
-"FF": 0,
-"LP": "LP",
-"TRP": {
-"x": 140.3,
-"y": 236.25
-},
-"M3D": [
-1.0,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
--86.95,
--115.2,
-0.0,
-1.0
-]
-}
-}
-]
-}
-]
-}
-]
-}
-},
-{
-"SN": "hunte opp/hnte left aerm right",
-"TL": {
-"L": [
-{
-"LN": "Layer_4",
-"FR": [
-{
-"I": 0,
-"DU": 1,
-"E": [
-{
-"ASI": {
-"N": "0037",
-"M3D": [
-1.0,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0
-]
-}
-}
-]
-}
-]
-}
-]
-}
-},
-{
-"SN": "hunte opp/hnte rite arm rigt",
-"TL": {
-"L": [
-{
-"LN": "Layer_4",
-"FR": [
-{
-"I": 0,
-"DU": 1,
-"E": [
-{
-"ASI": {
-"N": "0038",
-"M3D": [
-1.0,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
--16.15,
-0.1,
-0.0,
-1.0
-]
-}
-}
-]
-}
-]
-}
-]
-}
-},
-{
-"SN": "hunte opp/hunt bodey rite",
-"TL": {
-"L": [
-{
-"LN": "Layer_5",
-"FR": [
-{
-"I": 0,
-"DU": 1,
-"E": [
-{
-"ASI": {
-"N": "0039",
-"M3D": [
-0.9940338134765625,
-0.0,
-0.0,
-0.0,
-0.0,
-0.9940338134765625,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
--22.85,
--86.35,
-0.0,
-1.0
-]
-}
-}
-]
-}
-]
-}
-]
-}
-},
-{
-"SN": "hunte opp/-hunte anims/hunte no mic left hit",
-"TL": {
-"L": [
-{
-"LN": "hunte_arm_left",
-"FR": [
-{
-"I": 0,
-"DU": 2,
-"E": [
-{
-"SI": {
-"SN": "hunte opp/hunte hand jazz",
-"IN": "",
-"ST": "G",
-"FF": 0,
-"LP": "LP",
-"TRP": {
-"x": 112.2,
-"y": 200.10000000000003
-},
-"M3D": [
-0.9736785888671875,
--0.2278900146484375,
-0.0,
-0.0,
-0.2278900146484375,
-0.9736785888671875,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
--271.5,
--156.35,
-0.0,
-1.0
-]
-}
-}
-]
-},
-{
-"I": 2,
-"DU": 4,
-"E": [
-{
-"SI": {
-"SN": "hunte opp/hunte hand jazz",
-"IN": "",
-"ST": "G",
-"FF": 0,
-"LP": "LP",
-"TRP": {
-"x": 0.0,
-"y": 0.0
-},
-"M3D": [
-1.0,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
--210.85,
--180.75,
-0.0,
-1.0
-]
-}
-}
-]
-}
-]
-},
-{
-"LN": "hunte_head",
-"FR": [
-{
-"I": 0,
-"DU": 1,
-"E": [
-{
-"SI": {
-"SN": "hunte opp/hunte head",
-"IN": "",
-"ST": "G",
-"FF": 1,
-"LP": "SF",
-"TRP": {
-"x": 121.05,
-"y": 225.5
-},
-"M3D": [
-0.9931640625,
-0.1166839599609375,
-0.0,
-0.0,
--0.1166839599609375,
-0.9931640625,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
--133.35,
--399.4,
-0.0,
-1.0
-]
-}
-}
-]
-},
-{
-"I": 1,
-"DU": 1,
-"E": [
-{
-"SI": {
-"SN": "hunte opp/hunte head",
-"IN": "",
-"ST": "G",
-"FF": 1,
-"LP": "SF",
-"TRP": {
-"x": 121.05,
-"y": 225.5
-},
-"M3D": [
-0.9931640625,
-0.1166839599609375,
-0.0,
-0.0,
--0.1166839599609375,
-0.9931640625,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
--133.35,
--399.4,
-0.0,
-1.0
-]
-}
-}
-]
-},
-{
-"I": 2,
-"DU": 1,
-"E": [
-{
-"SI": {
-"SN": "hunte opp/hunte head",
-"IN": "",
-"ST": "G",
-"FF": 2,
-"LP": "SF",
-"TRP": {
-"x": 121.10000000000001,
-"y": 225.5
-},
-"M3D": [
-0.997589111328125,
-0.06939697265625,
-0.0,
-0.0,
--0.06939697265625,
-0.997589111328125,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
--111.55,
--394.65,
-0.0,
-1.0
-]
-}
-}
-]
-},
-{
-"I": 3,
-"DU": 1,
-"E": [
-{
-"SI": {
-"SN": "hunte opp/hunte head",
-"IN": "",
-"ST": "G",
-"FF": 2,
-"LP": "SF",
-"TRP": {
-"x": 121.1,
-"y": 225.5
-},
-"M3D": [
-0.997589111328125,
-0.06939697265625,
-0.0,
-0.0,
--0.06939697265625,
-0.997589111328125,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
--111.55,
--394.65,
-0.0,
-1.0
-]
-}
-}
-]
-},
-{
-"I": 4,
-"DU": 1,
-"E": [
-{
-"SI": {
-"SN": "hunte opp/hunte head",
-"IN": "",
-"ST": "G",
-"FF": 2,
-"LP": "SF",
-"TRP": {
-"x": 121.1,
-"y": 225.5
-},
-"M3D": [
-0.997589111328125,
-0.06939697265625,
-0.0,
-0.0,
--0.06939697265625,
-0.997589111328125,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
--111.55,
--394.65,
-0.0,
-1.0
-]
-}
-}
-]
-},
-{
-"I": 5,
-"DU": 1,
-"E": [
-{
-"SI": {
-"SN": "hunte opp/hunte head",
-"IN": "",
-"ST": "G",
-"FF": 2,
-"LP": "SF",
-"TRP": {
-"x": 121.1,
-"y": 225.5
-},
-"M3D": [
-0.997589111328125,
-0.06939697265625,
-0.0,
-0.0,
--0.06939697265625,
-0.997589111328125,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
--111.55,
--394.65,
-0.0,
-1.0
-]
-}
-}
-]
-}
-]
-},
-{
-"LN": "hunte_body_left",
-"FR": [
-{
-"I": 0,
-"DU": 2,
-"E": [
-{
-"SI": {
-"SN": "hunte opp/hunte body left",
-"IN": "",
-"ST": "G",
-"FF": 0,
-"LP": "LP",
-"TRP": {
-"x": 211.95000000000003,
-"y": 530.6
-},
-"M3D": [
-1.0,
-0.0,
-0.0,
-0.0,
-0.064544677734375,
-1.0,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
--186.65,
--184.95,
-0.0,
-1.0
-]
-}
-}
-]
-},
-{
-"I": 2,
-"DU": 4,
-"E": [
-{
-"SI": {
-"SN": "hunte opp/hunte body left",
-"IN": "",
-"ST": "G",
-"FF": 0,
-"LP": "LP",
-"TRP": {
-"x": 257.90000000000006,
-"y": 265.55
-},
-"M3D": [
-1.0,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
--152.45,
--184.95,
-0.0,
-1.0
-]
-}
-}
-]
-}
-]
-}
-]
-}
-},
-{
-"SN": "hunte opp/hunte hand jazz",
-"TL": {
-"L": [
-{
-"LN": "Layer_2",
-"FR": [
-{
-"I": 0,
-"DU": 1,
-"E": [
-{
-"ASI": {
-"N": "0040",
-"M3D": [
-1.0,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
--19.55,
-38.5,
-0.0,
-1.0
-]
-}
-}
-]
-}
-]
-}
-]
-}
-},
-{
-"SN": "hunte opp/-hunte anims/hunte no mic down",
-"TL": {
-"L": [
-{
-"LN": "hunte_hand",
-"FR": [
-{
-"I": 0,
-"DU": 2,
-"E": [
-{
-"SI": {
-"SN": "hunte opp/hnte arm down no mic",
-"IN": "",
-"ST": "G",
-"FF": 0,
-"LP": "LP",
-"TRP": {
-"x": 13.85,
-"y": 189.35
-},
-"M3D": [
-0.9984130859375,
-0.056304931640625,
-0.0,
-0.0,
--0.056304931640625,
-0.9984130859375,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
--137.3,
--122.35,
-0.0,
-1.0
-]
-}
-},
-{
-"SI": {
-"SN": "hunte opp/hnte other down arem",
-"IN": "",
-"ST": "G",
-"FF": 0,
-"LP": "LP",
-"TRP": {
-"x": 123.7,
-"y": 117.60000000000001
-},
-"M3D": [
-0.98846435546875,
-0.15142822265625,
-0.0,
-0.0,
--0.1379852294921875,
-0.900665283203125,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
-108.2,
--184.55,
-0.0,
-1.0
-]
-}
-}
-]
-},
-{
-"I": 2,
-"DU": 4,
-"E": [
-{
-"SI": {
-"SN": "hunte opp/hnte arm down no mic",
-"IN": "",
-"ST": "G",
-"FF": 0,
-"LP": "LP",
-"TRP": {
-"x": 94.45,
-"y": 98.7
-},
-"M3D": [
-1.0,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
--147.95,
--134.95,
-0.0,
-1.0
-]
-}
-},
-{
-"SI": {
-"SN": "hunte opp/hnte other down arem",
-"IN": "",
-"ST": "G",
-"FF": 0,
-"LP": "LP",
-"TRP": {
-"x": 108.9,
-"y": 77.30000000000001
-},
-"M3D": [
-1.0,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
-84.05,
--219.75,
-0.0,
-1.0
-]
-}
-}
-]
-}
-]
-},
-{
-"LN": "hunte_head",
-"FR": [
-{
-"I": 0,
-"DU": 1,
-"E": [
-{
-"SI": {
-"SN": "hunte opp/hunte head",
-"IN": "",
-"ST": "G",
-"FF": 4,
-"LP": "SF",
-"TRP": {
-"x": 121.2,
-"y": 225.55
-},
-"M3D": [
-1.0,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
--49.85,
--263.45,
-0.0,
-1.0
-]
-}
-}
-]
-},
-{
-"I": 1,
-"DU": 1,
-"E": [
-{
-"SI": {
-"SN": "hunte opp/hunte head",
-"IN": "",
-"ST": "G",
-"FF": 4,
-"LP": "SF",
-"TRP": {
-"x": 121.2,
-"y": 225.55
-},
-"M3D": [
-1.0,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
--49.85,
--263.45,
-0.0,
-1.0
-]
-}
-}
-]
-},
-{
-"I": 2,
-"DU": 1,
-"E": [
-{
-"SI": {
-"SN": "hunte opp/hunte head",
-"IN": "",
-"ST": "G",
-"FF": 4,
-"LP": "SF",
-"TRP": {
-"x": 121.2,
-"y": 225.55
-},
-"M3D": [
-1.0,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
--49.85,
--282.95,
-0.0,
-1.0
-]
-}
-}
-]
-},
-{
-"I": 3,
-"DU": 1,
-"E": [
-{
-"SI": {
-"SN": "hunte opp/hunte head",
-"IN": "",
-"ST": "G",
-"FF": 4,
-"LP": "SF",
-"TRP": {
-"x": 121.2,
-"y": 225.55
-},
-"M3D": [
-1.0,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
--49.85,
--282.95,
-0.0,
-1.0
-]
-}
-}
-]
-},
-{
-"I": 4,
-"DU": 1,
-"E": [
-{
-"SI": {
-"SN": "hunte opp/hunte head",
-"IN": "",
-"ST": "G",
-"FF": 4,
-"LP": "SF",
-"TRP": {
-"x": 121.2,
-"y": 225.55
-},
-"M3D": [
-1.0,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
--49.85,
--282.95,
-0.0,
-1.0
-]
-}
-}
-]
-},
-{
-"I": 5,
-"DU": 1,
-"E": [
-{
-"SI": {
-"SN": "hunte opp/hunte head",
-"IN": "",
-"ST": "G",
-"FF": 4,
-"LP": "SF",
-"TRP": {
-"x": 121.2,
-"y": 225.55
-},
-"M3D": [
-1.0,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
--49.85,
--282.95,
-0.0,
-1.0
-]
-}
-}
-]
-}
-]
-},
-{
-"LN": "hntw_body",
-"FR": [
-{
-"I": 0,
-"DU": 2,
-"E": [
-{
-"SI": {
-"SN": "hunte opp/hntw body down",
-"IN": "",
-"ST": "G",
-"FF": 0,
-"LP": "LP",
-"TRP": {
-"x": 182.85,
-"y": 480.40000000000006
-},
-"M3D": [
-1.09185791015625,
-0.0,
-0.0,
-0.0,
-0.0,
-0.91259765625,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
--150.65,
--91.75,
-0.0,
-1.0
-]
-}
-}
-]
-},
-{
-"I": 2,
-"DU": 4,
-"E": [
-{
-"SI": {
-"SN": "hunte opp/hntw body down",
-"IN": "",
-"ST": "G",
-"FF": 0,
-"LP": "LP",
-"TRP": {
-"x": 182.9,
-"y": 240.3
-},
-"M3D": [
-1.0,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
--133.85,
--133.75,
-0.0,
-1.0
-]
-}
-}
-]
-}
-]
-}
-]
-}
-},
-{
-"SN": "hunte opp/hnte arm down no mic",
-"TL": {
-"L": [
-{
-"LN": "Layer_2",
-"FR": [
-{
-"I": 0,
-"DU": 1,
-"E": [
-{
-"ASI": {
-"N": "0041",
-"M3D": [
-0.999969482421875,
-0.0,
-0.0,
-0.0,
-0.0,
-0.999969482421875,
-0.0,
-0.0,
-0.0,
-0.0,
-1.0,
-0.0,
-0.05,
--9.4,
-0.0,
-1.0
-]
-}
-}
-]
-}
-]
-}
-]
-}
-},
-{
-"SN": "hunte opp/-hunte anims/hunte up is proud",
+"SN": "hunte opp/-anims/-nomic/hunte up is proud",
 "TL": {
 "L": [
 {
@@ -14617,6 +14268,47 @@
 }
 },
 {
+"SN": "hunte opp/hunte body up",
+"TL": {
+"L": [
+{
+"LN": "Layer_5",
+"FR": [
+{
+"I": 0,
+"DU": 1,
+"E": [
+{
+"ASI": {
+"N": "0037",
+"M3D": [
+0.9677276611328125,
+0.0,
+0.0,
+0.0,
+0.0,
+0.9677276611328125,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+-21.15,
+-58.45,
+0.0,
+1.0
+]
+}
+}
+]
+}
+]
+}
+]
+}
+},
+{
 "SN": "hunte opp/hunte up mic arm no mic",
 "TL": {
 "L": [
@@ -14629,7 +14321,7 @@
 "E": [
 {
 "ASI": {
-"N": "0042",
+"N": "0038",
 "M3D": [
 0.999969482421875,
 0.0,
@@ -14658,7 +14350,7 @@
 }
 },
 {
-"SN": "hunte opp/-hunte anims/hunte no mic rite",
+"SN": "hunte opp/-anims/-nomic/hunte no mic rite",
 "TL": {
 "L": [
 {
@@ -15112,6 +14804,47 @@
 }
 },
 {
+"SN": "hunte opp/hnte left aerm right",
+"TL": {
+"L": [
+{
+"LN": "Layer_4",
+"FR": [
+{
+"I": 0,
+"DU": 1,
+"E": [
+{
+"ASI": {
+"N": "0039",
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0
+]
+}
+}
+]
+}
+]
+}
+]
+}
+},
+{
 "SN": "hunte opp/hnte rite arm no rites",
 "TL": {
 "L": [
@@ -15124,7 +14857,7 @@
 "E": [
 {
 "ASI": {
-"N": "0043",
+"N": "0040",
 "M3D": [
 0.9999847412109375,
 0.0,
@@ -15153,7 +14886,7186 @@
 }
 },
 {
-"SN": "hunte opp/-hunte anims/hunte throw mix",
+"SN": "hunte opp/hunt bodey rite",
+"TL": {
+"L": [
+{
+"LN": "Layer_5",
+"FR": [
+{
+"I": 0,
+"DU": 1,
+"E": [
+{
+"ASI": {
+"N": "0041",
+"M3D": [
+0.9940338134765625,
+0.0,
+0.0,
+0.0,
+0.0,
+0.9940338134765625,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+-22.85,
+-86.35,
+0.0,
+1.0
+]
+}
+}
+]
+}
+]
+}
+]
+}
+},
+{
+"SN": "hunte opp/-anims/-mic/hunte mic idle",
+"TL": {
+"L": [
+{
+"LN": "hunte_head",
+"FR": [
+{
+"I": 0,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/hunte head",
+"IN": "",
+"ST": "G",
+"FF": 0,
+"LP": "SF",
+"TRP": {
+"x": 121.10000000000001,
+"y": 225.55
+},
+"M3D": [
+0.98638916015625,
+0.164306640625,
+0.0,
+0.0,
+-0.164306640625,
+0.98638916015625,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+-39.5,
+-387.4,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 1,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/hunte head",
+"IN": "",
+"ST": "G",
+"FF": 0,
+"LP": "SF",
+"TRP": {
+"x": 121.1,
+"y": 225.55
+},
+"M3D": [
+0.98638916015625,
+0.164306640625,
+0.0,
+0.0,
+-0.164306640625,
+0.98638916015625,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+-39.5,
+-387.4,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 2,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/hunte head",
+"IN": "",
+"ST": "G",
+"FF": 0,
+"LP": "SF",
+"TRP": {
+"x": 121.10000000000001,
+"y": 225.5
+},
+"M3D": [
+0.995330810546875,
+0.0962066650390625,
+0.0,
+0.0,
+-0.0962066650390625,
+0.995330810546875,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+-55.85,
+-401.65,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 3,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/hunte head",
+"IN": "",
+"ST": "G",
+"FF": 0,
+"LP": "SF",
+"TRP": {
+"x": 121.1,
+"y": 225.5
+},
+"M3D": [
+0.995330810546875,
+0.0962066650390625,
+0.0,
+0.0,
+-0.0962066650390625,
+0.995330810546875,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+-55.85,
+-401.65,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 4,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/hunte head",
+"IN": "",
+"ST": "G",
+"FF": 0,
+"LP": "SF",
+"TRP": {
+"x": 121.15,
+"y": 225.60000000000003
+},
+"M3D": [
+0.9972381591796875,
+0.07415771484375,
+0.0,
+0.0,
+-0.07415771484375,
+0.9972381591796875,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+-61.15,
+-413.0,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 5,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/hunte head",
+"IN": "",
+"ST": "G",
+"FF": 0,
+"LP": "SF",
+"TRP": {
+"x": 121.15,
+"y": 225.6
+},
+"M3D": [
+0.9972381591796875,
+0.07415771484375,
+0.0,
+0.0,
+-0.07415771484375,
+0.9972381591796875,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+-61.15,
+-413.0,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 6,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/hunte head",
+"IN": "",
+"ST": "G",
+"FF": 0,
+"LP": "SF",
+"TRP": {
+"x": 121.2,
+"y": 225.60000000000003
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+-78.3,
+-417.05,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 7,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/hunte head",
+"IN": "",
+"ST": "G",
+"FF": 0,
+"LP": "SF",
+"TRP": {
+"x": 121.2,
+"y": 225.6
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+-78.3,
+-417.05,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 8,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/hunte head",
+"IN": "",
+"ST": "G",
+"FF": 0,
+"LP": "SF",
+"TRP": {
+"x": 121.2,
+"y": 225.6
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+-78.3,
+-417.05,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 9,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/hunte head",
+"IN": "",
+"ST": "G",
+"FF": 0,
+"LP": "SF",
+"TRP": {
+"x": 121.2,
+"y": 225.6
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+-78.3,
+-417.05,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 10,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/hunte head",
+"IN": "",
+"ST": "G",
+"FF": 0,
+"LP": "SF",
+"TRP": {
+"x": 121.2,
+"y": 225.6
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+-78.3,
+-417.05,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 11,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/hunte head",
+"IN": "",
+"ST": "G",
+"FF": 0,
+"LP": "SF",
+"TRP": {
+"x": 121.2,
+"y": 225.6
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+-78.3,
+-417.05,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 12,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/hunte head",
+"IN": "",
+"ST": "G",
+"FF": 0,
+"LP": "SF",
+"TRP": {
+"x": 121.2,
+"y": 225.6
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+-78.3,
+-417.05,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 13,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/hunte head",
+"IN": "",
+"ST": "G",
+"FF": 0,
+"LP": "SF",
+"TRP": {
+"x": 121.2,
+"y": 225.6
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+-78.3,
+-417.05,
+0.0,
+1.0
+]
+}
+}
+]
+}
+]
+},
+{
+"LN": "hunte_hand",
+"FR": [
+{
+"I": 0,
+"DU": 2,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/hunte hand mic",
+"IN": "",
+"ST": "G",
+"FF": 0,
+"LP": "PO",
+"TRP": {
+"x": 88.10000000000001,
+"y": 46.6
+},
+"M3D": [
+0.9915618896484375,
+-0.1296234130859375,
+0.0,
+0.0,
+0.1296234130859375,
+0.9915618896484375,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+-237.15,
+-23.65,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 2,
+"DU": 2,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/hunte hand mic",
+"IN": "",
+"ST": "G",
+"FF": 0,
+"LP": "PO",
+"TRP": {
+"x": 88.15,
+"y": 46.6
+},
+"M3D": [
+0.9981689453125,
+-0.06048583984375,
+0.0,
+0.0,
+0.06048583984375,
+0.9981689453125,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+-225.6,
+-37.2,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 4,
+"DU": 2,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/hunte hand mic",
+"IN": "",
+"ST": "G",
+"FF": 0,
+"LP": "PO",
+"TRP": {
+"x": 88.15,
+"y": 46.65
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+-217.1,
+-46.6,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 6,
+"DU": 8,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/hunte hand mic",
+"IN": "",
+"ST": "G",
+"FF": 0,
+"LP": "PO",
+"TRP": {
+"x": 88.10000000000001,
+"y": 46.65
+},
+"M3D": [
+0.989715576171875,
+0.143035888671875,
+0.0,
+0.0,
+-0.143035888671875,
+0.989715576171875,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+-203.0,
+-65.25,
+0.0,
+1.0
+]
+}
+}
+]
+}
+]
+},
+{
+"LN": "hunte_body",
+"FR": [
+{
+"I": 0,
+"DU": 2,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/hunte body",
+"IN": "",
+"ST": "G",
+"FF": 0,
+"LP": "LP",
+"TRP": {
+"x": 200.05,
+"y": 616.45
+},
+"M3D": [
+1.1012420654296876,
+0.0,
+0.0,
+0.0,
+0.0,
+0.945068359375,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+-166.95,
+-235.0,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 2,
+"DU": 2,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/hunte body",
+"IN": "",
+"ST": "G",
+"FF": 0,
+"LP": "LP",
+"TRP": {
+"x": 200.10000000000003,
+"y": 616.3000000000001
+},
+"M3D": [
+1.0652923583984376,
+0.0,
+0.0,
+0.0,
+0.0,
+0.9633026123046875,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+-159.8,
+-246.15,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 4,
+"DU": 2,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/hunte body",
+"IN": "",
+"ST": "G",
+"FF": 0,
+"LP": "LP",
+"TRP": {
+"x": 200.0,
+"y": 616.4000000000001
+},
+"M3D": [
+1.029296875,
+0.0,
+0.0,
+0.0,
+0.0,
+0.979766845703125,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+-152.55,
+-256.4,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 6,
+"DU": 8,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/hunte body",
+"IN": "",
+"ST": "G",
+"FF": 0,
+"LP": "LP",
+"TRP": {
+"x": 200.10000000000003,
+"y": 616.45
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+-146.75,
+-268.9,
+0.0,
+1.0
+]
+}
+}
+]
+}
+]
+}
+]
+}
+},
+{
+"SN": "hunte opp/hunte hand mic",
+"TL": {
+"L": [
+{
+"LN": "Layer_2",
+"FR": [
+{
+"I": 0,
+"DU": 1,
+"E": [
+{
+"ASI": {
+"N": "0042",
+"M3D": [
+0.958892822265625,
+0.0,
+0.0,
+0.0,
+0.0,
+0.958892822265625,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+-65.85,
+23.6,
+0.0,
+1.0
+]
+}
+}
+]
+}
+]
+}
+]
+}
+},
+{
+"SN": "hunte opp/-anims/-mic/hunte alt mic idle",
+"TL": {
+"L": [
+{
+"LN": "hunte_head",
+"FR": [
+{
+"I": 0,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/hunte head",
+"IN": "",
+"ST": "G",
+"FF": 9,
+"LP": "SF",
+"TRP": {
+"x": 121.10000000000001,
+"y": 225.55
+},
+"M3D": [
+0.98638916015625,
+0.164306640625,
+0.0,
+0.0,
+-0.164306640625,
+0.98638916015625,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+-39.5,
+-387.4,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 1,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/hunte head",
+"IN": "",
+"ST": "G",
+"FF": 9,
+"LP": "SF",
+"TRP": {
+"x": 121.1,
+"y": 225.55
+},
+"M3D": [
+0.98638916015625,
+0.164306640625,
+0.0,
+0.0,
+-0.164306640625,
+0.98638916015625,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+-39.5,
+-387.4,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 2,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/hunte head",
+"IN": "",
+"ST": "G",
+"FF": 9,
+"LP": "SF",
+"TRP": {
+"x": 121.10000000000001,
+"y": 225.5
+},
+"M3D": [
+0.995330810546875,
+0.0962066650390625,
+0.0,
+0.0,
+-0.0962066650390625,
+0.995330810546875,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+-55.85,
+-401.65,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 3,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/hunte head",
+"IN": "",
+"ST": "G",
+"FF": 9,
+"LP": "SF",
+"TRP": {
+"x": 121.1,
+"y": 225.5
+},
+"M3D": [
+0.995330810546875,
+0.0962066650390625,
+0.0,
+0.0,
+-0.0962066650390625,
+0.995330810546875,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+-55.85,
+-401.65,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 4,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/hunte head",
+"IN": "",
+"ST": "G",
+"FF": 9,
+"LP": "SF",
+"TRP": {
+"x": 121.15,
+"y": 225.60000000000003
+},
+"M3D": [
+0.9972381591796875,
+0.07415771484375,
+0.0,
+0.0,
+-0.07415771484375,
+0.9972381591796875,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+-61.15,
+-413.0,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 5,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/hunte head",
+"IN": "",
+"ST": "G",
+"FF": 9,
+"LP": "SF",
+"TRP": {
+"x": 121.15,
+"y": 225.6
+},
+"M3D": [
+0.9972381591796875,
+0.07415771484375,
+0.0,
+0.0,
+-0.07415771484375,
+0.9972381591796875,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+-61.15,
+-413.0,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 6,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/hunte head",
+"IN": "",
+"ST": "G",
+"FF": 9,
+"LP": "SF",
+"TRP": {
+"x": 121.2,
+"y": 225.60000000000003
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+-78.3,
+-417.05,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 7,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/hunte head",
+"IN": "",
+"ST": "G",
+"FF": 9,
+"LP": "SF",
+"TRP": {
+"x": 121.2,
+"y": 225.6
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+-78.3,
+-417.05,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 8,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/hunte head",
+"IN": "",
+"ST": "G",
+"FF": 9,
+"LP": "SF",
+"TRP": {
+"x": 121.2,
+"y": 225.6
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+-78.3,
+-417.05,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 9,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/hunte head",
+"IN": "",
+"ST": "G",
+"FF": 9,
+"LP": "SF",
+"TRP": {
+"x": 121.2,
+"y": 225.6
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+-78.3,
+-417.05,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 10,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/hunte head",
+"IN": "",
+"ST": "G",
+"FF": 9,
+"LP": "SF",
+"TRP": {
+"x": 121.2,
+"y": 225.6
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+-78.3,
+-417.05,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 11,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/hunte head",
+"IN": "",
+"ST": "G",
+"FF": 9,
+"LP": "SF",
+"TRP": {
+"x": 121.2,
+"y": 225.6
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+-78.3,
+-417.05,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 12,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/hunte head",
+"IN": "",
+"ST": "G",
+"FF": 9,
+"LP": "SF",
+"TRP": {
+"x": 121.2,
+"y": 225.6
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+-78.3,
+-417.05,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 13,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/hunte head",
+"IN": "",
+"ST": "G",
+"FF": 9,
+"LP": "SF",
+"TRP": {
+"x": 121.2,
+"y": 225.6
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+-78.3,
+-417.05,
+0.0,
+1.0
+]
+}
+}
+]
+}
+]
+},
+{
+"LN": "hunte_hand",
+"FR": [
+{
+"I": 0,
+"DU": 2,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/hunte hand mic",
+"IN": "",
+"ST": "G",
+"FF": 0,
+"LP": "PO",
+"TRP": {
+"x": 88.10000000000001,
+"y": 46.6
+},
+"M3D": [
+0.9915618896484375,
+-0.1296234130859375,
+0.0,
+0.0,
+0.1296234130859375,
+0.9915618896484375,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+-237.15,
+-23.65,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 2,
+"DU": 2,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/hunte hand mic",
+"IN": "",
+"ST": "G",
+"FF": 0,
+"LP": "PO",
+"TRP": {
+"x": 88.15,
+"y": 46.6
+},
+"M3D": [
+0.9981689453125,
+-0.06048583984375,
+0.0,
+0.0,
+0.06048583984375,
+0.9981689453125,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+-225.6,
+-37.2,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 4,
+"DU": 2,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/hunte hand mic",
+"IN": "",
+"ST": "G",
+"FF": 0,
+"LP": "PO",
+"TRP": {
+"x": 88.15,
+"y": 46.65
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+-217.1,
+-46.6,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 6,
+"DU": 8,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/hunte hand mic",
+"IN": "",
+"ST": "G",
+"FF": 0,
+"LP": "PO",
+"TRP": {
+"x": 88.10000000000001,
+"y": 46.65
+},
+"M3D": [
+0.989715576171875,
+0.143035888671875,
+0.0,
+0.0,
+-0.143035888671875,
+0.989715576171875,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+-203.0,
+-65.25,
+0.0,
+1.0
+]
+}
+}
+]
+}
+]
+},
+{
+"LN": "hunte_body",
+"FR": [
+{
+"I": 0,
+"DU": 2,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/hunte body",
+"IN": "",
+"ST": "G",
+"FF": 0,
+"LP": "LP",
+"TRP": {
+"x": 200.05,
+"y": 616.45
+},
+"M3D": [
+1.1012420654296876,
+0.0,
+0.0,
+0.0,
+0.0,
+0.945068359375,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+-166.95,
+-235.0,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 2,
+"DU": 2,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/hunte body",
+"IN": "",
+"ST": "G",
+"FF": 0,
+"LP": "LP",
+"TRP": {
+"x": 200.10000000000003,
+"y": 616.3000000000001
+},
+"M3D": [
+1.0652923583984376,
+0.0,
+0.0,
+0.0,
+0.0,
+0.9633026123046875,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+-159.8,
+-246.15,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 4,
+"DU": 2,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/hunte body",
+"IN": "",
+"ST": "G",
+"FF": 0,
+"LP": "LP",
+"TRP": {
+"x": 200.0,
+"y": 616.4000000000001
+},
+"M3D": [
+1.029296875,
+0.0,
+0.0,
+0.0,
+0.0,
+0.979766845703125,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+-152.55,
+-256.4,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 6,
+"DU": 8,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/hunte body",
+"IN": "",
+"ST": "G",
+"FF": 0,
+"LP": "LP",
+"TRP": {
+"x": 200.10000000000003,
+"y": 616.45
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+-146.75,
+-268.9,
+0.0,
+1.0
+]
+}
+}
+]
+}
+]
+}
+]
+}
+},
+{
+"SN": "hunte opp/-anims/-mic/hunte left hit",
+"TL": {
+"L": [
+{
+"LN": "hunte_arm_left",
+"FR": [
+{
+"I": 0,
+"DU": 2,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/hunte arm left",
+"IN": "",
+"ST": "G",
+"FF": 0,
+"LP": "LP",
+"TRP": {
+"x": 112.2,
+"y": 200.10000000000003
+},
+"M3D": [
+0.9736785888671875,
+-0.2278900146484375,
+0.0,
+0.0,
+0.2278900146484375,
+0.9736785888671875,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+-271.5,
+-156.35,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 2,
+"DU": 4,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/hunte arm left",
+"IN": "",
+"ST": "G",
+"FF": 0,
+"LP": "LP",
+"TRP": {
+"x": 0.0,
+"y": 0.0
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+-210.85,
+-180.75,
+0.0,
+1.0
+]
+}
+}
+]
+}
+]
+},
+{
+"LN": "hunte_head",
+"FR": [
+{
+"I": 0,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/hunte head",
+"IN": "",
+"ST": "G",
+"FF": 1,
+"LP": "SF",
+"TRP": {
+"x": 121.05,
+"y": 225.5
+},
+"M3D": [
+0.9931640625,
+0.1166839599609375,
+0.0,
+0.0,
+-0.1166839599609375,
+0.9931640625,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+-133.35,
+-399.4,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 1,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/hunte head",
+"IN": "",
+"ST": "G",
+"FF": 1,
+"LP": "SF",
+"TRP": {
+"x": 121.05,
+"y": 225.5
+},
+"M3D": [
+0.9931640625,
+0.1166839599609375,
+0.0,
+0.0,
+-0.1166839599609375,
+0.9931640625,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+-133.35,
+-399.4,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 2,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/hunte head",
+"IN": "",
+"ST": "G",
+"FF": 2,
+"LP": "SF",
+"TRP": {
+"x": 121.10000000000001,
+"y": 225.5
+},
+"M3D": [
+0.997589111328125,
+0.06939697265625,
+0.0,
+0.0,
+-0.06939697265625,
+0.997589111328125,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+-111.55,
+-394.65,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 3,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/hunte head",
+"IN": "",
+"ST": "G",
+"FF": 2,
+"LP": "SF",
+"TRP": {
+"x": 121.1,
+"y": 225.5
+},
+"M3D": [
+0.997589111328125,
+0.06939697265625,
+0.0,
+0.0,
+-0.06939697265625,
+0.997589111328125,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+-111.55,
+-394.65,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 4,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/hunte head",
+"IN": "",
+"ST": "G",
+"FF": 2,
+"LP": "SF",
+"TRP": {
+"x": 121.1,
+"y": 225.5
+},
+"M3D": [
+0.997589111328125,
+0.06939697265625,
+0.0,
+0.0,
+-0.06939697265625,
+0.997589111328125,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+-111.55,
+-394.65,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 5,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/hunte head",
+"IN": "",
+"ST": "G",
+"FF": 2,
+"LP": "SF",
+"TRP": {
+"x": 121.1,
+"y": 225.5
+},
+"M3D": [
+0.997589111328125,
+0.06939697265625,
+0.0,
+0.0,
+-0.06939697265625,
+0.997589111328125,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+-111.55,
+-394.65,
+0.0,
+1.0
+]
+}
+}
+]
+}
+]
+},
+{
+"LN": "hunte_body_left",
+"FR": [
+{
+"I": 0,
+"DU": 2,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/hunte body left",
+"IN": "",
+"ST": "G",
+"FF": 0,
+"LP": "LP",
+"TRP": {
+"x": 211.95000000000003,
+"y": 530.6
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.064544677734375,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+-186.65,
+-184.95,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 2,
+"DU": 4,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/hunte body left",
+"IN": "",
+"ST": "G",
+"FF": 0,
+"LP": "LP",
+"TRP": {
+"x": 257.90000000000006,
+"y": 265.55
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+-152.45,
+-184.95,
+0.0,
+1.0
+]
+}
+}
+]
+}
+]
+}
+]
+}
+},
+{
+"SN": "hunte opp/hunte arm left",
+"TL": {
+"L": [
+{
+"LN": "Layer_5",
+"FR": [
+{
+"I": 0,
+"DU": 1,
+"E": [
+{
+"ASI": {
+"N": "0043",
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+-22.8,
+0.0,
+1.0
+]
+}
+}
+]
+}
+]
+}
+]
+}
+},
+{
+"SN": "hunte opp/-anims/-mic/hunte downs",
+"TL": {
+"L": [
+{
+"LN": "hunte_hand",
+"FR": [
+{
+"I": 0,
+"DU": 2,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/hnte arm down",
+"IN": "",
+"ST": "G",
+"FF": 0,
+"LP": "LP",
+"TRP": {
+"x": 13.85,
+"y": 189.35
+},
+"M3D": [
+0.9984130859375,
+0.056304931640625,
+0.0,
+0.0,
+-0.056304931640625,
+0.9984130859375,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+-137.3,
+-122.35,
+0.0,
+1.0
+]
+}
+},
+{
+"SI": {
+"SN": "hunte opp/hnte other down arem",
+"IN": "",
+"ST": "G",
+"FF": 0,
+"LP": "LP",
+"TRP": {
+"x": 123.7,
+"y": 117.60000000000001
+},
+"M3D": [
+0.98846435546875,
+0.15142822265625,
+0.0,
+0.0,
+-0.1379852294921875,
+0.900665283203125,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+108.2,
+-184.55,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 2,
+"DU": 4,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/hnte arm down",
+"IN": "",
+"ST": "G",
+"FF": 0,
+"LP": "LP",
+"TRP": {
+"x": 94.45,
+"y": 98.7
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+-147.95,
+-134.95,
+0.0,
+1.0
+]
+}
+},
+{
+"SI": {
+"SN": "hunte opp/hnte other down arem",
+"IN": "",
+"ST": "G",
+"FF": 0,
+"LP": "LP",
+"TRP": {
+"x": 108.9,
+"y": 77.30000000000001
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+84.05,
+-219.75,
+0.0,
+1.0
+]
+}
+}
+]
+}
+]
+},
+{
+"LN": "hunte_head",
+"FR": [
+{
+"I": 0,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/hunte head",
+"IN": "",
+"ST": "G",
+"FF": 4,
+"LP": "SF",
+"TRP": {
+"x": 121.2,
+"y": 225.55
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+-49.85,
+-263.45,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 1,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/hunte head",
+"IN": "",
+"ST": "G",
+"FF": 4,
+"LP": "SF",
+"TRP": {
+"x": 121.2,
+"y": 225.55
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+-49.85,
+-263.45,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 2,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/hunte head",
+"IN": "",
+"ST": "G",
+"FF": 4,
+"LP": "SF",
+"TRP": {
+"x": 121.2,
+"y": 225.55
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+-49.85,
+-282.95,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 3,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/hunte head",
+"IN": "",
+"ST": "G",
+"FF": 4,
+"LP": "SF",
+"TRP": {
+"x": 121.2,
+"y": 225.55
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+-49.85,
+-282.95,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 4,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/hunte head",
+"IN": "",
+"ST": "G",
+"FF": 4,
+"LP": "SF",
+"TRP": {
+"x": 121.2,
+"y": 225.55
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+-49.85,
+-282.95,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 5,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/hunte head",
+"IN": "",
+"ST": "G",
+"FF": 4,
+"LP": "SF",
+"TRP": {
+"x": 121.2,
+"y": 225.55
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+-49.85,
+-282.95,
+0.0,
+1.0
+]
+}
+}
+]
+}
+]
+},
+{
+"LN": "hntw_body",
+"FR": [
+{
+"I": 0,
+"DU": 2,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/hntw body down",
+"IN": "",
+"ST": "G",
+"FF": 0,
+"LP": "LP",
+"TRP": {
+"x": 182.85,
+"y": 480.40000000000006
+},
+"M3D": [
+1.09185791015625,
+0.0,
+0.0,
+0.0,
+0.0,
+0.91259765625,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+-150.65,
+-91.75,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 2,
+"DU": 4,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/hntw body down",
+"IN": "",
+"ST": "G",
+"FF": 0,
+"LP": "LP",
+"TRP": {
+"x": 182.9,
+"y": 240.3
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+-133.85,
+-133.75,
+0.0,
+1.0
+]
+}
+}
+]
+}
+]
+}
+]
+}
+},
+{
+"SN": "hunte opp/hnte arm down",
+"TL": {
+"L": [
+{
+"LN": "Layer_4",
+"FR": [
+{
+"I": 0,
+"DU": 1,
+"E": [
+{
+"ASI": {
+"N": "0044",
+"M3D": [
+0.999969482421875,
+0.0,
+0.0,
+0.0,
+0.0,
+0.999969482421875,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.05,
+0.55,
+0.0,
+1.0
+]
+}
+}
+]
+}
+]
+}
+]
+}
+},
+{
+"SN": "hunte opp/-anims/-mic/hunte up the pose",
+"TL": {
+"L": [
+{
+"LN": "hunte_up_mic_arm",
+"FR": [
+{
+"I": 0,
+"DU": 2,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/hunte up mic arm",
+"IN": "",
+"ST": "G",
+"FF": 0,
+"LP": "LP",
+"TRP": {
+"x": 134.75,
+"y": 131.4
+},
+"M3D": [
+0.9984130859375,
+0.056304931640625,
+0.0,
+0.0,
+-0.056304931640625,
+0.9984130859375,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+-153.4,
+-327.7,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 2,
+"DU": 4,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/hunte up mic arm",
+"IN": "",
+"ST": "G",
+"FF": 0,
+"LP": "LP",
+"TRP": {
+"x": 80.5,
+"y": 145.9
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+-175.75,
+-293.8,
+0.0,
+1.0
+]
+}
+}
+]
+}
+]
+},
+{
+"LN": "hunte_head",
+"FR": [
+{
+"I": 0,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/hunte head",
+"IN": "",
+"ST": "G",
+"FF": 6,
+"LP": "SF",
+"TRP": {
+"x": 121.10000000000001,
+"y": 225.55
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+-87.1,
+-460.9,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 1,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/hunte head",
+"IN": "",
+"ST": "G",
+"FF": 6,
+"LP": "SF",
+"TRP": {
+"x": 121.1,
+"y": 225.55
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+-87.1,
+-460.9,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 2,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/hunte head",
+"IN": "",
+"ST": "G",
+"FF": 6,
+"LP": "SF",
+"TRP": {
+"x": 121.10000000000001,
+"y": 225.55
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+-87.1,
+-444.4,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 3,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/hunte head",
+"IN": "",
+"ST": "G",
+"FF": 6,
+"LP": "SF",
+"TRP": {
+"x": 121.1,
+"y": 225.55
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+-87.1,
+-444.4,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 4,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/hunte head",
+"IN": "",
+"ST": "G",
+"FF": 6,
+"LP": "SF",
+"TRP": {
+"x": 121.1,
+"y": 225.55
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+-87.1,
+-444.4,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 5,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/hunte head",
+"IN": "",
+"ST": "G",
+"FF": 6,
+"LP": "SF",
+"TRP": {
+"x": 121.1,
+"y": 225.55
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+-87.1,
+-444.4,
+0.0,
+1.0
+]
+}
+}
+]
+}
+]
+},
+{
+"LN": "hunte_body_up",
+"FR": [
+{
+"I": 0,
+"DU": 2,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/hunte body up",
+"IN": "",
+"ST": "G",
+"FF": 0,
+"LP": "LP",
+"TRP": {
+"x": 152.95000000000003,
+"y": 595.1
+},
+"M3D": [
+0.9233245849609375,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0333404541015626,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+-91.5,
+-267.05,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 2,
+"DU": 4,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/hunte body up",
+"IN": "",
+"ST": "G",
+"FF": 0,
+"LP": "LP",
+"TRP": {
+"x": 151.3,
+"y": 297.05
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+-103.15,
+-247.25,
+0.0,
+1.0
+]
+}
+}
+]
+}
+]
+}
+]
+}
+},
+{
+"SN": "hunte opp/hunte up mic arm",
+"TL": {
+"L": [
+{
+"LN": "Layer_5",
+"FR": [
+{
+"I": 0,
+"DU": 1,
+"E": [
+{
+"ASI": {
+"N": "0045",
+"M3D": [
+0.999969482421875,
+0.0,
+0.0,
+0.0,
+0.0,
+0.999969482421875,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+-11.5,
+0.0,
+1.0
+]
+}
+}
+]
+}
+]
+}
+]
+}
+},
+{
+"SN": "hunte opp/-anims/-mic/hunte writin",
+"TL": {
+"L": [
+{
+"LN": "hunte_hand",
+"FR": [
+{
+"I": 0,
+"DU": 2,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/hnte left aerm right",
+"IN": "",
+"ST": "G",
+"FF": 0,
+"LP": "LP",
+"TRP": {
+"x": 65.65,
+"y": 111.05
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+166.35,
+-165.95,
+0.0,
+1.0
+]
+}
+},
+{
+"SI": {
+"SN": "hunte opp/hnte rite arm rigt",
+"IN": "",
+"ST": "G",
+"FF": 0,
+"LP": "LP",
+"TRP": {
+"x": 63.7,
+"y": 51.050000000000007
+},
+"M3D": [
+0.98773193359375,
+-0.156158447265625,
+0.0,
+0.0,
+0.156158447265625,
+0.98773193359375,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+-105.6,
+-172.05,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 2,
+"DU": 4,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/hnte left aerm right",
+"IN": "",
+"ST": "G",
+"FF": 0,
+"LP": "LP",
+"TRP": {
+"x": 65.65,
+"y": 111.05
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+126.85,
+-168.7,
+0.0,
+1.0
+]
+}
+},
+{
+"SI": {
+"SN": "hunte opp/hnte rite arm rigt",
+"IN": "",
+"ST": "G",
+"FF": 0,
+"LP": "LP",
+"TRP": {
+"x": 136.85,
+"y": 55.7
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+-131.4,
+-176.2,
+0.0,
+1.0
+]
+}
+}
+]
+}
+]
+},
+{
+"LN": "hunte_head",
+"FR": [
+{
+"I": 0,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/hunte head",
+"IN": "",
+"ST": "G",
+"FF": 7,
+"LP": "SF",
+"TRP": {
+"x": 121.15,
+"y": 225.5
+},
+"M3D": [
+0.99462890625,
+-0.1032562255859375,
+0.0,
+0.0,
+0.1032562255859375,
+0.99462890625,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+51.85,
+-323.3,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 1,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/hunte head",
+"IN": "",
+"ST": "G",
+"FF": 7,
+"LP": "SF",
+"TRP": {
+"x": 121.15,
+"y": 225.5
+},
+"M3D": [
+0.99462890625,
+-0.1032562255859375,
+0.0,
+0.0,
+0.1032562255859375,
+0.99462890625,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+51.85,
+-323.3,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 2,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/hunte head",
+"IN": "",
+"ST": "G",
+"FF": 8,
+"LP": "SF",
+"TRP": {
+"x": 121.15,
+"y": 225.55
+},
+"M3D": [
+0.9969482421875,
+-0.07806396484375,
+0.0,
+0.0,
+0.07806396484375,
+0.9969482421875,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+2.0,
+-326.85,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 3,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/hunte head",
+"IN": "",
+"ST": "G",
+"FF": 8,
+"LP": "SF",
+"TRP": {
+"x": 121.15,
+"y": 225.55
+},
+"M3D": [
+0.9969482421875,
+-0.07806396484375,
+0.0,
+0.0,
+0.07806396484375,
+0.9969482421875,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+2.0,
+-326.85,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 4,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/hunte head",
+"IN": "",
+"ST": "G",
+"FF": 8,
+"LP": "SF",
+"TRP": {
+"x": 121.15,
+"y": 225.55
+},
+"M3D": [
+0.9969482421875,
+-0.07806396484375,
+0.0,
+0.0,
+0.07806396484375,
+0.9969482421875,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+2.0,
+-326.85,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 5,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/hunte head",
+"IN": "",
+"ST": "G",
+"FF": 8,
+"LP": "SF",
+"TRP": {
+"x": 121.15,
+"y": 225.55
+},
+"M3D": [
+0.9969482421875,
+-0.07806396484375,
+0.0,
+0.0,
+0.07806396484375,
+0.9969482421875,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+2.0,
+-326.85,
+0.0,
+1.0
+]
+}
+}
+]
+}
+]
+},
+{
+"LN": "hunt_bodey_rite",
+"FR": [
+{
+"I": 0,
+"DU": 2,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/hunt bodey rite",
+"IN": "",
+"ST": "G",
+"FF": 0,
+"LP": "LP",
+"TRP": {
+"x": 141.75,
+"y": 451.75
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+-0.1097259521484375,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+-35.5,
+-115.2,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 2,
+"DU": 4,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/hunt bodey rite",
+"IN": "",
+"ST": "G",
+"FF": 0,
+"LP": "LP",
+"TRP": {
+"x": 140.3,
+"y": 236.25
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+-86.95,
+-115.2,
+0.0,
+1.0
+]
+}
+}
+]
+}
+]
+}
+]
+}
+},
+{
+"SN": "hunte opp/hnte rite arm rigt",
+"TL": {
+"L": [
+{
+"LN": "Layer_4",
+"FR": [
+{
+"I": 0,
+"DU": 1,
+"E": [
+{
+"ASI": {
+"N": "0046",
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+-16.15,
+0.1,
+0.0,
+1.0
+]
+}
+}
+]
+}
+]
+}
+]
+}
+},
+{
+"SN": "hunte opp/-anims/-altmic/hunte mic idle",
+"TL": {
+"L": [
+{
+"LN": "hunte_head",
+"FR": [
+{
+"I": 0,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/hunte head",
+"IN": "",
+"ST": "G",
+"FF": 0,
+"LP": "SF",
+"TRP": {
+"x": 121.10000000000001,
+"y": 225.55
+},
+"M3D": [
+0.98638916015625,
+0.164306640625,
+0.0,
+0.0,
+-0.164306640625,
+0.98638916015625,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+-39.5,
+-387.4,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 1,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/hunte head",
+"IN": "",
+"ST": "G",
+"FF": 0,
+"LP": "SF",
+"TRP": {
+"x": 121.1,
+"y": 225.55
+},
+"M3D": [
+0.98638916015625,
+0.164306640625,
+0.0,
+0.0,
+-0.164306640625,
+0.98638916015625,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+-39.5,
+-387.4,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 2,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/hunte head",
+"IN": "",
+"ST": "G",
+"FF": 0,
+"LP": "SF",
+"TRP": {
+"x": 121.10000000000001,
+"y": 225.5
+},
+"M3D": [
+0.995330810546875,
+0.0962066650390625,
+0.0,
+0.0,
+-0.0962066650390625,
+0.995330810546875,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+-55.85,
+-401.65,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 3,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/hunte head",
+"IN": "",
+"ST": "G",
+"FF": 0,
+"LP": "SF",
+"TRP": {
+"x": 121.1,
+"y": 225.5
+},
+"M3D": [
+0.995330810546875,
+0.0962066650390625,
+0.0,
+0.0,
+-0.0962066650390625,
+0.995330810546875,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+-55.85,
+-401.65,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 4,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/hunte head",
+"IN": "",
+"ST": "G",
+"FF": 0,
+"LP": "SF",
+"TRP": {
+"x": 121.15,
+"y": 225.60000000000003
+},
+"M3D": [
+0.9972381591796875,
+0.07415771484375,
+0.0,
+0.0,
+-0.07415771484375,
+0.9972381591796875,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+-61.15,
+-413.0,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 5,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/hunte head",
+"IN": "",
+"ST": "G",
+"FF": 0,
+"LP": "SF",
+"TRP": {
+"x": 121.15,
+"y": 225.6
+},
+"M3D": [
+0.9972381591796875,
+0.07415771484375,
+0.0,
+0.0,
+-0.07415771484375,
+0.9972381591796875,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+-61.15,
+-413.0,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 6,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/hunte head",
+"IN": "",
+"ST": "G",
+"FF": 0,
+"LP": "SF",
+"TRP": {
+"x": 121.2,
+"y": 225.60000000000003
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+-78.3,
+-417.05,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 7,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/hunte head",
+"IN": "",
+"ST": "G",
+"FF": 0,
+"LP": "SF",
+"TRP": {
+"x": 121.2,
+"y": 225.6
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+-78.3,
+-417.05,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 8,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/hunte head",
+"IN": "",
+"ST": "G",
+"FF": 0,
+"LP": "SF",
+"TRP": {
+"x": 121.2,
+"y": 225.6
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+-78.3,
+-417.05,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 9,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/hunte head",
+"IN": "",
+"ST": "G",
+"FF": 0,
+"LP": "SF",
+"TRP": {
+"x": 121.2,
+"y": 225.6
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+-78.3,
+-417.05,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 10,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/hunte head",
+"IN": "",
+"ST": "G",
+"FF": 0,
+"LP": "SF",
+"TRP": {
+"x": 121.2,
+"y": 225.6
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+-78.3,
+-417.05,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 11,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/hunte head",
+"IN": "",
+"ST": "G",
+"FF": 0,
+"LP": "SF",
+"TRP": {
+"x": 121.2,
+"y": 225.6
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+-78.3,
+-417.05,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 12,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/hunte head",
+"IN": "",
+"ST": "G",
+"FF": 0,
+"LP": "SF",
+"TRP": {
+"x": 121.2,
+"y": 225.6
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+-78.3,
+-417.05,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 13,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/hunte head",
+"IN": "",
+"ST": "G",
+"FF": 0,
+"LP": "SF",
+"TRP": {
+"x": 121.2,
+"y": 225.6
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+-78.3,
+-417.05,
+0.0,
+1.0
+]
+}
+}
+]
+}
+]
+},
+{
+"LN": "hunte_hand",
+"FR": [
+{
+"I": 0,
+"DU": 2,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/hunte hand mic alt",
+"IN": "",
+"ST": "G",
+"FF": 0,
+"LP": "PO",
+"TRP": {
+"x": 88.10000000000001,
+"y": 46.6
+},
+"M3D": [
+0.9915618896484375,
+-0.1296234130859375,
+0.0,
+0.0,
+0.1296234130859375,
+0.9915618896484375,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+-237.15,
+-23.65,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 2,
+"DU": 2,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/hunte hand mic alt",
+"IN": "",
+"ST": "G",
+"FF": 0,
+"LP": "PO",
+"TRP": {
+"x": 88.15,
+"y": 46.6
+},
+"M3D": [
+0.9981689453125,
+-0.06048583984375,
+0.0,
+0.0,
+0.06048583984375,
+0.9981689453125,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+-225.6,
+-37.2,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 4,
+"DU": 2,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/hunte hand mic alt",
+"IN": "",
+"ST": "G",
+"FF": 0,
+"LP": "PO",
+"TRP": {
+"x": 88.15,
+"y": 46.65
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+-217.1,
+-46.6,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 6,
+"DU": 8,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/hunte hand mic alt",
+"IN": "",
+"ST": "G",
+"FF": 0,
+"LP": "PO",
+"TRP": {
+"x": 88.10000000000001,
+"y": 46.65
+},
+"M3D": [
+0.989715576171875,
+0.143035888671875,
+0.0,
+0.0,
+-0.143035888671875,
+0.989715576171875,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+-203.0,
+-65.25,
+0.0,
+1.0
+]
+}
+}
+]
+}
+]
+},
+{
+"LN": "hunte_body",
+"FR": [
+{
+"I": 0,
+"DU": 2,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/hunte body",
+"IN": "",
+"ST": "G",
+"FF": 0,
+"LP": "LP",
+"TRP": {
+"x": 200.05,
+"y": 616.45
+},
+"M3D": [
+1.1012420654296876,
+0.0,
+0.0,
+0.0,
+0.0,
+0.945068359375,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+-166.95,
+-235.0,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 2,
+"DU": 2,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/hunte body",
+"IN": "",
+"ST": "G",
+"FF": 0,
+"LP": "LP",
+"TRP": {
+"x": 200.10000000000003,
+"y": 616.3000000000001
+},
+"M3D": [
+1.0652923583984376,
+0.0,
+0.0,
+0.0,
+0.0,
+0.9633026123046875,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+-159.8,
+-246.15,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 4,
+"DU": 2,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/hunte body",
+"IN": "",
+"ST": "G",
+"FF": 0,
+"LP": "LP",
+"TRP": {
+"x": 200.0,
+"y": 616.4000000000001
+},
+"M3D": [
+1.029296875,
+0.0,
+0.0,
+0.0,
+0.0,
+0.979766845703125,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+-152.55,
+-256.4,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 6,
+"DU": 8,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/hunte body",
+"IN": "",
+"ST": "G",
+"FF": 0,
+"LP": "LP",
+"TRP": {
+"x": 200.10000000000003,
+"y": 616.45
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+-146.75,
+-268.9,
+0.0,
+1.0
+]
+}
+}
+]
+}
+]
+}
+]
+}
+},
+{
+"SN": "hunte opp/hunte hand mic alt",
+"TL": {
+"L": [
+{
+"LN": "Layer_2",
+"FR": [
+{
+"I": 0,
+"DU": 1,
+"E": [
+{
+"ASI": {
+"N": "0047",
+"M3D": [
+0.9989013671875,
+0.0,
+0.0,
+0.0,
+0.0,
+0.9989013671875,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+-65.85,
+23.65,
+0.0,
+1.0
+]
+}
+}
+]
+}
+]
+}
+]
+}
+},
+{
+"SN": "hunte opp/-anims/-altmic/hunte alt mic idle",
+"TL": {
+"L": [
+{
+"LN": "hunte_head",
+"FR": [
+{
+"I": 0,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/hunte head",
+"IN": "",
+"ST": "G",
+"FF": 9,
+"LP": "SF",
+"TRP": {
+"x": 121.10000000000001,
+"y": 225.55
+},
+"M3D": [
+0.98638916015625,
+0.164306640625,
+0.0,
+0.0,
+-0.164306640625,
+0.98638916015625,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+-39.5,
+-387.4,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 1,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/hunte head",
+"IN": "",
+"ST": "G",
+"FF": 9,
+"LP": "SF",
+"TRP": {
+"x": 121.1,
+"y": 225.55
+},
+"M3D": [
+0.98638916015625,
+0.164306640625,
+0.0,
+0.0,
+-0.164306640625,
+0.98638916015625,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+-39.5,
+-387.4,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 2,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/hunte head",
+"IN": "",
+"ST": "G",
+"FF": 9,
+"LP": "SF",
+"TRP": {
+"x": 121.10000000000001,
+"y": 225.5
+},
+"M3D": [
+0.995330810546875,
+0.0962066650390625,
+0.0,
+0.0,
+-0.0962066650390625,
+0.995330810546875,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+-55.85,
+-401.65,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 3,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/hunte head",
+"IN": "",
+"ST": "G",
+"FF": 9,
+"LP": "SF",
+"TRP": {
+"x": 121.1,
+"y": 225.5
+},
+"M3D": [
+0.995330810546875,
+0.0962066650390625,
+0.0,
+0.0,
+-0.0962066650390625,
+0.995330810546875,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+-55.85,
+-401.65,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 4,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/hunte head",
+"IN": "",
+"ST": "G",
+"FF": 9,
+"LP": "SF",
+"TRP": {
+"x": 121.15,
+"y": 225.60000000000003
+},
+"M3D": [
+0.9972381591796875,
+0.07415771484375,
+0.0,
+0.0,
+-0.07415771484375,
+0.9972381591796875,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+-61.15,
+-413.0,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 5,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/hunte head",
+"IN": "",
+"ST": "G",
+"FF": 9,
+"LP": "SF",
+"TRP": {
+"x": 121.15,
+"y": 225.6
+},
+"M3D": [
+0.9972381591796875,
+0.07415771484375,
+0.0,
+0.0,
+-0.07415771484375,
+0.9972381591796875,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+-61.15,
+-413.0,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 6,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/hunte head",
+"IN": "",
+"ST": "G",
+"FF": 9,
+"LP": "SF",
+"TRP": {
+"x": 121.2,
+"y": 225.60000000000003
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+-78.3,
+-417.05,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 7,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/hunte head",
+"IN": "",
+"ST": "G",
+"FF": 9,
+"LP": "SF",
+"TRP": {
+"x": 121.2,
+"y": 225.6
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+-78.3,
+-417.05,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 8,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/hunte head",
+"IN": "",
+"ST": "G",
+"FF": 9,
+"LP": "SF",
+"TRP": {
+"x": 121.2,
+"y": 225.6
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+-78.3,
+-417.05,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 9,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/hunte head",
+"IN": "",
+"ST": "G",
+"FF": 9,
+"LP": "SF",
+"TRP": {
+"x": 121.2,
+"y": 225.6
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+-78.3,
+-417.05,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 10,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/hunte head",
+"IN": "",
+"ST": "G",
+"FF": 9,
+"LP": "SF",
+"TRP": {
+"x": 121.2,
+"y": 225.6
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+-78.3,
+-417.05,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 11,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/hunte head",
+"IN": "",
+"ST": "G",
+"FF": 9,
+"LP": "SF",
+"TRP": {
+"x": 121.2,
+"y": 225.6
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+-78.3,
+-417.05,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 12,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/hunte head",
+"IN": "",
+"ST": "G",
+"FF": 9,
+"LP": "SF",
+"TRP": {
+"x": 121.2,
+"y": 225.6
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+-78.3,
+-417.05,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 13,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/hunte head",
+"IN": "",
+"ST": "G",
+"FF": 9,
+"LP": "SF",
+"TRP": {
+"x": 121.2,
+"y": 225.6
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+-78.3,
+-417.05,
+0.0,
+1.0
+]
+}
+}
+]
+}
+]
+},
+{
+"LN": "hunte_hand",
+"FR": [
+{
+"I": 0,
+"DU": 2,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/hunte hand mic alt",
+"IN": "",
+"ST": "G",
+"FF": 0,
+"LP": "PO",
+"TRP": {
+"x": 88.10000000000001,
+"y": 46.6
+},
+"M3D": [
+0.9915618896484375,
+-0.1296234130859375,
+0.0,
+0.0,
+0.1296234130859375,
+0.9915618896484375,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+-237.15,
+-23.65,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 2,
+"DU": 2,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/hunte hand mic alt",
+"IN": "",
+"ST": "G",
+"FF": 0,
+"LP": "PO",
+"TRP": {
+"x": 88.15,
+"y": 46.6
+},
+"M3D": [
+0.9981689453125,
+-0.06048583984375,
+0.0,
+0.0,
+0.06048583984375,
+0.9981689453125,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+-225.6,
+-37.2,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 4,
+"DU": 2,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/hunte hand mic alt",
+"IN": "",
+"ST": "G",
+"FF": 0,
+"LP": "PO",
+"TRP": {
+"x": 88.15,
+"y": 46.65
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+-217.1,
+-46.6,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 6,
+"DU": 8,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/hunte hand mic alt",
+"IN": "",
+"ST": "G",
+"FF": 0,
+"LP": "PO",
+"TRP": {
+"x": 88.10000000000001,
+"y": 46.65
+},
+"M3D": [
+0.989715576171875,
+0.143035888671875,
+0.0,
+0.0,
+-0.143035888671875,
+0.989715576171875,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+-203.0,
+-65.25,
+0.0,
+1.0
+]
+}
+}
+]
+}
+]
+},
+{
+"LN": "hunte_body",
+"FR": [
+{
+"I": 0,
+"DU": 2,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/hunte body",
+"IN": "",
+"ST": "G",
+"FF": 0,
+"LP": "LP",
+"TRP": {
+"x": 200.05,
+"y": 616.45
+},
+"M3D": [
+1.1012420654296876,
+0.0,
+0.0,
+0.0,
+0.0,
+0.945068359375,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+-166.95,
+-235.0,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 2,
+"DU": 2,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/hunte body",
+"IN": "",
+"ST": "G",
+"FF": 0,
+"LP": "LP",
+"TRP": {
+"x": 200.10000000000003,
+"y": 616.3000000000001
+},
+"M3D": [
+1.0652923583984376,
+0.0,
+0.0,
+0.0,
+0.0,
+0.9633026123046875,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+-159.8,
+-246.15,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 4,
+"DU": 2,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/hunte body",
+"IN": "",
+"ST": "G",
+"FF": 0,
+"LP": "LP",
+"TRP": {
+"x": 200.0,
+"y": 616.4000000000001
+},
+"M3D": [
+1.029296875,
+0.0,
+0.0,
+0.0,
+0.0,
+0.979766845703125,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+-152.55,
+-256.4,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 6,
+"DU": 8,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/hunte body",
+"IN": "",
+"ST": "G",
+"FF": 0,
+"LP": "LP",
+"TRP": {
+"x": 200.10000000000003,
+"y": 616.45
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+-146.75,
+-268.9,
+0.0,
+1.0
+]
+}
+}
+]
+}
+]
+}
+]
+}
+},
+{
+"SN": "hunte opp/-anims/-altmic/hunte left hit",
+"TL": {
+"L": [
+{
+"LN": "hunte_arm_left",
+"FR": [
+{
+"I": 0,
+"DU": 2,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/hunte arm left alt mic",
+"IN": "",
+"ST": "G",
+"FF": 0,
+"LP": "LP",
+"TRP": {
+"x": 112.2,
+"y": 200.10000000000003
+},
+"M3D": [
+0.9736785888671875,
+-0.2278900146484375,
+0.0,
+0.0,
+0.2278900146484375,
+0.9736785888671875,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+-271.5,
+-156.35,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 2,
+"DU": 4,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/hunte arm left alt mic",
+"IN": "",
+"ST": "G",
+"FF": 0,
+"LP": "LP",
+"TRP": {
+"x": 0.0,
+"y": 0.0
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+-210.85,
+-180.75,
+0.0,
+1.0
+]
+}
+}
+]
+}
+]
+},
+{
+"LN": "hunte_head",
+"FR": [
+{
+"I": 0,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/hunte head",
+"IN": "",
+"ST": "G",
+"FF": 1,
+"LP": "SF",
+"TRP": {
+"x": 121.05,
+"y": 225.5
+},
+"M3D": [
+0.9931640625,
+0.1166839599609375,
+0.0,
+0.0,
+-0.1166839599609375,
+0.9931640625,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+-133.35,
+-399.4,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 1,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/hunte head",
+"IN": "",
+"ST": "G",
+"FF": 1,
+"LP": "SF",
+"TRP": {
+"x": 121.05,
+"y": 225.5
+},
+"M3D": [
+0.9931640625,
+0.1166839599609375,
+0.0,
+0.0,
+-0.1166839599609375,
+0.9931640625,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+-133.35,
+-399.4,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 2,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/hunte head",
+"IN": "",
+"ST": "G",
+"FF": 2,
+"LP": "SF",
+"TRP": {
+"x": 121.10000000000001,
+"y": 225.5
+},
+"M3D": [
+0.997589111328125,
+0.06939697265625,
+0.0,
+0.0,
+-0.06939697265625,
+0.997589111328125,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+-111.55,
+-394.65,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 3,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/hunte head",
+"IN": "",
+"ST": "G",
+"FF": 2,
+"LP": "SF",
+"TRP": {
+"x": 121.1,
+"y": 225.5
+},
+"M3D": [
+0.997589111328125,
+0.06939697265625,
+0.0,
+0.0,
+-0.06939697265625,
+0.997589111328125,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+-111.55,
+-394.65,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 4,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/hunte head",
+"IN": "",
+"ST": "G",
+"FF": 2,
+"LP": "SF",
+"TRP": {
+"x": 121.1,
+"y": 225.5
+},
+"M3D": [
+0.997589111328125,
+0.06939697265625,
+0.0,
+0.0,
+-0.06939697265625,
+0.997589111328125,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+-111.55,
+-394.65,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 5,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/hunte head",
+"IN": "",
+"ST": "G",
+"FF": 2,
+"LP": "SF",
+"TRP": {
+"x": 121.1,
+"y": 225.5
+},
+"M3D": [
+0.997589111328125,
+0.06939697265625,
+0.0,
+0.0,
+-0.06939697265625,
+0.997589111328125,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+-111.55,
+-394.65,
+0.0,
+1.0
+]
+}
+}
+]
+}
+]
+},
+{
+"LN": "hunte_body_left",
+"FR": [
+{
+"I": 0,
+"DU": 2,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/hunte body left",
+"IN": "",
+"ST": "G",
+"FF": 0,
+"LP": "LP",
+"TRP": {
+"x": 211.95000000000003,
+"y": 530.6
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.064544677734375,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+-186.65,
+-184.95,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 2,
+"DU": 4,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/hunte body left",
+"IN": "",
+"ST": "G",
+"FF": 0,
+"LP": "LP",
+"TRP": {
+"x": 257.90000000000006,
+"y": 265.55
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+-152.45,
+-184.95,
+0.0,
+1.0
+]
+}
+}
+]
+}
+]
+}
+]
+}
+},
+{
+"SN": "hunte opp/hunte arm left alt mic",
+"TL": {
+"L": [
+{
+"LN": "Layer_5",
+"FR": [
+{
+"I": 0,
+"DU": 1,
+"E": [
+{
+"ASI": {
+"N": "0048",
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+-22.8,
+0.0,
+1.0
+]
+}
+}
+]
+}
+]
+}
+]
+}
+},
+{
+"SN": "hunte opp/-anims/-altmic/hunte downs",
+"TL": {
+"L": [
+{
+"LN": "hunte_hand",
+"FR": [
+{
+"I": 0,
+"DU": 2,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/hnte arm down alt mic",
+"IN": "",
+"ST": "G",
+"FF": 0,
+"LP": "LP",
+"TRP": {
+"x": 13.85,
+"y": 189.35
+},
+"M3D": [
+0.9984130859375,
+0.056304931640625,
+0.0,
+0.0,
+-0.056304931640625,
+0.9984130859375,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+-137.3,
+-122.35,
+0.0,
+1.0
+]
+}
+},
+{
+"SI": {
+"SN": "hunte opp/hnte other down arem",
+"IN": "",
+"ST": "G",
+"FF": 0,
+"LP": "LP",
+"TRP": {
+"x": 123.7,
+"y": 117.60000000000001
+},
+"M3D": [
+0.98846435546875,
+0.15142822265625,
+0.0,
+0.0,
+-0.1379852294921875,
+0.900665283203125,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+108.2,
+-184.55,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 2,
+"DU": 4,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/hnte arm down alt mic",
+"IN": "",
+"ST": "G",
+"FF": 0,
+"LP": "LP",
+"TRP": {
+"x": 94.45,
+"y": 98.7
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+-147.95,
+-134.95,
+0.0,
+1.0
+]
+}
+},
+{
+"SI": {
+"SN": "hunte opp/hnte other down arem",
+"IN": "",
+"ST": "G",
+"FF": 0,
+"LP": "LP",
+"TRP": {
+"x": 108.9,
+"y": 77.30000000000001
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+84.05,
+-219.75,
+0.0,
+1.0
+]
+}
+}
+]
+}
+]
+},
+{
+"LN": "hunte_head",
+"FR": [
+{
+"I": 0,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/hunte head",
+"IN": "",
+"ST": "G",
+"FF": 4,
+"LP": "SF",
+"TRP": {
+"x": 121.2,
+"y": 225.55
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+-49.85,
+-263.45,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 1,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/hunte head",
+"IN": "",
+"ST": "G",
+"FF": 4,
+"LP": "SF",
+"TRP": {
+"x": 121.2,
+"y": 225.55
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+-49.85,
+-263.45,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 2,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/hunte head",
+"IN": "",
+"ST": "G",
+"FF": 4,
+"LP": "SF",
+"TRP": {
+"x": 121.2,
+"y": 225.55
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+-49.85,
+-282.95,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 3,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/hunte head",
+"IN": "",
+"ST": "G",
+"FF": 4,
+"LP": "SF",
+"TRP": {
+"x": 121.2,
+"y": 225.55
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+-49.85,
+-282.95,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 4,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/hunte head",
+"IN": "",
+"ST": "G",
+"FF": 4,
+"LP": "SF",
+"TRP": {
+"x": 121.2,
+"y": 225.55
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+-49.85,
+-282.95,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 5,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/hunte head",
+"IN": "",
+"ST": "G",
+"FF": 4,
+"LP": "SF",
+"TRP": {
+"x": 121.2,
+"y": 225.55
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+-49.85,
+-282.95,
+0.0,
+1.0
+]
+}
+}
+]
+}
+]
+},
+{
+"LN": "hntw_body",
+"FR": [
+{
+"I": 0,
+"DU": 2,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/hntw body down",
+"IN": "",
+"ST": "G",
+"FF": 0,
+"LP": "LP",
+"TRP": {
+"x": 182.85,
+"y": 480.40000000000006
+},
+"M3D": [
+1.09185791015625,
+0.0,
+0.0,
+0.0,
+0.0,
+0.91259765625,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+-150.65,
+-91.75,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 2,
+"DU": 4,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/hntw body down",
+"IN": "",
+"ST": "G",
+"FF": 0,
+"LP": "LP",
+"TRP": {
+"x": 182.9,
+"y": 240.3
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+-133.85,
+-133.75,
+0.0,
+1.0
+]
+}
+}
+]
+}
+]
+}
+]
+}
+},
+{
+"SN": "hunte opp/hnte arm down alt mic",
+"TL": {
+"L": [
+{
+"LN": "Layer_4",
+"FR": [
+{
+"I": 0,
+"DU": 1,
+"E": [
+{
+"ASI": {
+"N": "0049",
+"M3D": [
+0.999969482421875,
+0.0,
+0.0,
+0.0,
+0.0,
+0.999969482421875,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.05,
+0.55,
+0.0,
+1.0
+]
+}
+}
+]
+}
+]
+}
+]
+}
+},
+{
+"SN": "hunte opp/-anims/-altmic/hunte up the pose",
+"TL": {
+"L": [
+{
+"LN": "hunte_up_mic_arm",
+"FR": [
+{
+"I": 0,
+"DU": 2,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/hunte up mic alt arm",
+"IN": "",
+"ST": "G",
+"FF": 0,
+"LP": "LP",
+"TRP": {
+"x": 134.75,
+"y": 131.4
+},
+"M3D": [
+0.9984130859375,
+0.056304931640625,
+0.0,
+0.0,
+-0.056304931640625,
+0.9984130859375,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+-153.4,
+-327.7,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 2,
+"DU": 4,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/hunte up mic alt arm",
+"IN": "",
+"ST": "G",
+"FF": 0,
+"LP": "LP",
+"TRP": {
+"x": 80.5,
+"y": 145.9
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+-175.75,
+-293.8,
+0.0,
+1.0
+]
+}
+}
+]
+}
+]
+},
+{
+"LN": "hunte_head",
+"FR": [
+{
+"I": 0,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/hunte head",
+"IN": "",
+"ST": "G",
+"FF": 6,
+"LP": "SF",
+"TRP": {
+"x": 121.10000000000001,
+"y": 225.55
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+-87.1,
+-460.9,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 1,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/hunte head",
+"IN": "",
+"ST": "G",
+"FF": 6,
+"LP": "SF",
+"TRP": {
+"x": 121.1,
+"y": 225.55
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+-87.1,
+-460.9,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 2,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/hunte head",
+"IN": "",
+"ST": "G",
+"FF": 6,
+"LP": "SF",
+"TRP": {
+"x": 121.10000000000001,
+"y": 225.55
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+-87.1,
+-444.4,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 3,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/hunte head",
+"IN": "",
+"ST": "G",
+"FF": 6,
+"LP": "SF",
+"TRP": {
+"x": 121.1,
+"y": 225.55
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+-87.1,
+-444.4,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 4,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/hunte head",
+"IN": "",
+"ST": "G",
+"FF": 6,
+"LP": "SF",
+"TRP": {
+"x": 121.1,
+"y": 225.55
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+-87.1,
+-444.4,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 5,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/hunte head",
+"IN": "",
+"ST": "G",
+"FF": 6,
+"LP": "SF",
+"TRP": {
+"x": 121.1,
+"y": 225.55
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+-87.1,
+-444.4,
+0.0,
+1.0
+]
+}
+}
+]
+}
+]
+},
+{
+"LN": "hunte_body_up",
+"FR": [
+{
+"I": 0,
+"DU": 2,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/hunte body up",
+"IN": "",
+"ST": "G",
+"FF": 0,
+"LP": "LP",
+"TRP": {
+"x": 152.95000000000003,
+"y": 595.1
+},
+"M3D": [
+0.9233245849609375,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0333404541015626,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+-91.5,
+-267.05,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 2,
+"DU": 4,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/hunte body up",
+"IN": "",
+"ST": "G",
+"FF": 0,
+"LP": "LP",
+"TRP": {
+"x": 151.3,
+"y": 297.05
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+-103.15,
+-247.25,
+0.0,
+1.0
+]
+}
+}
+]
+}
+]
+}
+]
+}
+},
+{
+"SN": "hunte opp/hunte up mic alt arm",
+"TL": {
+"L": [
+{
+"LN": "Layer_5",
+"FR": [
+{
+"I": 0,
+"DU": 1,
+"E": [
+{
+"ASI": {
+"N": "0050",
+"M3D": [
+0.999969482421875,
+0.0,
+0.0,
+0.0,
+0.0,
+0.999969482421875,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+-11.5,
+0.0,
+1.0
+]
+}
+}
+]
+}
+]
+}
+]
+}
+},
+{
+"SN": "hunte opp/-anims/-altmic/hunte writin",
+"TL": {
+"L": [
+{
+"LN": "hunte_hand",
+"FR": [
+{
+"I": 0,
+"DU": 2,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/hnte left aerm right",
+"IN": "",
+"ST": "G",
+"FF": 0,
+"LP": "LP",
+"TRP": {
+"x": 65.65,
+"y": 111.05
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+166.35,
+-165.95,
+0.0,
+1.0
+]
+}
+},
+{
+"SI": {
+"SN": "hunte opp/hnte rite arm rigt mic alt",
+"IN": "",
+"ST": "G",
+"FF": 0,
+"LP": "LP",
+"TRP": {
+"x": 63.7,
+"y": 51.050000000000007
+},
+"M3D": [
+0.98773193359375,
+-0.156158447265625,
+0.0,
+0.0,
+0.156158447265625,
+0.98773193359375,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+-105.6,
+-172.05,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 2,
+"DU": 4,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/hnte left aerm right",
+"IN": "",
+"ST": "G",
+"FF": 0,
+"LP": "LP",
+"TRP": {
+"x": 65.65,
+"y": 111.05
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+126.85,
+-168.7,
+0.0,
+1.0
+]
+}
+},
+{
+"SI": {
+"SN": "hunte opp/hnte rite arm rigt mic alt",
+"IN": "",
+"ST": "G",
+"FF": 0,
+"LP": "LP",
+"TRP": {
+"x": 136.85,
+"y": 55.7
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+-131.4,
+-176.2,
+0.0,
+1.0
+]
+}
+}
+]
+}
+]
+},
+{
+"LN": "hunte_head",
+"FR": [
+{
+"I": 0,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/hunte head",
+"IN": "",
+"ST": "G",
+"FF": 7,
+"LP": "SF",
+"TRP": {
+"x": 121.15,
+"y": 225.5
+},
+"M3D": [
+0.99462890625,
+-0.1032562255859375,
+0.0,
+0.0,
+0.1032562255859375,
+0.99462890625,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+51.85,
+-323.3,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 1,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/hunte head",
+"IN": "",
+"ST": "G",
+"FF": 7,
+"LP": "SF",
+"TRP": {
+"x": 121.15,
+"y": 225.5
+},
+"M3D": [
+0.99462890625,
+-0.1032562255859375,
+0.0,
+0.0,
+0.1032562255859375,
+0.99462890625,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+51.85,
+-323.3,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 2,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/hunte head",
+"IN": "",
+"ST": "G",
+"FF": 8,
+"LP": "SF",
+"TRP": {
+"x": 121.15,
+"y": 225.55
+},
+"M3D": [
+0.9969482421875,
+-0.07806396484375,
+0.0,
+0.0,
+0.07806396484375,
+0.9969482421875,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+2.0,
+-326.85,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 3,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/hunte head",
+"IN": "",
+"ST": "G",
+"FF": 8,
+"LP": "SF",
+"TRP": {
+"x": 121.15,
+"y": 225.55
+},
+"M3D": [
+0.9969482421875,
+-0.07806396484375,
+0.0,
+0.0,
+0.07806396484375,
+0.9969482421875,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+2.0,
+-326.85,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 4,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/hunte head",
+"IN": "",
+"ST": "G",
+"FF": 8,
+"LP": "SF",
+"TRP": {
+"x": 121.15,
+"y": 225.55
+},
+"M3D": [
+0.9969482421875,
+-0.07806396484375,
+0.0,
+0.0,
+0.07806396484375,
+0.9969482421875,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+2.0,
+-326.85,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 5,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/hunte head",
+"IN": "",
+"ST": "G",
+"FF": 8,
+"LP": "SF",
+"TRP": {
+"x": 121.15,
+"y": 225.55
+},
+"M3D": [
+0.9969482421875,
+-0.07806396484375,
+0.0,
+0.0,
+0.07806396484375,
+0.9969482421875,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+2.0,
+-326.85,
+0.0,
+1.0
+]
+}
+}
+]
+}
+]
+},
+{
+"LN": "hunt_bodey_rite",
+"FR": [
+{
+"I": 0,
+"DU": 2,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/hunt bodey rite",
+"IN": "",
+"ST": "G",
+"FF": 0,
+"LP": "LP",
+"TRP": {
+"x": 141.75,
+"y": 451.75
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+-0.1097259521484375,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+-35.5,
+-115.2,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 2,
+"DU": 4,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/hunt bodey rite",
+"IN": "",
+"ST": "G",
+"FF": 0,
+"LP": "LP",
+"TRP": {
+"x": 140.3,
+"y": 236.25
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+-86.95,
+-115.2,
+0.0,
+1.0
+]
+}
+}
+]
+}
+]
+}
+]
+}
+},
+{
+"SN": "hunte opp/hnte rite arm rigt mic alt",
+"TL": {
+"L": [
+{
+"LN": "Layer_4",
+"FR": [
+{
+"I": 0,
+"DU": 1,
+"E": [
+{
+"ASI": {
+"N": "0051",
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+-16.15,
+0.1,
+0.0,
+1.0
+]
+}
+}
+]
+}
+]
+}
+]
+}
+},
+{
+"SN": "hunte opp/-anims/-mic/hunte throw mix",
 "TL": {
 "L": [
 {
@@ -15239,7 +22151,7 @@
 "E": [
 {
 "ASI": {
-"N": "0044",
+"N": "0052",
 "M3D": [
 1.0,
 0.0,
@@ -15299,7 +22211,7 @@
 "E": [
 {
 "ASI": {
-"N": "0046",
+"N": "0054",
 "M3D": [
 1.0,
 0.0,
@@ -15396,7 +22308,7 @@
 "E": [
 {
 "ASI": {
-"N": "0047",
+"N": "0055",
 "M3D": [
 1.0,
 0.0,
@@ -15456,7 +22368,7 @@
 "E": [
 {
 "ASI": {
-"N": "0048",
+"N": "0056",
 "M3D": [
 1.0,
 0.0,
@@ -15516,7 +22428,7 @@
 "E": [
 {
 "ASI": {
-"N": "0049",
+"N": "0057",
 "M3D": [
 1.0,
 0.0,
@@ -15576,7 +22488,7 @@
 "E": [
 {
 "ASI": {
-"N": "0050",
+"N": "0058",
 "M3D": [
 1.0,
 0.0,
@@ -17074,7 +23986,7 @@
 "E": [
 {
 "ASI": {
-"N": "0045",
+"N": "0053",
 "M3D": [
 0.93994140625,
 0.0,
@@ -17115,7 +24027,7 @@
 "E": [
 {
 "ASI": {
-"N": "0051",
+"N": "0059",
 "M3D": [
 1.0,
 0.0,
@@ -17144,7 +24056,7 @@
 }
 },
 {
-"SN": "hunte opp/-hunte anims/hunte catch mic",
+"SN": "hunte opp/-anims/-nomic/hunte catch mic",
 "TL": {
 "L": [
 {
@@ -18298,7 +25210,7 @@
 "E": [
 {
 "ASI": {
-"N": "0052",
+"N": "0060",
 "M3D": [
 0.9690704345703125,
 0.0,
@@ -18327,7 +25239,2266 @@
 }
 },
 {
-"SN": "hunte opp/-hunte anims/hunte pose sponge",
+"SN": "hunte opp/-anims/-altmic/hunte do a lil spin",
+"TL": {
+"L": [
+{
+"LN": "hunte_head",
+"FR": [
+{
+"I": 0,
+"DU": 49,
+"E": []
+},
+{
+"I": 49,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/hunte head",
+"IN": "",
+"ST": "G",
+"FF": 11,
+"LP": "LP",
+"TRP": {
+"x": 121.2,
+"y": 225.60000000000003
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+-78.3,
+-417.05,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 50,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/hunte head",
+"IN": "",
+"ST": "G",
+"FF": 12,
+"LP": "LP",
+"TRP": {
+"x": 121.2,
+"y": 225.6
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+-78.3,
+-417.05,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 51,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/hunte head",
+"IN": "",
+"ST": "G",
+"FF": 11,
+"LP": "LP",
+"TRP": {
+"x": 121.2,
+"y": 225.6
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+-78.3,
+-417.05,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 52,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/hunte head",
+"IN": "",
+"ST": "G",
+"FF": 12,
+"LP": "LP",
+"TRP": {
+"x": 121.2,
+"y": 225.6
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+-78.3,
+-417.05,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 53,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/hunte head",
+"IN": "",
+"ST": "G",
+"FF": 11,
+"LP": "LP",
+"TRP": {
+"x": 121.2,
+"y": 225.6
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+-78.3,
+-417.05,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 54,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/hunte head",
+"IN": "",
+"ST": "G",
+"FF": 12,
+"LP": "LP",
+"TRP": {
+"x": 121.2,
+"y": 225.6
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+-78.3,
+-417.05,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 55,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/hunte head",
+"IN": "",
+"ST": "G",
+"FF": 11,
+"LP": "LP",
+"TRP": {
+"x": 121.2,
+"y": 225.6
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+-78.3,
+-417.05,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 56,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/hunte head",
+"IN": "",
+"ST": "G",
+"FF": 12,
+"LP": "LP",
+"TRP": {
+"x": 121.2,
+"y": 225.6
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+-78.3,
+-417.05,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 57,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/hunte head",
+"IN": "",
+"ST": "G",
+"FF": 11,
+"LP": "LP",
+"TRP": {
+"x": 121.2,
+"y": 225.6
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+-78.3,
+-417.05,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 58,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/hunte head",
+"IN": "",
+"ST": "G",
+"FF": 12,
+"LP": "LP",
+"TRP": {
+"x": 121.2,
+"y": 225.6
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+-78.3,
+-417.05,
+0.0,
+1.0
+]
+}
+}
+]
+}
+]
+},
+{
+"LN": "hunte_hand",
+"FR": [
+{
+"I": 0,
+"DU": 49,
+"E": []
+},
+{
+"I": 49,
+"DU": 10,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/hunte hand mic alt",
+"IN": "",
+"ST": "G",
+"FF": 0,
+"LP": "PO",
+"TRP": {
+"x": 88.10000000000001,
+"y": 46.65
+},
+"M3D": [
+0.989715576171875,
+0.143035888671875,
+0.0,
+0.0,
+-0.143035888671875,
+0.989715576171875,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+-203.0,
+-65.25,
+0.0,
+1.0
+]
+}
+}
+]
+}
+]
+},
+{
+"LN": "hunte_body",
+"FR": [
+{
+"I": 0,
+"DU": 49,
+"E": []
+},
+{
+"I": 49,
+"DU": 10,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/hunte body",
+"IN": "",
+"ST": "G",
+"FF": 0,
+"LP": "LP",
+"TRP": {
+"x": 200.10000000000003,
+"y": 616.45
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+-146.75,
+-268.9,
+0.0,
+1.0
+]
+}
+}
+]
+}
+]
+},
+{
+"LN": "hunte_spinny",
+"FR": [
+{
+"I": 0,
+"DU": 6,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/hunte gettin ready",
+"IN": "",
+"ST": "G",
+"FF": 0,
+"LP": "LP",
+"TRP": {
+"x": 179.9,
+"y": 290.45
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+-126.7,
+-239.25,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 6,
+"DU": 2,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/hunte gettin ready",
+"IN": "",
+"ST": "G",
+"FF": 0,
+"LP": "LP",
+"TRP": {
+"x": 178.8,
+"y": 580.15
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0689849853515625,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+-166.7,
+-239.25,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 8,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/hunte spinny",
+"IN": "",
+"ST": "G",
+"FF": 0,
+"LP": "LP",
+"TRP": {
+"x": 340.0,
+"y": 437.5
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+-337.0,
+-490.95,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 9,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/hunte spinny",
+"IN": "",
+"ST": "G",
+"FF": 1,
+"LP": "LP",
+"TRP": {
+"x": 340.0,
+"y": 437.5
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+-337.0,
+-490.95,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 10,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/hunte spinny",
+"IN": "",
+"ST": "G",
+"FF": 2,
+"LP": "LP",
+"TRP": {
+"x": 340.0,
+"y": 437.5
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+-337.0,
+-490.95,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 11,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/hunte spinny",
+"IN": "",
+"ST": "G",
+"FF": 3,
+"LP": "LP",
+"TRP": {
+"x": 340.0,
+"y": 437.5
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+-337.0,
+-490.95,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 12,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/hunte spinny",
+"IN": "",
+"ST": "G",
+"FF": 4,
+"LP": "LP",
+"TRP": {
+"x": 340.0,
+"y": 437.5
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+-337.0,
+-490.95,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 13,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/hunte spinny",
+"IN": "",
+"ST": "G",
+"FF": 5,
+"LP": "LP",
+"TRP": {
+"x": 340.0,
+"y": 437.5
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+-337.0,
+-490.95,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 14,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/hunte spinny",
+"IN": "",
+"ST": "G",
+"FF": 0,
+"LP": "LP",
+"TRP": {
+"x": 340.0,
+"y": 437.5
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+-337.0,
+-490.95,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 15,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/hunte spinny",
+"IN": "",
+"ST": "G",
+"FF": 1,
+"LP": "LP",
+"TRP": {
+"x": 340.0,
+"y": 437.5
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+-337.0,
+-490.95,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 16,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/hunte spinny",
+"IN": "",
+"ST": "G",
+"FF": 2,
+"LP": "LP",
+"TRP": {
+"x": 340.0,
+"y": 437.5
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+-337.0,
+-490.95,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 17,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/hunte spinny",
+"IN": "",
+"ST": "G",
+"FF": 3,
+"LP": "LP",
+"TRP": {
+"x": 340.0,
+"y": 437.5
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+-337.0,
+-490.95,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 18,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/hunte spinny",
+"IN": "",
+"ST": "G",
+"FF": 4,
+"LP": "LP",
+"TRP": {
+"x": 340.0,
+"y": 437.5
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+-337.0,
+-490.95,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 19,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/hunte spinny",
+"IN": "",
+"ST": "G",
+"FF": 5,
+"LP": "LP",
+"TRP": {
+"x": 340.0,
+"y": 437.5
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+-337.0,
+-490.95,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 20,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/hunte spinny",
+"IN": "",
+"ST": "G",
+"FF": 0,
+"LP": "LP",
+"TRP": {
+"x": 340.0,
+"y": 437.5
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+-337.0,
+-490.95,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 21,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/hunte spinny",
+"IN": "",
+"ST": "G",
+"FF": 1,
+"LP": "LP",
+"TRP": {
+"x": 340.0,
+"y": 437.5
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+-337.0,
+-490.95,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 22,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/hunte spinny",
+"IN": "",
+"ST": "G",
+"FF": 2,
+"LP": "LP",
+"TRP": {
+"x": 340.0,
+"y": 437.5
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+-337.0,
+-490.95,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 23,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/hunte spinny",
+"IN": "",
+"ST": "G",
+"FF": 3,
+"LP": "LP",
+"TRP": {
+"x": 340.0,
+"y": 437.5
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+-337.0,
+-490.95,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 24,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/hunte spinny",
+"IN": "",
+"ST": "G",
+"FF": 4,
+"LP": "LP",
+"TRP": {
+"x": 340.0,
+"y": 437.5
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+-337.0,
+-490.95,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 25,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/hunte spinny",
+"IN": "",
+"ST": "G",
+"FF": 5,
+"LP": "LP",
+"TRP": {
+"x": 340.0,
+"y": 437.5
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+-337.0,
+-490.95,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 26,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/hunte spinny",
+"IN": "",
+"ST": "G",
+"FF": 0,
+"LP": "LP",
+"TRP": {
+"x": 340.0,
+"y": 437.5
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+-337.0,
+-490.95,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 27,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/hunte spinny",
+"IN": "",
+"ST": "G",
+"FF": 1,
+"LP": "LP",
+"TRP": {
+"x": 340.0,
+"y": 437.5
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+-337.0,
+-490.95,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 28,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/hunte spinny",
+"IN": "",
+"ST": "G",
+"FF": 2,
+"LP": "LP",
+"TRP": {
+"x": 340.0,
+"y": 437.5
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+-337.0,
+-490.95,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 29,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/hunte spinny",
+"IN": "",
+"ST": "G",
+"FF": 3,
+"LP": "LP",
+"TRP": {
+"x": 340.0,
+"y": 437.5
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+-337.0,
+-490.95,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 30,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/hunte spinny",
+"IN": "",
+"ST": "G",
+"FF": 4,
+"LP": "LP",
+"TRP": {
+"x": 340.0,
+"y": 437.5
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+-337.0,
+-490.95,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 31,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/hunte spinny",
+"IN": "",
+"ST": "G",
+"FF": 5,
+"LP": "LP",
+"TRP": {
+"x": 340.0,
+"y": 437.5
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+-337.0,
+-490.95,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 32,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/hunte spinny",
+"IN": "",
+"ST": "G",
+"FF": 0,
+"LP": "LP",
+"TRP": {
+"x": 340.0,
+"y": 437.5
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+-337.0,
+-490.95,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 33,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/hunte spinny",
+"IN": "",
+"ST": "G",
+"FF": 1,
+"LP": "LP",
+"TRP": {
+"x": 340.0,
+"y": 437.5
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+-337.0,
+-490.95,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 34,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/hunte spinny",
+"IN": "",
+"ST": "G",
+"FF": 2,
+"LP": "LP",
+"TRP": {
+"x": 340.0,
+"y": 437.5
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+-337.0,
+-490.95,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 35,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/hunte spinny",
+"IN": "",
+"ST": "G",
+"FF": 3,
+"LP": "LP",
+"TRP": {
+"x": 340.0,
+"y": 437.5
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+-337.0,
+-490.95,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 36,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/hunte spinny",
+"IN": "",
+"ST": "G",
+"FF": 4,
+"LP": "LP",
+"TRP": {
+"x": 340.0,
+"y": 437.5
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+-337.0,
+-490.95,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 37,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/hunte spinny",
+"IN": "",
+"ST": "G",
+"FF": 5,
+"LP": "LP",
+"TRP": {
+"x": 340.0,
+"y": 437.5
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+-337.0,
+-490.95,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 38,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/hunte spinny",
+"IN": "",
+"ST": "G",
+"FF": 0,
+"LP": "LP",
+"TRP": {
+"x": 340.0,
+"y": 437.5
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+-337.0,
+-490.95,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 39,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/hunte spinny",
+"IN": "",
+"ST": "G",
+"FF": 1,
+"LP": "LP",
+"TRP": {
+"x": 340.0,
+"y": 437.5
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+-337.0,
+-490.95,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 40,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/-anims/-altmic/hunte mic idle",
+"IN": "",
+"ST": "G",
+"FF": 13,
+"LP": "SF",
+"TRP": {
+"x": 60.95,
+"y": 344.40000000000006
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+-0.0468597412109375,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+16.2,
+0.0,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 41,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/-anims/-altmic/hunte mic idle",
+"IN": "",
+"ST": "G",
+"FF": 13,
+"LP": "SF",
+"TRP": {
+"x": 60.95,
+"y": 344.4
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+-0.0468597412109375,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+16.2,
+0.0,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 42,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/-anims/-altmic/hunte mic idle",
+"IN": "",
+"ST": "G",
+"FF": 13,
+"LP": "SF",
+"TRP": {
+"x": -27.650000000000003,
+"y": -34.35
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 43,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/-anims/-altmic/hunte mic idle",
+"IN": "",
+"ST": "G",
+"FF": 13,
+"LP": "SF",
+"TRP": {
+"x": -27.65,
+"y": -34.35
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 44,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/-anims/-altmic/hunte mic idle",
+"IN": "",
+"ST": "G",
+"FF": 13,
+"LP": "SF",
+"TRP": {
+"x": -27.65,
+"y": -34.35
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 45,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/-anims/-altmic/hunte mic idle",
+"IN": "",
+"ST": "G",
+"FF": 13,
+"LP": "SF",
+"TRP": {
+"x": -27.65,
+"y": -34.35
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 46,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/-anims/-altmic/hunte mic idle",
+"IN": "",
+"ST": "G",
+"FF": 13,
+"LP": "SF",
+"TRP": {
+"x": -27.65,
+"y": -34.35
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 47,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/-anims/-altmic/hunte mic idle",
+"IN": "",
+"ST": "G",
+"FF": 13,
+"LP": "SF",
+"TRP": {
+"x": -27.65,
+"y": -34.35
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 48,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/-anims/-altmic/hunte mic idle",
+"IN": "",
+"ST": "G",
+"FF": 13,
+"LP": "SF",
+"TRP": {
+"x": -27.65,
+"y": -34.35
+},
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0
+]
+}
+}
+]
+}
+]
+}
+]
+}
+},
+{
+"SN": "hunte opp/hunte gettin ready",
+"TL": {
+"L": [
+{
+"LN": "Layer_2",
+"FR": [
+{
+"I": 0,
+"DU": 1,
+"E": [
+{
+"SI": {
+"SN": "hunte opp/hunte head",
+"IN": "",
+"ST": "G",
+"FF": 10,
+"LP": "LP",
+"TRP": {
+"x": 118.05,
+"y": 128.35
+},
+"M3D": [
+0.9600830078125,
+0.2797088623046875,
+0.0,
+0.0,
+-0.2797088623046875,
+0.9600830078125,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+157.55,
+-150.05,
+0.0,
+1.0
+]
+}
+}
+]
+}
+]
+},
+{
+"LN": "MergedLayer_1",
+"FR": [
+{
+"I": 0,
+"DU": 1,
+"E": [
+{
+"ASI": {
+"N": "0061",
+"M3D": [
+0.9976043701171875,
+0.0,
+0.0,
+0.0,
+0.0,
+0.9976043701171875,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+-24.85,
+-14.35,
+0.0,
+1.0
+]
+}
+}
+]
+}
+]
+}
+]
+}
+},
+{
+"SN": "hunte opp/hunte spinny",
+"TL": {
+"L": [
+{
+"LN": "MergedLayer_1",
+"FR": [
+{
+"I": 0,
+"DU": 2,
+"E": [
+{
+"ASI": {
+"N": "0062",
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+40.95,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 2,
+"DU": 2,
+"E": [
+{
+"ASI": {
+"N": "0063",
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+31.8,
+0.0,
+0.0,
+1.0
+]
+}
+}
+]
+},
+{
+"I": 4,
+"DU": 2,
+"E": [
+{
+"ASI": {
+"N": "0064",
+"M3D": [
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+0.0,
+0.0,
+0.0,
+1.0,
+0.0,
+40.45,
+13.25,
+0.0,
+1.0
+]
+}
+}
+]
+}
+]
+}
+]
+}
+},
+{
+"SN": "hunte opp/-anims/hunte pose sponge",
 "TL": {
 "L": [
 {
@@ -18368,7 +27539,7 @@
 }
 },
 {
-"SN": "hunte opp/-hunte anims/hunte pose mario",
+"SN": "hunte opp/-anims/hunte pose mario",
 "TL": {
 "L": [
 {
@@ -18409,7 +27580,7 @@
 }
 },
 {
-"SN": "hunte opp/-hunte anims/hunte pose burg",
+"SN": "hunte opp/-anims/hunte pose burg",
 "TL": {
 "L": [
 {
@@ -18450,7 +27621,7 @@
 }
 },
 {
-"SN": "hunte opp/-hunte anims/hunte pose do it to em",
+"SN": "hunte opp/-anims/hunte pose do it to em",
 "TL": {
 "L": [
 {
@@ -18491,7 +27662,7 @@
 }
 },
 {
-"SN": "hunte opp/-hunte anims/hunte pose givin",
+"SN": "hunte opp/-anims/hunte pose givin",
 "TL": {
 "L": [
 {
@@ -18532,7 +27703,7 @@
 }
 },
 {
-"SN": "hunte opp/-hunte anims/hunte pose epic",
+"SN": "hunte opp/-anims/hunte pose epic",
 "TL": {
 "L": [
 {

@@ -37,7 +37,7 @@ function startMinigame()
     quickAddSpr("hourHand","clockhourhand", 352,243, false)
     quickAddSpr("minuteHand","clockminutehand", 350,163, false)
 
-    font:createNewText("quarterTxt", 0, 20, "< Quarter 1 >")
+    font:createNewText("quarterTxt", 0, 20, "Quarter 1")
     font:setTextScale("quarterTxt", 3, 3)
     font:setTextCamera("quarterTxt", "other")
     font:setTextVisible("quarterTxt", false)
@@ -116,6 +116,7 @@ function lookAtClock(looking)
 end
 
 function changeNightSel(addamt)
+    if (math.min(utils:getGariiData("STaGprog"),6) == 1) then return end
     nightSel = nightSel + addamt
 
     local less, more = "<", ">"

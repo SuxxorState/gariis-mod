@@ -343,8 +343,9 @@ function Utils:trc(msg, lvl) --making this system the norm instead of just debug
     if ((not getModSetting('gariiDebug')) or getModSetting('gariiDebug') == nil) then return end
     lvl = lvl or 0  --"lvl" is the level of severity of the message, with 0 being none, 1 being good, 2 being non-fatal, and 3 being fatal
     local shits = {[0] = "9AD6FF", "8FC79B", "F4F3AD", "A284B9"}
+    local butts = {[0] = "(i)", "(+)", "[!]", "{x}"}
 
-    debugPrint(msg, shits[lvl])
+    debugPrint(butts[lvl].." "..msg, shits[lvl])
 end
 function Utils:extractNum(txt)
     local str = ""
@@ -390,6 +391,11 @@ function Utils:copyTable(t)
     return setmetatable(u, getmetatable(t))
 end
 
+function Utils:formatDigit(num)
+    if (num < 10) then return "0"..num end
+    return num
+end
+
 function Utils:copyTableTable(t)
     local u = {{}}
     for i, v in ipairs(t) do 
@@ -410,12 +416,32 @@ function Utils:tableLen(t)
     return l
 end
 
+function Utils:getSprAnimationName(spr)
+    local isSinging = ""
+    if (stringStartsWith(version, "1.0")) then isSinging = callMethod(spr..".getAnimationName")
+    else
+        isSinging = getProperty(spr..".animation.curAnim.name")
+        if (isSinging == nil) then getProperty(spr..".atlas.anim.lastPlayedAnim") end
+    end
+    debugPrint(isSinging)
+    return isSinging
+end
+
+function Utils:precacheCharList(chr, tab)
+    local originalChar = getProperty(chr..".curCharacter")
+    for spr,_ in pairs(tab) do
+        triggerEvent("Change Character", chr, spr)
+    end
+    triggerEvent("Change Character", chr, originalChar)
+end
+
 function Utils:getKeyFromBind(key, number)
     number = number or 1
     return callMethodFromClass("backend.InputFormatter", "getKeyName", {getProperty("controls.keyboardBinds")[key][number]})
 end
 
 function Utils:playSound(file, vol, tag) --for any menus that literally pause the game lole (achievements menu)- from what i know theres no way to grab a list of sounds that are currently playing
+    if (not checkFileExists("sounds/"..file..".ogg")) then return end
     if (tag == nil) then tag = "soundNil_"..getRandomInt() end
     Utils:cleanSoundList()
     local soundList = getVar("soundList") or {}

@@ -11,6 +11,26 @@ local playerAct = {}
 local bubbleCanLoop = {}
 local bubbleAnims = {}
 
+function onPrecacheBubble(chr)
+    if (version == "1.0" or version == "1.0-prerelease") then return end --im not gonna bother with fixing them in 1.0 its just not worth my time
+    local chrgrab = chr
+    if (getProperty(chr..".curCharacter") ~= nil) then chr = utils:putErThroughTheRinger(getProperty(chr..".curCharacter")) end
+
+    if (checkFileExists("images/bubbles/"..chr..".txt")) then
+        local chrref = ""
+
+        for i,ln in pairs(stringSplit(getTextFromFile("images/bubbles/"..chr..".txt").." ", "\n")) do
+            local fln = string.sub(ln, 1, #ln-1) --removes the line break
+            if (i == 1) then chrref = fln end
+        end
+        local fineName = utils:putErThroughTheRinger(getProperty(chrgrab..".curCharacter"))
+        if (chrref ~= nil) then fineName = chrref end
+
+        precacheImage("bubbles/"..fineName)
+        utils:trc("bubbleHandler: "..fineName.." bubbles precached")
+    end
+end
+
 function onRequestBubble(chr) --checks to see if a txt file exists for a given character's bubble and goes off of that. did i really just softcode a softcode file system.
     if (version == "1.0" or version == "1.0-prerelease") then return end --im not gonna bother with fixing them in 1.0 its just not worth my time
     local chrgrab = chr

@@ -26,8 +26,9 @@ local diffStats = {
     ["advanced"] = {width = 18, height = 18, mines = 60, flowers = 2},
     ["expert"] = {width = 30, height = 16, mines = 99, flowers = 4}
 }
-local curDiff, curSkin = 1, 1
-local canPlay, canChoose, canSkin = false, true, false
+local curDiff, curSkin, curEnd = 1, 1, 1
+local canPlay, canChoose, canSkin, canEnd = false, true, false, false
+local nextGameDoesNotCount = false
 local time = -1
 local x = 0
 local y = 0
@@ -97,13 +98,14 @@ function firstTimeSetup()
         quickAddSprite('minebg'..i)
     end
     
-    makeAnimatedLuaSprite("smileyicon", fold.."smiley", 600,184)
+    makeAnimatedLuaSprite("smileyicon", fold.."smallsmiles", 600,184)
     for _,anim in pairs{"reg-idle","reg-click","reg-dead","reg-win","exp-idle","exp-click","exp-dead","exp-win"} do
-        addAnimationByPrefix("smileyicon", anim, anim)
+        addAnimationByPrefix("smileyicon", anim, anim, 6)
     end
     playAnim("smileyicon", diff.."-idle")
     screenCenter("smileyicon", "x")
     quickAddSprite("smileyicon")
+    setProperty("smileyicon.active", true)
 
     makeLuaSprite("timeicon", fold.."timething", 0,184)
     quickAddSprite("timeicon")
@@ -120,24 +122,31 @@ function firstTimeSetup()
     setupGame()
 end
 
-function setupGame()
+function setupGame(resetData)
+    removeWin()
+    if (resetData == nil) then resetData = true end
     time = 0
-    data = {mines = {}, flowers = {}, opentiles = {}, flaggedtiles = {}, markedtiles = {}}
+    if (resetData) then
+        data = {mines = {}, flowers = {}, opentiles = {}, flaggedtiles = {}, markedtiles = {}}
 
-    while #data.mines < mines do
-        local newmine = {getRandomInt(1, width), getRandomInt(1, height)}
-        if not (compareIndexTables(data.mines, newmine)) then
-            table.insert(data.mines, newmine)
-        end
-    end
-
-    if (flowers >= 1) then
-        while #data.flowers < flowers do
-            local newflwr = {getRandomInt(1, width), getRandomInt(1, height)}
-            if (not (compareIndexTables(data.mines, newflwr) or compareIndexTables(data.flowers, newflwr))) then
-                table.insert(data.flowers, newflwr)
+        while #data.mines < mines do
+            local newmine = {getRandomInt(1, width), getRandomInt(1, height)}
+            if not (compareIndexTables(data.mines, newmine)) then
+                table.insert(data.mines, newmine)
             end
         end
+
+        if (flowers >= 1) then
+            while #data.flowers < flowers do
+                local newflwr = {getRandomInt(1, width), getRandomInt(1, height)}
+                if (not (compareIndexTables(data.mines, newflwr) or compareIndexTables(data.flowers, newflwr))) then
+                    table.insert(data.flowers, newflwr)
+                end
+            end
+        end
+    else data.opentiles = {}
+        data.markedtiles = {}
+        data.flaggedtiles = {}
     end
 
     for i = 1,height do
@@ -183,12 +192,12 @@ function setupGame()
     utils:playSound(fold.."start")
     runTimer("timerup",0.0000001)
 
-    playAnim("smileyicon", diff.."-idle")
+    playAnim("smileyicon", diff.."-idle", nil,nil, (getProperty("smileyicon.animation.curAnim.curFrame")+1)%2)
     pfFont:setTextString("mineTxt", ""..(mines-(#data.flaggedtiles)))
     pfFont:screenCenter("mineTxt", "X")
     pfFont:setTextX("mineTxt", pfFont:getTextX("mineTxt") + 120)
     setProperty("mineicon.x", pfFont:getTextX("mineTxt") - 24)
-    canPlay = true
+    canPlay, canEnd = true, false
 end
 
 function addGridAnims(spr, texture, wid, hei, anims) --added for convenience
@@ -199,11 +208,12 @@ function addGridAnims(spr, texture, wid, hei, anims) --added for convenience
     end
 end
 
-function quickAddSprite(spr, visible)
+function quickAddSprite(spr, visible, cam)
     setProperty(spr..".visible", visible == nil or visible == true)
     setProperty(spr..".antialiasing", false)
     setProperty(spr..".active", false) --optimization
-    utils:setObjectCamera(spr, "hud")
+    if (cam == nil) then cam = "hud" end
+    utils:setObjectCamera(spr, cam)
     addLuaSprite(spr)
 end
 
@@ -301,10 +311,7 @@ function closeSkinMenu(saveSkin)
 end
 
 function skinSel(move)
-    curSkin = curSkin + move
-    if (curSkin > #skinList) then curSkin = 1
-    elseif (curSkin < 1) then curSkin = #skinList
-    end
+    curSkin = (((curSkin-1) + move) % #skinList)+1
     if (move ~= 0) then utils:playSound(fold.."Windows Restore") end
 
     tileSkin = skinList[curSkin]
@@ -334,11 +341,27 @@ function skinSel(move)
     setProperty("testdatax.color", getColorFromHex(skinStats[tileSkin].colours.x))
 end
 
+function endSel(move)
+    curEnd = (((curEnd-1) + move)%3)+1
+    if (move ~= 0) then utils:playSound(fold.."Windows Restore") end
+
+    for i=1,3 do
+        if (i==curEnd) then pfFont:setTextAlpha("restultOption"..i, 1)
+        else pfFont:setTextAlpha("restultOption"..i, 0.5)
+        end
+    end
+    setProperty('arrowEnd.y', 313 + (curEnd*50))
+end
+
 function onUpdate(elp)
-    if (luaSpriteExists("smileyicon")) then
+    if (luaSpriteExists("smileyicon") and (not canEnd)) then
         if ((mouseReleased() or mouseReleased("right")) and utils:mouseWithinBounds({getProperty("smileyicon.x"),getProperty("smileyicon.y"), getProperty("smileyicon.x")+getProperty("smileyicon.width"),getProperty("smileyicon.y")+getProperty("smileyicon.height")}, "hud")) then
+            winStuff()
             cancelTimer("delayboom")
             stopSound("winmusic")
+            local curStreak = utils:getGariiData("btStreak") or {0,0,0,0,0}
+            curStreak[curDiff] = 0
+            utils:setGariiData("btStreak", curStreak)
             setupGame()
         end
         if (keyJustPressed("back")) then 
@@ -349,11 +372,11 @@ function onUpdate(elp)
     end
     if (canPlay) then
         if (mousePressed() and utils:mouseWithinBounds({x,y, x + (16 * width),y + (16 * height)}, "hud")) then
-            playAnim("smileyicon", diff.."-click")
+            playAnim("smileyicon", diff.."-click", nil,nil, (getProperty("smileyicon.animation.curAnim.curFrame")+1)%2)
         end
 
         if (mouseReleased() or mouseReleased("right")) then
-            playAnim("smileyicon", diff.."-idle")
+            playAnim("smileyicon", diff.."-idle", nil,nil, (getProperty("smileyicon.animation.curAnim.curFrame")+1)%2)
             if (utils:mouseWithinBounds({x,y, x + (16 * width),y + (16 * height)}, "hud")) then
                 interactWithTile(math.floor(1 + (getMouseX("camHUD") - x) / 16), math.floor(1 + (getMouseY("camHUD") - y) / 16), mouseReleased("right"))
             end
@@ -368,9 +391,7 @@ function onUpdate(elp)
         if (#data.opentiles == ((width * height) - mines)) then
             winStuff()
         end
-    end
-
-    if (canSkin) then
+    elseif (canSkin) then
         if (luaSpriteExists("arrowSkin") and getProperty('arrowSkin.alpha') == 1) then
             arrsine = arrsine + (180 * (elp/2))
             if (arrsine >= 360) then arrsine = 0 end --overflow prevention
@@ -418,6 +439,31 @@ function onUpdate(elp)
             runTimer("destroy", 1)
             canPlay = false
         end
+    elseif (canEnd) then
+        if (luaSpriteExists("arrowEnd") and getProperty('arrowEnd.alpha') == 1) then
+            arrsine = arrsine + (180 * (elp/2))
+            if (arrsine >= 360) then arrsine = 0 end --overflow prevention
+            setProperty('arrowEnd.x', 488 - math.floor(math.sin((math.pi * arrsine) / 180) * 4))
+        end
+        if (keyJustPressed("ui_up")) then endSel(-1)
+        elseif (keyJustPressed("ui_down")) then endSel(1)
+        elseif (keyJustPressed("ui_right") or keyJustPressed("accept")) then 
+            cancelTimer("delayboom")
+            stopSound("winmusic")
+            canEnd = false
+            if (curEnd == 1 or curEnd == 2) then
+                setupGame(curEnd == 1)
+                nextGameDoesNotCount = (curEnd == 2)
+            else
+                canChoose = true
+                onDestroy()
+                startMinigame()
+            end
+        elseif (keyJustPressed("ui_back")) then
+            canChoose = true
+            onDestroy()
+            startMinigame()
+        end
     end
 end
 
@@ -425,7 +471,7 @@ function interactWithTile(tilex, tiley, flag, massopen)
     if (tilex < 1 or tiley < 1) then return end
     flag = flag or false
     massopen = massopen or false
-    playAnim("smileyicon", diff.."-idle")
+    playAnim("smileyicon", diff.."-idle", nil,nil, (getProperty("smileyicon.animation.curAnim.curFrame")+1)%2)
     if not compareIndexTables(data.opentiles, {tilex, tiley}) then
         if (flag) then
             if compareIndexTables(data.markedtiles, {tilex, tiley}) then
@@ -477,7 +523,7 @@ function loseStuff()
     local curStreak = utils:getGariiData("btStreak") or {0,0,0,0,0}
     curStreak[curDiff] = 0
     utils:setGariiData("btStreak", curStreak)
-    playAnim("smileyicon", diff.."-dead")
+    playAnim("smileyicon", diff.."-dead", nil,nil, (getProperty("smileyicon.animation.curAnim.curFrame")+1)%2)
     revealMines(true)
 end
 
@@ -540,28 +586,85 @@ function checkFlaggedTiles()
 end
 
 function winStuff()
-    canPlay = false
+    canPlay, canEnd = false, true
+    curEnd = 1
     cancelTimer("timerup")
-    playAnim("smileyicon", diff.."-win")
+    playAnim("smileyicon", diff.."-win", nil,nil, (getProperty("smileyicon.animation.curAnim.curFrame")+1)%2)
     utils:playSound("results/resultsEXCELLENT", 1, "winmusic")
     revealMines()
 
-    if (curDiff > 5) then return end --no achievements for custom diff
+    if (curDiff > 5) then return --no achievements for custom diff
+    elseif (not nextGameDoesNotCount) then
+        local saveStreak = utils:getGariiData("btStreak") or {0,0,0,0,0}
+        local saveScores = utils:getGariiData("btBestScores") or {{}}
+        saveStreak[curDiff] = saveStreak[curDiff] + 1
+        if (saveScores[curDiff] == nil or saveScores[curDiff] == {}) then saveScores[curDiff] = {time = math.huge, streak = 0} end
+        saveScores[curDiff] = {time = math.min(saveScores[curDiff].time, time), streak = math.max(saveScores[curDiff].streak, saveStreak[curDiff])}
+        utils:setGariiData("btStreak", saveStreak)
+        utils:setGariiData("btBestScores", saveScores)
+        handleAchievementChecks()
+    end
+    nextGameDoesNotCount = false
+
+    winScreen()
+    endSel(0)
+end
+
+function handleAchievementChecks()
     callOnLuas("unlockAchievement", {"bt-simple"})
     if (curDiff == 5) then callOnLuas("unlockAchievement", {"bt-expert"}) end
-
-    local saveStreak = utils:getGariiData("btStreak") or {0,0,0,0,0}
-    local saveScores = utils:getGariiData("btBestScores") or {}
-    saveStreak[curDiff] = saveStreak[curDiff] + 1
-    saveScores[curDiff] = {time = math.min(saveScores[curDiff].time or math.huge, time), streak = math.max(saveScores[curDiff].streak or 0, saveStreak[curDiff])}
-    utils:setGariiData("btBestScores", saveScores)
-
-    if (saveStreak[curDiff] >= 5) then
+    if (utils:getGariiData("btStreak")[curDiff] >= 5) then
         callOnLuas("unlockAchievement", {"bt-5simple"})
         if (curDiff == 5) then callOnLuas("unlockAchievement", {"bt-5expert"}) end
     end
     if (time <= 60) then callOnLuas("unlockAchievement", {"bt-speedy"}) end
     if (time <= 300 and curDiff == 5) then callOnLuas("unlockAchievement", {"bt-exp-speed"}) end
+end
+
+function winScreen()
+    utils:makeBlankBG("winbg", 1280, 720, "000000", "hud")
+    setProperty("winbg.alpha", 0)
+    doTweenAlpha("wibg", "winbg", 0.6, 0.5)
+
+    makeAnimatedLuaSprite("smileybig", fold.."mrsmiles", 350,500)
+    addAnimationByPrefix("smileybig", "reg", "reg", 6)
+    playAnim("smileybig", "reg")
+    quickAddSprite("smileybig", nil, "hud")
+    setProperty("smileybig.active", true)
+    setProperty("smileybig.alpha", 0)
+    runTimer("smiley", 1.5)
+    
+    for i,spr in pairs({{"Diff", "meter"}, {"Time", "timething"}, {"Streak", "fire"}}) do
+        makeLuaSprite("result"..spr[1].."Icon", fold..spr[2], 700,314+(i*50))
+        quickAddSprite("result"..spr[1].."Icon")
+        setProperty("result"..spr[1].."Icon.alpha", 0)
+    end
+
+    pfFont:createNewText("resultDiffTxt", 725, 370, options[math.max(curDiff,1)], nil,nil, "hud")
+    pfFont:createNewText("resultTimeTxt", 725, 420, math.floor(math.max(time,0)/60)..":"..utils:formatDigit(math.floor(math.max(time,0)%60)), nil,nil, "hud")
+    pfFont:createNewText("resultStreakTxt", 725, 470, math.max(utils:getGariiData("btStreak")[math.max(curDiff,1)],1).." Streak", nil,nil, "hud")
+    pfFont:setTextAlpha("resultDiffTxt", 0)
+    pfFont:setTextAlpha("resultTimeTxt", 0)
+    pfFont:setTextAlpha("resultStreakTxt", 0)
+
+    for i=1,3 do
+        local shit = {"New Game", "Play Again", "Back to Menu"}
+        pfFont:createNewText("restultOption"..i, 525, 320 + (i*50), shit[i], nil,nil, "hud")
+    end
+        
+    makeLuaSprite('arrowEnd',"minigames/arrow",508,353)--250,350
+    setProperty('arrowEnd.angle', 270)
+    quickAddSprite("arrowEnd")
+
+    makeLuaSprite("wintxt", fold.."nicework", 560,90)
+    quickAddSprite("wintxt")
+    setProperty("wintxt.alpha", 0)
+    runTimer("wintxt", 0.25)
+end
+
+function removeWin()
+    for _,spr in pairs({"winbg", "smileybig", "wintxt", "resultDiffIcon", "resultTimeIcon", "resultStreakIcon", "arrowEnd"}) do removeLuaSprite(spr) end
+    for _,txt in pairs({"resultDiffTxt", "resultTimeTxt", "resultStreakTxt", "restultOption1", "restultOption2", "restultOption3"}) do pfFont:removeText(txt) end
 end
 
 function checkForOptimalStartPos()
@@ -616,17 +719,30 @@ function bigIndexOf(bigtable, indexes)
     return nil
 end
 
-function onTimerCompleted(tag)
-    if tag == "delayboom" then loseStuff()
-    elseif tag == "timerup" then time = time + 1
-        pfFont:setTextString("timeTxt", time.."")
+function onTimerCompleted(tmr, loops, left)
+    if (tmr == "delayboom") then loseStuff()
+    elseif (tmr == "timerup") then time = time + 1
+        pfFont:setTextString("timeTxt", math.floor(time/60)..":"..utils:formatDigit(math.floor(time%60)))
         pfFont:screenCenter("timeTxt", "X")
         pfFont:setTextX("timeTxt", pfFont:getTextX("timeTxt") - 100)
         setProperty("timeicon.x", pfFont:getTextX("timeTxt") - 25)
         runTimer("timerup", 1)
-    elseif tag == "destroy" then onDestroy()
+    elseif (tmr == "destroy") then onDestroy()
         close()
         callOnLuas("backToMinigameHUB")
+    elseif (tmr == "smiley") then 
+        doTweenY("smileybig", "smileybig", 200, 1, "backOut")
+        doTweenAlpha("smileybig2", "smileybig", 1, 1, "backOut")
+    elseif (tmr == "wintxt") then
+        doTweenY("wintxt", "wintxt", 190, 1, "backOut")
+        doTweenAlpha("wintxt2", "wintxt", 1, 1, "backOut")
+        runTimer("stata", 0.1, 3)
+    elseif (tmr == "stata") then
+        local spr = {"Diff", "Time", "Streak"}
+        doTweenX("result"..spr[loops-left].."Icon", "result"..spr[loops-left].."Icon", 725, 0.5, "backOut")
+        doTweenAlpha("result"..spr[loops-left].."Icon2", "result"..spr[loops-left].."Icon", 1, 0.5, "backOut")
+        pfFont:tweenTextX("result"..spr[loops-left].."Txt", 750, 0.5, "backOut")
+        pfFont:tweenTextAlpha("result"..spr[loops-left].."Txt", 1, 0.5, "backOut")
     end
 end
 
@@ -635,8 +751,9 @@ function onDestroy()
     setProperty("camHUD.zoom", 1)
     stopSound("winmusic")
     closeSkinMenu()
-    for _,tmr in pairs({"delayboom", "timerup", "destroy"}) do cancelTimer(tmr) end
-    for _,spr in pairs({"blankBG", "minebg3", "minebg1", "minebg2", "timeicon", "mineicon", "smileyicon", "grass", "blackout"}) do removeLuaSprite(spr) end
+    removeWin()
+    for _,tmr in pairs({"delayboom", "timerup", "destroy", "smiley", "wintxt", "stata"}) do cancelTimer(tmr) end
+    for _,spr in pairs({"blankBG", "minebg3", "minebg1", "minebg2", "timeicon", "mineicon", "smileyicon", "grass", "blackout", "winbg", "smileybig", "wintxt", "resultDiffIcon", "resultTimeIcon", "resultStreakIcon"}) do removeLuaSprite(spr) end
     for i = 1,height do
         for j=1,width do 
             removeLuaSprite("tile"..i.."-"..j)

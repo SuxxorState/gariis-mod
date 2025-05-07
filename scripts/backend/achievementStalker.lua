@@ -53,7 +53,7 @@ function noteMissPress()
 end
 
 function onCreate()
-    utils:setGariiData("achievements", nil)
+    --utils:setGariiData("achievements", nil)
 end
 
 function onUpdate()
@@ -78,8 +78,8 @@ end
 function unlockAchievement(ach)
     local save = utils:getGariiData("achievements") or {}
 
-    if (save[ach] == nil) then save[ach] = {}
-    elseif (save[ach][1] == true or achievements[ach] == nil) then return false end
+    if (save[ach] == nil) then save[ach] = {} end
+    if (save[ach][1] == true or achievements[ach] == nil or botPlay or practice) then return false end
 
     save[ach] = {true, os.time(os.date('*t'))}
     utils:setGariiData("achievements", save)

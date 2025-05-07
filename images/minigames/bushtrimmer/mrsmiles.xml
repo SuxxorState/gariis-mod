@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="mrsmiles.png">
+	<!-- Created with my ass -->
+	<SubTexture name="reg0000" x="0" y="0" width="129" height="331"/>
+	<SubTexture name="reg0001" x="129" y="0" width="129" height="331"/>
+</TextureAtlas>

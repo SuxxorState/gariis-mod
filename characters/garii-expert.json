@@ -1,130 +1,13 @@
 {
-	"animations": [
-		{
-			"loop": false,
-			"offsets": [
-				0,
-				0
-			],
-			"anim": "hey-fake",
-			"fps": 24,
-			"name": "-anims/fake/garii fake taunt",
-			"indices": []
-		},
-		{
-			"loop": false,
-			"offsets": [
-				0,
-				0
-			],
-			"anim": "hey-fake-alt",
-			"fps": 24,
-			"name": "-anims/fake/garii player garii taunt",
-			"indices": []
-		},
-		{
-			"offsets": [
-				0,
-				0
-			],
-			"loop": false,
-			"fps": 24,
-			"anim": "idle",
-			"indices": [],
-			"name": "-anims/nogun/garii idle maybe"
-		},
-		{
-			"offsets": [
-				11,
-				-15
-			],
-			"loop": false,
-			"fps": 24,
-			"anim": "singLEFT",
-			"indices": [],
-			"name": "-anims/nogun/gari left"
-		},
-		{
-			"offsets": [
-				-14,
-				-9
-			],
-			"loop": false,
-			"fps": 24,
-			"anim": "singDOWN",
-			"indices": [],
-			"name": "-anims/nogun/garii down pose"
-		},
-		{
-			"loop": false,
-			"offsets": [
-				-6,
-				19
-			],
-			"anim": "singUP",
-			"fps": 24,
-			"name": "-anims/nogun/gari up",
-			"indices": []
-		},
-		{
-			"loop": true,
-			"offsets": [
-				-6,
-				19
-			],
-			"anim": "singUP-loop",
-			"fps": 24,
-			"name": "-anims/nogun/gari up",
-			"indices": [
-				2,
-				3,
-				4,
-				5,
-				6,
-				7
-			]
-		},
-		{
-			"offsets": [
-				-13,
-				1
-			],
-			"loop": false,
-			"fps": 24,
-			"anim": "singRIGHT",
-			"indices": [],
-			"name": "-anims/nogun/gari righte"
-		},
-		{
-			"offsets": [
-				0,
-				0
-			],
-			"loop": false,
-			"fps": 24,
-			"anim": "hey",
-			"indices": [],
-			"name": "-anims/nogun/garii taunt"
-		}
-	],
+	"animations": [],
 	"vocals_file": "OppExpert",
 	"no_antialiasing": false,
-	"image": "characters/garii",
-	"position": [
-		-44,
-		243
-	],
-	"healthicon": "gar",
+	"image": "",
+	"position": [],
+	"healthicon": "",
 	"flip_x": false,
-	"healthbar_colors": [
-		51,
-		51,
-		51
-	],
-	"camera_position": [
-		-180,
-		60
-	],
+	"healthbar_colors": [],
+	"camera_position": [],
 	"sing_duration": 4,
 	"scale": 1,
 	"_editor_isPlayer": false

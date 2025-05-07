@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="smallsmiles.png">
+	<!-- Created with my ass -->
+	<SubTexture name="reg-idle0000" x="0" y="0" width="36" height="36"/>
+	<SubTexture name="reg-idle0001" x="0" y="36" width="36" height="36"/>
+	<SubTexture name="reg-click0000" x="36" y="0" width="36" height="36"/>
+	<SubTexture name="reg-click0001" x="36" y="36" width="36" height="36"/>
+	<SubTexture name="reg-dead0000" x="72" y="0" width="36" height="36"/>
+	<SubTexture name="reg-dead0001" x="72" y="36" width="36" height="36"/>
+	<SubTexture name="reg-win0000" x="0" y="72" width="36" height="36"/>
+	<SubTexture name="reg-win0001" x="0" y="108" width="36" height="36"/>
+	
+	<SubTexture name="exp-idle0000" x="0" y="72" width="36" height="36"/>
+	<SubTexture name="exp-idle0001" x="0" y="108" width="36" height="36"/>
+	<SubTexture name="exp-click0000" x="36" y="72" width="36" height="36"/>
+	<SubTexture name="exp-click0001" x="36" y="108" width="36" height="36"/>
+	<SubTexture name="exp-dead0000" x="72" y="0" width="36" height="36"/>
+	<SubTexture name="exp-dead0001" x="72" y="36" width="36" height="36"/>
+	<SubTexture name="exp-win0000" x="72" y="72" width="36" height="36"/>
+	<SubTexture name="exp-win0001" x="72" y="108" width="36" height="36"/>
+</TextureAtlas>
