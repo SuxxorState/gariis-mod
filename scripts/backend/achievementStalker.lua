@@ -36,7 +36,7 @@ local lastCheckedAch = ""
 local ratingAccumulation = {0,0,0,0}
 local keyPresses = 0
 local posesHit = 0
-local canEndSong = true
+local canEndSong, canEndSongII = true, true
 local ENDINGLESONG = false
 
 function goodNoteHit(id,_,nType)
@@ -63,14 +63,21 @@ function onUpdate()
     end
 end
 
+local bitch = false
+local levelEnds = {["fuzzy-dice"] = false, ["full-house"] = true} -- for story mode and allat
 function onEndSong()
     ENDINGLESONG = true
     if (posesHit <= 0 and utils.songNameFmt == "full-house") then
         unlockAchievement("no-pose")
     end
     calculateFC()
-    if (not canEndSong) then
-        return Function_Stop;
+    if ((canEndSong and canEndSongII)) then
+        if (((not isStoryMode) or levelEnds[utils.songNameFmt]) and (not bitch)) then
+            bitch = true
+            utils:endToMenu()
+            return Function_Stop;
+        end
+    else return Function_Stop;
     end
 end
 
@@ -93,7 +100,21 @@ function calculateFC()
 	local ratingPercent = math.floor((goods/totals)*100)/100
 
     if (ratingPercent == 1) then
-		canEndSong = not unlockAchievement(utils:lwrKebab(songName).."-fc")
+        if (stringEndsWith(difficultyPath, "expert")) then canEndSong = not unlockAchievement(utils:lwrKebab(songName).."-ex-fc")
+        else canEndSong = not unlockAchievement(utils:lwrKebab(songName).."-fc")
+        end
+        local clears = utils:getGariiData("levelClear")
+        if (isStoryMode) then
+            table.insert(clears, utils.songNameFmt)
+            utils:setGariiData("levelClear", clears)
+            if (levelEnds[utils.songNameFmt]) then --i would make this flexible with other levels but eye dee gaff
+                if (utils:tableContains(clears, "fuzzy-dice")) then
+                    if (stringEndsWith(difficultyPath, "expert")) then canEndSongII = not unlockAchievement("episode-ii-ex-fc")
+                    else canEndSongII = not unlockAchievement("episode-ii-fc")
+                    end
+                end
+            end
+        end
 	end
 end
 

@@ -29,13 +29,13 @@ function setupSpice(stats)
 end
 
 local bitch = false
-function onEndSong()
+--[[function onEndSong()
 	if (not isStoryMode or levelEnds[utils.songNameFmt]) and (not bitch) then 
 		bitch = true
 		utils:endToMenu()
 		return Function_Stop;
 	end
-end
+end]]
 
 function notonEndSong()
 	if ((not botPlay) and (not practice) and canUpdate) then

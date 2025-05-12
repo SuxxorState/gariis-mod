@@ -356,7 +356,6 @@ end
 function onUpdate(elp)
     if (luaSpriteExists("smileyicon") and (not canEnd)) then
         if ((mouseReleased() or mouseReleased("right")) and utils:mouseWithinBounds({getProperty("smileyicon.x"),getProperty("smileyicon.y"), getProperty("smileyicon.x")+getProperty("smileyicon.width"),getProperty("smileyicon.y")+getProperty("smileyicon.height")}, "hud")) then
-            winStuff()
             cancelTimer("delayboom")
             stopSound("winmusic")
             local curStreak = utils:getGariiData("btStreak") or {0,0,0,0,0}
@@ -596,7 +595,7 @@ function winStuff()
     if (curDiff > 5) then return --no achievements for custom diff
     elseif (not nextGameDoesNotCount) then
         local saveStreak = utils:getGariiData("btStreak") or {0,0,0,0,0}
-        local saveScores = utils:getGariiData("btBestScores") or {{}}
+        local saveScores = utils:getGariiData("btBestScores") or {}
         saveStreak[curDiff] = saveStreak[curDiff] + 1
         if (saveScores[curDiff] == nil or saveScores[curDiff] == {}) then saveScores[curDiff] = {time = math.huge, streak = 0} end
         saveScores[curDiff] = {time = math.min(saveScores[curDiff].time, time), streak = math.max(saveScores[curDiff].streak, saveStreak[curDiff])}

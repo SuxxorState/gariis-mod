@@ -1,5 +1,6 @@
 
 local utils = (require (getVar("folDir").."scripts.backend.utils")):new()
+local diif = "normal"
 
 function onCreate()
     addLuaScript("scripts/objects/extraCharacter")
@@ -12,64 +13,84 @@ function onCreate()
 end
 
 function onCreatePost() --660
-    callOnLuas("addExtraOpp", {"gariiANGERY", "garii", -60,70, false, false})
-    setProperty("gariiANGERY.visible", false)
-    setProperty('gariiANGERY.idleSuffix', '-shaking')
-    playAnim("gariiANGERY", "idle-shaking", true)
     setProperty("iconTimecarv.visible", false)
     local cameraString = [[
         import flixel.sprite.FlxSprite;
-        var camBustOpp:FlxCamera = new FlxCamera(0,720, 640,470, 1.5);
-        var camBustPlr:FlxCamera = new FlxCamera(640,720, 640,470, 1.5);
-        var camHeadOpp:FlxCamera = new FlxCamera(0,720, 1280,399, 1);
+        var camFourCrv:FlxCamera = new FlxCamera(520,725, 350,410, 0.75);
+        var camFourHnt:FlxCamera = new FlxCamera(512,915, 575,399, 0.75);//+190
+        var camFourOpp:FlxCamera = new FlxCamera(0,725, 410,315, 1.25);
+        var camFourPlr:FlxCamera = new FlxCamera(790,725, 410,315, 1.25);
+
+        camFourHnt.angle = -30;
+        camFourCrv.bgColor = 0xFFFFFFFF;
+        camFourHnt.bgColor = 0xFFFFFFFF;
+        camFourOpp.bgColor = 0xFFFFFFFF;
+        camFourPlr.bgColor = 0xFFFFFFFF;
+        FlxG.cameras.add(camFourCrv, false);
+        FlxG.cameras.add(camFourHnt, false);
+        FlxG.cameras.add(camFourOpp, false);
+        FlxG.cameras.add(camFourPlr, false);
+
+        var camBustOpp:FlxCamera = new FlxCamera(0,1145, 640,350, 1.5);
+        var camBustPlr:FlxCamera = new FlxCamera(640,1145, 640,350, 1.5);
+        var camHeadOpp:FlxCamera = new FlxCamera(0,1135, 1280,390, 1);
         camBustOpp.bgColor = 0xFFFFFFFF;
         camBustPlr.bgColor = 0xFFFFFFFF;
         camHeadOpp.bgColor = 0xFFFFFFFF;
         FlxG.cameras.add(camBustOpp, false);
         FlxG.cameras.add(camBustPlr, false);
         FlxG.cameras.add(camHeadOpp, false);
+
         FlxG.cameras.remove(camHUD, false); //yeah i had to do this cause of layering
         FlxG.cameras.remove(camOther, false);
         FlxG.cameras.add(camHUD, false);
         FlxG.cameras.add(camOther, false);
-        camBustOpp.visible = false;
-        camBustPlr.visible = false;
-        camHeadOpp.visible = false;
-        var spr:FlxSprite = new FlxSprite(500,550);
-        camHeadOpp.follow(spr);
-        var spr:FlxSprite = new FlxSprite(250,470);
-        camBustOpp.follow(spr);
-        var sprtwo:FlxSprite = new FlxSprite(1350,470);
-        camBustPlr.follow(sprtwo);
-        game.dad.cameras = [game.camGame, camBustOpp, camHeadOpp];
-        game.boyfriend.cameras = [game.camGame, camBustPlr];
-        game.getLuaObject("gariiANGERY").cameras = [camBustOpp];
+        camFourCrv.follow(new FlxSprite(850,510));
+        camFourHnt.follow(new FlxSprite(480,470));
+        camFourOpp.follow(new FlxSprite(100,450));
+        camHeadOpp.follow(new FlxSprite(500,550));
+        camBustOpp.follow(new FlxSprite(250,470));
+        camFourPlr.follow(new FlxSprite(1250,460));
+        camBustPlr.follow(new FlxSprite(1350,470));
+        game.dad.cameras = [game.camGame, camFourOpp, camBustOpp, camHeadOpp];
+        game.boyfriend.cameras = [game.camGame, camFourPlr, camBustPlr];
+        game.getLuaObject("carv").cameras = [game.camGame, camFourCrv];
+        game.gf.cameras = [game.camGame, camFourHnt];
     ]]
-    if (stringEndsWith(difficultyPath, "expert")) then
-        callOnLuas("addExtraOpp", {"garii2", "garii-redeyes", -60,70, true, false})
-        setProperty("garii2.alpha", 0)
-        cameraString = cameraString.."game.getLuaObject('garii2').cameras = [game.camGame, camBustOpp, camHeadOpp];"
-    end
 
     runTimer("delayCreate", 0.1)
     utils:runHaxeCode(cameraString)
 end
 
 function onCreateDelay()
-    makeAnimatedLuaSprite("borderhalf", "borderlineUI/borderhalf",0,720)
-    addAnimationByPrefix("borderhalf", "reg", "bordersplit")
+    makeAnimatedLuaSprite("borderfour", "borderlineUI/borderfour",0,720)
+    addAnimationByPrefix("borderfour", "reg", "borderfour")
+    utils:setObjectCamera("borderfour", "hud")
+    setObjectOrder("borderfour", 0)
+
+    makeAnimatedLuaSprite("borderhalf", "borderlineUI/borderhalf",0,1140)
+    addAnimationByPrefix("borderhalf", "reg", "borderhalf")
     utils:setObjectCamera("borderhalf", "hud")
     setObjectOrder("borderhalf", 0)
+
+    if (stringEndsWith(difficultyPath, "simple")) then diif = "simple"
+    elseif (stringEndsWith(difficultyPath, "expert")) then diif = "expert"
+    else
+        makeAnimatedLuaSprite("borderbottom", "borderlineUI/borderbottom",0,1130)
+        addAnimationByPrefix("borderbottom", "reg", "borderbottom")
+        utils:setObjectCamera("borderbottom", "hud")
+        setObjectOrder("borderbottom", 0)
+    end
 
     makeLuaSprite("screenie1", "comicpanels/middice1", 0,0)
     setProperty("screenie1.alpha", 0)
     utils:setObjectCamera("screenie1", "hud")
     setObjectOrder("screenie1", 0)
     
-    makeLuaSprite("screenie2", "comicpanels/middice2", 0,0)
+    --[[makeLuaSprite("screenie2", "comicpanels/middice2", 0,0)
     setProperty("screenie2.alpha", 0)
     utils:setObjectCamera("screenie2", "hud")
-    setObjectOrder("screenie2", 0)
+    setObjectOrder("screenie2", 0)]]
 end
 
 
@@ -86,7 +107,7 @@ function onEventPushed(name, value1, value2, strumTime)
     end
 end
 
-local shit = false
+local shit = 0
 function onEvent(name, value1, value2, strumTime)
     local event = name:lower()
     local val1 = value1:lower()
@@ -102,73 +123,117 @@ function onEvent(name, value1, value2, strumTime)
         runTimer("fly gf fly", 4/24)
         runTimer("startle bf", 6/24)
         runTimer("die goons", 30/24)
-    elseif (event == "kill extra garii") then 
-        setProperty("garii2.alpha", 0)
-        callOnLuas("removeExtraChar", {"garii2"})
-    elseif (event == "toggle close-up cams") then
-        if (shit) then toggleShits()
-        else
+    elseif (event == "advance close-up cams") then
+        shit = shit + 1
+        if (shit == 1) then
             doTweenAlpha("screenie1", "screenie1", 1, 0.5)
             runTimer("togel1", 0.5)
+        elseif (shit == 2) then
+            doTweenY("screenieone", "screenie1", -1060, 0.5, "sineOut")
+            doTweenY("borderfour", "borderfour", -340, 0.5, "sineOut")
+            doTweenY("borderhalf", "borderhalf", 80, 0.5, "sineOut")
+            utils:runHaxeCode([[
+                for (i in 1...7) {
+                    if (i == 2) {
+                        FlxTween.tween(FlxG.cameras.list[i], {y:-145}, 0.5, {ease: FlxEase.sineOut, onComplete: function(twn:FlxTween) {
+                            FlxG.cameras.list[i].visible = false;
+                        }});
+                    } else if (i <= 4) {
+                        FlxTween.tween(FlxG.cameras.list[i], {y:-335}, 0.5, {ease: FlxEase.sineOut});
+                    } else {
+                        FlxTween.tween(FlxG.cameras.list[i], {y:85}, 0.5, {ease: FlxEase.sineOut});
+                    }
+                }
+            ]])
+            if (luaSpriteExists("borderbottom")) then doTweenY("borderbottom", "borderbottom", 640, 0.5, "sineOut")
+                utils:runHaxeCode("FlxTween.tween(FlxG.cameras.list[7], {y:645}, 0.5, {ease: FlxEase.sineOut});")
+            else
+                utils:runHaxeCode([[
+                    game.camGame.y = 1210;
+                    FlxTween.tween(game.camGame, {y:640}, 0.5, {ease: FlxEase.sineOut});
+                ]])
+            end
+            debugPrint(getProperty("camGame.visible"))
+        elseif (shit == 3 and luaSpriteExists("borderbottom")) then
+            --doTweenY("screenie21", "screenie2", -399, 0.5, "sineOut")
+            --doTweenAlpha("screenie2", "screenie2", 1, 0.5)
+            doTweenY("borderhalf", "borderhalf", -410, 0.5, "sineOut")
+            doTweenY("borderfour", "borderfour", -830, 0.5, "sineOut")
+            doTweenY("borderbottom", "borderbottom", 150, 0.5, "sineOut")
+    
+            utils:runHaxeCode([[
+                for (i in 1...7) {
+                    if (i > 4) {
+                        FlxTween.tween(FlxG.cameras.list[i], {y:-405}, 0.5, {ease: FlxEase.sineOut});
+                    } else {
+                        FlxTween.tween(FlxG.cameras.list[i], {y:-825}, 0.5, {ease: FlxEase.sineOut});
+                    }
+                }
+                FlxG.cameras.list[7].visible = true;
+                FlxTween.tween(FlxG.cameras.list[7], {y:155}, 0.5, {ease: FlxEase.sineOut});
+
+                game.camGame.y = 1060;
+                FlxTween.tween(game.camGame, {y:570}, 0.5, {ease: FlxEase.sineOut});
+            ]])
+        else 
+            setProperty("gf.angle", 0)
+            if (luaSpriteExists("borderbottom")) then doTweenY("borderbottom", "borderbottom", -419, 0.5, "sineOut")
+                doTweenY("borderhalf", "borderhalf", -1119, 0.5, "sineOut")
+                utils:runHaxeCode([[
+                    for (i in 5...7) {
+                        FlxG.cameras.list[i].visible = true;
+                        FlxTween.tween(FlxG.cameras.list[i], {y:-1114}, 0.5, {ease: FlxEase.sineOut, onComplete: function(twn:FlxTween) {
+                            FlxG.cameras.list[i].visible = false;
+                        }});
+                    }
+                    FlxTween.tween(game.camGame, {y:0}, 0.5, {ease: FlxEase.sineOut});
+                    FlxTween.tween(FlxG.cameras.list[7], {y:-394}, 0.5, {ease: FlxEase.sineOut});
+                ]])
+            else doTweenY("borderfour", "borderfour", -980, 0.5, "sineOut")
+                doTweenY("borderhalf", "borderhalf", -560, 0.5, "sineOut")
+                utils:runHaxeCode([[
+                    for (i in 1...7) {
+                        FlxTween.tween(FlxG.cameras.list[i], {y:-555}, 0.5, {ease: FlxEase.sineOut, onComplete: function(twn:FlxTween) {
+                            FlxG.cameras.list[i].visible = false;
+                        }});
+                    }
+                    FlxTween.tween(game.camGame, {y:0}, 0.5, {ease: FlxEase.sineOut});
+                ]])
+            end
+            --doTweenY("screenie21", "screenie2", -1119, 0.5, "sineOut")
         end
-    elseif (event == "advance close-up cams") then
-        setProperty("gariiANGERY.visible", true)
-        triggerEvent("extra-char-play-anim", "gariiANGERY", "idle-shaking")
-
-        doTweenY("screenie21", "screenie2", -399, 0.5, "sineOut")
-        doTweenAlpha("screenie2", "screenie2", 1, 0.5)
-        doTweenY("borderleft", "borderhalf", -399, 0.5, "sineOut")
-
-        utils:runHaxeCode([[
-            for (i in 1...3) {
-                FlxTween.tween(FlxG.cameras.list[i], {y:-399}, 0.5, {ease: FlxEase.sineOut});
-            }
-            FlxG.cameras.list[3].visible = true;
-            FlxTween.tween(FlxG.cameras.list[3], {y:321}, 0.5, {ease: FlxEase.sineOut});
-            
-            game.dad.cameras = [game.camGame, FlxG.cameras.list[3] ];
-        ]])
     elseif (event == "change character") then
         local valExc = {["gf"] = "gf", ["girlfriend"] = "gf", ["1"] = "gf", ["dad"] = "dad", ["opponent"] = "dad", ["0"] = "dad"}
         local chngChr = valExc[val1] or "boyfriend"
 
         if (chngChr == "boyfriend") then --hackjob solution to fix a bullshit problem
-            utils:runHaxeCode("game.boyfriend.cameras = [game.camGame, FlxG.cameras.list[2]];")
+            utils:runHaxeCode("game.boyfriend.cameras = [game.camGame, FlxG.cameras.list[4], FlxG.cameras.list[6]];")
+        elseif (chngChr == "dad") then
+            utils:runHaxeCode("game.dad.cameras = [game.camGame, FlxG.cameras.list[3], FlxG.cameras.list[5], FlxG.cameras.list[7]];")
+        elseif (chngChr == "gf") then
+            utils:runHaxeCode("game.gf.cameras = [game.camGame, FlxG.cameras.list[2]];")
         end
     end
 end
 
 function toggleShits()
-    shit = not shit
-    if (shit) then doTweenAlpha("garii2", "garii2", 1, 5)
-        doTweenY("screenieone", "screenie1", -720, 0.5, "sineOut")
-        doTweenY("borderleft", "borderhalf", 0, 0.5, "sineOut")
-    else
-        doTweenY("borderleft", "borderhalf", -1119, 0.5, "sineOut")
-        doTweenY("screenie21", "screenie2", -1119, 0.5, "sineOut")
-    end
+    if (shit ~= 1) then return end
+    doTweenY("screenieone", "screenie1", -570, 0.5, "sineOut")
+    doTweenY("borderfour", "borderfour", 150, 0.5, "sineOut")
+    doTweenY("borderhalf", "borderhalf", 570, 0.5, "sineOut")
     utils:runHaxeCode([[
-        var fuckass:Bool = true;
-        for (i in 1...3) {
-            FlxG.cameras.list[i].visible = !FlxG.cameras.list[i].visible;
-            fuckass = FlxG.cameras.list[i].visible;
-            if (FlxG.cameras.list[i].visible) {
-                FlxTween.tween(FlxG.cameras.list[i], {y:0}, 0.5, {ease: FlxEase.sineOut});
+        for (i in 1...7) {
+            if (i == 2) {
+                FlxTween.tween(FlxG.cameras.list[i], {y:345}, 0.5, {ease: FlxEase.sineOut});
+            } else if (i > 4) {
+                FlxTween.tween(FlxG.cameras.list[i], {y:575}, 0.5, {ease: FlxEase.sineOut});
             } else {
-                FlxG.cameras.list[i].visible = true;
-                FlxTween.tween(FlxG.cameras.list[i], {y:-1119}, 0.5, {ease: FlxEase.sineOut, onComplete: function(twn:FlxTween) {
-                    FlxG.cameras.list[i].visible = false;
-                }});
+                FlxTween.tween(FlxG.cameras.list[i], {y:155}, 0.5, {ease: FlxEase.sineOut});
             }
         }
-        if (fuckass) {
-            FlxTween.tween(game.camGame, {y:-720}, 0.5, {ease: FlxEase.sineOut, onComplete: function(twn:FlxTween) {
-                game.camGame.y = 720;
-            }});
-        } else {
-            FlxTween.tween(game.camGame, {y:0}, 0.5, {ease: FlxEase.sineOut});
-            FlxTween.tween(FlxG.cameras.list[3], {y:-399}, 0.5, {ease: FlxEase.sineOut});
-        }
+        FlxTween.tween(game.camGame, {y:-570}, 0.5, {ease: FlxEase.sineOut, onComplete: function(twn:FlxTween) {
+            game.camGame.y = 720;
+        }});
     ]])
 end
 
@@ -194,6 +259,7 @@ function onTimerCompleted(tmr)
         callOnLuas("removeExtraChar", {"hunte", true})
     elseif (tmr == "delayCreate") then onCreateDelay()
     elseif (tmr == "togel1") then toggleShits()
+        setProperty("gf.angle", 30)
 	end
 end
 

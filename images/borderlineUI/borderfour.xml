@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="borderfour.png">
+	<!-- Created with Adobe Animate version 23.0.1.70 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="borderfour0000" x="0" y="0" width="1280" height="420" pivotX="0" pivotY="0"/>
+	<SubTexture name="borderfour0001" x="0" y="0" width="1280" height="420"/>
+	<SubTexture name="borderfour0002" x="0" y="0" width="1280" height="420"/>
+	<SubTexture name="borderfour0003" x="0" y="0" width="1280" height="420"/>
+	<SubTexture name="borderfour0004" x="0" y="0" width="1280" height="420"/>
+	<SubTexture name="borderfour0005" x="0" y="0" width="1280" height="420"/>
+	<SubTexture name="borderfour0006" x="0" y="0" width="1280" height="420"/>
+	<SubTexture name="borderfour0007" x="0" y="0" width="1280" height="420"/>
+	<SubTexture name="borderfour0008" x="0" y="422" width="1280" height="420"/>
+	<SubTexture name="borderfour0009" x="0" y="422" width="1280" height="420"/>
+	<SubTexture name="borderfour0010" x="0" y="422" width="1280" height="420"/>
+	<SubTexture name="borderfour0011" x="0" y="422" width="1280" height="420"/>
+	<SubTexture name="borderfour0012" x="0" y="422" width="1280" height="420"/>
+	<SubTexture name="borderfour0013" x="0" y="422" width="1280" height="420"/>
+	<SubTexture name="borderfour0014" x="0" y="422" width="1280" height="420"/>
+	<SubTexture name="borderfour0015" x="0" y="422" width="1280" height="420"/>
+	<SubTexture name="borderfour0016" x="0" y="844" width="1280" height="420"/>
+	<SubTexture name="borderfour0017" x="0" y="844" width="1280" height="420"/>
+	<SubTexture name="borderfour0018" x="0" y="844" width="1280" height="420"/>
+	<SubTexture name="borderfour0019" x="0" y="844" width="1280" height="420"/>
+	<SubTexture name="borderfour0020" x="0" y="844" width="1280" height="420"/>
+	<SubTexture name="borderfour0021" x="0" y="844" width="1280" height="420"/>
+	<SubTexture name="borderfour0022" x="0" y="844" width="1280" height="420"/>
+	<SubTexture name="borderfour0023" x="0" y="844" width="1280" height="420"/>
+</TextureAtlas>

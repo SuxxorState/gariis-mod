@@ -852,7 +852,7 @@
 						"0.0001"
 					],
 					[
-						"Toggle Close-up Cams",
+						"Advance Close-up Cams",
 						"a",
 						""
 					],
@@ -880,6 +880,16 @@
 						"Alt Idle Animation",
 						"dad",
 						"-confused"
+					]
+				]
+			],
+			[
+				93214.2857142858,
+				[
+					[
+						"Advance Close-up Cams",
+						"",
+						""
 					]
 				]
 			],
@@ -957,7 +967,7 @@
 				101785.714285714,
 				[
 					[
-						"Toggle Close-up Cams",
+						"Advance Close-up Cams",
 						"",
 						""
 					]

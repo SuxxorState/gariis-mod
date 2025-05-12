@@ -1,5 +1,5 @@
 garii
-, Bubble Only, Fake Alt Anim, Side Alt Anim, Snide Alt Anim, Angry Alt Anim, Done Alt Anim
+, Bubble Only, Fake Alt Anim, Side Alt Anim, Snide Alt Anim, Angry Alt Anim, Done Alt Anim, Confused Alt Anim, Confused No Gun, Side No Gun, Done No Gun, No Gun Alt Anim
 
 bubbleLEFT-fake, gari buble round, -130, 80
 bubbleDOWN-fake, gar buble fart, 110, 140
@@ -16,6 +16,11 @@ bubbleDOWN-side, gari long buble rounder, 120, 175
 bubbleUP-side, gari buble semisquare, 475, 300
 bubbleRIGHT-side, gari evil rectangle bubble, 200, 130
 
+bubbleLEFT-confused, gari buble yell left, 160, 210
+bubbleDOWN-confused, gari long buble rounder, 120, 175
+bubbleUP-confused, gari buble semisquare, 475, 300
+bubbleRIGHT-confused, gari evil rectangle bubble, 200, 130
+
 bubbleLEFT-snide, gari buble yell left, 160, 210
 bubbleDOWN-snide, gari long buble rounder, 120, 175
 bubbleUP-snide, gari buble semisquare, 475, 300
@@ -30,3 +35,24 @@ bubbleLEFT-done, gari buble round, -130, 80
 bubbleDOWN-done, gar buble fart, 110, 140
 bubbleUP-done, garii bubel yall, 425, 420
 bubbleRIGHT-done, gar doodoo bib;e, 310, 170
+
+
+bubbleLEFT-nogun, gari buble yell left, 160, 210
+bubbleDOWN-nogun, gari long buble rounder, 120, 175
+bubbleUP-nogun, gari buble semisquare, 475, 300
+bubbleRIGHT-nogun, gari evil rectangle bubble, 200, 130
+
+bubbleLEFT-nogunside, gari buble yell left, 160, 210
+bubbleDOWN-nogunside, gari long buble rounder, 120, 175
+bubbleUP-nogunside, gari buble semisquare, 475, 300
+bubbleRIGHT-nogunside, gari evil rectangle bubble, 200, 130
+
+bubbleLEFT-nogunconfused, gari buble yell left, 160, 210
+bubbleDOWN-nogunconfused, gari long buble rounder, 120, 175
+bubbleUP-nogunconfused, gari buble semisquare, 475, 300
+bubbleRIGHT-nogunconfused, gari evil rectangle bubble, 200, 130
+
+bubbleLEFT-nogundone, gari buble round, -130, 80
+bubbleDOWN-nogundone, gar buble fart, 110, 140
+bubbleUP-nogundone, garii bubel yall, 425, 420
+bubbleRIGHT-nogundone, gar doodoo bib;e, 310, 170

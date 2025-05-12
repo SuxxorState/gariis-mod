@@ -39,7 +39,7 @@ local achievements = {
     ["bt-speedy"] = {title = "Little Smiley Face", description = "Clear a round in under a minute.", iconFile = "smiley", secret = false, gariiPoints = 20},
     ["bt-expert"] = {title = "Minefield in a Bush", description = "Clear your first round on Expert.", iconFile = "mine-bush", secret = false, gariiPoints = 25},
     ["bt-5expert"] = {title = "Clusterluck", description = "Clear 5 rounds in a row on Expert.", iconFile = "boom", secret = false, gariiPoints = 50},
-    ["bt-exp-speed"] = {title = "Horticulturist", description = "Clear a round on Expert in under two minutes.", iconFile = "shears", secret = false, gariiPoints = 75},
+    ["bt-exp-speed"] = {title = "Horticulturist", description = "Clear a round on Expert in under five minutes.", iconFile = "shears", secret = false, gariiPoints = 75},
 
     ["fl-everyfruit"] = {title = "Pic-a-nic Basket", description = "Gather Every Food and Drink", iconFile = "", secret = false, gariiPoints = 10},
     ["fl-everytrash"] = {title = "Junkyard", description = "Collect Every Type of Trash", iconFile = "", secret = false, gariiPoints = 25},

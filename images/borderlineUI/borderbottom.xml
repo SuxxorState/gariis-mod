@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="borderbottom.png">
+	<!-- Created with Adobe Animate version 23.0.1.70 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="borderbottom0000" x="0" y="0" width="1280" height="420" pivotX="0" pivotY="0"/>
+	<SubTexture name="borderbottom0001" x="0" y="0" width="1280" height="420"/>
+	<SubTexture name="borderbottom0002" x="0" y="0" width="1280" height="420"/>
+	<SubTexture name="borderbottom0003" x="0" y="0" width="1280" height="420"/>
+	<SubTexture name="borderbottom0004" x="0" y="0" width="1280" height="420"/>
+	<SubTexture name="borderbottom0005" x="0" y="0" width="1280" height="420"/>
+	<SubTexture name="borderbottom0006" x="0" y="0" width="1280" height="420"/>
+	<SubTexture name="borderbottom0007" x="0" y="0" width="1280" height="420"/>
+	<SubTexture name="borderbottom0008" x="0" y="422" width="1280" height="420"/>
+	<SubTexture name="borderbottom0009" x="0" y="422" width="1280" height="420"/>
+	<SubTexture name="borderbottom0010" x="0" y="422" width="1280" height="420"/>
+	<SubTexture name="borderbottom0011" x="0" y="422" width="1280" height="420"/>
+	<SubTexture name="borderbottom0012" x="0" y="422" width="1280" height="420"/>
+	<SubTexture name="borderbottom0013" x="0" y="422" width="1280" height="420"/>
+	<SubTexture name="borderbottom0014" x="0" y="422" width="1280" height="420"/>
+	<SubTexture name="borderbottom0015" x="0" y="422" width="1280" height="420"/>
+	<SubTexture name="borderbottom0016" x="0" y="844" width="1280" height="420"/>
+	<SubTexture name="borderbottom0017" x="0" y="844" width="1280" height="420"/>
+	<SubTexture name="borderbottom0018" x="0" y="844" width="1280" height="420"/>
+	<SubTexture name="borderbottom0019" x="0" y="844" width="1280" height="420"/>
+	<SubTexture name="borderbottom0020" x="0" y="844" width="1280" height="420"/>
+	<SubTexture name="borderbottom0021" x="0" y="844" width="1280" height="420"/>
+	<SubTexture name="borderbottom0022" x="0" y="844" width="1280" height="420"/>
+	<SubTexture name="borderbottom0023" x="0" y="844" width="1280" height="420"/>
+</TextureAtlas>

@@ -260,7 +260,7 @@ function changeSelected(lol)
 			setProperty("spsneedle.angle", sauceFX[utils:lwrKebab(sauces[curSauce])].needleAngle + 5)
 		end
 		return
-		--[[if (getDataFromSave("gariis-mod_v0.95", "expertSauces") ~= nil and #sauces < 7) then
+		--[[if (utils:getGariiData("expertSauces") ~= nil and #sauces < 7) then
 			if (sssCounter < 10) then sssCounter = sssCounter+1
 				cancelTimer("sssTimer")
 				setProperty("spsneedle.angle", getProperty("spsneedle.angle") + sssCounter)

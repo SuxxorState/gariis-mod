@@ -14,6 +14,7 @@ function initLuas()
     if (getPropertyFromClass('openfl.Lib', 'application.window.title') ~= "Friday Night Funkin': GARII'S MOD") then
         if (not getModSetting('sauceLock')) then utils:setGariiData("curSauce", nil) end
         utils:setGariiData("watchedCutscene", "")
+        utils:setGariiData("levelClear", {})
         utils:setGariiData("cachedInMyStupidToken", false)
         utils:setGariiData("storyStats", nil)
         utils:setGariiData("deathCounter", 0)
@@ -201,7 +202,7 @@ function onUpdate(elapsed)
         end
         if (keyboardJustPressed("F8")) then endSong() end
         if (keyboardJustPressed("F9")) then exitSong() end --anti softlock
-        local shits = {["fuzzy-dice"] = {90000, 58000}, ["full-house"] = {136000, 58000}}
+        local shits = {["fuzzy-dice"] = {84000, 58000}, ["full-house"] = {136000, 58000}}
         if (keyboardJustPressed("F10")) then callMethod("setSongTime", {shits[utils.songNameFmt][1]}) --fullhouse blackout
             callMethod("clearNotesBefore", {getPropertyFromClass("backend.Conductor", "songPosition")}) 
         end
