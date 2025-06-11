@@ -21,33 +21,5 @@
 		"description": "Keybind for accessing the Achievements Guide Menu.",
 		"keyboard": "F1",
 		"gamepad": "GUIDE"
-	},
-	{
-		"save": "faithfulMode",
-		"name": "More Faithfuller",
-		"type": "bool",
-		"description": "Makes most references in the mod even more faithful to the original material, forgoing any changes made to fit with the mod's theming.",
-		"value": false
-	},
-	{
-		"save": "gariiDebug",
-		"name": "Debug Mode",
-		"type": "bool",
-		"description": "Enables debug mode and any features that come with it.",
-		"value": false
-	},
-	{
-		"save": "bubbleOpacity",
-		"name": "[DEBUG] Bubble Opacity",
-		"type": "percent",
-		"description": "Change the opacity of the speech bubbles. Some effects will not be affected. Only Works in Debug Mode.",
-		"value": 1,
-	
-		"min": 0,
-		"max": 1,
-		"step": 0.1,
-
-		"decimals": 1,
-		"scroll": 0.1
 	}
 ]

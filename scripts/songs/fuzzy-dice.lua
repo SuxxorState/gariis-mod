@@ -19,7 +19,7 @@ function onCreatePost() --660
         var camFourCrv:FlxCamera = new FlxCamera(520,725, 350,410, 0.75);
         var camFourHnt:FlxCamera = new FlxCamera(512,915, 575,399, 0.75);//+190
         var camFourOpp:FlxCamera = new FlxCamera(0,725, 410,315, 1.25);
-        var camFourPlr:FlxCamera = new FlxCamera(790,725, 410,315, 1.25);
+        var camFourPlr:FlxCamera = new FlxCamera(790,725, 370,315, 1.25);
 
         camFourHnt.angle = -30;
         FlxG.cameras.add(camFourCrv, false);
@@ -28,7 +28,7 @@ function onCreatePost() --660
         FlxG.cameras.add(camFourPlr, false);
 
         var camBustOpp:FlxCamera = new FlxCamera(0,1145, 640,350, 1.5);
-        var camBustPlr:FlxCamera = new FlxCamera(640,1145, 640,350, 1.5);
+        var camBustPlr:FlxCamera = new FlxCamera(640,1145, 410,350, 1.5);
         var camHeadOpp:FlxCamera = new FlxCamera(0,1135, 1280,390, 1);
         FlxG.cameras.add(camBustOpp, false);
         FlxG.cameras.add(camBustPlr, false);
@@ -48,7 +48,7 @@ function onCreatePost() --660
         camHeadOpp.follow(new FlxSprite(500,550));
         camBustOpp.follow(new FlxSprite(250,470));
         camFourPlr.follow(new FlxSprite(1250,460));
-        camBustPlr.follow(new FlxSprite(1350,470));
+        camBustPlr.follow(new FlxSprite(1250,470));
         game.dad.cameras = [game.camGame, camFourOpp, camBustOpp, camHeadOpp];
         game.boyfriend.cameras = [game.camGame, camFourPlr, camBustPlr];
         game.getLuaObject("carv").cameras = [game.camGame, camFourCrv];
@@ -77,17 +77,25 @@ function onCreateDelay()
         addAnimationByPrefix("borderbottom", "reg", "borderbottom")
         utils:setObjectCamera("borderbottom", "hud")
         setObjectOrder("borderbottom", 0)
+
+        makeAnimatedLuaSprite("watdafak", "bubbles/garicurse", 500,0)
+        addAnimationByPrefix("watdafak", "reg", "watdagak", 24, false)
+        setProperty("watdafak.alpha", 0)
+        utils:setObjectCamera("watdafak", "hud")
+        setObjectOrder("watdafak", 1)
+        
+        makeLuaSprite("screenie4", "comicpanels/middice4", 0,0)
+        setProperty("screenie4.alpha", 0)
+        utils:setObjectCamera("screenie4", "hud")
+        setObjectOrder("screenie4", 0)
     end
 
-    makeLuaSprite("screenie1", "comicpanels/middice1", 0,0)
-    setProperty("screenie1.alpha", 0)
-    utils:setObjectCamera("screenie1", "hud")
-    setObjectOrder("screenie1", 0)
-    
-    --[[makeLuaSprite("screenie2", "comicpanels/middice2", 0,0)
-    setProperty("screenie2.alpha", 0)
-    utils:setObjectCamera("screenie2", "hud")
-    setObjectOrder("screenie2", 0)]]
+    for i = 1,3 do
+        makeLuaSprite("screenie"..i, "comicpanels/middice"..i, 0,0)
+        setProperty("screenie"..i..".alpha", 0)
+        utils:setObjectCamera("screenie"..i, "hud")
+        setObjectOrder("screenie"..i, 0)
+    end
 end
 
 
@@ -126,6 +134,7 @@ function onEvent(name, value1, value2, strumTime)
             doTweenAlpha("screenie1", "screenie1", 1, 0.5)
             runTimer("togel1", 0.5)
         elseif (shit == 2) then
+            doTweenAlpha("screenie2", "screenie2", 1, 0.25)
             doTweenY("screenieone", "screenie1", -1060, 0.5, "sineOut")
             doTweenY("borderfour", "borderfour", -340, 0.5, "sineOut")
             doTweenY("borderhalf", "borderhalf", 80, 0.5, "sineOut")
@@ -148,14 +157,18 @@ function onEvent(name, value1, value2, strumTime)
                     FlxG.cameras.list[7].active = FlxG.cameras.list[7].visible = true;
                 ]])
             else
+                runTimer("quickfade", 8)
                 utils:runHaxeCode([[
                     game.camGame.y = 1210;
                     FlxTween.tween(game.camGame, {y:640}, 0.5, {ease: FlxEase.sineOut});
                 ]])
             end
         elseif (shit == 3 and luaSpriteExists("borderbottom")) then
-            --doTweenY("screenie21", "screenie2", -399, 0.5, "sineOut")
-            --doTweenAlpha("screenie2", "screenie2", 1, 0.5)
+            runTimer("quickfade", 0.5)
+            doTweenAlpha("screenie3", "screenie3", 1, 0.25)
+            setProperty("watdafak.alpha", 1)
+            playAnim("watdafak", "reg")
+            
             doTweenY("borderhalf", "borderhalf", -410, 0.5, "sineOut")
             doTweenY("borderfour", "borderfour", -830, 0.5, "sineOut")
             doTweenY("borderbottom", "borderbottom", 150, 0.5, "sineOut")
@@ -177,6 +190,7 @@ function onEvent(name, value1, value2, strumTime)
         else 
             setProperty("gf.angle", 0)
             if (luaSpriteExists("borderbottom")) then doTweenY("borderbottom", "borderbottom", -419, 0.5, "sineOut")
+
                 doTweenY("borderhalf", "borderhalf", -1119, 0.5, "sineOut")
                 utils:runHaxeCode([[
                     for (i in 5...7) {
@@ -192,6 +206,7 @@ function onEvent(name, value1, value2, strumTime)
                 ]])
             else doTweenY("borderfour", "borderfour", -980, 0.5, "sineOut")
                 doTweenY("borderhalf", "borderhalf", -560, 0.5, "sineOut")
+                
                 utils:runHaxeCode([[
                     for (i in 1...7) {
                         FlxTween.tween(FlxG.cameras.list[i], {y:-555}, 0.5, {ease: FlxEase.sineOut});
@@ -244,7 +259,13 @@ end
 canShit = false
 doGFChecks = false
 function onTimerCompleted(tmr)
-	if (tmr == 'fly gf fly') then
+    if (tmr == "quickfade") then
+        if (luaSpriteExists("borderbottom")) then 
+            doTweenAlpha("screenie4", "screenie4", 1, 0.25)
+        else
+            doTweenAlpha("screenie3", "screenie3", 1, 0.25)
+        end
+	elseif (tmr == 'fly gf fly') then
         utils:playSound("badexplosion", 0.25)
         setProperty("gf.alpha", 0)
         doGFChecks = true
@@ -278,4 +299,10 @@ function onUpdatePost(elp)
             end
         end
     end
+    if (luaSpriteExists("borderbottom")) then
+        setProperty("watdafak.y", getProperty("borderbottom.y") + 40)
+        setProperty("screenie4.y", getProperty("borderbottom.y"))
+    end
+    setProperty("screenie2.y", getProperty("borderfour.y"))
+    setProperty("screenie3.y", getProperty("borderhalf.y"))
 end

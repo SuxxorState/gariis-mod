@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="garicurse.png">
+	<!-- Created with Adobe Animate version 23.0.1.70 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="watdagak0000" x="1826" y="630" width="89" height="108" pivotX="-24.7" pivotY="18.6" frameX="0" frameY="-22" frameWidth="862" frameHeight="320"/>
+	<SubTexture name="watdagak0001" x="1826" y="630" width="89" height="108" frameX="0" frameY="-22" frameWidth="862" frameHeight="320"/>
+	<SubTexture name="watdagak0002" x="1829" y="138" width="196" height="114" frameX="-6" frameY="-20" frameWidth="862" frameHeight="320"/>
+	<SubTexture name="watdagak0003" x="1829" y="138" width="196" height="114" frameX="-6" frameY="-20" frameWidth="862" frameHeight="320"/>
+	<SubTexture name="watdagak0004" x="1583" y="138" width="244" height="145" frameX="-6" frameY="0" frameWidth="862" frameHeight="320"/>
+	<SubTexture name="watdagak0005" x="1583" y="138" width="244" height="145" frameX="-6" frameY="0" frameWidth="862" frameHeight="320"/>
+	<SubTexture name="watdagak0006" x="1583" y="0" width="396" height="136" frameX="-6" frameY="-1" frameWidth="862" frameHeight="320"/>
+	<SubTexture name="watdagak0007" x="1583" y="0" width="396" height="136" frameX="-6" frameY="-1" frameWidth="862" frameHeight="320"/>
+	<SubTexture name="watdagak0008" x="1264" y="630" width="560" height="130" frameX="-6" frameY="-7" frameWidth="862" frameHeight="320"/>
+	<SubTexture name="watdagak0009" x="1264" y="630" width="560" height="130" frameX="-6" frameY="-7" frameWidth="862" frameHeight="320"/>
+	<SubTexture name="watdagak0010" x="692" y="630" width="570" height="140" frameX="-6" frameY="-7" frameWidth="862" frameHeight="320"/>
+	<SubTexture name="watdagak0011" x="692" y="630" width="570" height="140" frameX="-6" frameY="-7" frameWidth="862" frameHeight="320"/>
+	<SubTexture name="watdagak0012" x="0" y="630" width="690" height="140" frameX="-6" frameY="-7" frameWidth="862" frameHeight="320"/>
+	<SubTexture name="watdagak0013" x="0" y="630" width="690" height="140" frameX="-6" frameY="-7" frameWidth="862" frameHeight="320"/>
+	<SubTexture name="watdagak0014" x="0" y="315" width="668" height="313" frameX="-6" frameY="-7" frameWidth="862" frameHeight="320"/>
+	<SubTexture name="watdagak0015" x="670" y="315" width="668" height="313" frameX="-6" frameY="-7" frameWidth="862" frameHeight="320"/>
+	<SubTexture name="watdagak0016" x="1340" y="315" width="668" height="313" frameX="-6" frameY="-7" frameWidth="862" frameHeight="320"/>
+	<SubTexture name="watdagak0017" x="858" y="0" width="723" height="313" frameX="-6" frameY="-7" frameWidth="862" frameHeight="320"/>
+	<SubTexture name="watdagak0018" x="0" y="0" width="856" height="313" frameX="-6" frameY="-7" frameWidth="862" frameHeight="320"/>
+	<SubTexture name="watdagak0019" x="0" y="0" width="856" height="313" frameX="-6" frameY="-7" frameWidth="862" frameHeight="320"/>
+	<SubTexture name="watdagak0020" x="0" y="0" width="856" height="313" frameX="-6" frameY="-7" frameWidth="862" frameHeight="320"/>
+	<SubTexture name="watdagak0021" x="0" y="0" width="856" height="313" frameX="-6" frameY="-7" frameWidth="862" frameHeight="320"/>
+	<SubTexture name="watdagak0022" x="0" y="0" width="856" height="313" frameX="-6" frameY="-7" frameWidth="862" frameHeight="320"/>
+	<SubTexture name="watdagak0023" x="0" y="0" width="856" height="313" frameX="-6" frameY="-7" frameWidth="862" frameHeight="320"/>
+</TextureAtlas>

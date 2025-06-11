@@ -188,7 +188,7 @@ function onUpdate(elapsed)
 
     if (not unlockSecrets) then return end
 
-    if (false) then
+    if (true) then
         if (keyboardJustPressed("F5")) then 
             utils:setGariiData("watchedCutscene", "")
             setPropertyFromClass("states.PlayState", "nextReloadAll", true)
