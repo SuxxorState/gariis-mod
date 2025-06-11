@@ -45,7 +45,7 @@ end
 
 local sprs = {"trees", "icparlor", "skobeloff", "bush", "exitsign", "gariimanor", "junkyard", "carvstore"}
 local bounds = {{854,145, 1248,518}, {10000,227000, 311000,489000}, {373,225, 791,566}, {400,537, 729,715}, {10,500, 178,699}, {1077,0, 1279,694}}
-local altBounds = {{1098,0, 1280,139}, {300,155, 502,446}}
+local altBounds = {{1098,0, 1280,139}, {300000,155000, 502000,446000}}
 function onUpdate(elp)
     if (not canUpdate) then return end
     utils:setDiscord("In GARII'S ARCADE", "Sinopia Sanctuary")

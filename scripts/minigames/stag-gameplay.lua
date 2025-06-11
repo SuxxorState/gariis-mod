@@ -965,12 +965,15 @@ end
 function destroy()
     utils:stopAllKnownSounds()
     font:destroyAll()
+    setProperty("camGame.x", 0)
+    setProperty("camHUD.x", 0)
+    setProperty("camOther.x", 0)
 
     for _,tmr in pairs(timerList) do cancelTimer(tmr) end
 
     for _,spr in pairs({
         "officeBlack", "tvbg", 'tvanims', "ofic", "oficgari", "oficcarv", "ofichnte", "oficslot", "oficdorlef", "oficdorcen", "oficdorrig", "oficbtnlef", "oficbtncen", "oficbtnrig", "oficjack", "cameraBG", 'cammain', 'fazeCamCover',
-        'cammap', 'vntmap', 'camBtn', 'camBtnDwn', 'statBtn', 'statBtnDwn', 'statbg', 'statuslayout', 'statusvents', 'stagfg', 'jmpscr'
+        'cammap', 'vntmap', 'camBtn', 'camBtnDwn', 'statBtn', 'statBtnDwn', 'statbg', 'statuslayout', 'statusvents', 'stagfg', 'jmpscr', "mutebtn"
     }) do removeLuaSprite(spr)
     end
 

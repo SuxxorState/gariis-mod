@@ -727,14 +727,16 @@ function onUpdate(elp)
             onTimerCompleted("fright")
         end
     end
-    if (keyJustPressed("reset")) then
-        loseLife()
-    elseif (keyJustPressed("accept")) then
-        pelletCount = 1000
-        curLevel = curLevel+7
-    elseif (keyboardJustPressed("F2")) then
-        lives = lives+1
-        updateLives()
+    if (getModSetting('gariiDebug')) then
+        if (keyJustPressed("reset")) then
+            loseLife()
+        elseif (keyJustPressed("accept")) then
+            pelletCount = 1000
+            curLevel = curLevel+7
+        elseif (keyboardJustPressed("F2")) then
+            lives = lives+1
+            updateLives()
+        end
     end
 
     handlePellets()

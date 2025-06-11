@@ -326,7 +326,7 @@ function shuffleDeck()
     for i,crd in pairs(dlrCards) do
         table.remove(cards, utils:indexOf(cards, crd))
     end
-    debugPrint("shuffled deck")
+    utils:trc("shuffled deck")
 end
 
 function onTimerCompleted(tmr)

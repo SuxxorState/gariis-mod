@@ -1,11 +1,11 @@
 local utils = (require (getVar("folDir").."scripts.backend.utils")):new()
 
 local categories = {
-    {"Garii's Mod", {"fuzzy-dice-fc","full-house-fc","episode-ii-fc","story-deaths","garii-hud-death","no-pose","expert2simple","fuzzy-dice-ex-fc","full-house-ex-fc","episode-ii-ex-fc", "all-achievements"}},
+    {"Garii's Mod", {"fuzzy-dice-fc","full-house-fc","episode-ii-fc","no-pose","fuzzy-dice-ex-fc","full-house-ex-fc","episode-ii-ex-fc"}},
     {"SKOBELOFF CASINO", {"100k-chips","true-bjs","tb-foak"}},
     {"Some Time At Garii's", {"stag-quarters","no-power-save","no-doors-save","the-yapper","stag-deaths"}},
     {"Bushtrimmer", {"bt-simple","bt-5simple","bt-speedy","bt-expert","bt-5expert","bt-exp-speed"}},
-    {"Fuzzlings!", {"fl-everyfruit","fl-everytrash","fl-pacifist","fl-sadist","fl-16levels","fl-64levels","fl-deaths","fl-rebirth","fl-2rebirth"}}
+    {"Fuzzlings!", {"fl-everyfruit","fl-everytrash","fl-pacifist","fl-sadist","fl-16levels","fl-64levels","fl-deaths"}}
 }
 local achievements = {
     --["deja-vu-fc"] = {title = "I Love You", description = "100% Clear Deja Vu, The Prologue", iconFile = "", secret = false, gariiPoints = 10},

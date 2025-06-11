@@ -52,7 +52,7 @@ end
 function onUpdatePost()
     if (destroyed == true) then return end
 
-    if (keyboardJustPressed("FOUR")) then
+    if (getModSetting('gariiDebug') and keyboardJustPressed("FOUR")) then
         updateChipCount(100)
     end
     if (dispChips ~= chipLerp and canRecalculate) then

@@ -199,6 +199,7 @@ function onTimerCompleted(tag)
         callOnLuas("backToMinigameHUB")
         destroyMenu()
         removeLuaScript('scripts/minigames/stag-gameplay')
+        restartSong()
         close()
     end
 end

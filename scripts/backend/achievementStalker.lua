@@ -65,11 +65,16 @@ function onCreate()
     --utils:setGariiData("achievements", nil)
 end
 
+local doodooScreen = utils:getGariiData("doodooScreen3") or false
+local pausedIt = false
 function onUpdate()
     if (lastCheckedAch ~= queuedAchievements[1] and queuedAchievements[1] ~= nil) then
         spawnAchievementPopup(queuedAchievements[1])
         lastCheckedAch = queuedAchievements[1]
     end
+    if (pausedIt and keyJustPressed("accept")) then
+		endSong()
+	end
 end
 
 local bitch = false
@@ -80,6 +85,15 @@ function onEndSong()
         unlockAchievement("no-pose")
     end
     calculateFC()
+    if (doodooScreen ~= true) and (isStoryMode and utils.songNameFmt == "full-house") then
+        utils:setGariiData("doodooScreen3", true)
+		makeLuaSprite('bfFinal', 'win', 0, 0)
+		utils:setObjectCamera('bfFinal', 'other')
+		addLuaSprite('bfFinal')
+		doodooScreen = true
+		pausedIt = true
+		return Function_Stop;
+	end
     if ((canEndSong and canEndSongII)) then
         if (((not isStoryMode) or levelEnds[utils.songNameFmt]) and (not bitch)) then
             bitch = true
