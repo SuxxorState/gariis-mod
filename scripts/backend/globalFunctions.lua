@@ -72,7 +72,7 @@ function setupSpice(stats)
 end
 
 function onStartCountdown()
-	if ((utils:getGariiData("watchedCutscene") ~= utils.songNameFmt) and isStoryMode) then
+	if (utils:getGariiData("watchedCutscene") ~= utils.songNameFmt and isStoryMode and utils:getGariiData("curSauce") ~= nil and utils:lwrKebab(songName) ~= "gariis-arcade") then
         addLuaScript("scripts/objects/comicHandler")
         callOnLuas("onCreateComic", {utils.songNameFmt})
         return Function_Stop;

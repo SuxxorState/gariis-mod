@@ -40,6 +40,7 @@ local diff = "reg"
 local data = {}
 local queuedUpTiles = {}
 local arrsine = 0
+local firstClick = true
 
 function startMinigame()
     utils:setWindowTitle("Friday Night Funkin': GARII'S ARCADE: Bushtrimmer")
@@ -92,7 +93,7 @@ function firstTimeSetup()
     flowers = math.min(diffStats[utils:lwrKebab(options[curDiff])].flowers, 5)
     if (mines >= 99) then diff = "exp" end
 
-    for i,s in pairs({{24, "000000"}, {20, "7e464f"}, {4, "000000"}}) do
+    for i,s in pairs({{24, "000000"}, {20, "7e464f"}, {4, "000000"}, {0, "FFFFFF"}}) do
         makeLuaSprite('minebg'..i,'',x - (s[1] / 2),y - (s[1] / 2))
         makeGraphic('minebg'..i, (width * 16) + s[1], (height * 16) + s[1], s[2])
         quickAddSprite('minebg'..i)
@@ -155,6 +156,8 @@ function setupGame(resetData)
             makeLuaSprite("tile"..i.."-"..j, nil, x + ((j-1) * 16), y + ((i-1) * 16))
             addGridAnims("tile"..i.."-"..j, sfld..tileSkin, 16, 16, {{"reg", 0}, {"open", 1}, {"dead", 2}})
             quickAddSprite("tile"..i.."-"..j)
+            setProperty("tile"..i.."-"..j..".alpha", 0)
+            doTweenAlpha("tile"..i.."-"..j, "tile"..i.."-"..j, 1, 0.25 + ((i + j) * (1/(width+height))))
 
             if (compareIndexTables(data.mines, {j,i})) then
                 local curMine = bigIndexOf(data.mines, {j,i}) --prevents desync because a simple counter can sometimes... be wrong
@@ -197,7 +200,7 @@ function setupGame(resetData)
     pfFont:screenCenter("mineTxt", "X")
     pfFont:setTextX("mineTxt", pfFont:getTextX("mineTxt") + 120)
     setProperty("mineicon.x", pfFont:getTextX("mineTxt") - 24)
-    canPlay, canEnd = true, false
+    canPlay, canEnd, firstClick = true, false, true
 end
 
 function addGridAnims(spr, texture, wid, hei, anims) --added for convenience
@@ -378,6 +381,15 @@ function onUpdate(elp)
             playAnim("smileyicon", diff.."-idle", nil,nil, (getProperty("smileyicon.animation.curAnim.curFrame")+1)%2)
             if (utils:mouseWithinBounds({x,y, x + (16 * width),y + (16 * height)}, "hud")) then
                 interactWithTile(math.floor(1 + (getMouseX("camHUD") - x) / 16), math.floor(1 + (getMouseY("camHUD") - y) / 16), mouseReleased("right"))
+                if (firstClick) then
+                    for i = 1,height do
+                        for j=1,width do
+                            setProperty("tile"..i.."-"..j..".alpha", 1)
+                            cancelTween("tile"..i.."-"..j)
+                        end
+                    end
+                    firstClick = false
+                end
             end
         end
         while #queuedUpTiles >= 1 do
@@ -752,12 +764,13 @@ function onDestroy()
     closeSkinMenu()
     removeWin()
     for _,tmr in pairs({"delayboom", "timerup", "destroy", "smiley", "wintxt", "stata"}) do cancelTimer(tmr) end
-    for _,spr in pairs({"blankBG", "minebg3", "minebg1", "minebg2", "timeicon", "mineicon", "smileyicon", "grass", "blackout", "winbg", "smileybig", "wintxt", "resultDiffIcon", "resultTimeIcon", "resultStreakIcon"}) do removeLuaSprite(spr) end
+    for _,spr in pairs({"blankBG", "minebg4", "minebg3", "minebg1", "minebg2", "timeicon", "mineicon", "smileyicon", "grass", "blackout", "winbg", "smileybig", "wintxt", "resultDiffIcon", "resultTimeIcon", "resultStreakIcon"}) do removeLuaSprite(spr) end
     for i = 1,height do
         for j=1,width do 
             removeLuaSprite("tile"..i.."-"..j)
             removeLuaSprite("flag"..i.."-"..j)
             removeLuaSprite("data"..i.."-"..j)
+            cancelTween("tile"..i.."-"..j)
         end
     end
     removeLuaSprite("style")

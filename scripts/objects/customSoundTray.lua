@@ -40,11 +40,30 @@ function onUpdate(elp)
     updateST(elp)
 end
 
-function onCustomSubstateUpdate(tag, elp)
+--[[function onCustomSubstateCreate()
+    removeLuaSprite("stBG", false)
+    insertToCustomSubstate('stBG')
+    for i=1,10 do
+        removeLuaSprite("stBar"..i, false)
+        insertToCustomSubstate("stBar"..i)
+    end
+end]]
+
+function onCustomSubstateUpdate(css, elp)
     updateST(elp)
 end
 
+--[[function onCustomSubstateDestroy(tag)
+    removeLuaSprite("stBG", false)
+    addLuaSprite("stBG")
+    for i=1,10 do
+        removeLuaSprite("stBar"..i, false)
+        addLuaSprite("stBar"..i)
+    end
+end]]
+
 function updateST(elp)
+    setPropertyFromClass("flixel.FlxG", "game.soundTray.visible", false)
     setPropertyFromClass("flixel.FlxG", "game.soundTray.active", false)
     if (getPropertyFromClass("flixel.FlxG", "game.soundTray.y") > -100) then setPropertyFromClass("flixel.FlxG", "game.soundTray.y", -100) end
     setTrayY(funkinLerp(glbY, targetY, 0.1, elp))

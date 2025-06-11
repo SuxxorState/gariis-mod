@@ -4,16 +4,16 @@ local fld = "minigames/stag/"
 local aFld, gFld, bFld = fld.."ambience/", fld.."garii/", fld.."brodcats/"
 local chrList = {"slot", "carv", "hnte", "lino", "jack", "gari", "faze"}
 local chrStats = {
-    ["gari"] = {ai = 0, cam = 1, action = 1, atDoor = false, bored = 0, aggro = 0, aggroList = {}, cooldown = 5, presetAI = {7,3,4,5,10,12,20}, camOffsets = {
+    ["gari"] = {ai = 0, cam = 1, canKill = true, action = 1, atDoor = false, bored = 0, aggro = 0, aggroList = {}, cooldown = 5, presetAI = {7,3,4,5,10,12,20}, camOffsets = {
         {-7, -787,0}, {-6, -1045,-305}, {-5, -966,-211}, {-4, -438,0}, {-3, -1248,-286}, {-2, -483,-310}, {-1, 0,-315}, 
         {1, -377,-329}, {2, -809,-367}, {3, -277,-396}, {4, -917,-133}, {5, -628,-289}, {6, -882,-398}, {7, -532,-157}
     }},
-    ["carv"] = {ai = 0, cam = 1, cooldown = 3, moveNum = 0, presetAI = {0,7,6,7,9,12,20}, camOffsets = {{1, -798,-598}, {2, -415,-360}, {3, 0,-416}, {4, -566, -130}, {5, -1098,-192}}},
-    ["hnte"] = {ai = 0, cam = 3, stage = 1, cooldown = 6, camDelay = 0, presetAI = {0,6,5,3,8,11,20}, camOffsets = {{3, -373,-145}, {4, -429,-14}, {8, 0,-244}}},
-    ["faze"] = {ai = 0, cam = 1, egoMeter = 0, timerRan = false, cooldown = 3, curPath = {}, memCam = 0, presetAI = {0,0,6,4,6,8,20}, camOffsets = {{1, -427,-637}, {2, -415,-580}, {3, -174,-246}, {4, -128,-229}, {5, -289,-448}, {6, -1100,-139}, {7, -77,-304}}},
-    ["slot"] = {ai = 0, cam = 0, inOffice = false, cooldown = 15, presetAI = {0,0,1,2,4,6,20}, camOffsets = {{1, -704,-319}, {2, -1077,-327}, {3, -1112,-170}, {4, -222,-597}, {5, -1243,-273}, {6, -415,-400}, {7, -358,-274}}},
-    ["lino"] = {ai = 0, cam = 1, cooldown = 7, presetAI = {0,0,0,8,6,10,20}, camOffsets = {{-2, -999,0}, {-1, -286,0}, {1, -618,-610}, {2, -691,-503}, {3, -697,0}, {5, 0,-179}, {6, -61,-264}, {7, -327,0}}},
-    ["jack"] = {ai = 0, cam = 5, action = 1, polarity = false, usedSwitch = false, inOffice = false, lookMeter = 0, bored = 0, cooldown = 5, presetAI = {0,0,0,0,7,9,20}, camOffsets = {{-6, -1100,-229}, {-5, -979,-226}, {1, -651,-263}, {2, -211,-268}, {3, -958,-109}, {5, -756,-204}, {6, -693,-370}, {7, -734,-480}}}, 
+    ["carv"] = {ai = 0, cam = 1, canKill = true, cooldown = 3, moveNum = 0, presetAI = {0,7,6,7,9,12,20}, camOffsets = {{1, -798,-598}, {2, -415,-360}, {3, 0,-416}, {4, -566, -130}, {5, -1098,-192}}},
+    ["hnte"] = {ai = 0, cam = 3, canKill = true, stage = 1, cooldown = 6, camDelay = 0, presetAI = {0,6,5,3,8,11,20}, camOffsets = {{3, -373,-145}, {4, -429,-14}, {8, 0,-244}}},
+    ["faze"] = {ai = 0, cam = 1, canKill = false, egoMeter = 0, timerRan = false, cooldown = 3, curPath = {}, memCam = 0, presetAI = {0,0,6,4,6,8,20}, camOffsets = {{1, -427,-637}, {2, -415,-580}, {3, -174,-246}, {4, -128,-229}, {5, -289,-448}, {6, -1100,-139}, {7, -77,-304}}},
+    ["slot"] = {ai = 0, cam = 0, canKill = true, inOffice = false, cooldown = 15, presetAI = {0,0,1,2,4,6,20}, camOffsets = {{1, -704,-319}, {2, -1077,-327}, {3, -1112,-170}, {4, -222,-597}, {5, -1243,-273}, {6, -415,-400}, {7, -358,-274}}},
+    ["lino"] = {ai = 0, cam = 1, canKill = false, cooldown = 7, presetAI = {0,0,0,8,6,10,20}, camOffsets = {{-2, -999,0}, {-1, -286,0}, {1, -618,-610}, {2, -691,-503}, {3, -697,0}, {5, 0,-179}, {6, -61,-264}, {7, -327,0}}},
+    ["jack"] = {ai = 0, cam = 5, canKill = true, action = 1, polarity = false, usedSwitch = false, inOffice = false, lookMeter = 0, bored = 0, cooldown = 5, presetAI = {0,0,0,0,7,9,20}, camOffsets = {{-6, -1100,-229}, {-5, -979,-226}, {1, -651,-263}, {2, -211,-268}, {3, -958,-109}, {5, -756,-204}, {6, -693,-370}, {7, -734,-480}}}, 
 }
 local qtrCallLists = {
     {{"garimad", 3.8}, {"gariexit", 1}, {"garimad", 3.8}, {"garitime", 2.9}, {"garipissed"}},
@@ -36,9 +36,10 @@ local heatStats = {{active = false, disabled = false}, {active = false, disabled
 local canUpdate, hasPower = false, true
 local blink = false
 local jumpQueued = ""
+local timerList = {}
 
 function preloadGame(qtr, ais)
-    curQtr = qtr
+    curQtr, curTime, curPwr, curCam = qtr, 0, 100, 1
     for i,chr in pairs(chrList) do chrStats[chr].ai = chrStats[chr].presetAI[qtr] end
     if (ais ~= nil and #ais == 7) then for i,chr in pairs(chrList) do chrStats[chr].ai = ais[i] end end
     chrStats["gari"].cam,chrStats["jack"].cam,chrStats["lino"].cam,chrStats["faze"].cam = getRandomInt(1,7),getRandomInt(1,7,"4,5,6"),getRandomInt(2,6,"4,5"),getRandomInt(1,7)
@@ -84,7 +85,7 @@ function makeAssets()
             setProperty("cam"..chr..".visible", false)
             addLuaSprite('cam'..chr)
             utils:setObjectCamera('cam'..chr, 'other')
-            runTimer(chr.."MO", chrStats[chr].cooldown + 5)
+            runLeTimor(chr.."MO", chrStats[chr].cooldown + 5)
         end
     end
     makeOneShotSpr('fazeCamCover', "fazecamcover", nil, 0,0, 'other', false)
@@ -206,17 +207,17 @@ function activateFNAF()
     setProperty("camHUD.width", 1580)
     callOnLuas("initCursor")
 
-    runTimer("initCall", 1)
+    runLeTimor("initCall", 1)
 
     font:setTextString("qtrTxt", "Quarter "..curQtr)
     for _,chr in pairs(chrList) do
-        if (chrStats[chr].camOffsets ~= nil and chrStats[chr].ai > 0) then runTimer(chr.."MO", chrStats[chr].cooldown + 5) end
+        if (chrStats[chr].camOffsets ~= nil and chrStats[chr].ai > 0) then runLeTimor(chr.."MO", chrStats[chr].cooldown + 5) end
     end
-    runTimer("timeInc", 1/60, 0)
+    runLeTimor("timeInc", 1/60, 0)
 
     utils:playSound(aFld.."ambience", 0.1, "ambience")
-    runTimer("ambnoises", 15)
-    runTimer("blink",1)
+    runLeTimor("ambnoises", 15)
+    runLeTimor("blink",1)
     canUpdate = true
 
     updateCams(false)
@@ -235,6 +236,13 @@ end
 
 function onUpdatePost(elp)
     if not canUpdate then return end
+    if (getModSetting('gariiDebug')) then
+        if (keyboardPressed("C") and keyboardPressed("D") and keyboardPressed("PLUS")) then nightOver() end
+        if (keyboardPressed("E") and keyboardPressed("F") and keyboardPressed("MINUS")) then curPwr = 0 end
+        if (keyboardPressed("G") and keyboardPressed("H") and keyboardPressed("BACKSLASH")) then 
+            doorStats[1].disabled, doorStats[2].disabled, doorStats[3].disabled = true, true, true
+        end
+    end
     
     pwrLoad = (elp / 200)
     chrStats["hnte"].camDelay = math.max(chrStats["hnte"].camDelay - elp, 0)
@@ -261,13 +269,13 @@ function onUpdatePost(elp)
         cancelTimer("callAdvance")
         stopSound("phonecallintro")
         stopSound("phonecall")
-        local muteList = utils:getGariiData("STaGmutes")
-        if (not utils:tableContains(muteList, curQtr)) then
-            table.insert(muteList, curQtr)
+        local muteList = utils:getGariiData("STaGmutes") or {}
+        if (muteList[curQtr] ~= true) then
+            muteList[curQtr] = true
             utils:setGariiData("STaGmutes", muteList)
             local achievementDone = true
             for i = 1,6 do
-                if (not utils:tableContains(muteList, i)) then
+                if (muteList[i] ~= true) then
                     achievementDone = false
                 end
             end
@@ -332,16 +340,9 @@ function onUpdatePost(elp)
     setProperty("statBtn.visible", (getProperty("camHUD.x") >= 0))
 
     if (keyJustPressed("back")) then 
-        restartSong() --temporary solution
-        callOnLuas("backToMinigameHUB")
-        destroyMenu()
-        destroyTrans()
-        removeLuaScript('scripts/minigames/stag-menu')
-        close() 
-    end
-
-    if (keyJustPressed("reset")) then 
-        curTime = 21601
+        callOnLuas("setNight")
+        destroy()
+        close()
     end
 
     if (not hasPower) then return end
@@ -398,7 +399,7 @@ function toggleCam()
         cancelTimer("slotJumpscr")
     elseif (curCam == chrStats["slot"].cam and not camUP) then     
         chrStats["slot"].inOffice = true
-        runTimer("slotJumpscr", 1.5) 
+        runLeTimor("slotJumpscr", 1.5) 
     end
     setProperty("oficslot.visible", chrStats["slot"].inOffice)
 
@@ -424,7 +425,7 @@ function toggleHeat(hat)
     if (heatStats[3-(chrStats["gari"].cam%3)].active and math.abs(chrStats["gari"].cam) >= 9 and math.abs(chrStats["gari"].cam) <= 11 and (not utils:tableContains(chrStats["gari"].aggroList, "heat"))) then
         table.insert(chrStats["gari"].aggroList, "heat")
         chrStats["gari"].aggro = chrStats["gari"].aggro + 1
-        runTimer("gariHeatDeAggro", 15)
+        runLeTimor("gariHeatDeAggro", 15)
     end
 end
 
@@ -454,7 +455,7 @@ function updateCams(snd, camChange)
     setProperty("fazeCamCover.visible", chrStats["faze"].egoMeter >= 5 and chrStats["faze"].ai > 0 and chrStats["faze"].cam == curCam and camUP)
     if (-curCam == chrStats["jack"].cam and (chrStats["jack"].cam == -6 or chrStats["jack"].cam == -5) and (not forcingJack)) then
         forcingJack = true
-        runTimer("jackCountdown", 2)
+        runLeTimor("jackCountdown", 2)
     end
 
     if (chrStats["faze"].ai <= 0 or chrStats["gari"].ai <= 0) then return end
@@ -538,7 +539,7 @@ function jumpscare(char)
         utils:setGariiData("STaGjumpscrs", jumpscareList)
         local achievementDone = true
         for _,chr in pairs(chrList) do
-            if (not utils:tableContains(jumpscareList, chr)) then
+            if ((not utils:tableContains(jumpscareList, chr)) and chrStats[chr].canKill == true) then
                 achievementDone = false
             end
         end
@@ -554,13 +555,13 @@ function jumpscare(char)
     utils:setObjectCamera('jmpscr', 'other')
     utils:playSound(fld.."jumpscare", 1, "jmp")
     if (char == "slot") then setSoundPitch("jmp", 0.5) end
-    runTimer("endinSTaG", 2)
+    runLeTimor("endinSTaG", 2)
 end
 
 function jumpCountdown(char, timera)
     timera = timera or 5
     jumpQueued = char
-    runTimer("forceJumpscare", timera)
+    runLeTimor("forceJumpscare", timera)
 end
 
 function nightOver()
@@ -586,12 +587,12 @@ function nightOver()
         if (curQtr >= 6) then callOnLuas("unlockAchievement", {"stag-quarters"}) end
         utils:setGariiData("STaGprog", curQtr + 1)
     end
-    if (not hasPower) then callOnLuas("unlockAchievement", {"no-power-save"}) end
-    if (doorStats[1].disabled and doorStats[2].disabled and doorStats[3].disabled) then callOnLuas("unlockAchievement", {"no-doors-save"}) end
+    if (not hasPower) then callOnLuas("unlockAchievement", {"no-power-save"})
+    elseif (doorStats[1].disabled and doorStats[2].disabled and doorStats[3].disabled) then callOnLuas("unlockAchievement", {"no-doors-save"}) end
 
-    runTimer("cheer", 4)
-    runTimer("changesamtxt", 2)
-    runTimer("endinSTaG", 10)
+    runLeTimor("cheer", 4)
+    runLeTimor("changesamtxt", 2)
+    runLeTimor("endinSTaG", 10)
 end
 
 function disableGame()
@@ -653,7 +654,7 @@ function moveLino()
         else
             openDoor(3-(chrStats["lino"].cam%3))
             utils:playSound(fld.."ventbreak", 0.75) 
-            runTimer("linoNotify", 2)
+            runLeTimor("linoNotify", 2)
             doorStats[3-(chrStats["lino"].cam%3)].disabled = true
             toggleStat(false)
             if (chrStats["lino"].cam == 9) then chrStats["lino"].cam = -12
@@ -701,12 +702,12 @@ function moveJack()
     if (chrStats["jack"].cam < 0) then
         if (doorStats[(chrStats["jack"].cam % 2)+1].active) then
             utils:playSound(fld.."bangnoyell", 1)
-            runTimer("jackBangKill",1)
+            runLeTimor("jackBangKill",1)
         else
             utils:playSound(fld.."jackroomflicker", 0.75, "jackflicker")
             chrStats["jack"].inOffice = true
             chrStats["jack"].cam = 0
-            runTimer("jackOffice", 5)
+            runLeTimor("jackOffice", 5)
         end
         chrStats["jack"].usedSwitch = false
     else
@@ -799,7 +800,7 @@ function moveFaze()
     end
     if (curCam == chrStats["faze"].cam and chrStats["faze"].timerRan == false and camUP) then
         chrStats["faze"].timerRan = true
-        runTimer("fazeEgoInc", (6 - math.floor(chrStats["faze"].ai / 4)) / 5, 5)
+        runLeTimor("fazeEgoInc", (6 - math.floor(chrStats["faze"].ai / 4)) / 5, 5)
     end
 end
 
@@ -826,7 +827,7 @@ function callScreenAdvance()
     qtrCallTime = qtrCallTime + 1
     if (curQtrCallList[qtrCallTime] == nil) then return end
     playAnim("tvanims", curQtrCallList[qtrCallTime][1])
-    runTimer("callAdvance", curQtrCallList[qtrCallTime][2])
+    runLeTimor("callAdvance", curQtrCallList[qtrCallTime][2])
 end
 
 
@@ -843,10 +844,18 @@ function onSoundFinished(tag)
     end
 end
 
+function runLeTimor(nam, len, lop)
+    runTimer(nam,len,lop)
+    table.insert(timerList, nam)
+end
+
 function onTimerCompleted(tag)
     if (tag == "cheer") then utils:playSound(fld.."congrat", 1)
     elseif (tag == "changesamtxt") then setTextString("samTxt", calcAMPM((6+(6*(curQtr-1)))*3600,true,false))
-    elseif (tag == "endinSTaG") then restartSong() 
+    elseif (tag == "endinSTaG") then 
+        callOnLuas("setNight")
+        destroy()
+        close()
     elseif (tag == "initCall") then
         if (checkFileExists("sounds/"..bFld.."qtr"..curQtr.."bcst.ogg")) then
             makeOneShotSpr('mutebtn', "mutebtn", nil, 10,10, 'other')
@@ -874,12 +883,12 @@ function onTimerCompleted(tag)
     elseif (tag == "jackCountdown") then
         if (doorStats[(chrStats["jack"].cam % 2)+1].active) then
             utils:playSound(fld.."bangnoyell", 1)
-            runTimer("jackBangKill",1)
+            runLeTimor("jackBangKill",1)
         else
             utils:playSound(fld.."jackroomflicker", 0.75, "jackflicker")
             chrStats["jack"].inOffice = true
             chrStats["jack"].cam = 0
-            runTimer("jackOffice", 5)
+            runLeTimor("jackOffice", 5)
         end
         chrStats["jack"].usedSwitch = false
         forcingJack = false
@@ -897,7 +906,7 @@ function onTimerCompleted(tag)
             if (not utils:tableContains(chrStats["gari"].aggroList, "jack")) then
                 table.insert(chrStats["gari"].aggroList, "jack")
                 chrStats["gari"].aggro = chrStats["gari"].aggro + 1
-                runTimer("gariJackDeAggro", 10)
+                runLeTimor("gariJackDeAggro", 10)
             end
         end
         stopSound("jackflicker")
@@ -913,14 +922,14 @@ function onTimerCompleted(tag)
         jumpCountdown("jack", 2)
     elseif (stringEndsWith(tag, "MO")) then --the master movement code. would also put the ai check here but some characters have different checks than others so im afraid to do so without losing my mind
         local charMoveFuncs = {["gari"] = moveGarii, ["carv"] = moveCarv, ["hnte"] = moveHunte, ["lino"] = moveLino, ["faze"] = moveFaze, ["slot"] = moveSlots, ["jack"] = moveJack}
-        if (chrStats[stringSplit(tag, "MO")[1]].aggro ~= nil) then runTimer(tag, chrStats[stringSplit(tag, "MO")[1]].cooldown - chrStats[stringSplit(tag, "MO")[1]].aggro)
-        else runTimer(tag, chrStats[stringSplit(tag, "MO")[1]].cooldown)
+        if (chrStats[stringSplit(tag, "MO")[1]].aggro ~= nil) then runLeTimor(tag, chrStats[stringSplit(tag, "MO")[1]].cooldown - chrStats[stringSplit(tag, "MO")[1]].aggro)
+        else runLeTimor(tag, chrStats[stringSplit(tag, "MO")[1]].cooldown)
         end
         charMoveFuncs[stringSplit(tag, "MO")[1]]()
         updateCams()
     elseif (tag == "blink") then blink = not blink
         updateStats()
-        runTimer("blink", 1)
+        runLeTimor("blink", 1)
     elseif (tag == "timeInc") then
         curTime = curTime + 1
         if (curTime >= 21600) then nightOver()
@@ -930,7 +939,7 @@ function onTimerCompleted(tag)
         font:setTextString("amTxt", calcAMPM(curTime+(21600*(curQtr-1)), true, false))
         font:setTextString("statusTimeTxt", calcAMPM(curTime+(21600*(curQtr-1)), false, true))
     elseif (tag == "ambnoises") then
-        runTimer("ambnoises", getRandomInt(5, 15))
+        runLeTimor("ambnoises", getRandomInt(5, 15))
         if (getRandomInt(0,15) ~= 0) then return end
 
         local amb = {"clicks", "drip", "drippy", "pop", "shh", "stupid", "wind", "stupidphoneihate"}
@@ -951,4 +960,30 @@ function calcAMPM(uncutTime, hourOnly, military)
     if (hourOnly) then return cutTime.." "..suffix end
     if (not military) then return cutTime..":"..utils:formatDigit(minuteRaw)..":"..utils:formatDigit(secondRaw).." "..suffix end
     return utils:formatDigit(cutTimeMil)..":"..utils:formatDigit(minuteRaw)..":"..utils:formatDigit(secondRaw)
+end
+
+function destroy()
+    utils:stopAllKnownSounds()
+    font:destroyAll()
+
+    for _,tmr in pairs(timerList) do cancelTimer(tmr) end
+
+    for _,spr in pairs({
+        "officeBlack", "tvbg", 'tvanims', "ofic", "oficgari", "oficcarv", "ofichnte", "oficslot", "oficdorlef", "oficdorcen", "oficdorrig", "oficbtnlef", "oficbtncen", "oficbtnrig", "oficjack", "cameraBG", 'cammain', 'fazeCamCover',
+        'cammap', 'vntmap', 'camBtn', 'camBtnDwn', 'statBtn', 'statBtnDwn', 'statbg', 'statuslayout', 'statusvents', 'stagfg', 'jmpscr'
+    }) do removeLuaSprite(spr)
+    end
+
+    for _,chr in pairs(chrList) do
+        removeLuaSprite('cam'..chr)
+        removeLuaSprite('vent'..chr)
+    end
+    
+    for i = 1,10 do
+        removeLuaSprite('cambtn'..i)
+        removeLuaSprite('statdoor'..i)
+        removeLuaSprite("statheat"..i)
+    end
+
+    removeLuaText('samTxt')
 end

@@ -8,9 +8,13 @@ local categories = {
     {"Fuzzlings!", {"fl-everyfruit","fl-everytrash","fl-pacifist","fl-sadist","fl-16levels","fl-64levels","fl-deaths","fl-rebirth","fl-2rebirth"}}
 }
 local achievements = {
+    --["deja-vu-fc"] = {title = "I Love You", description = "100% Clear Deja Vu, The Prologue", iconFile = "", secret = false, gariiPoints = 10},
+
+    --["fuzzy-dice-ez-fc"] = {title = "Not Worth It", description = "100% Clear Fuzzy Dice EZ", iconFile = "", secret = false, gariiPoints = 1},
     ["fuzzy-dice-fc"] = {title = "Capicola Gang", description = "100% Clear Fuzzy Dice", iconFile = "fuzzydice", secret = false, gariiPoints = 10},
     ["fuzzy-dice-ex-fc"] = {title = "All Bark No Bite", description = "100% Clear Fuzzy Dice EX", iconFile = "gariimedal", secret = true, gariiPoints = 20},
 
+    --["full-house-ez-fc"] = {title = "Two To Tango", description = "100% Clear Full House EZ", iconFile = "", secret = false, gariiPoints = 1},
     ["full-house-fc"] = {title = "The Power Of Two", description = "100% Clear Full House", iconFile = "fullhouse", secret = false, gariiPoints = 10},
     ["full-house-ex-fc"] = {title = "Decked Out", description = "100% Clear Full House EX", iconFile = "goonmedal", secret = true, gariiPoints = 20},
     ["garii-hud-death"] = {title = "KNOCK IT OFF!!!", description = "Die because Garii was messing with your HUD", iconFile = "", secret = false, gariiPoints = 10},
@@ -18,9 +22,9 @@ local achievements = {
 
     ["episode-ii-fc"] = {title = "Show Off", description = "100% Clear Episode ][ without dying once", iconFile = "episodeii", secret = false, gariiPoints = 25},
     ["episode-ii-ex-fc"] = {title = "You Made Your Point", description = "100% Clear Episode ][ EX without dying once", iconFile = "truckermedal", secret = true, gariiPoints = 50},
-    ["expert2simple"] = {title = "Chat Told Me To", description = "Play a Simple Chart After Beating every Normal and Expert Chart in a Row", iconFile = "", secret = false, gariiPoints = 25},
     ["story-deaths"] = {title = "The Part Where He Kills You", description = "Experience every possible death Episode ][ has to offer", iconFile = "portal2", secret = false, gariiPoints = 25},
-    ["all-achievements"] = {title = "Don't You Have Anything Better to Do?", description = "Unlock every achievement, including this one.", iconFile = "", secret = true, gariiPoints = 20},
+
+    --["sixteen-oc-fc"] = {title = "Original Cancer", description = "100% Clear Sixteen OC", iconFile = "", secret = false, gariiPoints = 10},
 
     ["100k-chips"] = {title = "The Big Cheese", description = "Get one hundred thousand or more poker chips in the casino", iconFile = "", secret = false, gariiPoints = 50},
     ["true-bjs"] = {title = "The House Is Cheating!", description = "End in a draw with both you and the house having a true blackjack", iconFile = "cheating", secret = false, gariiPoints = 25},
@@ -50,6 +54,9 @@ local achievements = {
     ["fl-rebirth"] = {title = "Byte Overflow", description = "Rebirth", iconFile = "", secret = false, gariiPoints = 100},
     ["fl-2rebirth"] = {title = "Exquisitely Stuffed", description = "Rebirth as Both Boy and Girl", iconFile = "", secret = false, gariiPoints = 250},
     ["fl-deaths"] = {title = "Knuckle Sandwich", description = "Die to every fuzzling as both Boy and Girl", iconFile = "", secret = false, gariiPoints = 25},
+
+    ["expert2simple"] = {title = "Chat Told Me To", description = "Play a Simple Chart After Beating every Normal and Expert Chart in a Row", iconFile = "", secret = false, gariiPoints = 25},
+    ["all-achievements"] = {title = "Don't You Have Anything Better to Do?", description = "Unlock every achievement, including this one.", iconFile = "", secret = true, gariiPoints = 20},
 }
 
 local megaloEasterEgg, megaloCounter, megaloNotes = false, 1, {1,1,2,1.583, 1.5, 1.4167, 1.25, 1, 1.25, 1.4167}

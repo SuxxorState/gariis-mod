@@ -39,6 +39,10 @@ local placeholderLB = {{100, 0, "SUX"}, {90, 0, "XOR"}, {80, 0, "RAZ"}, {70, 0, 
 local playerName, hoveredChar, activatedName = "", "A", false
 local noMorePlayerAnims = false
 local zeroLoops = 0
+local achData = {rounds = 0, ghosts = 0, current = ""}
+local deadList = {
+    ["boy"] = {}
+}
 
 local behaviorList, curAction = { --mimic pacman behaviors please!
     {{"scatter", 7}, {"pursue", 20}, {"scatter", 7}, {"pursue", 20}, {"scatter", 5}, {"pursue", 20}, {"scatter", 5}, {"pursue"}},
@@ -548,7 +552,11 @@ function reloadSecretMap()
     end
     font:setTextVisible("warningTxt", false)
 
-    readyErUp(0)
+            font:setTextVisible("readyUp", false)
+        setProperty("readyBG.visible", false)
+        curAction = 0
+        cancelTimer("advanceAction")
+        advanceAction()
 end
 
 function readyErUp(volume)
@@ -600,6 +608,15 @@ local turnIndi = 0
 local fruitElp, frightElp = -1, -1
 local textAdvance = {["garii"] = {1,1}, ["carv"] = {1,1}}
 function onUpdate(elp)
+    local achieved = true
+    for _,gst in pairs(ghostList) do
+        if (not (utils:tableContains(deadList["boy"], gst) and utils:tableContains(deadList["girl"], gst))) then
+            achieved = false     
+        end
+    end
+    if (achieved) then
+        callOnLuas("unlockAchievement", {"fl-deaths"})
+    end
     if (attractMode) then
         updateAttract()
         if (keyJustPressed("accept")) then
@@ -751,6 +768,8 @@ local textLines = {
 function interactWithChar()
     if ((trucker.targetCoords.x + trucker.facing.x) >= 8 and (trucker.targetCoords.x + trucker.facing.x) <= 10 and (trucker.targetCoords.y + trucker.facing.y) >= 8 and (trucker.targetCoords.y + trucker.facing.y) <= 10) then
         talkToHim("garii")
+    elseif ((trucker.targetCoords.x + trucker.facing.x) >= 17 and (trucker.targetCoords.x + trucker.facing.x) <= 19 and (trucker.targetCoords.y + trucker.facing.y) >= 12 and (trucker.targetCoords.y + trucker.facing.y) <= 14) then
+        talkToHim("carv")
     elseif ((trucker.targetCoords.x + trucker.facing.x) >= 17 and (trucker.targetCoords.x + trucker.facing.x) <= 19 and (trucker.targetCoords.y + trucker.facing.y) >= 12 and (trucker.targetCoords.y + trucker.facing.y) <= 14) then
         talkToHim("carv")
     else removeAllDatBabblin()
@@ -1185,7 +1204,7 @@ function handlePlayerMovement()
         if (dist_to_pt({x = (getProperty("truckPlayer.x")-gameOffsets.x)/8, y = (getProperty("truckPlayer.y")-gameOffsets.y)/8}, ghosts[gst]) < 1) then
             if (ghosts[gst].eaten) then
             elseif (ghosts[gst].frightened) then eatGhost(gst)
-            else loseLife()
+            else loseLife(gst)
             end
         end
     end
@@ -1194,6 +1213,8 @@ end
 function eatGhost(gst)
     ghosts[gst].eaten = true
     utils:playSound(fldr.."eat_ghost", 1)
+    achData.ghosts = achData.ghosts + 1
+    achData.current = "all"
     score = score + ghostPointMult
     ghostPointMult = ghostPointMult * 2
     canUpdate = false
@@ -1202,8 +1223,12 @@ function eatGhost(gst)
     runTimer("unfreezeGame", 0.75)
 end
 
-function loseLife()
+function loseLife(gst)
     canUpdate = false
+    if (deadList[plrChar] == nil) then deadList[plrChar] = {} end
+    if (not utils:tableContains(deadList[plrChar], gst)) then
+        table.insert(deadList[plrChar], gst)
+    end
     utils:stopAllKnownSounds()
     if (lives <= 6) then
         runTimer("lifeFlash"..(lives-1), 0.25, 13)
@@ -1351,6 +1376,18 @@ function onTimerCompleted(tmr, _, loopsLeft)
             if (curLevel == 0) then rebirths = rebirths + 1 end
             if (curLevel >= 64) then callOnLuas("unlockAchievement", {"fl-64levels"})
             elseif (curLevel >= 16) then callOnLuas("unlockAchievement", {"fl-16levels"})
+            end
+            if (achData.ghosts < 16 and achData.current == "all") then
+                achData.rounds = 0
+                achData.current = "none"
+            elseif (achData.ghosts > 0 and achData.current == "none") then
+                achData.rounds = 0
+                achData.current = "all"
+            end
+            achData.rounds = achData.rounds + 1
+            achData.ghosts = 0
+            if (achData.rounds >= 4 and achData.current == "all") then callOnLuas("unlockAchievement", {"fl-sadist"})
+            elseif (achData.rounds >= 16 and achData.current == "none") then callOnLuas("unlockAchievement", {"fl-pacifist"})
             end
         else zeroLoops = zeroLoops + 1
         end

@@ -1,34 +1,43 @@
 local utils = (require (getVar("folDir").."scripts.backend.utils")):new()
 local achievements = {
-    ["fuzzy-dice-fc"] = {title = "Capicola Gang", gariiPoints = 10},
-    ["fuzzy-dice-ex-fc"] = {title = "All Bark No Bite", gariiPoints = 10},
-    ["full-house-fc"] = {title = "The Power Of Two", gariiPoints = 10},
-    ["full-house-ex-fc"] = {title = "Decked Out", gariiPoints = 10},
-    ["episode-ii-fc"] = {title = "Show Off", gariiPoints = 10},
-    ["episode-ii-ex-fc"] = {title = "You Made Your Point", gariiPoints = 10},
+    ["fuzzy-dice-fc"] = {title = "Capicola Gang", gariiPoints = 10},    --done
+    ["fuzzy-dice-ex-fc"] = {title = "All Bark No Bite", gariiPoints = 10},    --done
+    ["full-house-fc"] = {title = "The Power Of Two", gariiPoints = 10},    --done
+    ["full-house-ex-fc"] = {title = "Decked Out", gariiPoints = 10},    --done
+    ["episode-ii-fc"] = {title = "Show Off", gariiPoints = 10},    --done
+    ["episode-ii-ex-fc"] = {title = "You Made Your Point", gariiPoints = 10},    --done
     ["story-deaths"] = {title = "The Part Where He Kills You", gariiPoints = 10},
-    ["no-pose"] = {title = "Not Feelin' It", gariiPoints = 10},                             --done
+    ["no-pose"] = {title = "Not Feelin' It", gariiPoints = 10},    --done
     ["garii-hud-death"] = {title = "KNOCK IT OFF!!!", gariiPoints = 10},
-    ["100k-chips"] = {title = "The Big Cheese", gariiPoints = 10},                --done
-    ["true-bjs"] = {title = "The House Is Cheating!", gariiPoints = 10},   --done
-    ["tb-foak"] = {title = "Planet X", gariiPoints = 10},                        --done
+    
+    ["100k-chips"] = {title = "The Big Cheese", gariiPoints = 10},
+    ["true-bjs"] = {title = "The House Is Cheating!", gariiPoints = 10},
+    ["tb-foak"] = {title = "Planet X", gariiPoints = 10},
     ["no-fish"] = {title = "Go...Fish?", gariiPoints = 10},
-    ["stag-quarters"] = {title = "Dollar Fitty", gariiPoints = 10},                                --done
-    ["no-power-save"] = {title = "Saved By The Bell", gariiPoints = 10},                       --done
-    ["no-doors-save"] = {title = "Lino's Bad Day", gariiPoints = 10},         --done
-    ["the-yapper"] = {title = "Keep Talking and I'll Explode", gariiPoints = 10},                                 --done
-    ["stag-deaths"] = {title = "Rocket Science", gariiPoints = 10},                           --done
-    ["bt-simple"] = {title = "Who Put These Here?", gariiPoints = 10},                                               --done
-    ["bt-5simple"] = {title = "Handle With Care", gariiPoints = 10},                                                --done
-    ["bt-speedy"] = {title = "Little Smiley Face", gariiPoints = 10},                                       --done
-    ["bt-expert"] = {title = "Minefield in a Bush", gariiPoints = 10},                                     --done
-    ["bt-5expert"] = {title = "Clusterluck", gariiPoints = 10},                                           --done
-    ["bt-exp-speed"] = {title = "Horticulturist", gariiPoints = 10},                           --done
-    ["fl-everyfruit"] = {title = "Pic-a-nic Basket", gariiPoints = 10},                                          --done
-    ["fl-everytrash"] = {title = "Junkyard", gariiPoints = 10},                                                  --done
-    ["fl-16levels"] = {title = "Salad Dressing", gariiPoints = 10},                                                           --done
-    ["fl-64levels"] = {title = "Sandwich Tower", gariiPoints = 10},                                                           --done
+
+    ["stag-quarters"] = {title = "Dollar Fitty", gariiPoints = 10},    --done
+    ["no-power-save"] = {title = "Saved By The Bell", gariiPoints = 10},    --done
+    ["no-doors-save"] = {title = "Lino's Bad Day", gariiPoints = 10},    --done
+    ["the-yapper"] = {title = "Keep Talking and I'll Explode", gariiPoints = 10},    --done
+    ["stag-deaths"] = {title = "Rocket Science", gariiPoints = 10},    --done
+
+    ["bt-simple"] = {title = "Who Put These Here?", gariiPoints = 10},    --done
+    ["bt-5simple"] = {title = "Handle With Care", gariiPoints = 10},    --done
+    ["bt-speedy"] = {title = "Little Smiley Face", gariiPoints = 10},    --done
+    ["bt-expert"] = {title = "Minefield in a Bush", gariiPoints = 10},    --done
+    ["bt-5expert"] = {title = "Clusterluck", gariiPoints = 10},    --done
+    ["bt-exp-speed"] = {title = "Horticulturist", gariiPoints = 10},    --done
+
+    ["fl-everyfruit"] = {title = "Pic-a-nic Basket", gariiPoints = 10},    --done
+    ["fl-everytrash"] = {title = "Junkyard", gariiPoints = 10},    --done
+    ["fl-16levels"] = {title = "Salad Dressing", gariiPoints = 10},    --done
+    ["fl-64levels"] = {title = "Sandwich Tower", gariiPoints = 10},    --done
     ["fl-deaths"] = {title = "Knuckle Sandwich", gariiPoints = 10},
+    ["fl-pacifist"] = {title = "Green Hamm", gariiPoints = 25},
+    ["fl-sadist"] = {title = "Seeing Red Wine", gariiPoints = 25},
+    ["fl-rebirth"] = {title = "Byte Overflow", gariiPoints = 100},
+    ["fl-2rebirth"] = {title = "Exquisitely Stuffed", gariiPoints = 250},
+
     ["all-achievements"] = {title = "Don't You Have Anything Better to Do?", gariiPoints = 10},
 }
 local queuedAchievements = {}

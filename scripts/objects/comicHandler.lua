@@ -14,16 +14,6 @@ local comicInfo = {
             {x = -433,y = -686, camY = -400, snd = "boydah",vol = 0.75},
             {x = 1070,y = -662, camY = -400},
             {x = -413,y = -73, camY = 485}
-        },
-        ["expert"] = {
-            [0] = {x = 0,y = 0, camY = 0, snd = "",vol = 1},
-            {x = 0,y = 0, camY = 0, snd = "",vol = 1},
-            {x = 0,y = 0, camY = 0, snd = "",vol = 1},
-            {x = 0,y = 0, camY = 0, snd = "",vol = 1},
-            {x = 0,y = 0, camY = 0, snd = "",vol = 1},
-            {x = 0,y = 0, camY = 0, snd = "",vol = 1},
-            {x = 0,y = 0, camY = 0, snd = "",vol = 1},
-            {x = 0,y = 0, camY = 0, snd = "",vol = 1}
         }
     },
     ["full-house"] = {
@@ -45,16 +35,6 @@ local comicInfo = {
             {x = 655,y = -425, camY = 160},
             {x = 1175,y = -430, camY = 160, snd = "carvheh",vol = 0.9},
             {x = -445,y = -85, camY = 485}
-        },
-        ["expert"] = {
-            [0] = {x = 0,y = 0, camY = 0, snd = "",vol = 1},
-            {x = 0,y = 0, camY = 0, snd = "",vol = 1},
-            {x = 0,y = 0, camY = 0, snd = "",vol = 1},
-            {x = 0,y = 0, camY = 0, snd = "",vol = 1},
-            {x = 0,y = 0, camY = 0, snd = "",vol = 1},
-            {x = 0,y = 0, camY = 0, snd = "",vol = 1},
-            {x = 0,y = 0, camY = 0, snd = "",vol = 1},
-            {x = 0,y = 0, camY = 0, snd = "",vol = 1}
         }
     },
 }

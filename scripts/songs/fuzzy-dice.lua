@@ -22,10 +22,6 @@ function onCreatePost() --660
         var camFourPlr:FlxCamera = new FlxCamera(790,725, 410,315, 1.25);
 
         camFourHnt.angle = -30;
-        camFourCrv.bgColor = 0xFFFFFFFF;
-        camFourHnt.bgColor = 0xFFFFFFFF;
-        camFourOpp.bgColor = 0xFFFFFFFF;
-        camFourPlr.bgColor = 0xFFFFFFFF;
         FlxG.cameras.add(camFourCrv, false);
         FlxG.cameras.add(camFourHnt, false);
         FlxG.cameras.add(camFourOpp, false);
@@ -34,9 +30,6 @@ function onCreatePost() --660
         var camBustOpp:FlxCamera = new FlxCamera(0,1145, 640,350, 1.5);
         var camBustPlr:FlxCamera = new FlxCamera(640,1145, 640,350, 1.5);
         var camHeadOpp:FlxCamera = new FlxCamera(0,1135, 1280,390, 1);
-        camBustOpp.bgColor = 0xFFFFFFFF;
-        camBustPlr.bgColor = 0xFFFFFFFF;
-        camHeadOpp.bgColor = 0xFFFFFFFF;
         FlxG.cameras.add(camBustOpp, false);
         FlxG.cameras.add(camBustPlr, false);
         FlxG.cameras.add(camHeadOpp, false);
@@ -45,6 +38,10 @@ function onCreatePost() --660
         FlxG.cameras.remove(camOther, false);
         FlxG.cameras.add(camHUD, false);
         FlxG.cameras.add(camOther, false);
+        for (i in 1...8) {
+            FlxG.cameras.list[i].active = FlxG.cameras.list[i].visible = false;
+            FlxG.cameras.list[i].bgColor = 0xFFFFFFFF;
+        }
         camFourCrv.follow(new FlxSprite(850,510));
         camFourHnt.follow(new FlxSprite(480,470));
         camFourOpp.follow(new FlxSprite(100,450));
@@ -136,7 +133,7 @@ function onEvent(name, value1, value2, strumTime)
                 for (i in 1...7) {
                     if (i == 2) {
                         FlxTween.tween(FlxG.cameras.list[i], {y:-145}, 0.5, {ease: FlxEase.sineOut, onComplete: function(twn:FlxTween) {
-                            FlxG.cameras.list[i].visible = false;
+                            FlxG.cameras.list[i].visible = FlxG.cameras.list[i].active = false;
                         }});
                     } else if (i <= 4) {
                         FlxTween.tween(FlxG.cameras.list[i], {y:-335}, 0.5, {ease: FlxEase.sineOut});
@@ -146,14 +143,16 @@ function onEvent(name, value1, value2, strumTime)
                 }
             ]])
             if (luaSpriteExists("borderbottom")) then doTweenY("borderbottom", "borderbottom", 640, 0.5, "sineOut")
-                utils:runHaxeCode("FlxTween.tween(FlxG.cameras.list[7], {y:645}, 0.5, {ease: FlxEase.sineOut});")
+                utils:runHaxeCode([[
+                    FlxTween.tween(FlxG.cameras.list[7], {y:645}, 0.5, {ease: FlxEase.sineOut});
+                    FlxG.cameras.list[7].active = FlxG.cameras.list[7].visible = true;
+                ]])
             else
                 utils:runHaxeCode([[
                     game.camGame.y = 1210;
                     FlxTween.tween(game.camGame, {y:640}, 0.5, {ease: FlxEase.sineOut});
                 ]])
             end
-            debugPrint(getProperty("camGame.visible"))
         elseif (shit == 3 and luaSpriteExists("borderbottom")) then
             --doTweenY("screenie21", "screenie2", -399, 0.5, "sineOut")
             --doTweenAlpha("screenie2", "screenie2", 1, 0.5)
@@ -182,22 +181,26 @@ function onEvent(name, value1, value2, strumTime)
                 utils:runHaxeCode([[
                     for (i in 5...7) {
                         FlxG.cameras.list[i].visible = true;
-                        FlxTween.tween(FlxG.cameras.list[i], {y:-1114}, 0.5, {ease: FlxEase.sineOut, onComplete: function(twn:FlxTween) {
-                            FlxG.cameras.list[i].visible = false;
-                        }});
+                        FlxTween.tween(FlxG.cameras.list[i], {y:-1114}, 0.5, {ease: FlxEase.sineOut});
                     }
-                    FlxTween.tween(game.camGame, {y:0}, 0.5, {ease: FlxEase.sineOut});
+                    FlxTween.tween(game.camGame, {y:0}, 0.5, {ease: FlxEase.sineOut, onComplete: function(twn:FlxTween) {
+                        for (i in 1...8) {
+                            FlxG.cameras.list[i].visible = FlxG.cameras.list[i].active = false;
+                        }
+                    }});
                     FlxTween.tween(FlxG.cameras.list[7], {y:-394}, 0.5, {ease: FlxEase.sineOut});
                 ]])
             else doTweenY("borderfour", "borderfour", -980, 0.5, "sineOut")
                 doTweenY("borderhalf", "borderhalf", -560, 0.5, "sineOut")
                 utils:runHaxeCode([[
                     for (i in 1...7) {
-                        FlxTween.tween(FlxG.cameras.list[i], {y:-555}, 0.5, {ease: FlxEase.sineOut, onComplete: function(twn:FlxTween) {
-                            FlxG.cameras.list[i].visible = false;
-                        }});
+                        FlxTween.tween(FlxG.cameras.list[i], {y:-555}, 0.5, {ease: FlxEase.sineOut});
                     }
-                    FlxTween.tween(game.camGame, {y:0}, 0.5, {ease: FlxEase.sineOut});
+                    FlxTween.tween(game.camGame, {y:0}, 0.5, {ease: FlxEase.sineOut, onComplete: function(twn:FlxTween) {
+                        for (i in 1...8) {
+                            FlxG.cameras.list[i].visible = FlxG.cameras.list[i].active = false;
+                        }
+                    }});
                 ]])
             end
             --doTweenY("screenie21", "screenie2", -1119, 0.5, "sineOut")
@@ -223,6 +226,7 @@ function toggleShits()
     doTweenY("borderhalf", "borderhalf", 570, 0.5, "sineOut")
     utils:runHaxeCode([[
         for (i in 1...7) {
+            FlxG.cameras.list[i].active = FlxG.cameras.list[i].visible = true;
             if (i == 2) {
                 FlxTween.tween(FlxG.cameras.list[i], {y:345}, 0.5, {ease: FlxEase.sineOut});
             } else if (i > 4) {

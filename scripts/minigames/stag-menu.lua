@@ -10,6 +10,7 @@ function startMinigame()
     utils:setWindowTitle("Friday Night Funkin': GARII'S ARCADE: Some Time at Garii's")
     if (utils:getGariiData("STaGprog") == nil) then utils:setGariiData("STaGprog", 1) end
     nightSel = math.min(utils:getGariiData("STaGprog"),6)
+    font:loadFont("poker-freak")
 
     utils:makeBlankBG("foyerBlack", screenWidth,screenHeight, "000000", "other")
 
@@ -37,7 +38,7 @@ function startMinigame()
     quickAddSpr("hourHand","clockhourhand", 352,243, false)
     quickAddSpr("minuteHand","clockminutehand", 350,163, false)
 
-    font:createNewText("quarterTxt", 0, 20, "Quarter 1")
+    font:createNewText("quarterTxt", 0, 20, "< Quarter 1 >")
     font:setTextScale("quarterTxt", 3, 3)
     font:setTextCamera("quarterTxt", "other")
     font:setTextVisible("quarterTxt", false)
@@ -152,6 +153,10 @@ function openDoor()
     runTimer("transStart", 3)
 end
 
+function setNight()
+    startMinigame()
+end
+
 function transToNight()
     destroyMenu(false)
     utils:playSound(fldr.."changecam", 0.75)
@@ -188,7 +193,7 @@ end
 function onTimerCompleted(tag)
     if (tag == "transStart") then transToNight()
     elseif (tag == "nightStart") then 
-        destroyMenu()
+        destroyMenu(true)
         callOnLuas("activateFNAF")
     elseif (tag == "destroy") then             
         callOnLuas("backToMinigameHUB")
