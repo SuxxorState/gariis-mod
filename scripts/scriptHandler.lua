@@ -2,10 +2,10 @@ local errored = false
 local bkend, menus, chars, songs, stges, objts = 'scripts/backend/', 'scripts/menus/', 'scripts/chars/', 'scripts/songs/', 'scripts/stages/', 'scripts/objects/' --heehee hoohoo crack
 local lastChr = {["boyfriend"] = "", ["gf"] = "", ["dad"] = ""}
 
-luaDebugMode = (getModSetting('gariiDebug') ~= nil and getModSetting('gariiDebug'))
+luaDebugMode = (false)
 errored = not (stringStartsWith(version, "1.0") or stringStartsWith(version, "0.7"))
 if (not errored) then
-    initSaveData("gariis-mod_v1", "SuxxorState")
+    initSaveData("gariis-mod_v1.01", "SuxxorState")
     setProperty("autoUpdateRPC", false)
 
     hudType = getPropertyFromClass("states.PlayState", "stageUI")

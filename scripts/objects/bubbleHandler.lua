@@ -156,9 +156,7 @@ function bubbleAnimate(char, anim)
         return
     end
 
-    if (getModSetting('gariiDebug')) then setProperty(char.."Bubbles.alpha", getModSetting('bubbleOpacity'))
-    else setProperty(char.."Bubbles.alpha", 1)
-    end
+    setProperty(char.."Bubbles.alpha", 1)
     playAnim(char.."Bubbles", 'bubble'..anim, true)
     bubbleAnims[char] = 'bubble'..anim
 end

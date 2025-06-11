@@ -727,7 +727,7 @@ function onUpdate(elp)
             onTimerCompleted("fright")
         end
     end
-    if (getModSetting('gariiDebug')) then
+    if (false) then
         if (keyJustPressed("reset")) then
             loseLife()
         elseif (keyJustPressed("accept")) then

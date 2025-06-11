@@ -236,7 +236,7 @@ end
 
 function onUpdatePost(elp)
     if not canUpdate then return end
-    if (getModSetting('gariiDebug')) then
+    if (false) then
         if (keyboardPressed("C") and keyboardPressed("D") and keyboardPressed("PLUS")) then nightOver() end
         if (keyboardPressed("E") and keyboardPressed("F") and keyboardPressed("MINUS")) then curPwr = 0 end
         if (keyboardPressed("G") and keyboardPressed("H") and keyboardPressed("BACKSLASH")) then 

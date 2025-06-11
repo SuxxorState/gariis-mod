@@ -1,5 +1,5 @@
 local defWindowTitle = "Friday Night Funkin': Psych Engine"
-local saveDir = "gariis-mod_v1"
+local saveDir = "gariis-mod_v1.01"
 local Utils = {}
 local songNameFmt = ""
 if stringEndsWith(songName, "-sss") then songNameFmt = (stringSplit(songName, "-s")[1]):lower():gsub(" ", "-")
@@ -340,7 +340,7 @@ function Utils:keyListPressed(keys)
     return pressed
 end
 function Utils:trc(msg, lvl) --making this system the norm instead of just debugprint as it hides the messages when not in debug mode which is really damn handy
-    if ((not getModSetting('gariiDebug')) or getModSetting('gariiDebug') == nil) then return end
+    if (true) then return end
     lvl = lvl or 0  --"lvl" is the level of severity of the message, with 0 being none, 1 being good, 2 being non-fatal, and 3 being fatal
     local shits = {[0] = "9AD6FF", "8FC79B", "F4F3AD", "A284B9"}
     local butts = {[0] = "(i)", "(+)", "[!]", "{x}"}

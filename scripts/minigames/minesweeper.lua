@@ -50,7 +50,7 @@ function startMinigame()
 
     tileSkin = utils:getGariiData("btSkin")
     if (tileSkin == nil) then tileSkin = "tiles" end
-    if (getModSetting('faithfulMode')) then skinList[1] = "tiles-faithful"
+    if (false) then skinList[1] = "tiles-faithful"
         if (not stringEndsWith(utils:lwrKebab(tileSkin), "-faithful")) then tileSkin = tileSkin.."-faithful" end
     elseif (stringEndsWith(utils:lwrKebab(tileSkin), "-faithful")) then
         tileSkin = stringSplit(tileSkin, "-faithful")[1]
@@ -60,7 +60,7 @@ function startMinigame()
         if (stringEndsWith(file, ".png")) then
             local clippedFile = string.sub(file, 1, #file - 4)
             if (not (stringEndsWith(utils:lwrKebab(clippedFile), "-faithful") or utils:tableContains(skinList, clippedFile) or utils:tableContains(skinList, clippedFile.."-faithful"))) then
-                if (getModSetting('faithfulMode') and checkFileExists("images/"..sfld..clippedFile.."-faithful.png")) then table.insert(skinList, clippedFile.."-faithful")
+                if (false and checkFileExists("images/"..sfld..clippedFile.."-faithful.png")) then table.insert(skinList, clippedFile.."-faithful")
                 else table.insert(skinList, clippedFile)
                 end
                 if (skinStats[clippedFile] == nil) then skinStats[clippedFile] = skinStats["unknown"] end

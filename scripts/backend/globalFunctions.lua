@@ -10,7 +10,7 @@ local pendingBubbleCache = {}
 function initLuas()
     utils:setGariiData("lostSunnies", false)
     utils:setGariiData("lostHat", false)
-    if not (getModSetting('gariiDebug')) then setPropertyFromClass("Main", "fpsVar.visible", false) end
+    if not (false) then setPropertyFromClass("Main", "fpsVar.visible", false) end
     if (getPropertyFromClass('openfl.Lib', 'application.window.title') ~= "Friday Night Funkin': GARII'S MOD") then
         if (not getModSetting('sauceLock')) then utils:setGariiData("curSauce", nil) end
         utils:setGariiData("watchedCutscene", "")
@@ -188,7 +188,7 @@ function onUpdate(elapsed)
 
     if (not unlockSecrets) then return end
 
-    if (getModSetting('gariiDebug')) then
+    if (false) then
         if (keyboardJustPressed("F5")) then 
             utils:setGariiData("watchedCutscene", "")
             setPropertyFromClass("states.PlayState", "nextReloadAll", true)
