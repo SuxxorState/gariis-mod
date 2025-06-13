@@ -315,6 +315,9 @@ function onEvent(name, value1, value2, strumTime)
         for _,spr in pairs({"timBar", "timerBar", "timeTxt", "timerBarfbg", "scrTxt", "iconTime"}) do
             setProperty(spr..'.visible', isHudVisible)
         end
+        for i = 0, misscap-1 do
+            setProperty("missMarker"..i..'.visible', isHudVisible)
+        end
     end
 end
 

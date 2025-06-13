@@ -202,6 +202,39 @@
 			"anim": "sad",
 			"loop": false,
 			"name": "boy alt/-nosunnies/truckboyalt cringe"
+		},
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"indices": [],
+			"fps": 2,
+			"anim": "pose1",
+			"loop": false,
+			"name": "boy alt/-anims/truckboyalt pose smile"
+		},
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"indices": [],
+			"fps": 2,
+			"anim": "pose2",
+			"loop": false,
+			"name": "boy alt/-anims/truckboyalt pose patrick"
+		},
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"indices": [],
+			"fps": 2,
+			"anim": "pose3",
+			"loop": false,
+			"name": "boy alt/-anims/truckboyalt pose paps"
 		}
 	],
 	"vocals_file": "",

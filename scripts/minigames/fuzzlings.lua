@@ -299,7 +299,7 @@ end
 
 function firstTimeSetup()
     pelletCount, maxPellets, rebirths, score, zeroLoops, extraLivesGiven = 0, 0, 0, 0, 0, 0
-    lives, curLevel, ghostPointMult = 5, 1, 200
+    lives, curLevel, ghostPointMult = 5, 0, 200
     fruitDisp = {}
 
     makeLuaSprite("fuzzMap", fldr.."map", gameOffsets.x, gameOffsets.y)
@@ -458,7 +458,6 @@ function reloadSecretMap()
         loadGraphic("fuzzMap", fldr.."mapalt2")
         if (not luaSoundExists("music")) then
             stopSound("rain")
-            utils:playSound(fldr.."somewhere_else", 1, "music")
         end
         addOffset("truckPlayer", "idle-up", 4,4)
         addOffset("truckPlayer", "walk-up", 4,4)
@@ -486,7 +485,13 @@ function reloadSecretMap()
             addAnimationByPrefix("grave", anim, "grave"..anim)
         end
         if (zeroLoops == 4) then playAnim("grave", "init")
-        else playAnim("grave", "flowers-none")
+        else 
+            local thinger = "none"
+            if (utils:getGariiData("lostHat") and utils:getGariiData("lostSunnies")) then thinger = "couple"
+            elseif (utils:getGariiData("lostSunnies")) then thinger = "girl"
+            elseif (utils:getGariiData("lostHat")) then thinger = "boy"
+            end
+            playAnim("grave", "flowers-"..thinger)
         end
         setProperty("grave.antialiasing", false)
         utils:setObjectCamera("grave", "hud")
@@ -525,9 +530,11 @@ function reloadSecretMap()
         setProperty(char..".antialiasing", false)
         utils:setObjectCamera(char, "hud")
         addLuaSprite(char)
-        addAnimation("life"..(i+1), "reg", {plrData[char].icons[1]})
-        playAnim("life"..(i+1), "reg")
-        setProperty("life"..(i+1)..".color", getColorFromHex(plrData[char].colour))
+        if (luaSpriteExists("life"..(i+1))) then
+            addAnimation("life"..(i+1), "r", {plrData[char].icons[1]})
+            playAnim("life"..(i+1), "r")
+            setProperty("life"..(i+1)..".color", getColorFromHex(plrData[char].colour))
+        end
     end
 
     removeLuaSprite("visualBorder")
@@ -552,11 +559,7 @@ function reloadSecretMap()
     end
     font:setTextVisible("warningTxt", false)
 
-            font:setTextVisible("readyUp", false)
-        setProperty("readyBG.visible", false)
-        curAction = 0
-        cancelTimer("advanceAction")
-        advanceAction()
+    readyErUp(0)
 end
 
 function readyErUp(volume)
@@ -606,7 +609,10 @@ end
 
 local turnIndi = 0
 local fruitElp, frightElp = -1, -1
-local textAdvance = {["garii"] = {1,1}, ["carv"] = {1,1}}
+local textAdvance = {["garii"] = {1,1}, ["carv"] = {1,1}, ["grave"] = {1,1}, ["garLeave"] = {1,1}, ["graveAfter"] = {1,1}}
+local whatToDo = true
+local gariisHappy = false
+local heShallTalk = false
 function onUpdate(elp)
     local achieved = true
     for _,gst in pairs(ghostList) do
@@ -684,6 +690,27 @@ function onUpdate(elp)
             end
         end
     elseif (zeroLoops > 4) then
+        if (heShallTalk) then
+            if (keyJustPressed("accept") and not gariisHappy) then
+                talkToHim("garLeave")
+            end
+            return 
+        end
+        if (theChoice) then 
+            if (keyJustPressed("ui_left") or keyJustPressed("ui_right")) then whatToDo = not whatToDo 
+                if (whatToDo) then font:setTextString("dialogue3", "   >YES        NO")
+                else font:setTextString("dialogue3", "    YES       >NO")
+                end
+            end
+            if (keyJustPressed("accept")) then
+                if (not whatToDo) then
+                    theChoice = false
+                    removeAllDatBabblin()
+                else theChosen()
+                end
+            end
+            return 
+        end
         if (keyJustPressed("accept")) then
             interactWithChar()
         end
@@ -740,9 +767,11 @@ function onUpdate(elp)
     end
 
     handlePellets()
-    for _,ghst in pairs(ghostList) do
-        if ((ghosts[ghst].frightened and (not ghosts[ghst].eaten) and (turnIndi ~= 0)) or (not ghosts[ghst].frightened) or ghosts[ghst].eaten) then handleGhostMovement(ghst) end
-        if (ghosts[ghst].eaten) then handleGhostMovement(ghst) end
+    if (curLevel > 0) then
+        for _,ghst in pairs(ghostList) do
+            if ((ghosts[ghst].frightened and (not ghosts[ghst].eaten) and (turnIndi ~= 0)) or (not ghosts[ghst].frightened) or ghosts[ghst].eaten) then handleGhostMovement(ghst) end
+            if (ghosts[ghst].eaten) then handleGhostMovement(ghst) end
+        end
     end
     turnIndi = (turnIndi + 1) % 4
     handlePlayerMovement()
@@ -756,6 +785,18 @@ end
 
 local textLines = {
     ["garii1"] = {{"...", "f4f3ad"}, {"(I SHOULD LEAVE HIM BE.)", plrData[plrChar].colour}},
+    ["grave1"] = {{"HERE LIES ATLAS.        FRIEND OF MANY.", "ffffff"}, {"Should I leave an       offering?                  >YES        NO", plrData[plrChar].colour}},
+    ["graveAfter1"] = {{"HERE LIES ATLAS.        FRIEND OF MANY.", "ffffff"}, {"take good care of this  for me.", plrData[plrChar].colour}},
+    ["garLeave1"] = {
+        {"Hey. I wanted to say.", "f4f3ad"},
+        {"You're not that bad, kid", "f4f3ad"},
+        {"I know I play the bad   guy but i don't hate you", "f4f3ad"},
+        {"Atlas meant a lot to me.", "f4f3ad"},
+        {"I know you and your     partner are a long way  from home.", "f4f3ad"},
+        {"Now get outta here.     Find your way home.", "f4f3ad"},
+        {"I wish you the best of  luck.I mean it.", "f4f3ad"},
+        {" ", "f4f3ad"},
+    },
     ["carv1"] = {
         {"HEY, CHUCK. COME TO PAY YOUR RESPECTS AS WELL?", "4d664d"}, {"that's awfully nice of  ya, especially since ya dont know 'em.", "4d664d"}, {"who died?", plrData[plrChar].colour},
         {"just a close friend of  ours.", "4d664d"}, {"their name's atlas, ringany bells?", "4d664d"}, {"not particularly, no.", plrData[plrChar].colour}, {"that's fine. da boss    told me yous aren't fromthese parts.", "4d664d"},
@@ -768,14 +809,51 @@ local textLines = {
     }
 }
 function interactWithChar()
+    utils:trc((trucker.targetCoords.x + trucker.facing.x).." "..(trucker.targetCoords.y + trucker.facing.y))
     if ((trucker.targetCoords.x + trucker.facing.x) >= 8 and (trucker.targetCoords.x + trucker.facing.x) <= 10 and (trucker.targetCoords.y + trucker.facing.y) >= 8 and (trucker.targetCoords.y + trucker.facing.y) <= 10) then
         talkToHim("garii")
-    elseif ((trucker.targetCoords.x + trucker.facing.x) >= 17 and (trucker.targetCoords.x + trucker.facing.x) <= 19 and (trucker.targetCoords.y + trucker.facing.y) >= 12 and (trucker.targetCoords.y + trucker.facing.y) <= 14) then
-        talkToHim("carv")
+    elseif ((trucker.targetCoords.x + trucker.facing.x) >= 12 and (trucker.targetCoords.x + trucker.facing.x) <= 14 and (trucker.targetCoords.y + trucker.facing.y) >= 8 and (trucker.targetCoords.y + trucker.facing.y) <= 10) then
+        if (utils:getGariiData(plrData[plrChar].pinCond.."")) then talkToHim("graveAfter")
+        else talkToHim("grave")
+        end
     elseif ((trucker.targetCoords.x + trucker.facing.x) >= 17 and (trucker.targetCoords.x + trucker.facing.x) <= 19 and (trucker.targetCoords.y + trucker.facing.y) >= 12 and (trucker.targetCoords.y + trucker.facing.y) <= 14) then
         talkToHim("carv")
     else removeAllDatBabblin()
     end
+end
+
+function presentOption()
+    theChoice = true
+    whatToDo = true
+end
+
+function initiateGariiBabble()
+    heShallTalk = true
+    talkToHim("garLeave")
+end
+
+function theChosen()
+    theChoice = false
+    utils:setGariiData(plrData[plrChar].pinCond.."", true)
+    local thinger = "none"
+    if (utils:getGariiData("lostHat") and utils:getGariiData("lostSunnies")) then thinger = "couple"
+    elseif (utils:getGariiData("lostSunnies")) then thinger = "girl"
+    elseif (utils:getGariiData("lostHat")) then thinger = "boy"
+    end
+    playAnim("grave", "flowers-"..thinger)
+    plrData[plrChar].prefix = "alt "
+    for i,anim in pairs({"left", "down", "up", "right"}) do
+        addAnimationByPrefix("truckPlayer", "walk-"..anim, (plrData[plrChar].prefix).."walk "..anim, 12)
+        addOffset("truckPlayer", "walk-"..anim, 4,4)
+        addAnimationByPrefix("truckPlayer", "idle-"..anim, (plrData[plrChar].prefix).."idle "..anim)
+        addOffset("truckPlayer", "idle-"..anim, 4,4)
+    end
+
+    removeAllDatBabblin()
+    font:setTextString("warningTxt", "(They all liked that.)")
+    font:setTextVisible("warningTxt", true)
+    runTimer("warningDis", 5)
+    handlePlayerMovement()
 end
 
 local maxTextLength = 0
@@ -793,6 +871,12 @@ function talkToHim(char)
     for i,txt in pairs(splitText) do
         if (i > maxTextLength) then maxTextLength = i end
         font:createNewText("dialogue"..i, gameOffsets.x + 16, (gameOffsets.y - 24) + (16 * i), txt, "left", colour, "hud")
+    end
+    if (char == "grave" and textAdvance[char][1] >= 2) then
+        presentOption()
+    elseif (char == "garLeave" and textAdvance[char][1] > 7) then
+        gariisHappy = true
+        heShallTalk = false
     end
     textAdvance[char][1] = math.min(textAdvance[char][1] + 1, #textLines[char..textAdvance[char][2]])
 end
@@ -1166,8 +1250,17 @@ function handlePlayerMovement()
                 if (trucker.moveDir.y < 1) then playAnim("truckPlayer", "idle-up")
                 else playAnim("truckPlayer", "idle-down")
                     if (curLevel == 0 and ((getProperty("truckPlayer.y")-gameOffsets.y)/8) > 28) then
-                        font:setTextVisible("warningTxt", true)
-                        runTimer("warningDis", 5)
+                        if (((not utils:getGariiData(plrData[plrChar].pinCond)) and textAdvance["carv"][1] >= 24) or gariisHappy) then
+                            canUpdate = false
+                            ghostList = {"andy", "mandy", "randy", "brandy"}
+                            removeGameplay()
+                            runTimer("goBackToAttract", 0.25)
+                        elseif (utils:getGariiData(plrData[plrChar].pinCond) and textAdvance["carv"][1] >= 24) then
+                            initiateGariiBabble()
+                        else
+                            font:setTextVisible("warningTxt", true)
+                            runTimer("warningDis", 5)
+                        end
                     end
                 end
             end
@@ -1373,9 +1466,14 @@ function onTimerCompleted(tmr, _, loopsLeft)
             setProperty("blankFG.visible", true)
         end
     elseif (tmr == "completedLevelIII") then
-        if (curLevel > 0) then
+        if (curLevel > 0 or zeroLoops > 4) then
+            zeroLoops = 0
+            loadGraphic("fuzzMap", fldr.."map")
             curLevel = (curLevel+1)%256
             if (curLevel == 0) then rebirths = rebirths + 1 end
+            if (curLevel == 0 and utils:getGariiData(plrData[plrChar].pinCond)) then
+                curLevel = (curLevel+1)%256
+            end
             if (curLevel >= 64) then callOnLuas("unlockAchievement", {"fl-64levels"})
             elseif (curLevel >= 16) then callOnLuas("unlockAchievement", {"fl-16levels"})
             end

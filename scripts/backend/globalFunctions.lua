@@ -8,8 +8,6 @@ local unlockSecrets = (utils:lwrKebab(songName) == "gariis-arcade")
 local pendingBubbleCache = {}
 
 function initLuas()
-    utils:setGariiData("lostSunnies", false)
-    utils:setGariiData("lostHat", false)
     if not (false) then setPropertyFromClass("Main", "fpsVar.visible", false) end
     if (getPropertyFromClass('openfl.Lib', 'application.window.title') ~= "Friday Night Funkin': GARII'S MOD") then
         if (not getModSetting('sauceLock')) then utils:setGariiData("curSauce", nil) end
@@ -159,9 +157,12 @@ function restartCountdown(delay)
     runTimer("restartCountdown", delay)
 end
 
+local gfsuf = ""
 function onTimerCompleted(tag, loops, loopsLeft)
     if tag == "restartCountdown" then
         startCountdown()
+    elseif (tag == "delayreturn") then
+        setProperty("gf.idleSuffix", gfsuf)
     elseif tag == "exitSong" then
         exitSong()
     end
@@ -188,7 +189,7 @@ function onUpdate(elapsed)
 
     if (not unlockSecrets) then return end
 
-    if (true) then
+    if (false) then
         if (keyboardJustPressed("F5")) then 
             utils:setGariiData("watchedCutscene", "")
             setPropertyFromClass("states.PlayState", "nextReloadAll", true)
@@ -301,6 +302,7 @@ function onEvent(name, value1, value2, strumTime)
             end
         end
     elseif (event == "change-character" and charCheckNSwap(val2) ~= val2) then triggerEvent("Change Character", val1, charCheckNSwap(val2))
+    elseif (event == 'alt-idle-animation' and val1 == "gf") then gfsuf = val2
     end
 end
 
@@ -315,7 +317,22 @@ function charCheckNSwap(charName)
     return charNameFixed
 end
 
-function goodNoteHit() --this detects when bf SHOULD be dancing but isnt (due to gf singing whilst he was singing) and forces him to do so when he's stuck in a pose
+local usedPlrPoses = {}
+local maxPlrPoses = 3
+function goodNoteHit(id, dir, ntype) --this detects when bf SHOULD be dancing but isnt (due to gf singing whilst he was singing) and forces him to do so when he's stuck in a pose
+    if (ntype == "Pose Note") then
+        local rngNum = getRandomInt(1,maxPlrPoses, table.concat(usedPlrPoses, ","))
+
+        runTimer("delayreturn", 0.5)
+        triggerEvent("Play Animation", "pose"..rngNum, "boyfriend") --this triggers any effects that the scripts have on play anims, like the speech bubbles hiding themselves
+        playAnim("boyfriend", "pose"..rngNum, true)
+        triggerEvent("Play Animation", "pose"..rngNum, "gf")
+        setProperty("gf.idleSuffix", "-balls")
+        playAnim("gf", "pose"..rngNum, true)
+        if (#usedPlrPoses >= maxPlrPoses-1) then usedPlrPoses = {} end
+        table.insert(usedPlrPoses, rngNum)
+    end
+
     if curBeat % 2 == 0 then
         utils:runHaxeCode([[
             import psychlua.LuaUtils;

@@ -5,7 +5,7 @@ local lastChr = {["boyfriend"] = "", ["gf"] = "", ["dad"] = ""}
 luaDebugMode = (false)
 errored = not (stringStartsWith(version, "1.0") or stringStartsWith(version, "0.7"))
 if (not errored) then
-    initSaveData("gariis-mod_v1.01", "SuxxorState")
+    initSaveData("gariis-mod_v1.02", "SuxxorState")
     setProperty("autoUpdateRPC", false)
 
     hudType = getPropertyFromClass("states.PlayState", "stageUI")

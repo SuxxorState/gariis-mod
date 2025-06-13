@@ -2,6 +2,7 @@
 local utils = (require (getVar("folDir").."scripts.backend.utils")):new()
 local closeMode = false
 local canIcon, didIcon = false, false
+local curscrem = 1
 function onCreate()
     addLuaScript("scripts/objects/extraCharacter")
     setProperty("skipCountdown", true)
@@ -23,6 +24,7 @@ function onCreate()
     utils:setObjectCamera('over','other')
     setProperty('over.visible', false)
     addLuaSprite('over')
+
 end
 
 function onCreatePost()
@@ -38,6 +40,14 @@ function onCreatePost()
         updateGF()
     end
     if (timeBarType ~= "Disabled" and (not stringEndsWith(difficultyPath, "expert"))) then setProperty("iconTimehunte.x", -150) end
+
+    if (stringEndsWith(difficultyPath, "expert")) then curscrem = 2 end
+    for i = 1,2 do
+        makeLuaSprite("screenie"..i, "comicpanels/midhouse"..i, 0,0)
+        setProperty("screenie"..i..".alpha", 0)
+        utils:setObjectCamera("screenie"..i, "hud")
+        setObjectOrder("screenie"..i, 0)
+    end
 end
 
 
@@ -108,6 +118,9 @@ function onTimerCompleted(tmr)
         if (stringStartsWith(dadName, "hunte")) then defOppX = defOppX + 90 end
         doTweenX("oppXTween", "dad", defOppX - 200, 0.75, "circIn")
         doTweenAlpha("oppAlphaTween", "dad", 0, 0.25, "circIn")
+    elseif (tmr == "fullscren") then
+        setProperty("screenie"..curscrem..".alpha", 0)
+        curscrem = curscrem + 1
     elseif (tmr == "plrCloseTween") then
         doTweenX("plrXTween", "boyfriend", defaultBoyfriendX + 800, 0.75, "circIn")
         doTweenAlpha("plrAlphaTween", "boyfriend", 0, 0.25, "circIn")
@@ -121,6 +134,9 @@ function onEvent(name, value1, value2, strumTime)
 
 	if (event == "change-character") and (val1 == "gf" or val1 == "girlfriend" or val1 == "1") then updateGF()
     elseif (event == "hunte-be-evil") then
+    elseif (event == "panel-please") then
+        setProperty("screenie"..curscrem..".alpha", 1)
+        runTimer("fullscren", 2.2)
     elseif (event == "toggle-blackout") then
         setProperty("blackoutSpr.visible", not getProperty("blackoutSpr.visible"))
     elseif (event == "set-char-colour") then

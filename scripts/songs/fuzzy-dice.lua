@@ -8,6 +8,9 @@ function onCreate()
 
     callOnLuas("addExtraSup", {"hunte", "hunte-support", defaultGirlfriendX,defaultGirlfriendY, nil, false})
     callOnLuas("addExtraSup", {"carv", "carv-support", defaultGirlfriendX,defaultGirlfriendY})
+    callOnLuas("addExtraSup", {"tg", "truckergirl", 1060,200})
+    setObjectOrder('tg', getObjectOrder('boyfriendGroup')+1)
+    setProperty("tg.visible", false)
     setProperty("carv.visible", false)
     setProperty("hunte.visible", false)
 end
@@ -72,6 +75,15 @@ function onCreateDelay()
 
     if (stringEndsWith(difficultyPath, "simple")) then diif = "simple"
     elseif (stringEndsWith(difficultyPath, "expert")) then diif = "expert"
+        makeLuaSprite("screenie5", "comicpanels/middice5", 0,0)
+        setProperty("screenie5.alpha", 0)
+        utils:setObjectCamera("screenie5", "hud")
+        setObjectOrder("screenie5", 0)
+        makeLuaSprite("screeniegari", "comicpanels/gari", 0,0)
+        setProperty("screeniegari.alpha", 0)
+        utils:setObjectCamera("screeniegari", "hud")
+        screenCenter("screeniegari")
+        setObjectOrder("screeniegari", 1)
     else
         makeAnimatedLuaSprite("borderbottom", "borderlineUI/borderbottom",0,1130)
         addAnimationByPrefix("borderbottom", "reg", "borderbottom")
@@ -113,6 +125,7 @@ function onEventPushed(name, value1, value2, strumTime)
 end
 
 local shit = 0
+local lolfall = false
 function onEvent(name, value1, value2, strumTime)
     local event = name:lower()
     local val1 = value1:lower()
@@ -231,6 +244,10 @@ function onEvent(name, value1, value2, strumTime)
         elseif (chngChr == "gf") then
             utils:runHaxeCode("game.gf.cameras = [game.camGame, FlxG.cameras.list[2]];")
         end
+    elseif (event == "panel please") then
+        setProperty("screenie5.alpha", 1)
+        runTimer("scren", 0.75)
+        runTimer("screm", 0.25)
     end
 end
 
@@ -265,6 +282,11 @@ function onTimerCompleted(tmr)
         else
             doTweenAlpha("screenie3", "screenie3", 1, 0.25)
         end
+    elseif (tmr == "scren") then setProperty("screenie5.alpha", 0)
+            setProperty("screeniegari.alpha", 0)
+        lolfall = false
+    elseif (tmr == "screm") then        setProperty("screeniegari.alpha", 1)
+        lolfall = true
 	elseif (tmr == 'fly gf fly') then
         utils:playSound("badexplosion", 0.25)
         setProperty("gf.alpha", 0)
@@ -305,4 +327,17 @@ function onUpdatePost(elp)
     end
     setProperty("screenie2.y", getProperty("borderfour.y"))
     setProperty("screenie3.y", getProperty("borderhalf.y"))
+    if (curStep == 508 and stringEndsWith(difficultyPath, "expert")) then
+        setProperty("tg.visible", true)
+    end
+    if (getProperty("camFollow.x") >= 700) then
+        setProperty("tg.idleSuffix", "-alt")
+    else
+        setProperty("tg.idleSuffix", "")
+    end
+    if (lolfall) then
+        setProperty("screeniegari.scale.x", getProperty("screeniegari.scale.x") - (0.025 * (60/framerate)))
+        setProperty("screeniegari.scale.y", getProperty("screeniegari.scale.y") - (0.025 * (60/framerate)))
+        screenCenter("screeniegari")
+    end
 end

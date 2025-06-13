@@ -120,6 +120,39 @@
 			"anim": "hey",
 			"indices": [],
 			"name": "girl alt/-nobrim/girl alt hey!"
+		},
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"indices": [],
+			"fps": 2,
+			"anim": "pose1",
+			"loop": false,
+			"name": "girl alt/-anims/girl alt pose smile"
+		},
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"indices": [],
+			"fps": 2,
+			"anim": "pose2",
+			"loop": false,
+			"name": "girl alt/-anims/girl alt pose spob"
+		},
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"indices": [],
+			"fps": 2,
+			"anim": "pose3",
+			"loop": false,
+			"name": "girl alt/-anims/girl alt pose sans"
 		}
 	],
 	"vocals_file": "",
