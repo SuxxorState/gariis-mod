@@ -95,6 +95,11 @@ function onEndSong()
 		return Function_Stop;
 	end
     if ((canEndSong and canEndSongII)) then
+        if (stringStartsWith(version, "1.0") and isStoryMode and week == "garii" and utils.songNameFmt == "fuzzy-dice") then --workaround for the story mode bug that should not be a problem
+            loadSong("Full House")
+            utils:runHaxeCode([[PlayState.storyPlaylist = ["Full House"];]])
+            return Function_Stop;
+        end
         if (((not isStoryMode) or levelEnds[utils.songNameFmt]) and (not bitch)) then
             bitch = true
             utils:endToMenu()

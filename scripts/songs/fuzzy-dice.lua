@@ -6,8 +6,8 @@ function onCreate()
     addLuaScript("scripts/objects/extraCharacter")
     setProperty("skipCountdown", true)
 
-    callOnLuas("addExtraSup", {"hunte", "hunte-support", defaultGirlfriendX,defaultGirlfriendY, nil, false})
     callOnLuas("addExtraSup", {"carv", "carv-support", defaultGirlfriendX,defaultGirlfriendY})
+    callOnLuas("addExtraSup", {"hunte", "hunte-support", defaultGirlfriendX,defaultGirlfriendY, nil, false})
     callOnLuas("addExtraSup", {"tg", "truckergirl", 1060,200})
     setObjectOrder('tg', getObjectOrder('boyfriendGroup')+1)
     setProperty("tg.visible", false)
@@ -17,6 +17,7 @@ end
 
 function onCreatePost() --660
     setProperty("iconTimecarv.visible", false)
+    setProperty("iconTimetg.visible", false)
     local cameraString = [[
         import flixel.sprite.FlxSprite;
         var camFourCrv:FlxCamera = new FlxCamera(520,725, 350,410, 0.75);

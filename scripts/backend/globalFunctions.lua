@@ -35,7 +35,7 @@ end
 
 function doubleCheckWeeks()
     if not isStoryMode then return end --these functions aren't needed for freeplay
-    if (week == "garii" and utils.songNameFmt == "fuzzy-dice") then
+    if (week == "garii" and utils.songNameFmt == "fuzzy-dice" and (not utils:getGariiData("levelRevealed"))) then
         utils:runHaxeCode([[
             PlayState.storyPlaylist = ["Fuzzy Dice", "Full House"];
         ]])

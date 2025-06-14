@@ -299,7 +299,7 @@ end
 
 function firstTimeSetup()
     pelletCount, maxPellets, rebirths, score, zeroLoops, extraLivesGiven = 0, 0, 0, 0, 0, 0
-    lives, curLevel, ghostPointMult = 5, 0, 200
+    lives, curLevel, ghostPointMult = 5, 1, 200
     fruitDisp = {}
 
     makeLuaSprite("fuzzMap", fldr.."map", gameOffsets.x, gameOffsets.y)
