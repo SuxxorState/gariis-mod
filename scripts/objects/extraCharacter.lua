@@ -145,7 +145,7 @@ function makeNewTimeIcon(chrName, iconName)
 
     removeLuaSprite('iconTime'..chrName)
 
-    makeAnimatedLuaSprite("iconTime"..chrName, "icons/"..iconName.."-anim", ((vars.index-1) % 2) * 45, screenHeight - (205 * vars.index))
+    makeAnimatedLuaSprite("iconTime"..chrName, "icons/"..iconName.."-anim", ((vars.index-1) % 2) * 45, (screenHeight - 100) - (45 * vars.index))
     for i=iconLimits[1],iconLimits[2] do  
         addAnimationByPrefix("iconTime"..chrName, 'stg'..i, iconName.." stage "..i, 24, true) 
     end
@@ -153,7 +153,7 @@ function makeNewTimeIcon(chrName, iconName)
     utils:setObjectCamera('iconTime'..chrName, 'hud')
     playAnim('iconTime'..chrName, 'stg'..vars.lolthing)
     
-    if downscroll then setProperty('iconTime'..chrName..'.y', 0 + (45 * vars.index)) end
+    if downscroll then setProperty('iconTime'..chrName..'.y', (45 * vars.index)) end
     addLuaSprite("iconTime"..chrName, true)
 end
 

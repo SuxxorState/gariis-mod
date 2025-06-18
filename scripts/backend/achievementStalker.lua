@@ -65,7 +65,7 @@ function onCreate()
     --utils:setGariiData("achievements", nil)
 end
 
-local doodooScreen = utils:getGariiData("doodooScreen3") or false
+local doodooScreen = utils:getGariiData("doodooScreen") or false
 local pausedIt = false
 function onUpdate()
     if (lastCheckedAch ~= queuedAchievements[1] and queuedAchievements[1] ~= nil) then
@@ -85,12 +85,11 @@ function onEndSong()
         unlockAchievement("no-pose")
     end
     calculateFC()
-    if (songNameFmt == "twenty-sixteen" and Utils:getGariiData("secretFinished") == nil and (not botPlay) and (not practice)) then
-        saveFile(folDir.."weeks/extras.json", "{\n\"storyName\": \"Garii's Xtras\", \n\"difficulties\": \"‿\", \n\"hideFreeplay\": false, \n\"weekBackground\": \"stage\", \n\"freeplayColor\": [146,113,253], \n\"weekBefore\": \"tutorial\", \n\"startUnlocked\": true, \n\"weekCharacters\": [\"dad\", \"bf\", \"gf\"], \n\"songs\": [[\"Twenty-Sixteen\", \"sixteenfree\", [143, 199, 155]]], \n\"hideStoryMode\": true, \n\"weekName\": \"GarXtras\", \n\"hiddenUntilUnlocked\": false\n}", true)
-        Utils:setGariiData("secretFinished", true)
+    if (songNameFmt == "twenty-sixteen" and utils:getGariiData("secretFinished") == nil and (not botPlay) and (not practice)) then
+        saveFile(getVar("folDir").."weeks/extras.json", "{\n\"storyName\": \"Garii's Xtras\", \n\"difficulties\": \"‿\", \n\"hideFreeplay\": false, \n\"weekBackground\": \"stage\", \n\"freeplayColor\": [146,113,253], \n\"weekBefore\": \"tutorial\", \n\"startUnlocked\": true, \n\"weekCharacters\": [\"dad\", \"bf\", \"gf\"], \n\"songs\": [[\"Twenty-Sixteen\", \"sixteenfree\", [143, 199, 155]]], \n\"hideStoryMode\": true, \n\"weekName\": \"GarXtras\", \n\"hiddenUntilUnlocked\": false\n}", true)
+        utils:setGariiData("secretFinished", true)
     end
-    if (doodooScreen ~= true and isStoryMode and utils.songNameFmt == "full-house" and (not botPlay) and (not practice)) then
-        utils:setGariiData("doodooScreen3", true)
+    if ((doodooScreen == nil or doodooScreen == false) and isStoryMode and utils.songNameFmt == "full-house" and (not botPlay) and (not practice)) then
 		makeLuaSprite('bfFinal', 'win', 0, 0)
 		utils:setObjectCamera('bfFinal', 'other')
 		addLuaSprite('bfFinal')
@@ -99,10 +98,11 @@ function onEndSong()
 
         if utils:getGariiData("expertSauces") == nil then utils:setGariiData("expertSauces", true) end
         if utils:getGariiData("levelRevealed") == nil then
-            saveFile(folDir.."weeks/garii.json", "{\n\"storyName\": \"Roadblock Ruckus\",\n\"difficulties\": \"‿\",\n\"hideFreeplay\": false,\n\"weekBackground\": \"orange\",\n\"freeplayColor\": [146,113,253],\n\"weekBefore\": \"tutorial\",\n\"startUnlocked\": true,\n\"weekCharacters\": [\"garii\", \"bftrans\", \"gftrans\"],\n\"songs\": [[\"Fuzzy Dice\", \"garfree\", [177, 82, 82]], [\"Full House\", \"goonsfree\", [67,66,83]]],\n\"hideStoryMode\": false,\n\"weekName\": \"Episode ][\",\n\"hiddenUntilUnlocked\": false\n}", true)
+            saveFile(getVar("folDir").."weeks/garii.json", "{\n\"storyName\": \"Roadblock Ruckus\",\n\"difficulties\": \"‿\",\n\"hideFreeplay\": false,\n\"weekBackground\": \"orange\",\n\"freeplayColor\": [146,113,253],\n\"weekBefore\": \"tutorial\",\n\"startUnlocked\": true,\n\"weekCharacters\": [\"garii\", \"bftrans\", \"gftrans\"],\n\"songs\": [[\"Fuzzy Dice\", \"garfree\", [177, 82, 82]], [\"Full House\", \"goonsfree\", [67,66,83]]],\n\"hideStoryMode\": false,\n\"weekName\": \"Episode ][\",\n\"hiddenUntilUnlocked\": false\n}", true)
             deleteFile("pack.png")
             utils:setGariiData("levelRevealed", true)
         end
+        utils:setGariiData("doodooScreen", true)
 		return Function_Stop;
 	end
 
