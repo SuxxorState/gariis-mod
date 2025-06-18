@@ -85,15 +85,27 @@ function onEndSong()
         unlockAchievement("no-pose")
     end
     calculateFC()
-    if (doodooScreen ~= true) and (isStoryMode and utils.songNameFmt == "full-house") then
+    if (songNameFmt == "twenty-sixteen" and Utils:getGariiData("secretFinished") == nil and (not botPlay) and (not practice)) then
+        saveFile(folDir.."weeks/extras.json", "{\n\"storyName\": \"Garii's Xtras\", \n\"difficulties\": \"‿\", \n\"hideFreeplay\": false, \n\"weekBackground\": \"stage\", \n\"freeplayColor\": [146,113,253], \n\"weekBefore\": \"tutorial\", \n\"startUnlocked\": true, \n\"weekCharacters\": [\"dad\", \"bf\", \"gf\"], \n\"songs\": [[\"Twenty-Sixteen\", \"sixteenfree\", [143, 199, 155]]], \n\"hideStoryMode\": true, \n\"weekName\": \"GarXtras\", \n\"hiddenUntilUnlocked\": false\n}", true)
+        Utils:setGariiData("secretFinished", true)
+    end
+    if (doodooScreen ~= true and isStoryMode and utils.songNameFmt == "full-house" and (not botPlay) and (not practice)) then
         utils:setGariiData("doodooScreen3", true)
 		makeLuaSprite('bfFinal', 'win', 0, 0)
 		utils:setObjectCamera('bfFinal', 'other')
 		addLuaSprite('bfFinal')
 		doodooScreen = true
 		pausedIt = true
+
+        if utils:getGariiData("expertSauces") == nil then utils:setGariiData("expertSauces", true) end
+        if utils:getGariiData("levelRevealed") == nil then
+            saveFile(folDir.."weeks/garii.json", "{\n\"storyName\": \"Roadblock Ruckus\",\n\"difficulties\": \"‿\",\n\"hideFreeplay\": false,\n\"weekBackground\": \"orange\",\n\"freeplayColor\": [146,113,253],\n\"weekBefore\": \"tutorial\",\n\"startUnlocked\": true,\n\"weekCharacters\": [\"garii\", \"bftrans\", \"gftrans\"],\n\"songs\": [[\"Fuzzy Dice\", \"garfree\", [177, 82, 82]], [\"Full House\", \"goonsfree\", [67,66,83]]],\n\"hideStoryMode\": false,\n\"weekName\": \"Episode ][\",\n\"hiddenUntilUnlocked\": false\n}", true)
+            deleteFile("pack.png")
+            utils:setGariiData("levelRevealed", true)
+        end
 		return Function_Stop;
 	end
+
     if ((canEndSong and canEndSongII)) then
         if (stringStartsWith(version, "1.0") and isStoryMode and week == "garii" and utils.songNameFmt == "fuzzy-dice") then --workaround for the story mode bug that should not be a problem
             loadSong("Full House")
